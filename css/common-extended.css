@@ -10,10 +10,20 @@
   --dita-violet: var(--bs-purple);
 }
 
+.list-group-item.active,
+.nav-link.active,
 [data-bs-theme='dark'] {
   --dita-prussian-blue: #6a91cf;
   --dita-violet: #cc99cd;
   --dita-maroon: #ff7676;
+}
+
+.list-group-item {
+  border-radius: 0;
+}
+
+.tab-pane pre[class*='language-'] {
+  margin: 0;
 }
 
 .d-dark,
