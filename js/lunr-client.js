@@ -37,7 +37,7 @@
       const title = item["t"];
       const preview = item["d"];
       const link = item["l"];
-      const result = `<div class="card mb-3" onclick="closeSearch(this);">
+      const result = `<div class="card mb-3 search-close">
         <a class="link stretched-link link-underline link-underline-opacity-0" href="${BASE_URL + link}">
             <h2 class="h3 title card-header text-body-emphasis">${title}</h5>
         </a>
@@ -58,9 +58,9 @@
 
   function formatResults(results) {
     return `<article role="article">
-      <div class="modal-header">
-  	        <h1>Search Results</h1>
-            <button type="button" class="btn-close search-close" aria-label="Close"></button>
+        <div class="modal-header justify-content-between">
+            <h1>Search Results</h1>
+            <button type="button" class="btn-close search-close" aria-label="Close"/>
         </div>
         <div class="modal-body">
       ${parseLunrResults(results)}
@@ -108,9 +108,10 @@
 
         elements[0].classList.add("collapse");
         window.scrollTo(0, 0);
-
-        const closeBox = document.getElementsByClassName("search-close")[0];
-        closeBox.addEventListener("click", closeSearch);
+        const closeBox = document.getElementsByClassName("search-close");
+        for(let i = 0; i < closeBox.length; i++) {
+           closeBox[i].addEventListener("click", closeSearch);
+        }
         return false;
       })
       .catch((e) => {
