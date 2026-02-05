@@ -234,7 +234,7 @@ Additionally, opt-in breadcrumbs and menu bars and other modifiers can be added 
 
 ## License
 
-[Apache 2.0](LICENSE) © 2017–2025 Roger W. Fienhold Sheen
+[Apache 2.0](LICENSE) © 2017–2026 Roger W. Fienhold Sheen
 
 The generated HTML created by this software includes the following additional software components which are obtained under license:
 
