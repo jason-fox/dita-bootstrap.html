@@ -27,7 +27,7 @@ jobs:
           SHA: ${{ env.SHA }}
 
       - name: Build Bootstrap
-        uses: dita-ot/dita-ot-action@4.3
+        uses: dita-ot/dita-ot-action@4.4
         with:
           install: |
             apt-get update -q
