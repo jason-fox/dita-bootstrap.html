@@ -44,11 +44,12 @@
 
   <xsl:template name="carousel-indicators">
     <xsl:param name="id"/>
+    <xsl:variable name="color" select="(@color, ancestor::*[contains(@class, ' bootstrap-d/carousel ')][1]/@color, 'primary')[1]"/>
     <div class="carousel-indicators">
       <xsl:for-each select="*[contains(@class, ' topic/li ')]">
         <button type="button">
           <xsl:attribute name="class">
-            <xsl:value-of select="$BOOTSTRAP_CSS_CAROUSEL_INDICATORS"/>
+            <xsl:value-of select="replace($BOOTSTRAP_CSS_CAROUSEL_INDICATORS, 'primary', $color)"/>
             <xsl:if test="count(preceding-sibling::*[contains(@class, ' topic/li ')]) = 0">
               <xsl:text> active</xsl:text>
             </xsl:if>
@@ -64,26 +65,29 @@
   </xsl:template>
 
   <xsl:template
-    match="*[ (contains(@class,' topic/ul ') or contains(@class, ' topic/ol ')) and contains(@outputclass, 'carousel')]"
+    match="*[contains(@class, ' bootstrap-d/carousel ')] | *[ (contains(@class,' topic/ul ') or contains(@class, ' topic/ol ')) and contains(@outputclass, 'carousel')]"
   >
     <xsl:variable name="id">
       <xsl:value-of select="concat('carousel_' ,dita-ot:generate-html-id(.))"/>
     </xsl:variable>
     <div>
       <xsl:choose>
-        <xsl:when test="contains(@otherprops, 'autoplay(false)')">
+        <xsl:when test="@autoplay = 'no' or contains(@otherprops, 'autoplay(false)')">
           <xsl:attribute name="data-bs-ride" select="'true'"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:attribute name="data-bs-ride" select="'carousel'"/>
         </xsl:otherwise>
       </xsl:choose>
-      <xsl:if test="contains(@otherprops, 'touch(false)')">
+      <xsl:if test="@touch = 'no' or contains(@otherprops, 'touch(false)')">
         <xsl:attribute name="data-bs-touch" select="'false'"/>
+      </xsl:if>
+      <xsl:if test="@interval">
+        <xsl:attribute name="data-bs-interval" select="@interval"/>
       </xsl:if>
       <xsl:attribute name="id" select="$id"/>
       <xsl:call-template name="commonattributes"/>
-      <xsl:if test="contains(@otherprops, 'indicators(true)')">
+      <xsl:if test="@indicators = 'yes' or contains(@otherprops, 'indicators(true)')">
         <xsl:call-template name="carousel-indicators">
           <xsl:with-param name="id" select="$id"/>
         </xsl:call-template>
@@ -108,16 +112,21 @@
           </xsl:if>
         </xsl:with-param>
       </xsl:call-template>
-      <xsl:if test="contains(@otherprops, 'interval(')">
-        <xsl:call-template name="otherprops-interval"/>
-      </xsl:if>
+      <xsl:choose>
+        <xsl:when test="@interval">
+          <xsl:attribute name="data-bs-interval" select="@interval"/>
+        </xsl:when>
+        <xsl:when test="contains(@otherprops, 'interval(')">
+          <xsl:call-template name="otherprops-interval"/>
+        </xsl:when>
+      </xsl:choose>
       <div class="container mx-0">
         <div class="row">
           <xsl:apply-templates select="*[contains(@class,' topic/fig ')]" mode="carousel"/>
           <xsl:apply-templates select="*[contains(@class,' topic/image ')]" mode="carousel"/>
         </div>
         <xsl:apply-templates select="*[contains(@class,' topic/div ')]" mode="carousel"/>
-        <xsl:if test="../../*[contains(@otherprops, 'indicators(true)')]">
+        <xsl:if test="../../*[@indicators = 'yes' or contains(@otherprops, 'indicators(true)')]">
           <div class="row py-3"/>
         </xsl:if>
       </div>
@@ -135,10 +144,11 @@
 
   <xsl:template name="color-control">
     <xsl:param name="icon"/>
+    <xsl:variable name="color" select="(ancestor-or-self::*[contains(@class, ' bootstrap-d/carousel ')][1]/@color, 'primary')[1]"/>
     <xsl:choose>
-      <xsl:when test="contains(@outputclass, 'carousel-fade')"/>
+      <xsl:when test="@fade = 'yes' or contains(@outputclass, 'carousel-fade')"/>
       <xsl:otherwise>
-        <span class="btn btn-primary btn-sm p-0">
+        <span class="btn btn-{$color} btn-sm p-0">
           <span aria-hidden="true">
             <xsl:attribute name="class" select="concat($icon, ' align-middle')"/>
           </span>
