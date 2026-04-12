@@ -887,10 +887,13 @@
       </xsl:value-of>
     </xsl:variable>
 
-    <xsl:variable name="classes" as="xs:string*"
-                  select="tokenize($ancestry, '\s+'),
+    <xsl:variable
+      name="classes"
+      as="xs:string*"
+      select="tokenize($ancestry, '\s+'),
                           $using-output-class,
-                          tokenize($outputclass-attribute, '\s+')"/>
+                          tokenize($outputclass-attribute, '\s+')"
+    />
     <xsl:if test="exists($classes)">
       <xsl:attribute name="class" select="distinct-values($classes)" separator=" "/>
     </xsl:if>
