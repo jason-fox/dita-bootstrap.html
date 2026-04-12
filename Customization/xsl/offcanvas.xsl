@@ -14,7 +14,9 @@
   <!-- Customization to add Bootstrap Offcanvas Component -->
   <!-- https://getbootstrap.com/docs/5.3/components/offcanvas/ -->
 
-  <xsl:template match="*[contains(@class, ' bootstrap-d/offcanvas ')] | *[contains(@class,' topic/section ') and contains(@outputclass, 'offcanvas-')]">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/offcanvas ')] | *[contains(@class,' topic/section ') and contains(@outputclass, 'offcanvas-')]"
+  >
     <xsl:param name="headLevel">
       <xsl:variable name="headCount" select="count(ancestor::*[contains(@class, ' topic/topic ')])+1"/>
       <xsl:choose>

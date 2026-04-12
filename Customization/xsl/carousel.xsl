@@ -44,7 +44,10 @@
 
   <xsl:template name="carousel-indicators">
     <xsl:param name="id"/>
-    <xsl:variable name="color" select="(@color, ancestor::*[contains(@class, ' bootstrap-d/carousel ')][1]/@color, 'primary')[1]"/>
+    <xsl:variable
+      name="color"
+      select="(@color, ancestor::*[contains(@class, ' bootstrap-d/carousel ')][1]/@color, 'primary')[1]"
+    />
     <div class="carousel-indicators">
       <xsl:for-each select="*[contains(@class, ' topic/li ')]">
         <button type="button">
@@ -144,7 +147,10 @@
 
   <xsl:template name="color-control">
     <xsl:param name="icon"/>
-    <xsl:variable name="color" select="(ancestor-or-self::*[contains(@class, ' bootstrap-d/carousel ')][1]/@color, 'primary')[1]"/>
+    <xsl:variable
+      name="color"
+      select="(ancestor-or-self::*[contains(@class, ' bootstrap-d/carousel ')][1]/@color, 'primary')[1]"
+    />
     <xsl:choose>
       <xsl:when test="@fade = 'yes' or contains(@outputclass, 'carousel-fade')"/>
       <xsl:otherwise>

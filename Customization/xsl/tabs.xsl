@@ -14,7 +14,9 @@
   <!-- Customization to add Bootstrap Tabbed Dialog Component -->
   <!-- https://getbootstrap.com/docs/5.3/components/navs-tabs/#tabs -->
 
-  <xsl:template match="*[contains(@class, ' bootstrap-d/tabbed-dialog ')] | *[contains(@class,' topic/bodydiv ') and (contains(@outputclass, 'nav-tabs') or contains(@outputclass, 'nav-pills'))]">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/tabbed-dialog ')] | *[contains(@class,' topic/bodydiv ') and (contains(@outputclass, 'nav-tabs') or contains(@outputclass, 'nav-pills'))]"
+  >
     <xsl:choose>
       <!-- Pills with Vertical alignment -->
       <!-- https://getbootstrap.com/docs/5.3/components/navs-tabs/#vertical -->

@@ -90,7 +90,9 @@
   </xsl:template>
 
   <!--template for xref-->
-  <xsl:template match="*[contains(@class, ' bootstrap-d/tooltip ')] | *[contains(@class, ' topic/xref ') and contains(@outputclass, 'tooltip-')]">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/tooltip ')] | *[contains(@class, ' topic/xref ') and contains(@outputclass, 'tooltip-')]"
+  >
     <xsl:choose>
       <xsl:when test="@href and normalize-space(@href)">
         <a>
@@ -157,8 +159,11 @@
         <xsl:sequence select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]/revprop/@val"/>
       </xsl:if>
     </xsl:variable>
-    <xsl:variable name="flag-outputclass" as="xs:string*"
-      select="tokenize(normalize-space(*[contains(@class, ' ditaot-d/ditaval-startprop ')]/@outputclass), '\s+')"/>
+    <xsl:variable
+      name="flag-outputclass"
+      as="xs:string*"
+      select="tokenize(normalize-space(*[contains(@class, ' ditaot-d/ditaval-startprop ')]/@outputclass), '\s+')"
+    />
     <xsl:variable name="using-output-class" as="xs:string*">
      <xsl:choose>
        <xsl:when test="string-length(normalize-space($output-class)) > 0">
@@ -183,12 +188,15 @@
     </xsl:variable>
     <!-- Revised design with DITA-OT 1.5: include class ancestry if requested; 
          combine user output class with element default, giving priority to the user value. -->
-    <xsl:variable name="classes" as="xs:string*"
-                  select="tokenize($ancestry, '\s+'),
+    <xsl:variable
+      name="classes"
+      as="xs:string*"
+      select="tokenize($ancestry, '\s+'),
                           $using-output-class,
                           $draft-revs, 
                           tokenize($outputclass-attribute, '\s+'),
-                          $flag-outputclass"/>
+                          $flag-outputclass"
+    />
     <xsl:if test="exists($classes)">
       <xsl:attribute name="class" select="distinct-values($classes)[. != 'tooltip']" separator=" "/>
     </xsl:if>

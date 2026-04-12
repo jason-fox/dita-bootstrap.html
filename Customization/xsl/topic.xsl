@@ -331,7 +331,9 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="*[contains(@class, ' bootstrap-d/alert ') or contains(@class, ' topic/note ')]/*[contains(@class, ' topic/title ')]">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/alert ') or contains(@class, ' topic/note ')]/*[contains(@class, ' topic/title ')]"
+  >
     <xsl:variable name="headCount" select="count(ancestor::*[contains(@class, ' topic/topic ')])+1"/>
     <xsl:variable name="headLevel">
       <xsl:choose>
@@ -600,7 +602,9 @@
   </xsl:template>
 
   <!-- Process a list of images as a single HTML5 Picture element. -->
-  <xsl:template match="*[contains(@class, ' bootstrap-d/picture ') or (contains(@class, ' topic/div ') and contains(@outputclass, 'd-picture'))]">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/picture ') or (contains(@class, ' topic/div ') and contains(@outputclass, 'd-picture'))]"
+  >
     <picture>
       <xsl:call-template name="commonattributes"/>
       <xsl:call-template name="setid"/>

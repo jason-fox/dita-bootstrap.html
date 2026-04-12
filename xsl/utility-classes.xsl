@@ -277,12 +277,20 @@
   </xsl:template>
 
   <!-- Change the default Bootstrap CSS classes of alert titles -->
-  <xsl:template match="*[contains(@class, ' bootstrap-d/alert ')]/*[contains(@class, ' topic/title ')]" mode="bootstrap-class" priority="10">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/alert ')]/*[contains(@class, ' topic/title ')]"
+    mode="bootstrap-class"
+    priority="10"
+  >
     <xsl:text>alert-heading </xsl:text>
     <xsl:next-match/>
   </xsl:template>
 
-  <xsl:template match="*[contains(@class, ' bootstrap-d/alert ')]/*[contains(@class, ' topic/title ')]" mode="get-output-class" priority="10">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/alert ')]/*[contains(@class, ' topic/title ')]"
+    mode="get-output-class"
+    priority="10"
+  >
     <xsl:text>h4 </xsl:text> <!-- Default heading level for alerts -->
     <xsl:next-match/>
   </xsl:template>
@@ -377,8 +385,14 @@
     <xsl:next-match/>
   </xsl:template>
 
-  <xsl:template match="*[contains(@class, ' topic/li ') and (ancestor::*[contains(@class, ' bootstrap-d/list-group ')] or ancestor::*[contains(@outputclass, 'list-group')])]" mode="get-output-class">
-    <xsl:variable name="parent-color" select="ancestor::*[contains(@class, ' bootstrap-d/list-group ') or contains(@outputclass, 'list-group')][1]/@color"/>
+  <xsl:template
+    match="*[contains(@class, ' topic/li ') and (ancestor::*[contains(@class, ' bootstrap-d/list-group ')] or ancestor::*[contains(@outputclass, 'list-group')])]"
+    mode="get-output-class"
+  >
+    <xsl:variable
+      name="parent-color"
+      select="ancestor::*[contains(@class, ' bootstrap-d/list-group ') or contains(@outputclass, 'list-group')][1]/@color"
+    />
     <xsl:text>list-group-item </xsl:text>
     <xsl:if test="$parent-color">
        <xsl:text>text-</xsl:text>
@@ -580,7 +594,7 @@
        </xsl:when>
        <xsl:otherwise>
           <xsl:value-of
-            select="
+          select="
               if (@type='tip') then 'alert-success'
               else if (@type='fastpath') then 'alert-success'
               else if (@type='remember') then 'alert-success'
@@ -595,7 +609,7 @@
               else if (@type='note') then 'alert-primary'
               else if (@type='other') then 'alert-dark'
               else 'alert-info'"
-          />
+        />
        </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -617,14 +631,16 @@
 
   <!-- Process decorations (color, border, rounded, width) on any element -->
   <xsl:template match="*[@color or @border or @rounded or @width]" mode="get-output-class" priority="100">
-    <xsl:if test="@color and not(contains(@class, ' topic/note ') or 
+    <xsl:if
+      test="@color and not(contains(@class, ' topic/note ') or 
                                  contains(@class, ' topic/pre ') or 
                                  contains(@class, ' bootstrap-d/card ') or 
                                  contains(@class, ' bootstrap-d/alert ') or
                                  contains(@class, ' bootstrap-d/badge ') or
                                  contains(@class, ' bootstrap-d/list-group ') or
                                  contains(@class, ' bootstrap-d/carousel ') or
-                                 contains(@class, ' bootstrap-d/button '))">
+                                 contains(@class, ' bootstrap-d/button '))"
+    >
        <xsl:text>text-bg-</xsl:text>
        <xsl:value-of select="@color"/>
        <xsl:text> </xsl:text>
@@ -659,16 +675,21 @@
           </xsl:otherwise>
        </xsl:choose>
     </xsl:if>
-    <xsl:variable name="margin" select="(@margin, (if (@shadow and @shadow != 'no' and @shadow != 'none' and not(contains(@outputclass, 'm-'))) then '3' else ()))[1]"/>
+    <xsl:variable
+      name="margin"
+      select="(@margin, (if (@shadow and @shadow != 'no' and @shadow != 'none' and not(contains(@outputclass, 'm-'))) then '3' else ()))[1]"
+    />
     <xsl:if test="$margin">
        <xsl:text>m-</xsl:text>
        <xsl:value-of select="$margin"/>
        <xsl:text> </xsl:text>
     </xsl:if>
-    <xsl:if test="@padding and not(contains(@class, ' topic/note ') or 
+    <xsl:if
+      test="@padding and not(contains(@class, ' topic/note ') or 
                                    contains(@class, ' topic/pre ') or 
                                    contains(@class, ' bootstrap-d/card ') or 
-                                   contains(@class, ' bootstrap-d/alert '))">
+                                   contains(@class, ' bootstrap-d/alert '))"
+    >
        <xsl:text>p-</xsl:text>
        <xsl:value-of select="@padding"/>
        <xsl:text> </xsl:text>

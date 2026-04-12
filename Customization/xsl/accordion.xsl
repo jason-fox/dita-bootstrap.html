@@ -14,7 +14,9 @@
   <!-- Customization to add Bootstrap Accordion Component -->
   <!-- https://getbootstrap.com/docs/5.3/components/accordion/ -->
 
-  <xsl:template match="*[contains(@class, ' bootstrap-d/accordion ') or (contains(@class,' topic/bodydiv ') and contains(@outputclass, 'accordion'))]">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/accordion ') or (contains(@class,' topic/bodydiv ') and contains(@outputclass, 'accordion'))]"
+  >
     <div>
       <xsl:attribute name="id" select="dita-ot:generate-html-id(.)"/>
       <xsl:call-template name="commonattributes"/>

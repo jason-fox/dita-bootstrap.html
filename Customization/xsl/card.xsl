@@ -14,12 +14,23 @@
   <!-- Customization to add Bootstrap Card Component -->
   <!-- https://getbootstrap.com/docs/5.3/components/card/ -->
 
-  <xsl:template match="*[contains(@class, ' bootstrap-d/card ')] | *[contains(@class,' topic/section ') and contains(@outputclass, 'card')]">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/card ')] | *[contains(@class,' topic/section ') and contains(@outputclass, 'card')]"
+  >
     <xsl:variable name="images" select="*[contains(@class, ' topic/image ')]"/>
-    <xsl:variable name="top-images" select="$images[contains(@outputclass, 'card-img-top')] | $images[not(contains(@outputclass, 'card-img-')) and count($images) = 1]"/>
+    <xsl:variable
+      name="top-images"
+      select="$images[contains(@outputclass, 'card-img-top')] | $images[not(contains(@outputclass, 'card-img-')) and count($images) = 1]"
+    />
     <xsl:variable name="bottom-images" select="$images[contains(@outputclass, 'card-img-bottom')]"/>
-    <xsl:variable name="header" select="*[contains(@class, ' bootstrap-d/card-header ') or (contains(@outputclass, 'card-header') and (contains(@class, ' topic/sectiondiv ') or contains(@class, ' topic/div ')))]"/>
-    <xsl:variable name="footer" select="*[contains(@class, ' bootstrap-d/card-footer ') or (contains(@outputclass, 'card-footer') and (contains(@class, ' topic/sectiondiv ') or contains(@class, ' topic/div ')))]"/>
+    <xsl:variable
+      name="header"
+      select="*[contains(@class, ' bootstrap-d/card-header ') or (contains(@outputclass, 'card-header') and (contains(@class, ' topic/sectiondiv ') or contains(@class, ' topic/div ')))]"
+    />
+    <xsl:variable
+      name="footer"
+      select="*[contains(@class, ' bootstrap-d/card-footer ') or (contains(@outputclass, 'card-footer') and (contains(@class, ' topic/sectiondiv ') or contains(@class, ' topic/div ')))]"
+    />
 
     <div>
       <xsl:call-template name="commonattributes"/>
@@ -77,7 +88,10 @@
     </xsl:element>
   </xsl:template>
   <xsl:template match="*[contains(@class, ' topic/image ')]" mode="get-output-class" priority="10">
-    <xsl:variable name="card" select="parent::*[contains(@class, ' bootstrap-d/card ') or (contains(@class,' topic/section ') and contains(@outputclass, 'card'))]"/>
+    <xsl:variable
+      name="card"
+      select="parent::*[contains(@class, ' bootstrap-d/card ') or (contains(@class,' topic/section ') and contains(@outputclass, 'card'))]"
+    />
     <xsl:if test="$card">
       <xsl:variable name="totalImages" select="count($card/*[contains(@class, ' topic/image ')])"/>
       <xsl:if test="$totalImages = 1 and not(contains(@outputclass, 'card-img-'))">
