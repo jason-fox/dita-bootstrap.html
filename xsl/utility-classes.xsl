@@ -630,7 +630,73 @@
   </xsl:template>
 
   <!-- Process decorations (color, border, rounded, width) on any element -->
-  <xsl:template match="*[@color or @border or @rounded or @width]" mode="get-output-class" priority="100">
+  <!-- Process spacing and shadow decorations on any element -->
+  <xsl:template match="*[@margin or @padding or @shadow]" mode="get-output-class" priority="-1">
+    <xsl:variable
+      name="margin"
+      select="(@margin, (if (@shadow and @shadow != 'no' and @shadow != 'none' and not(contains(@outputclass, 'm-'))) then '3' else ()))[1]"
+    />
+    <xsl:for-each select="tokenize(normalize-space($margin), '\s+')">
+      <xsl:choose>
+        <xsl:when test="matches(., '^[tbsxy]([0-5]|auto)$')">
+          <xsl:value-of select="concat('m', substring(., 1, 1), '-', substring(., 2))"/>
+        </xsl:when>
+        <xsl:when test="matches(., '^e([0-5]|auto)$')">
+          <xsl:value-of select="concat('me-', substring(., 2))"/>
+        </xsl:when>
+        <xsl:when test="contains(., '-')">
+          <xsl:value-of select="."/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="concat('m-', .)"/>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:text> </xsl:text>
+    </xsl:for-each>
+    <xsl:if
+      test="@padding and not(contains(@class, ' topic/note ') or 
+                                   contains(@class, ' topic/pre ') or 
+                                   contains(@class, ' bootstrap-d/card ') or 
+                                   contains(@class, ' bootstrap-d/alert '))"
+    >
+      <xsl:for-each select="tokenize(normalize-space(@padding), '\s+')">
+        <xsl:choose>
+          <xsl:when test="matches(., '^[tbsxy]([0-5]|auto)$')">
+            <xsl:value-of select="concat('p', substring(., 1, 1), '-', substring(., 2))"/>
+          </xsl:when>
+          <xsl:when test="matches(., '^e([0-5]|auto)$')">
+            <xsl:value-of select="concat('pe-', substring(., 2))"/>
+          </xsl:when>
+          <xsl:when test="contains(., '-')">
+            <xsl:value-of select="."/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="concat('p-', .)"/>
+          </xsl:otherwise>
+        </xsl:choose>
+        <xsl:text> </xsl:text>
+      </xsl:for-each>
+    </xsl:if>
+    <xsl:if test="@shadow">
+       <xsl:choose>
+          <xsl:when test="@shadow='yes'">
+             <xsl:text>shadow </xsl:text>
+          </xsl:when>
+          <xsl:when test="@shadow='no' or @shadow='none'">
+             <xsl:text>shadow-none </xsl:text>
+          </xsl:when>
+          <xsl:otherwise>
+             <xsl:text>shadow-</xsl:text>
+             <xsl:value-of select="@shadow"/>
+             <xsl:text> </xsl:text>
+          </xsl:otherwise>
+       </xsl:choose>
+    </xsl:if>
+    <xsl:next-match/>
+  </xsl:template>
+
+  <!-- Process decorations (color, border, rounded, width) on any element -->
+  <xsl:template match="*[@color or @border or @rounded or @width]" mode="get-output-class" priority="-2">
     <xsl:if
       test="@color and not(contains(@class, ' topic/note ') or 
                                  contains(@class, ' topic/pre ') or 
@@ -671,40 +737,6 @@
           <xsl:otherwise>
              <xsl:text>rounded-</xsl:text>
              <xsl:value-of select="@rounded"/>
-             <xsl:text> </xsl:text>
-          </xsl:otherwise>
-       </xsl:choose>
-    </xsl:if>
-    <xsl:variable
-      name="margin"
-      select="(@margin, (if (@shadow and @shadow != 'no' and @shadow != 'none' and not(contains(@outputclass, 'm-'))) then '3' else ()))[1]"
-    />
-    <xsl:if test="$margin">
-       <xsl:text>m-</xsl:text>
-       <xsl:value-of select="$margin"/>
-       <xsl:text> </xsl:text>
-    </xsl:if>
-    <xsl:if
-      test="@padding and not(contains(@class, ' topic/note ') or 
-                                   contains(@class, ' topic/pre ') or 
-                                   contains(@class, ' bootstrap-d/card ') or 
-                                   contains(@class, ' bootstrap-d/alert '))"
-    >
-       <xsl:text>p-</xsl:text>
-       <xsl:value-of select="@padding"/>
-       <xsl:text> </xsl:text>
-    </xsl:if>
-    <xsl:if test="@shadow">
-       <xsl:choose>
-          <xsl:when test="@shadow='yes'">
-             <xsl:text>shadow </xsl:text>
-          </xsl:when>
-          <xsl:when test="@shadow='no' or @shadow='none'">
-             <xsl:text>shadow-none </xsl:text>
-          </xsl:when>
-          <xsl:otherwise>
-             <xsl:text>shadow-</xsl:text>
-             <xsl:value-of select="@shadow"/>
              <xsl:text> </xsl:text>
           </xsl:otherwise>
        </xsl:choose>
@@ -825,4 +857,43 @@
       </xsl:when>
     </xsl:choose>
   </xsl:template>
+
+  <!-- 
+    The default set-output-class for a class of elements may be passed in with $default, 
+    but that default can be overridden with mode="get-output-class". 
+    In DITA Bootstrap we want these to be additive.
+  -->
+  <xsl:template match="*" mode="set-output-class" priority="10">
+    <xsl:param name="default"/>
+    <xsl:variable name="output-class">
+      <xsl:apply-templates select="." mode="get-output-class"/>
+    </xsl:variable>
+
+    <xsl:variable name="using-output-class" as="xs:string*">
+       <xsl:value-of select="tokenize(normalize-space($output-class), '\s+')"/>
+       <xsl:value-of select="tokenize(normalize-space($default), '\s+')"/>
+    </xsl:variable>
+
+    <xsl:variable name="ancestry" as="xs:string?">
+      <xsl:if test="$PRESERVE-DITA-CLASS = 'yes'">
+        <xsl:value-of>
+          <xsl:apply-templates select="." mode="get-element-ancestry"/>
+        </xsl:value-of>
+      </xsl:if>
+    </xsl:variable>
+    <xsl:variable name="outputclass-attribute" as="xs:string">
+      <xsl:value-of>
+        <xsl:apply-templates select="@outputclass" mode="get-value-for-class"/>
+      </xsl:value-of>
+    </xsl:variable>
+
+    <xsl:variable name="classes" as="xs:string*"
+                  select="tokenize($ancestry, '\s+'),
+                          $using-output-class,
+                          tokenize($outputclass-attribute, '\s+')"/>
+    <xsl:if test="exists($classes)">
+      <xsl:attribute name="class" select="distinct-values($classes)" separator=" "/>
+    </xsl:if>
+  </xsl:template>
+
 </xsl:stylesheet>
