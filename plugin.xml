@@ -5,6 +5,7 @@
 <plugin id="net.infotexture.dita-bootstrap">
   <feature extension="package.version" value="5.3.8"/>
   <require plugin="org.dita.html5"/>
+  <!--require plugin="com.dita-bootstrap.specialization"/-->
   <require plugin="fox.jason.extend.css"/>
   <!-- extension points -->
   <extension-point
@@ -145,6 +146,16 @@
       name="bootstrap.css.card"
       type="string"
       desc="Bootstrap classes for card components"
+    />
+    <param
+      name="bootstrap.css.card.title"
+      type="string"
+      desc="Common Bootstrap classes for DITA &lt;title&gt; elements within &lt;card&gt; elements"
+    />
+    <param
+      name="bootstrap.css.card.width"
+      type="string"
+      desc="Default Bootstrap width class for card components"
     />
     <param
       name="bootstrap.css.carousel"

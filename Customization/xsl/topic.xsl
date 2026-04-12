@@ -331,6 +331,30 @@
     </div>
   </xsl:template>
 
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/alert ') or contains(@class, ' topic/note ')]/*[contains(@class, ' topic/title ')]"
+  >
+    <xsl:variable name="headCount" select="count(ancestor::*[contains(@class, ' topic/topic ')])+1"/>
+    <xsl:variable name="headLevel">
+      <xsl:choose>
+        <xsl:when test="contains(@outputclass, 'h1')">h1</xsl:when>
+        <xsl:when test="contains(@outputclass, 'h2')">h2</xsl:when>
+        <xsl:when test="contains(@outputclass, 'h3')">h3</xsl:when>
+        <xsl:when test="contains(@outputclass, 'h4')">h4</xsl:when>
+        <xsl:when test="contains(@outputclass, 'h5')">h5</xsl:when>
+        <xsl:when test="contains(@outputclass, 'h6')">h6</xsl:when>
+        <xsl:when test="$headCount > 6">h6</xsl:when>
+        <xsl:otherwise>h<xsl:value-of select="$headCount"/></xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:element name="{$headLevel}">
+      <xsl:attribute name="class" select="concat('alert-heading ', @outputclass)"/>
+      <xsl:call-template name="commonattributes"/>
+      <xsl:call-template name="setidaname"/>
+      <xsl:apply-templates/>
+    </xsl:element>
+  </xsl:template>
+
   <!-- Customization to add Bootstrap Figure Content -->
   <!-- https://getbootstrap.com/docs/5.3/content/figures/ -->
   <xsl:template
@@ -578,7 +602,9 @@
   </xsl:template>
 
   <!-- Process a list of images as a single HTML5 Picture element. -->
-  <xsl:template match="*[contains(@class, ' topic/div ') and contains(@outputclass, 'd-picture')]">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/picture ') or (contains(@class, ' topic/div ') and contains(@outputclass, 'd-picture'))]"
+  >
     <picture>
       <xsl:call-template name="commonattributes"/>
       <xsl:call-template name="setid"/>
@@ -590,6 +616,12 @@
           <xsl:otherwise>
             <source>
               <xsl:attribute name="srcset" select="@href"/>
+              <xsl:if test="@media">
+                <xsl:attribute name="media" select="concat('(', @media, ')')"/>
+              </xsl:if>
+              <xsl:if test="@type">
+                <xsl:attribute name="type" select="@type"/>
+              </xsl:if>
               <xsl:if test="@otherprops">
                 <xsl:apply-templates select="." mode="otherprops-attributes"/>
               </xsl:if>
@@ -616,6 +648,9 @@
       </xsl:call-template>
       <xsl:call-template name="setid"/>
       <!-- ↓ Add otherprops for lazy loading ↓ -->
+      <xsl:if test="@loading">
+        <xsl:attribute name="loading" select="@loading"/>
+      </xsl:if>
       <xsl:if test="@otherprops">
         <xsl:apply-templates select="." mode="otherprops-attributes"/>
       </xsl:if>
