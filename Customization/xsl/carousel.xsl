@@ -124,10 +124,12 @@
         </xsl:when>
       </xsl:choose>
       <div class="container mx-0">
-        <div class="row">
-          <xsl:apply-templates select="*[contains(@class,' topic/fig ')]" mode="carousel"/>
-          <xsl:apply-templates select="*[contains(@class,' topic/image ')]" mode="carousel"/>
-        </div>
+        <xsl:if test="*[contains(@class,' topic/fig ')] or *[contains(@class,' topic/image ')]">
+          <div class="row">
+            <xsl:apply-templates select="*[contains(@class,' topic/fig ')]" mode="carousel"/>
+            <xsl:apply-templates select="*[contains(@class,' topic/image ')]" mode="carousel"/>
+          </div>
+        </xsl:if>
         <xsl:apply-templates
           select="* except (*[contains(@class,' topic/fig ')] | *[contains(@class,' topic/image ')])"
           mode="carousel"
@@ -224,11 +226,11 @@
   <xsl:template match="*[contains(@class,' topic/div ') or contains(@class,' topic/bodydiv ')]" mode="carousel">
     <xsl:choose>
       <xsl:when test="contains(@outputclass, 'row') or contains(@class, ' bootstrap-d/grid-row ')">
-        <xsl:apply-templates/>
+        <xsl:apply-templates select="."/>
       </xsl:when>
       <xsl:otherwise>
         <div class="row">
-          <xsl:apply-templates/>
+          <xsl:apply-templates select="."/>
         </div>
       </xsl:otherwise>
     </xsl:choose>
