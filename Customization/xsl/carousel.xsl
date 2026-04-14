@@ -124,11 +124,16 @@
         </xsl:when>
       </xsl:choose>
       <div class="container mx-0">
-        <div class="row">
-          <xsl:apply-templates select="*[contains(@class,' topic/fig ')]" mode="carousel"/>
-          <xsl:apply-templates select="*[contains(@class,' topic/image ')]" mode="carousel"/>
-        </div>
-        <xsl:apply-templates select="*[contains(@class,' topic/div ')]" mode="carousel"/>
+        <xsl:if test="*[contains(@class,' topic/fig ')] or *[contains(@class,' topic/image ')]">
+          <div class="row">
+            <xsl:apply-templates select="*[contains(@class,' topic/fig ')]" mode="carousel"/>
+            <xsl:apply-templates select="*[contains(@class,' topic/image ')]" mode="carousel"/>
+          </div>
+        </xsl:if>
+        <xsl:apply-templates
+          select="* except (*[contains(@class,' topic/fig ')] | *[contains(@class,' topic/image ')])"
+          mode="carousel"
+        />
         <xsl:if test="../../*[@indicators = 'yes' or contains(@otherprops, 'indicators(true)')]">
           <div class="row py-3"/>
         </xsl:if>
@@ -218,10 +223,21 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="*[contains(@class,' topic/div ')]" mode="carousel">
-    <div class="row">
-      <xsl:apply-templates/>
-    </div>
+  <xsl:template match="*[contains(@class,' topic/div ') or contains(@class,' topic/bodydiv ')]" mode="carousel">
+    <xsl:choose>
+      <xsl:when test="contains(@outputclass, 'row') or contains(@class, ' bootstrap-d/grid-row ')">
+        <xsl:apply-templates select="."/>
+      </xsl:when>
+      <xsl:otherwise>
+        <div class="row">
+          <xsl:apply-templates select="."/>
+        </div>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="*" mode="carousel">
+    <xsl:apply-templates select="."/>
   </xsl:template>
 
   <xsl:template name="otherprops-interval">
