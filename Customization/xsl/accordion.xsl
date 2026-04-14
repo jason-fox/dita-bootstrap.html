@@ -25,13 +25,13 @@
   </xsl:template>
 
   <xsl:template name="expand-accordion-head">
-    <xsl:attribute name="aria-expanded" select="contains(@outputclass,'show')"/>
+    <xsl:attribute name="aria-expanded" select="contains(@outputclass, 'show') or @open = 'yes'"/>
     <xsl:variable name="parent-color" select="parent::*/@color"/>
     <xsl:attribute
       name="class"
       select="
         string-join((
-          if (contains(@outputclass,'show')) then 'accordion-button' else 'accordion-button collapsed',
+          if (contains(@outputclass, 'show') or @open = 'yes') then 'accordion-button' else 'accordion-button collapsed',
           if ($parent-color) then concat('bg-', $parent-color) else ()
         ), ' ')"
     />
@@ -41,7 +41,7 @@
     <xsl:attribute
       name="class"
       select="
-        if (contains(@outputclass,'show')) then 'accordion-collapse collapse show'
+        if (contains(@outputclass, 'show') or @open = 'yes') then 'accordion-collapse collapse show'
         else 'accordion-collapse collapse'"
     />
   </xsl:template>
