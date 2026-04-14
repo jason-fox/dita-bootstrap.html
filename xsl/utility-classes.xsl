@@ -205,6 +205,12 @@
   </xsl:template>
 
 
+  <!-- Change the default Bootstrap CSS classes of grid rows -->
+  <xsl:template match="*[contains(@class, ' bootstrap-d/grid-row ')]" mode="bootstrap-class" priority="10">
+    <xsl:text>row </xsl:text>
+    <xsl:next-match/>
+  </xsl:template>
+
   <!-- Change the default Bootstrap CSS classes of grid columns -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/grid-col ')]" mode="bootstrap-class" priority="10">
     <xsl:text>col</xsl:text>
