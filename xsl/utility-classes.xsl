@@ -644,11 +644,8 @@
     />
     <xsl:for-each select="tokenize(normalize-space($margin), '\s+')">
       <xsl:choose>
-        <xsl:when test="matches(., '^[tbsxy]([0-5]|auto)$')">
-          <xsl:value-of select="concat('m', substring(., 1, 1), '-', substring(., 2))"/>
-        </xsl:when>
-        <xsl:when test="matches(., '^e([0-5]|auto)$')">
-          <xsl:value-of select="concat('me-', substring(., 2))"/>
+        <xsl:when test="matches(., '^[etbsxy]([n-]?\d+|auto)$')">
+          <xsl:value-of select="concat('m', substring(., 1, 1), '-', translate(substring(., 2), '-', 'n'))"/>
         </xsl:when>
         <xsl:when test="contains(., '-')">
           <xsl:value-of select="."/>
@@ -667,11 +664,8 @@
     >
       <xsl:for-each select="tokenize(normalize-space(@padding), '\s+')">
         <xsl:choose>
-          <xsl:when test="matches(., '^[tbsxy]([0-5]|auto)$')">
+          <xsl:when test="matches(., '^[etbsxy](\d+|auto)$')">
             <xsl:value-of select="concat('p', substring(., 1, 1), '-', substring(., 2))"/>
-          </xsl:when>
-          <xsl:when test="matches(., '^e([0-5]|auto)$')">
-            <xsl:value-of select="concat('pe-', substring(., 2))"/>
           </xsl:when>
           <xsl:when test="contains(., '-')">
             <xsl:value-of select="."/>
