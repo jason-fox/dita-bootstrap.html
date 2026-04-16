@@ -680,7 +680,11 @@
   </xsl:template>
 
   <!-- Process decorations (color, border, rounded, width) on any element -->
-  <xsl:template match="*[@color or @border or @bordercolor or @rounded or @width]" mode="get-output-class" priority="-2">
+  <xsl:template
+    match="*[@color or @border or @bordercolor or @rounded or @width]"
+    mode="get-output-class"
+    priority="-2"
+  >
     <xsl:if
       test="@color and not(contains(@class, ' topic/note ') or 
                                  contains(@class, ' topic/pre ') or 
