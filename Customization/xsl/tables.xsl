@@ -14,17 +14,9 @@
   <!--override row processing - remove DITA row CSS class -->
   <xsl:template match="*[contains(@class, ' topic/row ')]" name="topic.row">
     <tr>
-      <xsl:choose>
-        <xsl:when test="@valign">
-          <xsl:attribute name="class">
-            <xsl:value-of select="concat('align-', @valign)"/>
-            <xsl:value-of select="concat(' ', @outputclass)"/>
-          </xsl:attribute>
-        </xsl:when>
-        <xsl:when test="@outputclass">
-          <xsl:attribute name="class" select="@outputclass"/>
-        </xsl:when>
-      </xsl:choose>
+      <xsl:apply-templates select="." mode="set-output-class">
+        <xsl:with-param name="default" select="if (@valign) then concat('align-', @valign) else ()"/>
+      </xsl:apply-templates>
       <xsl:apply-templates select="@xml:lang"/>
       <xsl:apply-templates select="@dir"/>
       <xsl:apply-templates
@@ -116,5 +108,104 @@
     <xsl:if test=".='0' and not(../@colsep='0')">
       <xsl:value-of select="'border-top-0 border-bottom-0'"/>
     </xsl:if>
+  </xsl:template>
+
+  <!-- Add a Bootstrap CSS border to tables -->
+  <xsl:template match="*[contains(@class, ' topic/table ')]" mode="get-output-class">
+    <xsl:value-of select="$BOOTSTRAP_CSS_TABLE"/>
+    <xsl:variable
+      name="theme"
+      select="
+      (@color,
+       substring-after(tokenize(@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'))[1]"
+    />
+    <xsl:if test="exists($theme)">
+      <xsl:value-of select="concat('table-', $theme, ' ')"/>
+    </xsl:if>
+    <xsl:if test="@striped = 'yes'">
+      <xsl:text> table-striped</xsl:text>
+    </xsl:if>
+    <xsl:if test="@striped-columns = 'yes'">
+      <xsl:text> table-striped-columns</xsl:text>
+    </xsl:if>
+    <xsl:if test="@compact = 'yes'">
+      <xsl:text> table-sm</xsl:text>
+    </xsl:if>
+    <xsl:variable
+      name="border"
+      select="
+        if (@colsep='1' and @rowsep='1') then ' table-bordered '
+        else if (@colsep='0' and @rowsep='0') then ' table-borderless '
+        else ''"
+    />
+    <xsl:value-of select="$border"/>
+    <xsl:next-match/>
+  </xsl:template>
+
+  <!-- Enhance the default Bootstrap CSS text color of the table headers -->
+  <xsl:template
+    match="*[contains(@class, ' topic/thead ') or contains(@class, ' topic/tbody ') or contains(@class, ' topic/tfoot ')]"
+    mode="get-output-class"
+  >
+    <xsl:if test="contains(@class, ' topic/thead ')">
+      <xsl:value-of select="$BOOTSTRAP_CSS_TABLE_HEAD"/>
+    </xsl:if>
+    <xsl:variable name="table" select="ancestor::*[contains(@class, ' topic/table ')][1]"/>
+    <xsl:if test="contains(@class, ' topic/tbody ') and $table/@divider = 'yes'">
+       <xsl:text>table-group-divider </xsl:text>
+    </xsl:if>
+    <xsl:variable
+      name="theme"
+      select="
+      (@color,
+       substring-after(tokenize(@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'),
+       $table/@color,
+       substring-after(tokenize($table/@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'))[1]"
+    />
+    <xsl:if test="exists($theme)">
+      <xsl:value-of select="concat('table-', $theme, ' ')"/>
+    </xsl:if>
+    <xsl:next-match/>
+  </xsl:template>
+
+  <xsl:template match="*[contains(@class, ' topic/row ')]" mode="get-output-class">
+    <xsl:variable name="group" select="parent::*"/>
+    <xsl:variable name="table" select="ancestor::*[contains(@class, ' topic/table ')][1]"/>
+    <xsl:variable
+      name="theme"
+      select="
+      (@color,
+       substring-after(tokenize(@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'),
+       $group/@color,
+       substring-after(tokenize($group/@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'),
+       $table/@color,
+       substring-after(tokenize($table/@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'))[1]"
+    />
+    <xsl:if test="exists($theme)">
+      <xsl:value-of select="concat('table-', $theme, ' ')"/>
+    </xsl:if>
+    <xsl:next-match/>
+  </xsl:template>
+
+  <xsl:template match="*[contains(@class, ' topic/entry ')]" mode="get-output-class">
+    <xsl:variable name="row" select="parent::*"/>
+    <xsl:variable name="group" select="$row/parent::*"/>
+    <xsl:variable name="table" select="ancestor::*[contains(@class, ' topic/table ')][1]"/>
+    <xsl:variable
+      name="theme"
+      select="
+      (@color,
+       substring-after(tokenize(@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'),
+       $row/@color,
+       substring-after(tokenize($row/@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'),
+       $group/@color,
+       substring-after(tokenize($group/@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'),
+       $table/@color,
+       substring-after(tokenize($table/@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'))[1]"
+    />
+    <xsl:if test="exists($theme)">
+      <xsl:value-of select="concat('table-', $theme, ' ')"/>
+    </xsl:if>
+    <xsl:next-match/>
   </xsl:template>
 </xsl:stylesheet>

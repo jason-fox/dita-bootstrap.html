@@ -61,23 +61,7 @@
     <xsl:next-match/>
   </xsl:template>
 
-  <!-- Add a Bootstrap CSS border to tables -->
-  <xsl:template match="*[contains(@class, ' topic/table ')]" mode="get-output-class">
-    <xsl:value-of select="$BOOTSTRAP_CSS_TABLE"/>
 
-    <xsl:value-of
-      select="
-        if (@colsep='1' and @rowsep='1') then ' table-bordered'
-        else if (@colsep='0' and @rowsep='0') then ' table-borderless'
-        else ''"
-    />
-    <xsl:next-match/>
-  </xsl:template>
-  <!-- Enhance the default Bootstrap CSS text color of the table headers -->
-  <xsl:template match="*[contains(@class, ' topic/thead ')]" mode="get-output-class">
-    <xsl:value-of select="$BOOTSTRAP_CSS_TABLE_HEAD"/>
-    <xsl:next-match/>
-  </xsl:template>
 
   <!-- Enhance the short desc with a Bootstrap CSS lead class -->
   <xsl:template match="*[contains(@class, ' topic/shortdesc ')]" mode="get-output-class">
@@ -696,7 +680,11 @@
   </xsl:template>
 
   <!-- Process decorations (color, border, rounded, width) on any element -->
-  <xsl:template match="*[@color or @border or @rounded or @width]" mode="get-output-class" priority="-2">
+  <xsl:template
+    match="*[@color or @border or @bordercolor or @rounded or @width]"
+    mode="get-output-class"
+    priority="-2"
+  >
     <xsl:if
       test="@color and not(contains(@class, ' topic/note ') or 
                                  contains(@class, ' topic/pre ') or 
@@ -705,24 +693,37 @@
                                  contains(@class, ' bootstrap-d/badge ') or
                                  contains(@class, ' bootstrap-d/list-group ') or
                                  contains(@class, ' bootstrap-d/carousel ') or
-                                 contains(@class, ' bootstrap-d/button '))"
+                                 contains(@class, ' bootstrap-d/button ') or
+                                 contains(@class, ' topic/table ') or
+                                 contains(@class, ' topic/thead ') or
+                                 contains(@class, ' topic/tbody ') or
+                                 contains(@class, ' topic/tfoot ') or
+                                 contains(@class, ' topic/row ') or
+                                 contains(@class, ' topic/entry '))"
     >
        <xsl:text>text-bg-</xsl:text>
        <xsl:value-of select="@color"/>
        <xsl:text> </xsl:text>
     </xsl:if>
-    <xsl:if test="@border">
+    <xsl:if test="@border or @bordercolor">
        <xsl:choose>
-          <xsl:when test="@border='yes'">
-             <xsl:text>border </xsl:text>
-          </xsl:when>
           <xsl:when test="@border='no'">
              <xsl:text>border-0 </xsl:text>
           </xsl:when>
           <xsl:otherwise>
-             <xsl:text>border border-</xsl:text>
-             <xsl:value-of select="@border"/>
-             <xsl:text> </xsl:text>
+             <xsl:if test="empty(@border) or @border='yes' or matches(@border, '^\d+$') or @bordercolor">
+                <xsl:text>border </xsl:text>
+             </xsl:if>
+             <xsl:if test="@border and @border != 'yes'">
+                <xsl:text>border-</xsl:text>
+                <xsl:value-of select="@border"/>
+                <xsl:text> </xsl:text>
+             </xsl:if>
+             <xsl:if test="@bordercolor">
+                <xsl:text>border-</xsl:text>
+                <xsl:value-of select="@bordercolor"/>
+                <xsl:text> </xsl:text>
+             </xsl:if>
           </xsl:otherwise>
        </xsl:choose>
     </xsl:if>
@@ -874,11 +875,19 @@
        <xsl:value-of select="tokenize(normalize-space($default), '\s+')"/>
     </xsl:variable>
 
+
     <xsl:variable name="ancestry" as="xs:string?">
       <xsl:if test="$PRESERVE-DITA-CLASS = 'yes'">
-        <xsl:value-of>
-          <xsl:apply-templates select="." mode="get-element-ancestry"/>
-        </xsl:value-of>
+        <xsl:choose>
+          <xsl:when test="contains(@class, ' topic/row ')">
+            <!-- Suppress 'row' class on <tr> to avoid Bootstrap grid conflict -->
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of>
+              <xsl:apply-templates select="." mode="get-element-ancestry"/>
+            </xsl:value-of>
+          </xsl:otherwise>
+        </xsl:choose>
       </xsl:if>
     </xsl:variable>
     <xsl:variable name="outputclass-attribute" as="xs:string">
