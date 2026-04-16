@@ -74,7 +74,7 @@
 
       <ol outputclass="carousel pt-2" deliveryTarget="html" otherprops="indicators(true)">
         <li>
-          <div>
+          <div outputclass="row">
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/brite/thumbnail.png"/>
@@ -121,7 +121,7 @@
           </div>
         </li>
         <li>
-          <div>
+          <div outputclass="row">
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/cyborg/thumbnail.png"/>
@@ -164,7 +164,7 @@
           </div>
         </li>
         <li>
-          <div>
+          <div outputclass="row">
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/journal/thumbnail.png"/>
@@ -207,7 +207,7 @@
           </div>
         </li>
         <li>
-          <div>
+          <div outputclass="row" >
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/lux/thumbnail.png"/>
@@ -250,7 +250,7 @@
           </div>
         </li>
         <li>
-          <div>
+          <div outputclass="row">
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/morph/thumbnail.png"/>
@@ -293,7 +293,7 @@
           </div>
         </li>
         <li>
-          <div>
+          <div outputclass="row">
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image
@@ -340,7 +340,7 @@
           </div>
         </li>
         <li>
-          <div>
+          <div outputclass="row">
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/slate/thumbnail.png"/>
@@ -387,7 +387,7 @@
           </div>
         </li>
         <li>
-          <div>
+          <div outputclass="row">
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image
@@ -434,7 +434,7 @@
           </div>
         </li>
         <li>
-          <div>
+          <div outputclass="row">
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/yeti/thumbnail.png"/>
