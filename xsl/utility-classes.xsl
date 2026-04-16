@@ -689,7 +689,13 @@
                                  contains(@class, ' bootstrap-d/badge ') or
                                  contains(@class, ' bootstrap-d/list-group ') or
                                  contains(@class, ' bootstrap-d/carousel ') or
-                                 contains(@class, ' bootstrap-d/button ')
+                                 contains(@class, ' bootstrap-d/button ') or
+                                 contains(@class, ' topic/table ') or
+                                 contains(@class, ' topic/thead ') or
+                                 contains(@class, ' topic/tbody ') or
+                                 contains(@class, ' topic/tfoot ') or
+                                 contains(@class, ' topic/row ') or
+                                 contains(@class, ' topic/entry '))"
     >
        <xsl:text>text-bg-</xsl:text>
        <xsl:value-of select="@color"/>
