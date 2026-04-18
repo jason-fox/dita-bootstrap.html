@@ -679,6 +679,17 @@
     <xsl:next-match/>
   </xsl:template>
 
+  <!-- Add a Bootstrap Link CSS color to xrefs and links -->
+  <xsl:template
+    match="*[contains(@class, ' topic/xref ') or contains(@class, ' topic/link ')][@color]"
+    mode="get-output-class"
+  >
+    <xsl:text>link-</xsl:text>
+    <xsl:value-of select="@color"/>
+    <xsl:text> </xsl:text>
+    <xsl:next-match/>
+  </xsl:template>
+
   <!-- Process decorations (color, border, rounded, width) on any element -->
   <xsl:template
     match="*[@color or @border or @bordercolor or @rounded or @width]"
@@ -688,6 +699,8 @@
     <xsl:if
       test="@color and not(contains(@class, ' topic/note ') or 
                                  contains(@class, ' topic/pre ') or 
+                                 contains(@class, ' topic/xref ') or 
+                                 contains(@class, ' topic/link ') or 
                                  contains(@class, ' bootstrap-d/card ') or 
                                  contains(@class, ' bootstrap-d/alert ') or
                                  contains(@class, ' bootstrap-d/badge ') or
