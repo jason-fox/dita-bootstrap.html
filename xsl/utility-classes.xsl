@@ -917,7 +917,7 @@
                           tokenize($outputclass-attribute, '\s+')"
     />
     <xsl:if test="exists($classes)">
-      <xsl:attribute name="class" select="distinct-values($classes)" separator=" "/>
+      <xsl:attribute name="class" select="distinct-values($classes)[. != 'tooltip' and . != 'popover']" separator=" "/>
     </xsl:if>
   </xsl:template>
 
