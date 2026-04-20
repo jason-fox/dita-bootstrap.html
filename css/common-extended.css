@@ -93,8 +93,18 @@
   color: var(--dita-prussian-blue);
 }
 
-.nav-pills .active :is(.cmdname, .codeph, .filepath, .option, .parmname,
-  .numcharref, .parameterentity, .textentity, .xmlatt, .xmlelement, .xmlnsname, .xmlpi) {
+.nav-pills .active .cmdname,
+.nav-pills .active .codeph,
+.nav-pills .active .filepath,
+.nav-pills .active .option,
+.nav-pills .active .parmname,
+.nav-pills .active .numcharref,
+.nav-pills .active .parameterentity,
+.nav-pills .active .textentity,
+.nav-pills .active .xmlatt,
+.nav-pills .active .xmlelement,
+.nav-pills .active .xmlnsname,
+.nav-pills .active .xmlpi {
   color: var(--bs-nav-pills-link-active-color);
 }
 
