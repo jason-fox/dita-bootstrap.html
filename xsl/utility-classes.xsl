@@ -681,7 +681,7 @@
 
   <!-- Add a Bootstrap Link CSS color to xrefs and links -->
   <xsl:template
-    match="*[contains(@class, ' topic/xref ') or contains(@class, ' topic/link ')][@color]"
+    match="*[contains(@class, ' topic/xref ') or contains(@class, ' topic/link ')][@color][not(contains(@class, ' bootstrap-d/button '))][not(contains(@outputclass, 'btn-'))]"
     mode="get-output-class"
   >
     <xsl:text>link-</xsl:text>
