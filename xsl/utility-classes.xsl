@@ -287,7 +287,7 @@
 
   <!-- Change the default Bootstrap CSS classes of buttons -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/button ')]" mode="bootstrap-class" priority="10">
-    <xsl:text>btn-</xsl:text>
+    <xsl:text>btn btn-</xsl:text>
     <xsl:if test="@outline = 'yes'">
        <xsl:text>outline-</xsl:text>
     </xsl:if>
@@ -884,8 +884,8 @@
     </xsl:variable>
 
     <xsl:variable name="using-output-class" as="xs:string*">
-       <xsl:value-of select="tokenize(normalize-space($output-class), '\s+')"/>
-       <xsl:value-of select="tokenize(normalize-space($default), '\s+')"/>
+       <xsl:sequence select="tokenize(normalize-space($output-class), '\s+')"/>
+       <xsl:sequence select="tokenize(normalize-space($default), '\s+')"/>
     </xsl:variable>
 
 
