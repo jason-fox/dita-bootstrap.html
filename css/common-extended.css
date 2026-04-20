@@ -93,6 +93,11 @@
   color: var(--dita-prussian-blue);
 }
 
+.nav-pills .active :is(.cmdname, .codeph, .filepath, .option, .parmname,
+  .numcharref, .parameterentity, .textentity, .xmlatt, .xmlelement, .xmlnsname, .xmlpi) {
+  color: var(--bs-nav-pills-link-active-color);
+}
+
 .boolean {
   color: var(--bs-green);
 }
