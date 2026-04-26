@@ -14,7 +14,7 @@
         <i class="bi bi-list"/>
       </button>
     </div>
-    <a class="navbar-brand" href="https://infotexture.github.io/dita-bootstrap">
+    <a class="navbar-brand" href="https://dita-bootstrap.github.io">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -48,19 +48,19 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            href="https://www.dita-ot.org/plugins#!net.infotexture.dita-bootstrap"
+            href="https://www.dita-ot.org/plugins#!org.dita-bootstrap.html"
           >Plugin</a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link"
-            href="https://github.com/infotexture/dita-bootstrap/releases"
+            href="https://github.com/dita-bootstrap/dita-bootstrap/releases"
           >Releases</a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link"
-            href="https://github.com/infotexture/dita-bootstrap"
+            href="https://github.com/dita-bootstrap/dita-bootstrap"
           >Source</a>
         </li>
         <li class="nav-item">

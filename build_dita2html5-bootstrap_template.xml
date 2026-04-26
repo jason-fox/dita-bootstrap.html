@@ -18,7 +18,7 @@
   <target name="dita-bootstrap.css.copy" description="Copy CSS files">
     <property
       name="dita-bootstrap.css.dir"
-      value="${dita.plugin.net.infotexture.dita-bootstrap.dir}/css/"
+      value="${dita.plugin.org.dita-bootstrap.html.dir}/css/"
     />
 
     <!-- Add Common CSS where Bootstrap variables override DITA-OT defaults -->
@@ -130,7 +130,7 @@
     <mkdir dir="${dita.output.dir}/js"/>
     <copy todir="${dita.output.dir}/js">
       <fileset
-        dir="${dita.plugin.net.infotexture.dita-bootstrap.dir}/includes"
+        dir="${dita.plugin.org.dita-bootstrap.html.dir}/includes"
         includes="popovers.js"
       />
     </copy>
@@ -141,7 +141,7 @@
     <mkdir dir="${dita.output.dir}/js"/>
     <copy todir="${dita.output.dir}/js">
       <fileset
-        dir="${dita.plugin.net.infotexture.dita-bootstrap.dir}/includes"
+        dir="${dita.plugin.org.dita-bootstrap.html.dir}/includes"
         includes="dark-mode-toggler.js"
       />
     </copy>
@@ -151,12 +151,12 @@
     <!-- Location of page header template with hard-coded links -->
     <property
       name="args.hdr"
-      location="${dita.plugin.net.infotexture.dita-bootstrap.dir}/includes/hdr.navbar.default.xml"
+      location="${dita.plugin.org.dita-bootstrap.html.dir}/includes/hdr.navbar.default.xml"
     />
     <!-- Location of bootstrap icons if required -->
     <makeurl
       property="icons.cdn.path"
-      file="${dita.plugin.net.infotexture.dita-bootstrap.dir}/includes/bootstrap.icons.hdf.xml"
+      file="${dita.plugin.org.dita-bootstrap.html.dir}/includes/bootstrap.icons.hdf.xml"
     />
     <!--
       For DITA-OT 3.0, 3.1 and 3.2 import a version of the
@@ -176,7 +176,7 @@
     <!-- Entrypoint for XSL transforms -->
     <property
       name="args.xsl"
-      location="${dita.plugin.net.infotexture.dita-bootstrap.dir}/xsl/dita2html5-${bootstrap.xsl}"
+      location="${dita.plugin.org.dita-bootstrap.html.dir}/xsl/dita2html5-${bootstrap.xsl}"
     />
 
     <makeurl
@@ -218,8 +218,8 @@
     </condition>
     <condition
       property="args.hdf"
-      value="${dita.plugin.net.infotexture.dita-bootstrap.dir}/includes/bootstrap.hdf.rtl.xml"
-      else="${dita.plugin.net.infotexture.dita-bootstrap.dir}/includes/bootstrap.hdf.xml"
+      value="${dita.plugin.org.dita-bootstrap.html.dir}/includes/bootstrap.hdf.rtl.xml"
+      else="${dita.plugin.org.dita-bootstrap.html.dir}/includes/bootstrap.hdf.xml"
     >
       <equals arg1="${bidi.include}" arg2="yes"/>
     </condition>
@@ -251,8 +251,8 @@
     />
     <condition
       property="bootstrap.template.file"
-      value="${dita.plugin.net.infotexture.dita-bootstrap.dir}/includes/script-only.hdf.xml"
-      else="${dita.plugin.net.infotexture.dita-bootstrap.dir}/includes/theme.hdf.xml"
+      value="${dita.plugin.org.dita-bootstrap.html.dir}/includes/script-only.hdf.xml"
+      else="${dita.plugin.org.dita-bootstrap.html.dir}/includes/theme.hdf.xml"
     >
       <equals arg1="${bootstrap.theme}" arg2="none"/>
     </condition>
@@ -286,7 +286,7 @@
     />
     <property name="args.hdf" value="${bootstrap.theme.file}"/>
     <property
-      file="${dita.plugin.net.infotexture.dita-bootstrap.dir}/cfg/${bootstrap.theme}.properties"
+      file="${dita.plugin.org.dita-bootstrap.html.dir}/cfg/${bootstrap.theme}.properties"
     />
   </target>
 </project>

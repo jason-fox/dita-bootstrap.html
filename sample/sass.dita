@@ -12,7 +12,7 @@
   <title>Bootstrap Sass</title>
   <shortdesc>For more extensive customizations, you can install the
     <xref
-      href="https://github.com/infotexture/dita-bootstrap.sass"
+      href="https://github.com/dita-bootstrap/dita-bootstrap.sass"
       format="html"
       scope="external"
     >dita-bootstrap.sass</xref> plug-in and create a custom theme with
@@ -32,8 +32,8 @@
       <p>Use the <cmdname>dita</cmdname> command to add the required plug-ins to your DITA Open Toolkit
         installation:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>install</parmname> fox.jason.extend.css
-<cmdname>dita</cmdname> <parmname>install</parmname> net.infotexture.dita-bootstrap
-<cmdname>dita</cmdname> <parmname>install</parmname> net.infotexture.dita-bootstrap.sass</codeblock>
+<cmdname>dita</cmdname> <parmname>install</parmname> org.dita-bootstrap.html
+<cmdname>dita</cmdname> <parmname>install</parmname> org.dita-bootstrap.sass</codeblock>
       <note type="note">The <cite>DITA Bootstrap Sass</cite> plug-in uses the
         <xref href="https://nodejs.org/" format="html" scope="external">Node.js</xref> JavaScript runtime to generate
         the <filepath>theme.css</filepath> file. Node.js must therefore be present for the index to be generated
@@ -44,7 +44,7 @@
       <title>Generating a CSS theme from Sass</title>
       <p>To generate a CSS theme from your custom Sass source files, follow the instructions in the
         <xref
-          href="https://github.com/infotexture/dita-bootstrap.sass/blob/master/sass/override.scss"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.sass/blob/master/sass/override.scss"
           format="html"
           scope="external"
         ><filepath>dita-bootstrap.sass/sass/override.scss</filepath></xref> file and use the
@@ -54,7 +54,7 @@
       <p>A <filepath>theme.css</filepath> file will be generated in the <filepath>sass</filepath> folder. To preview the
         results of your customizations, open the
         <xref
-          href="https://github.com/infotexture/dita-bootstrap.sass/blob/master/sass/index.html"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.sass/blob/master/sass/index.html"
           format="html"
           scope="external"
         ><filepath>dita-bootstrap.sass/sass/index.html</filepath></xref> file in a web browser.</p>

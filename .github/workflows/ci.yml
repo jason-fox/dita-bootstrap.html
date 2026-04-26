@@ -36,8 +36,8 @@ jobs:
             nodejs -v
           plugins: |
             fox.jason.extend.css
-            https://github.com/infotexture/dita-bootstrap/archive/develop.zip
-            net.infotexture.dita-bootstrap.lunr
+            https://github.com/dita-bootstrap/dita-bootstrap/archive/develop.zip
+            https://github.com/dita-bootstrap/dita-bootstrap.lunr/archive/develop.zip
             fox.jason.prismjs
             fox.jason.favicon
             fox.jason.open-graph

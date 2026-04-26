@@ -47,22 +47,22 @@
     xmlns:dita="http://dita-ot.sourceforge.net"
   />
 
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/accordion.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/breadcrumb.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/card.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/carousel.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/collapse.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/hi-d.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/nav.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/offcanvas.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/pagination.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/popovers.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/scrollspy.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/tables.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/tabs.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/tooltips.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:Customization/xsl/topic.xsl"/>
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:xsl/utility-classes.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/accordion.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/breadcrumb.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/card.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/carousel.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/collapse.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/hi-d.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/nav.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/offcanvas.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/pagination.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/popovers.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/scrollspy.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/tables.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/tabs.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/tooltips.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/topic.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:xsl/utility-classes.xsl"/>
 
   <dita:extension
     id="dita.xsl.html5-bootstrap"

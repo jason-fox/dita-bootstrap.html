@@ -6,7 +6,7 @@
     For DITA-OT 3.0, 3.1 and 3.2 import a version of the
     HTML transform without reference to Hazard Statements
   -->
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:xsl/dita2html5-legacy-3.0.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:xsl/dita2html5-legacy-3.0.xsl"/>
 
   <xsl:output
     method="html"
