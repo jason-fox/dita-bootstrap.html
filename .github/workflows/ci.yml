@@ -36,12 +36,12 @@ jobs:
             nodejs -v
           plugins: |
             fox.jason.extend.css
-            https://github.com/infotexture/dita-bootstrap/archive/develop.zip
-            net.infotexture.dita-bootstrap.lunr
-            fox.jason.prismjs
+            https://github.com/dita-bootstrap/dita-bootstrap.html/archive/develop.zip
+            https://github.com/dita-bootstrap/dita-bootstrap.lunr/archive/develop.zip
+            https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
             fox.jason.favicon
             fox.jason.open-graph
-            https://github.com/jason-fox/fox.jason.theme-switcher/archive/master.zip
+            https://github.com/dita-bootstrap/dita-bootstrap.theme-switcher/archive/develop.zip
           project: .github/dita-ot/html.xml
 
       - name: Deploy HTML 🚀
