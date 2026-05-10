@@ -507,13 +507,13 @@
      <parmname>--args.hdr</parmname>=<filepath>path/to/your-header.xml</filepath></codeblock>
       <p>The plug-in includes a sample
         <xref
-          href="https://github.com/dita-bootstrap/dita-bootstrap/blob/develop/includes/hdr.navbar.example.xml"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.navbar.example.xml"
           format="html"
           scope="external"
         >header alternative with a light navbar</xref>.</p>
       <p>No footer is added by default, but the plug-in also includes a sample
         <xref
-          href="https://github.com/dita-bootstrap/dita-bootstrap/blob/develop/includes/ftr.content.example.xml"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/ftr.content.example.xml"
           format="html"
           scope="external"
         >footer file</xref> and Bootstrap also offers additional <xref

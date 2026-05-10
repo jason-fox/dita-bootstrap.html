@@ -189,7 +189,7 @@
         <xref href="https://octicons.github.com/" format="html" scope="external">Octicons</xref> are available. To use
         an alternative set of icons, modify the
         <xref
-          href="https://github.com/dita-bootstrap/dita-bootstrap/blob/master/includes/bootstrap.icons.hdf.xml"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/master/includes/bootstrap.icons.hdf.xml"
           format="html"
           scope="external"
         >sample header</xref> or specify the path of the Icons CDN file using the

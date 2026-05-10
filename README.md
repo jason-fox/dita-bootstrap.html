@@ -262,5 +262,5 @@ Within the sample documentation, where necessary, the texts describing the usage
 [16]: ./xsl/html5-bootstrap-template.xsl
 [17]: https://getbootstrap.com/docs/5.3/components/scrollspy/
 [18]: https://indieweb.social/@infotexture
-[19]: https://github.com/dita-bootstrap/dita-bootstrap/issues/new
+[19]: https://github.com/dita-bootstrap/dita-bootstrap.html/issues/new
 [20]: https://help.github.com/articles/using-pull-requests/

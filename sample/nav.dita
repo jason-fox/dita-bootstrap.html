@@ -143,7 +143,7 @@
 
       <p>The plug-in includes a sample
         <xref
-          href="https://github.com/dita-bootstrap/dita-bootstrap/blob/develop/includes/hdr.sidebar.example.xml"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.sidebar.example.xml"
           format="html"
           scope="external"
         >header</xref>.</p>
@@ -158,7 +158,7 @@
 
       <p>The plug-in also includes a sample
         <xref
-          href="https://github.com/dita-bootstrap/dita-bootstrap/blob/develop/includes/ftr.sidebar.example.xml"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/ftr.sidebar.example.xml"
           format="html"
           scope="external"
         >custom footer</xref>.</p>
@@ -195,7 +195,7 @@
       </fig>
       <p>The plug-in also includes a sample
         <xref
-          href="https://github.com/dita-bootstrap/dita-bootstrap/blob/develop/includes/hdr.topbar.example.xml"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.topbar.example.xml"
           format="html"
           scope="external"
         >custom header</xref>.</p>
