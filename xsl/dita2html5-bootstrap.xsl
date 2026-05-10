@@ -2,7 +2,7 @@
 <!-- Copyright © 2017 · infotexture · Roger W. Fienhold Sheen -->
 <!-- See the accompanying LICENSE file for applicable license -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0">
-  <xsl:import href="plugin:net.infotexture.dita-bootstrap:xsl/dita2html5-bootstrapImpl.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:xsl/dita2html5-bootstrapImpl.xsl"/>
 
   <xsl:output
     method="html"

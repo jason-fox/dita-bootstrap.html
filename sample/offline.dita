@@ -44,7 +44,7 @@
           <fig>
             <title>Sample <filepath>plugin.xml</filepath> file</title>
             <codeblock outputclass="language-xml">&lt;plugin id="com.example.bootstrap-offline" version="1.0.0"&gt;
-  &lt;require plugin="net.infotexture.dita-bootstrap" /&gt;
+  &lt;require plugin="org.dita-bootstrap.html" /&gt;
   &lt;feature extension="ant.import" file="process_offline.xml" /&gt;
   &lt;feature extension="bootstrap.process.pre" value="bootstrap.offline" /&gt;
 
@@ -58,7 +58,7 @@
           </fig>
           <note type="note">This plug-in will extend the default HTML5 Bootstrap transformation, so the
               <xmlelement>require</xmlelement> element explicitly defines
-              <filepath>net.infotexture.dita-bootstrap</filepath> as a dependency.</note>
+              <filepath>org.dita-bootstrap.html</filepath> as a dependency.</note>
         </li>
         <li>
           <p>In the <filepath>com.example.bootstrap-offline</filepath> directory, create a subdirectory named

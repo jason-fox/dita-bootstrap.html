@@ -48,7 +48,7 @@
       <p>Use the <cmdname>dita</cmdname> command to add the <term>DITA Bootstrap Lunr Search</term>
        plug-in to your DITA Open Toolkit installation:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-        >install</parmname> net.infotexture.dita-bootstrap.lunr</codeblock>
+        >install</parmname> org.dita-bootstrap.lunr</codeblock>
     </section>
 
     <section id="installing-node.js">
@@ -100,7 +100,7 @@
 &lt;/ul&gt;</codeblock>
       <p>The <term>DITA Bootstrap Lunr Search</term> plug-in includes a sample search box in its
           <xref
-          href="https://github.com/infotexture/dita-bootstrap.lunr/blob/master/includes/hdr.navbar.lunr.xml"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.lunr/blob/master/includes/hdr.navbar.lunr.xml"
           format="html"
           scope="external"
         >header navbar</xref>.</p>

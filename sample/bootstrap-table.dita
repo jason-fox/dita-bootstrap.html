@@ -26,10 +26,10 @@
         and adds the necessary CSS and JavaScript for dynamic tables with search, sort, and pagination functions.</p>
       <p>For the full documentation, see
         <xref
-        href="https://infotexture.github.io/dita-bootstrap.table/"
+        href="https://dita-bootstrap.github.io/dita-bootstrap.table/"
         format="html"
         scope="external"
-      >infotexture.github.io/dita-bootstrap.table</xref>.</p>
+      >dita-bootstrap.github.io/dita-bootstrap.table</xref>.</p>
     <note type="note">If you just want to style DITA tables with the standard Bootstrap table styles, you don’t need a 
       separate plug-in. See <xref href="tables.dita"/> for details on the output classes that the 
       <term>DITA Bootstrap</term> plug-in supports.</note>
@@ -38,7 +38,7 @@
       <p>Use the <cmdname>dita</cmdname> command to add the <term>DITA Bootstrap Table</term>
        plug-in to your DITA Open Toolkit installation:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-        >install</parmname> net.infotexture.dita-bootstrap.table</codeblock>
+        >install</parmname> org.dita-bootstrap.table</codeblock>
     </section>
 
     <section>

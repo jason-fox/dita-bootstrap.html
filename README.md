@@ -29,14 +29,14 @@ DITA-OT 3.5 and newer:
 
 ```console
 dita install fox.jason.extend.css
-dita install net.infotexture.dita-bootstrap
+dita install org.dita-bootstrap.html
 ```
 
 DITA-OT 3.3 and newer:
 
 ```console
 dita --install fox.jason.extend.css
-dita --install net.infotexture.dita-bootstrap
+dita --install org.dita-bootstrap.html
 ```
 
 DITA-OT 3.2 and older:
@@ -45,7 +45,7 @@ DITA-OT 3.2 and older:
 dita --install \
        https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
 dita --install \
-       https://github.com/infotexture/dita-bootstrap/archive/master.zip
+       https://github.com/dita-bootstrap/dita-bootstrap.html/archive/master.zip
 ```
 
 ## Using
@@ -145,7 +145,7 @@ dita --input=path/to/your.ditamap \
      --nav-toc=list-group-partial
 ```
 
-For an example of `collapsible` styling, see the output at [infotexture.github.io/dita-bootstrap][15].
+For an example of `collapsible` styling, see the output at [dita-bootstrap.github.io][15].
 
 Additionally, the first-level navigation menu can be switched to a horizontal Bootstrap menu bar to reduce the depth of the ToC.
 
@@ -248,7 +248,7 @@ Within the sample documentation, where necessary, the texts describing the usage
 [2]: https://getbootstrap.com/docs/5.3
 [3]: https://bootswatch.com
 [4]: https://sass-lang.com
-[5]: https://github.com/infotexture/dita-bootstrap.sass
+[5]: https://github.com/dita-bootstrap/dita-bootstrap.sass
 [6]: https://getbootstrap.com/docs/5.3/examples/navbars/
 [7]: https://getbootstrap.com/docs/5.3/examples/headers/
 [8]: ./includes/hdr.navbar.example.xml
@@ -258,9 +258,9 @@ Within the sample documentation, where necessary, the texts describing the usage
 [12]: https://getbootstrap.com/docs/5.3/components/list-group/
 [13]: https://getbootstrap.com/docs/5.3/components/collapse/
 [14]: https://getbootstrap.com/docs/5.3/customize/color-modes/#dark-mode
-[15]: https://infotexture.github.io/dita-bootstrap
+[15]: https://dita-bootstrap.github.io
 [16]: ./xsl/html5-bootstrap-template.xsl
 [17]: https://getbootstrap.com/docs/5.3/components/scrollspy/
 [18]: https://indieweb.social/@infotexture
-[19]: https://github.com/infotexture/dita-bootstrap/issues/new
+[19]: https://github.com/dita-bootstrap/dita-bootstrap.html/issues/new
 [20]: https://help.github.com/articles/using-pull-requests/

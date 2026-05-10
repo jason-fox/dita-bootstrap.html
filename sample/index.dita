@@ -35,20 +35,20 @@
         <title>DITA-OT 3.5 and newer:</title>
           <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
           >install</parmname> fox.jason.extend.css
-<cmdname>dita</cmdname> <parmname>install</parmname> net.infotexture.dita-bootstrap</codeblock>
+<cmdname>dita</cmdname> <parmname>install</parmname> org.dita-bootstrap.html</codeblock>
       </section>
       <section>
         <title>DITA-OT 3.3 and newer:</title>
           <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
           >--install</parmname> fox.jason.extend.css
-<cmdname>dita</cmdname> <parmname>--install</parmname> net.infotexture.dita-bootstrap</codeblock>
+<cmdname>dita</cmdname> <parmname>--install</parmname> org.dita-bootstrap.html</codeblock>
       </section>
       <section>
         <title>DITA-OT 3.2 and older:</title>
         <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
           >--install</parmname> https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
 <cmdname>dita</cmdname> <parmname
-          >--install</parmname> https://github.com/infotexture/dita-bootstrap/archive/master.zip</codeblock>
+          >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.html/archive/master.zip</codeblock>
       </section>
     </bodydiv>
     <section>
@@ -452,11 +452,7 @@
         </li>
       </ol>
       <note type="note">You can switch between the available themes via the CSS dropdown in the menu bar at
-        <xref
-          href="https://infotexture.github.io/dita-bootstrap/"
-          format="html"
-          scope="external"
-        >infotexture.github.io/dita-bootstrap</xref>.
+        <xref href="https://dita-bootstrap.github.io/" format="html" scope="external">dita-bootstrap.github.io</xref>.
       </note>
     </section>
     <section>
@@ -482,7 +478,7 @@
       <note type="tip">For more extensive customizations with
         <xref href="https://sass-lang.com" format="html" scope="external">Sass</xref>, you may want to install the
         <xref
-          href="https://github.com/infotexture/dita-bootstrap.sass"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.sass"
           format="html"
           scope="external"
         >dita-bootstrap.sass</xref> plug-in.</note>
@@ -511,13 +507,13 @@
      <parmname>--args.hdr</parmname>=<filepath>path/to/your-header.xml</filepath></codeblock>
       <p>The plug-in includes a sample
         <xref
-          href="https://github.com/infotexture/dita-bootstrap/blob/develop/includes/hdr.navbar.example.xml"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.navbar.example.xml"
           format="html"
           scope="external"
         >header alternative with a light navbar</xref>.</p>
       <p>No footer is added by default, but the plug-in also includes a sample
         <xref
-          href="https://github.com/infotexture/dita-bootstrap/blob/develop/includes/ftr.content.example.xml"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/ftr.content.example.xml"
           format="html"
           scope="external"
         >footer file</xref> and Bootstrap also offers additional <xref
@@ -588,10 +584,10 @@
 
        <note type="note">For an example of <option>collapsible</option> styling, see the output at
         <xref
-          href="https://infotexture.github.io/dita-bootstrap/"
+          href="https://dita-bootstrap.github.io/"
           format="html"
           scope="external"
-        >infotexture.github.io/dita-bootstrap</xref>. </note>
+        >dita-bootstrap.github.io</xref>. </note>
     </section>
     <section>
       <title>Common Bootstrap utility classes</title>
