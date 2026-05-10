@@ -4,7 +4,7 @@
   "homepage": "https://dita-bootstrap.github.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dita-bootstrap/dita-bootstrap.git"
+    "url": "https://github.com/dita-bootstrap/dita-bootstrap.html.git"
   },
   "license": "Apache-2.0",
   "scripts": {

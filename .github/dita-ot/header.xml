@@ -14,7 +14,7 @@
         <i class="bi bi-list"/>
       </button>
     </div>
-    <a class="navbar-brand" href="https://dita-bootstrap.github.io">
+    <a class="navbar-brand" href="https://dita-bootstrap.github.io/dita-bootstrap.html">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -54,13 +54,13 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            href="https://github.com/dita-bootstrap/dita-bootstrap/releases"
+            href="https://github.com/dita-bootstrap/dita-bootstrap.html/releases"
           >Releases</a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link"
-            href="https://github.com/dita-bootstrap/dita-bootstrap"
+            href="https://github.com/dita-bootstrap/dita-bootstrap.html"
           >Source</a>
         </li>
         <li class="nav-item">
