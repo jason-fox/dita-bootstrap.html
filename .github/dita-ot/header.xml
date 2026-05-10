@@ -14,7 +14,10 @@
         <i class="bi bi-list"/>
       </button>
     </div>
-    <a class="navbar-brand" href="https://dita-bootstrap.github.io/dita-bootstrap.html">
+    <a
+      class="navbar-brand"
+      href="https://dita-bootstrap.github.io/dita-bootstrap.html"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
