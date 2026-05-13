@@ -500,21 +500,25 @@ h6 {
 }
 
 /* 9. Alerts & Notes (DITA Notes) */
-.alert:not(.card) {
+.alert,
+.note {
     padding: 1.25rem 1.5rem;
     margin-bottom: 1.5rem;
     border: none !important;
-    border-radius: 0.5rem !important;
+}
+
+.alert:not(.card),
+.note:not(.card) {
     box-shadow: none !important;
 }
 
-.note:not(.card) {
-    padding: 1.25rem 1.5rem;
-    margin-bottom: 1.5rem;
-    border: none !important;
+.alert {
+    border-radius: 0.5rem !important;
+}
+
+.note {
     border-left: 6px solid transparent !important;
     border-radius: 5px !important;
-    box-shadow: none !important;
 }
 
 .alert-primary,
