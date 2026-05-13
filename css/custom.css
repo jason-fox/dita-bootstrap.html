@@ -165,11 +165,25 @@ h6 {
     box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.1), 0 15px 35px -5px rgba(0, 0, 0, 0.05);
 }
 
-.card-header,
+.card-header {
+    padding: 0.75rem 1.5rem !important;
+    background-color: transparent !important;
+    border-bottom: 2px solid #f5f5f5 !important;
+    font-weight: 400 !important;
+}
+
 .card-footer {
-    background-color: transparent;
-    border: none !important;
-    font-weight: 500;
+    padding: 0.75rem 1.5rem !important;
+    background-color: transparent !important;
+    border-top: 2px solid #f5f5f5 !important;
+}
+
+[data-bs-theme='dark'] .card-header {
+    border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-bs-theme='dark'] .card-footer {
+    border-top-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* 4. Material Buttons */
@@ -433,6 +447,23 @@ h6 {
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
+/* Vertical Nav Alignment */
+.flex-column.nav-pills .nav-link,
+.flex-column.nav-tabs .nav-link,
+.nav-pills-vertical .nav-link {
+    width: 100% !important;
+    text-align: center;
+    margin-bottom: 0.5rem !important; /* Force vertical separation */
+    display: block !important;
+}
+
+.nav-pills-vertical {
+    flex-direction: column !important;
+    display: flex;
+    gap: 0.5rem !important;
+    margin-right: 2.5rem !important; /* Increased gap to content */
+}
+
 .nav-tabs .nav-link {
     text-transform: uppercase !important;
     font-weight: 500 !important;
@@ -469,61 +500,77 @@ h6 {
 }
 
 /* 9. Alerts & Notes (DITA Notes) */
-.alert,
-.note {
+.alert:not(.card) {
     padding: 1.25rem 1.5rem;
     margin-bottom: 1.5rem;
     border: none !important;
     border-radius: 0.5rem !important;
-    box-shadow: var(--shadow-1);
+    box-shadow: none !important;
+}
+
+.note:not(.card) {
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: none !important;
+    border-left: 6px solid transparent !important;
+    border-radius: 5px !important;
+    box-shadow: none !important;
 }
 
 .alert-primary,
 .note.note-primary {
-    background-color: #e1f5fe;
-    color: #01579b;
+    background-color: #E2EAF7;
+    color: #2F5AA2;
+    border-left-color: #2F5AA2 !important;
 }
 
 .alert-secondary,
 .note.note-secondary {
     background-color: #f5f5f5;
     color: #424242;
+    border-left-color: #424242 !important;
 }
 
 .alert-success,
 .note.note-success {
-    background-color: #e8f5e9;
-    color: #1b5e20;
+    background-color: #E1F0E5;
+    color: #1B5E20;
+    border-left-color: #1B5E20 !important;
 }
 
 .alert-danger,
 .note.note-danger {
-    background-color: #ffebee;
-    color: #b71c1c;
+    background-color: #F9E3E8;
+    color: #B71C1C;
+    border-left-color: #B71C1C !important;
 }
 
 .alert-warning,
 .note.note-warning {
-    background-color: #fffde7;
-    color: #f57f17;
+    background-color: #FBF1DD;
+    color: #896110;
+    border-left-color: #896110 !important;
 }
 
 .alert-info,
 .note.note-info {
-    background-color: #e3f2fd;
-    color: #0d47a1;
+    background-color: #E8F5FD;
+    color: #0D47A1;
+    border-left-color: #0D47A1 !important;
 }
 
 .alert-light,
 .note.note-light {
     background-color: #fafafa;
     color: #616161;
+    border-left-color: #bdbdbd !important;
 }
 
 .alert-dark,
 .note.note-dark {
     background-color: #eeeeee;
     color: #212121;
+    border-left-color: #212121 !important;
 }
 
 .alert-heading {
