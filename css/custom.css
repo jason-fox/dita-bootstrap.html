@@ -278,11 +278,17 @@ h6 {
     border: 2px solid var(--bs-dark) !important;
 }
 
-.btn-outline-primary:hover, .btn-outline-secondary:hover, .btn-outline-success:hover, 
-.btn-outline-danger:hover, .btn-outline-warning:hover, .btn-outline-info:hover, 
-.btn-outline-light:hover, .btn-outline-dark:hover {
-    box-shadow: 0 8px 9px -4px rgba(0,0,0,0.15), 0 4px 18px 0 rgba(0,0,0,0.1) !important;
-    transform: translateY(0); /* MDB outline buttons don't usually lift as much as solid */
+.btn-outline-primary:hover,
+.btn-outline-secondary:hover,
+.btn-outline-success:hover,
+.btn-outline-danger:hover,
+.btn-outline-warning:hover,
+.btn-outline-info:hover,
+.btn-outline-light:hover,
+.btn-outline-dark:hover {
+    box-shadow: 0 8px 9px -4px rgba(0, 0, 0, 0.15), 0 4px 18px 0 rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(0);
+    /* MDB outline buttons don't usually lift as much as solid */
 }
 
 /* 12. Badges */
@@ -321,8 +327,8 @@ h6 {
 
 /* 14. List Group (Material Style) */
 .list-group {
-    box-shadow: var(--shadow-1);
     border-radius: 0.5rem;
+    border: 1px solid #eee;
 }
 
 .list-group-item {
@@ -337,15 +343,19 @@ h6 {
     border-bottom: none;
 }
 
+.list-group-item:first-child {
+    border-top: none;
+}
+
 .list-group-item.active {
     background-color: var(--bs-primary) !important;
     border-color: var(--bs-primary) !important;
-    box-shadow: var(--shadow-1);
 }
 
-.list-group-flush {
-    box-shadow: none;
+list-group-flush {
+    border: none;
 }
+
 
 .btn:hover,
 .btn:focus {
@@ -453,7 +463,8 @@ h6 {
 .nav-pills-vertical .nav-link {
     width: 100% !important;
     text-align: center;
-    margin-bottom: 0.5rem !important; /* Force vertical separation */
+    margin-bottom: 0.5rem !important;
+    /* Force vertical separation */
     display: block !important;
 }
 
@@ -461,7 +472,8 @@ h6 {
     flex-direction: column !important;
     display: flex;
     gap: 0.5rem !important;
-    margin-right: 2.5rem !important; /* Increased gap to content */
+    margin-right: 2.5rem !important;
+    /* Increased gap to content */
 }
 
 .nav-tabs .nav-link {
@@ -620,18 +632,15 @@ h6 {
 /* 10. Table Enhancements */
 .table {
     background: #fff;
-    box-shadow: var(--shadow-1);
     border-radius: var(--bs-border-radius);
     overflow: hidden;
 }
 
 .table thead th {
-    background-color: #f5f5f5;
     border-bottom: 2px solid #e0e0e0;
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 0.05em;
-    color: #757575;
 }
 
 /* 11. Explicit Color Overrides to ensure MDB colors take precedence */
