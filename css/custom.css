@@ -529,8 +529,7 @@ list-group-flush {
 }
 
 .note {
-    border-left: 6px solid transparent !important;
-    border-radius: 5px !important;
+    border-left: 6px solid !important
 }
 
 .alert-primary,

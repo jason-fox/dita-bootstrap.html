@@ -136,3 +136,8 @@
 .search-box:focus-visible {
   outline: -webkit-focus-ring-color auto 1px;
 }
+
+.note {
+  border-left: 6px solid;
+  border-left-color: var(--bs-alert-color, transparent);
+}
