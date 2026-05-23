@@ -476,6 +476,10 @@ list-group-flush {
     /* Increased gap to content */
 }
 
+.carousel-indicators .btn {
+   box-shadow: none;
+}
+
 .nav-tabs .nav-link {
     text-transform: uppercase !important;
     font-weight: 500 !important;
