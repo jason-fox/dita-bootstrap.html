@@ -138,11 +138,6 @@
   outline: -webkit-focus-ring-color auto 1px;
 }
 
-.note {
-  border-left: 6px solid;
-  border-left-color: var(--bs-alert-color, transparent);
-}
-
 /*!
  *  This file is part of the DITA Bootstrap plug-in for DITA Open Toolkit.
  *  See the accompanying LICENSE file for applicable licenses.
