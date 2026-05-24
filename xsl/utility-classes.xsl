@@ -596,7 +596,7 @@
               else if (@type='trouble') then 'alert-warning'
               else if (@type='danger') then 'alert-danger'
               else if (@type='notice') then 'alert-info'
-              else if (@type='note') then 'alert-primary'
+              else if (@type='note' or empty(@type)) then 'alert-primary'
               else if (@type='other') then 'alert-dark'
               else 'alert-info'"
         />
@@ -806,7 +806,7 @@
           else if (@type='trouble') then $BOOTSTRAP_ICON_TROUBLE
           else if (@type='danger') then $BOOTSTRAP_ICON_DANGER
           else if (@type='notice') then $BOOTSTRAP_ICON_NOTICE
-          else if (@type='note') then $BOOTSTRAP_ICON_NOTE
+          else if (@type='note' or empty(@type)) then $BOOTSTRAP_ICON_NOTE
           else ''"
       />
     </xsl:variable>
