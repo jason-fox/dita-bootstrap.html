@@ -277,6 +277,24 @@
   </xsl:template>
 
   <xsl:template
+    match="*[contains(@class, ' bootstrap-d/alert ')]//*[contains(@class, ' topic/xref ')]"
+    mode="bootstrap-class"
+    priority="10"
+  >
+    <xsl:text>alert-link </xsl:text>
+    <xsl:next-match/>
+  </xsl:template>
+
+  <xsl:template
+    match="*[contains(@class, ' topic/note ')]//*[contains(@class, ' topic/xref ')]"
+    mode="bootstrap-class"
+    priority="10"
+  >
+    <xsl:text>alert-link </xsl:text>
+    <xsl:next-match/>
+  </xsl:template>
+
+  <xsl:template
     match="*[contains(@class, ' bootstrap-d/alert ')]/*[contains(@class, ' topic/title ')]"
     mode="get-output-class"
     priority="10"
