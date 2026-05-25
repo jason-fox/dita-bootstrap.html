@@ -596,7 +596,7 @@
               else if (@type='trouble') then 'alert-warning'
               else if (@type='danger') then 'alert-danger'
               else if (@type='notice') then 'alert-info'
-              else if (@type='note') then 'alert-primary'
+              else if (@type='note' or (contains(@class, ' topic/note ') and not(contains(@class, ' bootstrap-d/alert ')) and not(contains(@class, ' topic/section ')) and empty(@type))) then 'alert-primary'
               else if (@type='other') then 'alert-dark'
               else 'alert-info'"
         />
@@ -795,7 +795,8 @@
     <xsl:variable name="icon">
       <xsl:value-of
         select="
-          if (@type='tip') then $BOOTSTRAP_ICON_TIP
+          if (@icon or contains(@otherprops, 'icon(') or *[contains(@class, ' topic/title ')]/*[contains(@class, ' bootstrap-d/icon ')]) then ''
+          else if (@type='tip') then $BOOTSTRAP_ICON_TIP
           else if (@type='fastpath') then $BOOTSTRAP_ICON_FASTPATH
           else if (@type='remember') then $BOOTSTRAP_ICON_REMEMBER
           else if (@type='restriction') then $BOOTSTRAP_ICON_RESTRICTION
@@ -806,7 +807,7 @@
           else if (@type='trouble') then $BOOTSTRAP_ICON_TROUBLE
           else if (@type='danger') then $BOOTSTRAP_ICON_DANGER
           else if (@type='notice') then $BOOTSTRAP_ICON_NOTICE
-          else if (@type='note') then $BOOTSTRAP_ICON_NOTE
+          else if (@type='note' or (contains(@class, ' topic/note ') and not(contains(@class, ' bootstrap-d/alert ')) and not(contains(@class, ' topic/section ')) and empty(@type))) then $BOOTSTRAP_ICON_NOTE
           else ''"
       />
     </xsl:variable>
