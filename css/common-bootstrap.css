@@ -4,17 +4,15 @@
  */
 
 :root {
-  --dita-prussian-blue: #1d365d;
-  --dita-maroon: #800000;
+  --dita-prussian-blue: var(--bs-primary-text-emphasis);
+  --dita-maroon: var(--bs-danger-text-emphasis);
   --dita-violet: var(--bs-purple);
 }
 
 .list-group-item.active,
 .nav-link.active,
 [data-bs-theme='dark'] {
-  --dita-prussian-blue: #6a91cf;
   --dita-violet: #cc99cd;
-  --dita-maroon: #ff7676;
 }
 
 .list-group-item {
@@ -48,14 +46,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --dita-prussian-blue: #6a91cf;
     --dita-violet: #cc99cd;
-    --dita-maroon: #ff7676;
   }
 
   [data-bs-theme='light'] {
-    --dita-prussian-blue: #1d365d;
-    --dita-maroon: #800000;
     --dita-violet: var(--bs-purple);
   }
 }
