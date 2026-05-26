@@ -1,0 +1,10 @@
+/*!
+ *  This file is part of the DITA Bootstrap plug-in for DITA Open Toolkit.
+ *  See the accompanying LICENSE file for applicable licenses.
+ */
+
+:root {
+  --dita-prussian-blue: var(--bs-primary-text-emphasis);
+  --dita-maroon: var(--bs-danger-text-emphasis);
+  --dita-violet: var(--bs-purple);
+}
