@@ -21,6 +21,37 @@
       value="${dita.plugin.org.dita-bootstrap.html.dir}/css/"
     />
 
+    <!-- Add DITA colors with bootswatch overrides as necessary -->
+
+    <condition
+      property="dita-bootstrap.bootswatch.css.file"
+      value="${dita-bootstrap.css.dir}/bootswatch-static.css"
+    >
+      <or>
+        <equals arg1="${bootstrap.theme}" arg2="cyborg"/>
+        <equals arg1="${bootstrap.theme}" arg2="darkly"/>
+        <equals arg1="${bootstrap.theme}" arg2="slate"/>
+        <equals arg1="${bootstrap.theme}" arg2="solar"/>
+        <equals arg1="${bootstrap.theme}" arg2="vapor"/>
+      </or>
+    </condition>
+    <property
+      name="dita-bootstrap.bootswatch.css.file"
+      value="${dita-bootstrap.css.dir}/bootswatch-colors.css"
+    />
+
+    <loadfile
+      property="dita-bootstrap.bootswatch.css"
+      srcFile="${dita-bootstrap.bootswatch.css.file}"
+    />
+    <echo
+      append="true"
+      message="${line.separator}${dita-bootstrap.bootswatch.css}"
+      if:set="dita-bootstrap.css.add"
+      file="${extend.css.file}"
+    />
+
+
     <!-- Add Common CSS where Bootstrap variables override DITA-OT defaults -->
     <loadfile
       property="dita-bootstrap.css"

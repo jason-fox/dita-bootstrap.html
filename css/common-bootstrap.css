@@ -3,12 +3,6 @@
  *  See the accompanying LICENSE file for applicable licenses.
  */
 
-:root {
-  --dita-prussian-blue: var(--bs-primary-text-emphasis);
-  --dita-maroon: var(--bs-danger-text-emphasis);
-  --dita-violet: var(--bs-purple);
-}
-
 .list-group-item.active,
 .nav-link.active,
 [data-bs-theme='dark'] {
