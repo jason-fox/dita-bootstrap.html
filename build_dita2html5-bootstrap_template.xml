@@ -32,6 +32,7 @@
         <equals arg1="${bootstrap.theme}" arg2="darkly"/>
         <equals arg1="${bootstrap.theme}" arg2="slate"/>
         <equals arg1="${bootstrap.theme}" arg2="solar"/>
+        <equals arg1="${bootstrap.theme}" arg2="superhero"/>
         <equals arg1="${bootstrap.theme}" arg2="vapor"/>
       </or>
     </condition>
