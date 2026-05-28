@@ -1,13 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<!--
-  Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
-  markup is used throughout the examples describing how to implement these components correctly using outputclass.
-
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
-  and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
--->
 <topic id="collapse">
   <title>Collapse</title>
   <shortdesc>Toggle the visibility of content across your project with a few classes and Bootstrap’s JavaScript
@@ -40,18 +31,34 @@
           <xmlatt>props="collapse-toggle"</xmlatt> to an <xmlelement>xref</xmlelement> element to associate a button to
         a collapse</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <p>
-        <xref outputclass="btn-primary" props="collapse-toggle" href="#collapse1">Toggle Collapse</xref>
+        <xref props="collapse-toggle" href="#collapse1" outputclass="btn-primary">Toggle Collapse</xref>
       </p>
-      <bodydiv outputclass="collapse" id="collapse1">
-        <div outputclass="card card-body">
+      <bodydiv id="collapse1" outputclass="collapse">
+        <section outputclass="card-body card">
           <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
             user activates the relevant trigger.</p>
-        </div>
+        </section>
       </bodydiv>
     </bodydiv>
-    <codeblock>&lt;p&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;p&gt;
+  &lt;button props="collapse-toggle" href="#collapse1"&gt;
+    Toggle Collapse
+  &lt;/button&gt;
+&lt;/p&gt;
+&lt;collapse id="collapse1"&gt;
+  &lt;card outputclass="card-body"&gt;
+      &lt;p&gt;Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.&lt;/p&gt;
+  &lt;/card&gt;
+&lt;/collapse&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;p&gt;
   &lt;xref outputclass="btn-primary" props="collapse-toggle" href="#collapse1"&gt;
     Toggle Collapse
   &lt;/xref&gt;
@@ -61,24 +68,40 @@
       &lt;p&gt;Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/bodydiv&gt;</codeblock>
+        </section>
+      </bodydiv>
     <section>
       <title>Horizontal</title>
       <p>The collapse plugin also supports horizontal collapsing. Add <xmlatt>outputclass="collapse-horizontal"</xmlatt>
         to transition the width instead of height and set an <xmlatt>otherprops="style(width: ...)</xmlatt> on the
         immediate child <xmlelement>div</xmlelement> element.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <p>
-        <xref outputclass="btn-primary" props="collapse-toggle" href="#collapse2">Toggle Width Collapse</xref>
+        <xref props="collapse-toggle" href="#collapse2" outputclass="btn-primary">Toggle Width Collapse</xref>
       </p>
-      <bodydiv outputclass="collapse-horizontal" id="collapse2" otherprops="style(min-height: 120px;)">
-        <div outputclass="card card-body" otherprops="style(width: 300px;)">
-          <p>Some placeholder content for the collapse component. This is some placeholder content for a horizontal
-            collapse. It’s hidden by default and shown when triggered.</p>
-        </div>
+      <bodydiv outputclass="collapse-horizontal collapse" id="collapse2" otherprops="style(min-height: 120px;)">
+      <bodydiv outputclass="card card-body" otherprops="style(width: 300px;)">
+        <p>Some placeholder content for the collapse component. This is some placeholder content for a horizontal
+          collapse. It’s hidden by default and shown when triggered.</p>
       </bodydiv>
     </bodydiv>
-    <codeblock>&lt;p&gt;
+    </bodydiv>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;p&gt;
+  &lt;button props="collapse-toggle" href="#collapse2"&gt;Toggle Width Collapse&lt;/button&gt;
+&lt;/p&gt;
+&lt;collapse outputclass="collapse-horizontal" id="collapse2" otherprops="style(min-height: 120px;)"&gt;
+  &lt;bodydiv outputclass="card card-body" otherprops="style(width: 300px;)"&gt;
+    &lt;p&gt;This is some placeholder content for a horizontal collapse. It’s hidden by default and shown when triggered.&lt;/p&gt;
+  &lt;/bodydiv&gt;
+&lt;/collapse&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;p&gt;
   &lt;xref outputclass="btn-primary" props="collapse-toggle" href="#collapse2"&gt;Toggle Width Collapse&lt;/xref&gt;
 &lt;/p&gt;
 &lt;bodydiv outputclass="collapse-horizontal" id="collapse2" otherprops="style(min-height: 120px;)"&gt;
@@ -86,5 +109,7 @@
     &lt;p&gt;This is some placeholder content for a horizontal collapse. It’s hidden by default and shown when triggered.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/bodydiv&gt;</codeblock>
+        </section>
+      </bodydiv>
   </body>
 </topic>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
   directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
@@ -8,6 +7,7 @@
   This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="buttons">
   <title>Buttons</title>
   <shortdesc>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple
@@ -29,7 +29,7 @@
       <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras
         thrown in for more control.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <xref href="#" outputclass="btn-primary">Primary</xref>
       <xref href="#" outputclass="btn-secondary">Secondary</xref>
       <xref href="#" outputclass="btn-success">Success</xref>
@@ -39,7 +39,22 @@
       <xref href="#" outputclass="btn-light">Light</xref>
       <xref href="#" outputclass="btn-dark">Dark</xref>
     </bodydiv>
-    <codeblock>&lt;xref href="#" outputclass="btn-primary"&gt;Primary&lt;/xref&gt;
+
+    <bodydiv outputclass="nav-pills mt-3">
+        <section>
+          <title>Specialization</title>
+          <codeblock>&lt;button href="#"&gt;Primary&lt;/button&gt;
+&lt;button href="#" color="secondary"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" color="success"&gt;Success&lt;/button&gt;
+&lt;button href="#" color="danger"&gt;Danger&lt;/button&gt;
+&lt;button href="#" color="warning"&gt;Warning&lt;/button&gt;
+&lt;button href="#" color="info"&gt;Info&lt;/button&gt;
+&lt;button href="#" color="light"&gt;Light&lt;/button&gt;
+&lt;button href="#" color="dark"&gt;Dark&lt;/button&gt;</codeblock>
+        </section>
+          <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref href="#" outputclass="btn-primary"&gt;Primary&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-secondary"&gt;Secondary&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-success"&gt;Success&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-danger"&gt;Danger&lt;/xref&gt;
@@ -47,13 +62,16 @@
 &lt;xref href="#" outputclass="btn-info"&gt;Info&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-light"&gt;Light&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-dark"&gt;Dark&lt;/xref&gt;</codeblock>
+        </section>
+      </bodydiv>
+
     <section>
       <title>Outline buttons</title>
       <p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with
         the <xmlatt>outputclass</xmlatt> and a value of <codeph>btn-outline-*</codeph> to remove all background images
         and colors on any button.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <xref href="#" outputclass="btn-outline-primary">Primary</xref>
       <xref href="#" outputclass="btn-outline-secondary">Secondary</xref>
       <xref href="#" outputclass="btn-outline-success">Success</xref>
@@ -63,7 +81,21 @@
       <xref href="#" outputclass="btn-outline-light">Light</xref>
       <xref href="#" outputclass="btn-outline-dark">Dark</xref>
     </bodydiv>
-    <codeblock>&lt;xref href="#" outputclass="btn-outline-primary"&gt;Primary&lt;/xref&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button href="#" outline="yes"&gt;Primary&lt;/button&gt;
+&lt;button href="#" color="secondary" outline="yes"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" color="success" outline="yes"&gt;Success&lt;/button&gt;
+&lt;button href="#" color="danger" outline="yes"&gt;Danger&lt;/button&gt;
+&lt;button href="#" color="warning" outline="yes"&gt;Warning&lt;/button&gt;
+&lt;button href="#" color="info" outline="yes"&gt;Info&lt;/button&gt;
+&lt;button href="#" color="light" outline="yes"&gt;Light&lt;/button&gt;
+&lt;button href="#" color="dark" outline="yes"&gt;Dark&lt;/button&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref href="#" outputclass="btn-outline-primary"&gt;Primary&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-outline-secondary"&gt;Secondary&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-outline-success"&gt;Success&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-outline-danger"&gt;Danger&lt;/xref&gt;
@@ -71,5 +103,49 @@
 &lt;xref href="#" outputclass="btn-outline-info"&gt;Info&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-outline-light"&gt;Light&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-outline-dark"&gt;Dark&lt;/xref&gt;</codeblock>
+        </section>
+      </bodydiv>
+    <section>
+      <title>Sizing</title>
+      <p>Fancy larger or smaller buttons? Use <xmlatt>size="large"</xmlatt> or
+          <xmlatt>size="small"</xmlatt> for additional sizes.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <xref href="#" outputclass="btn-primary btn-lg">Large button</xref>
+      <xref href="#" outputclass="btn-secondary btn-lg">Large button</xref>
+    </bodydiv>
+
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button href="#" size="large"&gt;Large button&lt;/button&gt;
+&lt;button href="#" color="secondary" size="large"&gt;Large button&lt;/button&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref href="#" outputclass="btn-primary btn-lg"&gt;Large button&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-secondary btn-lg"&gt;Large button&lt;/xref&gt;</codeblock>
+        </section>
+      </bodydiv>
+
+    <bodydiv outputclass="p-3 border">
+      <xref href="#" outputclass="btn-primary btn-sm">Small button</xref>
+      <xref href="#" outputclass="btn-secondary btn-sm">Small button</xref>
+    </bodydiv>
+
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button href="#" size="small"&gt;Small button&lt;/button&gt;
+&lt;button href="#" color="secondary" size="small"&gt;Small button&lt;/button&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref href="#" outputclass="btn-primary btn-sm"&gt;Small button&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-secondary btn-sm"&gt;Small button&lt;/xref&gt;</codeblock>
+        </section>
+      </bodydiv>
   </body>
+
+
 </topic>

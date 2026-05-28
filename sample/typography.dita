@@ -29,7 +29,7 @@
           <xmlatt>outputclass="h1"</xmlatt> through <xmlatt>outputclass="h6"</xmlatt> are also available, for when you
         want to match the font styling of a heading but cannot use the associated HTML element.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <p outputclass="h1">h1. Bootstrap heading</p>
       <p outputclass="h2">h2. Bootstrap heading</p>
       <p outputclass="h3">h3. Bootstrap heading</p>
@@ -48,10 +48,8 @@
       <p>Annotate a <xmlelement>ph</xmlelement> with an <xmlatt>outputclass</xmlatt> to recreate the small secondary
         heading text from Bootstrap 3.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <p outputclass="h3">Fancy display heading <ph
-          outputclass="small text-body-secondary"
-        >with faded secondary text</ph></p>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+      <p outputclass="h3">Fancy display heading <ph outputclass="small text-body-secondary">with faded secondary text</ph></p>
     </bodydiv>
     <codeblock
     >&lt;title&gt;Fancy display heading &lt;ph outputclass="small text-body-secondary"&gt;with faded secondary text&lt;/ph&gt;&lt;/title&gt;</codeblock>
@@ -60,7 +58,7 @@
       <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a
         heading to stand out, consider using a display heading — a larger, slightly more opinionated heading style.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <p outputclass="display-1">Display 1</p>
       <p outputclass="display-2">Display 2</p>
       <p outputclass="display-3">Display 3</p>
@@ -79,7 +77,7 @@
       <p>Make a paragraph stand out by adding <xmlatt>outputclass="lead"</xmlatt> — this is automatically added to
           <xmlelement>shortdesc</xmlelement> elements.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <p outputclass="lead">This is a lead paragraph. It stands out from regular paragraphs.</p>
     </bodydiv>
     <codeblock>&lt;p outputclass="lead"&gt;
@@ -89,7 +87,7 @@
       <title>Inline text elements</title>
       <p>Styling for common inline HTML5 elements.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <p>You can use <xmlatt>outputclass="mark"</xmlatt> to <ph outputclass="mark">highlight</ph> text.</p>
       <p><line-through>This line of text is meant to be treated as deleted text.</line-through></p>
       <p><u>This line of text will render as underlined.</u></p>
@@ -110,7 +108,7 @@
     <section>
       <title>Text utilities</title>
       <p>Change text alignment, transform, style, weight, line-height, decoration and color with Bootstrap’s
-        <xref href="./utilities.dita" format="dita">text and color utilities</xref>.</p>
+        <xref href="./color.dita" format="dita">text and color utilities</xref>.</p>
     </section>
 
     <section>
@@ -120,7 +118,7 @@
         additional context on hover and to users of assistive technologies. </p>
       <p>Add <xmlatt>outputclass="initialism"</xmlatt> to an abbreviation for a slightly smaller font-size.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <p>
         <ph outputclass="abbreviation" otherprops="title(attribute)">attr</ph>
       </p>
@@ -140,7 +138,7 @@
       <p>For quoting blocks of content from another source within your document, use the DITA
           <xmlelement>lq</xmlelement> element, it is styled automatically.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <lq>
         <p>A well-known quote, contained in a blockquote element.</p>
       </lq>
@@ -156,7 +154,7 @@
           <xmlelement>fig</xmlelement>. Be sure to wrap the name of the source work in the <xmlelement>cite</xmlelement>
         as well.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <fig>
         <title>Someone famous in <cite>Source Title</cite></title>
         <lq>
@@ -175,7 +173,7 @@
       <p>Use text utilities such as <xmlatt>outputclass="text-center"</xmlatt> as needed to change the alignment of your
         blockquote.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <fig outputclass="text-center">
         <title>Someone famous in <cite>Source Title</cite></title>
         <lq>
@@ -189,7 +187,7 @@
     &lt;p&gt;A well-known quote, contained in a blockquote element.&lt;/p&gt;
   &lt;/lq&gt;
 &lt;/fig&gt;</codeblock>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <fig outputclass="text-end">
         <title>Someone famous in <cite>Source Title</cite></title>
         <lq>
@@ -204,14 +202,16 @@
   &lt;/lq&gt;
 &lt;/fig&gt;</codeblock>
 
-    <div outputclass="h2">Lists</div>
+    <section>
+      <title outputclass="h2">Lists</title>
+    </section>
     <section>
       <title outputclass="h3">Unstyled</title>
       <p>Remove the default list-style and left margin on list items (immediate children only). This only applies to
         immediate children list items, meaning you will need to add the <xmlatt>outputclass="list-unstyled"</xmlatt> for
         any nested lists as well.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <ul outputclass="list-unstyled">
         <li>This is a list.</li>
         <li>It appears completely unstyled.</li>
@@ -247,7 +247,7 @@
         <xmlatt>outputclass="list-inline"</xmlatt> attribute.
       </p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <ul outputclass="list-inline">
         <li>This is a list item.</li>
         <li>And another one.</li>
@@ -264,7 +264,7 @@
       <p>Terms and descriptions align horizontally using Bootstrap’s grid system of predefined classes. For longer
         terms, text is truncated with an ellipsis.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <dl>
         <dlentry>
           <dt>Description lists</dt>
@@ -298,7 +298,7 @@
         </dlentry>
       </dl>
     </bodydiv>
-    <codeblock>&lt;dl&gt;
+        <codeblock>&lt;dl&gt;
   &lt;dlentry&gt;
     &lt;dt&gt;Description lists&lt;/dt&gt;
     &lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
@@ -333,12 +333,9 @@
 &lt;/dl&gt;</codeblock>
     <section>
       <title outputclass="h3">Description list column width</title>
-      <p>Definitions lists use the twelve column system defined by the Bootstrap grid. By default each <xmlelement
-        >dt</xmlelement> spreads over 3 column widths and each <xmlelement
-        >dd</xmlelement> spreads over 9 column widths. Alter default width of terms by adding <xmlelement
-        >dl otherprops="cols(..)"</xmlelement></p>
+      <p>Definitions lists use the twelve column system defined by the Bootstrap grid. By default each <xmlelement>dt</xmlelement> spreads over 3 column widths and each <xmlelement>dd</xmlelement> spreads over 9 column widths. Alter default width of terms by adding <xmlatt>colspan</xmlatt></p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <dl otherprops="cols(2)">
         <dlentry>
           <dt>Description lists</dt>
@@ -353,7 +350,10 @@
         </dlentry>
       </dl>
     </bodydiv>
-    <codeblock>&lt;dl otherprops="cols(2)"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;dl colspan="2"&gt;
   &lt;dlentry&gt;
     &lt;dt&gt;Description lists&lt;/dt&gt;
     &lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
@@ -366,5 +366,23 @@
     &lt;/dd&gt;
   &lt;/dlentry&gt;
 &lt;/dl&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;dl otherprops="cols(2)"&gt;
+  &lt;dlentry&gt;
+    &lt;dt&gt;Description lists&lt;/dt&gt;
+    &lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
+  &lt;/dlentry&gt;
+  &lt;dlentry&gt;
+    &lt;dt&gt;Term&lt;/dt&gt;
+    &lt;dd&gt;
+      &lt;p&gt;Definition for the term.&lt;/p&gt;
+      &lt;p&gt;And some more placeholder definition text.&lt;/p&gt;
+    &lt;/dd&gt;
+  &lt;/dlentry&gt;
+&lt;/dl&gt;</codeblock>
+      </section>
+    </bodydiv>
   </body>
 </topic>

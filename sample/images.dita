@@ -31,80 +31,115 @@
           <codeph>max-width: 100%;</codeph> and <codeph>height: auto;</codeph> to the image so that it scales with the
         parent element.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <image scalefit="yes" scope="external" href="https://picsum.photos/1200/600?a"/>
     </bodydiv>
-    <codeblock>&lt;image scalefit="yes" href="..." /&gt;</codeblock>
+        <codeblock>&lt;image scalefit="yes" href="..." /&gt;</codeblock>
     <section>
       <title>Image thumbnails</title>
       <p>In addition to Bootstrap’s
         <xref href="https://getbootstrap.com/docs/5.3/utilities/borders/" format="html" scope="external">border-radius
-          utilities</xref>, you can set <xmlatt>outputclass</xmlatt> to <codeph>img-thumbnail</codeph> to give an image
+          utilities</xref>, you can use the specialized <xmlelement>thumbnail</xmlelement> element to give an image
         a rounded 1px border appearance.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <image outputclass="img-thumbnail" scope="external" href="https://picsum.photos/200/200?a"/>
+    <bodydiv outputclass="p-3 border">
+      <image scope="external" href="https://picsum.photos/100/100?a" outputclass="img-thumbnail"/>
     </bodydiv>
-    <codeblock>&lt;image outputclass="img-thumbnail" href="..." /&gt;</codeblock>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;thumbnail href="..." /&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;image outputclass="img-thumbnail" href="..." /&gt;</codeblock>
+      </section>
+    </bodydiv>
     <section>
       <title>Separate images for dark and light mode</title>
       <p>Use the <xmlatt>outputclass="d-auto"</xmlatt>, <xmlatt>outputclass="d-light"</xmlatt>,
         and <xmlatt>outputclass="d-dark"</xmlatt> attributes on <xmlelement>image</xmlelement> elements
         to display different images when in <xref href="./dark-mode.dita">dark mode</xref>.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <fig>
-        <image outputclass="img-thumbnail d-auto" scope="external" href="https://picsum.photos/id/730/300/200"/>
-        <image
-          outputclass="img-thumbnail d-light"
-          scope="external"
-          href="https://picsum.photos/id/730/300/200"
-          deliveryTarget="html"
-        />
-        <image
-          outputclass="img-thumbnail d-dark"
-          scope="external"
-          href="https://picsum.photos/id/724/300/200"
-          deliveryTarget="html"
-        />
+        <image outputclass="d-auto img-thumbnail" scope="external" href="https://picsum.photos/id/730/300/200"/>
+        <image outputclass="d-light img-thumbnail" scope="external" href="https://picsum.photos/id/730/300/200" deliveryTarget="html"/>
+        <image outputclass="d-dark img-thumbnail" scope="external" href="https://picsum.photos/id/724/300/200" deliveryTarget="html"/>
       </fig>
     </bodydiv>
-    <codeblock> &lt;fig&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock> &lt;fig&gt;
+  &lt;thumbnail outputclass="d-auto" href="..."/&gt;
+  &lt;thumbnail outputclass="d-light" href="..." deliveryTarget="html"/&gt;
+  &lt;thumbnail outputclass="d-dark" href="..." deliveryTarget="html"/&gt;
+&lt;/fig&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock> &lt;fig&gt;
   &lt;image outputclass="img-thumbnail d-auto" href="..."/&gt;
   &lt;image outputclass="img-thumbnail d-light" href="..." deliveryTarget="html"/&gt;
   &lt;image outputclass="img-thumbnail d-dark" href="..." deliveryTarget="html"/&gt;
-&lt;/fig&gt;
-    </codeblock>
+&lt;/fig&gt;</codeblock>
+      </section>
+    </bodydiv>
     <section>
       <title>Support Lazy Loading</title>
-      <p>Use the <xmlatt>otherprops="loading(lazy)"</xmlatt> attribute on <xmlelement>image</xmlelement> elements
+      <p>Use the <xmlatt>loading="lazy"</xmlatt> attribute on <xmlelement>image</xmlelement> elements
         to wait until an image is on screen before loading.
       </p>
     </section>
-    <codeblock>&lt;image otherprops="loading(lazy)" href="..."/></codeblock>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;image loading="lazy" href="..."/&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;image otherprops="loading(lazy)" href="..."/&gt;</codeblock>
+      </section>
+    </bodydiv>
     <section>
       <title>Support HTML <xmlelement>picture</xmlelement> element</title>
-      <p>Use the <xmlatt>outputclass="d-picture"</xmlatt> attributes on a  <xmlelement>div</xmlelement>
+      <p>Use the specialized <xmlelement>picture</xmlelement> element
       holding multiple <xmlelement>image</xmlelement> elements to display different images on
-      different media. The <xmlatt>otherprops</xmlatt> attribute defines the media query and/or
-      image MIME type. The final <xmlelement>image</xmlelement> is the default.</p>
+      different media. The <xmlatt>media</xmlatt> attribute defines the media query and/or
+      <xmlatt>type</xmlatt> the image MIME type. The final <xmlelement>image</xmlelement> is the default.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <p>Change the width of the browser to view different images:</p>
-      <div outputclass="d-picture" deliveryTarget="html">
-        <image otherprops="media(min-width: 700px)" scope="external" href="https://picsum.photos/id/1/800/400"/>
-        <image otherprops="media(min-width: 450px)" scope="external" href="https://picsum.photos/id/4/400/200"/>
-        <image otherprops="type(image/jpeg)" scope="external" href="https://picsum.photos/id/5/200/200.jpg"/>
-        <image otherprops="type(image/webp)" scope="external" href="https://picsum.photos/id/5/200/200.webp"/>
+      <div outputclass="d-picture">
+        <image scope="external" href="https://picsum.photos/id/1/800/400" otherprops="media(min-width: 700px)"/>
+        <image scope="external" href="https://picsum.photos/id/4/400/200" otherprops="media(min-width: 450px)"/>
+        <image scope="external" href="https://picsum.photos/id/5/200/200.jpg" otherprops="type(image/jpeg)"/>
+        <image scope="external" href="https://picsum.photos/id/5/200/200.webp" otherprops="type(image/webp)"/>
         <image scope="external" href="https://picsum.photos/id/3/200/200"/>
       </div>
     </bodydiv>
-    <codeblock>&lt;div outputclass="d-picture" deliveryTarget="html"&gt;
-  &lt;image otherprops="media(min-width: 700px)" href="..."&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;picture&gt;
+  &lt;image media="min-width: 700px" href="..."/&gt;
+  &lt;image media="min-width: 450px" href="..."/&gt;
+  &lt;image type="image/jpeg" href="..."/&gt;
+  &lt;image type="image/webp" href="..."/&gt;
+  &lt;image href="..."/&gt;
+&lt;/picture&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="d-picture"&gt;
+  &lt;image otherprops="media(min-width: 700px)" href="..."/&gt;
   &lt;image otherprops="media(min-width: 450px)" href="..."/&gt;
   &lt;image otherprops="type(image/jpeg)" href="..."/&gt;
   &lt;image otherprops="type(image/webp)" href="..."/&gt;
   &lt;image href="..."/&gt;
 &lt;/div&gt;</codeblock>
+      </section>
+    </bodydiv>
   </body>
 </topic>

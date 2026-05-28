@@ -1,13 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<!--
-  Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
-  markup is used throughout the examples describing how to implement these components correctly using outputclass.
-
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
-  and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
--->
 <topic id="icons">
   <title>Icons</title>
   <shortdesc>When enabled, DITA Bootstrap includes Bootstrap Icons by default. Additional icon libraries such as
@@ -22,7 +13,7 @@
         <indexterm>CSS
           <indexterm><xmlatt>outputclass</xmlatt></indexterm>
         </indexterm>
-        <indexterm><xmlatt>otherprops</xmlatt></indexterm>
+        <indexterm><xmlatt>style</xmlatt></indexterm>
         <indexterm><xmlelement>othermeta</xmlelement></indexterm>
       </keywords>
     </metadata>
@@ -33,75 +24,109 @@
       <p>
         <xref href="https://icons.getbootstrap.com/" format="html" scope="external">Bootstrap Icons</xref> is a growing
         library of SVG icons that are designed by @mdo and maintained by the Bootstrap Team. They are open source and
-        licensed under MIT, just like Bootstrap so the icon set is freely available to everyone. A <xmlelement
-        >Link</xmlelement> to the default Bootstrap Icons CDN set is included by default. </p>
+        licensed under MIT, just like Bootstrap so the icon set is freely available to everyone. A <xmlelement>Link</xmlelement> to the default Bootstrap Icons CDN set is included by default. </p>
     </section>
 
     <section>
       <title>Example</title>
       <p>Icon fonts with classes for every icon are included in Bootstrap Icons. Include the icon web fonts in your page
-        via CSS, then reference the class names as needed in your DITA (e.g., <xmlelement>i
+        via CSS, then reference the class names as needed in your DITA (e.g., <xmlelement>icon
           outputclass="bi-alarm"/</xmlelement>).</p>
-      <p>Use an additional <xmlatt>otherprops</xmlatt> and alter the CSS font-size and color to change the icon
+      <p>Use a <xmlatt>style</xmlatt> attribute and alter the CSS font-size and color to change the icon
         appearance.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <p>
-        <i outputclass="bi-alarm"/>
-        <i outputclass="bi-alarm" otherprops="style(font-size: 2rem; color: cornflowerblue;)"/>
+        <ph outputclass="bi bi-alarm"/>
+        <ph outputclass="bi bi-alarm" otherprops="style(font-size: 2rem; color: cornflowerblue;)"/>
       </p>
     </bodydiv>
-    <codeblock>&lt;i outputclass="bi-alarm"/&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;icon outputclass="bi-alarm"/&gt;
+&lt;icon outputclass="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"/&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;i outputclass="bi-alarm"/&gt;
 &lt;i outputclass="bi-alarm" otherprops="style(font-size: 2rem; color: cornflowerblue;)"/&gt;</codeblock>
+        </section>
+      </bodydiv>
   <p>Icons placed within an <xmlelement>xref</xmlelement> element are colorized appropriately:</p>
-  <bodydiv outputclass="bd-example" deliveryTarget="html">
+  <bodydiv outputclass="p-3 border">
     <p>
       <xref href="#" outputclass="link-primary">
-        <i outputclass="bi-link"/> Primary link
+        <ph outputclass="bi bi-link"/> Primary link
       </xref>
     </p>
     <p>
       <xref href="#" outputclass="link-secondary">
-        <i outputclass="bi-link"/> Secondary link
+        <ph outputclass="bi bi-link"/> Secondary link
       </xref>
     </p>
     <p>
       <xref href="#" outputclass="link-success">
-        <i outputclass="bi-link"/> Success link
+        <ph outputclass="bi bi-link"/> Success link
       </xref>
     </p>
     <p>
       <xref href="#" outputclass="link-danger">
-        <i outputclass="bi-link"/> Danger link
+        <ph outputclass="bi bi-link"/> Danger link
       </xref>
     </p>
     <p>
       <xref href="#" outputclass="link-warning">
-        <i outputclass="bi-link"/> Warning link
+        <ph outputclass="bi bi-link"/> Warning link
       </xref>
     </p>
     <p>
       <xref href="#" outputclass="link-info">
-        <i outputclass="bi-link"/> Info link
+        <ph outputclass="bi bi-link"/> Info link
       </xref>
     </p>
     <p>
       <xref href="#" outputclass="link-light">
-        <i outputclass="bi-link"/> Light link
+        <ph outputclass="bi bi-link"/> Light link
       </xref>
     </p>
     <p>
       <xref href="#" outputclass="link-dark">
-        <i outputclass="bi-link"/> Dark link
-      </xref>
-    </p>
-    <p>
-      <xref href="#" outputclass="link-body-emphasis">
-        <i outputclass="bi-link"/> Emphasis link
+        <ph outputclass="bi bi-link"/> Dark link
       </xref>
     </p>
   </bodydiv>
-  <codeblock>&lt;xref outputclass="link-primary" href="#"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;xref color="primary" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt; Primary link
+&lt;/xref&gt;
+&lt;xref color="secondary" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt; Secondary link
+&lt;/xref&gt;
+&lt;xref color="success" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt; Success link
+&lt;/xref&gt;
+&lt;xref color="danger" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt; Danger link
+&lt;/xref&gt;
+&lt;xref color="warning" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt; Warning link
+&lt;/xref&gt;
+&lt;xref color="info" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt; Info link
+&lt;/xref&gt;
+&lt;xref color="light" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt; Light link
+&lt;/xref&gt;
+&lt;xref color="dark" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt; Dark link
+&lt;/xref&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref outputclass="link-primary" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Primary link
 &lt;/xref&gt;
 &lt;xref outputclass="link-secondary" href="#"&gt;
@@ -128,16 +153,42 @@
 &lt;xref outputclass="link-body-emphasis" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Emphasis link
 &lt;/xref&gt;</codeblock>
+        </section>
+      </bodydiv>
     <p>Icons can also be placed within buttons as shown:</p>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <xref outputclass="btn-primary btn-floating m-1" href="#"><i outputclass="bi-arrow-down-square-fill"/></xref>
-      <xref outputclass="btn-primary btn-floating m-1" href="#"><i outputclass="bi-chat-left-quote-fill"/></xref>
-      <xref outputclass="btn-primary btn-floating m-1" href="#"><i outputclass="bi-speedometer"/></xref>
-      <xref outputclass="btn-primary btn-floating m-1" href="#"><i outputclass="bi-camera-fill"/></xref>
-      <xref outputclass="btn-primary btn-floating m-1" href="#"><i outputclass="bi-link"/></xref>
-      <xref outputclass="btn-primary btn-floating m-1" href="#"><i outputclass="bi-share-fill"/></xref>
+    <bodydiv outputclass="p-3 border">
+      <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-arrow-down-square-fill"/></xref>
+      <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-chat-left-quote-fill"/></xref>
+      <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-speedometer"/></xref>
+      <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-camera-fill"/></xref>
+      <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-link"/></xref>
+      <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-share-fill"/></xref>
     </bodydiv>
-    <codeblock>&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button outputclass="btn-floating m-1" href="#"&gt;
+  &lt;icon outputclass="bi-arrow-down-square-fill"/&gt;
+&lt;/button&gt;
+&lt;button outputclass="btn-floating m-1" href="#"&gt;
+  &lt;icon outputclass="bi-chat-left-quote-fill"/&gt;
+&lt;/button&gt;
+&lt;button outputclass="btn-floating m-1" href="#"&gt;
+  &lt;icon outputclass="bi-speedometer"/&gt;
+&lt;/button&gt;
+&lt;button outputclass="btn-floating m-1" href="#"&gt;
+  &lt;icon outputclass="bi-camera-fill"/&gt;
+&lt;/button&gt;
+&lt;button outputclass="btn-floating m-1" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt;
+&lt;/button&gt;
+&lt;button outputclass="btn-floating m-1" href="#"&gt;
+  &lt;icon outputclass="bi-share-fill"/&gt;
+&lt;/button&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-arrow-down-square-fill"/&gt;
 &lt;/xref&gt;
 &lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
@@ -155,6 +206,8 @@
 &lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-share-fill"/&gt;
 &lt;/xref&gt;</codeblock>
+        </section>
+      </bodydiv>
     <p>Icons can also be used within <xmlelement>chapter</xmlelement> headings,
       and <xmlelement>topicref</xmlelement> elements by adding
       <xmlelement>othermeta name="icon"</xmlelement>  and
@@ -188,11 +241,7 @@
         <xref href="https://feathericons.com/" format="html" scope="external">Feather</xref> and
         <xref href="https://octicons.github.com/" format="html" scope="external">Octicons</xref> are available. To use
         an alternative set of icons, modify the
-        <xref
-          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/master/includes/bootstrap.icons.hdf.xml"
-          format="html"
-          scope="external"
-        >sample header</xref> or specify the path of the Icons CDN file using the
+        <xref href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/master/includes/bootstrap.icons.hdf.xml" format="html" scope="external">sample header</xref> or specify the path of the Icons CDN file using the
           <parmname>--icons.cdn.path</parmname> parameter.</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
         >path/to/your.ditamap</filepath> \

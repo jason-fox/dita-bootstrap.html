@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
   directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
@@ -8,6 +7,7 @@
   This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="badges">
   <title>Badges</title>
   <shortdesc>Documentation and examples for badges, Bootstrap’s small count and labeling component.</shortdesc>
@@ -28,36 +28,59 @@
       <p>Badges scale to match the size of the immediate parent element by using relative font sizing and
           <xmlatt>em</xmlatt> units. As of v5, badges no longer have focus or hover styles for links.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <section>
-        <p outputclass="h1">Example heading <ph outputclass="badge bg-secondary">New</ph></p>
-        <p outputclass="h2">Example heading <ph outputclass="badge bg-secondary">New</ph></p>
-        <p outputclass="h3">Example heading <ph outputclass="badge bg-secondary">New</ph></p>
-        <p outputclass="h4">Example heading <ph outputclass="badge bg-secondary">New</ph></p>
-        <p outputclass="h5">Example heading <ph outputclass="badge bg-secondary">New</ph></p>
-        <p outputclass="h6">Example heading <ph outputclass="badge bg-secondary">New</ph></p>
+        <p outputclass="h1">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
+        <p outputclass="h2">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
+        <p outputclass="h3">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
+        <p outputclass="h4">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
+        <p outputclass="h5">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
+        <p outputclass="h6">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
       </section>
     </bodydiv>
-    <codeblock>&lt;title&gt;Example Heading &lt;ph outputclass="badge bg-secondary"&gt;New&lt;/ph&gt;&lt;/title&gt;
-&lt;p&gt;Example Text &lt;ph outputclass="badge bg-secondary"&gt;New&lt;/ph&gt;&lt;/p&gt;</codeblock>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;title&gt;Example Heading &lt;badge&gt;New&lt;/badge&gt;&lt;/title&gt;
+&lt;p&gt;Example Text &lt;badge&gt;New&lt;/badge&gt;&lt;/p&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;title&gt;Example Heading &lt;ph outputclass="bg-secondary"&gt;New&lt;/ph&gt;&lt;/title&gt;
+&lt;p&gt;Example Text &lt;ph outputclass="bg-secondary"&gt;New&lt;/ph&gt;&lt;/p&gt;</codeblock>
+        </section>
+      </bodydiv>
     <section>
       <title>Background colors</title>
-      <p>Set a background-color with contrasting foreground color with Bootstrap’s <codeph
-        >text-bg-{color}</codeph> helpers. Previously it was required to manually pair your choice of <xmlatt
-        >outputclass</xmlatt> <codeph>text-{color}</codeph> and <codeph
-        >bg-{color}</codeph> utilities for styling, which you still may use if you prefer.</p>
+      <p>Set a background-color with contrasting foreground color with Bootstrap’s <codeph>text-bg-{color}</codeph> helpers. Previously it was required to manually pair your choice of <xmlatt>outputclass</xmlatt> <codeph>text-{color}</codeph> and <codeph>bg-{color}</codeph> utilities for styling, which you still may use if you prefer.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <ph outputclass="badge text-bg-primary">Primary</ph>
-      <ph outputclass="badge text-bg-secondary">Secondary</ph>
-      <ph outputclass="badge text-bg-success">Success</ph>
-      <ph outputclass="badge text-bg-danger">Danger</ph>
-      <ph outputclass="badge text-bg-warning">Warning</ph>
-      <ph outputclass="badge text-bg-info">Info</ph>
-      <ph outputclass="badge text-bg-light">Light</ph>
-      <ph outputclass="badge text-bg-dark">Dark</ph>
+    <bodydiv outputclass="p-3 border">
+      <p>
+        <ph outputclass="badge text-bg-primary">Primary</ph>
+        <ph outputclass="badge text-bg-secondary">Secondary</ph>
+        <ph outputclass="badge text-bg-success">Success</ph>
+        <ph outputclass="badge text-bg-danger">Danger</ph>
+        <ph outputclass="badge text-bg-warning">Warning</ph>
+        <ph outputclass="badge text-bg-info">Info</ph>
+        <ph outputclass="badge text-bg-light">Light</ph>
+        <ph outputclass="badge text-bg-dark">Dark</ph>
+      </p>
     </bodydiv>
-    <codeblock>&lt;ph outputclass="badge text-bg-primary"&gt;Primary&lt;/ph&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;badge&gt;Primary&lt;/badge&gt;
+&lt;badge color="secondary"&gt;Secondary&lt;/badge&gt;
+&lt;badge color="success"&gt;Success&lt;/badge&gt;
+&lt;badge color="danger"&gt;Danger&lt;/badge&gt;
+&lt;badge color="warning"&gt;Warning&lt;/badge&gt;
+&lt;badge color="info"&gt;Info&lt;/badge&gt;
+&lt;badge color="light"&gt;Light&lt;/badge&gt;
+&lt;badge color="dark"&gt;Dark&lt;/badge&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;ph outputclass="badge text-bg-primary"&gt;Primary&lt;/ph&gt;
 &lt;ph outputclass="badge text-bg-secondary"&gt;Secondary&lt;/ph&gt;
 &lt;ph outputclass="badge text-bg-success"&gt;Success&lt;/ph&gt;
 &lt;ph outputclass="badge text-bg-danger"&gt;Danger&lt;/ph&gt;
@@ -65,5 +88,7 @@
 &lt;ph outputclass="badge text-bg-info"&gt;Info&lt;/ph&gt;
 &lt;ph outputclass="badge text-bg-light"&gt;Light&lt;/ph&gt;
 &lt;ph outputclass="badge text-bg-dark"&gt;Dark&lt;/ph&gt;</codeblock>
+        </section>
+      </bodydiv>
   </body>
 </topic>

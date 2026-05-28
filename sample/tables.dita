@@ -34,7 +34,7 @@
       <p>Using the most basic table markup, here’s how the default DITA Bootstrap <codeph>.table</codeph>-based tables
         look in Bootstrap.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <table>
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
@@ -66,117 +66,151 @@
         </tgroup>
       </table>
     </bodydiv>
-    <codeblock>&lt;table&gt;
+
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;table&gt;
+  &lt;tgroup cols="2"&gt;
+    &lt;thead&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Animal&lt;/entry&gt;
+        &lt;entry&gt;Gestation&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Elephant (African and Asian)&lt;/entry&gt;
+        &lt;entry&gt;19-22 months&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Giraffe&lt;/entry&gt;
+        &lt;entry&gt;15 months&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Rhinoceros&lt;/entry&gt;
+        &lt;entry&gt;14-16 months&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Hippopotamus&lt;/entry&gt;
+        &lt;entry&gt;7 1/2 months&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/tbody&gt;
+  &lt;/tgroup&gt;
+&lt;/table&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table&gt;
   ...etc
 &lt;/table&gt;</codeblock>
-    <note type="note">The output classes and custom styles described here are provided by the <term>DITA
-        Bootstrap</term> plug-in itself. If you need additional features like search, sort, and pagination, you can use
-      the <term>Bootstrap Table</term> extension for
-      <xref href="bootstrap-table.dita"/>.</note>
+      </section>
+    </bodydiv>
     <section>
       <title>Variants</title>
       <p>Use contextual classes to color tables, table rows or individual cells.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <table>
-        <tgroup cols="3">
-          <colspec colname="COLSPEC0" colwidth="2*"/>
-          <colspec colname="COLSPEC1" colwidth="1*"/>
-          <colspec colname="COLSPEC2" colwidth="1*"/>
+    <bodydiv outputclass="p-3 border">
+      <table outputclass="p-1 w-100 table-primary">
+        <tgroup cols="2">
           <thead>
             <row>
-              <entry colname="COLSPEC0" valign="top">Class</entry>
-              <entry colname="COLSPEC1" valign="top">Heading</entry>
-              <entry colname="COLSPEC2" valign="top">Heading</entry>
+              <entry>Animal</entry>
+              <entry>Gestation</entry>
             </row>
           </thead>
           <tbody>
-            <row>
-              <entry>Default</entry>
-              <entry>Cell</entry>
-              <entry>Cell</entry>
-            </row>
-            <row outputclass="table-primary">
-              <entry>Primary</entry>
-              <entry>Cell</entry>
-              <entry>Cell</entry>
-            </row>
-            <row outputclass="table-secondary">
-              <entry>Secondary</entry>
-              <entry>Cell</entry>
-              <entry>Cell</entry>
+            <row outputclass="table-info">
+              <entry>Elephant (African and Asian)</entry>
+              <entry>19-22 months</entry>
             </row>
             <row outputclass="table-success">
-              <entry>Success</entry>
-              <entry>Cell</entry>
-              <entry>Cell</entry>
+              <entry>Giraffe</entry>
+              <entry>15 months</entry>
             </row>
-            <row outputclass="table-danger">
-              <entry>Danger</entry>
-              <entry>Cell</entry>
-              <entry>Cell</entry>
+            <row>
+              <entry>Rhinoceros</entry>
+              <entry outputclass="table-danger">14-16 months</entry>
             </row>
-            <row outputclass="table-warning">
-              <entry>Warning</entry>
-              <entry>Cell</entry>
-              <entry>Cell</entry>
-            </row>
-            <row outputclass="table-info">
-              <entry>Info</entry>
-              <entry>Cell</entry>
-              <entry>Cell</entry>
-            </row>
-            <row outputclass="table-light">
-              <entry>Light</entry>
-              <entry>Cell</entry>
-              <entry>Cell</entry>
-            </row>
-            <row outputclass="table-dark">
-              <entry>Dark</entry>
-              <entry>Cell</entry>
-              <entry>Cell</entry>
+            <row>
+              <entry>Hippopotamus</entry>
+              <entry>7 1/2 months</entry>
             </row>
           </tbody>
         </tgroup>
       </table>
     </bodydiv>
-    <codeblock outputclass="xml">&lt;!-- On tables --&gt;
-&lt;table class="table-primary"&gt;...&lt;/table&gt;
-&lt;table class="table-secondary"&gt;...&lt;/table&gt;
-&lt;table class="table-success"&gt;...&lt;/table&gt;
-&lt;table class="table-danger"&gt;...&lt;/table&gt;
-&lt;table class="table-warning"&gt;...&lt;/table&gt;
-&lt;table class="table-info"&gt;...&lt;/table&gt;
-&lt;table class="table-light"&gt;...&lt;/table&gt;
-&lt;table class="table-dark"&gt;...&lt;/table&gt;
 
-&lt;!-- On rows --&gt;
-&lt;row class="table-primary"&gt;...&lt;/tr&gt;
-&lt;row class="table-secondary"&gt;...&lt;/tr&gt;
-&lt;row class="table-success"&gt;...&lt;/tr&gt;
-&lt;row class="table-danger"&gt;...&lt;/tr&gt;
-&lt;row class="table-warning"&gt;...&lt;/tr&gt;
-&lt;row class="table-info"&gt;...&lt;/tr&gt;
-&lt;row class="table-light"&gt;...&lt;/tr&gt;
-&lt;row class="table-dark"&gt;...&lt;/tr&gt;
-
-&lt;!-- On cells (`td` or `th`) --&gt;
-&lt;row&gt;
-  &lt;entry outputclass="table-primary"&gt;...&lt;/td&gt;
-  &lt;entry outputclass="table-secondary"&gt;...&lt;/td&gt;
-  &lt;entry outputclass="table-success"&gt;...&lt;/td&gt;
-  &lt;entry outputclass="table-danger"&gt;...&lt;/td&gt;
-  &lt;entry outputclass="table-warning"&gt;...&lt;/td&gt;
-  &lt;entry outputclass="table-info"&gt;...&lt;/td&gt;
-  &lt;entry outputclass="table-light"&gt;...&lt;/td&gt;
-  &lt;entry outputclass="table-dark"&gt;...&lt;/td&gt;
-&lt;/row&gt;</codeblock>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;table color="primary" padding="1" width="100"&gt;
+  &lt;tgroup cols="2"&gt;
+    &lt;thead&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Animal&lt;/entry&gt;
+        &lt;entry&gt;Gestation&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;row color="info"&gt;
+        &lt;entry&gt;Elephant (African and Asian)&lt;/entry&gt;
+        &lt;entry&gt;19-22 months&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row color="success"&gt;
+        &lt;entry&gt;Giraffe&lt;/entry&gt;
+        &lt;entry&gt;15 months&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Rhinoceros&lt;/entry&gt;
+        &lt;entry color="danger"&gt;14-16 months&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Hippopotamus&lt;/entry&gt;
+        &lt;entry&gt;7 1/2 months&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/tbody&gt;
+  &lt;/tgroup&gt;
+&lt;/table&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table outputclass="table-primary p-1 w-100"&gt;
+  &lt;tgroup cols="2"&gt;
+    &lt;thead&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Animal&lt;/entry&gt;
+        &lt;entry&gt;Gestation&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;row outputclass="table-info"&gt;
+        &lt;entry&gt;Elephant (African and Asian)&lt;/entry&gt;
+        &lt;entry&gt;19-22 months&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row outputclass="table-success"&gt;
+        &lt;entry&gt;Giraffe&lt;/entry&gt;
+        &lt;entry&gt;15 months&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Rhinoceros&lt;/entry&gt;
+        &lt;entry outputclass="table-danger"&gt;14-16 months&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Hippopotamus&lt;/entry&gt;
+        &lt;entry&gt;7 1/2 months&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/tbody&gt;
+  &lt;/tgroup&gt;
+&lt;/table&gt;</codeblock>
+      </section>
+    </bodydiv>
     <section>
       <title>Striped rows</title>
-      <p>Use <xmlatt>outputclass</xmlatt> and add <codeph>table-striped</codeph> to add zebra-striping to any table row
+      <p>Use <xmlatt>striped="yes"</xmlatt> to add zebra-striping to any table row
         within the <xmlelement>tbody</xmlelement>.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <table outputclass="table-striped">
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
@@ -208,16 +242,26 @@
         </tgroup>
       </table>
     </bodydiv>
-    <codeblock>&lt;table outputclass="table-striped"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;table striped="yes"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table outputclass="table-striped"&gt;
+  ...etc
+&lt;/table&gt;</codeblock>
+      </section>
+    </bodydiv>
     <section>
       <title>Striped columns</title>
-      <p>Use <xmlatt>outputclass</xmlatt> and add <codeph
-        >table-striped-columns</codeph> to add zebra-striping to any table row
+      <p>Use <xmlatt>striped-columns="yes"</xmlatt> to add zebra-striping to any table column
         within the <xmlelement>tbody</xmlelement>.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <table outputclass="table-striped-columns">
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
@@ -249,15 +293,25 @@
         </tgroup>
       </table>
     </bodydiv>
-    <codeblock>&lt;table outputclass="table-striped-columns"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;table striped-columns="yes"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table outputclass="table-striped-columns"&gt;
+  ...etc
+&lt;/table&gt;</codeblock>
+      </section>
+    </bodydiv>
     <section>
       <title>Bordered tables</title>
-      <p>Add <xmlatt>rowsep="1"</xmlatt> and <xmlatt
-        >colsep="1"</xmlatt> for borders on all sides of the table and cells.</p>
+      <p>Add <xmlatt>rowsep="1"</xmlatt> and <xmlatt>colsep="1"</xmlatt> for borders on all sides of the table and cells.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <table rowsep="1" colsep="1">
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
@@ -289,14 +343,25 @@
         </tgroup>
       </table>
     </bodydiv>
-    <codeblock>&lt;table rowsep="1" colsep="1"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;table rowsep="1" colsep="1"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table rowsep="1" colsep="1"&gt;
+  ...etc
+&lt;/table&gt;</codeblock>
+      </section>
+    </bodydiv>
     <section>
       <title>Tables without borders</title>
       <p>Add <xmlatt>rowsep="0"</xmlatt> and <xmlatt>colsep="0"</xmlatt> for a table without borders.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <table rowsep="0" colsep="0">
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
@@ -328,15 +393,25 @@
         </tgroup>
       </table>
     </bodydiv>
-    <codeblock>&lt;table rowsep="0" colsep="0"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;table rowsep="0" colsep="0"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table rowsep="0" colsep="0"&gt;
+  ...etc
+&lt;/table&gt;</codeblock>
+      </section>
+    </bodydiv>
     <section>
       <title>Small tables</title>
-      <p>Add <xmlatt>outputclass="table-sm"</xmlatt> make any table more compact by cutting all cell <codeph
-        >padding</codeph> in half.</p>
+      <p>Add <xmlatt>compact="yes"</xmlatt> to make any table more compact by cutting all cell <codeph>padding</codeph> in half.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <table outputclass="table-sm">
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
@@ -368,15 +443,25 @@
         </tgroup>
       </table>
     </bodydiv>
-    <codeblock>&lt;table outputclass="table-sm"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;table compact="yes"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table outputclass="table-sm"&gt;
+  ...etc
+&lt;/table&gt;</codeblock>
+      </section>
+    </bodydiv>
     <section>
       <title>Table group dividers</title>
-      <p>Add a thicker border, darker between table groups—<xmlelement>thead</xmlelement> and <xmlelement
-        >tbody</xmlelement>, with <xmlatt>outputclass="table-group-divider"</xmlatt>.</p>
+      <p>Add a thicker border, darker between table groups—<xmlelement>thead</xmlelement> and <xmlelement>tbody</xmlelement>, with <xmlatt>divider="yes"</xmlatt> on the table.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <table>
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
@@ -408,18 +493,28 @@
         </tgroup>
       </table>
     </bodydiv>
-    <codeblock>&lt;table outputclass="table-group-divider"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;table divider="yes"&gt;
+  ...
+  &lt;tbody&gt;
   ...etc
+  &lt;/tbody&gt;
 &lt;/table&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;tbody outputclass="table-group-divider"&gt;
+  ...etc
+&lt;/tbody&gt;</codeblock>
+      </section>
+    </bodydiv>
     <section>
       <title>Vertical alignment</title>
-      <p>Table cells of <xmlelement
-        >thead</xmlelement> are always vertical aligned to the bottom. Table cells in <xmlelement
-        >tbody</xmlelement> inherit their alignment from <xmlelement
-        >table</xmlelement> and are aligned to the top by default. Use the <xmlatt
-        >valign</xmlatt> attribute to re-align where needed.</p>
+      <p>Table cells of <xmlelement>thead</xmlelement> are always vertical aligned to the bottom. Table cells in <xmlelement>tbody</xmlelement> inherit their alignment from <xmlelement>table</xmlelement> and are aligned to the top by default. Use the <xmlatt>valign</xmlatt> attribute to re-align where needed.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <table outputclass="align-middle">
         <tgroup cols="4">
           <colspec colname="COLSPEC0"/>
@@ -431,9 +526,7 @@
               <entry colname="COLSPEC0" valign="top">Heading 1</entry>
               <entry colname="COLSPEC1" valign="bottom">Heading 2</entry>
               <entry colname="COLSPEC2" valign="middle">Heading 3</entry>
-              <entry
-                colname="COLSPEC3"
-              >Heading 4 - here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the headers</entry>
+              <entry colname="COLSPEC3">Heading 4 - here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the headers</entry>
             </row>
           </thead>
 
@@ -442,39 +535,35 @@
               <entry>This cell inherits <xmlatt>outputclass="align-middle"</xmlatt> from the table</entry>
               <entry>This cell inherits <xmlatt>outputclass="align-middle"</xmlatt> from the table</entry>
               <entry>This cell inherits <xmlatt>outputclass="align-middle"</xmlatt> from the table</entry>
-              <entry
-              >This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</entry>
+              <entry>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</entry>
             </row>
             <row valign="bottom">
               <entry>This cell inherits <xmlatt>valign="bottom"</xmlatt> from the table row</entry>
               <entry>This cell inherits <xmlatt>valign="bottom"</xmlatt> from the table row</entry>
               <entry>This cell inherits <xmlatt>valign="bottom"</xmlatt> from the table row</entry>
-              <entry
-              >This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</entry>
+              <entry>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</entry>
             </row>
             <row>
               <entry>This cell inherits <xmlatt>outputclass="align-middle"</xmlatt> from the table</entry>
               <entry>This cell inherits <xmlatt>outputclass="align-middle"</xmlatt> from the table</entry>
               <entry valign="top">This cell is aligned to the top.</entry>
-              <entry
-              >This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</entry>
+              <entry>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</entry>
             </row>
           </tbody>
         </tgroup>
       </table>
     </bodydiv>
-    <codeblock>&lt;table outputclass="align-middle"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;table outputclass="align-middle"&gt;
   &lt;tgroup cols="4"&gt;
-    &lt;colspec colname="COLSPEC0"/&gt;
-    &lt;colspec colname="COLSPEC1"/&gt;
-    &lt;colspec colname="COLSPEC2"/&gt;
-    &lt;colspec colname="COLSPEC3"/&gt;
     &lt;thead&gt;
       &lt;row&gt;
-        &lt;entry colname="COLSPEC0" valign="top"&gt;...&lt;/entry&gt;
-        &lt;entry colname="COLSPEC1" valign="bottom"&gt;...&lt;/entry&gt;
-        &lt;entry colname="COLSPEC2" valign="middle"&gt;...&lt;/entry&gt;
-        &lt;entry colname="COLSPEC3" valign="middle"&gt;...&lt;/entry&gt;
+        &lt;entry valign="top"&gt;...&lt;/entry&gt;
+        &lt;entry valign="bottom"&gt;...&lt;/entry&gt;
+        &lt;entry valign="middle"&gt;...&lt;/entry&gt;
+        &lt;entry&gt;...&lt;/entry&gt;
       &lt;/row&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
@@ -493,13 +582,44 @@
     &lt;/tbody&gt;
   &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table outputclass="align-middle"&gt;
+  &lt;tgroup cols="4"&gt;
+    &lt;thead&gt;
+      &lt;row&gt;
+        &lt;entry valign="top"&gt;...&lt;/entry&gt;
+        &lt;entry valign="bottom"&gt;...&lt;/entry&gt;
+        &lt;entry valign="middle"&gt;...&lt;/entry&gt;
+        &lt;entry&gt;...&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;row&gt;
+        ...
+      &lt;/row&gt;
+      &lt;row valign="bottom"&gt;
+        ...
+      &lt;/row&gt;
+      &lt;row&gt;
+        &lt;entry&gt;...&lt;/entry&gt;
+        &lt;entry&gt;...&lt;/entry&gt;
+        &lt;entry valign="top"&gt;...&lt;/entry&gt;
+        &lt;entry&gt;...&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/tbody&gt;
+  &lt;/tgroup&gt;
+&lt;/table&gt;</codeblock>
+      </section>
+    </bodydiv>
     <section>
       <title>Table head</title>
-      <p>Similar to tables and dark tables, use the modifier <xmlatt>outputclass="table-light"</xmlatt> or
-          <xmlatt>outputclass="table-dark"</xmlatt> to make <xmlelement>thead</xmlelement> elements appear light or dark
+      <p>Similar to tables and dark tables, use the modifier <xmlatt>color="light"</xmlatt> or
+          <xmlatt>color="dark"</xmlatt> to make <xmlelement>thead</xmlelement> elements appear light or dark
         gray.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv outputclass="p-3 border">
       <table>
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
@@ -531,14 +651,29 @@
         </tgroup>
       </table>
     </bodydiv>
-    <codeblock>&lt;table&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;table&gt;
+  &lt;tgroup&gt;
+    &lt;thead color="light"&gt;
+      ...etc
+    &lt;/thead&gt;
+  &lt;/tgroup&gt;
+&lt;/table&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
     &lt;thead outputclass="table-light"&gt;
       ...etc
     &lt;/thead&gt;
-  &lt;tgroup&gt;
+  &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+      </section>
+    </bodydiv>
+    <bodydiv outputclass="p-3 border">
       <table>
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
@@ -570,12 +705,27 @@
         </tgroup>
       </table>
     </bodydiv>
-    <codeblock>&lt;table&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;table&gt;
+  &lt;tgroup&gt;
+    &lt;thead color="dark"&gt;
+      ...etc
+    &lt;/thead&gt;
+  &lt;/tgroup&gt;
+&lt;/table&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
     &lt;thead outputclass="table-dark"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
+      </section>
+    </bodydiv>
   </body>
 </topic>

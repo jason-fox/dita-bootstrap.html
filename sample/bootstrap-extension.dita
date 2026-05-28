@@ -22,11 +22,7 @@
         and adds the necessary CSS and JavaScript — for sliders, whitebox galleries, parallax components, greyscale
         images and additional styling options such as new colors.</p>
       <p>For the full documentation, see
-        <xref
-        href="https://dita-bootstrap.github.io/dita-bootstrap.extension/"
-        format="html"
-        scope="external"
-      >dita-bootstrap.github.io/dita-bootstrap.extension</xref>.</p>
+        <xref href="https://dita-bootstrap.github.io/dita-bootstrap.extension/" format="html" scope="external">dita-bootstrap.github.io/dita-bootstrap.extension</xref>.</p>
 
     <fig>
       <title>Additional Bootstrap Extension Colors</title>

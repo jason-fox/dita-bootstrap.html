@@ -25,9 +25,7 @@
         <b>locally</b> into the generated HTML output.</p>
     <p>This could be used to allow writers to view an incomplete draft of the DITA content whilst maintaining Bootstrap
       interactivity and look-and-feel.</p>
-    <note
-      type="note"
-    >This offline approach deliberately avoids the use of online CDNs and minimises the opportunity for browsers to
+    <note type="note">This offline approach deliberately avoids the use of online CDNs and minimises the opportunity for browsers to
       cache files, and therefore is not recommended for production of documents placed online.</note>
 
     <section>
