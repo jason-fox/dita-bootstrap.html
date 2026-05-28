@@ -52,7 +52,7 @@
     </section>
 
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
-      <xref outputclass="btn-lg btn-danger popover-top">
+      <xref href="#" outputclass="btn-lg btn-danger popover-top">
         <data name="title">Popover title</data>
         <desc>And here’s some amazing content. It’s very engaging. Right?</desc> Click to toggle popover </xref>
     </bodydiv>
@@ -84,13 +84,13 @@
         popover is appended to the <xmlatt>output-class</xmlatt> or taken from the attribute.</p>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
-      <xref outputclass="btn-secondary popover-top">
+      <xref href="#" outputclass="btn-secondary popover-top">
         <desc>Top popover</desc> Popover on top </xref>
-      <xref outputclass="btn-secondary popover-right">
+      <xref href="#" outputclass="btn-secondary popover-right">
         <desc>Right Popover</desc> Popover on right </xref>
-      <xref outputclass="btn-secondary popover-bottom">
+      <xref href="#" outputclass="btn-secondary popover-bottom">
         <desc>Bottom popover</desc> Popover on bottom </xref>
-      <xref outputclass="btn-secondary popover-left">
+      <xref href="#" outputclass="btn-secondary popover-left">
         <desc>Left popover</desc> Popover on left </xref>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
@@ -149,7 +149,7 @@
 }</codeblock>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
-        <xref outputclass="btn-lg btn-danger popover-top">
+        <xref href="#" outputclass="btn-lg btn-danger popover-top">
           <data name="title">Popover title</data>
           <data name="class">custom-popover</data>
           <desc>And here’s some amazing content. It’s very engaging. Right?</desc>Custom popover</xref>
