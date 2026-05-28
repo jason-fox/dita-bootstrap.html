@@ -193,7 +193,11 @@
     <section>
       <title>Alignment</title>
       <p>Change the alignment of pagination component by appending Bootstrap
-        <xref href="https://getbootstrap.com/docs/5.3/utilities/flex/" format="html" scope="external">flexbox utility</xref> classes
+        <xref
+          href="https://getbootstrap.com/docs/5.3/utilities/flex/"
+          format="html"
+          scope="external"
+        >flexbox utility</xref> classes
         to the <xmlatt>outputclass</xmlatt>
       </p>
     </section>

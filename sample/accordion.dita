@@ -29,7 +29,11 @@
     <section>
       <title>How it works</title>
       <p>The accordion uses
-        <xref href="https://getbootstrap.com/docs/5.3/components/collapse/" format="html" scope="external">collapse</xref> internally to make it collapsible. To render an accordion that’s expanded, add
+        <xref
+          href="https://getbootstrap.com/docs/5.3/components/collapse/"
+          format="html"
+          scope="external"
+        >collapse</xref> internally to make it collapsible. To render an accordion that’s expanded, add
         <xmlatt>open="yes"</xmlatt> to expand the relevant <xmlelement>accordion-item</xmlelement> .</p>
     </section>
     <section>

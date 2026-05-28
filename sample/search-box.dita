@@ -35,7 +35,11 @@
         always initialised by a separate dependent DITA-OT plug-in.
       </p>
 
-       <p>The <term>DITA Bootstrap Lunr Search</term> is a DITA-OT plug-in which has been created using the <xref href="https://lunrjs.com/" format="html" scope="external">Lunr.js</xref> library. It may be used directly or as a template for extending
+       <p>The <term>DITA Bootstrap Lunr Search</term> is a DITA-OT plug-in which has been created using the <xref
+          href="https://lunrjs.com/"
+          format="html"
+          scope="external"
+        >Lunr.js</xref> library. It may be used directly or as a template for extending
        search to other search engines.</p>
     </section>
 
@@ -58,13 +62,18 @@
         Node.js must therefore be present for the index to be generated successfully.
         </p>
         <p>
-           To download and install a copy, follow the instructions for your operating system on the <xref href="https://nodejs.org/en/download/" format="html" scope="external">download page</xref>.
+           To download and install a copy, follow the instructions for your operating system on the <xref
+          href="https://nodejs.org/en/download/"
+          format="html"
+          scope="external"
+        >download page</xref>.
         </p>
     </section>
 
     <section>
       <title>Using</title>
-      <p>To run, use the <option>html5-bootstrap</option> transformation and pass the <parmname>--args.hdr</parmname> parameter to the <cmdname>dita</cmdname>
+      <p>To run, use the <option>html5-bootstrap</option> transformation and pass the <parmname
+        >--args.hdr</parmname> parameter to the <cmdname>dita</cmdname>
         command:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> \
   <parmname>--format</parmname>=<option>html5-bootstrap</option> \
@@ -90,7 +99,11 @@
   &lt;/li&gt;
 &lt;/ul&gt;</codeblock>
       <p>The <term>DITA Bootstrap Lunr Search</term> plug-in includes a sample search box in its
-          <xref href="https://github.com/dita-bootstrap/dita-bootstrap.lunr/blob/master/includes/hdr.navbar.lunr.xml" format="html" scope="external">header navbar</xref>.</p>
+          <xref
+          href="https://github.com/dita-bootstrap/dita-bootstrap.lunr/blob/master/includes/hdr.navbar.lunr.xml"
+          format="html"
+          scope="external"
+        >header navbar</xref>.</p>
       <p>Additional styling can be added using standard Bootstrap CSS classes such as
         <codeph>input-group</codeph>:</p>
       <fig>

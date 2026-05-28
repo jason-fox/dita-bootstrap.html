@@ -49,7 +49,9 @@
         heading text from Bootstrap 3.</p>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
-      <p outputclass="h3">Fancy display heading <ph outputclass="small text-body-secondary">with faded secondary text</ph></p>
+      <p outputclass="h3">Fancy display heading <ph
+          outputclass="small text-body-secondary"
+        >with faded secondary text</ph></p>
     </bodydiv>
     <codeblock
     >&lt;title&gt;Fancy display heading &lt;ph outputclass="small text-body-secondary"&gt;with faded secondary text&lt;/ph&gt;&lt;/title&gt;</codeblock>
@@ -333,7 +335,10 @@
 &lt;/dl&gt;</codeblock>
     <section>
       <title outputclass="h3">Description list column width</title>
-      <p>Definitions lists use the twelve column system defined by the Bootstrap grid. By default each <xmlelement>dt</xmlelement> spreads over 3 column widths and each <xmlelement>dd</xmlelement> spreads over 9 column widths. Alter default width of terms by adding <xmlatt>colspan</xmlatt></p>
+      <p>Definitions lists use the twelve column system defined by the Bootstrap grid. By default each <xmlelement
+        >dt</xmlelement> spreads over 3 column widths and each <xmlelement
+        >dd</xmlelement> spreads over 9 column widths. Alter default width of terms by adding <xmlatt
+        >colspan</xmlatt></p>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <dl otherprops="cols(2)">

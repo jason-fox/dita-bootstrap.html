@@ -2,7 +2,8 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="shadows">
   <title>Shadows</title>
-  <shortdesc>Add or remove shadows to elements with box-shadow utilities. The <xmlatt>shadow</xmlatt> attribute enables standard Bootstrap shadow effects on a wide variety of DITA components.</shortdesc>
+  <shortdesc>Add or remove shadows to elements with box-shadow utilities. The <xmlatt
+    >shadow</xmlatt> attribute enables standard Bootstrap shadow effects on a wide variety of DITA components.</shortdesc>
   <prolog>
     <metadata>
       <keywords>

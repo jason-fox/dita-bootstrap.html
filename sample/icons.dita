@@ -24,7 +24,8 @@
       <p>
         <xref href="https://icons.getbootstrap.com/" format="html" scope="external">Bootstrap Icons</xref> is a growing
         library of SVG icons that are designed by @mdo and maintained by the Bootstrap Team. They are open source and
-        licensed under MIT, just like Bootstrap so the icon set is freely available to everyone. A <xmlelement>Link</xmlelement> to the default Bootstrap Icons CDN set is included by default. </p>
+        licensed under MIT, just like Bootstrap so the icon set is freely available to everyone. A <xmlelement
+        >Link</xmlelement> to the default Bootstrap Icons CDN set is included by default. </p>
     </section>
 
     <section>
@@ -241,7 +242,11 @@
         <xref href="https://feathericons.com/" format="html" scope="external">Feather</xref> and
         <xref href="https://octicons.github.com/" format="html" scope="external">Octicons</xref> are available. To use
         an alternative set of icons, modify the
-        <xref href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/master/includes/bootstrap.icons.hdf.xml" format="html" scope="external">sample header</xref> or specify the path of the Icons CDN file using the
+        <xref
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/master/includes/bootstrap.icons.hdf.xml"
+          format="html"
+          scope="external"
+        >sample header</xref> or specify the path of the Icons CDN file using the
           <parmname>--icons.cdn.path</parmname> parameter.</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
         >path/to/your.ditamap</filepath> \

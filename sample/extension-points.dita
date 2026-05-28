@@ -10,7 +10,9 @@
 -->
 <topic id="extension-points">
   <title>Extension Points</title>
-  <shortdesc>These extension points enable you to extend DITA Bootstrap. You can add Ant targets or override XSLT processing steps within the <option>html5-bootstrap</option> transformation.</shortdesc>
+  <shortdesc
+  >These extension points enable you to extend DITA Bootstrap. You can add Ant targets or override XSLT processing steps within the <option
+    >html5-bootstrap</option> transformation.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -31,7 +33,10 @@
           Bootstrap</term> plug-in itself can be extended to process DITA files to create valid Bootstrap HTML to drive
         these custom components.</p>
     </section>
-    <p>The Bootstrap <ph outputclass="initialism" otherprops="title(HyperText Markup Language)">HTML</ph> can be altered using the following extension points:</p>
+    <p>The Bootstrap <ph
+        outputclass="initialism"
+        otherprops="title(HyperText Markup Language)"
+      >HTML</ph> can be altered using the following extension points:</p>
     <parml otherprops="cols(4)">
       <plentry>
         <pt><parmname>bootstrap.process.pre</parmname></pt>
@@ -43,10 +48,14 @@
       </plentry>
      <plentry>
         <pt><parmname>dita.xsl.html5-bootstrap</parmname></pt>
-        <pd>Overrides the default DITA Bootstrap transformation. The referenced file is integrated directly into the XSLT step that generates the HTML.</pd>
+        <pd
+        >Overrides the default DITA Bootstrap transformation. The referenced file is integrated directly into the XSLT step that generates the HTML.</pd>
       </plentry>
     </parml>
-    <p>Additionally the Bootstrap <ph outputclass="initialism" otherprops="title(Cascading Style Sheet)">CSS</ph> can be augmented using the following extension points:</p>
+    <p>Additionally the Bootstrap <ph
+        outputclass="initialism"
+        otherprops="title(Cascading Style Sheet)"
+      >CSS</ph> can be augmented using the following extension points:</p>
     <parml otherprops="cols(4)">
      <plentry>
         <pt><parmname>extend.css.process.pre</parmname></pt>

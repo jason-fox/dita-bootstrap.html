@@ -38,8 +38,13 @@
         have no <xmlatt>margin</xmlatt> by default, so use
         <xref href="https://getbootstrap.com/docs/5.3/utilities/spacing/" format="html" scope="external">spacing
           utilities</xref> as needed.</p>
-      <p>Below is an example of a basic card with mixed content and a default width. Card widths are easily customized with Bootstrap’s various
-          <xref href="https://getbootstrap.com/docs/5.3/components/card/#sizing" format="html" scope="external">sizing options.</xref>
+      <p
+      >Below is an example of a basic card with mixed content and a default width. Card widths are easily customized with Bootstrap’s various
+          <xref
+          href="https://getbootstrap.com/docs/5.3/components/card/#sizing"
+          format="html"
+          scope="external"
+        >sizing options.</xref>
       </p>
     </section>
     <bodydiv outputclass="p-3 border">
@@ -109,7 +114,8 @@
       </bodydiv>
     <section>
       <title>Images</title>
-      <p>The first <xmlelement>image</xmlelement> within a <xmlelement>card</xmlelement> places an image to the top of the card
+      <p>The first <xmlelement>image</xmlelement> within a <xmlelement
+        >card</xmlelement> places an image to the top of the card
       </p>
     </section>
     <bodydiv outputclass="p-3 border">
@@ -140,7 +146,8 @@
       </bodydiv>
     <section>
       <title>Header and footer</title>
-      <p>Add an optional header and/or footer within a card using the <xmlelement>card-header</xmlelement> and <xmlelement>card-footer</xmlelement> elements.
+      <p>Add an optional header and/or footer within a card using the <xmlelement
+        >card-header</xmlelement> and <xmlelement>card-footer</xmlelement> elements.
       </p>
     </section>
     <bodydiv outputclass="p-3 border">

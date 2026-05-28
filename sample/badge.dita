@@ -52,7 +52,10 @@
       </bodydiv>
     <section>
       <title>Background colors</title>
-      <p>Set a background-color with contrasting foreground color with Bootstrap’s <codeph>text-bg-{color}</codeph> helpers. Previously it was required to manually pair your choice of <xmlatt>outputclass</xmlatt> <codeph>text-{color}</codeph> and <codeph>bg-{color}</codeph> utilities for styling, which you still may use if you prefer.</p>
+      <p>Set a background-color with contrasting foreground color with Bootstrap’s <codeph
+        >text-bg-{color}</codeph> helpers. Previously it was required to manually pair your choice of <xmlatt
+        >outputclass</xmlatt> <codeph>text-{color}</codeph> and <codeph
+        >bg-{color}</codeph> utilities for styling, which you still may use if you prefer.</p>
     </section>
     <bodydiv outputclass="p-3 border">
       <p>

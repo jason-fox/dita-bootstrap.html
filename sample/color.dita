@@ -19,7 +19,8 @@
   <body outputclass="language-markup">
     <section>
       <title>Colors</title>
-      <p>Colorize text and backgrounds with color utilities. The <xmlatt>color</xmlatt> attribute provides a semantic way to apply standard Bootstrap color themes.</p>
+      <p>Colorize text and backgrounds with color utilities. The <xmlatt
+        >color</xmlatt> attribute provides a semantic way to apply standard Bootstrap color themes.</p>
     </section>
 
     <bodydiv outputclass="p-3 border">
@@ -60,7 +61,8 @@
 
     <section>
       <title>Base DITA Elements</title>
-      <p>Decoration attributes can be applied to many base DITA elements to add background color and contrasting text.</p>
+      <p
+      >Decoration attributes can be applied to many base DITA elements to add background color and contrasting text.</p>
     </section>
 
     <bodydiv outputclass="p-3 border">

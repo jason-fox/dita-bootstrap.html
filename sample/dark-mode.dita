@@ -10,7 +10,10 @@
 -->
 <topic id="dark-mode">
   <title>Dark Mode</title>
-  <shortdesc>Bootstrap 5.3 supports color modes, starting with dark mode. You can implement your own color mode toggler onto a static menu bar and apply the different color modes as you see fit. Bootstrap supports a light mode (default) and now dark mode. Color modes can be toggled globally on the <xmlelement>html</xmlelement> element, or on specific components and elements, thanks to the <xmlatt>data-bs-theme</xmlatt> attribute.</shortdesc>
+  <shortdesc
+  >Bootstrap 5.3 supports color modes, starting with dark mode. You can implement your own color mode toggler onto a static menu bar and apply the different color modes as you see fit. Bootstrap supports a light mode (default) and now dark mode. Color modes can be toggled globally on the <xmlelement
+    >html</xmlelement> element, or on specific components and elements, thanks to the <xmlatt
+    >data-bs-theme</xmlatt> attribute.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -23,7 +26,9 @@
   <body outputclass="language-markup">
     <section>
       <title>Example</title>
-      <p>To add a color mode toggler to the menu bar, add a series of <xmlelement>button</xmlelement> elements with the attributes <xmlatt>data-bs-theme="light"</xmlatt> or <xmlatt>data-bs-theme="dark"</xmlatt> as shown here.</p>
+      <p>To add a color mode toggler to the menu bar, add a series of <xmlelement
+        >button</xmlelement> elements with the attributes <xmlatt>data-bs-theme="light"</xmlatt> or <xmlatt
+        >data-bs-theme="dark"</xmlatt> as shown here.</p>
       <codeblock>&lt;ul class="navbar-nav ms-auto"&gt;
   &lt;li class="nav-item dropdown"&gt;
     &lt;a href="#" class="nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show"
@@ -51,7 +56,11 @@
   &lt;/li&gt;
 &lt;/ul&gt;</codeblock>
     <p>The plug-in includes a sample color mode toggler in its
-        <xref href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.navbar.example.xml" format="html" scope="external">header navbar</xref>.</p>
+        <xref
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.navbar.example.xml"
+          format="html"
+          scope="external"
+        >header navbar</xref>.</p>
     </section>
   </body>
 </topic>

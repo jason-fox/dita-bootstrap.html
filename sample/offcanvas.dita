@@ -49,7 +49,11 @@
         an offcanvas</p>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
-            <xref props="offcanvas-toggle" href="#offcanvas1" outputclass="btn-primary">Click here to display offcanvas</xref>
+            <xref
+        props="offcanvas-toggle"
+        href="#offcanvas1"
+        outputclass="btn-primary"
+      >Click here to display offcanvas</xref>
       <section id="offcanvas1" outputclass="offcanvas offcanvas-start">
         <title>Offcanvas</title>
         <p>Content for the offcanvas goes here. You can place just about any section elements here.</p>
@@ -86,13 +90,17 @@
       <p>There’s no default placement for offcanvas components, so you must add one of the modifier outputclasses
         below</p>
       <ul>
-        <li>Setting <xmlatt>position="start"</xmlatt> or <xmlatt>outputclass="offcanvas-start"</xmlatt> places offcanvas on the left of the
+        <li>Setting <xmlatt>position="start"</xmlatt> or <xmlatt
+          >outputclass="offcanvas-start"</xmlatt> places offcanvas on the left of the
           viewport (shown above)</li>
-        <li>Setting <xmlatt>position="end"</xmlatt> or <xmlatt>outputclass="offcanvas-end"</xmlatt> places offcanvas on the right of the
+        <li>Setting <xmlatt>position="end"</xmlatt> or <xmlatt
+          >outputclass="offcanvas-end"</xmlatt> places offcanvas on the right of the
           viewport</li>
-        <li>Setting <xmlatt>position="bottom"</xmlatt> or <xmlatt>outputclass="offcanvas-bottom"</xmlatt> places offcanvas on the bottom of
+        <li>Setting <xmlatt>position="bottom"</xmlatt> or <xmlatt
+          >outputclass="offcanvas-bottom"</xmlatt> places offcanvas on the bottom of
           the viewport</li>
-        <li>Setting <xmlatt>position="top"</xmlatt> or <xmlatt>outputclass="offcanvas-top"</xmlatt> places offcanvas on the top of
+        <li>Setting <xmlatt>position="top"</xmlatt> or <xmlatt
+          >outputclass="offcanvas-top"</xmlatt> places offcanvas on the top of
           the viewport</li>
       </ul>
     </section>
@@ -140,11 +148,20 @@
       </bodydiv>
     <section>
       <title>Responsive</title>
-      <p>Responsive offcanvas outputclasses hide content outside the viewport from a specified breakpoint and down. Above that breakpoint, the contents within will behave as usual. For example, <xmlatt>outputclass="offcanvas-lg"</xmlatt> hides content in an offcanvas below the <codeph>lg</codeph> breakpoint, but shows the content above the <codeph>lg</codeph> breakpoint.</p>
+      <p
+      >Responsive offcanvas outputclasses hide content outside the viewport from a specified breakpoint and down. Above that breakpoint, the contents within will behave as usual. For example, <xmlatt
+        >outputclass="offcanvas-lg"</xmlatt> hides content in an offcanvas below the <codeph
+        >lg</codeph> breakpoint, but shows the content above the <codeph>lg</codeph> breakpoint.</p>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
-      <note outputclass="d-none d-lg-block text-bg-info">Resize your browser to show the responsive offcanvas toggle.</note>
-            <xref outputclass="d-lg-none btn-primary" props="offcanvas-toggle" href="#offcanvas4">Toggle offcanvas</xref>
+      <note
+        outputclass="d-none d-lg-block text-bg-info"
+      >Resize your browser to show the responsive offcanvas toggle.</note>
+            <xref
+        outputclass="d-lg-none btn-primary"
+        props="offcanvas-toggle"
+        href="#offcanvas4"
+      >Toggle offcanvas</xref>
       <section outputclass="offcanvas-lg offcanvas offcanvas-start" id="offcanvas4">
         <title>Offcanvas</title>
         <p>This is content within an <xmlatt>outputclass="offcanvas-lg"</xmlatt>.</p>

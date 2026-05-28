@@ -64,8 +64,18 @@
     <bodydiv outputclass="p-3 border">
       <fig>
         <image outputclass="d-auto img-thumbnail" scope="external" href="https://picsum.photos/id/730/300/200"/>
-        <image outputclass="d-light img-thumbnail" scope="external" href="https://picsum.photos/id/730/300/200" deliveryTarget="html"/>
-        <image outputclass="d-dark img-thumbnail" scope="external" href="https://picsum.photos/id/724/300/200" deliveryTarget="html"/>
+        <image
+          outputclass="d-light img-thumbnail"
+          scope="external"
+          href="https://picsum.photos/id/730/300/200"
+          deliveryTarget="html"
+        />
+        <image
+          outputclass="d-dark img-thumbnail"
+          scope="external"
+          href="https://picsum.photos/id/724/300/200"
+          deliveryTarget="html"
+        />
       </fig>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">

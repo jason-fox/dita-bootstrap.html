@@ -11,7 +11,11 @@
 <topic id="offline">
   <title>Bootstrap Sass</title>
   <shortdesc>For more extensive customizations, you can install the
-    <xref href="https://github.com/dita-bootstrap/dita-bootstrap.sass" format="html" scope="external">dita-bootstrap.sass</xref> plug-in and create a custom theme with
+    <xref
+      href="https://github.com/dita-bootstrap/dita-bootstrap.sass"
+      format="html"
+      scope="external"
+    >dita-bootstrap.sass</xref> plug-in and create a custom theme with
     <xref href="https://sass-lang.com" format="html" scope="external">Sass</xref>.</shortdesc>
   <prolog>
     <metadata>
@@ -39,13 +43,21 @@
     <section>
       <title>Generating a CSS theme from Sass</title>
       <p>To generate a CSS theme from your custom Sass source files, follow the instructions in the
-        <xref href="https://github.com/dita-bootstrap/dita-bootstrap.sass/blob/develop/sass/override.scss" format="html" scope="external"><filepath>dita-bootstrap.sass/sass/override.scss</filepath></xref> file and use the
+        <xref
+          href="https://github.com/dita-bootstrap/dita-bootstrap.sass/blob/develop/sass/override.scss"
+          format="html"
+          scope="external"
+        ><filepath>dita-bootstrap.sass/sass/override.scss</filepath></xref> file and use the
           <option>sass-bootstrap</option> transformation:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<varname
         >path/to/your.ditamap</varname> <parmname>--format</parmname>=<option>sass-bootstrap</option></codeblock>
       <p>A <filepath>theme.css</filepath> file will be generated in the <filepath>sass</filepath> folder. To preview the
         results of your customizations, open the
-        <xref href="https://github.com/dita-bootstrap/dita-bootstrap.sass/blob/develop/sass/index.html" format="html" scope="external"><filepath>dita-bootstrap.sass/sass/index.html</filepath></xref> file in a web browser.</p>
+        <xref
+          href="https://github.com/dita-bootstrap/dita-bootstrap.sass/blob/develop/sass/index.html"
+          format="html"
+          scope="external"
+        ><filepath>dita-bootstrap.sass/sass/index.html</filepath></xref> file in a web browser.</p>
     </section>
     <section>
       <title>Using the generated theme</title>

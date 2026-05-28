@@ -2,7 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="spacing">
   <title>Spacing</title>
-  <shortdesc>Use margin and padding utilities to quickly control the layout of elements. The <xmlatt>margin</xmlatt> and <xmlatt>padding</xmlatt> attributes enable standard Bootstrap spacing across a range of DITA components.</shortdesc>
+  <shortdesc>Use margin and padding utilities to quickly control the layout of elements. The <xmlatt
+    >margin</xmlatt> and <xmlatt
+    >padding</xmlatt> attributes enable standard Bootstrap spacing across a range of DITA components.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -20,7 +22,9 @@
   <body outputclass="language-markup">
     <section>
       <title>Margin</title>
-      <p>The <xmlatt>margin</xmlatt> attribute controls the distance between elements, supporting values from 0 to 5 and <codeph>auto</codeph>.</p>
+      <p>The <xmlatt
+        >margin</xmlatt> attribute controls the distance between elements, supporting values from 0 to 5 and <codeph
+        >auto</codeph>.</p>
     </section>
 
     <bodydiv outputclass="p-3 border">
@@ -58,15 +62,24 @@
 
     <section>
       <title>Padding</title>
-      <p>The <xmlatt>padding</xmlatt> attribute controls the internal spacing of an element, supporting values from 0 to 5.</p>
+      <p>The <xmlatt
+        >padding</xmlatt> attribute controls the internal spacing of an element, supporting values from 0 to 5.</p>
     </section>
 
     <bodydiv outputclass="p-3 border">
       <div outputclass="p-0 text-bg-primary">Padding 0</div>
-      <div outputclass="m-1 p-1 text-bg-secondary"><div outputclass="bg-secondary-subtle text-dark w-100">Padding 1</div></div>
-      <div outputclass="m-1 p-2 text-bg-success"><div outputclass="bg-success-subtle text-dark w-100">Padding 2</div></div>
-      <div outputclass="m-1 p-3 text-bg-danger"><div outputclass="bg-danger-subtle text-dark w-100">Padding 3</div></div>
-      <div outputclass="m-1 p-4 text-bg-warning"><div outputclass="bg-warning-subtle text-dark w-100">Padding 4</div></div>
+      <div outputclass="m-1 p-1 text-bg-secondary"><div
+          outputclass="bg-secondary-subtle text-dark w-100"
+        >Padding 1</div></div>
+      <div outputclass="m-1 p-2 text-bg-success"><div
+          outputclass="bg-success-subtle text-dark w-100"
+        >Padding 2</div></div>
+      <div outputclass="m-1 p-3 text-bg-danger"><div
+          outputclass="bg-danger-subtle text-dark w-100"
+        >Padding 3</div></div>
+      <div outputclass="m-1 p-4 text-bg-warning"><div
+          outputclass="bg-warning-subtle text-dark w-100"
+        >Padding 4</div></div>
       <div outputclass="m-1 p-5 text-bg-info"><div outputclass="bg-info-subtle text-dark w-100">Padding 5</div></div>
     </bodydiv>
 
@@ -93,7 +106,8 @@
 
     <section>
       <title>Directional Spacing</title>
-      <p>The <xmlatt>margin</xmlatt> and <xmlatt>padding</xmlatt> attributes also support directional spacing using a prefix:</p>
+      <p>The <xmlatt>margin</xmlatt> and <xmlatt
+        >padding</xmlatt> attributes also support directional spacing using a prefix:</p>
       <ul>
         <li><codeph>t</codeph> - Top</li>
         <li><codeph>b</codeph> - Bottom</li>
@@ -108,8 +122,12 @@
     <bodydiv outputclass="p-3 border">
       <div outputclass="mt-5 mb-0 text-bg-primary">Margin Top 5, Bottom 0</div>
       <div outputclass="mx-3 text-bg-secondary">Margin Horizontal 3</div>
-      <div outputclass="py-5 text-bg-success"><div outputclass="bg-success-subtle text-dark w-100">Padding Vertical 5</div></div>
-      <div outputclass="ps-3 pe-1 text-bg-danger"><div outputclass="bg-danger-subtle text-dark w-100">Padding Start 3, End 1</div></div>
+      <div outputclass="py-5 text-bg-success"><div
+          outputclass="bg-success-subtle text-dark w-100"
+        >Padding Vertical 5</div></div>
+      <div outputclass="ps-3 pe-1 text-bg-danger"><div
+          outputclass="bg-danger-subtle text-dark w-100"
+        >Padding Start 3, End 1</div></div>
     </bodydiv>
 
     <bodydiv outputclass="nav-pills mt-3">

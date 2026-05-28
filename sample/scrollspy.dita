@@ -71,10 +71,13 @@
     </section>
 
     <section id="including-topics-sections">
-      <title>Including <xmlelement>topic</xmlelement> and <xmlelement>section</xmlelement> elements in the navigation</title>
+      <title>Including <xmlelement>topic</xmlelement> and <xmlelement
+        >section</xmlelement> elements in the navigation</title>
         <p>
-          To ensure that a heading is listed in the scrollspy navigation, make sure that every <xmlelement>topic</xmlelement>
-          and every <xmlelement>section</xmlelement> element has an <xmlatt>id</xmlatt> and <xmlelement>title</xmlelement>.
+          To ensure that a heading is listed in the scrollspy navigation, make sure that every <xmlelement
+        >topic</xmlelement>
+          and every <xmlelement>section</xmlelement> element has an <xmlatt>id</xmlatt> and <xmlelement
+        >title</xmlelement>.
         </p>
         <codeblock>&lt;topic&gt;
   &lt;title&gt;Topic&lt;/title&gt;
@@ -104,7 +107,11 @@
     <section id="excluding-sections">
       <title>Excluding <xmlelement>section</xmlelement> elements from the navigation</title>
       <p>
-        Omit the <xmlatt>id</xmlatt> to ignore a <xmlelement>section</xmlelement>, or wrap the <xmlelement>section</xmlelement> in a <xmlelement>bodydiv</xmlelement> element. Any <xref href="./offcanvas.dita" format="dita">offcanvas components</xref> are ignored automatically.
+        Omit the <xmlatt>id</xmlatt> to ignore a <xmlelement>section</xmlelement>, or wrap the <xmlelement
+        >section</xmlelement> in a <xmlelement>bodydiv</xmlelement> element. Any <xref
+          href="./offcanvas.dita"
+          format="dita"
+        >offcanvas components</xref> are ignored automatically.
       </p>
       <codeblock>&lt;bodydiv&gt;
   &lt;section id="section-1"&gt;

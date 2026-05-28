@@ -28,8 +28,13 @@
     <section>
       <title>Sidebar</title>
       <p>The plug-in extends the standard HTML5 table of contents (ToC)
-        <xref href="https://www.dita-ot.org/dev/parameters/parameters-html5.html#html5__nav-toc" format="html" scope="external">navigation parameter</xref>
-        <parmname>--nav-toc</parmname> to add table of contents items to the navigation sidebar. (The navigation is rendered as
+        <xref
+          href="https://www.dita-ot.org/dev/parameters/parameters-html5.html#html5__nav-toc"
+          format="html"
+          scope="external"
+        >navigation parameter</xref>
+        <parmname
+        >--nav-toc</parmname> to add table of contents items to the navigation sidebar. (The navigation is rendered as
         a sidebar in desktop browsers and collapsible  on smaller devices.)</p>
       <p>By default, the plug-in uses the <option>partial</option> option to include the current topic in the ToC along
         with its parents, siblings and children. As with the default HTML5 plug-in, the <option>full</option> option can
@@ -39,8 +44,16 @@
         either the Bootstrap
         <xref href="https://getbootstrap.com/docs/5.3/components/list-group/" format="html" scope="external">list
           group</xref> component,
-        <xref href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#pills" format="html" scope="external">nav-pills</xref>, or
-         <xref href="https://getbootstrap.com/docs/5.3/components/collapse/" format="html" scope="external">collapsible</xref> menus.
+        <xref
+          href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#pills"
+          format="html"
+          scope="external"
+        >nav-pills</xref>, or
+         <xref
+          href="https://getbootstrap.com/docs/5.3/components/collapse/"
+          format="html"
+          scope="external"
+        >collapsible</xref> menus.
       </p>
       <ul>
         <li>
@@ -112,7 +125,8 @@
 
     <section>
       <p>
-        The sidebar is hidden by default on mobile. To ensure that the sidebar content can be accessed, the header file must include the following toggle with <xmlatt>data-bs-target="#bdSidebar"</xmlatt>
+        The sidebar is hidden by default on mobile. To ensure that the sidebar content can be accessed, the header file must include the following toggle with <xmlatt
+        >data-bs-target="#bdSidebar"</xmlatt>
         and <xmlatt>data-bs-toggle="offcanvas"</xmlatt>:
       </p>
       <codeblock outputclass="language-xml" deliveryTarget="html">&lt;div class="bd-navbar-toggle"&gt;
@@ -123,7 +137,8 @@
   &lt;/button&gt;
 &lt;/div&gt;</codeblock>
 
-      <p>The look and feel of the mobile sidebar header can be altered using the <parmname>--bootstrap.sidebar.hdr</parmname> parameter and supplying an HTML header file:</p>
+      <p>The look and feel of the mobile sidebar header can be altered using the <parmname
+        >--bootstrap.sidebar.hdr</parmname> parameter and supplying an HTML header file:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
         >path/to/your.ditamap</filepath> \
   <parmname>--format</parmname>=<option>html5-bootstrap</option> \
@@ -131,9 +146,14 @@
   <parmname>--bootstrap.sidebar.hdr</parmname>=<filepath>path/to/your.header</filepath></codeblock>
 
       <p>The plug-in includes a sample
-        <xref href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.sidebar.example.xml" format="html" scope="external">header</xref>.</p>
+        <xref
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.sidebar.example.xml"
+          format="html"
+          scope="external"
+        >header</xref>.</p>
 
-      <p>No footer is added to the sidebar by default, but a custom sidebar footer can be added using the <parmname>--bootstrap.sidebar.ftr</parmname> parameter and supplying an HTML footer file:</p>
+      <p>No footer is added to the sidebar by default, but a custom sidebar footer can be added using the <parmname
+        >--bootstrap.sidebar.ftr</parmname> parameter and supplying an HTML footer file:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
         >path/to/your.ditamap</filepath> \
   <parmname>--format</parmname>=<option>html5-bootstrap</option> \
@@ -141,14 +161,19 @@
   <parmname>--bootstrap.sidebar.ftr</parmname>=<filepath>path/to/your.footer</filepath></codeblock>
 
       <p>The plug-in also includes a sample
-        <xref href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/ftr.sidebar.example.xml" format="html" scope="external">custom footer</xref>.</p>
+        <xref
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/ftr.sidebar.example.xml"
+          format="html"
+          scope="external"
+        >custom footer</xref>.</p>
 
 
     </section>
     <section>
       <title>Menu bar</title>
       <p>Additionally, the first-level navigation menu can be switched to a horizontal Bootstrap navbar to reduce the
-        depth of the ToC. To use this option, add the <parmname>--menubar-toc.include</parmname>=<option>yes</option> parameter to the
+        depth of the ToC. To use this option, add the <parmname>--menubar-toc.include</parmname>=<option
+        >yes</option> parameter to the
           <cmdname>dita</cmdname> command:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
         >path/to/your.ditamap</filepath> \
@@ -173,13 +198,22 @@
         <image scalefit="yes" href="./src/topbar.png"/>
       </fig>
       <p>The plug-in also includes a sample
-        <xref href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.topbar.example.xml" format="html" scope="external">custom header</xref>.</p>
+        <xref
+          href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.topbar.example.xml"
+          format="html"
+          scope="external"
+        >custom header</xref>.</p>
     </section>
     <section>
       <title>Dividers</title>
       <p>
-        <xref href="https://getbootstrap.com/docs/5.3/components/dropdowns/#dividers" format="html" scope="external">Dividers</xref> can be added to items rendered in collapsible sidebars and menus by adding the
-         <xmlelement>othermeta name="divider"</xmlelement> element to the <xmlelement>topicmeta</xmlelement> element in the DITA map topic reference. You can specify a label for the divider via the
+        <xref
+          href="https://getbootstrap.com/docs/5.3/components/dropdowns/#dividers"
+          format="html"
+          scope="external"
+        >Dividers</xref> can be added to items rendered in collapsible sidebars and menus by adding the
+         <xmlelement>othermeta name="divider"</xmlelement> element to the <xmlelement
+        >topicmeta</xmlelement> element in the DITA map topic reference. You can specify a label for the divider via the
          <xmlatt>content</xmlatt> attribute on the <xmlelement>othermeta</xmlelement> element.
       </p>
     </section>

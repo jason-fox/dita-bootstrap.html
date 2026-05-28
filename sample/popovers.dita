@@ -39,7 +39,8 @@
         <li>Popovers for <xmlatt>outputclass="disabled"</xmlatt> elements must be triggered on a wrapper element.</li>
         <li>Popovers must be hidden before their corresponding elements have been removed from the DOM.</li>
         <li>Popovers can be triggered thanks to an element inside a shadow DOM.</li>
-        <li>Popovers are include by default, but for performance reasons, <b>you may exclude them yourself</b> by setting
+        <li>Popovers are include by default, but for performance reasons, <b
+          >you may exclude them yourself</b> by setting
             <codeph>--popovers.include</codeph>=<i>no</i>
         </li>
       </ul>
@@ -78,7 +79,8 @@
       <title>Four directions</title>
       <p>Four options are available: <codeph>top</codeph>, <codeph>right</codeph>, <codeph>bottom</codeph>, and
           <codeph>left</codeph> aligned. Directions are mirrored when using Bootstrap in RTL. To enable popovers, add
-          <xmlatt>output-class="popover-*"</xmlatt> to the enclosing <xmlelement>xref</xmlelement>. For the <xmlelement>popover</xmlelement> element use the <xmlatt>position</xmlatt> attribute. The direction of the
+          <xmlatt>output-class="popover-*"</xmlatt> to the enclosing <xmlelement>xref</xmlelement>. For the <xmlelement
+        >popover</xmlelement> element use the <xmlatt>position</xmlatt> attribute. The direction of the
         popover is appended to the <xmlatt>output-class</xmlatt> or taken from the attribute.</p>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
@@ -134,7 +136,8 @@
     <section>
       <title>Custom popovers</title>
       <p>You can customize the appearance of popovers using CSS variables.
-        We set a custom class with <codeph>&lt;data name="class"&gt;custom-popover&lt;data&gt;</codeph> to scope our custom
+        We set a custom class with <codeph
+        >&lt;data name="class"&gt;custom-popover&lt;data&gt;</codeph> to scope our custom
         appearance and use it to override some of the local CSS variables.</p>
       <codeblock outputclass="language-css">.custom-popover {
   --bs-popover-max-width: 200px;

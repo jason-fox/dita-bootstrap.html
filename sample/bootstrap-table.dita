@@ -25,7 +25,11 @@
         <xref href="https://bootstrap-table.com/" format="html" scope="external">Bootstrap Table</xref> library
         and adds the necessary CSS and JavaScript for dynamic tables with search, sort, and pagination functions.</p>
       <p>For the full documentation, see
-        <xref href="https://dita-bootstrap.github.io/dita-bootstrap.table/" format="html" scope="external">dita-bootstrap.github.io/dita-bootstrap.table</xref>.</p>
+        <xref
+        href="https://dita-bootstrap.github.io/dita-bootstrap.table/"
+        format="html"
+        scope="external"
+      >dita-bootstrap.github.io/dita-bootstrap.table</xref>.</p>
     <note type="note">If you just want to style DITA tables with the standard Bootstrap table styles, you don’t need a 
       separate plug-in. See <xref href="tables.dita"/> for details on the output classes that the 
       <term>DITA Bootstrap</term> plug-in supports.</note>

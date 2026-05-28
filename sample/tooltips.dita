@@ -37,7 +37,8 @@
         <li>Tooltips for <xmlatt>outputclass="disabled"</xmlatt> elements must be triggered on a wrapper element.</li>
         <li>Tooltips must be hidden before their corresponding elements have been removed from the DOM.</li>
         <li>Tooltips can be triggered thanks to an element inside a shadow DOM.</li>
-        <li>Tooltips are included by default, but for performance reasons, <b>you may exclude them yourself</b> by setting
+        <li>Tooltips are included by default, but for performance reasons, <b
+          >you may exclude them yourself</b> by setting
             <codeph>--popovers.include</codeph>=<i>no</i>.</li>
       </ul>
     </section>
@@ -59,7 +60,9 @@
     </bodydiv>
 
     <p>To enable tooltips, add <xmlatt>output-class="tooltip-*"</xmlatt> to the enclosing
-      <xmlelement>xref</xmlelement>. For the <xmlelement>tooltip</xmlelement> element use the <xmlatt>position</xmlatt> attribute. The direction of the tooltip is appended to the <xmlatt>output-class</xmlatt> or taken from the attribute.</p>
+      <xmlelement>xref</xmlelement>. For the <xmlelement>tooltip</xmlelement> element use the <xmlatt
+      >position</xmlatt> attribute. The direction of the tooltip is appended to the <xmlatt
+      >output-class</xmlatt> or taken from the attribute.</p>
     <p>Hover over the buttons below to see the four tooltips directions: <codeph>top</codeph>, <codeph>right</codeph>,
         <codeph>bottom</codeph>, and <codeph>left</codeph>. Directions are mirrored when using Bootstrap in RTL.</p>
     <bodydiv outputclass="p-3 border">
@@ -136,7 +139,8 @@
       </bodydiv>
     <section>
       <title>Custom tooltips</title>
-      <p>You can customize the appearance of tooltips using CSS variables. We set a custom class with <codeph>&lt;data name="class"&gt;custom-tooltip&lt;data&gt;</codeph>  to scope our custom appearance and use it to override a local CSS variable.</p>
+      <p>You can customize the appearance of tooltips using CSS variables. We set a custom class with <codeph
+        >&lt;data name="class"&gt;custom-tooltip&lt;data&gt;</codeph>  to scope our custom appearance and use it to override a local CSS variable.</p>
     </section>
     <codeblock outputclass="language-css">.custom-tooltip {
   --bs-tooltip-bg: var(--bs-primary);

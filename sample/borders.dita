@@ -49,7 +49,8 @@
 
     <section>
       <title>Border Specialization</title>
-      <p>The <xmlatt>border</xmlatt> and <xmlatt>rounded</xmlatt> attributes provide a semantic way to add borders and rounded corners.</p>
+      <p>The <xmlatt>border</xmlatt> and <xmlatt
+        >rounded</xmlatt> attributes provide a semantic way to add borders and rounded corners.</p>
     </section>
 
     <bodydiv outputclass="p-3 border">
@@ -109,7 +110,8 @@
     </bodydiv>
     <section>
       <title>Border Styling</title>
-      <p>The <xmlatt>border</xmlatt> attribute also accepts numeric values 1-5 for width. The <xmlatt>rounded</xmlatt> attribute 
+      <p>The <xmlatt>border</xmlatt> attribute also accepts numeric values 1-5 for width. The <xmlatt
+        >rounded</xmlatt> attribute 
         supports values 0-5, <codeph>circle</codeph> and <codeph>pill</codeph>.
         The <xmlatt>bordercolor</xmlatt> attribute can be used to set the color of the border.</p>
     </section>
