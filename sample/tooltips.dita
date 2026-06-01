@@ -78,25 +78,6 @@
         <desc>Tooltip on left</desc> Tooltip on left </xref>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;tooltip outputclass="btn-secondary" position="top"&gt;
-  &lt;desc&gt;Tooltip on top&lt;/desc&gt;
-  Tooltip on top
-&lt;/tooltip&gt;
-&lt;tooltip outputclass="btn-secondary" position="right"&gt;
-  &lt;desc&gt;Tooltip on right&lt;/desc&gt;
-  Tooltip on right
-&lt;/tooltip&gt;
-&lt;tooltip outputclass="btn-secondary" position="bottom"&gt;
-  &lt;desc&gt;Tooltip on bottom&lt;/desc&gt;
-  Tooltip on bottom
-&lt;/tooltip&gt;
-&lt;tooltip outputclass="btn-secondary" position="left"&gt;
-  &lt;desc&gt;Tooltip on left&lt;/desc&gt;
-  Tooltip on left
-&lt;/tooltip&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-secondary tooltip-top"&gt;
   &lt;desc&gt;Tooltip on top&lt;/desc&gt;
@@ -115,6 +96,25 @@
   Tooltip on left
 &lt;/xref&gt;</codeblock>
         </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;tooltip outputclass="btn-secondary" position="top"&gt;
+  &lt;desc&gt;Tooltip on top&lt;/desc&gt;
+  Tooltip on top
+&lt;/tooltip&gt;
+&lt;tooltip outputclass="btn-secondary" position="right"&gt;
+  &lt;desc&gt;Tooltip on right&lt;/desc&gt;
+  Tooltip on right
+&lt;/tooltip&gt;
+&lt;tooltip outputclass="btn-secondary" position="bottom"&gt;
+  &lt;desc&gt;Tooltip on bottom&lt;/desc&gt;
+  Tooltip on bottom
+&lt;/tooltip&gt;
+&lt;tooltip outputclass="btn-secondary" position="left"&gt;
+  &lt;desc&gt;Tooltip on left&lt;/desc&gt;
+  Tooltip on left
+&lt;/tooltip&gt;</codeblock>
+        </section>
       </bodydiv>
       <p>Custom HTML can be added to tooltips using additional DITA elements within the <xmlelement>desc</xmlelement>
       </p>
@@ -125,18 +125,18 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;tooltip outputclass="btn-secondary"&gt;
-  &lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
-  Tooltip with embedded DITA
-&lt;/tooltip&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-secondary tooltip-top"&gt;
   &lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
   Tooltip with embedded DITA
 &lt;/xref&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;tooltip outputclass="btn-secondary"&gt;
+  &lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
+  Tooltip with embedded DITA
+&lt;/tooltip&gt;</codeblock>
         </section>
       </bodydiv>
     <section>
@@ -156,20 +156,20 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;tooltip outputclass="btn-secondary"&gt;
-  &lt;data name="class"&gt;custom-tooltip&lt;/data&gt;
-  &lt;desc&gt;This top tooltip is themed via CSS variables.&lt;/desc&gt;
-  Custom tooltip
-&lt;/tooltip&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-secondary tooltip-top"&gt;
   &lt;data name="class"&gt;custom-tooltip&lt;/data&gt;
   &lt;desc&gt;This top tooltip is themed via CSS variables.&lt;/desc&gt;
   Custom tooltip
 &lt;/xref&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;tooltip outputclass="btn-secondary"&gt;
+  &lt;data name="class"&gt;custom-tooltip&lt;/data&gt;
+  &lt;desc&gt;This top tooltip is themed via CSS variables.&lt;/desc&gt;
+  Custom tooltip
+&lt;/tooltip&gt;</codeblock>
         </section>
       </bodydiv>
   </body>

@@ -59,19 +59,6 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;pagination&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/pagination&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;
@@ -83,6 +70,19 @@
     &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/section&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;pagination&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/pagination&gt;</codeblock>
         </section>
       </bodydiv>
     <section>
@@ -114,19 +114,6 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;pagination size="large"&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/pagination&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;
@@ -138,6 +125,19 @@
     &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/section&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;pagination size="large"&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/pagination&gt;</codeblock>
         </section>
       </bodydiv>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
@@ -164,19 +164,6 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;pagination size="small"&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/pagination&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;
@@ -188,6 +175,19 @@
     &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/section&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;pagination size="small"&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/pagination&gt;</codeblock>
         </section>
       </bodydiv>
     <section>
@@ -225,19 +225,6 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;pagination outputclass="justify-content-center"&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/pagination&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;
@@ -249,6 +236,19 @@
     &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/section&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;pagination outputclass="justify-content-center"&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/pagination&gt;</codeblock>
         </section>
       </bodydiv>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
@@ -275,19 +275,6 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;pagination outputclass="justify-content-end"&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/pagination&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;
@@ -299,6 +286,19 @@
     &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/section&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;pagination outputclass="justify-content-end"&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/pagination&gt;</codeblock>
         </section>
       </bodydiv>
   </body>

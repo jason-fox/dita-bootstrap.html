@@ -38,20 +38,20 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button-group&gt;
-  &lt;button href="#"&gt;Left&lt;/button&gt;
-  &lt;button href="#"&gt;Middle&lt;/button&gt;
-  &lt;button href="#"&gt;Right&lt;/button&gt;
-&lt;/button-group&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-group"&gt;
   &lt;xref outputclass="btn-primary" href="#"&gt;Left&lt;/xref&gt;
   &lt;xref outputclass="btn-primary" href="#"&gt;Middle&lt;/xref&gt;
   &lt;xref outputclass="btn-primary" href="#"&gt;Right&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button-group&gt;
+  &lt;button href="#"&gt;Left&lt;/button&gt;
+  &lt;button href="#"&gt;Middle&lt;/button&gt;
+  &lt;button href="#"&gt;Right&lt;/button&gt;
+&lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
     <section>
@@ -66,20 +66,20 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button-group&gt;
-  &lt;button color="danger" href="#"&gt;Left&lt;/button&gt;
-  &lt;button color="warning" href="#"&gt;Middle&lt;/button&gt;
-  &lt;button color="success" href="#"&gt;Right&lt;/button&gt;
-&lt;/button-group&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-group"&gt;
   &lt;xref outputclass="btn-danger" href="#"&gt;Left&lt;/xref&gt;
   &lt;xref outputclass="btn-warning" href="#"&gt;Middle&lt;/xref&gt;
   &lt;xref outputclass="btn-success" href="#"&gt;Right&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button-group&gt;
+  &lt;button color="danger" href="#"&gt;Left&lt;/button&gt;
+  &lt;button color="warning" href="#"&gt;Middle&lt;/button&gt;
+  &lt;button color="success" href="#"&gt;Right&lt;/button&gt;
+&lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
     <section>
@@ -94,20 +94,20 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button-group&gt;
-  &lt;button outline="yes" href="#"&gt;Left&lt;/button&gt;
-  &lt;button outline="yes" href="#"&gt;Middle&lt;/button&gt;
-  &lt;button outline="yes" href="#"&gt;Right&lt;/button&gt;
-&lt;/button-group&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-group"&gt;
   &lt;xref outputclass="btn-outline-primary" href="#"&gt;Left&lt;/xref&gt;
   &lt;xref outputclass="btn-outline-primary" href="#"&gt;Middle&lt;/xref&gt;
   &lt;xref outputclass="btn-outline-primary" href="#"&gt;Right&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button-group&gt;
+  &lt;button outline="yes" href="#"&gt;Left&lt;/button&gt;
+  &lt;button outline="yes" href="#"&gt;Middle&lt;/button&gt;
+  &lt;button outline="yes" href="#"&gt;Right&lt;/button&gt;
+&lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
     <section>
@@ -134,25 +134,6 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button-toolbar&gt;
-  &lt;button-group outputclass="me-2"&gt;
-    &lt;button href="#"&gt;1&lt;/button&gt;
-    &lt;button href="#"&gt;2&lt;/button&gt;
-    &lt;button href="#"&gt;3&lt;/button&gt;
-    &lt;button href="#"&gt;4&lt;/button&gt;
-  &lt;/button-group&gt;
-  &lt;button-group outputclass="me-2"&gt;
-    &lt;button color="secondary" href="#"&gt;5&lt;/button&gt;
-    &lt;button color="secondary" href="#"&gt;6&lt;/button&gt;
-    &lt;button color="secondary" href="#"&gt;7&lt;/button&gt;
-  &lt;/button-group&gt;
-  &lt;button-group outputclass="me-2"&gt;
-    &lt;button color="info" href="#"&gt;8&lt;/button&gt;
-  &lt;/button-group&gt;
-&lt;/button-toolbar&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-toolbar"&gt;
   &lt;div outputclass="btn-group me-2"&gt;
@@ -171,6 +152,25 @@
   &lt;/div&gt;
 &lt;/div&gt;</codeblock>
         </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button-toolbar&gt;
+  &lt;button-group outputclass="me-2"&gt;
+    &lt;button href="#"&gt;1&lt;/button&gt;
+    &lt;button href="#"&gt;2&lt;/button&gt;
+    &lt;button href="#"&gt;3&lt;/button&gt;
+    &lt;button href="#"&gt;4&lt;/button&gt;
+  &lt;/button-group&gt;
+  &lt;button-group outputclass="me-2"&gt;
+    &lt;button color="secondary" href="#"&gt;5&lt;/button&gt;
+    &lt;button color="secondary" href="#"&gt;6&lt;/button&gt;
+    &lt;button color="secondary" href="#"&gt;7&lt;/button&gt;
+  &lt;/button-group&gt;
+  &lt;button-group outputclass="me-2"&gt;
+    &lt;button color="info" href="#"&gt;8&lt;/button&gt;
+  &lt;/button-group&gt;
+&lt;/button-toolbar&gt;</codeblock>
+        </section>
       </bodydiv>
     <section>
       <title>Vertical variation</title>
@@ -185,20 +185,20 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button-group vertical="yes"&gt;
-  &lt;button href="#"&gt;Top&lt;/button&gt;
-  &lt;button href="#"&gt;Middle&lt;/button&gt;
-  &lt;button href="#"&gt;Bottom&lt;/button&gt;
-&lt;/button-group&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-group-vertical"&gt;
   &lt;xref outputclass="btn-primary" href="#"&gt;Top&lt;/xref&gt;
   &lt;xref outputclass="btn-primary" href="#"&gt;Middle&lt;/xref&gt;
   &lt;xref outputclass="btn-primary" href="#"&gt;Bottom&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button-group vertical="yes"&gt;
+  &lt;button href="#"&gt;Top&lt;/button&gt;
+  &lt;button href="#"&gt;Middle&lt;/button&gt;
+  &lt;button href="#"&gt;Bottom&lt;/button&gt;
+&lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
   </body>

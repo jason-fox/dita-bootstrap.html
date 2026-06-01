@@ -36,17 +36,6 @@
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;div color="primary"&gt;.text-bg-primary&lt;/div&gt;
-&lt;div color="secondary"&gt;.text-bg-secondary&lt;/div&gt;
-&lt;div color="success"&gt;.text-bg-success&lt;/div&gt;
-&lt;div color="danger"&gt;.text-bg-danger&lt;/div&gt;
-&lt;div color="warning"&gt;.text-bg-warning&lt;/div&gt;
-&lt;div color="info"&gt;.text-bg-info&lt;/div&gt;
-&lt;div color="light"&gt;.text-bg-light&lt;/div&gt;
-&lt;div color="dark"&gt;.text-bg-dark&lt;/div&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;div outputclass="text-bg-primary"&gt;.text-bg-primary&lt;/div&gt;
 &lt;div outputclass="text-bg-secondary"&gt;.text-bg-secondary&lt;/div&gt;
@@ -56,6 +45,17 @@
 &lt;div outputclass="text-bg-info"&gt;.text-bg-info&lt;/div&gt;
 &lt;div outputclass="text-bg-light"&gt;.text-bg-light&lt;/div&gt;
 &lt;div outputclass="text-bg-dark"&gt;.text-bg-dark&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;div color="primary"&gt;.text-bg-primary&lt;/div&gt;
+&lt;div color="secondary"&gt;.text-bg-secondary&lt;/div&gt;
+&lt;div color="success"&gt;.text-bg-success&lt;/div&gt;
+&lt;div color="danger"&gt;.text-bg-danger&lt;/div&gt;
+&lt;div color="warning"&gt;.text-bg-warning&lt;/div&gt;
+&lt;div color="info"&gt;.text-bg-info&lt;/div&gt;
+&lt;div color="light"&gt;.text-bg-light&lt;/div&gt;
+&lt;div color="dark"&gt;.text-bg-dark&lt;/div&gt;</codeblock>
       </section>
     </bodydiv>
 
@@ -119,55 +119,6 @@
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;section color="primary"&gt;
-  &lt;title&gt;Section Decoration&lt;/title&gt;
-  &lt;p&gt;This section has a primary color background.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;div color="success" padding="3"&gt;
-  &lt;p&gt;This div has a success color background.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;pre color="warning"&gt;
-  This pre has a warning color background.
-&lt;/pre&gt;
-
-&lt;lq color="danger" padding="1"&gt;
-  This is a long quote with a danger color background.
-&lt;/lq&gt;
-
-&lt;table color="primary" padding="1" width="100"&gt;
-  &lt;tgroup cols="2"&gt;
-    &lt;thead&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Animal&lt;/entry&gt;
-        &lt;entry&gt;Gestation&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;row color="info"&gt;
-        ...
-      &lt;/row&gt;
-      &lt;row color="success"&gt;
-        ...
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-        &lt;entry color="danger"&gt;...&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        ...
-      &lt;/row&gt;
-    &lt;/tbody&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;
-
-&lt;note color="primary"&gt;
-  This is a note with a primary color theme.
-&lt;/note&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;section outputclass="text-bg-primary"&gt;
   &lt;title&gt;Section Decoration&lt;/title&gt;
@@ -217,6 +168,55 @@
   ...
 &lt;/note&gt;</codeblock>
       </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;section color="primary"&gt;
+  &lt;title&gt;Section Decoration&lt;/title&gt;
+  &lt;p&gt;This section has a primary color background.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;div color="success" padding="3"&gt;
+  &lt;p&gt;This div has a success color background.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;pre color="warning"&gt;
+  This pre has a warning color background.
+&lt;/pre&gt;
+
+&lt;lq color="danger" padding="1"&gt;
+  This is a long quote with a danger color background.
+&lt;/lq&gt;
+
+&lt;table color="primary" padding="1" width="100"&gt;
+  &lt;tgroup cols="2"&gt;
+    &lt;thead&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Animal&lt;/entry&gt;
+        &lt;entry&gt;Gestation&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;row color="info"&gt;
+        ...
+      &lt;/row&gt;
+      &lt;row color="success"&gt;
+        ...
+      &lt;/row&gt;
+      &lt;row&gt;
+        &lt;entry&gt;...&lt;/entry&gt;
+        &lt;entry color="danger"&gt;...&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row&gt;
+        ...
+      &lt;/row&gt;
+    &lt;/tbody&gt;
+  &lt;/tgroup&gt;
+&lt;/table&gt;
+
+&lt;note color="primary"&gt;
+  This is a note with a primary color theme.
+&lt;/note&gt;</codeblock>
+      </section>
     </bodydiv>
 
     <section>
@@ -259,6 +259,26 @@
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;img src="..." class="img-thumbnail bg-warning"/&gt;
+
+&lt;section outputclass="card text-bg-success w-50"&gt;
+  ...
+&lt;/section&gt;
+
+&lt;bodydiv outputclass="accordion accordion-info"&gt;
+  ...
+&lt;/bodydiv&gt;
+
+&lt;ul outputclass="list-group list-group-item-danger w-50"&gt;
+  ...
+&lt;/ul&gt;
+
+&lt;ul outputclass="carousel carousel-dark w-50"&gt;
+  ...
+&lt;/ul&gt;</codeblock>
+      </section>
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;thumbnail href="..." color="warning"/&gt;
 
@@ -290,26 +310,6 @@
     &lt;image href="..."/&gt;
   &lt;/carousel-item&gt;
 &lt;/carousel&gt;</codeblock>
-      </section>
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;img src="..." class="img-thumbnail bg-warning"/&gt;
-
-&lt;section outputclass="card text-bg-success w-50"&gt;
-  ...
-&lt;/section&gt;
-
-&lt;bodydiv outputclass="accordion accordion-info"&gt;
-  ...
-&lt;/bodydiv&gt;
-
-&lt;ul outputclass="list-group list-group-item-danger w-50"&gt;
-  ...
-&lt;/ul&gt;
-
-&lt;ul outputclass="carousel carousel-dark w-50"&gt;
-  ...
-&lt;/ul&gt;</codeblock>
       </section>
     </bodydiv>
 

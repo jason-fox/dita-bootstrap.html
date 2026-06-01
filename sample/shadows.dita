@@ -35,18 +35,18 @@
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;div shadow="none" margin="3" padding="3" color="light"&gt;No shadow&lt;/div&gt;
-&lt;div shadow="sm" margin="3" padding="3" color="light"&gt;Small shadow&lt;/div&gt;
-&lt;div shadow="yes" margin="3" padding="3" color="light"&gt;Regular shadow&lt;/div&gt;
-&lt;div shadow="lg" margin="3" padding="3" color="light"&gt;Larger shadow&lt;/div&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;div outputclass="shadow-none m-3 p-3 text-bg-light"&gt;No shadow&lt;/div&gt;
 &lt;div outputclass="shadow-sm m-3 p-3 text-bg-light"&gt;Small shadow&lt;/div&gt;
 &lt;div outputclass="shadow m-3 p-3 text-bg-light"&gt;Regular shadow&lt;/div&gt;
 &lt;div outputclass="shadow-lg m-3 p-3 text-bg-light"&gt;Larger shadow&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;div shadow="none" margin="3" padding="3" color="light"&gt;No shadow&lt;/div&gt;
+&lt;div shadow="sm" margin="3" padding="3" color="light"&gt;Small shadow&lt;/div&gt;
+&lt;div shadow="yes" margin="3" padding="3" color="light"&gt;Regular shadow&lt;/div&gt;
+&lt;div shadow="lg" margin="3" padding="3" color="light"&gt;Larger shadow&lt;/div&gt;</codeblock>
       </section>
     </bodydiv>
 
@@ -65,15 +65,6 @@
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;card shadow="lg" margin="3" color="light"&gt;
-  &lt;title&gt;Shadowed Card&lt;/title&gt;
-  &lt;p&gt;This card has a large shadow.&lt;/p&gt;
-&lt;/card&gt;
-
-&lt;alert shadow="sm" color="light"&gt;Alert with small shadow&lt;/alert&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;section outputclass="card shadow-lg m-3 text-bg-light"&gt;
   &lt;div outputclass="card-body"&gt;
@@ -83,6 +74,15 @@
 &lt;/section&gt;
 
 &lt;div outputclass="alert alert-light shadow-sm"&gt;Alert with small shadow&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;card shadow="lg" margin="3" color="light"&gt;
+  &lt;title&gt;Shadowed Card&lt;/title&gt;
+  &lt;p&gt;This card has a large shadow.&lt;/p&gt;
+&lt;/card&gt;
+
+&lt;alert shadow="sm" color="light"&gt;Alert with small shadow&lt;/alert&gt;</codeblock>
       </section>
     </bodydiv>
   </body>

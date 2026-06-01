@@ -47,20 +47,6 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;grid-row&gt;
-  &lt;grid-col breakpoint="sm" colspan="3"&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col breakpoint="sm" colspan="3"&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col breakpoint="sm" colspan="3"&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-&lt;/grid-row&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;bodydiv outputclass="row"&gt;
   &lt;bodydiv outputclass="col-sm-3"&gt;
@@ -73,6 +59,20 @@
     &lt;p&gt;One of three columns&lt;/p&gt;
   &lt;/bodydiv&gt;
 &lt;/bodydiv&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;grid-row&gt;
+  &lt;grid-col breakpoint="sm" colspan="3"&gt;
+    &lt;p&gt;One of three columns&lt;/p&gt;
+  &lt;/grid-col&gt;
+  &lt;grid-col breakpoint="sm" colspan="3"&gt;
+    &lt;p&gt;One of three columns&lt;/p&gt;
+  &lt;/grid-col&gt;
+  &lt;grid-col breakpoint="sm" colspan="3"&gt;
+    &lt;p&gt;One of three columns&lt;/p&gt;
+  &lt;/grid-col&gt;
+&lt;/grid-row&gt;</codeblock>
       </section>
     </bodydiv>
     <section>
@@ -104,28 +104,6 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;grid-row&gt;
-  &lt;grid-col&gt;
-    &lt;p&gt;One of two columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col&gt;
-    &lt;p&gt;One of two columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-&lt;/grid-row&gt;
-&lt;grid-row&gt;
-  &lt;grid-col&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-&lt;/grid-row&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;bodydiv outputclass="row"&gt;
   &lt;bodydiv outputclass="col"&gt;
@@ -146,6 +124,28 @@
     &lt;p&gt;One of three columns&lt;/p&gt;
   &lt;/bodydiv&gt;
 &lt;/bodydiv&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;grid-row&gt;
+  &lt;grid-col&gt;
+    &lt;p&gt;One of two columns&lt;/p&gt;
+  &lt;/grid-col&gt;
+  &lt;grid-col&gt;
+    &lt;p&gt;One of two columns&lt;/p&gt;
+  &lt;/grid-col&gt;
+&lt;/grid-row&gt;
+&lt;grid-row&gt;
+  &lt;grid-col&gt;
+    &lt;p&gt;One of three columns&lt;/p&gt;
+  &lt;/grid-col&gt;
+  &lt;grid-col&gt;
+    &lt;p&gt;One of three columns&lt;/p&gt;
+  &lt;/grid-col&gt;
+  &lt;grid-col&gt;
+    &lt;p&gt;One of three columns&lt;/p&gt;
+  &lt;/grid-col&gt;
+&lt;/grid-row&gt;</codeblock>
       </section>
     </bodydiv>
   </body>

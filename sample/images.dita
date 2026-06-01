@@ -47,12 +47,12 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;thumbnail href="..." /&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;image outputclass="img-thumbnail" href="..." /&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;thumbnail href="..." /&gt;</codeblock>
       </section>
     </bodydiv>
     <section>
@@ -80,19 +80,19 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock> &lt;fig&gt;
-  &lt;thumbnail outputclass="d-auto" href="..."/&gt;
-  &lt;thumbnail outputclass="d-light" href="..." deliveryTarget="html"/&gt;
-  &lt;thumbnail outputclass="d-dark" href="..." deliveryTarget="html"/&gt;
-&lt;/fig&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock> &lt;fig&gt;
   &lt;image outputclass="img-thumbnail d-auto" href="..."/&gt;
   &lt;image outputclass="img-thumbnail d-light" href="..." deliveryTarget="html"/&gt;
   &lt;image outputclass="img-thumbnail d-dark" href="..." deliveryTarget="html"/&gt;
+&lt;/fig&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock> &lt;fig&gt;
+  &lt;thumbnail outputclass="d-auto" href="..."/&gt;
+  &lt;thumbnail outputclass="d-light" href="..." deliveryTarget="html"/&gt;
+  &lt;thumbnail outputclass="d-dark" href="..." deliveryTarget="html"/&gt;
 &lt;/fig&gt;</codeblock>
       </section>
     </bodydiv>
@@ -104,12 +104,12 @@
     </section>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;image loading="lazy" href="..."/&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;image otherprops="loading(lazy)" href="..."/&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;image loading="lazy" href="..."/&gt;</codeblock>
       </section>
     </bodydiv>
     <section>
@@ -131,16 +131,6 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;picture&gt;
-  &lt;image media="min-width: 700px" href="..."/&gt;
-  &lt;image media="min-width: 450px" href="..."/&gt;
-  &lt;image type="image/jpeg" href="..."/&gt;
-  &lt;image type="image/webp" href="..."/&gt;
-  &lt;image href="..."/&gt;
-&lt;/picture&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;div outputclass="d-picture"&gt;
   &lt;image otherprops="media(min-width: 700px)" href="..."/&gt;
@@ -149,6 +139,16 @@
   &lt;image otherprops="type(image/webp)" href="..."/&gt;
   &lt;image href="..."/&gt;
 &lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;picture&gt;
+  &lt;image media="min-width: 700px" href="..."/&gt;
+  &lt;image media="min-width: 450px" href="..."/&gt;
+  &lt;image type="image/jpeg" href="..."/&gt;
+  &lt;image type="image/webp" href="..."/&gt;
+  &lt;image href="..."/&gt;
+&lt;/picture&gt;</codeblock>
       </section>
     </bodydiv>
   </body>

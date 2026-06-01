@@ -357,8 +357,8 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;dl colspan="2"&gt;
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;dl otherprops="cols(2)"&gt;
   &lt;dlentry&gt;
     &lt;dt&gt;Description lists&lt;/dt&gt;
     &lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
@@ -373,8 +373,8 @@
 &lt;/dl&gt;</codeblock>
       </section>
       <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;dl otherprops="cols(2)"&gt;
+        <title>Specialization</title>
+        <codeblock>&lt;dl colspan="2"&gt;
   &lt;dlentry&gt;
     &lt;dt&gt;Description lists&lt;/dt&gt;
     &lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;

@@ -69,6 +69,12 @@
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table&gt;
+  ...etc
+&lt;/table&gt;</codeblock>
+      </section>
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup cols="2"&gt;
@@ -97,12 +103,6 @@
       &lt;/row&gt;
     &lt;/tbody&gt;
   &lt;/tgroup&gt;
-&lt;/table&gt;</codeblock>
-      </section>
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table&gt;
-  ...etc
 &lt;/table&gt;</codeblock>
       </section>
     </bodydiv>
@@ -143,37 +143,6 @@
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table color="primary" padding="1" width="100"&gt;
-  &lt;tgroup cols="2"&gt;
-    &lt;thead&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Animal&lt;/entry&gt;
-        &lt;entry&gt;Gestation&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;row color="info"&gt;
-        &lt;entry&gt;Elephant (African and Asian)&lt;/entry&gt;
-        &lt;entry&gt;19-22 months&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row color="success"&gt;
-        &lt;entry&gt;Giraffe&lt;/entry&gt;
-        &lt;entry&gt;15 months&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Rhinoceros&lt;/entry&gt;
-        &lt;entry color="danger"&gt;14-16 months&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Hippopotamus&lt;/entry&gt;
-        &lt;entry&gt;7 1/2 months&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/tbody&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table outputclass="table-primary p-1 w-100"&gt;
   &lt;tgroup cols="2"&gt;
@@ -195,6 +164,37 @@
       &lt;row&gt;
         &lt;entry&gt;Rhinoceros&lt;/entry&gt;
         &lt;entry outputclass="table-danger"&gt;14-16 months&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Hippopotamus&lt;/entry&gt;
+        &lt;entry&gt;7 1/2 months&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/tbody&gt;
+  &lt;/tgroup&gt;
+&lt;/table&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;table color="primary" padding="1" width="100"&gt;
+  &lt;tgroup cols="2"&gt;
+    &lt;thead&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Animal&lt;/entry&gt;
+        &lt;entry&gt;Gestation&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;row color="info"&gt;
+        &lt;entry&gt;Elephant (African and Asian)&lt;/entry&gt;
+        &lt;entry&gt;19-22 months&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row color="success"&gt;
+        &lt;entry&gt;Giraffe&lt;/entry&gt;
+        &lt;entry&gt;15 months&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Rhinoceros&lt;/entry&gt;
+        &lt;entry color="danger"&gt;14-16 months&lt;/entry&gt;
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;Hippopotamus&lt;/entry&gt;
@@ -244,14 +244,14 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table striped="yes"&gt;
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table outputclass="table-striped"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
       <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="table-striped"&gt;
+        <title>Specialization</title>
+        <codeblock>&lt;table striped="yes"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
@@ -295,14 +295,14 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table striped-columns="yes"&gt;
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table outputclass="table-striped-columns"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
       <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="table-striped-columns"&gt;
+        <title>Specialization</title>
+        <codeblock>&lt;table striped-columns="yes"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
@@ -346,13 +346,13 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
+        <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table rowsep="1" colsep="1"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
       <section>
-        <title><xmlatt>outputclass</xmlatt></title>
+        <title>Specialization</title>
         <codeblock>&lt;table rowsep="1" colsep="1"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
@@ -396,13 +396,13 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
+        <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table rowsep="0" colsep="0"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
       <section>
-        <title><xmlatt>outputclass</xmlatt></title>
+        <title>Specialization</title>
         <codeblock>&lt;table rowsep="0" colsep="0"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
@@ -447,14 +447,14 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table compact="yes"&gt;
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;table outputclass="table-sm"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
       <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="table-sm"&gt;
+        <title>Specialization</title>
+        <codeblock>&lt;table compact="yes"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
@@ -498,6 +498,12 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;tbody outputclass="table-group-divider"&gt;
+  ...etc
+&lt;/tbody&gt;</codeblock>
+      </section>
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;table divider="yes"&gt;
   ...
@@ -505,12 +511,6 @@
   ...etc
   &lt;/tbody&gt;
 &lt;/table&gt;</codeblock>
-      </section>
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;tbody outputclass="table-group-divider"&gt;
-  ...etc
-&lt;/tbody&gt;</codeblock>
       </section>
     </bodydiv>
     <section>
@@ -567,7 +567,7 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
+        <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table outputclass="align-middle"&gt;
   &lt;tgroup cols="4"&gt;
     &lt;thead&gt;
@@ -596,7 +596,7 @@
 &lt;/table&gt;</codeblock>
       </section>
       <section>
-        <title><xmlatt>outputclass</xmlatt></title>
+        <title>Specialization</title>
         <codeblock>&lt;table outputclass="align-middle"&gt;
   &lt;tgroup cols="4"&gt;
     &lt;thead&gt;
@@ -665,20 +665,20 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
+        <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead color="light"&gt;
+    &lt;thead outputclass="table-light"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
       </section>
       <section>
-        <title><xmlatt>outputclass</xmlatt></title>
+        <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead outputclass="table-light"&gt;
+    &lt;thead color="light"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;
@@ -719,20 +719,20 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
+        <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead color="dark"&gt;
+    &lt;thead outputclass="table-dark"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
       </section>
       <section>
-        <title><xmlatt>outputclass</xmlatt></title>
+        <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead outputclass="table-dark"&gt;
+    &lt;thead color="dark"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;

@@ -42,17 +42,6 @@
 
     <bodydiv outputclass="nav-pills mt-3">
         <section>
-          <title>Specialization</title>
-          <codeblock>&lt;button href="#"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="secondary"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="success"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="danger"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="warning"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="info"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="light"&gt;Light&lt;/button&gt;
-&lt;button href="#" color="dark"&gt;Dark&lt;/button&gt;</codeblock>
-        </section>
-          <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-primary"&gt;Primary&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-secondary"&gt;Secondary&lt;/xref&gt;
@@ -62,6 +51,17 @@
 &lt;xref href="#" outputclass="btn-info"&gt;Info&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-light"&gt;Light&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-dark"&gt;Dark&lt;/xref&gt;</codeblock>
+        </section>
+          <section>
+          <title>Specialization</title>
+          <codeblock>&lt;button href="#"&gt;Primary&lt;/button&gt;
+&lt;button href="#" color="secondary"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" color="success"&gt;Success&lt;/button&gt;
+&lt;button href="#" color="danger"&gt;Danger&lt;/button&gt;
+&lt;button href="#" color="warning"&gt;Warning&lt;/button&gt;
+&lt;button href="#" color="info"&gt;Info&lt;/button&gt;
+&lt;button href="#" color="light"&gt;Light&lt;/button&gt;
+&lt;button href="#" color="dark"&gt;Dark&lt;/button&gt;</codeblock>
         </section>
       </bodydiv>
 
@@ -83,17 +83,6 @@
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button href="#" outline="yes"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="secondary" outline="yes"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="success" outline="yes"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="danger" outline="yes"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="warning" outline="yes"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="info" outline="yes"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="light" outline="yes"&gt;Light&lt;/button&gt;
-&lt;button href="#" color="dark" outline="yes"&gt;Dark&lt;/button&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-outline-primary"&gt;Primary&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-outline-secondary"&gt;Secondary&lt;/xref&gt;
@@ -103,6 +92,17 @@
 &lt;xref href="#" outputclass="btn-outline-info"&gt;Info&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-outline-light"&gt;Light&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-outline-dark"&gt;Dark&lt;/xref&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button href="#" outline="yes"&gt;Primary&lt;/button&gt;
+&lt;button href="#" color="secondary" outline="yes"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" color="success" outline="yes"&gt;Success&lt;/button&gt;
+&lt;button href="#" color="danger" outline="yes"&gt;Danger&lt;/button&gt;
+&lt;button href="#" color="warning" outline="yes"&gt;Warning&lt;/button&gt;
+&lt;button href="#" color="info" outline="yes"&gt;Info&lt;/button&gt;
+&lt;button href="#" color="light" outline="yes"&gt;Light&lt;/button&gt;
+&lt;button href="#" color="dark" outline="yes"&gt;Dark&lt;/button&gt;</codeblock>
         </section>
       </bodydiv>
     <section>
@@ -117,14 +117,14 @@
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button href="#" size="large"&gt;Large button&lt;/button&gt;
-&lt;button href="#" color="secondary" size="large"&gt;Large button&lt;/button&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-primary btn-lg"&gt;Large button&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-secondary btn-lg"&gt;Large button&lt;/xref&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button href="#" size="large"&gt;Large button&lt;/button&gt;
+&lt;button href="#" color="secondary" size="large"&gt;Large button&lt;/button&gt;</codeblock>
         </section>
       </bodydiv>
 
@@ -135,14 +135,14 @@
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button href="#" size="small"&gt;Small button&lt;/button&gt;
-&lt;button href="#" color="secondary" size="small"&gt;Small button&lt;/button&gt;</codeblock>
-        </section>
-         <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-primary btn-sm"&gt;Small button&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-secondary btn-sm"&gt;Small button&lt;/xref&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button href="#" size="small"&gt;Small button&lt;/button&gt;
+&lt;button href="#" color="secondary" size="small"&gt;Small button&lt;/button&gt;</codeblock>
         </section>
       </bodydiv>
   </body>
