@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="shadows">
+  <title>Shadows</title>
+  <shortdesc>Add or remove shadows to elements with box-shadow utilities. The <xmlatt
+    >shadow</xmlatt> attribute enables standard Bootstrap shadow effects on a wide variety of DITA components.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Shadows</indexterm>
+        <indexterm>Depth</indexterm>
+        <indexterm>CSS
+          <indexterm><xmlatt>outputclass</xmlatt></indexterm>
+        </indexterm>
+        <indexterm><xmlatt>shadow</xmlatt></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body outputclass="language-markup">
+    <section>
+      <title>Shadow Utilities</title>
+      <p>Bootstrap provides utilities for adding depth with text-bg colors and box-shadows. The <xmlatt>shadow</xmlatt>
+        attribute can be set to <codeph>yes</codeph>, <codeph>sm</codeph>, <codeph>lg</codeph> or
+        <codeph>none</codeph>.</p>
+      <p>Note that when a shadow is applied without an explicit margin, a default margin of <codeph>3</codeph> is
+        automatically added to prevent the shadow from being clipped by the parent container.</p>
+    </section>
+
+    <bodydiv outputclass="p-3 border">
+      <div outputclass="m-3 p-3 shadow-none text-bg-light">No shadow</div>
+      <div outputclass="m-3 p-3 shadow-sm text-bg-light">Small shadow</div>
+      <div outputclass="m-3 p-3 shadow text-bg-light">Regular shadow</div>
+      <div outputclass="m-3 p-3 shadow-lg text-bg-light">Larger shadow</div>
+    </bodydiv>
+
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="shadow-none m-3 p-3 text-bg-light"&gt;No shadow&lt;/div&gt;
+&lt;div outputclass="shadow-sm m-3 p-3 text-bg-light"&gt;Small shadow&lt;/div&gt;
+&lt;div outputclass="shadow m-3 p-3 text-bg-light"&gt;Regular shadow&lt;/div&gt;
+&lt;div outputclass="shadow-lg m-3 p-3 text-bg-light"&gt;Larger shadow&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;div shadow="none" margin="3" padding="3" color="light"&gt;No shadow&lt;/div&gt;
+&lt;div shadow="sm" margin="3" padding="3" color="light"&gt;Small shadow&lt;/div&gt;
+&lt;div shadow="yes" margin="3" padding="3" color="light"&gt;Regular shadow&lt;/div&gt;
+&lt;div shadow="lg" margin="3" padding="3" color="light"&gt;Larger shadow&lt;/div&gt;</codeblock>
+      </section>
+    </bodydiv>
+
+    <section>
+      <title>Applied Shadow</title>
+      <p>Shadows can be applied to complex elements as follow:</p>
+    </section>
+
+    <bodydiv outputclass="p-3 border">
+      <section outputclass="card text-bg-light m-3 shadow-lg">
+        <title>Shadowed Card</title>
+        <p>This card has a large shadow.</p>
+      </section>
+      <section outputclass="alert alert-light shadow-sm">Alert with small shadow</section>
+    </bodydiv>
+
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;section outputclass="card shadow-lg m-3 text-bg-light"&gt;
+  &lt;div outputclass="card-body"&gt;
+    &lt;div outputclass="card-title h5"&gt;Shadowed Card&lt;/div&gt;
+    &lt;p outputclass="card-text"&gt;This card has a large shadow.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;div outputclass="alert alert-light shadow-sm"&gt;Alert with small shadow&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;card shadow="lg" margin="3" color="light"&gt;
+  &lt;title&gt;Shadowed Card&lt;/title&gt;
+  &lt;p&gt;This card has a large shadow.&lt;/p&gt;
+&lt;/card&gt;
+
+&lt;alert shadow="sm" color="light"&gt;Alert with small shadow&lt;/alert&gt;</codeblock>
+      </section>
+    </bodydiv>
+  </body>
+</topic>

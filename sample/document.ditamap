@@ -66,7 +66,10 @@
       <othermeta name="icon" content="bi-braces-asterisk"/>
       <othermeta name="icon-style" content="color: var(--bs-pink)"/>
     </topicmeta>
-    <topicref href="utilities.dita" navtitle="Borders and Colors" locktitle="yes"/>
+    <topicref href="borders.dita"/>
+    <topicref href="color.dita"/>
+    <topicref href="shadows.dita"/>
+    <topicref href="spacing.dita"/>
   </chapter>
   <chapter>
     <topicmeta>

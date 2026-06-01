@@ -30,20 +30,20 @@
       <title>Installing</title>
       <p>Use the <cmdname>dita</cmdname> command to add this plug-in to your DITA Open Toolkit installation:</p>
     </section>
-    <bodydiv outputclass="nav-tabs">
-      <section>
+    <bodydiv outputclass="accordion">
+      <section id="install-35" outputclass="show">
         <title>DITA-OT 3.5 and newer:</title>
           <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
           >install</parmname> fox.jason.extend.css
 <cmdname>dita</cmdname> <parmname>install</parmname> org.dita-bootstrap.html</codeblock>
       </section>
-      <section>
+      <section id="install-33">
         <title>DITA-OT 3.3 and newer:</title>
           <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
           >--install</parmname> fox.jason.extend.css
 <cmdname>dita</cmdname> <parmname>--install</parmname> org.dita-bootstrap.html</codeblock>
       </section>
-      <section>
+      <section id="install-32">
         <title>DITA-OT 3.2 and older:</title>
         <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
           >--install</parmname> https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip

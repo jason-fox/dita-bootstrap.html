@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
   directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
@@ -8,6 +7,7 @@
   This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="popovers">
   <title>Popovers</title>
   <shortdesc>Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your
@@ -15,7 +15,7 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm><parmname>--popovers.include</parmname></indexterm>
+        <indexterm><codeph>--popovers.include</codeph></indexterm>
         <indexterm>Popovers</indexterm>
         <indexterm>CSS
           <indexterm><xmlatt>outputclass</xmlatt></indexterm>
@@ -41,7 +41,7 @@
         <li>Popovers can be triggered thanks to an element inside a shadow DOM.</li>
         <li>Popovers are include by default, but for performance reasons, <b
           >you may exclude them yourself</b> by setting
-            <parmname>--popovers.include</parmname>=<option>no</option>
+            <codeph>--popovers.include</codeph>=<i>no</i>
         </li>
       </ul>
     </section>
@@ -51,25 +51,39 @@
       <p>Keep reading to see how popovers work with some examples.</p>
     </section>
 
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <xref href="#" outputclass="btn-lg btn-danger popover-top">
         <data name="title">Popover title</data>
         <desc>And here’s some amazing content. It’s very engaging. Right?</desc> Click to toggle popover </xref>
     </bodydiv>
-    <codeblock> &lt;xref href="#" outputclass="btn-lg btn-danger popover-top"&gt;
-  &lt;data name="title">&gt;Popover title&lt;/data&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock> &lt;xref href="#" outputclass="btn-lg btn-danger popover-top"&gt;
+  &lt;data name="title"&gt;Popover title&lt;/data&gt;
   &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
   Click to toggle popover
 &lt;/xref&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock> &lt;popover outputclass="btn-lg btn-danger"&gt;
+  &lt;data name="title"&gt;Popover title&lt;/data&gt;
+  &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
+  Click to toggle popover
+&lt;/popover&gt;</codeblock>
+        </section>
+      </bodydiv>
 
     <section>
       <title>Four directions</title>
       <p>Four options are available: <codeph>top</codeph>, <codeph>right</codeph>, <codeph>bottom</codeph>, and
           <codeph>left</codeph> aligned. Directions are mirrored when using Bootstrap in RTL. To enable popovers, add
-          <xmlatt>output-class="popover-*"</xmlatt> to the enclosing <xmlelement>xref</xmlelement>. The direction of the
-        popover is appended to the <xmlatt>output-class</xmlatt>.</p>
+          <xmlatt>output-class="popover-*"</xmlatt> to the enclosing <xmlelement>xref</xmlelement>. For the <xmlelement
+        >popover</xmlelement> element use the <xmlatt>position</xmlatt> attribute. The direction of the
+        popover is appended to the <xmlatt>output-class</xmlatt> or taken from the attribute.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <xref href="#" outputclass="btn-secondary popover-top">
         <desc>Top popover</desc> Popover on top </xref>
       <xref href="#" outputclass="btn-secondary popover-right">
@@ -79,7 +93,10 @@
       <xref href="#" outputclass="btn-secondary popover-left">
         <desc>Left popover</desc> Popover on left </xref>
     </bodydiv>
-    <codeblock>&lt;xref href="#" outputclass="btn-secondary popover-top"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref href="#" outputclass="btn-secondary popover-top"&gt;
   &lt;desc&gt;Top popover&lt;/desc&gt;
   Popover on top
 &lt;/xref&gt;
@@ -95,6 +112,27 @@
   &lt;desc&gt;Left popover&lt;/desc&gt;
   Popover on left
 &lt;/xref&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;popover outputclass="btn-secondary" position="top"&gt;
+  &lt;desc&gt;Top popover&lt;/desc&gt;
+  Popover on top
+&lt;/popover&gt;
+&lt;popover outputclass="btn-secondary" position="right"&gt;
+  &lt;desc&gt;Right Popover&lt;/desc&gt;
+  Popover on right
+&lt;/popover&gt;
+&lt;popover outputclass="btn-secondary" position="bottom"&gt;
+  &lt;desc&gt;Bottom popover&lt;/desc&gt;
+  Popover on bottom
+&lt;/popover&gt;
+&lt;popover outputclass="btn-secondary" position="left"&gt;
+  &lt;desc&gt;Left popover&lt;/desc&gt;
+  Popover on left
+&lt;/popover&gt;</codeblock>
+        </section>
+      </bodydiv>
     <section>
       <title>Custom popovers</title>
       <p>You can customize the appearance of popovers using CSS variables.
@@ -110,17 +148,31 @@
   --bs-popover-body-padding-y: .5rem;
 }</codeblock>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
         <xref href="#" outputclass="btn-lg btn-danger popover-top">
           <data name="title">Popover title</data>
           <data name="class">custom-popover</data>
           <desc>And here’s some amazing content. It’s very engaging. Right?</desc>Custom popover</xref>
     </bodydiv>
-    <codeblock>&lt;xref href="#" outputclass="btn-lg btn-danger popover-top"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref href="#" outputclass="btn-lg btn-danger popover-top"&gt;
   &lt;data name="title"&gt;Popover title&lt;/data&gt;
   &lt;data name="class"&gt;custom-popover&lt;/data&gt;
   &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
   Custom popover
 &lt;/xref&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;popover outputclass="btn-lg btn-danger"&gt;
+  &lt;data name="title"&gt;Popover title&lt;/data&gt;
+  &lt;data name="class"&gt;custom-popover&lt;/data&gt;
+  &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
+  Custom popover
+&lt;/popover&gt;</codeblock>
+        </section>
+      </bodydiv>
   </body>
 </topic>
