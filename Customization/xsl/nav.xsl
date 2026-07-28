@@ -265,7 +265,7 @@
             <xsl:text> bs-fixed-sidetoc</xsl:text>
           </xsl:if>
           <xsl:if test="$nav-toc = ('nav-pill-partial', 'nav-pill-full')">
-            <xsl:text> alert alert-light</xsl:text>
+            <xsl:text> alert theme-secondary</xsl:text>
           </xsl:if>
         </xsl:attribute>
 
@@ -299,7 +299,7 @@
           </xsl:when>
           <xsl:when test="$nav-toc = ('nav-pill-partial', 'nav-pill-full')">
             <!-- ↓ Remove <ul> and add nested <nav> element with Bootstrap classes ↓ -->
-            <nav class="nav nav-pills flex-column navbar-light">
+            <nav class="nav nav-pills flex-column navbar-secondary">
               <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
               <xsl:choose>
                 <xsl:when test="$nav-toc = 'nav-pill-partial'">

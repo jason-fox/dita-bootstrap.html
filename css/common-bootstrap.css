@@ -59,7 +59,7 @@
 .xmlelement,
 .xmlnsname,
 .xmlpi {
-  font-family: var(--bs-font-monospace);
+  font-family: var(--bs-font-mono);
   color: var(--dita-violet);
   overflow-wrap: break-word;
 }
@@ -69,7 +69,7 @@
 .filepath,
 .option,
 .parmname {
-  font-family: var(--bs-font-monospace);
+  font-family: var(--bs-font-mono);
   color: var(--bs-code-color);
   overflow-wrap: break-word;
 }
