@@ -11,14 +11,14 @@
   exclude-result-prefixes="xs dita-ot"
 >
   <xsl:param name="BOOTSTRAP_CSS_SHORTDESC" select="'text-body-secondary lead'"/>
-  <xsl:param name="BOOTSTRAP_CSS_CODEBLOCK" select="'alert alert-secondary'"/>
+  <xsl:param name="BOOTSTRAP_CSS_CODEBLOCK" select="'alert theme-secondary'"/>
   <xsl:param name="BOOTSTRAP_CSS_TOPIC_TITLE" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_SECTION_TITLE" select="'h4'"/>
   <xsl:param name="BOOTSTRAP_CSS_CARD_TITLE" select="'h5'"/>
   <xsl:param name="BOOTSTRAP_CSS_CARD" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_CARD_WIDTH" select="'w-50'"/>
   <xsl:param name="BOOTSTRAP_CSS_CAROUSEL" select="''"/>
-  <xsl:param name="BOOTSTRAP_CSS_CAPTION" select="'alert alert-secondary p-1'"/>
+  <xsl:param name="BOOTSTRAP_CSS_CAPTION" select="'alert theme-secondary p-1'"/>
   <xsl:param name="BOOTSTRAP_CSS_TABS" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_TABS_VERTICAL" select="'me-3'"/>
   <xsl:param name="BOOTSTRAP_CSS_ACCORDION" select="''"/>
@@ -51,7 +51,7 @@
   <xsl:template match="*[contains(@class, ' topic/pre ')]" mode="get-output-class">
     <xsl:choose>
        <xsl:when test="@color">
-          <xsl:text>alert alert-</xsl:text>
+          <xsl:text>alert theme-</xsl:text>
           <xsl:value-of select="@color"/>
        </xsl:when>
        <xsl:otherwise>
@@ -123,7 +123,7 @@
        <xsl:value-of select="$BOOTSTRAP_CSS_CARD_WIDTH"/>
     </xsl:if>
     <xsl:if test="@color">
-       <xsl:text> alert p-0 alert-</xsl:text>
+       <xsl:text> alert p-0 theme-</xsl:text>
        <xsl:value-of select="@color"/>
     </xsl:if>
     <xsl:next-match/>
@@ -329,7 +329,7 @@
   <!-- Change the default Bootstrap CSS classes of cards -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/card ')]" mode="bootstrap-class" priority="10">
     <xsl:if test="@color">
-      <xsl:text>alert alert-</xsl:text>
+      <xsl:text>card theme-</xsl:text>
       <xsl:value-of select="@color"/>
       <xsl:text> </xsl:text>
     </xsl:if>
@@ -477,11 +477,6 @@
             else if (contains(@outputclass, 'btn-group-vertical')) then ''
             else if (contains(@outputclass, 'btn-group')) then ''
             else if (contains(@outputclass, 'btn-toolbar')) then ''
-            else if (contains(@outputclass, 'accordion-')) then 'accordion'
-            else if (contains(@outputclass, 'btn-')) then 'btn'
-            else if (contains(@outputclass, 'collapse-')) then 'collapse'
-            else if (contains(@outputclass, 'alert-')) then 'alert'
-            else if (contains(@outputclass, 'list-group-')) then 'list-group'
             else if (contains(@class, ' topic/fig ')) then ' figure ' || $BOOTSTRAP_CSS_FIGURE
             else if (contains(@class, ' topic/lq ')) then ' blockquote '
             else if (contains(@class, ' topic/dl ')) then $BOOTSTRAP_CSS_DL
@@ -597,26 +592,26 @@
     <xsl:text>alert </xsl:text>
     <xsl:choose>
        <xsl:when test="@color">
-          <xsl:text>alert-</xsl:text>
+          <xsl:text>theme-</xsl:text>
           <xsl:value-of select="@color"/>
        </xsl:when>
        <xsl:otherwise>
           <xsl:value-of
           select="
-              if (@type='tip') then 'alert-success'
-              else if (@type='fastpath') then 'alert-success'
-              else if (@type='remember') then 'alert-success'
-              else if (@type='restriction') then 'alert-warning'
-              else if (@type='important') then 'alert-warning'
-              else if (@type='attention') then 'alert-warning'
-              else if (@type='caution') then 'alert-warning'
-              else if (@type='warning') then 'alert-warning'
-              else if (@type='trouble') then 'alert-warning'
-              else if (@type='danger') then 'alert-danger'
-              else if (@type='notice') then 'alert-info'
-              else if (@type='note' or (contains(@class, ' topic/note ') and not(contains(@class, ' bootstrap-d/alert ')) and not(contains(@class, ' topic/section ')) and empty(@type))) then 'alert-primary'
-              else if (@type='other') then 'alert-dark'
-              else 'alert-info'"
+              if (@type='tip') then 'theme-success'
+              else if (@type='fastpath') then 'theme-success'
+              else if (@type='remember') then 'theme-success'
+              else if (@type='restriction') then 'theme-warning'
+              else if (@type='important') then 'theme-warning'
+              else if (@type='attention') then 'theme-warning'
+              else if (@type='caution') then 'theme-warning'
+              else if (@type='warning') then 'theme-warning'
+              else if (@type='trouble') then 'theme-warning'
+              else if (@type='danger') then 'theme-danger'
+              else if (@type='notice') then 'theme-info'
+              else if (@type='note' or (contains(@class, ' topic/note ') and not(contains(@class, ' bootstrap-d/alert ')) and not(contains(@class, ' topic/section ')) and empty(@type))) then 'theme-primary'
+              else if (@type='other') then ''
+              else 'theme-info'"
         />
        </xsl:otherwise>
     </xsl:choose>

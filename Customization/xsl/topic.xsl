@@ -296,9 +296,7 @@
     </xsl:param>
     <!-- ↓ Add Bootstrap class attributes template ↓ -->
     <xsl:variable name="bootstrap-class">
-      <xsl:if test="not(contains(@outputclass, 'alert-'))">
-        <xsl:call-template name="bootstrap-note"/>
-      </xsl:if>
+      <xsl:call-template name="bootstrap-note"/>
     </xsl:variable>
     <div role="alert">
       <xsl:call-template name="commonattributes">

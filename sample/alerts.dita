@@ -30,71 +30,71 @@
       <title>Example</title>
       <p>Alerts are available for any length of text, as well as an optional close button. For proper styling, use one
         of the eight required contextual classes (e.g., set <xmlatt>outputclass</xmlatt> to
-          <codeph>alert-success</codeph>).</p>
+          <codeph>alert theme-success</codeph>).</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="alert alert-primary">A simple primary alert—check it out!</section>
-      <section outputclass="alert alert-secondary">A simple secondary alert—check it out!</section>
-      <section outputclass="alert alert-success">A simple success alert—check it out!</section>
-      <section outputclass="alert alert-danger">A simple danger alert—check it out!</section>
-      <section outputclass="alert alert-warning">A simple warning alert—check it out!</section>
-      <section outputclass="alert alert-info">A simple info alert—check it out!</section>
-      <section outputclass="alert alert-light">A simple light alert—check it out!</section>
-      <section outputclass="alert alert-dark">A simple dark alert—check it out!</section>
+      <section outputclass="alert theme-primary">A simple primary alert — check it out!</section>
+      <section outputclass="alert theme-secondary">A simple secondary alert — check it out!</section>
+      <section outputclass="alert theme-success">A simple success alert — check it out!</section>
+      <section outputclass="alert theme-danger">A simple danger alert — check it out!</section>
+      <section outputclass="alert theme-warning">A simple warning alert — check it out!</section>
+      <section outputclass="alert theme-info">A simple info alert — check it out!</section>
+      <section outputclass="alert theme-accent">A simple accent alert — check it out!</section>
+      <section outputclass="alert theme-inverse">A simple inverse alert — check it out!</section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-            <codeblock>&lt;section outputclass="alert-primary"&gt;
-  A simple primary alert—check it out!
+            <codeblock>&lt;section outputclass="alert theme-primary"&gt;
+  A simple primary alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-secondary"&gt;
-  A simple secondary alert—check it out!
+&lt;section outputclass="alert theme-secondary"&gt;
+  A simple secondary alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-success"&gt;
-  A simple success alert—check it out!
+&lt;section outputclass="alert theme-success"&gt;
+  A simple success alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-danger"&gt;
-  A simple danger alert—check it out!
+&lt;section outputclass="alert theme-danger"&gt;
+  A simple danger alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-warning"&gt;
-  A simple warning alert—check it out!
+&lt;section outputclass="alert theme-warning"&gt;
+  A simple warning alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-info"&gt;
-  A simple info alert—check it out!
+&lt;section outputclass="alert theme-info"&gt;
+  A simple info alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-light"&gt;
-  A simple light alert—check it out!
+&lt;section outputclass="alert theme-accent"&gt;
+  A simple accent alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-dark"&gt;
-  A simple dark alert—check it out!
+&lt;section outputclass="alert theme-inverse"&gt;
+  A simple inverse alert — check it out!
 &lt;/section&gt;</codeblock>
       </section>
       <section>
         <title>Specialization</title>
         <codeblock>&lt;alert color="primary"&gt;
-  A simple primary alert—check it out!
+  A simple primary alert — check it out!
 &lt;/alert&gt;
 &lt;alert color="secondary"&gt;
-  A simple secondary alert—check it out!
+  A simple secondary alert — check it out!
 &lt;/alert&gt;
 &lt;alert color="success"&gt;
-  A simple success alert—check it out!
+  A simple success alert — check it out!
 &lt;/alert&gt;
 &lt;alert color="danger"&gt;
-  A simple danger alert—check it out!
+  A simple danger alert — check it out!
 &lt;/alert&gt;
 &lt;alert color="warning"&gt;
-  A simple warning alert—check it out!
+  A simple warning alert — check it out!
 &lt;/alert&gt;
 &lt;alert color="info"&gt;
-  A simple info alert—check it out!
+  A simple info alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="light"&gt;
-  A simple light alert—check it out!
+&lt;alert color="accent"&gt;
+  A simple accent alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="dark"&gt;
-  A simple dark alert—check it out!
+&lt;alert color="inverse"&gt;
+  A simple inverse alert — check it out!
 &lt;/alert&gt;</codeblock>
       </section>
     </bodydiv>
@@ -104,7 +104,7 @@
       <p>Alerts can also contain additional HTML elements like headings, paragraphs, icons and links.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="alert alert-success">
+      <section outputclass="alert theme-success vstack">
         <title><ph outputclass="bi bi-emoji-smile pe-2"/>Well done!</title>
         <p>Aww yeah, you successfully read this important alert message. This example text with a
           <xref href="#">link</xref> is going to run a bit longer so that you can see how spacing within an alert works
@@ -115,7 +115,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="alert alert-success"&gt;
+        <codeblock>&lt;section outputclass="alert theme-success vstack"&gt;
   &lt;title&gt;&lt;i outputclass="bi bi-emoji-smile pe-2"/&gt;Well done!&lt;/title&gt;
   &lt;p&gt;
     Aww yeah, you successfully read this important alert message. This example text with a
@@ -129,7 +129,7 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert color="success"&gt;
+        <codeblock>&lt;alert color="success" outputclass="vstack"&gt;
   &lt;title&gt;&lt;icon outputclass="bi-emoji-smile" padding="e2"/&gt;Well done!&lt;/title&gt;
   &lt;p&gt;
     Aww yeah, you successfully read this important alert message. This example text with a
@@ -198,23 +198,23 @@
     <p>The default colors can be overridden by using a <xmlatt>color</xmlatt> attribute or an <xmlatt
       >outputclass</xmlatt>.</p>
     <bodydiv outputclass="p-3 border">
-      <note outputclass="text-bg-primary">This is a primary note.</note>
-      <note outputclass="text-bg-secondary">This is a secondary note.</note>
-      <note outputclass="text-bg-light">This is light note.</note>
-      <note outputclass="text-bg-dark">This is dark note.</note>
+      <note outputclass="theme-primary">This is a primary note.</note>
+      <note outputclass="theme-secondary">This is a secondary note.</note>
+      <note outputclass="theme-accent">This is accent note.</note>
+      <note outputclass="theme-inverse">This is inverse note.</note>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;note type="note" outputclass="alert-primary"&gt;
+        <codeblock>&lt;note type="note" outputclass="theme-primary"&gt;
   This is a primary note.&lt;/note&gt;
-&lt;note type="note" outputclass="alert-secondary"&gt;
+&lt;note type="note" outputclass="theme-secondary"&gt;
   This is a secondary note.&lt;/note&gt;
-&lt;note type="note" outputclass="alert-light"&gt;
-  This is light note.
+&lt;note type="note" outputclass="theme-accent"&gt;
+  This is accent note.
 &lt;/note&gt;
-&lt;note type="note" outputclass="alert-dark"&gt;
-  This is dark note.
+&lt;note type="note" outputclass="theme-inverse"&gt;
+  This is inverse note.
 &lt;/note&gt;</codeblock>
       </section>
       <section>
@@ -225,11 +225,11 @@
 &lt;note color="secondary"&gt;
   This is a secondary note.
 &lt;/note&gt;
-&lt;note color="light"&gt;
-  This is light note.
+&lt;note color="accent"&gt;
+  This is accent note.
 &lt;/note&gt;
-&lt;note color="dark"&gt;
-  This is dark note.
+&lt;note color="inverse"&gt;
+  This is inverse note.
 &lt;/note&gt;</codeblock>
       </section>
     </bodydiv>
