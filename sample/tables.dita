@@ -211,7 +211,7 @@
         within the <xmlelement>tbody</xmlelement>.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <table outputclass="theme-striped">
+      <table outputclass="table-striped">
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
@@ -245,7 +245,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="theme-striped"&gt;
+        <codeblock>&lt;table outputclass="table-striped"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
@@ -262,7 +262,7 @@
         within the <xmlelement>tbody</xmlelement>.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <table outputclass="theme-striped-columns">
+      <table outputclass="table-striped-columns">
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
@@ -296,7 +296,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="theme-striped-columns"&gt;
+        <codeblock>&lt;table outputclass="table-striped-columns"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
@@ -414,7 +414,7 @@
         >padding</codeph> in half.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <table outputclass="theme-sm">
+      <table outputclass="table-sm">
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
@@ -448,7 +448,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="theme-sm"&gt;
+        <codeblock>&lt;table outputclass="table-sm"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
@@ -475,7 +475,7 @@
               <entry colname="COLSPEC1" valign="top">Gestation</entry>
             </row>
           </thead>
-          <tbody outputclass="theme-group-divider">
+          <tbody outputclass="table-group-divider">
             <row>
               <entry>Elephant (African and Asian)</entry>
               <entry>19-22 months</entry>
@@ -499,7 +499,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;tbody outputclass="theme-group-divider"&gt;
+        <codeblock>&lt;tbody outputclass="table-group-divider"&gt;
   ...etc
 &lt;/tbody&gt;</codeblock>
       </section>
