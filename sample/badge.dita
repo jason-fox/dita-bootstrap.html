@@ -41,8 +41,8 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;title&gt;Example Heading &lt;ph outputclass="bg-secondary"&gt;New&lt;/ph&gt;&lt;/title&gt;
-&lt;p&gt;Example Text &lt;ph outputclass="bg-secondary"&gt;New&lt;/ph&gt;&lt;/p&gt;</codeblock>
+          <codeblock>&lt;title&gt;Example Heading &lt;ph outputclass="badge theme-primary"&gt;New&lt;/ph&gt;&lt;/title&gt;
+&lt;p&gt;Example Text &lt;ph outputclass="badge theme-primary"&gt;New&lt;/ph&gt;&lt;/p&gt;</codeblock>
         </section>
          <section>
         <title>Specialization</title>
@@ -83,7 +83,7 @@
         </section>
          <section>
         <title>Specialization</title>
-          <codeblock>&lt;badge&gt;Primary&lt;/badge&gt;
+          <codeblock>&lt;badge color="primary"&gt;Primary&lt;/badge&gt;
 &lt;badge color="secondary"&gt;Secondary&lt;/badge&gt;
 &lt;badge color="success"&gt;Success&lt;/badge&gt;
 &lt;badge color="danger"&gt;Danger&lt;/badge&gt;

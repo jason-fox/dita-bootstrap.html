@@ -23,7 +23,7 @@
   <xsl:param name="BOOTSTRAP_CSS_TABS_VERTICAL" select="'me-3'"/>
   <xsl:param name="BOOTSTRAP_CSS_ACCORDION" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_ACCESSIBILITY_NAV" select="'bg-body-tertiary'"/>
-  <xsl:param name="BOOTSTRAP_CSS_ACCESSIBILITY_LINK" select="'btn btn-outline-primary btn-sm'"/>
+  <xsl:param name="BOOTSTRAP_CSS_ACCESSIBILITY_LINK" select="'btn btn-outline theme-primary btn-sm'"/>
   <xsl:param name="BOOTSTRAP_CSS_FIGURE" select="' w-100 mw-100 p-3 '"/>
   <xsl:param name="BOOTSTRAP_CSS_FIGURE_CAPTION" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_FIGURE_IMAGE" select="'img-fluid border rounded'"/>
@@ -304,12 +304,20 @@
   </xsl:template>
 
   <!-- Change the default Bootstrap CSS classes of buttons -->
-  <xsl:template match="*[contains(@class, ' bootstrap-d/button ')]" mode="bootstrap-class" priority="10">
-    <xsl:text>btn btn-</xsl:text>
-    <xsl:if test="@outline = 'yes'">
-       <xsl:text>outline-</xsl:text>
+  <xsl:template match="*[contains(@class, ' bootstrap-d/button ')]  | *[contains(@class,' topic/xref ') and (contains(@outputclass, 'btn') or contains(@outputclass, 'btn-outline')) ]" mode="bootstrap-class" priority="10">
+    <xsl:value-of
+      select="
+        if (@outline = 'yes') then 'btn btn-outline'
+        else if (contains(@outputclass, 'btn-outline')) then 'btn'
+        else 'btn-solid'"
+    />
+    <xsl:if test="@color">
+      <xsl:text> theme-</xsl:text>
+      <xsl:value-of select="(@color, 'primary')[1]"/>
     </xsl:if>
-    <xsl:value-of select="(@color, 'primary')[1]"/>
+    <xsl:if test="@styled">
+      <xsl:text> btn-styled</xsl:text>
+    </xsl:if>
     <xsl:text> </xsl:text>
     <xsl:choose>
       <xsl:when test="@size = 'small'">btn-sm </xsl:when>
