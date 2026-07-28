@@ -96,11 +96,11 @@
 }
 
 .boolean {
-  color: var(--bs-green);
+  color: var(--bs-green-400);
 }
 
 .state {
-  color: var(--bs-red);
+  color: var(--bs-red-400);
 }
 
 .navbar-brand > svg {

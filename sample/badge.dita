@@ -30,12 +30,12 @@
     </section>
     <bodydiv outputclass="p-3 border">
       <section>
-        <p outputclass="h1">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
-        <p outputclass="h2">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
-        <p outputclass="h3">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
-        <p outputclass="h4">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
-        <p outputclass="h5">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
-        <p outputclass="h6">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
+        <p outputclass="h1">Example heading <ph outputclass="badge theme-primary">New</ph></p>
+        <p outputclass="h2">Example heading <ph outputclass="badge theme-primary">New</ph></p>
+        <p outputclass="h3">Example heading <ph outputclass="badge theme-primary">New</ph></p>
+        <p outputclass="h4">Example heading <ph outputclass="badge theme-primary">New</ph></p>
+        <p outputclass="h5">Example heading <ph outputclass="badge theme-primary">New</ph></p>
+        <p outputclass="h6">Example heading <ph outputclass="badge theme-primary">New</ph></p>
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
@@ -53,33 +53,33 @@
     <section>
       <title>Background colors</title>
       <p>Set a background-color with contrasting foreground color with Bootstrap’s <codeph
-        >text-bg-{color}</codeph> helpers. Previously it was required to manually pair your choice of <xmlatt
+        >theme-{color}</codeph> helpers. Previously it was required to manually pair your choice of <xmlatt
         >outputclass</xmlatt> <codeph>text-{color}</codeph> and <codeph
         >bg-{color}</codeph> utilities for styling, which you still may use if you prefer.</p>
     </section>
     <bodydiv outputclass="p-3 border">
       <p>
-        <ph outputclass="badge text-bg-primary">Primary</ph>
-        <ph outputclass="badge text-bg-secondary">Secondary</ph>
-        <ph outputclass="badge text-bg-success">Success</ph>
-        <ph outputclass="badge text-bg-danger">Danger</ph>
-        <ph outputclass="badge text-bg-warning">Warning</ph>
-        <ph outputclass="badge text-bg-info">Info</ph>
-        <ph outputclass="badge text-bg-light">Light</ph>
-        <ph outputclass="badge text-bg-dark">Dark</ph>
+        <ph outputclass="badge theme-primary">Primary</ph>
+        <ph outputclass="badge theme-secondary">Secondary</ph>
+        <ph outputclass="badge theme-success">Success</ph>
+        <ph outputclass="badge theme-danger">Danger</ph>
+        <ph outputclass="badge theme-warning">Warning</ph>
+        <ph outputclass="badge theme-info">Info</ph>
+        <ph outputclass="badge theme-accent">Accent</ph>
+        <ph outputclass="badge theme-inverse">Inverse</ph>
       </p>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ph outputclass="badge text-bg-primary"&gt;Primary&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-secondary"&gt;Secondary&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-success"&gt;Success&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-danger"&gt;Danger&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-warning"&gt;Warning&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-info"&gt;Info&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-light"&gt;Light&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-dark"&gt;Dark&lt;/ph&gt;</codeblock>
+          <codeblock>&lt;ph outputclass="badge theme-primary"&gt;Primary&lt;/ph&gt;
+&lt;ph outputclass="badge theme-secondary"&gt;Secondary&lt;/ph&gt;
+&lt;ph outputclass="badge theme-success"&gt;Success&lt;/ph&gt;
+&lt;ph outputclass="badge theme-danger"&gt;Danger&lt;/ph&gt;
+&lt;ph outputclass="badge theme-warning"&gt;Warning&lt;/ph&gt;
+&lt;ph outputclass="badge theme-info"&gt;Info&lt;/ph&gt;
+&lt;ph outputclass="badge theme-accent"&gt;Accent&lt;/ph&gt;
+&lt;ph outputclass="badge theme-inverse"&gt;Inverse&lt;/ph&gt;</codeblock>
         </section>
          <section>
         <title>Specialization</title>
@@ -89,8 +89,8 @@
 &lt;badge color="danger"&gt;Danger&lt;/badge&gt;
 &lt;badge color="warning"&gt;Warning&lt;/badge&gt;
 &lt;badge color="info"&gt;Info&lt;/badge&gt;
-&lt;badge color="light"&gt;Light&lt;/badge&gt;
-&lt;badge color="dark"&gt;Dark&lt;/badge&gt;</codeblock>
+&lt;badge color="accent"&gt;Accent&lt;/badge&gt;
+&lt;badge color="inverse"&gt;Inverse&lt;/badge&gt;</codeblock>
         </section>
       </bodydiv>
   </body>

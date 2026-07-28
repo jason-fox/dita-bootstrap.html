@@ -307,6 +307,7 @@
       <xsl:call-template name="setidaname"/>
       <!-- Normal flags go before the generated title; revision flags only go on the content. -->
       <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]/prop" mode="ditaval-outputflag"/>
+      <div>
       <span class="note__title">
         <!-- ↓ Add Bootstrap icon ↓ -->
         <xsl:if test="$BOOTSTRAP_ICONS_INCLUDE = 'yes'">
@@ -320,12 +321,13 @@
       </span>
       <xsl:text> </xsl:text>
       <xsl:apply-templates
-        select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]/revprop"
-        mode="ditaval-outputflag"
-      />
+          select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]/revprop"
+          mode="ditaval-outputflag"
+        />
       <xsl:apply-templates/>
       <!-- Normal end flags and revision end flags both go out after the content. -->
       <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/>
+    </div>
     </div>
   </xsl:template>
 

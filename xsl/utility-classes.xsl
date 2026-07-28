@@ -11,14 +11,14 @@
   exclude-result-prefixes="xs dita-ot"
 >
   <xsl:param name="BOOTSTRAP_CSS_SHORTDESC" select="'text-body-secondary lead'"/>
-  <xsl:param name="BOOTSTRAP_CSS_CODEBLOCK" select="'alert theme-secondary'"/>
+  <xsl:param name="BOOTSTRAP_CSS_CODEBLOCK" select="'theme-secondary border rounded p-1'"/>
   <xsl:param name="BOOTSTRAP_CSS_TOPIC_TITLE" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_SECTION_TITLE" select="'h4'"/>
   <xsl:param name="BOOTSTRAP_CSS_CARD_TITLE" select="'h5'"/>
   <xsl:param name="BOOTSTRAP_CSS_CARD" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_CARD_WIDTH" select="'w-50'"/>
   <xsl:param name="BOOTSTRAP_CSS_CAROUSEL" select="''"/>
-  <xsl:param name="BOOTSTRAP_CSS_CAPTION" select="'alert theme-secondary p-1'"/>
+  <xsl:param name="BOOTSTRAP_CSS_CAPTION" select="'theme-secondary border rounded p-1'"/>
   <xsl:param name="BOOTSTRAP_CSS_TABS" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_TABS_VERTICAL" select="'me-3'"/>
   <xsl:param name="BOOTSTRAP_CSS_ACCORDION" select="''"/>
