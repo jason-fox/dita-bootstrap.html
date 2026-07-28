@@ -127,11 +127,11 @@
       <p>
         The sidebar is hidden by default on mobile. To ensure that the sidebar content can be accessed, the header file must include the following toggle with <xmlatt
         >data-bs-target="#bdSidebar"</xmlatt>
-        and <xmlatt>data-bs-toggle="offcanvas"</xmlatt>:
+        and <xmlatt>data-bs-toggle="drawer"</xmlatt>:
       </p>
       <codeblock outputclass="language-xml" deliveryTarget="html">&lt;div class="bd-navbar-toggle"&gt;
-  &lt;button class="navbar-toggler p-2" type="button"
-    data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+  &lt;button class="lg:d-none p-2" type="button"
+    data-bs-toggle="drawer" data-bs-target="#bdSidebar"
     aria-controls="bdSidebar" aria-label="Toggle docs navigation"&gt;
     &lt;i class="bi bi-list"/&gt;
   &lt;/button&gt;

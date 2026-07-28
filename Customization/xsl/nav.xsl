@@ -187,8 +187,8 @@
   </xsl:template>
 
   <xsl:template name="default-sidebar-header">
-    <div class="offcanvas-header border-bottom">
-      <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">
+    <div class="drawer-header border-bottom">
+      <h5 class="drawer-title" id="bdSidebarOffcanvasLabel">
         <xsl:choose>
           <xsl:when test="$input.map//*[contains(@class,' topic/title ')][1]">
             <xsl:for-each select="$input.map//*[contains(@class,' topic/title ')][1]">
@@ -214,13 +214,7 @@
           </xsl:otherwise>
         </xsl:choose>
       </h5>
-      <button
-        type="button"
-        class="btn-close"
-        data-bs-dismiss="offcanvas"
-        aria-label="Close"
-        data-bs-target="#bdSidebar"
-      />
+      <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close" data-bs-target="#bdSidebar"/>
     </div>
   </xsl:template>
 
@@ -232,9 +226,9 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template name="offcanvas-sidebar">
-    <div
-      class="offcanvas-lg offcanvas-start"
+  <xsl:template name="drawer-sidebar">
+    <dialog
+      class="lg:drawer drawer-start"
       tabindex="-1"
       id="bdSidebar"
       aria-labelledby="bdSidebarOffcanvasLabel"
@@ -250,10 +244,10 @@
         </xsl:otherwise>
       </xsl:choose>
 
-      <div class="offcanvas-body flex-column h-100">
+      <div class="drawer-body flex-column h-100">
         <xsl:call-template name="sidebar-content"/>
       </div>
-    </div>
+    </dialog>
   </xsl:template>
 
   <xsl:template name="sidebar-content">
@@ -361,7 +355,7 @@
               <xsl:value-of select="concat(' py-', $TOC_SPACER_PADDING)"/>
             </xsl:if>
           </xsl:attribute>
-          <xsl:call-template name="offcanvas-sidebar"/>
+          <xsl:call-template name="drawer-sidebar"/>
         </div>
       </xsl:otherwise>
     </xsl:choose>

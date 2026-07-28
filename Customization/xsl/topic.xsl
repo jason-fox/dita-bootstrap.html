@@ -96,7 +96,7 @@
 
     <!-- ↓ Add collapsible top header ↓ -->
     <xsl:if test="string-length($TOPHDFFILE) > 0">
-      <div class="d-none d-lg-block">
+      <div class="d-none lg:d-block">
         <xsl:copy-of select="document($TOPHDFFILE, /)"/>
       </div>
     </xsl:if>

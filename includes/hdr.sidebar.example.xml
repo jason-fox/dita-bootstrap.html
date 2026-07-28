@@ -22,7 +22,7 @@
   <button
     type="button"
     class="btn-close btn-close-white"
-    data-bs-dismiss="offcanvas"
+    data-bs-dismiss="drawer"
     aria-label="Close"
     data-bs-target="#bdSidebar"
   />

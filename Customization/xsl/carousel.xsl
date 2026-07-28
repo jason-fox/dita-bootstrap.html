@@ -14,7 +14,7 @@
   <!-- Customization to add Bootstrap Carousel Component -->
   <!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
 
-  <xsl:param name="BOOTSTRAP_CSS_CAROUSEL_INDICATORS" select="'btn btn-primary bg-primary btn-sm'"/>
+  <xsl:param name="BOOTSTRAP_CSS_CAROUSEL_INDICATORS" select="'btn theme-primary btn-sm'"/>
 
   <xsl:template name="carousel-previous-next">
     <xsl:param name="id"/>
@@ -159,7 +159,7 @@
     <xsl:choose>
       <xsl:when test="@fade = 'yes' or contains(@outputclass, 'carousel-fade')"/>
       <xsl:otherwise>
-        <span class="btn btn-{$color} btn-sm p-0">
+        <span class="btn theme-{$color} btn-sm p-0">
           <span aria-hidden="true">
             <xsl:attribute name="class" select="concat($icon, ' align-middle')"/>
           </span>

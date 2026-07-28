@@ -52,9 +52,9 @@
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/card.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/carousel.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/collapse.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/drawer.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/hi-d.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/nav.xsl"/>
-  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/offcanvas.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/pagination.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/popovers.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/scrollspy.xsl"/>

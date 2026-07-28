@@ -52,8 +52,8 @@
     <topicref href="card.dita"/>
     <topicref href="carousel.dita"/>
     <topicref href="collapse.dita"/>
+    <topicref href="drawer.dita"/>
     <topicref href="list-group.dita"/>
-    <topicref href="offcanvas.dita"/>
     <topicref href="pagination.dita"/>
     <topicref href="popovers.dita"/>
     <topicref href="scrollspy.dita"/>

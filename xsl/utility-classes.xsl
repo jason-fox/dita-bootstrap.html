@@ -377,17 +377,17 @@
     <xsl:next-match/>
   </xsl:template>
 
-  <!-- Change the default Bootstrap CSS classes of offcanvas -->
-  <xsl:template match="*[contains(@class, ' bootstrap-d/offcanvas ')]" mode="bootstrap-class" priority="10">
-    <xsl:text>offcanvas </xsl:text>
+  <!-- Change the default Bootstrap CSS classes of drawer -->
+  <xsl:template match="*[contains(@class, ' bootstrap-d/drawer ')]" mode="bootstrap-class" priority="10">
+    <xsl:text>drawer </xsl:text>
     <xsl:choose>
       <xsl:when test="@position">
-        <xsl:text>offcanvas-</xsl:text>
+        <xsl:text>drawer-</xsl:text>
         <xsl:value-of select="@position"/>
         <xsl:text> </xsl:text>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:text>offcanvas-start </xsl:text>
+        <xsl:text>drawer-start </xsl:text>
       </xsl:otherwise>
     </xsl:choose>
     <xsl:next-match/>

@@ -109,9 +109,9 @@
       <p>
         Omit the <xmlatt>id</xmlatt> to ignore a <xmlelement>section</xmlelement>, or wrap the <xmlelement
         >section</xmlelement> in a <xmlelement>bodydiv</xmlelement> element. Any <xref
-          href="./offcanvas.dita"
+          href="./drawer.dita"
           format="dita"
-        >offcanvas components</xref> are ignored automatically.
+        >drawer components</xref> are ignored automatically.
       </p>
       <codeblock>&lt;bodydiv&gt;
   &lt;section id="section-1"&gt;
