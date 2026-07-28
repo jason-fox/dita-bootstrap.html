@@ -34,11 +34,11 @@
     </section>
     <bodydiv outputclass="p-3 border">
       <div outputclass="p-3">
-        <ph outputclass="border p-3 border-secondary">&#xA0;border&#xA0;</ph>&#xA0;
-        <ph outputclass="border-top p-3 border-secondary">&#xA0;border-top</ph>&#xA0;
-        <ph outputclass="border-end p-3 border-secondary">&#xA0;border-end</ph>&#xA0;
-        <ph outputclass="border-bottom p-3 border-secondary">&#xA0;border-bottom</ph>&#xA0;
-        <ph outputclass="border-start p-3 border-secondary">&#xA0;border-start</ph>
+        <ph outputclass="border p-3 border-accent">&#xA0;border&#xA0;</ph>&#xA0;
+        <ph outputclass="border-top p-3 border-accent">&#xA0;border-top</ph>&#xA0;
+        <ph outputclass="border-end p-3 border-accent">&#xA0;border-end</ph>&#xA0;
+        <ph outputclass="border-bottom p-3 border-accent">&#xA0;border-bottom</ph>&#xA0;
+        <ph outputclass="border-start p-3 border-accent">&#xA0;border-start</ph>
       </div>
     </bodydiv>
     <codeblock>&lt;ph outputclass="border"&gt;...&lt;/ph&gt;
@@ -203,19 +203,19 @@
     <bodydiv outputclass="mt-3 p-3 border">
       <div outputclass="mb-3 pt-3">
         <ph outputclass="me-5 p-4 border border-info rounded-circle">Circle</ph>
-        <ph outputclass="me-2 px-4 py-2 border border-dark rounded-pill">Pill</ph>
+        <ph outputclass="me-2 px-4 py-2 border border-warning rounded-pill">Pill</ph>
       </div>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ph outputclass="border rounded-circle border-info"&gt;Circle&lt;/ph&gt;
-&lt;ph outputclass="border rounded-pill border-dark"&gt;Pill&lt;/ph&gt;</codeblock>
+&lt;ph outputclass="border rounded-pill border-warning"&gt;Pill&lt;/ph&gt;</codeblock>
       </section>
       <section>
         <title>Specialization</title>
         <codeblock>&lt;ph border="yes" rounded="circle" bordercolor="info"&gt;Circle&lt;/ph&gt;
-&lt;ph border="yes" rounded="pill" bordercolor="dark"&gt;Pill&lt;/ph&gt;</codeblock>
+&lt;ph border="yes" rounded="pill" bordercolor="warning"&gt;Pill&lt;/ph&gt;</codeblock>
       </section>
     </bodydiv>
 

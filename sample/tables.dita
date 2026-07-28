@@ -111,7 +111,7 @@
       <p>Use contextual classes to color tables, table rows or individual cells.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <table outputclass="p-1 w-100 table-primary">
+      <table outputclass="p-1 w-100 theme-primary">
         <tgroup cols="2">
           <thead>
             <row>
@@ -120,17 +120,17 @@
             </row>
           </thead>
           <tbody>
-            <row outputclass="table-info">
+            <row outputclass="theme-info">
               <entry>Elephant (African and Asian)</entry>
               <entry>19-22 months</entry>
             </row>
-            <row outputclass="table-success">
+            <row outputclass="theme-success">
               <entry>Giraffe</entry>
               <entry>15 months</entry>
             </row>
             <row>
               <entry>Rhinoceros</entry>
-              <entry outputclass="table-danger">14-16 months</entry>
+              <entry outputclass="theme-danger">14-16 months</entry>
             </row>
             <row>
               <entry>Hippopotamus</entry>
@@ -144,7 +144,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="table-primary p-1 w-100"&gt;
+        <codeblock>&lt;table outputclass="theme-primary p-1 w-100"&gt;
   &lt;tgroup cols="2"&gt;
     &lt;thead&gt;
       &lt;row&gt;
@@ -153,17 +153,17 @@
       &lt;/row&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
-      &lt;row outputclass="table-info"&gt;
+      &lt;row outputclass="theme-info"&gt;
         &lt;entry&gt;Elephant (African and Asian)&lt;/entry&gt;
         &lt;entry&gt;19-22 months&lt;/entry&gt;
       &lt;/row&gt;
-      &lt;row outputclass="table-success"&gt;
+      &lt;row outputclass="theme-success"&gt;
         &lt;entry&gt;Giraffe&lt;/entry&gt;
         &lt;entry&gt;15 months&lt;/entry&gt;
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;Rhinoceros&lt;/entry&gt;
-        &lt;entry outputclass="table-danger"&gt;14-16 months&lt;/entry&gt;
+        &lt;entry outputclass="theme-danger"&gt;14-16 months&lt;/entry&gt;
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;Hippopotamus&lt;/entry&gt;
@@ -211,7 +211,7 @@
         within the <xmlelement>tbody</xmlelement>.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <table outputclass="table-striped">
+      <table outputclass="theme-striped">
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
@@ -245,7 +245,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="table-striped"&gt;
+        <codeblock>&lt;table outputclass="theme-striped"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
@@ -262,7 +262,7 @@
         within the <xmlelement>tbody</xmlelement>.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <table outputclass="table-striped-columns">
+      <table outputclass="theme-striped-columns">
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
@@ -296,7 +296,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="table-striped-columns"&gt;
+        <codeblock>&lt;table outputclass="theme-striped-columns"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
@@ -414,7 +414,7 @@
         >padding</codeph> in half.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <table outputclass="table-sm">
+      <table outputclass="theme-sm">
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
@@ -448,7 +448,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="table-sm"&gt;
+        <codeblock>&lt;table outputclass="theme-sm"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
@@ -475,7 +475,7 @@
               <entry colname="COLSPEC1" valign="top">Gestation</entry>
             </row>
           </thead>
-          <tbody outputclass="table-group-divider">
+          <tbody outputclass="theme-group-divider">
             <row>
               <entry>Elephant (African and Asian)</entry>
               <entry>19-22 months</entry>
@@ -499,7 +499,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;tbody outputclass="table-group-divider"&gt;
+        <codeblock>&lt;tbody outputclass="theme-group-divider"&gt;
   ...etc
 &lt;/tbody&gt;</codeblock>
       </section>
@@ -627,8 +627,8 @@
     </bodydiv>
     <section>
       <title>Table head</title>
-      <p>Similar to tables and dark tables, use the modifier <xmlatt>color="light"</xmlatt> or
-          <xmlatt>color="dark"</xmlatt> to make <xmlelement>thead</xmlelement> elements appear light or dark
+      <p>Similar to tables and dark tables, use the modifier <xmlatt>color="secondary"</xmlatt> or
+          <xmlatt>color="inverse"</xmlatt> to make <xmlelement>thead</xmlelement> elements appear light or dark
         gray.</p>
     </section>
     <bodydiv outputclass="p-3 border">
@@ -636,7 +636,7 @@
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead outputclass="table-light">
+          <thead outputclass="theme-secondary">
             <row>
               <entry colname="COLSPEC0" valign="top">Animal</entry>
               <entry colname="COLSPEC1" valign="top">Gestation</entry>
@@ -668,7 +668,7 @@
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead outputclass="table-light"&gt;
+    &lt;thead outputclass="theme-secondary"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;
@@ -678,7 +678,7 @@
         <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead color="light"&gt;
+    &lt;thead color="secondary"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;
@@ -690,7 +690,7 @@
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead outputclass="table-dark">
+          <thead outputclass="theme-inverse">
             <row>
               <entry colname="COLSPEC0" valign="top">Animal</entry>
               <entry colname="COLSPEC1" valign="top">Gestation</entry>
@@ -722,7 +722,7 @@
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead outputclass="table-dark"&gt;
+    &lt;thead outputclass="theme-inverse"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;
@@ -732,7 +732,7 @@
         <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead color="dark"&gt;
+    &lt;thead color="inverse"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;
