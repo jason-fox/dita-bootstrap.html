@@ -304,7 +304,11 @@
   </xsl:template>
 
   <!-- Change the default Bootstrap CSS classes of buttons -->
-  <xsl:template match="*[contains(@class, ' bootstrap-d/button ')]  | *[contains(@class,' topic/xref ') and (contains(@outputclass, 'btn') or contains(@outputclass, 'btn-outline')) ]" mode="bootstrap-class" priority="10">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/button ')]  | *[contains(@class,' topic/xref ') and (contains(@outputclass, 'btn') or contains(@outputclass, 'btn-outline')) ]"
+    mode="bootstrap-class"
+    priority="10"
+  >
     <xsl:value-of
       select="
         if (@outline = 'yes') then 'btn btn-outline'
@@ -485,6 +489,7 @@
             else if (contains(@outputclass, 'btn-group-vertical')) then ''
             else if (contains(@outputclass, 'btn-group')) then ''
             else if (contains(@outputclass, 'btn-toolbar')) then ''
+            else if (contains(@outputclass, 'accordion-')) then 'accordion'
             else if (contains(@class, ' topic/fig ')) then ' figure ' || $BOOTSTRAP_CSS_FIGURE
             else if (contains(@class, ' topic/lq ')) then ' blockquote '
             else if (contains(@class, ' topic/dl ')) then $BOOTSTRAP_CSS_DL

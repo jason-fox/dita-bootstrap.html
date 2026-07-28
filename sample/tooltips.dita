@@ -76,10 +76,11 @@
         <desc>Tooltip on bottom</desc> Tooltip on bottom </xref>
       <xref href="#" outputclass="btn-secondary tooltip-left">
         <desc>Tooltip on left</desc> Tooltip on left </xref>
+    </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref href="#" outputclass="btn-secondary tooltip-top"&gt;
+    <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;xref href="#" outputclass="btn-secondary tooltip-top"&gt;
   &lt;desc&gt;Tooltip on top&lt;/desc&gt;
   Tooltip on top
 &lt;/xref&gt;
@@ -95,10 +96,10 @@
   &lt;desc&gt;Tooltip on left&lt;/desc&gt;
   Tooltip on left
 &lt;/xref&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;tooltip outputclass="btn-secondary" position="top"&gt;
+    </section>
+    <section>
+      <title>Specialization</title>
+        <codeblock>&lt;tooltip outputclass="btn-secondary" position="top"&gt;
   &lt;desc&gt;Tooltip on top&lt;/desc&gt;
   Tooltip on top
 &lt;/tooltip&gt;
@@ -114,31 +115,32 @@
   &lt;desc&gt;Tooltip on left&lt;/desc&gt;
   Tooltip on left
 &lt;/tooltip&gt;</codeblock>
-        </section>
-      </bodydiv>
-      <p>Custom HTML can be added to tooltips using additional DITA elements within the <xmlelement>desc</xmlelement>
-      </p>
-      <xref href="#" outputclass="btn-secondary tooltip-top">
-        <desc><b>Tooltip</b>
-          <u>with</u>
-          <b>DITA</b> elements</desc> Tooltip with embedded DITA </xref>
-    </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref href="#" outputclass="btn-secondary tooltip-top"&gt;
-  &lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
-  Tooltip with embedded DITA
+    </section>
+  </bodydiv>
+  <p>Custom HTML can be added to tooltips using additional DITA elements within the <xmlelement>desc</xmlelement>
+  </p>
+  <bodydiv outputclass="p-3 border">
+    <xref href="#" outputclass="btn-secondary tooltip-top">
+      <desc><b>Tooltip</b>
+        <u>with</u>
+        <b>DITA</b> elements</desc> Tooltip with embedded DITA </xref>
+  </bodydiv>
+  <bodydiv outputclass="nav-pills mt-3">
+    <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;xref href="#" outputclass="btn-secondary tooltip-top"&gt;
+&lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
+Tooltip with embedded DITA
 &lt;/xref&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;tooltip outputclass="btn-secondary"&gt;
-  &lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
-  Tooltip with embedded DITA
+      </section>
+       <section>
+      <title>Specialization</title>
+        <codeblock>&lt;tooltip outputclass="btn-secondary"&gt;
+&lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
+Tooltip with embedded DITA
 &lt;/tooltip&gt;</codeblock>
-        </section>
-      </bodydiv>
+      </section>
+    </bodydiv>
     <section>
       <title>Custom tooltips</title>
       <p>You can customize the appearance of tooltips using CSS variables. We set a custom class with <codeph

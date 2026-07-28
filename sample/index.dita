@@ -30,7 +30,7 @@
       <title>Installing</title>
       <p>Use the <cmdname>dita</cmdname> command to add this plug-in to your DITA Open Toolkit installation:</p>
     </section>
-    <bodydiv outputclass="accordion">
+    <bodydiv outputclass="accordion theme-primary">
       <section id="install-35" outputclass="show">
         <title>DITA-OT 3.5 and newer:</title>
           <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
