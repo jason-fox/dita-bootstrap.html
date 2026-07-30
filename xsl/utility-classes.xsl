@@ -858,7 +858,12 @@
       </xsl:when>
       <xsl:when test="$icon != '' or (contains(@class, ' bootstrap-d/icon ') and @outputclass)">
         <xsl:element name="i">
-          <xsl:attribute name="class" select="concat('pe-2 ', $icon, ' ', @outputclass)"/>
+          <xsl:attribute name="class">
+            <xsl:value-of select="concat('pe-2 ', $icon)"/>
+            <xsl:if test="contains(@class, ' bootstrap-d/icon ')">
+              <xsl:value-of select="concat(' ', @outputclass)"/>
+            </xsl:if>
+          </xsl:attribute>
           <xsl:if test="contains(@otherprops, 'style(')">
             <xsl:call-template name="otherprops-attributes"/>
           </xsl:if>
