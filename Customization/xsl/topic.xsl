@@ -389,6 +389,7 @@
   <!-- Figure caption -->
   <xsl:template name="place-fig-lbl">
     <xsl:param name="stringName"/>
+    <xsl:param name="suppress-title-label" select="false()" tunnel="yes"/>
     <!-- Number of fig/title's including this one -->
     <xsl:variable
       name="fig-count-actual"
@@ -419,30 +420,32 @@
             />
           </xsl:apply-templates>
           <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
-          <span class="fig--title-label">
-            <xsl:choose>
-              <!-- Blockquote - figure -->
-              <xsl:when test="*[contains(@class, ' topic/lq ')]">
-              </xsl:when>
-              <!-- Hungarian: "1. Figure " -->
-              <xsl:when test="$ancestorlang = ('hu', 'hu-hu')">
-                <xsl:value-of select="$fig-count-actual"/>
-                <xsl:text>. </xsl:text>
-                <xsl:call-template name="getVariable">
-                  <xsl:with-param name="id" select="'Figure'"/>
-                </xsl:call-template>
-                <xsl:text> </xsl:text>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:call-template name="getVariable">
-                  <xsl:with-param name="id" select="'Figure'"/>
-                </xsl:call-template>
-                <xsl:text> </xsl:text>
-                <xsl:value-of select="$fig-count-actual"/>
-                <xsl:text>. </xsl:text>
-              </xsl:otherwise>
-            </xsl:choose>
-          </span>
+          <xsl:if test="not($suppress-title-label)">
+            <span class="fig--title-label">
+              <xsl:choose>
+                <!-- Blockquote - figure -->
+                <xsl:when test="*[contains(@class, ' topic/lq ')]">
+                </xsl:when>
+                <!-- Hungarian: "1. Figure " -->
+                <xsl:when test="$ancestorlang = ('hu', 'hu-hu')">
+                  <xsl:value-of select="$fig-count-actual"/>
+                  <xsl:text>. </xsl:text>
+                  <xsl:call-template name="getVariable">
+                    <xsl:with-param name="id" select="'Figure'"/>
+                  </xsl:call-template>
+                  <xsl:text> </xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:call-template name="getVariable">
+                    <xsl:with-param name="id" select="'Figure'"/>
+                  </xsl:call-template>
+                  <xsl:text> </xsl:text>
+                  <xsl:value-of select="$fig-count-actual"/>
+                  <xsl:text>. </xsl:text>
+                </xsl:otherwise>
+              </xsl:choose>
+            </span>
+          </xsl:if>
           <xsl:apply-templates select="*[contains(@class, ' topic/title ')]" mode="figtitle"/>
           <xsl:if test="*[contains(@class, ' topic/desc ')]">
             <xsl:text>. </xsl:text>

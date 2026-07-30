@@ -399,13 +399,13 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/400/200?l"/>
           <div outputclass="row">
             <div outputclass="col-4">
-              <p outputclass="text-center">First Image</p>
+              <p outputclass="text-center figure figure-caption">First Image</p>
             </div>
             <div outputclass="col-4">
-              <p outputclass="text-center">Second Image</p>
+              <p outputclass="text-center figure figure-caption">Second Image</p>
             </div>
             <div outputclass="col-4">
-              <p outputclass="text-center">Third Image</p>
+              <p outputclass="text-center figure figure-caption">Third Image</p>
             </div>
           </div>
         </li>
@@ -415,13 +415,13 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/400/200?o"/>
           <div outputclass="row">
             <div outputclass="col-4">
-              <p outputclass="text-center">Fourth Image</p>
+              <p outputclass="text-center figure figure-caption">Fourth Image</p>
             </div>
             <div outputclass="col-4">
-              <p outputclass="text-center">Fifth Image</p>
+              <p outputclass="text-center figure figure-caption">Fifth Image</p>
             </div>
             <div outputclass="col-4">
-              <p outputclass="text-center">Sixth Image</p>
+              <p outputclass="text-center figure figure-caption">Sixth Image</p>
             </div>
           </div>
         </li>
@@ -431,13 +431,13 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/400/200?r"/>
           <div outputclass="row">
             <div outputclass="col-4">
-              <p outputclass="text-center">Seventh Image</p>
+              <p outputclass="text-center figure figure-caption">Seventh Image</p>
             </div>
             <div outputclass="col-4">
-              <p outputclass="text-center">Eighth Image</p>
+              <p outputclass="text-center figure figure-caption">Eighth Image</p>
             </div>
             <div outputclass="col-4">
-              <p outputclass="text-center">Ninth Image</p>
+              <p outputclass="text-center figure figure-caption">Ninth Image</p>
             </div>
           </div>
         </li>
@@ -450,13 +450,13 @@ And, kept unused, the user so destroys it.</lines>
     &lt;image href="..." /&gt;
     &lt;grid-row deliveryTarget="html"&gt;
       &lt;grid-col colspan="4"&gt;
-        &lt;p outputclass="text-center"&gt;...&lt;/p&gt;
+        &lt;p outputclass="text-center figure figure-caption"&gt;...&lt;/p&gt;
       &lt;/grid-col&gt;
       &lt;grid-col colspan="4"&gt;
-        &lt;p outputclass="text-center"&gt;...&lt;/p&gt;
+        &lt;p outputclass="text-center figure figure-caption"&gt;...&lt;/p&gt;
       &lt;/grid-col&gt;
       &lt;grid-col colspan="4"&gt;
-        &lt;p outputclass="text-center"&gt;...&lt;/p&gt;
+        &lt;p outputclass="text-center figure figure-caption"&gt;...&lt;/p&gt;
       &lt;/grid-col&gt;
     &lt;/grid-row&gt;
   &lt;/carousel-item&gt;
