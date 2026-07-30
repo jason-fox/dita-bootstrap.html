@@ -10,7 +10,7 @@
   version="2.0"
   exclude-result-prefixes="xs dita-ot"
 >
-  <xsl:param name="BOOTSTRAP_CSS_SHORTDESC" select="'text-body-secondary lead'"/>
+  <xsl:param name="BOOTSTRAP_CSS_SHORTDESC" select="'fw-light fs-lg'"/>
   <xsl:param name="BOOTSTRAP_CSS_CODEBLOCK" select="'theme-secondary border rounded p-1'"/>
   <xsl:param name="BOOTSTRAP_CSS_TOPIC_TITLE" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_SECTION_TITLE" select="'h4'"/>
@@ -490,7 +490,9 @@
             else if (contains(@outputclass, 'btn-group')) then ''
             else if (contains(@outputclass, 'btn-toolbar')) then ''
             else if (contains(@outputclass, 'accordion-')) then 'accordion'
+            else if (contains(@class, ' topic/fig ') and *[contains(@class, ' topic/lq ')]) then ' blockquote '
             else if (contains(@class, ' topic/fig ')) then ' figure ' || $BOOTSTRAP_CSS_FIGURE
+            else if (contains(@class, ' topic/lq ') and parent::*[contains(@class, ' topic/fig ')]) then ''
             else if (contains(@class, ' topic/lq ')) then ' blockquote '
             else if (contains(@class, ' topic/dl ')) then $BOOTSTRAP_CSS_DL
             else if (contains(@class, ' topic/image ') and ancestor::*[contains(@class, ' topic/fig ')]) then '  figure-img ' || $BOOTSTRAP_CSS_FIGURE_IMAGE
@@ -529,7 +531,7 @@
     <xsl:variable name="is-first-dd" select="empty(preceding-sibling::*[contains(@class, ' topic/dd ')])"/>
     <xsl:choose>
       <xsl:when test="not($is-first-dd)">
-        <xsl:text>col-lg-12 </xsl:text>
+        <xsl:text>lg:col-12 </xsl:text>
       </xsl:when>
       <xsl:when test="$terms=1">
         <xsl:variable name="dl" select="../../."/>
@@ -544,14 +546,14 @@
             <xsl:otherwise>3</xsl:otherwise>
           </xsl:choose>
         </xsl:variable>
-        <xsl:value-of select="concat('col-lg-', 12 - xs:integer($colspan), ' ')"/>
+        <xsl:value-of select="concat('lg:col-', 12 - xs:integer($colspan), ' ')"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:value-of
           select="
-            if ($terms=2) then 'col-lg-6 '
-            else if ($terms=3) then 'col-lg-3 '
-            else if ($terms=4) then 'col-lg-2 '
+            if ($terms=2) then 'lg:col-6 '
+            else if ($terms=3) then 'lg:col-3 '
+            else if ($terms=4) then 'lg:col-2 '
             else ''"
         />
       </xsl:otherwise>
@@ -575,14 +577,14 @@
             <xsl:otherwise>3</xsl:otherwise>
           </xsl:choose>
         </xsl:variable>
-        <xsl:value-of select="concat('col-lg-', $colspan, ' ')"/>
+        <xsl:value-of select="concat('lg:col-', $colspan, ' ')"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:value-of
           select="
-            if ($terms=2) then 'col-lg-3 '
-            else if ($terms=3) then 'col-lg-3 '
-            else if ($terms=4) then 'col-lg-2 '
+            if ($terms=2) then 'lg:col-3 '
+            else if ($terms=3) then 'lg:col-3 '
+            else if ($terms=4) then 'lg:col-2 '
             else ''"
         />
       </xsl:otherwise>

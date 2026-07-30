@@ -215,7 +215,7 @@
 
   <!-- Slide Caption -->
   <xsl:template match="*[contains(@class,' topic/title ')]" mode="carousel">
-    <div class="carousel-caption d-none d-md-block">
+    <div class="carousel-caption d-none md:d-block">
       <p>
         <xsl:call-template name="commonattributes"/>
         <xsl:apply-templates/>

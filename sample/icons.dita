@@ -57,76 +57,74 @@
   <p>Icons placed within an <xmlelement>xref</xmlelement> element are colorized appropriately:</p>
   <bodydiv outputclass="p-3 border">
     <p>
-      <xref href="#" outputclass="link-primary">
+      <xref href="#" outputclass="link theme-primary">
         <ph outputclass="bi bi-link"/> Primary link
       </xref>
     </p>
     <p>
-      <xref href="#" outputclass="link-secondary">
+      <xref href="#" outputclass="link theme-secondary">
         <ph outputclass="bi bi-link"/> Secondary link
       </xref>
     </p>
     <p>
-      <xref href="#" outputclass="link-success">
+      <xref href="#" outputclass="link theme-success">
         <ph outputclass="bi bi-link"/> Success link
       </xref>
     </p>
     <p>
-      <xref href="#" outputclass="link-danger">
+      <xref href="#" outputclass="link theme-danger">
         <ph outputclass="bi bi-link"/> Danger link
       </xref>
     </p>
     <p>
-      <xref href="#" outputclass="link-warning">
+      <xref href="#" outputclass="link theme-warning">
         <ph outputclass="bi bi-link"/> Warning link
       </xref>
     </p>
     <p>
-      <xref href="#" outputclass="link-info">
+      <xref href="#" outputclass="link theme-info">
         <ph outputclass="bi bi-link"/> Info link
       </xref>
     </p>
     <p>
-      <xref href="#" outputclass="link-light">
-        <ph outputclass="bi bi-link"/> Light link
+      <xref href="#" outputclass="link theme-accent">
+        <ph outputclass="bi bi-link"/> Accent link
       </xref>
     </p>
     <p>
-      <xref href="#" outputclass="link-dark">
-        <ph outputclass="bi bi-link"/> Dark link
+      <xref href="#" outputclass="link theme-inverse">
+        <ph outputclass="bi bi-link"/> Inverse link
       </xref>
     </p>
   </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="link-primary" href="#"&gt;
+          <codeblock>&lt;xref outputclass="link theme-primary" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Primary link
 &lt;/xref&gt;
-&lt;xref outputclass="link-secondary" href="#"&gt;
+&lt;xref outputclass="link theme-secondary" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Secondary link
 &lt;/xref&gt;
-&lt;xref outputclass="link-success" href="#"&gt;
+&lt;xref outputclass="link theme-success" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Success link
 &lt;/xref&gt;
-&lt;xref outputclass="link-danger" href="#"&gt;
+&lt;xref outputclass="link theme-danger" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Danger link
 &lt;/xref&gt;
-&lt;xref outputclass="link-warning" href="#"&gt;
+&lt;xref outputclass="link theme-warning" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Warning link
 &lt;/xref&gt;
-&lt;xref outputclass="link-info" href="#"&gt;
+&lt;xref outputclass="link theme-info" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Info link
 &lt;/xref&gt;
-&lt;xref outputclass="link-light" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Light link
+&lt;xref outputclass="link theme-accent" href="#"&gt;
+  &lt;i outputclass="bi-link"/&gt; Accent link
 &lt;/xref&gt;
-&lt;xref outputclass="link-dark" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Dark link
+&lt;xref outputclass="link theme-inverse" href="#"&gt;
+  &lt;i outputclass="bi-link"/&gt; Inverse link
 &lt;/xref&gt;
-&lt;xref outputclass="link-body-emphasis" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Emphasis link
-&lt;/xref&gt;</codeblock>
+</codeblock>
         </section>
          <section>
         <title>Specialization</title>
@@ -148,42 +146,46 @@
 &lt;xref color="info" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Info link
 &lt;/xref&gt;
-&lt;xref color="light" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Light link
+&lt;xref color="accent" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt; Accent link
 &lt;/xref&gt;
-&lt;xref color="dark" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Dark link
+&lt;xref color="inverse" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt; Inverse link
 &lt;/xref&gt;</codeblock>
         </section>
       </bodydiv>
     <p>Icons can also be placed within buttons as shown:</p>
     <bodydiv outputclass="p-3 border">
-      <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-arrow-down-square-fill"/></xref>
-      <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-chat-left-quote-fill"/></xref>
-      <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-speedometer"/></xref>
-      <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-camera-fill"/></xref>
-      <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-link"/></xref>
-      <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-share-fill"/></xref>
+      <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph
+          outputclass="bi bi-arrow-down-square-fill"
+        /></xref>
+      <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph
+          outputclass="bi bi-chat-left-quote-fill"
+        /></xref>
+      <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph outputclass="bi bi-speedometer"/></xref>
+      <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph outputclass="bi bi-camera-fill"/></xref>
+      <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph outputclass="bi bi-link"/></xref>
+      <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph outputclass="bi bi-share-fill"/></xref>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+          <codeblock>&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-arrow-down-square-fill"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-chat-left-quote-fill"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-speedometer"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-camera-fill"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-share-fill"/&gt;
 &lt;/xref&gt;</codeblock>
         </section>

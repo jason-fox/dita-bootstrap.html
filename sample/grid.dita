@@ -34,13 +34,13 @@
     </section>
     <bodydiv outputclass="p-3 border">
       <bodydiv outputclass="row">
-        <bodydiv outputclass="col-sm-3">
+        <bodydiv outputclass="sm:col-3">
           <p>One of three columns</p>
         </bodydiv>
-        <bodydiv outputclass="col-sm-3">
+        <bodydiv outputclass="sm:col-3">
           <p>One of three columns</p>
         </bodydiv>
-        <bodydiv outputclass="col-sm-3">
+        <bodydiv outputclass="sm:col-3">
           <p>One of three columns</p>
         </bodydiv>
       </bodydiv>
@@ -49,13 +49,13 @@
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;bodydiv outputclass="row"&gt;
-  &lt;bodydiv outputclass="col-sm-3"&gt;
+  &lt;bodydiv outputclass="sm:col-3"&gt;
     &lt;p&gt;One of three columns&lt;/p&gt;
   &lt;/bodydiv&gt;
-  &lt;bodydiv outputclass="col-sm-3"&gt;
+  &lt;bodydiv outputclass="sm:col-3"&gt;
     &lt;p&gt;One of three columns&lt;/p&gt;
   &lt;/bodydiv&gt;
-  &lt;bodydiv outputclass="col-sm-3"&gt;
+  &lt;bodydiv outputclass="sm:col-3"&gt;
     &lt;p&gt;One of three columns&lt;/p&gt;
   &lt;/bodydiv&gt;
 &lt;/bodydiv&gt;</codeblock>

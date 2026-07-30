@@ -323,7 +323,7 @@
               <xsl:if test="$BIDIRECTIONAL_DOCUMENT = 'yes'">
                 <xsl:attribute name="direction" select="$defaultDirection"/>
               </xsl:if>
-              <ul class="list-unstyled mb-0 py-3 pt-md-1">
+              <ul class="list-unstyled mb-0 py-3 md:pt-1">
                 <xsl:apply-templates select="$input.map" mode="collapsible-toc">
                   <xsl:with-param name="pathFromMaplist" select="$PATH2PROJ" as="xs:string"/>
                 </xsl:apply-templates>

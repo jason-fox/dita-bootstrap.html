@@ -175,14 +175,14 @@
       <xsl:if test="$BOOTSTRAP_SCROLLSPY_TOC != 'none'">
         <xsl:choose>
           <xsl:when test="count(*[contains(@class, ' topic/topic ')])&gt;0">
-            <div class="bs-scrollspy mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+            <div class="bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 text-body-secondary">
               <xsl:call-template name="scrollspy-content"/>
             </div>
           </xsl:when>
           <xsl:when
             test="count(*/*[@id and (contains(@class, ' topic/section ') or contains(@class, ' topic/example '))])&gt;0"
           >
-            <div class="bs-scrollspy mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+            <div class="bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 text-body-secondary">
               <xsl:call-template name="scrollspy-content"/>
             </div>
           </xsl:when>
@@ -781,7 +781,7 @@
         select="concat('visually-hidden-focusable overflow-hidden p-2 ', $BOOTSTRAP_CSS_ACCESSIBILITY_NAV)"
       />
 
-      <div class="container-xl">
+      <div class="xl:container">
         <a>
           <xsl:attribute name="class" select="concat('d-inline-flex m-1 ', $BOOTSTRAP_CSS_ACCESSIBILITY_LINK)"/>
           <xsl:apply-templates mode="scrollspy-href" select="*[contains(@class, ' topic/title ')][1]"/>
@@ -795,7 +795,7 @@
             <a href="#bs-menubar-nav">
               <xsl:attribute
                 name="class"
-                select="concat('d-none d-md-inline-flex m-1 ', $BOOTSTRAP_CSS_ACCESSIBILITY_LINK)"
+                select="concat('d-none md:d-inline-flex m-1 ', $BOOTSTRAP_CSS_ACCESSIBILITY_LINK)"
               />
               <xsl:call-template name="getVariable">
                 <xsl:with-param name="id" select="'Skip to docs navigation'"/>
@@ -810,7 +810,7 @@
             <a href="#bs-sidebar-nav">
               <xsl:attribute
                 name="class"
-                select="concat('d-none d-md-inline-flex m-1 ', $BOOTSTRAP_CSS_ACCESSIBILITY_LINK)"
+                select="concat('d-none md:d-inline-flex m-1 ', $BOOTSTRAP_CSS_ACCESSIBILITY_LINK)"
               />
               <xsl:call-template name="getVariable">
                 <xsl:with-param name="id" select="'Skip to docs navigation'"/>

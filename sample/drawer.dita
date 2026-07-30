@@ -186,10 +186,10 @@
         </section>
          <section>
         <title>Specialization</title>
-          <codeblock>&lt;note color="info" outputclass="d-none d-lg-block"&gt;
+          <codeblock>&lt;note color="info" outputclass="d-none lg:d-block"&gt;
   Resize your browser to show the responsive drawer toggle.
 &lt;/note&gt;
-&lt;button outputclass="d-lg-none" props="drawer-toggle" href="#drawer4"&gt;
+&lt;button outputclass="lg:d-none" props="drawer-toggle" href="#drawer4"&gt;
   Toggle drawer
 &lt;/button&gt;
 &lt;drawer outputclass="drawer-lg" id="drawer4"&gt;

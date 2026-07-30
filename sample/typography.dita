@@ -61,28 +61,29 @@
         heading to stand out, consider using a display heading — a larger, slightly more opinionated heading style.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <p outputclass="display-1">Display 1</p>
-      <p outputclass="display-2">Display 2</p>
-      <p outputclass="display-3">Display 3</p>
-      <p outputclass="display-4">Display 4</p>
-      <p outputclass="display-5">Display 5</p>
-      <p outputclass="display-6">Display 6</p>
+      <p outputclass="fw-light fs-6xl">Display 1</p>
+      <p outputclass="fw-light fs-5xl">Display 2</p>
+      <p outputclass="fw-light fs-4xl">Display 3</p>
+      <p outputclass="fw-light fs-3xl">Display 4</p>
+      <p outputclass="fw-light fs-2xl">Display 5</p>
+      <p outputclass="fw-light fs-xl">Display 6</p>
     </bodydiv>
-    <codeblock>&lt;title outputclass="display-1"&gt;Display 1&lt;/title&gt;
-&lt;title outputclass="display-2"&gt;Display 2&lt;/title&gt;
-&lt;title outputclass="display-3"&gt;Display 3&lt;/title&gt;
-&lt;title outputclass="display-4"&gt;Display 4&lt;/title&gt;
-&lt;title outputclass="display-5"&gt;Display 5&lt;/title&gt;
-&lt;title outputclass="display-6"&gt;Display 6&lt;/title&gt;</codeblock>
+    <codeblock>&lt;title outputclass="fw-light fs-6xl"&gt;Display 1&lt;/title&gt;
+&lt;title outputclass="fw-light fs-5xl"&gt;Display 2&lt;/title&gt;
+&lt;title outputclass="fw-light fs-4xl"&gt;Display 3&lt;/title&gt;
+&lt;title outputclass="fw-light fs-3xl"&gt;Display 4&lt;/title&gt;
+&lt;title outputclass="fw-light fs-2xl"&gt;Display 5&lt;/title&gt;
+&lt;title outputclass="fw-light fs-xl"&gt;Display 6&lt;/title&gt;</codeblock>
     <section>
       <title>Lead</title>
-      <p>Make a paragraph stand out by adding <xmlatt>outputclass="lead"</xmlatt> — this is automatically added to
+      <p>Make a paragraph stand out by adding <xmlatt
+        >outputclass="fw-light fs-lg"</xmlatt> — this is automatically added to
           <xmlelement>shortdesc</xmlelement> elements.</p>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
-      <p outputclass="lead">This is a lead paragraph. It stands out from regular paragraphs.</p>
+      <p outputclass="fw-light fs-lg">This is a lead paragraph. It stands out from regular paragraphs.</p>
     </bodydiv>
-    <codeblock>&lt;p outputclass="lead"&gt;
+    <codeblock>&lt;p outputclass="fw-light fs-lg"&gt;
   This is a lead paragraph. It stands out from regular paragraphs.
 &lt;/p&gt;</codeblock>
     <section>

@@ -112,15 +112,15 @@
           <xmlatt>size="small"</xmlatt> for additional sizes.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <xref href="#" outputclass="btn theme-primary btn btn-lg">Large button</xref>
-      <xref href="#" outputclass="btn theme-secondary btn btn-lg">Large button</xref>
+      <xref href="#" outputclass="btn theme-primary btn-lg">Large button</xref>
+      <xref href="#" outputclass="btn theme-secondary btn-lg">Large button</xref>
     </bodydiv>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref href="#" outputclass="btn theme-primary btn btn-lg"&gt;Large button&lt;/xref&gt;
-&lt;xref href="#" outputclass="btn theme-secondary btn btn-lg"&gt;Large button&lt;/xref&gt;</codeblock>
+          <codeblock>&lt;xref href="#" outputclass="btn theme-primary btn-lg"&gt;Large button&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn theme-secondary btn-lg"&gt;Large button&lt;/xref&gt;</codeblock>
         </section>
          <section>
         <title>Specialization</title>
@@ -137,7 +137,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref href="#" outputclass="btn theme-primary btn btn-sm"&gt;Small button&lt;/xref&gt;
+          <codeblock>&lt;xref href="#" outputclass="btn theme-primary btn-sm"&gt;Small button&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn theme-secondary btn-sm"&gt;Small button&lt;/xref&gt;</codeblock>
         </section>
          <section>
