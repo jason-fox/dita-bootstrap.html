@@ -14,7 +14,7 @@
   <!-- Customization to add Bootstrap Carousel Component -->
   <!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
 
-  <xsl:param name="BOOTSTRAP_CSS_CAROUSEL_INDICATORS" select="'btn theme-primary btn-sm'"/>
+  <xsl:param name="BOOTSTRAP_CSS_CAROUSEL_INDICATORS" select="''"/>
 
   <xsl:template name="carousel-previous-next">
     <xsl:param name="id"/>
