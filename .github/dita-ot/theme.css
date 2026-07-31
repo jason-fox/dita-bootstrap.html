@@ -29,9 +29,20 @@
   --bs-tooltip-bg: var(--bs-primary);
 }
 
-/* override part of the Bootstrap color scheme */
+/* override parts of the Bootstrap color scheme */
 :root {
   --bs-code-color: var(--bs-secondary-color);
+}
+
+.navbar {
+  --bs-navbar-brand-hover-color: var(--bs-primary-contrast);
+  --bs-navbar-bg: var(--bs-primary-bg);
+  --bs-navbar-color: var(--bs-primary-contrast);
+  --bs-navbar-brand-color: var(--bs-primary-contrast);
+}
+
+.nav-link {
+  --bs-nav-link-hover-color: var(--bs-primary-contrast);
 }
 
 /* Make all CSS themes scrollable */
@@ -39,7 +50,7 @@
   height: calc(100vh - 6rem);
 }
 
-@media (max-width: 991.98px) {
+bg-body fg-body @media (max-width: 991.98px) {
   .css-themes-list {
     height: calc(100vh - 25rem);
   }

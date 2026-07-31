@@ -13,7 +13,7 @@
 >
   <xsl:param name="defaultLanguage" select="'en'" as="xs:string"/>
   <xsl:param name="BIDIRECTIONAL_DOCUMENT" select="'no'" as="xs:string"/>
-  <xsl:param name="BOOTSTRAP_CSS_FOOTER" select="'border-top bg-primary-subtle'"/>
+  <xsl:param name="BOOTSTRAP_CSS_FOOTER" select="'border-top bg-subtle-primary'"/>
   <xsl:param name="BOOTSTRAP_TOPBAR_HDR"/>
 
   <!--Check the file Url Definition of the TOP HDR FTR-->
@@ -107,9 +107,7 @@
         <!-- ↓ Add Bootstrap class attributes template ↓ -->
         <xsl:attribute
           name="class"
-          select="
-            if ($BOOTSTRAP_MENUBAR_TOC = 'yes') then 'sticky-top bg-body-tertiary'
-            else 'sticky-top'"
+          select="'navbar lg:navbar-expand bd-navbar border-bottom border-inverse border-20 sticky-top'"
         />
         <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
         <xsl:sequence select="$header-content"/>

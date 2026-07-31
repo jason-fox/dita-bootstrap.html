@@ -16,7 +16,7 @@
   <!-- Whether to include a scrollspy Toc -->
   <xsl:param name="BOOTSTRAP_SCROLLSPY_TOC" select="'none'"/>
   <!-- Defines container class for main layout and menubar-TOC -->
-  <xsl:param name="BOOTSTRAP_CSS_CONTAINER_SIZE" select="'xxl:container'"/>
+  <xsl:param name="BOOTSTRAP_CSS_CONTAINER_SIZE" select="'lg:container'"/>
 
   <xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/>
   <xsl:import href="plugin:org.dita.base:xsl/common/dita-utilities.xsl"/>

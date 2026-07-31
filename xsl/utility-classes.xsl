@@ -22,7 +22,7 @@
   <xsl:param name="BOOTSTRAP_CSS_TABS" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_TABS_VERTICAL" select="'me-3'"/>
   <xsl:param name="BOOTSTRAP_CSS_ACCORDION" select="''"/>
-  <xsl:param name="BOOTSTRAP_CSS_ACCESSIBILITY_NAV" select="'bg-body-tertiary'"/>
+  <xsl:param name="BOOTSTRAP_CSS_ACCESSIBILITY_NAV" select="'bg-subtle-secondary'"/>
   <xsl:param name="BOOTSTRAP_CSS_ACCESSIBILITY_LINK" select="'btn btn-outline theme-primary btn-sm'"/>
   <xsl:param name="BOOTSTRAP_CSS_FIGURE" select="' w-100 mw-100 p-3 '"/>
   <xsl:param name="BOOTSTRAP_CSS_FIGURE_CAPTION" select="''"/>

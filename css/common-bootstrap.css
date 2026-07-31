@@ -109,7 +109,7 @@
 }
 
 .bs-container {
-  margin: 3rem auto;
+  margin: 1rem auto;
 }
 
 .bs-sidebar-nav {
@@ -117,7 +117,7 @@
 }
 
 [type='search']::placeholder {
-  color: rgba(var(--bs-body-color-rgb), 0.3);
+  color: color-mix(in oklch, var(--bs-fg-body) 35%, transparent);
 }
 
 .search-box:hover,

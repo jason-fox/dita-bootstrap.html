@@ -551,7 +551,7 @@
           </xsl:when>
           <xsl:otherwise>
             <!-- ↓ Add Bootstrap list-group-item class and light background color ↓ -->
-            <span class="list-group-item bg-body-tertiary">
+            <span class="list-group-item bg-subtle-secondary">
               <xsl:call-template name="nav-icon"/>
               <xsl:value-of select="$title"/>
             </span>
@@ -725,13 +725,14 @@
     <xsl:if test="not($BOOTSTRAP_MENUBAR_TOC = 'yes')">
       <xsl:call-template name="nav-divider"/>
     </xsl:if>
-    <li>
+
       <xsl:choose>
         <xsl:when test="$BOOTSTRAP_MENUBAR_TOC = 'yes' and count(ancestor::*/@href) eq 0 and not($show-menu = 'show')">
           <!-- no-op - if a menubar-toc is present, the nav-bar is reduced to current decendents only -->
         </xsl:when>
         <xsl:when test="not(.)"/>
         <xsl:when test="normalize-space($title)">
+          <li>
           <xsl:variable name="id" select="dita-ot:generate-html-id(.)"/>
           <xsl:choose>
             <xsl:when test="normalize-space(@href)">
@@ -843,9 +844,10 @@
               </ul>
             </div>
           </xsl:if>
+          </li>
         </xsl:when>
       </xsl:choose>
-    </li>
+
   </xsl:template>
 
   <!-- menubar-toc mode to add Bootstrap nav-link classes to a menubar-toc - a submenu as part of the header -->
@@ -865,7 +867,7 @@
       <xsl:when test="normalize-space($title)">
         <xsl:choose>
           <xsl:when test="normalize-space(@href)">
-            <li class="nav-item" role="none">
+            <li class="nav-item">
               <a role="menuitem">
                 <!-- ↓ Add Bootstrap nav-link classes -->
                 <xsl:call-template name="nav-attributes">
@@ -878,38 +880,31 @@
             </li>
           </xsl:when>
           <xsl:otherwise>
-            <!-- ↓ Add Bootstrap nav-item class and dropdown ↓ -->
-            <li class="nav-item dropdown" role="none">
-              <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="menuitem"
-                aria-expanded="false"
-                aria-haspopup="true"
-              >
+            <!-- ↓ Add Bootstrap nav-item class and menu ↓ -->
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="menu" href="#" aria-expanded="false">
                 <xsl:call-template name="nav-icon"/>
                 <xsl:value-of select="$title"/>
               </a>
-              <ul class="dropdown-menu" role="menu">
-                <!-- menubar-toc dropdown menu items must be active links -->
+              <div class="menu">
+                <!-- menubar-toc menu items must be active links -->
                 <xsl:for-each select="$children">
                   <xsl:variable name="title">
                     <xsl:apply-templates select="." mode="get-navtitle"/>
                   </xsl:variable>
-                  <xsl:call-template name="nav-divider"/>
-                  <li role="none">
-                    <a role="menuitem">
-                      <xsl:call-template name="nav-attributes">
-                        <xsl:with-param name="pathFromMaplist" select="$pathFromMaplist"/>
-                        <xsl:with-param name="class" select="'dropdown-item'"/>
-                      </xsl:call-template>
-                      <xsl:call-template name="nav-icon"/>
-                      <xsl:value-of select="$title"/>
-                    </a>
-                  </li>
+                  <!--xsl:call-template name="nav-divider-menu"/-->
+
+                  <a class="menu-item">
+                    <xsl:call-template name="nav-attributes">
+                      <xsl:with-param name="pathFromMaplist" select="$pathFromMaplist"/>
+                      <xsl:with-param name="class" select="'menu-item'"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="nav-icon"/>
+                    <xsl:value-of select="$title"/>
+                  </a>
+
                 </xsl:for-each>
-              </ul>
+              </div>
             </li>
             <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
           </xsl:otherwise>
