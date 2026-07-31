@@ -27,7 +27,7 @@
   <body outputclass="language-markup">
     <p>This approach allows you to modify additional aspects of Bootstrap’s default presentation, beyond what you can do
       with CSS alone.</p>
-    <section>
+    <section id="installing">
       <title>Installing</title>
       <p>Use the <cmdname>dita</cmdname> command to add the required plug-ins to your DITA Open Toolkit
         installation:</p>
@@ -40,7 +40,7 @@
         successfully. To download and install a copy, follow the instructions for your operating system on the
         <xref href="https://nodejs.org/en/download/" format="html" scope="external">download page</xref>.</note>
     </section>
-    <section>
+    <section id="generating-a-css-theme-from-sass">
       <title>Generating a CSS theme from Sass</title>
       <p>To generate a CSS theme from your custom Sass source files, follow the instructions in the
         <xref
@@ -59,7 +59,7 @@
           scope="external"
         ><filepath>dita-bootstrap.sass/sass/index.html</filepath></xref> file in a web browser.</p>
     </section>
-    <section>
+    <section id="using-the-generated-theme">
       <title>Using the generated theme</title>
       <p>To use a pregenerated Sass theme as CSS in the HTML Bootstrap output, run the <option>html5-bootstrap</option>
         transformation and pass the <parmname>bootstrap.sass</parmname> parameter to the <cmdname>dita</cmdname>

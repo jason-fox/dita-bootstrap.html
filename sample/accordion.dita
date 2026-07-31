@@ -26,7 +26,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="how-it-works">
       <title>How it works</title>
       <p>The accordion uses
         <xref
@@ -36,7 +36,7 @@
         >collapse</xref> internally to make it collapsible. To render an accordion that’s expanded, add
         <xmlatt>open="yes"</xmlatt> to expand the relevant <xmlelement>accordion-item</xmlelement> .</p>
     </section>
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>Click the accordions below to expand/collapse the accordion content.</p>
     </section>
@@ -140,7 +140,7 @@
 &lt;/accordion&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="flush">
       <title>Flush</title>
       <p>Set <xmlatt>flush="yes"</xmlatt> to remove the default
         background-color, some borders, and some rounded corners to render accordions edge-to-edge with their parent
@@ -169,13 +169,13 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;bodydiv outputclass="accordion-flush"&gt;
   ...etc
 &lt;/bodydiv&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-1">
         <title>Specialization</title>
           <codeblock>&lt;accordion flush="yes"&gt;
   ...etc
@@ -183,7 +183,7 @@
         </section>
       </bodydiv>
 
-    <section>
+    <section id="always-open">
       <title>Always open</title>
       <p>Set <xmlatt>open="yes"</xmlatt> to make accordion items stay open when another item is opened.</p>
     </section>
@@ -216,13 +216,13 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-2">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;bodydiv outputclass="accordion-open"&gt;
   ...etc
 &lt;/bodydiv&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-2">
         <title>Specialization</title>
           <codeblock>&lt;accordion open="yes"&gt;
   ...etc

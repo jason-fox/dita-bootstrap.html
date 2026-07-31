@@ -22,7 +22,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="how-they-work">
       <title>How they work</title>
       <p>Containers are the most basic layout element in Bootstrap and are required when using the default grid system.
         Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be

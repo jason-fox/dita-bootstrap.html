@@ -26,7 +26,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="how-it-works">
       <title>How it works</title>
       <p>Drawer is a sidebar component that can be toggled via JavaScript to appear from the left, right, or bottom
         edge of the viewport. Buttons or anchors are used as triggers that are attached to specific elements you toggle,
@@ -42,7 +42,7 @@
       <p>Heads up! Given how CSS handles animations, you cannot use margin or translate in a Bootstrap drawer
         element. Instead, use the class as an independent wrapping element.</p>
     </section>
-    <section>
+    <section id="drawer-components">
       <title>Drawer components</title>
       <p>Below is an drawer example that is displayed when the button is clicked. Add
           <xmlatt>props="drawer-toggle"</xmlatt> to an <xmlelement>xref</xmlelement> element to associate a button to
@@ -81,7 +81,7 @@
 &lt;/drawer&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="placement">
       <title>Placement</title>
       <p>There’s no default placement for drawer components, so you must add one of the modifier outputclasses
         below</p>
@@ -108,13 +108,13 @@
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section outputclass="drawer-end" id="drawer2"&gt;
   ...etc
 &lt;/section&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-1">
         <title>Specialization</title>
           <codeblock>&lt;drawer position="end"&gt;
   ...etc
@@ -129,20 +129,20 @@
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-2">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section outputclass="drawer-bottom" id="drawer3"&gt;
   ...etc
 &lt;/section&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-2">
         <title>Specialization</title>
           <codeblock>&lt;drawer position="bottom"&gt;
   ...etc
 &lt;/drawer&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="responsive">
       <title>Responsive</title>
       <p
       >Responsive drawer outputclasses hide content outside the viewport from a specified breakpoint and down. Above that breakpoint, the contents within will behave as usual. For example, <xmlatt
@@ -167,7 +167,7 @@
       <li><xmlatt>outputclass="drawer-xxl"</xmlatt></li>
     </ul>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-3">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;note outputclass="d-none lg:d-block"&gt;
   Resize your browser to show the responsive drawer toggle.
@@ -182,7 +182,7 @@
   &lt;/p&gt;
 &lt;/section&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-3">
         <title>Specialization</title>
           <codeblock>&lt;note color="info" outputclass="d-none lg:d-block"&gt;
   Resize your browser to show the responsive drawer toggle.

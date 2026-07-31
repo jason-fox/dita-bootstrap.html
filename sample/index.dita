@@ -26,7 +26,7 @@
     </metadata>
   </prolog>
   <body>
-    <section>
+    <section id="installing">
       <title>Installing</title>
       <p>Use the <cmdname>dita</cmdname> command to add this plug-in to your DITA Open Toolkit installation:</p>
     </section>
@@ -51,14 +51,14 @@
           >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.html/archive/master.zip</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="using">
       <title>Using</title>
       <p>Specify the <option>html5-bootstrap</option> format when building output with the <cmdname>dita</cmdname>
         command:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
         >--input</parmname>=path/to/your.ditamap <parmname>--format</parmname>=html5-bootstrap</codeblock>
     </section>
-    <section>
+    <section id="bootswatch-themes">
       <title>Bootswatch themes</title>
       <indexterm><parmname>--bootstrap.theme</parmname></indexterm>
       <p>Alternate Bootstrap themes can be downloaded directly from
@@ -455,7 +455,7 @@
         <xref href="https://dita-bootstrap.github.io/" format="html" scope="external">dita-bootstrap.github.io</xref>.
       </note>
     </section>
-    <section>
+    <section id="custom-css">
       <title>Custom CSS</title>
       <indexterm><parmname>--args.css</parmname></indexterm>
       <indexterm><parmname>--args.copycss</parmname></indexterm>
@@ -483,7 +483,7 @@
           scope="external"
         >dita-bootstrap.sass</xref> plug-in.</note>
     </section>
-    <section>
+    <section id="customizing-headers-footers-and-sidebars">
       <title>Customizing headers, footers and sidebars</title>
       <indexterm><parmname>--args.hdr</parmname></indexterm>
       <indexterm><parmname>--args.ftr</parmname></indexterm>
@@ -589,7 +589,7 @@
           scope="external"
         >dita-bootstrap.github.io</xref>. </note>
     </section>
-    <section>
+    <section id="common-bootstrap-utility-classes">
       <title>Common Bootstrap utility classes</title>
       <indexterm><parmname>--bootstrap.css.shortdesc</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.codeblock</parmname></indexterm>
@@ -846,7 +846,7 @@
         </plentry>
       </parml>
     </section>
-    <section>
+    <section id="bootstrap-icons-for-dita-notes">
       <title>Bootstrap icons for DITA notes</title>
       <indexterm><parmname>--bootstrap.icon.note</parmname></indexterm>
       <indexterm><parmname>--bootstrap.icon.attention</parmname></indexterm>
@@ -961,7 +961,7 @@
         </plentry>
       </parml>
     </section>
-    <section>
+    <section id="optional-elements">
       <title>Optional elements</title>
       <indexterm><parmname>--args.breadcrumbs</parmname></indexterm>
       <indexterm><parmname>--icons.include</parmname></indexterm>

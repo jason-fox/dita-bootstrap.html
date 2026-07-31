@@ -25,7 +25,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built
         with flexbox and is fully responsive. Below is an example and an in-depth explanation for how the grid system
@@ -75,7 +75,7 @@
 &lt;/grid-row&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="equal-width">
       <title>Equal-width</title>
       <p>For example, here are two grid layouts that apply to every device and viewport, from <codeph>xs</codeph> to
           <codeph>xxl</codeph>. Add any number of unit-less classes for each breakpoint you need and every column will
@@ -103,7 +103,7 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;bodydiv outputclass="row"&gt;
   &lt;bodydiv outputclass="col"&gt;
@@ -125,7 +125,7 @@
   &lt;/bodydiv&gt;
 &lt;/bodydiv&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-1">
         <title>Specialization</title>
         <codeblock>&lt;grid-row&gt;
   &lt;grid-col&gt;

@@ -23,7 +23,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="basic-example">
       <title>Basic example</title>
       <p>Wrap a series of buttons with <xmlelement>xref outputclass="btn-*"</xmlelement> in a <xmlelement>div
           outputclass="btn-group"</xmlelement>
@@ -54,7 +54,7 @@
 &lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="mixed-styles">
       <title>Mixed styles</title>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
@@ -65,7 +65,7 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-group"&gt;
   &lt;xref outputclass="btn theme-danger" href="#"&gt;Left&lt;/xref&gt;
@@ -73,7 +73,7 @@
   &lt;xref outputclass="btn theme-success" href="#"&gt;Right&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-1">
         <title>Specialization</title>
           <codeblock>&lt;button-group&gt;
   &lt;button color="danger" href="#"&gt;Left&lt;/button&gt;
@@ -82,7 +82,7 @@
 &lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="outlined-styles">
       <title>Outlined styles</title>
     </section>
     <bodydiv outputclass="p-3 border">
@@ -93,7 +93,7 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-2">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-group"&gt;
   &lt;xref outputclass="btn-outline theme-primary" href="#"&gt;Left&lt;/xref&gt;
@@ -101,7 +101,7 @@
   &lt;xref outputclass="btn-outline theme-primary" href="#"&gt;Right&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-2">
         <title>Specialization</title>
           <codeblock>&lt;button-group&gt;
   &lt;button color="primary" outline="yes" href="#"&gt;Left&lt;/button&gt;
@@ -110,7 +110,7 @@
 &lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="button-toolbar">
       <title>Button toolbar</title>
       <p>Combine sets of button groups into button toolbars for more complex components.</p>
     </section>
@@ -133,7 +133,7 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-3">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-toolbar"&gt;
   &lt;div outputclass="btn-group me-2"&gt;
@@ -152,7 +152,7 @@
   &lt;/div&gt;
 &lt;/div&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-3">
         <title>Specialization</title>
           <codeblock>&lt;button-toolbar&gt;
   &lt;button-group outputclass="me-2"&gt;
@@ -172,7 +172,7 @@
 &lt;/button-toolbar&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="vertical-variation">
       <title>Vertical variation</title>
       <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
     </section>
@@ -184,7 +184,7 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-4">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-group-vertical"&gt;
   &lt;xref outputclass="btn theme-primary" href="#"&gt;Top&lt;/xref&gt;
@@ -192,7 +192,7 @@
   &lt;xref outputclass="btn theme-primary" href="#"&gt;Bottom&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-4">
         <title>Specialization</title>
           <codeblock>&lt;button-group vertical="yes"&gt;
   &lt;button color="primary" href="#"&gt;Top&lt;/button&gt;

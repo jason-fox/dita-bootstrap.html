@@ -25,7 +25,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="basic-example">
       <title>Basic example</title>
       <p>The following example shows a simple tabbed dialog using a <xmlelement>tabbed-dialog
           style="tabs"</xmlelement> element containing a series of <xmlelement>section</xmlelement> elements
@@ -33,7 +33,7 @@
     </section>
     <bodydiv outputclass="p-3 border">
       <bodydiv outputclass="nav-tabs mt-3">
-        <section>
+        <section id="home">
           <title>Home</title>
           <p>Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high,
             'cause she’s got that one international smile. There’s a stranger in my bed, there’s a pounding in my head.
@@ -41,7 +41,7 @@
             battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause
             its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice</p>
         </section>
-        <section>
+        <section id="profile">
           <title>Profile</title>
           <p>Placeholder content for the tab panel. This one relates to the profile tab. You got the finest
             architecture. Passport stamps, she’s cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned
@@ -49,7 +49,7 @@
             the ones, I mean like she’s the one. Greetings loved ones let’s take a journey. Just own the night like the
             4th of July! But you'd rather get wasted.</p>
         </section>
-        <section>
+        <section id="contact">
           <title>Contact</title>
           <p>Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my
             girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she’s the muse and the artist.
@@ -99,7 +99,7 @@
     </p>
     <bodydiv outputclass="p-3 border">
       <bodydiv outputclass="nav-pills mt-3">
-        <section>
+        <section id="home-1">
           <title>Home</title>
           <p>Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high,
             'cause she’s got that one international smile. There’s a stranger in my bed, there’s a pounding in my head.
@@ -107,7 +107,7 @@
             battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause
             its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice</p>
         </section>
-        <section>
+        <section id="profile-1">
           <title>Profile</title>
           <p>Placeholder content for the tab panel. This one relates to the profile tab. You got the finest
             architecture. Passport stamps, she’s cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned
@@ -115,7 +115,7 @@
             the ones, I mean like she’s the one. Greetings loved ones let’s take a journey. Just own the night like the
             4th of July! But you'd rather get wasted.</p>
         </section>
-        <section>
+        <section id="contact-1">
           <title>Contact</title>
           <p>Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my
             girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she’s the muse and the artist.
@@ -126,7 +126,7 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;bodydiv outputclass="nav-pills"&gt;
   &lt;section&gt;
@@ -143,7 +143,7 @@
   &lt;/section&gt;
 &lt;/bodydiv&gt;</codeblock>
         </section>
-      <section>
+      <section id="specialization-1">
         <title>Specialization</title>
           <codeblock>&lt;tabbed-dialog style="pills"&gt;
   &lt;section&gt;
@@ -165,7 +165,7 @@
     </p>
     <bodydiv outputclass="p-3 border">
       <bodydiv outputclass="nav-pills-vertical mt-3">
-        <section>
+        <section id="home-2">
           <title>Home</title>
           <p>Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high,
             'cause she’s got that one international smile. There’s a stranger in my bed, there’s a pounding in my head.
@@ -173,7 +173,7 @@
             battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause
             its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice</p>
         </section>
-        <section>
+        <section id="profile-2">
           <title>Profile</title>
           <p>Placeholder content for the tab panel. This one relates to the profile tab. You got the finest
             architecture. Passport stamps, she’s cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned
@@ -181,7 +181,7 @@
             the ones, I mean like she’s the one. Greetings loved ones let’s take a journey. Just own the night like the
             4th of July! But you'd rather get wasted.</p>
         </section>
-        <section>
+        <section id="contact-2">
           <title>Contact</title>
           <p>Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my
             girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she’s the muse and the artist.
@@ -192,7 +192,7 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-2">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;bodydiv outputclass="nav-pills-vertical"&gt;
   &lt;section&gt;
@@ -209,7 +209,7 @@
   &lt;/section&gt;
 &lt;/bodydiv&gt;</codeblock>
         </section>
-      <section>
+      <section id="specialization-2">
         <title>Specialization</title>
           <codeblock>&lt;tabbed-dialog style="vertical-pills"&gt;
   &lt;section&gt;

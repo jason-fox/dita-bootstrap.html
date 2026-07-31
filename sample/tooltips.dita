@@ -26,7 +26,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="overview">
       <title>Overview</title>
       <p>Things to know when using the tooltip plugin:</p>
       <ul>
@@ -43,7 +43,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="examples">
       <title>Examples</title>
       <p>Hover over the links below to see tooltips:</p>
     </section>
@@ -126,14 +126,14 @@
         <b>DITA</b> elements</desc> Tooltip with embedded DITA </xref>
   </bodydiv>
   <bodydiv outputclass="nav-pills mt-3">
-    <section>
+    <section id="outputclass-1">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;xref href="#" outputclass="btn-secondary tooltip-top"&gt;
 &lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
 Tooltip with embedded DITA
 &lt;/xref&gt;</codeblock>
       </section>
-       <section>
+       <section id="specialization-1">
       <title>Specialization</title>
         <codeblock>&lt;tooltip outputclass="btn-secondary"&gt;
 &lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
@@ -141,7 +141,7 @@ Tooltip with embedded DITA
 &lt;/tooltip&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="custom-tooltips">
       <title>Custom tooltips</title>
       <p>You can customize the appearance of tooltips using CSS variables. We set a custom class with <codeph
         >&lt;data name="class"&gt;custom-tooltip&lt;data&gt;</codeph>  to scope our custom appearance and use it to override a local CSS variable.</p>
@@ -157,7 +157,7 @@ Tooltip with embedded DITA
       </xref>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-2">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-secondary tooltip-top"&gt;
   &lt;data name="class"&gt;custom-tooltip&lt;/data&gt;
@@ -165,7 +165,7 @@ Tooltip with embedded DITA
   Custom tooltip
 &lt;/xref&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-2">
         <title>Specialization</title>
           <codeblock>&lt;tooltip outputclass="btn-secondary"&gt;
   &lt;data name="class"&gt;custom-tooltip&lt;/data&gt;

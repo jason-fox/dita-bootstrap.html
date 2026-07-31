@@ -33,7 +33,7 @@
     <note type="note">If you just want to style DITA tables with the standard Bootstrap table styles, you don’t need a 
       separate plug-in. See <xref href="tables.dita"/> for details on the output classes that the 
       <term>DITA Bootstrap</term> plug-in supports.</note>
-    <section>
+    <section id="installing-the-dita-bootstrap-table-plug-in">
       <title>Installing the <term>DITA Bootstrap Table</term> plug-in</title>
       <p>Use the <cmdname>dita</cmdname> command to add the <term>DITA Bootstrap Table</term>
        plug-in to your DITA Open Toolkit installation:</p>
@@ -41,7 +41,7 @@
         >install</parmname> org.dita-bootstrap.table</codeblock>
     </section>
 
-    <section>
+    <section id="search-and-filtering">
       <title>Search and Filtering</title>
       <p>Add <xmlelement>table otherprops="search"</xmlelement> to filter the results based on a search term.</p>
     </section>
@@ -52,7 +52,7 @@
     <codeblock>&lt;table otherprops="search"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
-    <section>
+    <section id="pagination">
       <title>Pagination</title>
       <p>Add <xmlelement>table otherprops="pagination"</xmlelement> to add a pagination footer to a large table.</p>
     </section>
@@ -63,7 +63,7 @@
     <codeblock>&lt;table otherprops="pagination"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
-    <section>
+    <section id="sorting">
       <title>Sorting</title>
       <p>Add <xmlelement>table otherprops="sortable"</xmlelement> to allow each column to be sorted dynamically.</p>
     </section>

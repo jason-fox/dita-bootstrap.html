@@ -17,7 +17,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="shadow-utilities">
       <title>Shadow Utilities</title>
       <p>Bootstrap provides utilities for adding depth with text-bg colors and box-shadows. The <xmlatt>shadow</xmlatt>
         attribute can be set to <codeph>yes</codeph>, <codeph>sm</codeph>, <codeph>lg</codeph> or
@@ -50,13 +50,13 @@
       </section>
     </bodydiv>
 
-    <section>
+    <section id="applied-shadow">
       <title>Applied Shadow</title>
       <p>Shadows can be applied to complex elements as follow:</p>
     </section>
 
     <bodydiv outputclass="p-3 border">
-      <section outputclass="card bg-subtle-accent m-3 shadow-lg">
+      <section id="shadowed-card" outputclass="card bg-subtle-accent m-3 shadow-lg">
         <title>Shadowed Card</title>
         <p>This card has a large shadow.</p>
       </section>
@@ -64,7 +64,7 @@
     </bodydiv>
 
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;section outputclass="card shadow-lg m-3 bg-subtle-accent"&gt;
   &lt;div outputclass="card-body"&gt;
@@ -75,7 +75,7 @@
 
 &lt;div outputclass="alert theme-accent m-3 shadow-sm"&gt;Alert with small shadow&lt;/div&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-1">
         <title>Specialization</title>
         <codeblock>&lt;card shadow="lg" margin="3" color="accent"&gt;
   &lt;title&gt;Shadowed Card&lt;/title&gt;

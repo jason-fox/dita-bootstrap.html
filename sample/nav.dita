@@ -25,7 +25,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="sidebar">
       <title>Sidebar</title>
       <p>The plug-in extends the standard HTML5 table of contents (ToC)
         <xref
@@ -169,7 +169,7 @@
 
 
     </section>
-    <section>
+    <section id="menu-bar">
       <title>Menu bar</title>
       <p>Additionally, the first-level navigation menu can be switched to a horizontal Bootstrap navbar to reduce the
         depth of the ToC. To use this option, add the <parmname>--menubar-toc.include</parmname>=<option
@@ -184,7 +184,7 @@
         <image scalefit="yes" href="./src/menubar-toc.png"/>
       </fig>
     </section>
-    <section>
+    <section id="top-bar">
       <title>Top bar</title>
       <p>A collapsible menu placed above the main menu can be included
         by adding the <parmname>--bootstrap.topbar.hdr</parmname> parameter to the
@@ -204,7 +204,7 @@
           scope="external"
         >custom header</xref>.</p>
     </section>
-    <section>
+    <section id="dividers">
       <title>Dividers</title>
       <p>
         <xref

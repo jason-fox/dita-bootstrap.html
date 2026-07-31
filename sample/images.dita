@@ -25,7 +25,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="responsive-images">
       <title>Responsive images</title>
       <p>Images in DITA Bootstrap are made responsive with <xmlatt>scalefit="yes"</xmlatt>. This applies
           <codeph>max-width: 100%;</codeph> and <codeph>height: auto;</codeph> to the image so that it scales with the
@@ -35,7 +35,7 @@
       <image scalefit="yes" scope="external" href="https://picsum.photos/1200/600?a"/>
     </bodydiv>
         <codeblock>&lt;image scalefit="yes" href="..." /&gt;</codeblock>
-    <section>
+    <section id="image-thumbnails">
       <title>Image thumbnails</title>
       <p>In addition to Bootstrap’s
         <xref href="https://getbootstrap.com/docs/5.3/utilities/borders/" format="html" scope="external">border-radius
@@ -55,7 +55,7 @@
         <codeblock>&lt;thumbnail href="..." /&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="separate-images-for-dark-and-light-mode">
       <title>Separate images for dark and light mode</title>
       <p>Use the <xmlatt>outputclass="d-auto"</xmlatt>, <xmlatt>outputclass="d-light"</xmlatt>,
         and <xmlatt>outputclass="d-dark"</xmlatt> attributes on <xmlelement>image</xmlelement> elements
@@ -79,7 +79,7 @@
       </fig>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock> &lt;fig&gt;
   &lt;image outputclass="img-thumbnail d-auto" href="..."/&gt;
@@ -87,7 +87,7 @@
   &lt;image outputclass="img-thumbnail d-dark" href="..." deliveryTarget="html"/&gt;
 &lt;/fig&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-1">
         <title>Specialization</title>
         <codeblock> &lt;fig&gt;
   &lt;thumbnail outputclass="d-auto" href="..."/&gt;
@@ -96,23 +96,23 @@
 &lt;/fig&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="support-lazy-loading">
       <title>Support Lazy Loading</title>
       <p>Use the <xmlatt>loading="lazy"</xmlatt> attribute on <xmlelement>image</xmlelement> elements
         to wait until an image is on screen before loading.
       </p>
     </section>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-2">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;image otherprops="loading(lazy)" href="..."/&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-2">
         <title>Specialization</title>
         <codeblock>&lt;image loading="lazy" href="..."/&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="support-html-picture-element">
       <title>Support HTML <xmlelement>picture</xmlelement> element</title>
       <p>Use the specialized <xmlelement>picture</xmlelement> element
       holding multiple <xmlelement>image</xmlelement> elements to display different images on
@@ -130,7 +130,7 @@
       </div>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-3">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;div outputclass="d-picture"&gt;
   &lt;image otherprops="media(min-width: 700px)" href="..."/&gt;
@@ -140,7 +140,7 @@
   &lt;image href="..."/&gt;
 &lt;/div&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-3">
         <title>Specialization</title>
         <codeblock>&lt;picture&gt;
   &lt;image media="min-width: 700px" href="..."/&gt;

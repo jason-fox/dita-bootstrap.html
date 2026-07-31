@@ -26,7 +26,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="basic-example">
       <title>Basic example</title>
       <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the
         options that follow, or with your own CSS as needed.</p>
@@ -62,7 +62,7 @@
 &lt;/list-group&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="compacted-list-group">
       <title>Compacted list group</title>
       <p>Add <xmlatt>compact="yes"</xmlatt> to reduce the padding of list items</p>
     </section>
@@ -74,20 +74,20 @@
       </ul>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;ul outputclass="list-group" compact="yes" &gt;
   ...
 &lt;/ul&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-1">
         <title>Specialization</title>
           <codeblock>&lt;list-group compact="yes"&gt;
   ...
 &lt;/list-group&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="expanded-list-group">
       <title>Expanded list group</title>
       <p>Add <xmlatt>compact="no"</xmlatt> to increase the padding of list items</p>
     </section>
@@ -99,20 +99,20 @@
       </ul>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-2">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;ul outputclass="list-group" compact="no" &gt;
   ...
 &lt;/ul&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-2">
         <title>Specialization</title>
           <codeblock>&lt;list-group compact="no"&gt;
   ...
 &lt;/list-group&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="flush">
       <title>Flush</title>
       <p>Add a <xmlatt>flush="yes"</xmlatt> to remove some borders and
         rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
@@ -127,7 +127,7 @@
       </ul>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-3">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;ul outputclass="list-group-flush"&gt;
   &lt;li&gt;An item&lt;/li&gt;
@@ -137,7 +137,7 @@
   &lt;li&gt;And a fifth one&lt;/li&gt;
 &lt;/ul&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-3">
         <title>Specialization</title>
           <codeblock>&lt;list-group flush="yes"&gt;
   &lt;li&gt;An item&lt;/li&gt;

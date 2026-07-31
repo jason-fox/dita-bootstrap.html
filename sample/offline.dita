@@ -30,7 +30,7 @@
     >This offline approach deliberately avoids the use of online CDNs and minimises the opportunity for browsers to
       cache files, and therefore is not recommended for production of documents placed online.</note>
 
-    <section>
+    <section id="procedure">
       <title>Procedure</title>
       <ol>
         <li>
@@ -130,7 +130,7 @@
         </li>
       </ol>
     </section>
-    <section>
+    <section id="results">
       <title>Results</title>
       <p>The plug-in directory has the following layout and files:</p>
       <codeblock outputclass="language-bash">com.example.bootstrap-offline
@@ -141,7 +141,7 @@
 └── process_offline.xml</codeblock>
     </section>
 
-    <section>
+    <section id="what-to-do-next">
       <title>What to do next</title>
       <ol>
         <li>Run <cmdname>dita</cmdname>

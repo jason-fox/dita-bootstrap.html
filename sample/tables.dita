@@ -25,7 +25,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="overview">
       <title>Overview</title>
       <p>Due to the widespread use of <xmlelement>table</xmlelement> elements across third-party widgets like calendars
         and date pickers, Bootstrap’s tables are opt-in. Extend with optional modifier output classes or custom styles.
@@ -106,7 +106,7 @@
 &lt;/table&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="variants">
       <title>Variants</title>
       <p>Use contextual classes to color tables, table rows or individual cells.</p>
     </section>
@@ -142,7 +142,7 @@
     </bodydiv>
 
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table outputclass="theme-primary p-1 w-100"&gt;
   &lt;tgroup cols="2"&gt;
@@ -173,7 +173,7 @@
   &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-1">
         <title>Specialization</title>
         <codeblock>&lt;table color="primary" padding="1" width="100"&gt;
   &lt;tgroup cols="2"&gt;
@@ -205,7 +205,7 @@
 &lt;/table&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="striped-rows">
       <title>Striped rows</title>
       <p>Use <xmlatt>striped="yes"</xmlatt> to add zebra-striping to any table row
         within the <xmlelement>tbody</xmlelement>.</p>
@@ -243,20 +243,20 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-2">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table outputclass="table-striped"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-2">
         <title>Specialization</title>
         <codeblock>&lt;table striped="yes"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="striped-columns">
       <title>Striped columns</title>
       <p>Use <xmlatt>striped-columns="yes"</xmlatt> to add zebra-striping to any table column
         within the <xmlelement>tbody</xmlelement>.</p>
@@ -294,20 +294,20 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-3">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table outputclass="table-striped-columns"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-3">
         <title>Specialization</title>
         <codeblock>&lt;table striped-columns="yes"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="bordered-tables">
       <title>Bordered tables</title>
       <p>Add <xmlatt>rowsep="1"</xmlatt> and <xmlatt
         >colsep="1"</xmlatt> for borders on all sides of the table and cells.</p>
@@ -345,20 +345,20 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-4">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table rowsep="1" colsep="1"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-4">
         <title>Specialization</title>
         <codeblock>&lt;table rowsep="1" colsep="1"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="tables-without-borders">
       <title>Tables without borders</title>
       <p>Add <xmlatt>rowsep="0"</xmlatt> and <xmlatt>colsep="0"</xmlatt> for a table without borders.</p>
     </section>
@@ -395,20 +395,20 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-5">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table rowsep="0" colsep="0"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-5">
         <title>Specialization</title>
         <codeblock>&lt;table rowsep="0" colsep="0"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="small-tables">
       <title>Small tables</title>
       <p>Add <xmlatt>compact="yes"</xmlatt> to make any table more compact by cutting all cell <codeph
         >padding</codeph> in half.</p>
@@ -446,20 +446,20 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-6">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table outputclass="table-sm"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-6">
         <title>Specialization</title>
         <codeblock>&lt;table compact="yes"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="table-group-dividers">
       <title>Table group dividers</title>
       <p>Add a thicker border, darker between table groups—<xmlelement>thead</xmlelement> and <xmlelement
         >tbody</xmlelement>, with <xmlatt>divider="yes"</xmlatt> on the table.</p>
@@ -497,13 +497,13 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-7">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;tbody outputclass="table-group-divider"&gt;
   ...etc
 &lt;/tbody&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-7">
         <title>Specialization</title>
         <codeblock>&lt;table divider="yes"&gt;
   ...
@@ -513,7 +513,7 @@
 &lt;/table&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="vertical-alignment">
       <title>Vertical alignment</title>
       <p>Table cells of <xmlelement
         >thead</xmlelement> are always vertical aligned to the bottom. Table cells in <xmlelement
@@ -566,7 +566,7 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-8">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table outputclass="align-middle"&gt;
   &lt;tgroup cols="4"&gt;
@@ -595,7 +595,7 @@
   &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-8">
         <title>Specialization</title>
         <codeblock>&lt;table outputclass="align-middle"&gt;
   &lt;tgroup cols="4"&gt;
@@ -625,7 +625,7 @@
 &lt;/table&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="table-head">
       <title>Table head</title>
       <p>Similar to tables and dark tables, use the modifier <xmlatt>color="secondary"</xmlatt> or
           <xmlatt>color="inverse"</xmlatt> to make <xmlelement>thead</xmlelement> elements appear light or dark
@@ -664,7 +664,7 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-9">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
@@ -674,7 +674,7 @@
   &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-9">
         <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
@@ -718,7 +718,7 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-10">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
@@ -728,7 +728,7 @@
   &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-10">
         <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;

@@ -28,7 +28,7 @@
       <image scalefit="yes" href="./src/search-result.png"/>
     </fig>
 
-    <section>
+    <section id="adding-a-search-function">
       <title>Adding a search function</title>
       <p>Search boxes are not included by default. You must first install another plug-in
         which indexes the full DITA text. Since multiple search engines exist, search is
@@ -43,7 +43,7 @@
        search to other search engines.</p>
     </section>
 
-    <section>
+    <section id="installing-the-dita-bootstrap-lunr-search-plug-in">
       <title>Installing the <term>DITA Bootstrap Lunr Search</term> plug-in</title>
       <p>Use the <cmdname>dita</cmdname> command to add the <term>DITA Bootstrap Lunr Search</term>
        plug-in to your DITA Open Toolkit installation:</p>
@@ -70,7 +70,7 @@
         </p>
     </section>
 
-    <section>
+    <section id="using">
       <title>Using</title>
       <p>To run, use the <option>html5-bootstrap</option> transformation and pass the <parmname
         >--args.hdr</parmname> parameter to the <cmdname>dita</cmdname>
@@ -81,7 +81,7 @@
   <parmname>--args.hdr</parmname>=path/to/your-header.xml</codeblock>
     </section>
 
-    <section>
+    <section id="sample-header-navigation-bars">
       <title>Sample header navigation bars</title>
       <p>To add a search box to the menu bar, add a <xmlelement>form class="search-box"</xmlelement> element
       with an <xmlelement>input type="search"</xmlelement> as shown here.</p>

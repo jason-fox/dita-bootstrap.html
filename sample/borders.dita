@@ -47,14 +47,14 @@
 &lt;ph outputclass="border-bottom"&gt;...&lt;/ph&gt;
 &lt;ph outputclass="border-start"&gt;...&lt;/ph&gt;</codeblock>
 
-    <section>
+    <section id="border-specialization">
       <title>Border Specialization</title>
       <p>The <xmlatt>border</xmlatt> and <xmlatt
         >rounded</xmlatt> attributes provide a semantic way to add borders and rounded corners.</p>
     </section>
 
     <bodydiv outputclass="p-3 border">
-      <section outputclass="p-2 border">
+      <section id="bordered-section" outputclass="p-2 border">
         <title>Bordered Section</title>
         <p>This section has a border.</p>
       </section>
@@ -108,7 +108,7 @@
 &lt;/carousel&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="border-styling">
       <title>Border Styling</title>
       <p>The <xmlatt>border</xmlatt> attribute also accepts numeric values 1-5 for width. The <xmlatt
         >rounded</xmlatt> attribute 
@@ -126,7 +126,7 @@
       </div>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ph outputclass="border border-1"&gt;Width 1&lt;/ph&gt;
 &lt;ph outputclass="border border-2"&gt;Width 2&lt;/ph&gt;
@@ -134,7 +134,7 @@
 &lt;ph outputclass="border border-4"&gt;Width 4&lt;/ph&gt;
 &lt;ph outputclass="border border-5"&gt;Width 5&lt;/ph&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-1">
         <title>Specialization</title>
         <codeblock>&lt;ph border="1"&gt;Width 1&lt;/ph&gt;
 &lt;ph border="2"&gt;Width 2&lt;/ph&gt;
@@ -153,14 +153,14 @@
       </div>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-2">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ph outputclass="border border-primary"&gt;Primary&lt;/ph&gt;
 &lt;ph outputclass="border border-primary-subtle"&gt;Primary subtle&lt;/ph&gt;
 &lt;ph outputclass="border border-success"&gt;Success&lt;/ph&gt;
 &lt;ph outputclass="border border-danger"&gt;Danger&lt;/ph&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-2">
         <title>Specialization</title>
         <codeblock>&lt;ph bordercolor="primary"&gt;Primary&lt;/ph&gt;
 &lt;ph bordercolor="primary-subtle"&gt;Primary subtle&lt;/ph&gt;
@@ -180,7 +180,7 @@
       </div>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-3">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ph outputclass="border rounded-0"&gt;Rounded 0&lt;/ph&gt;
 &lt;ph outputclass="border rounded-1"&gt;Rounded 1&lt;/ph&gt;
@@ -189,7 +189,7 @@
 &lt;ph outputclass="border rounded-4"&gt;Rounded 4&lt;/ph&gt;
 &lt;ph outputclass="border rounded-5"&gt;Rounded 5&lt;/ph&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-3">
         <title>Specialization</title>
         <codeblock>&lt;ph border="yes" rounded="0"&gt;Rounded 0&lt;/ph&gt;
 &lt;ph border="yes" rounded="1"&gt;Rounded 1&lt;/ph&gt;
@@ -207,12 +207,12 @@
       </div>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-4">
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ph outputclass="border rounded-circle border-info"&gt;Circle&lt;/ph&gt;
 &lt;ph outputclass="border rounded-pill border-warning"&gt;Pill&lt;/ph&gt;</codeblock>
       </section>
-      <section>
+      <section id="specialization-4">
         <title>Specialization</title>
         <codeblock>&lt;ph border="yes" rounded="circle" bordercolor="info"&gt;Circle&lt;/ph&gt;
 &lt;ph border="yes" rounded="pill" bordercolor="warning"&gt;Pill&lt;/ph&gt;</codeblock>

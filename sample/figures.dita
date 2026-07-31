@@ -32,7 +32,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>By default <xmlelement>figure</xmlelement> elements are styled as shown: </p>
     </section>
@@ -46,7 +46,7 @@
   &lt;title&gt;A caption for the image.&lt;/title&gt;
   &lt;image href="..."/&gt;
 &lt;/fig&gt;</codeblock>
-    <section>
+    <section id="aligning-text">
       <title>Aligning text</title>
       <p>The figure’s caption can be aligned using the Bootstrap
         <xref href="./color.dita" format="dita">text utilities</xref>.</p>
@@ -62,7 +62,7 @@
   &lt;image href="..."/&gt;
 &lt;/fig&gt;</codeblock>
 
-    <section>
+    <section id="adding-borders">
       <title>Adding borders</title>
       <p>Use the DITA <xmlatt>frame</xmlatt> attribute to add
         <xref href="./borders.dita" format="dita">borders</xref> to a <xmlelement>fig</xmlelement>.</p>

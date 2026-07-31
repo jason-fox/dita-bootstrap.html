@@ -18,14 +18,14 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="how-it-works">
       <title>How it works</title>
       <p>The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that
         are mapped to specific elements you toggle. Collapsing an element will animate the height from its current value
         to 0. Given how CSS handles animations, you cannot use padding on a .collapse element. Instead, use the class as
         an independent wrapping element.</p>
     </section>
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>Below is a collapsed example that is displayed when the button is clicked. Add
           <xmlatt>props="collapse-toggle"</xmlatt> to an <xmlelement>xref</xmlelement> element to associate a button to
@@ -70,7 +70,7 @@
 &lt;/collapse&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="horizontal">
       <title>Horizontal</title>
       <p>The collapse plugin also supports horizontal collapsing. Add <xmlatt>outputclass="collapse-horizontal"</xmlatt>
         to transition the width instead of height and set an <xmlatt>otherprops="style(width: ...)</xmlatt> on the
@@ -88,7 +88,7 @@
     </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;p&gt;
   &lt;xref outputclass="btn-primary" props="collapse-toggle" href="#collapse2"&gt;Toggle Width Collapse&lt;/xref&gt;
@@ -99,7 +99,7 @@
   &lt;/div&gt;
 &lt;/bodydiv&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-1">
         <title>Specialization</title>
           <codeblock>&lt;p&gt;
   &lt;button props="collapse-toggle" href="#collapse2"&gt;Toggle Width Collapse&lt;/button&gt;

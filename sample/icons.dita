@@ -19,7 +19,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="bootstrap-icons">
       <title>Bootstrap Icons</title>
       <p>
         <xref href="https://icons.getbootstrap.com/" format="html" scope="external">Bootstrap Icons</xref> is a growing
@@ -28,7 +28,7 @@
         >Link</xmlelement> to the default Bootstrap Icons CDN set is included by default. </p>
     </section>
 
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>Icon fonts with classes for every icon are included in Bootstrap Icons. Include the icon web fonts in your page
         via CSS, then reference the class names as needed in your DITA (e.g., <xmlelement>icon
@@ -98,7 +98,7 @@
     </p>
   </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref outputclass="link theme-primary" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Primary link
@@ -126,7 +126,7 @@
 &lt;/xref&gt;
 </codeblock>
         </section>
-         <section>
+         <section id="specialization-1">
         <title>Specialization</title>
           <codeblock>&lt;xref color="primary" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Primary link
@@ -168,7 +168,7 @@
       <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph outputclass="bi bi-share-fill"/></xref>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-2">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-arrow-down-square-fill"/&gt;
@@ -189,7 +189,7 @@
   &lt;i outputclass="bi-share-fill"/&gt;
 &lt;/xref&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-2">
         <title>Specialization</title>
           <codeblock>&lt;button outputclass="btn-floating m-1" href="#"&gt;
   &lt;icon outputclass="bi-arrow-down-square-fill"/&gt;
@@ -237,7 +237,7 @@
   &lt;/topicref&gt;
   ...
 &lt;/chapter&gt;</codeblock>
-    <section>
+    <section id="installing-other-icons">
       <title>Installing other icons</title>
       <p>Other icon sets such as
         <xref href="https://fontawesome.com/" format="html" scope="external">Font Awesome</xref>
@@ -256,7 +256,7 @@
      <parmname>--icons.include</parmname>=<option>yes</option> \
      <parmname>--icons.cdn.path</parmname>=<filepath>path/to/icon-cdn-header.xml</filepath></codeblock>
     </section>
-    <section>
+    <section id="excluding-icons">
       <title>Excluding icons</title>
       <indexterm><parmname>--icons.cdn.path</parmname></indexterm>
       <indexterm><parmname>--icons.include</parmname></indexterm>

@@ -26,7 +26,7 @@
     </metadata>
   </prolog>
   <body>
-    <section>
+    <section id="extending-bootstrap">
       <title>Extending Bootstrap</title>
       <p>Bootstrap is designed to be extensible. Additional CSS and JavaScript libraries can be added to the generated
         HTML pages to allow for new Bootstrap components and extend Bootstrap classes. Similarly, the <term>DITA

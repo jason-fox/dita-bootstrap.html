@@ -24,14 +24,14 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="about">
       <title>About</title>
       <p>A <b>card</b> is a flexible and extensible content container. It includes options for headers and footers, a
         wide variety of content, contextual background colors, and powerful display options. If you’re familiar with
         Bootstrap 3, cards replace Bootstrap 4.0’s panels, wells, and thumbnails. Similar functionality to those
         components is available as modifier classes for cards.</p>
     </section>
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and
         customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They
@@ -48,7 +48,7 @@
       </p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="card">
+      <section id="card-title" outputclass="card">
         <title>Card Title</title>
         <image scope="external" href="https://picsum.photos/400/200?a"/>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -75,14 +75,14 @@
 &lt;/card&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="titles-text-and-links">
       <title>Titles, text, and links</title>
       <p>Links are added and placed next to each other by altering the <xmlatt>outputclass</xmlatt> and adding
           <codeph>card-link</codeph> to an <xmlelement>xref</xmlelement> tag.</p>
       <p>Subtitles are used by adding a <xmlelement>div</xmlelement> element.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="card">
+      <section id="card-title-1" outputclass="card">
         <title>Card Title</title>
         <div outputclass="h6">Card Subtitle</div>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -91,7 +91,7 @@
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section outputclass="card w-50"&gt;
   &lt;title outputclass="h5"&gt;Card Title&lt;/title&gt;
@@ -101,7 +101,7 @@
   &lt;xref outputclass="card-link" href="#"&gt;Another Link&lt;/xref&gt;
 &lt;/section&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-1">
         <title>Specialization</title>
           <codeblock>&lt;card&gt;
   &lt;title&gt;Card Title&lt;/title&gt;
@@ -112,7 +112,7 @@
 &lt;/card&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="images">
       <title>Images</title>
       <p>The first <xmlelement>image</xmlelement> within a <xmlelement
         >card</xmlelement> places an image to the top of the card
@@ -129,14 +129,14 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-2">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section outputclass="card w-50"&gt;
   &lt;image outputclass="card-img-top" href="..." /&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
 &lt;/section&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-2">
         <title>Specialization</title>
           <codeblock>&lt;card&gt;
   &lt;image href="..." /&gt;
@@ -144,14 +144,14 @@
 &lt;/card&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="header-and-footer">
       <title>Header and footer</title>
       <p>Add an optional header and/or footer within a card using the <xmlelement
         >card-header</xmlelement> and <xmlelement>card-footer</xmlelement> elements.
       </p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="card">
+      <section id="special-title-treatment" outputclass="card">
         <title>Special title treatment</title>
         <div outputclass="card-header">Featured</div>
         <p>With supporting text below as a natural lead-in to additional content.</p>
@@ -160,7 +160,7 @@
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-3">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section outputclass="card w-50"&gt;
   &lt;div outputclass="card-header"&gt;Featured&lt;/div&gt;
@@ -169,7 +169,7 @@
   &lt;xref href="#" outputclass="btn-primary"&gt;Go somewhere&lt;/xref&gt;
 &lt;/section&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-3">
         <title>Specialization</title>
           <codeblock>&lt;card&gt;
   &lt;card-header&gt;Featured&lt;/card-header&gt;
@@ -180,13 +180,13 @@
 &lt;/card&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="card-colors">
       <title>Card Colors</title>
       <p>A card can be colorized by adding a <xmlatt>color</xmlatt> attribute. This
         applies a contextual background color.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="card text-bg-success">
+      <section id="card-title-2" outputclass="card text-bg-success">
         <title>Card Title</title>
         <image scope="external" href="https://picsum.photos/400/200?a"/>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>

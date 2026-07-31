@@ -28,7 +28,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="overview">
       <title>Overview</title>
       <p>Things to know when using the tooltip plugin:</p>
       <ul>
@@ -46,7 +46,7 @@
       </ul>
     </section>
 
-    <section deliveryTarget="html">
+    <section id="examples" deliveryTarget="html">
       <title>Examples</title>
       <p>Keep reading to see how popovers work with some examples.</p>
     </section>
@@ -75,7 +75,7 @@
         </section>
       </bodydiv>
 
-    <section>
+    <section id="four-directions">
       <title>Four directions</title>
       <p>Four options are available: <codeph>top</codeph>, <codeph>right</codeph>, <codeph>bottom</codeph>, and
           <codeph>left</codeph> aligned. Directions are mirrored when using Bootstrap in RTL. To enable popovers, add
@@ -94,7 +94,7 @@
         <desc>Left popover</desc> Popover on left </xref>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-1">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-secondary popover-top"&gt;
   &lt;desc&gt;Top popover&lt;/desc&gt;
@@ -113,7 +113,7 @@
   Popover on left
 &lt;/xref&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-1">
         <title>Specialization</title>
           <codeblock>&lt;popover outputclass="btn-secondary" position="top"&gt;
   &lt;desc&gt;Top popover&lt;/desc&gt;
@@ -133,7 +133,7 @@
 &lt;/popover&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="custom-popovers">
       <title>Custom popovers</title>
       <p>You can customize the appearance of popovers using CSS variables.
         We set a custom class with <codeph
@@ -155,7 +155,7 @@
           <desc>And here’s some amazing content. It’s very engaging. Right?</desc>Custom popover</xref>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section>
+      <section id="outputclass-2">
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-lg btn-danger popover-top"&gt;
   &lt;data name="title"&gt;Popover title&lt;/data&gt;
@@ -164,7 +164,7 @@
   Custom popover
 &lt;/xref&gt;</codeblock>
         </section>
-         <section>
+         <section id="specialization-2">
         <title>Specialization</title>
           <codeblock>&lt;popover outputclass="btn-lg btn-danger"&gt;
   &lt;data name="title"&gt;Popover title&lt;/data&gt;
