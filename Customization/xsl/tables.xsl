@@ -119,8 +119,8 @@
       (@color,
        substring-after(tokenize(@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'))[1]"
     />
-    <xsl:if test="exists($theme)">
-      <xsl:value-of select="concat('table-', $theme, ' ')"/>
+    <xsl:if test="exists($theme) and $theme != ''">
+      <xsl:value-of select="concat('theme-', $theme, ' ')"/>
     </xsl:if>
     <xsl:if test="@striped = 'yes'">
       <xsl:text> table-striped</xsl:text>
@@ -162,8 +162,8 @@
        $table/@color,
        substring-after(tokenize($table/@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'))[1]"
     />
-    <xsl:if test="exists($theme)">
-      <xsl:value-of select="concat('table-', $theme, ' ')"/>
+    <xsl:if test="exists($theme) and $theme != ''">
+      <xsl:value-of select="concat('theme-', $theme, ' ')"/>
     </xsl:if>
     <xsl:next-match/>
   </xsl:template>
@@ -181,8 +181,8 @@
        $table/@color,
        substring-after(tokenize($table/@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'))[1]"
     />
-    <xsl:if test="exists($theme)">
-      <xsl:value-of select="concat('table-', $theme, ' ')"/>
+    <xsl:if test="exists($theme) and $theme != ''">
+      <xsl:value-of select="concat('theme-', $theme, ' ')"/>
     </xsl:if>
     <xsl:next-match/>
   </xsl:template>
@@ -203,8 +203,8 @@
        $table/@color,
        substring-after(tokenize($table/@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'))[1]"
     />
-    <xsl:if test="exists($theme)">
-      <xsl:value-of select="concat('table-', $theme, ' ')"/>
+    <xsl:if test="exists($theme) and $theme != ''">
+      <xsl:value-of select="concat('theme-', $theme, ' ')"/>
     </xsl:if>
     <xsl:next-match/>
   </xsl:template>

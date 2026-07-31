@@ -53,6 +53,7 @@
        <xsl:when test="@color">
           <xsl:text>alert theme-</xsl:text>
           <xsl:value-of select="@color"/>
+          <xsl:text> </xsl:text>
        </xsl:when>
        <xsl:otherwise>
           <xsl:value-of select="$BOOTSTRAP_CSS_CODEBLOCK"/>
@@ -123,8 +124,9 @@
        <xsl:value-of select="$BOOTSTRAP_CSS_CARD_WIDTH"/>
     </xsl:if>
     <xsl:if test="@color">
-       <xsl:text> alert p-0 theme-</xsl:text>
+       <xsl:text> theme-</xsl:text>
        <xsl:value-of select="@color"/>
+       <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:next-match/>
   </xsl:template>
@@ -260,9 +262,12 @@
 
   <!-- Change the default Bootstrap CSS classes of alerts -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/alert ')]" mode="bootstrap-class" priority="10">
-    <xsl:text>alert-</xsl:text>
+    <xsl:text>theme-</xsl:text>
     <xsl:value-of select="@color"/>
     <xsl:text> </xsl:text>
+    <xsl:if test="*[contains(@class, ' topic/p ')]">
+      <xsl:text>vstack </xsl:text>
+    </xsl:if>
     <xsl:next-match/>
   </xsl:template>
 
@@ -332,9 +337,19 @@
 
   <!-- Change the default Bootstrap CSS classes of badges -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/badge ')]" mode="bootstrap-class" priority="10">
-    <xsl:text>text-bg-</xsl:text>
+    <xsl:text>theme-</xsl:text>
     <xsl:value-of select="(@color, 'primary')[1]"/>
     <xsl:text> </xsl:text>
+    <xsl:next-match/>
+  </xsl:template>
+
+  <!-- Change the default Bootstrap CSS classes of accordions -->
+  <xsl:template match="*[contains(@class, ' bootstrap-d/accordion ')]" mode="bootstrap-class" priority="10">
+    <xsl:if test="@color">
+      <xsl:text>theme-</xsl:text>
+      <xsl:value-of select="@color"/>
+      <xsl:text> </xsl:text>
+    </xsl:if>
     <xsl:next-match/>
   </xsl:template>
 
@@ -358,7 +373,7 @@
   </xsl:template>
 
   <!-- Change the default Bootstrap CSS classes of popovers -->
-  <xsl:template match="*[contains(@class, ' bootstrap-d/popover ')]" mode="bootstrap-class" priority="10">
+  <xsl:template match="*[contains(@class, ' bootstrap-d/popover ')]" mode="bootstrap-class" priority="11">
     <xsl:if test="@position">
       <xsl:text>popover-</xsl:text>
       <xsl:value-of select="@position"/>
@@ -368,7 +383,7 @@
   </xsl:template>
 
   <!-- Change the default Bootstrap CSS classes of tooltips -->
-  <xsl:template match="*[contains(@class, ' bootstrap-d/tooltip ')]" mode="bootstrap-class" priority="10">
+  <xsl:template match="*[contains(@class, ' bootstrap-d/tooltip ')]" mode="bootstrap-class" priority="11">
     <xsl:if test="@position">
       <xsl:text>tooltip-</xsl:text>
       <xsl:value-of select="@position"/>
@@ -712,7 +727,7 @@
     match="*[contains(@class, ' topic/xref ') or contains(@class, ' topic/link ')][@color][not(contains(@class, ' bootstrap-d/button '))][not(contains(@outputclass, 'btn-'))]"
     mode="get-output-class"
   >
-    <xsl:text>link-</xsl:text>
+    <xsl:text>link theme-</xsl:text>
     <xsl:value-of select="@color"/>
     <xsl:text> </xsl:text>
     <xsl:next-match/>
@@ -734,6 +749,7 @@
                                  contains(@class, ' bootstrap-d/badge ') or
                                  contains(@class, ' bootstrap-d/list-group ') or
                                  contains(@class, ' bootstrap-d/carousel ') or
+                                 contains(@class, ' bootstrap-d/accordion ') or
                                  contains(@class, ' bootstrap-d/button ') or
                                  contains(@class, ' topic/table ') or
                                  contains(@class, ' topic/thead ') or
@@ -742,7 +758,9 @@
                                  contains(@class, ' topic/row ') or
                                  contains(@class, ' topic/entry '))"
     >
-       <xsl:text>text-bg-</xsl:text>
+       <xsl:text>bg-</xsl:text>
+       <xsl:value-of select="@color"/>
+       <xsl:text> fg-contrast-</xsl:text>
        <xsl:value-of select="@color"/>
        <xsl:text> </xsl:text>
     </xsl:if>
