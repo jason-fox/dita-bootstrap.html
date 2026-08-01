@@ -186,16 +186,16 @@
         applies a contextual background color.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section id="card-title-2" outputclass="card text-bg-success">
+      <section id="card-title-2" outputclass="card theme-success">
         <title>Card Title</title>
-        <image scope="external" href="https://picsum.photos/400/200?a"/>
+        <div outputclass="card-header">Success Card</div>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
         <xref href="#" outputclass="btn-primary">Go Somewhere</xref>
       </section>
     </bodydiv>
     <codeblock>&lt;card color="success"&gt;
   &lt;title&gt;Card Title&lt;/title&gt;
-  &lt;image href="..." /&gt;
+  &lt;div outputclass="card-header"&gt;Success Card&lt;/div&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
   &lt;button href="#"&gt;Go Somewhere&lt;/button&gt;
 &lt;/card&gt;</codeblock>
