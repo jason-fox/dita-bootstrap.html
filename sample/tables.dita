@@ -142,7 +142,7 @@
     </bodydiv>
 
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table outputclass="theme-primary p-1 w-100"&gt;
   &lt;tgroup cols="2"&gt;
@@ -173,7 +173,7 @@
   &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
       </section>
-      <section id="specialization-1">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;table color="primary" padding="1" width="100"&gt;
   &lt;tgroup cols="2"&gt;
@@ -243,13 +243,13 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table outputclass="table-striped"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
-      <section id="specialization-2">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;table striped="yes"&gt;
   ...etc
@@ -294,13 +294,13 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-3">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table outputclass="table-striped-columns"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
-      <section id="specialization-3">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;table striped-columns="yes"&gt;
   ...etc
@@ -345,13 +345,13 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-4">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table rowsep="1" colsep="1"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
-      <section id="specialization-4">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;table rowsep="1" colsep="1"&gt;
   ...etc
@@ -395,13 +395,13 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-5">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table rowsep="0" colsep="0"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
-      <section id="specialization-5">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;table rowsep="0" colsep="0"&gt;
   ...etc
@@ -446,13 +446,13 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-6">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table outputclass="table-sm"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
       </section>
-      <section id="specialization-6">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;table compact="yes"&gt;
   ...etc
@@ -497,13 +497,13 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-7">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;tbody outputclass="table-group-divider"&gt;
   ...etc
 &lt;/tbody&gt;</codeblock>
       </section>
-      <section id="specialization-7">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;table divider="yes"&gt;
   ...
@@ -566,7 +566,7 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-8">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table outputclass="align-middle"&gt;
   &lt;tgroup cols="4"&gt;
@@ -595,7 +595,7 @@
   &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
       </section>
-      <section id="specialization-8">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;table outputclass="align-middle"&gt;
   &lt;tgroup cols="4"&gt;
@@ -664,7 +664,7 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-9">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
@@ -674,7 +674,7 @@
   &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
       </section>
-      <section id="specialization-9">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
@@ -718,7 +718,7 @@
       </table>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-10">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
@@ -728,7 +728,7 @@
   &lt;/tgroup&gt;
 &lt;/table&gt;</codeblock>
       </section>
-      <section id="specialization-10">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;

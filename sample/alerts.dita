@@ -113,7 +113,7 @@
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;section outputclass="alert theme-success vstack"&gt;
   &lt;title&gt;&lt;i outputclass="bi bi-emoji-smile pe-2"/&gt;Well done!&lt;/title&gt;
@@ -127,7 +127,7 @@
   &lt;/p&gt;
 &lt;/section&gt;</codeblock>
       </section>
-      <section id="specialization-1">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;alert color="success" outputclass="vstack"&gt;
   &lt;title&gt;&lt;icon outputclass="bi-emoji-smile" padding="e2"/&gt;Well done!&lt;/title&gt;
@@ -204,7 +204,7 @@
       <note outputclass="theme-inverse">This is inverse note.</note>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;note type="note" outputclass="theme-primary"&gt;
   This is a primary note.&lt;/note&gt;
@@ -217,7 +217,7 @@
   This is inverse note.
 &lt;/note&gt;</codeblock>
       </section>
-      <section id="specialization-2">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;note color="primary"&gt;
   This is a primary note.
@@ -243,7 +243,7 @@
       >This note uses a styled smile emoji.</note>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-3">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;note otherprops="icon(bi-search)" type="other" othertype="Search"&gt;
   This note has a search icon.
@@ -252,7 +252,7 @@
   This note uses a styled smile emoji.
 &lt;/note&gt;</codeblock>
       </section>
-      <section id="specialization-3">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;note icon="bi-search" type="other" othertype="Search"&gt;
   This note has a search icon.

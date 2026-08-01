@@ -98,7 +98,7 @@
     </p>
   </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref outputclass="link theme-primary" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Primary link
@@ -126,7 +126,7 @@
 &lt;/xref&gt;
 </codeblock>
         </section>
-         <section id="specialization-1">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;xref color="primary" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Primary link
@@ -164,7 +164,7 @@
       <xref outputclass="btn-icon theme-danger" href="#"><ph outputclass="bi bi-share-fill"/></xref>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref outputclass="theme-primary btn-icon" href="#"&gt;
   &lt;i outputclass="bi-arrow-down-square-fill"/&gt;
@@ -185,7 +185,7 @@
   &lt;i outputclass="bi-share-fill"/&gt;
 &lt;/xref&gt;</codeblock>
         </section>
-         <section id="specialization-2">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;button color="primary" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-arrow-down-square-fill"/&gt;

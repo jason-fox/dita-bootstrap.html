@@ -88,7 +88,7 @@
     </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;p&gt;
   &lt;xref outputclass="btn-primary" props="collapse-toggle" href="#collapse2"&gt;Toggle Width Collapse&lt;/xref&gt;
@@ -99,7 +99,7 @@
   &lt;/div&gt;
 &lt;/bodydiv&gt;</codeblock>
         </section>
-         <section id="specialization-1">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;p&gt;
   &lt;button props="collapse-toggle" href="#collapse2"&gt;Toggle Width Collapse&lt;/button&gt;

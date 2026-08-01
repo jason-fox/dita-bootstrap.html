@@ -169,13 +169,13 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;bodydiv outputclass="accordion-flush"&gt;
   ...etc
 &lt;/bodydiv&gt;</codeblock>
         </section>
-         <section id="specialization-1">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;accordion flush="yes"&gt;
   ...etc
@@ -216,13 +216,13 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;bodydiv outputclass="accordion-open"&gt;
   ...etc
 &lt;/bodydiv&gt;</codeblock>
         </section>
-         <section id="specialization-2">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;accordion open="yes"&gt;
   ...etc

@@ -126,7 +126,7 @@
       </div>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ph outputclass="border border-1"&gt;Width 1&lt;/ph&gt;
 &lt;ph outputclass="border border-2"&gt;Width 2&lt;/ph&gt;
@@ -134,7 +134,7 @@
 &lt;ph outputclass="border border-4"&gt;Width 4&lt;/ph&gt;
 &lt;ph outputclass="border border-5"&gt;Width 5&lt;/ph&gt;</codeblock>
       </section>
-      <section id="specialization-1">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;ph border="1"&gt;Width 1&lt;/ph&gt;
 &lt;ph border="2"&gt;Width 2&lt;/ph&gt;
@@ -153,14 +153,14 @@
       </div>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ph outputclass="border border-primary"&gt;Primary&lt;/ph&gt;
 &lt;ph outputclass="border border-primary-subtle"&gt;Primary subtle&lt;/ph&gt;
 &lt;ph outputclass="border border-success"&gt;Success&lt;/ph&gt;
 &lt;ph outputclass="border border-danger"&gt;Danger&lt;/ph&gt;</codeblock>
       </section>
-      <section id="specialization-2">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;ph bordercolor="primary"&gt;Primary&lt;/ph&gt;
 &lt;ph bordercolor="primary-subtle"&gt;Primary subtle&lt;/ph&gt;
@@ -180,7 +180,7 @@
       </div>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-3">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ph outputclass="border rounded-0"&gt;Rounded 0&lt;/ph&gt;
 &lt;ph outputclass="border rounded-1"&gt;Rounded 1&lt;/ph&gt;
@@ -189,7 +189,7 @@
 &lt;ph outputclass="border rounded-4"&gt;Rounded 4&lt;/ph&gt;
 &lt;ph outputclass="border rounded-5"&gt;Rounded 5&lt;/ph&gt;</codeblock>
       </section>
-      <section id="specialization-3">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;ph border="yes" rounded="0"&gt;Rounded 0&lt;/ph&gt;
 &lt;ph border="yes" rounded="1"&gt;Rounded 1&lt;/ph&gt;
@@ -207,12 +207,12 @@
       </div>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-4">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ph outputclass="border rounded-circle border-info"&gt;Circle&lt;/ph&gt;
 &lt;ph outputclass="border rounded-pill border-warning"&gt;Pill&lt;/ph&gt;</codeblock>
       </section>
-      <section id="specialization-4">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;ph border="yes" rounded="circle" bordercolor="info"&gt;Circle&lt;/ph&gt;
 &lt;ph border="yes" rounded="pill" bordercolor="warning"&gt;Pill&lt;/ph&gt;</codeblock>

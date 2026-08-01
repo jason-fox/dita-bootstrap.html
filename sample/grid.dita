@@ -103,7 +103,7 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;bodydiv outputclass="row"&gt;
   &lt;bodydiv outputclass="col"&gt;
@@ -125,7 +125,7 @@
   &lt;/bodydiv&gt;
 &lt;/bodydiv&gt;</codeblock>
       </section>
-      <section id="specialization-1">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;grid-row&gt;
   &lt;grid-col&gt;

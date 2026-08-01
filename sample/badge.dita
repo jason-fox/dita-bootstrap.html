@@ -71,7 +71,7 @@
       </p>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;ph outputclass="badge theme-primary"&gt;Primary&lt;/ph&gt;
 &lt;ph outputclass="badge theme-secondary"&gt;Secondary&lt;/ph&gt;
@@ -82,7 +82,7 @@
 &lt;ph outputclass="badge theme-accent"&gt;Accent&lt;/ph&gt;
 &lt;ph outputclass="badge theme-inverse"&gt;Inverse&lt;/ph&gt;</codeblock>
         </section>
-         <section id="specialization-1">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;badge color="primary"&gt;Primary&lt;/badge&gt;
 &lt;badge color="secondary"&gt;Secondary&lt;/badge&gt;

@@ -83,7 +83,7 @@
       <xref href="#" outputclass="btn btn-outline theme-inverse">Inverse</xref>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn btn-outline theme-primary"&gt;Primary&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-outline theme-secondary"&gt;Secondary&lt;/xref&gt;
@@ -94,7 +94,7 @@
 &lt;xref href="#" outputclass="btn-outline theme-accent"&gt;Accent&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn-outline theme-inverse"&gt;Inverse&lt;/xref&gt;</codeblock>
         </section>
-         <section id="specialization-1">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;button href="#" outline="yes"&gt;Primary&lt;/button&gt;
 &lt;button href="#" color="secondary" outline="yes"&gt;Secondary&lt;/button&gt;
@@ -117,12 +117,12 @@
     </bodydiv>
 
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn theme-primary btn-lg"&gt;Large button&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn theme-secondary btn-lg"&gt;Large button&lt;/xref&gt;</codeblock>
         </section>
-         <section id="specialization-2">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;button href="#" size="large"&gt;Large button&lt;/button&gt;
 &lt;button href="#" color="secondary" size="large"&gt;Large button&lt;/button&gt;</codeblock>
@@ -135,12 +135,12 @@
     </bodydiv>
 
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-3">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn theme-primary btn-sm"&gt;Small button&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn theme-secondary btn-sm"&gt;Small button&lt;/xref&gt;</codeblock>
         </section>
-         <section id="specialization-3">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;button href="#" size="small"&gt;Small button&lt;/button&gt;
 &lt;button href="#" color="secondary" size="small"&gt;Small button&lt;/button&gt;</codeblock>

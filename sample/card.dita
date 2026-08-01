@@ -91,7 +91,7 @@
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section outputclass="card w-50"&gt;
   &lt;title outputclass="h5"&gt;Card Title&lt;/title&gt;
@@ -101,7 +101,7 @@
   &lt;xref outputclass="card-link" href="#"&gt;Another Link&lt;/xref&gt;
 &lt;/section&gt;</codeblock>
         </section>
-         <section id="specialization-1">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;card&gt;
   &lt;title&gt;Card Title&lt;/title&gt;
@@ -129,14 +129,14 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section outputclass="card w-50"&gt;
   &lt;image outputclass="card-img-top" href="..." /&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
 &lt;/section&gt;</codeblock>
         </section>
-         <section id="specialization-2">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;card&gt;
   &lt;image href="..." /&gt;
@@ -160,7 +160,7 @@
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-3">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section outputclass="card w-50"&gt;
   &lt;div outputclass="card-header"&gt;Featured&lt;/div&gt;
@@ -169,7 +169,7 @@
   &lt;xref href="#" outputclass="btn-primary"&gt;Go somewhere&lt;/xref&gt;
 &lt;/section&gt;</codeblock>
         </section>
-         <section id="specialization-3">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;card&gt;
   &lt;card-header&gt;Featured&lt;/card-header&gt;

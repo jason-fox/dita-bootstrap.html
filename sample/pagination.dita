@@ -113,7 +113,7 @@
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;
@@ -126,7 +126,7 @@
   &lt;/ol&gt;
 &lt;/section&gt;</codeblock>
         </section>
-         <section id="specialization-1">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;pagination size="large"&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;
@@ -163,7 +163,7 @@
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;
@@ -176,7 +176,7 @@
   &lt;/ol&gt;
 &lt;/section&gt;</codeblock>
         </section>
-         <section id="specialization-2">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;pagination size="small"&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;
@@ -224,7 +224,7 @@
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-3">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;
@@ -237,7 +237,7 @@
   &lt;/ol&gt;
 &lt;/section&gt;</codeblock>
         </section>
-         <section id="specialization-3">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;pagination outputclass="justify-content-center"&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;
@@ -274,7 +274,7 @@
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-4">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;section&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;
@@ -287,7 +287,7 @@
   &lt;/ol&gt;
 &lt;/section&gt;</codeblock>
         </section>
-         <section id="specialization-4">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;pagination outputclass="justify-content-end"&gt;
   &lt;title&gt;Page navigation example&lt;/title&gt;

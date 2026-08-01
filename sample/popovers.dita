@@ -94,7 +94,7 @@
         <desc>Left popover</desc> Popover on left </xref>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-secondary popover-top"&gt;
   &lt;desc&gt;Top popover&lt;/desc&gt;
@@ -113,7 +113,7 @@
   Popover on left
 &lt;/xref&gt;</codeblock>
         </section>
-         <section id="specialization-1">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;popover outputclass="btn-secondary" position="top"&gt;
   &lt;desc&gt;Top popover&lt;/desc&gt;
@@ -155,7 +155,7 @@
           <desc>And here’s some amazing content. It’s very engaging. Right?</desc>Custom popover</xref>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-lg btn-danger popover-top"&gt;
   &lt;data name="title"&gt;Popover title&lt;/data&gt;
@@ -164,7 +164,7 @@
   Custom popover
 &lt;/xref&gt;</codeblock>
         </section>
-         <section id="specialization-2">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;popover outputclass="btn-lg btn-danger"&gt;
   &lt;data name="title"&gt;Popover title&lt;/data&gt;

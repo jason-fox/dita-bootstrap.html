@@ -65,7 +65,7 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-group"&gt;
   &lt;xref outputclass="btn theme-danger" href="#"&gt;Left&lt;/xref&gt;
@@ -73,7 +73,7 @@
   &lt;xref outputclass="btn theme-success" href="#"&gt;Right&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
         </section>
-         <section id="specialization-1">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;button-group&gt;
   &lt;button color="danger" href="#"&gt;Left&lt;/button&gt;
@@ -93,7 +93,7 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-group"&gt;
   &lt;xref outputclass="btn-outline theme-primary" href="#"&gt;Left&lt;/xref&gt;
@@ -101,7 +101,7 @@
   &lt;xref outputclass="btn-outline theme-primary" href="#"&gt;Right&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
         </section>
-         <section id="specialization-2">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;button-group&gt;
   &lt;button color="primary" outline="yes" href="#"&gt;Left&lt;/button&gt;
@@ -133,7 +133,7 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-3">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-toolbar"&gt;
   &lt;div outputclass="btn-group me-2"&gt;
@@ -152,7 +152,7 @@
   &lt;/div&gt;
 &lt;/div&gt;</codeblock>
         </section>
-         <section id="specialization-3">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;button-toolbar&gt;
   &lt;button-group outputclass="me-2"&gt;
@@ -184,7 +184,7 @@
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-4">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-group-vertical"&gt;
   &lt;xref outputclass="btn theme-primary" href="#"&gt;Top&lt;/xref&gt;
@@ -192,7 +192,7 @@
   &lt;xref outputclass="btn theme-primary" href="#"&gt;Bottom&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
         </section>
-         <section id="specialization-4">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;button-group vertical="yes"&gt;
   &lt;button color="primary" href="#"&gt;Top&lt;/button&gt;

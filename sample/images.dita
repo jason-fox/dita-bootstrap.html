@@ -79,7 +79,7 @@
       </fig>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock> &lt;fig&gt;
   &lt;image outputclass="img-thumbnail d-auto" href="..."/&gt;
@@ -87,7 +87,7 @@
   &lt;image outputclass="img-thumbnail d-dark" href="..." deliveryTarget="html"/&gt;
 &lt;/fig&gt;</codeblock>
       </section>
-      <section id="specialization-1">
+      <section>
         <title>Specialization</title>
         <codeblock> &lt;fig&gt;
   &lt;thumbnail outputclass="d-auto" href="..."/&gt;
@@ -103,11 +103,11 @@
       </p>
     </section>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;image otherprops="loading(lazy)" href="..."/&gt;</codeblock>
       </section>
-      <section id="specialization-2">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;image loading="lazy" href="..."/&gt;</codeblock>
       </section>
@@ -130,7 +130,7 @@
       </div>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-3">
+      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;div outputclass="d-picture"&gt;
   &lt;image otherprops="media(min-width: 700px)" href="..."/&gt;
@@ -140,7 +140,7 @@
   &lt;image href="..."/&gt;
 &lt;/div&gt;</codeblock>
       </section>
-      <section id="specialization-3">
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;picture&gt;
   &lt;image media="min-width: 700px" href="..."/&gt;

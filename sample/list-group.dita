@@ -74,13 +74,13 @@
       </ul>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-1">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;ul outputclass="list-group" compact="yes" &gt;
   ...
 &lt;/ul&gt;</codeblock>
         </section>
-         <section id="specialization-1">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;list-group compact="yes"&gt;
   ...
@@ -99,13 +99,13 @@
       </ul>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;ul outputclass="list-group" compact="no" &gt;
   ...
 &lt;/ul&gt;</codeblock>
         </section>
-         <section id="specialization-2">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;list-group compact="no"&gt;
   ...
@@ -127,7 +127,7 @@
       </ul>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-3">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;ul outputclass="list-group-flush"&gt;
   &lt;li&gt;An item&lt;/li&gt;
@@ -137,7 +137,7 @@
   &lt;li&gt;And a fifth one&lt;/li&gt;
 &lt;/ul&gt;</codeblock>
         </section>
-         <section id="specialization-3">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;list-group flush="yes"&gt;
   &lt;li&gt;An item&lt;/li&gt;

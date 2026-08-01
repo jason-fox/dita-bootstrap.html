@@ -126,14 +126,14 @@
         <b>DITA</b> elements</desc> Tooltip with embedded DITA </xref>
   </bodydiv>
   <bodydiv outputclass="nav-pills mt-3">
-    <section id="outputclass-1">
+    <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;xref href="#" outputclass="btn-secondary tooltip-top"&gt;
 &lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
 Tooltip with embedded DITA
 &lt;/xref&gt;</codeblock>
       </section>
-       <section id="specialization-1">
+       <section>
       <title>Specialization</title>
         <codeblock>&lt;tooltip outputclass="btn-secondary"&gt;
 &lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
@@ -157,7 +157,7 @@ Tooltip with embedded DITA
       </xref>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
-      <section id="outputclass-2">
+      <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;xref href="#" outputclass="btn-secondary tooltip-top"&gt;
   &lt;data name="class"&gt;custom-tooltip&lt;/data&gt;
@@ -165,7 +165,7 @@ Tooltip with embedded DITA
   Custom tooltip
 &lt;/xref&gt;</codeblock>
         </section>
-         <section id="specialization-2">
+         <section>
         <title>Specialization</title>
           <codeblock>&lt;tooltip outputclass="btn-secondary"&gt;
   &lt;data name="class"&gt;custom-tooltip&lt;/data&gt;
