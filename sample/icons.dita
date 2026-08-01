@@ -156,57 +156,57 @@
       </bodydiv>
     <p>Icons can also be placed within buttons as shown:</p>
     <bodydiv outputclass="p-3 border">
-      <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph
+      <xref outputclass="btn-icon theme-primary" href="#"><ph
           outputclass="bi bi-arrow-down-square-fill"
         /></xref>
-      <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph
+      <xref outputclass="btn-icon theme-secondary" href="#"><ph
           outputclass="bi bi-chat-left-quote-fill"
         /></xref>
-      <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph outputclass="bi bi-speedometer"/></xref>
-      <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph outputclass="bi bi-camera-fill"/></xref>
-      <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph outputclass="bi bi-link"/></xref>
-      <xref outputclass="btn-floating m-1 btn theme-primary" href="#"><ph outputclass="bi bi-share-fill"/></xref>
+      <xref outputclass="btn-icon theme-warning" href="#"><ph outputclass="bi bi-speedometer"/></xref>
+      <xref outputclass="btn-icon theme-info" href="#"><ph outputclass="bi bi-camera-fill"/></xref>
+      <xref outputclass="btn-icon theme-accent" href="#"><ph outputclass="bi bi-link"/></xref>
+      <xref outputclass="btn-icon theme-danger" href="#"><ph outputclass="bi bi-share-fill"/></xref>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section id="outputclass-2">
           <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
+          <codeblock>&lt;xref outputclass="theme-primary btn-icon" href="#"&gt;
   &lt;i outputclass="bi-arrow-down-square-fill"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="theme-secondary btn-icon" href="#"&gt;
   &lt;i outputclass="bi-chat-left-quote-fill"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="theme-warning btn-icon" href="#"&gt;
   &lt;i outputclass="bi-speedometer"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="theme-info btn-icon" href="#"&gt;
   &lt;i outputclass="bi-camera-fill"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="theme-accent btn-icon" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="theme-danger btn-icon" href="#"&gt;
   &lt;i outputclass="bi-share-fill"/&gt;
 &lt;/xref&gt;</codeblock>
         </section>
          <section id="specialization-2">
         <title>Specialization</title>
-          <codeblock>&lt;button outputclass="btn-floating m-1" href="#"&gt;
+          <codeblock>&lt;button color="primary" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-arrow-down-square-fill"/&gt;
 &lt;/button&gt;
-&lt;button outputclass="btn-floating m-1" href="#"&gt;
+&lt;button color="secondary" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-chat-left-quote-fill"/&gt;
 &lt;/button&gt;
-&lt;button outputclass="btn-floating m-1" href="#"&gt;
+&lt;button color="warning" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-speedometer"/&gt;
 &lt;/button&gt;
-&lt;button outputclass="btn-floating m-1" href="#"&gt;
+&lt;button color="info" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-camera-fill"/&gt;
 &lt;/button&gt;
-&lt;button outputclass="btn-floating m-1" href="#"&gt;
+&lt;button color="accent" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt;
 &lt;/button&gt;
-&lt;button outputclass="btn-floating m-1" href="#"&gt;
+&lt;button color="danger" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-share-fill"/&gt;
 &lt;/button&gt;</codeblock>
         </section>

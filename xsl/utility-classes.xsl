@@ -877,10 +877,18 @@
       <xsl:when test="$icon != '' or (contains(@class, ' bootstrap-d/icon ') and @outputclass)">
         <xsl:element name="i">
           <xsl:attribute name="class">
-            <xsl:value-of select="concat('pe-2 ', $icon)"/>
-            <xsl:if test="contains(@class, ' bootstrap-d/icon ')">
-              <xsl:value-of select="concat(' ', @outputclass)"/>
-            </xsl:if>
+            <xsl:variable name="class-values" as="xs:string*">
+              <xsl:if test="not(parent::*[contains(@outputclass, 'btn-icon')])">
+                <xsl:sequence select="'pe-2'"/>
+              </xsl:if>
+              <xsl:if test="$icon != ''">
+                <xsl:sequence select="$icon"/>
+              </xsl:if>
+              <xsl:if test="contains(@class, ' bootstrap-d/icon ')">
+                <xsl:sequence select="string(@outputclass)"/>
+              </xsl:if>
+            </xsl:variable>
+            <xsl:value-of select="string-join($class-values, ' ')"/>
           </xsl:attribute>
           <xsl:if test="contains(@otherprops, 'style(')">
             <xsl:call-template name="otherprops-attributes"/>
