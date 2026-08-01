@@ -49,9 +49,7 @@
         heading text from Bootstrap 3.</p>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
-      <p outputclass="h3">Fancy display heading <ph
-          outputclass="fs-md fg-secondary"
-        >with faded secondary text</ph></p>
+      <p outputclass="h3">Fancy display heading <ph outputclass="fs-md fg-secondary">with faded secondary text</ph></p>
     </bodydiv>
     <codeblock
     >&lt;title&gt;Fancy display heading &lt;ph outputclass="fs-md fg-secondary"&gt;with faded secondary text&lt;/ph&gt;&lt;/title&gt;</codeblock>

@@ -12,5 +12,8 @@
     href="https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
-  <script type="module" src="https://corsproxy.io/?https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/assets/bootstrap.bundle.iT8eRQvy.js"/>
+  <script
+    type="module"
+    src="https://corsproxy.io/?https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/assets/bootstrap.bundle.iT8eRQvy.js"
+  />
 </div>

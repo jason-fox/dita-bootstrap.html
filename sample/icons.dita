@@ -156,12 +156,8 @@
       </bodydiv>
     <p>Icons can also be placed within buttons as shown:</p>
     <bodydiv outputclass="p-3 border">
-      <xref outputclass="btn-icon theme-primary" href="#"><ph
-          outputclass="bi bi-arrow-down-square-fill"
-        /></xref>
-      <xref outputclass="btn-icon theme-secondary" href="#"><ph
-          outputclass="bi bi-chat-left-quote-fill"
-        /></xref>
+      <xref outputclass="btn-icon theme-primary" href="#"><ph outputclass="bi bi-arrow-down-square-fill"/></xref>
+      <xref outputclass="btn-icon theme-secondary" href="#"><ph outputclass="bi bi-chat-left-quote-fill"/></xref>
       <xref outputclass="btn-icon theme-warning" href="#"><ph outputclass="bi bi-speedometer"/></xref>
       <xref outputclass="btn-icon theme-info" href="#"><ph outputclass="bi bi-camera-fill"/></xref>
       <xref outputclass="btn-icon theme-accent" href="#"><ph outputclass="bi bi-link"/></xref>
