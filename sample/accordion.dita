@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
   This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
@@ -30,7 +30,7 @@
       <title>How it works</title>
       <p>The accordion uses
         <xref
-          href="https://getbootstrap.com/docs/5.3/components/collapse/"
+          href="https://getbootstrap.com/docs/6.0/components/collapse/"
           format="html"
           scope="external"
         >collapse</xref> internally to make it collapsible. To render an accordion that’s expanded, add

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
   This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
@@ -36,12 +36,12 @@
       <p>Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and
         customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They
         have no <xmlatt>margin</xmlatt> by default, so use
-        <xref href="https://getbootstrap.com/docs/5.3/utilities/spacing/" format="html" scope="external">spacing
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/spacing/" format="html" scope="external">spacing
           utilities</xref> as needed.</p>
       <p
       >Below is an example of a basic card with mixed content and a default width. Card widths are easily customized with Bootstrap’s various
           <xref
-          href="https://getbootstrap.com/docs/5.3/components/card/#sizing"
+          href="https://getbootstrap.com/docs/6.0/components/card/#sizing"
           format="html"
           scope="external"
         >sizing options.</xref>

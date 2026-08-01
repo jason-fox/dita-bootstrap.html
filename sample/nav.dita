@@ -2,7 +2,7 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
   This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
@@ -42,15 +42,15 @@
         contents entirely.</p>
       <p>As of version 5.3.1, the plug-in provides five new options to style the table of contents navigation with
         either the Bootstrap
-        <xref href="https://getbootstrap.com/docs/5.3/components/list-group/" format="html" scope="external">list
+        <xref href="https://getbootstrap.com/docs/6.0/components/list-group/" format="html" scope="external">list
           group</xref> component,
         <xref
-          href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#pills"
+          href="https://getbootstrap.com/docs/6.0/components/navs-tabs/#pills"
           format="html"
           scope="external"
         >nav-pills</xref>, or
          <xref
-          href="https://getbootstrap.com/docs/5.3/components/collapse/"
+          href="https://getbootstrap.com/docs/6.0/components/collapse/"
           format="html"
           scope="external"
         >collapsible</xref> menus.
@@ -208,7 +208,7 @@
       <title>Dividers</title>
       <p>
         <xref
-          href="https://getbootstrap.com/docs/5.3/components/dropdowns/#dividers"
+          href="https://getbootstrap.com/docs/6.0/components/dropdowns/#dividers"
           format="html"
           scope="external"
         >Dividers</xref> can be added to items rendered in collapsible sidebars and menus by adding the

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
   This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
@@ -194,7 +194,7 @@
       <title>Alignment</title>
       <p>Change the alignment of pagination component by appending Bootstrap
         <xref
-          href="https://getbootstrap.com/docs/5.3/utilities/flex/"
+          href="https://getbootstrap.com/docs/6.0/utilities/flex/"
           format="html"
           scope="external"
         >flexbox utility</xref> classes

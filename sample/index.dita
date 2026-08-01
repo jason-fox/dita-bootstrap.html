@@ -2,7 +2,7 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
   This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
@@ -13,7 +13,7 @@
   <shortdesc>A plug-in for
     <xref href="http://www.dita-ot.org" format="html" scope="external">DITA Open Toolkit</xref> that extends the default
     HTML5 output with a
-    <xref href="https://getbootstrap.com/docs/5.3" format="html" scope="external">Bootstrap 5.3</xref> template and
+    <xref href="https://getbootstrap.com/docs/6.0" format="html" scope="external">Bootstrap 5.3</xref> template and
     components.
   </shortdesc>
   <prolog>
@@ -490,11 +490,11 @@
       <p>The plug-in includes a default static navigation menu with a project name and global link placeholders.</p>
       <p>The default header file <filepath>includes/hdr.navbar.default.xml</filepath> uses the Bootstrap primary
         (blue) background color for the
-        <xref href="https://getbootstrap.com/docs/5.3/examples/navbars/" format="html" scope="external">navbar
+        <xref href="https://getbootstrap.com/docs/6.0/examples/navbars/" format="html" scope="external">navbar
           component</xref>, and provides a theme menu to toggle <xref
           href="./dark-mode.dita"
         >dark mode</xref>.  Bootstrap itself offers additional <xref
-          href="https://getbootstrap.com/docs/5.3/examples/headers/"
+          href="https://getbootstrap.com/docs/6.0/examples/headers/"
           format="html"
           scope="external"
         >header examples</xref>.</p>
@@ -517,7 +517,7 @@
           format="html"
           scope="external"
         >footer file</xref> and Bootstrap also offers additional <xref
-          href="https://getbootstrap.com/docs/5.3/examples/footers/"
+          href="https://getbootstrap.com/docs/6.0/examples/footers/"
           format="html"
           scope="external"
         >examples</xref>. To add a footer to the generated output, pass a custom
@@ -542,15 +542,15 @@
       <p>As of version 5.3.1, the plug-in provides five new <parmname
         >--nav-toc</parmname> options to style the table of contents navigation with
         either the Bootstrap
-        <xref href="https://getbootstrap.com/docs/5.3/components/list-group/" format="html" scope="external">list
+        <xref href="https://getbootstrap.com/docs/6.0/components/list-group/" format="html" scope="external">list
           group</xref> component,
         <xref
-          href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#pills"
+          href="https://getbootstrap.com/docs/6.0/components/navs-tabs/#pills"
           format="html"
           scope="external"
         >nav-pills</xref>, or
          <xref
-          href="https://getbootstrap.com/docs/5.3/components/collapse/"
+          href="https://getbootstrap.com/docs/6.0/components/collapse/"
           format="html"
           scope="external"
         >collapsible</xref> menus. The following new options are available:
@@ -615,14 +615,14 @@
       <indexterm><parmname>--bootstrap.css.dd</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.nav.parent</parmname></indexterm>
       <p>The HTML output for the following DITA elements can be annotated with common Bootstrap utility classes for
-        <xref href="https://getbootstrap.com/docs/5.3/utilities/borders" format="html" scope="external">borders</xref>,
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/borders" format="html" scope="external">borders</xref>,
         <xref
-          href="https://getbootstrap.com/docs/5.3/utilities/background"
+          href="https://getbootstrap.com/docs/6.0/utilities/background"
           format="html"
           scope="external"
         >background</xref>,
-        <xref href="https://getbootstrap.com/docs/5.3/utilities/text" format="html" scope="external">text</xref>,
-        <xref href="https://getbootstrap.com/docs/5.3/utilities/spacing" format="html" scope="external">spacing</xref>,
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/text" format="html" scope="external">text</xref>,
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/spacing" format="html" scope="external">spacing</xref>,
         etc. using additional command line parameters:</p>
       <parml otherprops="cols(4)">
         <plentry>
@@ -1003,7 +1003,7 @@
           <pd>
             Whether to include support for a
             <xref
-              href="https://getbootstrap.com/docs/5.3/customize/color-modes/#dark-mode"
+              href="https://getbootstrap.com/docs/6.0/customize/color-modes/#dark-mode"
               format="html"
               scope="external"
             >dark mode</xref> toggler
@@ -1063,7 +1063,7 @@
     <section>
       <note type="note">Within the sample documentation, the texts describing the usage of each component have been
         copied directly from the
-        <xref href="https://getbootstrap.com/docs/5.3" format="html" scope="external">official Bootstrap 5.3
+        <xref href="https://getbootstrap.com/docs/6.0" format="html" scope="external">official Bootstrap 5.3
           documentation</xref>, however DITA markup is used throughout the examples describing how to implement these
         components correctly using the DITA <xmlatt>outputclass</xmlatt> attribute. This text is therefore a derivative
         of <cite>Bootstrap 5 docs</cite> by Twitter, Inc. and the Bootstrap Authors, and used under
