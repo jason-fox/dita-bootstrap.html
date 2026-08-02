@@ -1,3 +1,5 @@
+import { Dialog } from 'bootstrap'
+
 (() => {
   let LUNR_DATA = null;
   let PREVIEW_LOOKUP = null;
@@ -38,8 +40,8 @@
       const preview = item["d"];
       const link = item["l"];
       const result = `<div class="card mb-3 search-close">
-        <a class="link stretched-link link-underline link-underline-opacity-0" href="${BASE_URL + link}">
-            <h2 class="h3 title card-header text-body-emphasis">${title}</h5>
+        <a class="stretched-link fg-body text-decoration-none" href="${BASE_URL + link}">
+            <h2 class="h3 title card-header">${title}</h5>
         </a>
         <div class="card-body">
           <div class="card-text">
@@ -57,15 +59,15 @@
   }
 
   function formatResults(results) {
-    return `<article role="article">
-        <div class="modal-header justify-content-between">
+    return `<dialog class="dialog-lg dialog dialog-scrollable" id="searchDialog">
+        <div class="dialog-header justify-content-between">
             <h1>Search Results</h1>
-            <button type="button" class="btn-close search-close" aria-label="Close"/>
+            <button type="button" class="btn-close search-close" data-bs-dismiss="dialog" aria-label="Close"/>
         </div>
-        <div class="modal-body">
+        <div class="dialog-body">
       ${parseLunrResults(results)}
       </div>
-      </article>`;
+      </dialog>`;
   }
 
   function escapeHtml(unsafe) {
@@ -80,7 +82,7 @@
   function closeSearch(el) {
     const elements = document.getElementsByClassName("bs-main");
     elements[1].remove();
-    elements[0].classList.remove("collapse");
+    //elements[0].classList.remove("collapse");
     return false;
   }
 
@@ -106,12 +108,18 @@
           elements[1].innerHTML = formatResults(results);
         }
 
-        elements[0].classList.add("collapse");
-        window.scrollTo(0, 0);
+        //elements[0].classList.add("collapse");
+        //window.scrollTo(0, 0);
         const closeBox = document.getElementsByClassName("search-close");
         for(let i = 0; i < closeBox.length; i++) {
            closeBox[i].addEventListener("click", closeSearch);
         }
+
+        const dialogElement = document.getElementById('searchDialog');
+        const dialogInstance = new Dialog(dialogElement, {
+          keyboard: false // Optional configuration options
+        });
+        dialogInstance.show();
         return false;
       })
       .catch((e) => {
