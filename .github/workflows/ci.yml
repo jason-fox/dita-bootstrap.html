@@ -36,8 +36,8 @@ jobs:
             nodejs -v
           plugins: |
             fox.jason.extend.css
-            https://github.com/jason-fox/dita-bootstrap.html/archive/${{ github.ref_name }}.zip
-            https://github.com/jason-fox/dita-bootstrap.lunr/archive/${{ github.ref_name }}.zip
+            https://github.com/${{ github.repository_owner }}/dita-bootstrap.html/archive/${{ github.ref_name }}.zip
+            https://github.com/${{ github.repository_owner }}/dita-bootstrap.lunr/archive/${{ github.ref_name }}.zip
             https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
             fox.jason.favicon
             fox.jason.open-graph
