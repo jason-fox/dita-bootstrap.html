@@ -4,6 +4,8 @@ name: CI
     branches:
       - master
       - develop
+      - v5
+      - v6
   workflow_dispatch:
 
 jobs:
@@ -13,7 +15,6 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v7
-
       - name: Calculate short SHA
         uses: benjlevesque/short-sha@v4.0
         id: short-sha
@@ -25,7 +26,6 @@ jobs:
       - run: echo $SHA
         env:
           SHA: ${{ env.SHA }}
-
       - name: Build Bootstrap
         uses: dita-ot/dita-ot-action@4.4
         with:
@@ -43,13 +43,26 @@ jobs:
             fox.jason.open-graph
             https://github.com/dita-bootstrap/dita-bootstrap.theme-switcher/archive/develop.zip
           project: .github/dita-ot/html.xml
-
+      # 1. Determine target directory dynamically based on current branch
+      - name: Determine target folder 📁
+        id: set-target
+        run: |
+          if [ "${{ github.ref_name }}" = "master" ] || [ "${{ github.ref_name }}" = "develop" ]; then
+            echo "target_dir=" >> $GITHUB_OUTPUT
+          else
+            echo "target_dir=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+          fi
+      # 2. Deploy to the dynamically resolved folder
       - name: Deploy HTML 🚀
         uses: JamesIves/github-pages-deploy-action@v4.8.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages # The branch the action should deploy to.
           folder: out/html # The folder the action should deploy.
-          commit-message: '🚀 Deploy ${{ env.SHA }} to GitHub Pages'
+          target-folder: ${{ steps.set-target.outputs.target_dir }}
+          commit-message: '🚀 Deploy ${{ env.SHA }} to GitHub Pages (${{ github.ref_name }})'
           git-config-name: 'GitHub Action'
-          git-config-email: 'action@github.com'
+          # Prevent root deployments (master/develop) from cleaning versioned subfolders
+          clean-exclude: |
+            v5
+            v6
