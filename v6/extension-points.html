@@ -1,0 +1,260 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2026"><meta name="generator" content="DITA-OT"><meta name="description" content="These extension points enable you to extend DITA Bootstrap. You can add Ant targets or override XSLT processing steps within the html5-bootstrap transformation."><meta name="icon" content="bi-wrench-adjustable"><meta property="og:type" content="website"><meta property="og:url" content="https://dita-bootstrap.github.io/extension-points.html"><meta property="og:title" content="Extension Points"><meta property="og:description" content="These extension points enable you to extend DITA Bootstrap. You can add Ant targets or override XSLT processing steps within the html5-bootstrap transformation"><meta property="og:image" content="https://dita-bootstrap.github.io/open-graph.svg"><meta name="twitter:title" content="Extension Points"><meta name="twitter:description" content="These extension points enable you to extend DITA Bootstrap. You can add Ant targets or override XSLT processing steps within the html5-bootstrap transformation"><meta property="twitter:url" content="https://dita-bootstrap.github.io/extension-points.html"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://dita-bootstrap.github.io/open-graph.svg"><title>Extension Points</title><script src="./js/lunr-client.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><link rel="shortcut icon" href="./favicon/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" integrity="sha384-CK2SzKma4jA5H/MXDUU7i1TqZlCFaD4T01vtyDFvPlD97JQyS+IsSh1nI2EFbpyk" crossorigin="anonymous"></head><body id="extension-points" class="d-flex flex-column min-vh-100"><div class="visually-hidden-focusable overflow-hidden p-2 bg-body-tertiary"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a></div></div><header role="banner" class="sticky-top"><nav class="2xl:container bd-gutter flex-wrap lg:flex-nowrap justify-content-start" aria-label="Main navigation">
+  <div class="container-fluid">
+  <div class="d-flex align-items-center gap-2 lg:gap-1">
+    <a class="navbar-brand" href="https://dita-bootstrap.github.io/dita-bootstrap.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
+      <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
+      <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
+    </svg>
+      DITA Bootstrap
+    </a>
+
+    <ul class="nav navbar-nav flex-row d-none lg:d-flex">
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.dita-ot.org/plugins#!org.dita-bootstrap.html">Plugin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/dita-bootstrap/dita-bootstrap.html/releases">Releases</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/dita-bootstrap/dita-bootstrap.html">Source</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://getbootstrap.com/docs/5.3">Bootstrap Docs</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav flex-row d-none lg:d-flex ms-auto">
+      <!--
+        This is a lunr.js search box
+        It requires JavaScript to function.
+      -->
+      <li class="nav-item d-flex align-items-center">
+        <span class="nav-link pe-2">
+          <i class="bi bi-search"></i>
+        </span>
+        <form class="position-relative me-auto search-box rounded">
+          <input type="search" class="form-control" placeholder="Search…" aria-label="Search for…" dir="auto">
+        </form>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav flex-row d-none lg:d-flex ms-auto">
+      <!--
+        This is a dark/light color theme toggler.
+        It requires JavaScript to function.
+      -->
+      <li class="nav-item">
+        <a href="#" class="nav-link" id="bd-color-mode" role="button" data-bs-toggle="menu" aria-expanded="false">
+          <span class="d-light">
+            <i class="bi bi-brightness-high-fill"></i>
+          </span>
+          <span class="d-dark">
+            <i class="bi bi-moon-stars-fill"></i>
+          </span>
+          <span class="d-auto">
+            <i class="bi bi-circle-half"></i>
+          </span>
+        </a>
+        <div class="menu">
+          <a href="#" class="menu-item" data-bs-theme-value="light">
+              <i class="bi bi-brightness-high-fill"></i>
+              <span class="ms-2">Light</span>
+            </a>
+
+            <a href="#" class="menu-item" data-bs-theme-value="dark">
+              <i class="bi bi-moon-stars-fill"></i>
+              <span class="ms-2">Dark</span>
+            </a>
+
+            <a href="#" class="menu-item" data-bs-theme-value="auto">
+              <i class="bi bi-circle-half"></i>
+              <span class="ms-2">Auto</span>
+            </a>
+        </div>
+
+      </li>
+    </ul>
+    <ul class="nav navbar-nav flex-row d-none lg:d-flex ms-0 me-1">
+      <!--
+        This is a css bootstrap theme toggler.
+        It requires JavaScript to function.
+      -->
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link" id="bd-css-theme" role="button" data-bs-toggle="menu" aria-expanded="false">
+          <i class="bi bi-filetype-css"></i>
+        </a>
+        <div class="menu">
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+              Default
+            </button>
+            <hr class="dropdown-divider">
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/brite/bootstrap.min.css">
+              Brite
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/cerulean/bootstrap.min.css">
+              Cerulean
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/cosmo/bootstrap.min.css">
+              Cosmo
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/cyborg/bootstrap.min.css">
+              Cyborg
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/darkly/bootstrap.min.css">
+              Darkly
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/flatly/bootstrap.min.css">
+              Flatly
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/journal/bootstrap.min.css">
+              Journal
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/litera/bootstrap.min.css">
+              Litera
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/lumen/bootstrap.min.css">
+              Lumen
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/lux/bootstrap.min.css">
+              Lux
+            </button>
+             <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/materia/bootstrap.min.css">
+              Materia
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/minty/bootstrap.min.css">
+              Minty
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/morph/bootstrap.min.css">
+              Morph
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/pulse/bootstrap.min.css">
+              Pulse
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/quartz/bootstrap.min.css">
+              Quartz
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/sandstone/bootstrap.min.css">
+              Sandstone
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/simplex/bootstrap.min.css">
+              Simplex
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/sketchy/bootstrap.min.css">
+              Sketchy
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/slate/bootstrap.min.css">
+              Slate
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/solar/bootstrap.min.css">
+              Solar
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/spacelab/bootstrap.min.css">
+              SpaceLab
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/superhero/bootstrap.min.css">
+              Superhero
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/united/bootstrap.min.css">
+              United
+            </button>
+             <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/vapor/bootstrap.min.css">
+              Vapor
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/yeti/bootstrap.min.css">
+              Yeti
+            </button>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/zephyr/bootstrap.min.css">
+              Zephyr
+            </button>
+          </div>
+        </li>
+      </ul>
+
+    <button class="ms-auto btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  </div>
+</nav></header><div class="bs-container container-xxl bd-gutter mt-3 my-md-4" id="content"><div class="overflow-y-auto bs-sidebar"><div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel" aria-modal="true" role="dialog"><div class="offcanvas-header border-bottom"><h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">DITA Bootstrap</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button></div><div class="offcanvas-body flex-column h-100"><nav class="d-flex flex-align-start flex-column h-100 overflow-y-auto" role="navigation" id="bs-sidebar-nav"><div class="overflow-y-auto"><div class="flex-column bd-links"><ul class="list-unstyled mb-0 py-3 pt-md-1"><li><div class="d-flex flex-row ps-0"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center p-0 border-0" data-bs-target="#menu-collapse-d132376e11"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><span data-bs-toggle="collapse" class="d-inline-flex align-items-center flex-shrink-1 ps-2" data-bs-target="#menu-collapse-d132376e11"><i class="me-2 bi-book-half" style="color: var(--bs-indigo-400)"></i>Getting Started</span></div><div id="menu-collapse-d132376e11" class="ps-2 collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="index.html">Introduction</a></div></li></ul></div></li><li><div class="d-flex flex-row ps-0"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center p-0 border-0" data-bs-target="#menu-collapse-d132376e31"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><span data-bs-toggle="collapse" class="d-inline-flex align-items-center flex-shrink-1 ps-2" data-bs-target="#menu-collapse-d132376e31"><i class="me-2 bi-grid-fill" style="color: var(--bs-teal-400)"></i>Layout</span></div><div id="menu-collapse-d132376e31" class="ps-2 collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="nav.html">Navigation Menus</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="containers.html">Containers</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="grid.html">Grid System</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="rtl.html">Right-to-Left Languages</a></div></li></ul></div></li><li><div class="d-flex flex-row ps-0"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center p-0 border-0" data-bs-target="#menu-collapse-d132376e81"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><span data-bs-toggle="collapse" class="d-inline-flex align-items-center flex-shrink-1 ps-2" data-bs-target="#menu-collapse-d132376e81"><i class="me-2 bi-file-earmark-richtext" style="color: var(--bs-gray-400)"></i>Content</span></div><div id="menu-collapse-d132376e81" class="ps-2 collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="typography.html">Typography</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="images.html">Images</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="tables.html">Tables</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="figures.html">Figures</a></div></li></ul></div></li><li><div class="d-flex flex-row ps-0"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center p-0 border-0" data-bs-target="#menu-collapse-d132376e127"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><span data-bs-toggle="collapse" class="d-inline-flex align-items-center flex-shrink-1 ps-2" data-bs-target="#menu-collapse-d132376e127"><i class="me-2 bi-menu-button-wide-fill" style="color: var(--bs-cyan-400)"></i>Components</span></div><div id="menu-collapse-d132376e127" class="ps-2 collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="accordion.html">Accordion</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="alerts.html">Alerts</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="badge.html">Badges</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="breadcrumb.html">Breadcrumb</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="buttons.html">Buttons</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="button-group.html">Button group</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="card.html">Cards</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="carousel.html">Carousel</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="collapse.html">Collapse</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="drawer.html">Drawer</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="list-group.html">List Group</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="pagination.html">Pagination</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="popovers.html">Popovers</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="scrollspy.html">Scrollspy</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="tabs.html">Tabbed Dialogs</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="tooltips.html">Tooltips</a></div></li></ul></div></li><li><div class="d-flex flex-row ps-0"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center p-0 border-0" data-bs-target="#menu-collapse-d132376e297"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><span data-bs-toggle="collapse" class="d-inline-flex align-items-center flex-shrink-1 ps-2" data-bs-target="#menu-collapse-d132376e297"><i class="me-2 bi-braces-asterisk" style="color: var(--bs-pink-400)"></i>Utilities</span></div><div id="menu-collapse-d132376e297" class="ps-2 collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="borders.html">Borders</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="color.html">Color</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="shadows.html">Shadows</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="spacing.html">Spacing</a></div></li></ul></div></li><li><div class="d-flex flex-row ps-0"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center p-0 border-0 active" data-bs-target="#menu-collapse-d132376e358" aria-expanded="true" aria-current="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><span data-bs-toggle="collapse" class="d-inline-flex align-items-center flex-shrink-1 ps-2 active" data-bs-target="#menu-collapse-d132376e358" aria-expanded="true" aria-current="true"><i class="me-2 bi-tools" style="color: var(--bs-blue-400)"></i>Extend</span></div><div id="menu-collapse-d132376e358" class="ps-2 collapse show"><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="icons.html"><i class="me-2 bi-images" style=""></i>Icons</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="dark-mode.html"><i class="me-2 bi-moon-stars" style=""></i>Dark Mode</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1  active" href="extension-points.html"><i class="me-2 bi-wrench-adjustable" style=""></i>Extension Points</a></div></li><li><hr class="m-1"><span class="ps-3 bd-divider d-inline-flex">Additional Plug‑ins</span></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="search-box.html"><i class="me-2 bi-search" style=""></i>Search Box</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="offline.html"><i class="me-2 bi-wifi-off" style=""></i>Offline Mode</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="sass.html"><i class="me-2 bi-filetype-sass" style=""></i>Bootstrap Sass</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="bootstrap-table.html"><i class="me-2 bi-table" style=""></i>Dynamic Tables</a></div></li><li><div class="d-flex flex-row ps-0"><a class="d-inline-flex align-items-center flex-shrink-1 " href="bootstrap-extension.html"><i class="me-2 bi-bootstrap" style=""></i>Bootstrap Extension</a></div></li></ul></div></li></ul></div></div></nav></div></div></div><main role="main" class="bs-main me-3"><article role="article" class="bs-content" aria-labelledby="ariaid-title1">
+  <h1 class="title" id="ariaid-title1">Extension Points</h1>
+  
+  
+  <div class="body"><p class="shortdesc text-body-secondary lead">These extension points enable you to extend DITA Bootstrap. You can add Ant targets or override XSLT processing steps within the <span class="keyword option">html5-bootstrap</span> transformation.</p>
+    <section class="section" id="extension-points__extending-bootstrap"><h2 class="title h4">Extending Bootstrap</h2>
+      
+      <p class="p">Bootstrap is designed to be extensible. Additional CSS and JavaScript libraries can be added to the generated
+        HTML pages to allow for new Bootstrap components and extend Bootstrap classes. Similarly, the <dfn class="term">DITA
+          Bootstrap</dfn> plug-in itself can be extended to process DITA files to create valid Bootstrap HTML to drive
+        these custom components.</p>
+    </section>
+    <p class="p">The Bootstrap <abbr title="HyperText Markup Language" class="ph initialism">HTML</abbr> can be altered using the following extension points:</p>
+    <dl class="dl parml row">
+      
+        <dt class="dt pt col-lg-4 text-truncate dlterm"><span class="keyword parmname text-wrap">bootstrap.process.pre</span></dt>
+        <dd class="dd pd col-lg-8">Runs an Ant target before the Bootstrap HTML generation process</dd>
+    
+     
+        <dt class="dt pt col-lg-4 text-truncate dlterm"><span class="keyword parmname text-wrap">bootstrap.process.post</span></dt>
+        <dd class="dd pd col-lg-8">Runs an Ant target after the Bootstrap HTML generation process</dd>
+      
+     
+        <dt class="dt pt col-lg-4 text-truncate dlterm"><span class="keyword parmname text-wrap">dita.xsl.html5-bootstrap</span></dt>
+        <dd class="dd pd col-lg-8">Overrides the default DITA Bootstrap transformation. The referenced file is integrated directly into the XSLT step that generates the HTML.</dd>
+      
+    </dl>
+    <p class="p">Additionally the Bootstrap <abbr title="Cascading Style Sheet" class="ph initialism">CSS</abbr> can be augmented using the following extension points:</p>
+    <dl class="dl parml row">
+     
+        <dt class="dt pt col-lg-4 text-truncate dlterm"><span class="keyword parmname text-wrap">extend.css.process.pre</span></dt>
+        <dd class="dd pd col-lg-8">Runs an Ant target before the Bootstrap CSS generation process allowing a
+          user to append additional CSS.</dd>
+      
+     
+        <dt class="dt pt col-lg-4 text-truncate dlterm"><span class="keyword parmname text-wrap">extend.css.process</span></dt>
+        <dd class="dd pd col-lg-8">
+          Runs an Ant target immediately before the Bootstrap CSS generation process, allowing a user to append additional CSS which overrides the previous step.
+        </dd>
+      
+      
+        <dt class="dt pt col-lg-4 text-truncate dlterm"><span class="keyword parmname text-wrap">extend.css.process.post</span></dt>
+        <dd class="dd pd col-lg-8">Runs an Ant target after the Bootstrap CSS generation process.</dd>
+      
+    </dl>
+  </div>
+</article></main></div><script language="javascript" src="./js/popovers.js"></script><script language="javascript" src="./js/dark-mode-toggler.js"></script><footer role="contentinfo" class="mt-auto border-top bg-primary-subtle"><!-- Footer --><div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <!-- Social media -->
+      <p class="pt-3">
+        <!-- GitHub -->
+        <a class="btn btn-icon" href="https://github.com/dita-bootstrap/dita-bootstrap.html" role="button" style="color: #ffffff; background-color: #333333;">
+          <i class="bi bi-github text-white"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a class="btn btn-icon" href="https://www.linkedin.com/in/infotexture/" role="button" style="color: #ffffff; background-color: #0082ca;">
+          <i class="bi bi-linkedin text-white"></i>
+        </a>
+        <!-- Mastodon -->
+        <a class="btn btn-icon" href="https://indieweb.social/@infotexture" role="button" style="color: #ffffff; background-color: #563acc;">
+          <i class="bi bi-mastodon text-white"></i>
+        </a>
+        <!-- Bluesky -->
+        <a class="btn btn-icon" href="https://bsky.app/profile/infotexture.net" role="button" style="color: #ffffff; background-color: #0085ff;">
+          <i class="bi bi-bluesky text-white"></i>
+        </a>
+      </p>
+      <p>
+        <small>
+          © 2017–2026
+          <a href="https://infotexture.net/">infotexture</a>
+        </small>
+      </p>
+    </div>
+  </div>
+</div><!-- Footer --></footer></body></html>
