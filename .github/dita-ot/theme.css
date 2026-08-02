@@ -18,20 +18,20 @@
 
 .custom-popover {
   --bs-popover-max-width: 200px;
-  --bs-popover-border-color: var(--bs-primary);
-  --bs-popover-header-bg: var(--bs-primary);
+  --bs-popover-border-color: var(--bs-primary-border);
+  --bs-popover-header-bg: var(--bs-primary-bg);
   --bs-popover-header-color: var(--bs-white);
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: 0.5rem;
 }
 
 .custom-tooltip {
-  --bs-tooltip-bg: var(--bs-primary);
+  --bs-tooltip-bg: var(--bs-primary-bg);
 }
 
 /* override parts of the Bootstrap color scheme */
 :root {
-  --bs-code-color: var(--bs-secondary-color);
+  --bs-code-color: var(--bs-secondary-contrast);
 }
 
 .navbar {
