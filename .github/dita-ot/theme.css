@@ -39,6 +39,7 @@
   --bs-navbar-bg: var(--bs-primary-bg);
   --bs-navbar-color: var(--bs-primary-contrast);
   --bs-navbar-brand-color: var(--bs-primary-contrast);
+  --bs-navbar-brand-font-size: 1.25rem;
 }
 
 .nav-link {
