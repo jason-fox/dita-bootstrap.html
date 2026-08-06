@@ -1,4 +1,4 @@
-import { Dialog } from 'bootstrap'
+// Dialog is loaded from the global bootstrap object
 
 (() => {
   let LUNR_DATA = null;
@@ -116,10 +116,14 @@ import { Dialog } from 'bootstrap'
         }
 
         const dialogElement = document.getElementById('searchDialog');
-        const dialogInstance = new Dialog(dialogElement, {
-          keyboard: false // Optional configuration options
-        });
-        dialogInstance.show();
+        if (window.bootstrap?.Dialog) {
+          const dialogInstance = new window.bootstrap.Dialog(dialogElement, {
+            keyboard: false // Optional configuration options
+          });
+          dialogInstance.show();
+        } else {
+          dialogElement.showModal();
+        }
         return false;
       })
       .catch((e) => {
