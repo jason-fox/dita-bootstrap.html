@@ -39,7 +39,7 @@
       const title = item["t"];
       const preview = item["d"];
       const link = item["l"];
-      const result = `<div class="card mb-3 search-close">
+      const result = `<div class="card mb-3 search-close theme-primary">
         <a class="stretched-link fg-body text-decoration-none" href="${BASE_URL + link}">
             <h2 class="h3 title card-header">${title}</h5>
         </a>
