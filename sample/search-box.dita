@@ -81,6 +81,19 @@
   <parmname>--args.hdr</parmname>=path/to/your-header.xml</codeblock>
     </section>
 
+    <section id="parameters">
+      <title>Parameters</title>
+      <p>The plug-in supports the following parameter:</p>
+      <parml>
+        <plentry>
+          <pt><parmname>--bootstrap.css.search.card</parmname></pt>
+          <pd>
+            <p>Specifies the Bootstrap CSS classes to append to the search results card component (e.g. <codeph>theme-primary</codeph> to color the card).</p>
+          </pd>
+        </plentry>
+      </parml>
+    </section>
+
     <section id="sample-header-navigation-bars">
       <title>Sample header navigation bars</title>
       <p>To add a search box to the menu bar, add a <xmlelement>form class="search-box"</xmlelement> element
