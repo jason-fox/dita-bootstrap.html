@@ -75,6 +75,11 @@
       </li>
     </ul>
     <ul class="nav navbar-nav flex-row d-none lg:d-flex ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/dita-bootstrap/">
+            <i class="bi bi-github text-white"/>
+          </a>
+      </li>
       <!--
         This is a dark/light color theme toggler.
         It requires JavaScript to function.
@@ -88,36 +93,53 @@
             data-bs-toggle="menu"
             aria-expanded="false"
           >
-          <span class="d-light">
-            <i class="bi bi-brightness-high-fill"/>
-          </span>
-          <span class="d-dark">
-            <i class="bi bi-moon-stars-fill"/>
-          </span>
-          <span class="d-auto">
-            <i class="bi bi-circle-half"/>
-          </span>
+          <i class="bi bi-brightness-high-fill" data-bs-theme='light'/>
+          <i class="bi bi-moon-stars-fill" data-bs-theme='dark'/>
+          <i class="bi bi-circle-half" data-bs-theme='auto'/>
+          <i class="fs-xs bi bi-chevron-expand"/>
         </a>
         <div class="menu">
           <a href="#" class="menu-item" data-bs-theme-value="light">
-              <i class="bi bi-brightness-high-fill"/>
-              <span class="ms-2">Light</span>
-            </a>
-
-            <a href="#" class="menu-item" data-bs-theme-value="dark">
-              <i class="bi bi-moon-stars-fill"/>
-              <span class="ms-2">Dark</span>
-            </a>
-
-            <a href="#" class="menu-item" data-bs-theme-value="auto">
-              <i class="bi bi-circle-half"/>
-              <span class="ms-2">Auto</span>
-            </a>
+            <i class="bi bi-brightness-high-fill me-2"/>
+            Light
+            <i class="menu-item-check bi bi-check2 ms-auto"/>
+          </a>
+          <a href="#" class="menu-item" data-bs-theme-value="dark">
+            <i class="bi bi-moon-stars-fill me-2"/>
+            Dark
+            <i class="menu-item-check bi bi-check2 ms-auto"/>
+          </a>
+          <a href="#" class="menu-item" data-bs-theme-value="auto">
+            <i class="bi bi-circle-half me-2"/>
+            Auto
+            <i class="menu-item-check bi bi-check2 ms-auto"/>
+          </a>
         </div>
-
       </li>
     </ul>
     <ul class="nav navbar-nav flex-row d-none lg:d-flex ms-0 me-1">
+      <li class="nav-item fs-xs">
+        <a
+            href="#"
+            class="nav-link"
+            id="bd-docs-version"
+            role="button"
+            data-bs-toggle="menu"
+            aria-expanded="false"
+          >
+          v6.0
+          <i class="bi bi-chevron-expand"/>
+        </a>
+        <div class="menu">
+          <a href="../v6" class="menu-item active selected">
+              v6.0
+              <i class="menu-item-check bi bi-check2 ms-auto"/>
+            </a>
+            <a href="../v5" class="menu-item">
+              v5.3
+            </a>
+        </div>
+      </li>
       <!--
         This is a css bootstrap theme toggler.
         It requires JavaScript to function.
@@ -132,6 +154,7 @@
             aria-expanded="false"
           >
           <i class="bi bi-filetype-css"/>
+          <i class="fs-xs bi bi-chevron-expand"/>
         </a>
         <div class="menu">
           <button

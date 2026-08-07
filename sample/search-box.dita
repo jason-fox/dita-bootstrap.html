@@ -88,7 +88,8 @@
         <plentry>
           <pt><parmname>--bootstrap.css.search.card</parmname></pt>
           <pd>
-            <p>Specifies the Bootstrap CSS classes to append to the search results card component (e.g. <codeph>theme-primary</codeph> to color the card).</p>
+            <p>Specifies the Bootstrap CSS classes to append to the search results card component (e.g. <codeph
+              >theme-primary</codeph> to color the card).</p>
           </pd>
         </plentry>
       </parml>
