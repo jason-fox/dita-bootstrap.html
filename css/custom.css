@@ -164,55 +164,6 @@
     color: var(--bs-body-color);
 }
 
-[data-bs-theme='dark'] .alert.theme-primary,
-[data-bs-theme='dark'] .note.theme-primary {
-    background-color: rgba(59, 113, 202, 0.2);
-    color: #8ab4f8;
-    border: 1px solid rgba(59, 113, 202, 0.4) !important;
-}
-
-[data-bs-theme='dark'] .alert.theme-secondary,
-[data-bs-theme='dark'] .note.theme-secondary {
-    background-color: rgba(159, 166, 178, 0.2);
-    color: #ced4da;
-    border: 1px solid rgba(159, 166, 178, 0.4) !important;
-}
-
-[data-bs-theme='dark'] .alert.theme-success,
-[data-bs-theme='dark'] .note.theme-success {
-    background-color: rgba(20, 164, 77, 0.2);
-    color: #66bb6a;
-    border: 1px solid rgba(20, 164, 77, 0.4) !important;
-}
-
-[data-bs-theme='dark'] .alert.theme-danger,
-[data-bs-theme='dark'] .note.theme-danger {
-    background-color: rgba(220, 76, 100, 0.2);
-    color: #f06292;
-    border: 1px solid rgba(220, 76, 100, 0.4) !important;
-}
-
-[data-bs-theme='dark'] .alert.theme-warning,
-[data-bs-theme='dark'] .note.theme-warning {
-    background-color: rgba(228, 161, 27, 0.2);
-    color: #ffca28;
-    border: 1px solid rgba(228, 161, 27, 0.4) !important;
-}
-
-[data-bs-theme='dark'] .alert.theme-info,
-[data-bs-theme='dark'] .note.theme-info {
-    background-color: rgba(84, 180, 211, 0.2);
-    color: #4fc3f7;
-    border: 1px solid rgba(84, 180, 211, 0.4) !important;
-}
-
-[data-bs-theme='dark'] .alert.theme-accent,
-[data-bs-theme='dark'] .note.theme-accent {
-    background-color: rgba(210, 102, 160, 0.2);
-    color: #e699c2;
-    border: 1px solid rgba(210, 102, 160, 0.4) !important;
-}
-
 body {
     background-color: var(--bs-body-bg, #fafafa);
     color: var(--bs-body-color, #212121);
@@ -314,110 +265,27 @@ h6 {
     justify-content: center;
 }
 
-.btn-outline.theme-primary{
-    --bs-btn-color: var(--bs-primary-base);
-    --bs-btn-border-color: var(--bs-primary-base);
-    --bs-btn-hover-color: var(--bs-primary-base);
-    --bs-btn-hover-bg: rgba(59, 113, 202, 0.1);
-    --bs-btn-hover-border-color: var(--bs-primary-base);
-    --bs-btn-active-bg: rgba(59, 113, 202, 0.2);
-    --bs-btn-active-color: var(--bs-primary-base);
-    border: 2px solid var(--bs-primary-base) !important;
+/* .theme-* classes set --bs-theme-base natively (Bootstrap), so one rule covers
+   every color instead of a hand-copied block per color. */
+.btn-outline[class*="theme-"] {
+    --bs-btn-color: var(--bs-theme-base);
+    --bs-btn-border-color: var(--bs-theme-base);
+    --bs-btn-hover-color: var(--bs-theme-base);
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-theme-base) 10%, transparent);
+    --bs-btn-hover-border-color: var(--bs-theme-base);
+    --bs-btn-active-bg: color-mix(in srgb, var(--bs-theme-base) 20%, transparent);
+    --bs-btn-active-color: var(--bs-theme-base);
+    border: 2px solid var(--bs-theme-base) !important;
 }
 
-.btn-outline.theme-secondary{
-    --bs-btn-color: var(--bs-secondary-base);
-    --bs-btn-border-color: var(--bs-secondary-base);
-    --bs-btn-hover-color: var(--bs-secondary-base);
-    --bs-btn-hover-bg: rgba(159, 166, 178, 0.1);
-    --bs-btn-active-color: var(--bs-secondary-base);
-    --bs-btn-active-bg: rgba(159, 166, 178, 0.2);
-    border: 2px solid var(--bs-secondary-base) !important;
-}
-
-.btn-outline.theme-success{
-    --bs-btn-color: var(--bs-success-base);
-    --bs-btn-border-color: var(--bs-success-base);
-    --bs-btn-hover-color: var(--bs-success-base);
-    --bs-btn-hover-bg: rgba(20, 164, 77, 0.1);
-    --bs-btn-active-color: var(--bs-success-base);
-    --bs-btn-active-bg: rgba(20, 164, 77, 0.2);
-    border: 2px solid var(--bs-success-base) !important;
-}
-
-.btn-outline.theme-danger{
-    --bs-btn-color: var(--bs-danger-base);
-    --bs-btn-border-color: var(--bs-danger-base);
-    --bs-btn-hover-color: var(--bs-danger-base);
-    --bs-btn-hover-bg: rgba(220, 76, 100, 0.1);
-    --bs-btn-active-color: var(--bs-danger-base);
-    --bs-btn-active-bg: rgba(220, 76, 100, 0.2);
-    border: 2px solid var(--bs-danger-base) !important;
-}
-
-.btn-outline.theme-warning{
-    --bs-btn-color: var(--bs-warning-base);
-    --bs-btn-border-color: var(--bs-warning-base);
-    --bs-btn-hover-color: var(--bs-warning-base);
-    --bs-btn-hover-bg: rgba(228, 161, 27, 0.1);
-    --bs-btn-active-color: var(--bs-warning-base);
-    --bs-btn-active-bg: rgba(228, 161, 27, 0.2);
-    border: 2px solid var(--bs-warning-base) !important;
-}
-
-.btn-outline.theme-info{
-    --bs-btn-color: var(--bs-info-base);
-    --bs-btn-border-color: var(--bs-info-base);
-    --bs-btn-hover-color: var(--bs-info-base);
-    --bs-btn-hover-bg: rgba(84, 180, 211, 0.1);
-    --bs-btn-active-color: var(--bs-info-base);
-    --bs-btn-active-bg: rgba(84, 180, 211, 0.2);
-    border: 2px solid var(--bs-info-base) !important;
-}
-
-.btn-outline.theme-accent{
-    --bs-btn-color: var(--bs-accent-base);
-    --bs-btn-border-color: var(--bs-accent-base);
-    --bs-btn-hover-color: var(--bs-accent-base);
-    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-accent-base) 10%, transparent);
-    --bs-btn-hover-border-color: var(--bs-accent-base);
-    --bs-btn-active-bg: color-mix(in srgb, var(--bs-accent-base) 20%, transparent);
-    --bs-btn-active-color: var(--bs-accent-base);
-    border: 2px solid var(--bs-accent-base) !important;
-}
-
-.btn-outline.theme-inverse{
-    --bs-btn-color: var(--bs-inverse-base);
-    --bs-btn-border-color: var(--bs-inverse-base);
-    --bs-btn-hover-color: var(--bs-inverse-base);
-    --bs-btn-hover-bg: rgba(0, 0, 0, 0.05);
-    --bs-btn-active-color: var(--bs-inverse-base);
-    --bs-btn-active-bg: rgba(0, 0, 0, 0.1);
-    border: 2px solid var(--bs-inverse-base) !important;
-}
-
-.btn-outline.theme-primary:hover,
-.btn-outline-primary:hover,
-.btn-outline.theme-secondary:hover,
-.btn-outline-secondary:hover,
-.btn-outline.theme-success:hover,
-.btn-outline-success:hover,
-.btn-outline.theme-danger:hover,
-.btn-outline-danger:hover,
-.btn-outline.theme-warning:hover,
-.btn-outline-warning:hover,
-.btn-outline.theme-info:hover,
-.btn-outline-info:hover,
-.btn-outline.theme-accent:hover,
-.btn-outline-accent:hover,
-.btn-outline.theme-inverse:hover,
-.btn-outline-inverse:hover {
+.btn-outline[class*="theme-"]:hover,
+[class^="btn-outline-"]:hover {
     box-shadow: 0 8px 9px -4px rgba(0, 0, 0, 0.15), 0 4px 18px 0 rgba(0, 0, 0, 0.1) !important;
     transform: translateY(0);
     /* MDB outline buttons don't usually lift as much as solid */
 }
 
-/* 12. Badges */
+/* 5. Badges */
 .badge {
     padding: 0.35em 0.65em;
     font-size: 0.75em;
@@ -436,7 +304,7 @@ h6 {
 }
 
 
-/* 14. List Group (Material Style) */
+/* 6. List Group (Material Style) */
 .list-group {
     border-radius: 0.5rem;
     border: 1px solid #eee;
@@ -504,13 +372,13 @@ h6 {
 }
 
 
-/* 6. FIX: Offcanvas (Ensuring clean Material slide-out) */
+/* 7. FIX: Offcanvas (Ensuring clean Material slide-out) */
 .drawer {
     box-shadow: var(--shadow-3);
     border: none;
 }
 
-/* 7. Navs (Pills & Tabs) */
+/* 8. Navs (Pills & Tabs) */
 .nav-pills,
 .nav-tabs {
     --bs-nav-link-color: #616161;
@@ -614,7 +482,7 @@ h6 {
 .note {
     padding: 1.25rem 1.5rem;
     margin-bottom: 1.5rem;
-    border: none !important;
+    border: 1px solid !important;
 }
 
 .alert:not(.card),
@@ -627,80 +495,33 @@ h6 {
 }
 
 .note {
-    border-left: 6px solid !important
+    /* Width only, not the `border-left` shorthand — that would reset
+       border-left-color back to currentColor and fight the rule below. */
+    border-left-width: 6px !important;
 }
 
-.alert.theme-primary,
-.note.theme-primary,
-.alert.alert-primary,
-.note.alert-primary {
-    background-color: #E2EAF7;
-    color: #2F5AA2;
-    border-left-color: #2F5AA2 !important;
+/* v6's native .theme-* classes (and our own for accent/inverse) already expose
+   --bs-theme-base, so one formula covers every color instead of a hardcoded block
+   per color per theme. light-dark() picks the right shape for each: light mode
+   darkens the base for text/border against a near-white tint; dark mode's base is
+   already a light, legible tint (see the palettes above), so it's used as-is. */
+.alert[class*="theme-"],
+.note[class*="theme-"],
+.alert[class*="alert-"],
+.note[class*="alert-"] {
+    background-color: color-mix(in srgb, var(--bs-theme-base) 12%, var(--bs-body-bg, #fafafa));
+    color: light-dark(color-mix(in srgb, var(--bs-theme-base) 60%, #000), var(--bs-theme-base));
+    border-color: light-dark(color-mix(in srgb, var(--bs-theme-base) 60%, #000), var(--bs-theme-base)) !important;
 }
 
-.alert.theme-secondary,
-.note.theme-secondary,
-.alert.alert-secondary,
-.note.alert-secondary {
-    background-color: #f5f5f5;
-    color: #424242;
-    border-left-color: #424242 !important;
-}
-
-.alert.theme-success,
-.note.theme-success,
-.alert.alert-success,
-.note.alert-success {
-    background-color: #E1F0E5;
-    color: #1B5E20;
-    border-left-color: #1B5E20 !important;
-}
-
-.alert.theme-danger,
-.note.theme-danger,
-.alert.alert-danger,
-.note.alert-danger {
-    background-color: #F9E3E8;
-    color: #B71C1C;
-    border-left-color: #B71C1C !important;
-}
-
-.alert.theme-warning,
-.note.theme-warning,
-.alert.alert-warning,
-.note.alert-warning {
-    background-color: #FBF1DD;
-    color: #896110;
-    border-left-color: #896110 !important;
-}
-
-.alert.theme-info,
-.note.theme-info,
-.alert.alert-info,
-.note.alert-info {
-    background-color: #E8F5FD;
-    color: #0D47A1;
-    border-left-color: #0D47A1 !important;
-}
-
-.alert.theme-accent,
-.note.theme-accent,
-.alert.alert-accent,
-.note.alert-accent {
-    background-color: color-mix(in srgb, var(--bs-accent-base) 10%, #fff);
-    color: color-mix(in srgb, var(--bs-accent-base) 65%, #000);
-    border-left-color: color-mix(in srgb, var(--bs-accent-base) 65%, #000) !important;
-}
-
-.alert.theme-inverse,
-.note.theme-inverse,
-.alert.alert-inverse,
-.note.alert-inverse {
-    background-color: #eeeeee;
-    color: #212121;
-    border-left-color: #212121 !important;
-}
+/* v6 dropped .alert-primary etc. entirely (no --bs-theme-base to read from), so
+   alias the legacy names to the same token the .theme-* classes provide natively. */
+.alert-primary, .note.alert-primary { --bs-theme-base: var(--bs-primary-base); }
+.alert-secondary, .note.alert-secondary { --bs-theme-base: var(--bs-secondary-base); }
+.alert-success, .note.alert-success { --bs-theme-base: var(--bs-success-base); }
+.alert-danger, .note.alert-danger { --bs-theme-base: var(--bs-danger-base); }
+.alert-warning, .note.alert-warning { --bs-theme-base: var(--bs-warning-base); }
+.alert-info, .note.alert-info { --bs-theme-base: var(--bs-info-base); }
 
 .alert-heading {
     font-weight: 500;
@@ -738,7 +559,7 @@ h6 {
     letter-spacing: 0.05em;
 }
 
-/* 8. Floating Labels (Material Style) */
+/* 11. Floating Labels (Material Style) */
 .form-floating>.form-control:focus~label,
 .form-floating>.form-control:not(:placeholder-shown)~label,
 .form-floating>.form-select~label {
@@ -752,7 +573,7 @@ h6 {
 }
 
 
-/* 10. Table Enhancements */
+/* 12. Table Enhancements */
 .table {
     background: #fff;
     border-radius: var(--bs-border-radius);
@@ -766,77 +587,83 @@ h6 {
     letter-spacing: 0.05em;
 }
 
-/* 11. Explicit Color Overrides to ensure MDB colors take precedence */
-.btn-solid.theme-primary,
+/* 13. Explicit Color Overrides to ensure MDB colors take precedence */
+.btn-solid[class*="theme-"] {
+    --bs-btn-bg: var(--bs-theme-base);
+    --bs-btn-border-color: var(--bs-theme-base);
+    --bs-btn-color: var(--bs-theme-contrast);
+    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-theme-base), #000 12%);
+    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-theme-base), #000 16%);
+}
+
+/* Legacy v5-style .btn-primary etc. aren't defined by v6 at all (no --bs-theme-base
+   to read from), so each color still needs its own anchor. Hover darkens the base by
+   a fixed amount instead of a hand-picked hex, so it stays correct in dark mode too
+   (dark bases are light tints; the old hardcoded hex hovers assumed a light-mode
+   base and went the wrong direction — lighter instead of darker — once dark mode
+   swapped the base to a light tint). */
 .btn-primary {
     --bs-btn-bg: var(--bs-primary-base);
     --bs-btn-border-color: var(--bs-primary-base);
     --bs-btn-color: var(--bs-primary-contrast);
-    --bs-btn-hover-bg: #0b51c5;
-    --bs-btn-hover-border-color: #0a4ab4;
+    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-primary-base), #000 12%);
+    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-primary-base), #000 16%);
 }
 
-.btn-solid.theme-secondary,
 .btn-secondary {
     --bs-btn-bg: var(--bs-secondary-base);
     --bs-btn-border-color: var(--bs-secondary-base);
     --bs-btn-color: var(--bs-secondary-contrast);
-    --bs-btn-hover-bg: #8c939e;
-    --bs-btn-hover-border-color: #858c97;
+    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-secondary-base), #000 12%);
+    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-secondary-base), #000 16%);
 }
 
-.btn-solid.theme-success,
 .btn-success {
     --bs-btn-bg: var(--bs-success-base);
     --bs-btn-border-color: var(--bs-success-base);
     --bs-btn-color: var(--bs-success-contrast);
-    --bs-btn-hover-bg: #118b41;
-    --bs-btn-hover-border-color: #0f803c;
+    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-success-base), #000 12%);
+    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-success-base), #000 16%);
 }
 
-.btn-solid.theme-danger,
 .btn-danger {
     --bs-btn-bg: var(--bs-danger-base);
     --bs-btn-border-color: var(--bs-danger-base);
     --bs-btn-color: var(--bs-danger-contrast);
-    --bs-btn-hover-bg: #bd364d;
-    --bs-btn-hover-border-color: #b33045;
+    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-danger-base), #000 12%);
+    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-danger-base), #000 16%);
 }
 
-.btn-solid.theme-warning,
 .btn-warning {
     --bs-btn-bg: var(--bs-warning-base);
     --bs-btn-border-color: var(--bs-warning-base);
     --bs-btn-color: var(--bs-warning-contrast);
-    --bs-btn-hover-bg: #ecb33b;
-    --bs-btn-hover-border-color: #eab033;
+    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-warning-base), #000 12%);
+    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-warning-base), #000 16%);
 }
 
-.btn-solid.theme-info,
 .btn-info {
     --bs-btn-bg: var(--bs-info-base);
     --bs-btn-border-color: var(--bs-info-base);
     --bs-btn-color: var(--bs-info-contrast);
-    --bs-btn-hover-bg: #3da8cb;
-    --bs-btn-hover-border-color: #359ec0;
+    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-info-base), #000 12%);
+    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-info-base), #000 16%);
 }
 
-.btn-solid.theme-accent,
 .btn-accent {
     --bs-btn-bg: var(--bs-accent-base);
     --bs-btn-border-color: var(--bs-accent-base);
     --bs-btn-color: var(--bs-accent-contrast);
-    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-accent-base), var(--bs-white) 15%);
-    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-accent-base), var(--bs-white) 10%);
+    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-accent-base), #000 12%);
+    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-accent-base), #000 16%);
 }
 
-.btn-solid.theme-inverse,
 .btn-inverse {
     --bs-btn-bg: var(--bs-inverse-base);
     --bs-btn-border-color: var(--bs-inverse-base);
     --bs-btn-color: var(--bs-inverse-contrast);
-    --bs-btn-hover-bg: #4c4444;
-    --bs-btn-hover-border-color: #463f3f;
+    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-inverse-base), #000 12%);
+    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-inverse-base), #000 16%);
 }
 
 /* Specificity overrides for links styled as buttons to prevent default/visited link color leakage and underlines */
@@ -874,30 +701,11 @@ a.btn-inverse:hover {
     text-decoration: none !important;
 }
 
-.bg-primary {
-    background-color: var(--bs-primary-base) !important;
-}
-
-.bg-secondary {
-    background-color: var(--bs-secondary-base) !important;
-}
-
-.bg-success {
-    background-color: var(--bs-success-base) !important;
-}
-
-.bg-danger {
-    background-color: var(--bs-danger-base) !important;
-}
-
-.bg-warning {
-    background-color: var(--bs-warning-base) !important;
-}
-
-.bg-info {
-    background-color: var(--bs-info-base) !important;
-}
-
+/* .bg-primary etc. are not overridden here: Bootstrap's own .bg-primary already
+   reads --bs-primary-bg, which we already pin to --bs-primary-base above (verified:
+   removing this block changes nothing). .text-primary etc. still need one, though —
+   v6 renamed that utility to .fg-primary and dropped .text-* entirely, so DITA
+   content still emitting .text-primary would otherwise get no color at all. */
 .text-primary {
     color: var(--bs-primary-base) !important;
 }
@@ -922,7 +730,7 @@ a.btn-inverse:hover {
     color: var(--bs-info-base) !important;
 }
 
-/* 15. Accordion Caret Alignment Fix & Header Font Reset */
+/* 14. Accordion Caret Alignment Fix & Header Font Reset */
 .accordion-header {
     display: flex !important;
     align-items: center !important;
