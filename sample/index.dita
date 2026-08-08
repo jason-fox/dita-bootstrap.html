@@ -78,9 +78,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/brite/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/brite/"
                     format="html"
                     scope="external"
@@ -95,9 +95,9 @@
                   scope="external"
                   href="https://bootswatch.com/cerulean/thumbnail.png"
                 />
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/cerulean/"
                     format="html"
                     scope="external"
@@ -108,9 +108,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/cosmo/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/cosmo/"
                     format="html"
                     scope="external"
@@ -125,9 +125,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/cyborg/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/cyborg/"
                     format="html"
                     scope="external"
@@ -138,9 +138,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/darkly/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/darkly/"
                     format="html"
                     scope="external"
@@ -151,9 +151,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/flatly/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/flatly/"
                     format="html"
                     scope="external"
@@ -168,9 +168,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/journal/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/journal/"
                     format="html"
                     scope="external"
@@ -181,9 +181,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/litera/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/litera/"
                     format="html"
                     scope="external"
@@ -194,9 +194,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/lumen/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/lumen/"
                     format="html"
                     scope="external"
@@ -211,9 +211,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/lux/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/lux/"
                     format="html"
                     scope="external"
@@ -224,9 +224,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/materia/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/materia/"
                     format="html"
                     scope="external"
@@ -237,9 +237,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/minty/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/minty/"
                     format="html"
                     scope="external"
@@ -254,9 +254,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/morph/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/morph/"
                     format="html"
                     scope="external"
@@ -267,9 +267,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/pulse/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/pulse/"
                     format="html"
                     scope="external"
@@ -280,9 +280,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/quartz/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/quartz/"
                     format="html"
                     scope="external"
@@ -301,9 +301,9 @@
                   scope="external"
                   href="https://bootswatch.com/sandstone/thumbnail.png"
                 />
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/sandstone/"
                     format="html"
                     scope="external"
@@ -314,9 +314,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/simplex/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/simplex/"
                     format="html"
                     scope="external"
@@ -327,9 +327,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/sketchy/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/sketchy/"
                     format="html"
                     scope="external"
@@ -344,9 +344,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/slate/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/slate/"
                     format="html"
                     scope="external"
@@ -357,9 +357,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/solar/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/solar/"
                     format="html"
                     scope="external"
@@ -374,9 +374,9 @@
                   scope="external"
                   href="https://bootswatch.com/spacelab/thumbnail.png"
                 />
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/spacelab/"
                     format="html"
                     scope="external"
@@ -395,9 +395,9 @@
                   scope="external"
                   href="https://bootswatch.com/superhero/thumbnail.png"
                 />
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/superhero/"
                     format="html"
                     scope="external"
@@ -408,9 +408,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/united/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/united/"
                     format="html"
                     scope="external"
@@ -421,9 +421,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/vapor/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/vapor/"
                     format="html"
                     scope="external"
@@ -438,9 +438,9 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/yeti/thumbnail.png"/>
-                <p outputclass="text-center">
+                <p outputclass="d-block w-100 text-center">
                   <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
+                    outputclass="link stretched-link text-decoration-none"
                     href="https://bootswatch.com/yeti/"
                     format="html"
                     scope="external"
