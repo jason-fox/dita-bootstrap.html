@@ -15,9 +15,6 @@
 @media (min-width: 1024px) {
   .bs-main {
     grid-template-areas: 'content scrollspy';
-    /* A bare 1fr track computes to ~225px on typical viewports, and Bootstrap's
-       base .nav-link is white-space: nowrap, so long headings just overflow
-       past the track edge instead of wrapping. Floor it wider. */
     grid-template-columns: minmax(0, 4fr) minmax(280px, 1fr);
   }
 
@@ -57,8 +54,6 @@
   color: var(--bs-fg-body);
   text-decoration: none;
   border-left: 0.125rem solid transparent;
-  /* Bootstrap's base .nav-link is white-space: nowrap, which forces long
-     headings past the column edge instead of wrapping onto a second line. */
   white-space: normal;
   overflow-wrap: break-word;
 }
@@ -82,12 +77,6 @@
   border-left-color: transparent;
 }
 
-/* Bootstrap's .nav-pills .nav-link.active already paints a solid
-   --bs-nav-pills-link-active-bg background. Bootstrap v6 ships its own rules
-   inside @layer, and unlayered CSS always wins the cascade regardless of
-   specificity — so the plain color: var(--bs-link-hover-color) above (meant
-   for the borderless list/list-group modes) overrides Bootstrap's contrast
-   color here too, leaving dark blue text on a bright blue pill. Restore it. */
 .bs-scrollspy nav a.nav-link.active {
   color: var(--bs-nav-pills-link-active-color);
 }

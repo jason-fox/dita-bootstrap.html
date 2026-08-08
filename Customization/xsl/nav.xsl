@@ -603,7 +603,7 @@
                   <xsl:call-template name="nav-attributes">
                     <xsl:with-param name="pathFromMaplist" select="$pathFromMaplist"/>
                     <xsl:with-param name="class">
-                      <xsl:text>my-1 nav-link</xsl:text>
+                      <xsl:text>nav-link</xsl:text>
                       <xsl:value-of select="$active-class"/>
                     </xsl:with-param>
                   </xsl:call-template>
@@ -671,7 +671,7 @@
               <xsl:call-template name="nav-attributes">
                 <xsl:with-param name="pathFromMaplist" select="$pathFromMaplist"/>
                 <xsl:with-param name="class">
-                  <xsl:text>my-1 nav-link</xsl:text>
+                  <xsl:text>nav-link</xsl:text>
                   <xsl:value-of select="$active-class"/>
                 </xsl:with-param>
               </xsl:call-template>
@@ -681,7 +681,7 @@
           </xsl:when>
           <xsl:otherwise>
             <!-- ↓ Add Bootstrap nav-brand class ↓ -->
-            <span class="my-1 ps-3 navbar-brand pt-2 pb-1">
+            <span class="ps-3 navbar-brand pt-2 pb-1">
               <xsl:call-template name="nav-icon"/>
               <xsl:value-of select="$title"/>
             </span>
