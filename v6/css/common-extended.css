@@ -161,12 +161,25 @@
 .bs-container {
   display: grid;
   grid-template-areas: 'sidebar main';
-  grid-template-columns: 1fr 5fr;
+  /* A bare 1fr/5fr split has no explicit minimum, so CSS Grid falls back to
+     each track's content-based automatic minimum size. Bootstrap's .nav-link
+     is white-space: nowrap, so a long topic title (nav-toc=nav-pill-*) forces
+     the sidebar track to balloon past its "fair" 1fr share instead of
+     wrapping, spilling text over the main content column. Floor it. */
+  grid-template-columns: minmax(260px, 1fr) minmax(0, 5fr);
   gap: 1.5rem;
 }
 
 .bs-sidebar {
   grid-area: sidebar;
+}
+
+/* Same nowrap issue as .bs-scrollspy: Bootstrap's base .nav-link is
+   white-space: nowrap, so long topic titles (nav-toc=nav-pill-*) can't wrap
+   onto a second line and just overflow the sidebar column. */
+.bs-sidebar .nav-link {
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .bs-main {
@@ -186,7 +199,7 @@
   padding-top: 0.25rem;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1023.98px) {
   .bs-main {
     margin-inline: auto;
   }
@@ -204,7 +217,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .bs-main {
     grid-template-areas: 'content';
     grid-template-rows: auto 1fr;
@@ -225,7 +238,7 @@
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1023.98px) {
   .bd-navbar .bd-navbar-toggle {
     width: 4.25rem;
   }
@@ -245,7 +258,7 @@
     max-width: calc(100vw - 4rem);
   }
 
-  .bs-sidebar .offcanvas-lg {
+  .bs-sidebar .lg\:drawer {
     border-right-color: var(--bs-border-color);
   }
 }
@@ -289,7 +302,7 @@ article [tabindex='0'] {
 .bd-links a {
   padding: 0.1875rem 0.5rem;
   margin-top: 0.125rem;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
   text-decoration: none;
 }
 
@@ -298,7 +311,7 @@ article [tabindex='0'] {
 }
 
 .bd-links span {
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
 }
 
 .bd-links span:hover {
@@ -306,7 +319,7 @@ article [tabindex='0'] {
 }
 
 .bd-links span.bd-divider:hover {
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
 }
 
 @media (min-width: 768px) {
@@ -320,7 +333,7 @@ article [tabindex='0'] {
 @media (max-width: 767.98px) {
   .bd-links > ul {
     padding: 1.5rem 0.75rem;
-    background-color: var(--bs-body-bg);
+    background-color: var(--bs-bg-body);
   }
 }
 
@@ -336,7 +349,7 @@ article [tabindex='0'] {
 .bd-links .btn {
   padding: 0.25rem !important;
   font-weight: 600;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
   background-color: transparent;
   box-shadow: none;
 }
@@ -386,7 +399,7 @@ article [tabindex='0'] {
 
 .bd-links .active {
   font-weight: 600;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
 }
 
 /**
