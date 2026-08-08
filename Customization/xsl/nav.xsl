@@ -258,9 +258,6 @@
           <xsl:if test="$BOOTSTRAP_SIDEBAR_FTR">
             <xsl:text> bs-fixed-sidetoc</xsl:text>
           </xsl:if>
-          <xsl:if test="$nav-toc = ('nav-pill-partial', 'nav-pill-full')">
-            <xsl:text> alert theme-secondary</xsl:text>
-          </xsl:if>
         </xsl:attribute>
 
         <xsl:choose>
