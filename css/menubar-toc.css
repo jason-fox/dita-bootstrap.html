@@ -6,7 +6,7 @@
 /*! This value keeps the sidebar-nav below the menubar-toc
  *  main content window compared with the sidebar-nav
  */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .bs-sidebar {
     top: 9rem;
     height: calc(100vh - 13rem);

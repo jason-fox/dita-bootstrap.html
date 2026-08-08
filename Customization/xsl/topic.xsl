@@ -173,14 +173,14 @@
       <xsl:if test="$BOOTSTRAP_SCROLLSPY_TOC != 'none'">
         <xsl:choose>
           <xsl:when test="count(*[contains(@class, ' topic/topic ')])&gt;0">
-            <div class="bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 text-body-secondary">
+            <div class="bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 fg-2">
               <xsl:call-template name="scrollspy-content"/>
             </div>
           </xsl:when>
           <xsl:when
             test="count(*/*[@id and (contains(@class, ' topic/section ') or contains(@class, ' topic/example '))])&gt;0"
           >
-            <div class="bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 text-body-secondary">
+            <div class="bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 fg-2">
               <xsl:call-template name="scrollspy-content"/>
             </div>
           </xsl:when>
@@ -834,7 +834,7 @@
   <xsl:attribute-set name="toc">
     <xsl:attribute name="role">navigation</xsl:attribute>
     <xsl:attribute name="id">bs-sidebar-nav</xsl:attribute>
-    <xsl:attribute name="class">d-flex flex-align-start flex-column h-100 overflow-y-auto</xsl:attribute>
+    <xsl:attribute name="class">d-flex align-items-start flex-column h-100 overflow-y-auto</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="menubar-toc">

@@ -74,7 +74,7 @@
     <xsl:variable
       name="bootstrap-class"
       select="
-        if (count(preceding-sibling::*[contains(@class, ' topic/title ')]) > 0) then 'sectiontitle card-subtitle text-body-secondary'
+        if (count(preceding-sibling::*[contains(@class, ' topic/title ')]) > 0) then 'sectiontitle card-subtitle fg-2'
         else 'sectiontitle card-title'"
     />
     <xsl:element name="{$headLevel}">

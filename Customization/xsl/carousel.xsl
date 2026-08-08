@@ -68,7 +68,7 @@
     <xsl:variable name="id">
       <xsl:value-of select="concat('carousel_' ,dita-ot:generate-html-id(.))"/>
     </xsl:variable>
-    <div class="carousel slide">
+    <div class="carousel">
       <!--xsl:choose>
         <xsl:when test="@autoplay = 'no' or contains(@otherprops, 'autoplay(false)')">
           <xsl:attribute name="data-bs-ride" select="'true'"/>

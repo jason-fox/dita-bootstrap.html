@@ -36,7 +36,7 @@
           <xsl:attribute name="class" select='drawer-title'/>
           <xsl:value-of select="*[contains(@class, ' topic/title ')]"/>
         </xsl:element>
-        <button type="button" class="btn-close text-reset" aria-label="Close" data-bs-dismiss="drawer"/>
+        <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="drawer"/>
       </div>
       <div class="drawer-body">
         <xsl:apply-templates select="*[not(contains(@class, ' topic/title '))]"/>

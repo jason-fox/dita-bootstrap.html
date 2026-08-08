@@ -24,7 +24,7 @@
   <xsl:param name="BOOTSTRAP_CSS_ACCORDION" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_ACCESSIBILITY_NAV" select="'bg-subtle-secondary'"/>
   <xsl:param name="BOOTSTRAP_CSS_ACCESSIBILITY_LINK" select="'btn btn-outline theme-primary btn-sm'"/>
-  <xsl:param name="BOOTSTRAP_CSS_FIGURE" select="' w-100 mw-100 p-3 '"/>
+  <xsl:param name="BOOTSTRAP_CSS_FIGURE" select="' w-100 max-w-100 p-3 '"/>
   <xsl:param name="BOOTSTRAP_CSS_FIGURE_CAPTION" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_FIGURE_IMAGE" select="'img-fluid border rounded'"/>
   <xsl:param name="BOOTSTRAP_CSS_DL" select="'row'"/>
@@ -510,7 +510,7 @@
             else if (contains(@class, ' topic/lq ') and parent::*[contains(@class, ' topic/fig ')]) then ''
             else if (contains(@class, ' topic/lq ')) then ' blockquote '
             else if (contains(@class, ' topic/dl ')) then $BOOTSTRAP_CSS_DL
-            else if (contains(@class, ' topic/image ') and ancestor::*[contains(@class, ' topic/fig ')]) then '  figure-img ' || $BOOTSTRAP_CSS_FIGURE_IMAGE
+            else if (contains(@class, ' topic/image ') and ancestor::*[contains(@class, ' topic/fig ')]) then ' ' || $BOOTSTRAP_CSS_FIGURE_IMAGE
             else if (contains(@outputclass, 'carousel-')) then 'carousel'
             else if (contains(@class, ' topic/title ') and ancestor::*[contains(@outputclass, 'alert-')]) then 'alert-heading'
             else if (contains(@class, ' topic/xref ') and ancestor::*[contains(@outputclass, 'alert-')]) then 'alert-link'

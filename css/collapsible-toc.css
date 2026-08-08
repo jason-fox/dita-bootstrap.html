@@ -16,7 +16,7 @@
 .bd-links a {
   padding: 0.1875rem 0.5rem;
   margin-top: 0.125rem;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
   text-decoration: none;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .bd-links span {
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
 }
 
 .bd-links span:hover {
@@ -33,7 +33,7 @@
 }
 
 .bd-links span.bd-divider:hover {
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
 }
 
 @media (min-width: 768px) {
@@ -47,7 +47,7 @@
 @media (max-width: 767.98px) {
   .bd-links > ul {
     padding: 1.5rem 0.75rem;
-    background-color: var(--bs-body-bg);
+    background-color: var(--bs-bg-body);
   }
 }
 
@@ -63,7 +63,7 @@
 .bd-links .btn {
   padding: 0.25rem !important;
   font-weight: 600;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
   background-color: transparent;
   box-shadow: none;
 }
@@ -113,5 +113,5 @@
 
 .bd-links .active {
   font-weight: 600;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
 }

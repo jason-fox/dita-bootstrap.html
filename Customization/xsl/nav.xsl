@@ -172,7 +172,7 @@
 
   <!-- Generate a menubar-toc - a menubar as part of the static header -->
   <xsl:template match="*" mode="gen-user-toptoc">
-    <div class="bg-body-tertiary">
+    <div class="bg-3">
       <div>
         <xsl:attribute name="class" select="$BOOTSTRAP_CSS_CONTAINER_SIZE"/>
         <nav xsl:use-attribute-sets="menubar-toc">
@@ -293,7 +293,7 @@
           </xsl:when>
           <xsl:when test="$nav-toc = ('nav-pill-partial', 'nav-pill-full')">
             <!-- ↓ Remove <ul> and add nested <nav> element with Bootstrap classes ↓ -->
-            <nav class="nav nav-pills flex-column navbar-secondary">
+            <nav class="nav nav-pills flex-column">
               <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
               <xsl:choose>
                 <xsl:when test="$nav-toc = 'nav-pill-partial'">
@@ -538,7 +538,7 @@
                 <xsl:with-param name="class">
                   <xsl:text>list-group-item list-group-item-action</xsl:text>
                   <xsl:if test="parent::* is $current-topicref">
-                    <xsl:text> bg-body-tertiary</xsl:text>
+                    <xsl:text> bg-3</xsl:text>
                   </xsl:if>
                   <xsl:if test=". is $current-topicref">
                     <xsl:text> active</xsl:text>
@@ -688,7 +688,7 @@
           </xsl:otherwise>
         </xsl:choose>
         <xsl:if test="exists($children)">
-          <nav class="nav nav-pills flex-column ps-3 mw-100 w-100">
+          <nav class="nav nav-pills flex-column ps-3 max-w-100 w-100">
             <xsl:apply-templates select="$children" mode="#current">
               <xsl:with-param name="pathFromMaplist" select="$pathFromMaplist"/>
             </xsl:apply-templates>

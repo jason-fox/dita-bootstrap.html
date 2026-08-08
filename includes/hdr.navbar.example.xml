@@ -1,5 +1,5 @@
 <nav
-  class="2xl:container bd-gutter flex-wrap lg:flex-nowrap justify-content-start"
+  class="xl:container flex-wrap lg:flex-nowrap justify-content-start"
   aria-label="Main navigation"
 >
   <div class="container-fluid">

@@ -46,11 +46,11 @@
     --shadow-3: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --shadow-4: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 
-    /* MDB Border Radii */
+    /* MDB Border Radii (pinned to v6's own --bs-radius-* scale steps) */
     --bs-border-width: 1px;
-    --bs-border-radius: 0.25rem;
-    --bs-border-radius-sm: 0.125rem;
-    --bs-border-radius-lg: 0.5rem;
+    --bs-radius-1: 0.125rem;
+    --bs-radius-3: 0.25rem;
+    --bs-radius-5: 0.5rem;
 
     /* Override Bootstrap v6 theme color variables for MDB */
     --bs-primary-bg: var(--bs-primary-base);
@@ -99,11 +99,11 @@
 }
 
 :root[data-bs-theme='dark'] {
-    --bs-body-bg: #121212;
-    --bs-body-color: #eee;
-    --bs-secondary-color: #b2b2b2;
-    --bs-tertiary-color: #757575;
-    --bs-emphasis-color: #fff;
+    --bs-bg-body: #121212;
+    --bs-fg-body: #eee;
+    --bs-secondary-fg: #b2b2b2;
+    --bs-fg-3: #757575;
+    --bs-fg-1: #fff;
     --bs-border-color: #404040;
 
     /* Lighter MDB palette, tuned for contrast against #121212 / #262626 card bg */
@@ -160,13 +160,13 @@
     --shadow-1: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 0.4);
     --shadow-2: 0 5px 11px 0 rgba(0, 0, 0, 0.6), 0 4px 15px 0 rgba(0, 0, 0, 0.5);
 
-    background-color: var(--bs-body-bg);
-    color: var(--bs-body-color);
+    background-color: var(--bs-bg-body);
+    color: var(--bs-fg-body);
 }
 
 body {
-    background-color: var(--bs-body-bg, #fafafa);
-    color: var(--bs-body-color, #212121);
+    background-color: var(--bs-bg-body, #fafafa);
+    color: var(--bs-fg-body, #212121);
 }
 
 /* 2. Typography Enhancements */
@@ -255,7 +255,7 @@ h6 {
     box-shadow: var(--shadow-1);
     transition: all 0.2s ease-in-out;
     border: none;
-    border-radius: var(--bs-border-radius);
+    border-radius: var(--bs-radius-3);
 }
 .btn.btn-icon,
 .btn-icon {
@@ -298,13 +298,6 @@ h6 {
     color: var(--bs-theme-contrast, inherit);
     background-color: var(--bs-theme-bg, var(--bs-badge-bg));
 }
-
-.badge-pill {
-    border-radius: 10rem;
-    padding-left: 0.8em;
-    padding-right: 0.8em;
-}
-
 
 /* 6. List Group (Material Style) */
 .list-group {
@@ -353,14 +346,14 @@ h6 {
     padding: 0.75rem 1.625rem 0.625rem;
     font-size: 0.875rem;
     line-height: 1.5;
-    border-radius: var(--bs-border-radius-lg);
+    border-radius: var(--bs-radius-5);
 }
 
 .btn-sm:not(.btn-icon) {
     padding: 0.375rem 1rem 0.3125rem;
     font-size: 0.625rem;
     line-height: 1.5;
-    border-radius: var(--bs-border-radius-sm);
+    border-radius: var(--bs-radius-1);
 }
 
 .btn-link {
@@ -390,8 +383,8 @@ h6 {
     --bs-nav-pills-link-active-bg: var(--bs-primary-base);
     /* v6 defaults both of these to var(--bs-radius-9) (1.5rem, a full pill shape) for
        the track and the active link alike. Match our own button radius instead. */
-    --bs-nav-pills-border-radius: var(--bs-border-radius);
-    --bs-nav-pills-link-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-border-radius: var(--bs-radius-3);
+    --bs-nav-pills-link-border-radius: var(--bs-radius-3);
 }
 
 .nav-pills .nav-link {
@@ -401,7 +394,7 @@ h6 {
     letter-spacing: 0.02rem !important;
     padding: 0.625rem 1.5rem 0.5rem !important;
     transition: all 0.2s ease-in-out !important;
-    border-radius: var(--bs-border-radius) !important;
+    border-radius: var(--bs-radius-3) !important;
 }
 
 .nav-pills .nav-link.active,
@@ -511,19 +504,10 @@ h6 {
 .note[class*="theme-"],
 .alert[class*="alert-"],
 .note[class*="alert-"] {
-    background-color: color-mix(in srgb, var(--bs-theme-base) 12%, var(--bs-body-bg, #fafafa));
+    background-color: color-mix(in srgb, var(--bs-theme-base) 12%, var(--bs-bg-body, #fafafa));
     color: light-dark(color-mix(in srgb, var(--bs-theme-base) 60%, #000), var(--bs-theme-base));
     border-color: light-dark(color-mix(in srgb, var(--bs-theme-base) 60%, #000), var(--bs-theme-base)) !important;
 }
-
-/* v6 dropped .alert-primary etc. entirely (no --bs-theme-base to read from), so
-   alias the legacy names to the same token the .theme-* classes provide natively. */
-.alert-primary, .note.alert-primary { --bs-theme-base: var(--bs-primary-base); }
-.alert-secondary, .note.alert-secondary { --bs-theme-base: var(--bs-secondary-base); }
-.alert-success, .note.alert-success { --bs-theme-base: var(--bs-success-base); }
-.alert-danger, .note.alert-danger { --bs-theme-base: var(--bs-danger-base); }
-.alert-warning, .note.alert-warning { --bs-theme-base: var(--bs-warning-base); }
-.alert-info, .note.alert-info { --bs-theme-base: var(--bs-info-base); }
 
 .alert-heading {
     font-weight: 500;
@@ -549,13 +533,6 @@ h6 {
     color: var(--bs-primary-contrast);
 }
 
-.navbar-inverse .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.85);
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 0.875rem;
-}
-
 .navbar-brand {
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -578,7 +555,7 @@ h6 {
 /* 12. Table Enhancements */
 .table {
     background: #fff;
-    border-radius: var(--bs-border-radius);
+    border-radius: var(--bs-radius-3);
     overflow: hidden;
 }
 
@@ -596,76 +573,6 @@ h6 {
     --bs-btn-color: var(--bs-theme-contrast);
     --bs-btn-hover-bg: color-mix(in oklch, var(--bs-theme-base), #000 12%);
     --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-theme-base), #000 16%);
-}
-
-/* Legacy v5-style .btn-primary etc. aren't defined by v6 at all (no --bs-theme-base
-   to read from), so each color still needs its own anchor. Hover darkens the base by
-   a fixed amount instead of a hand-picked hex, so it stays correct in dark mode too
-   (dark bases are light tints; the old hardcoded hex hovers assumed a light-mode
-   base and went the wrong direction — lighter instead of darker — once dark mode
-   swapped the base to a light tint). */
-.btn-primary {
-    --bs-btn-bg: var(--bs-primary-base);
-    --bs-btn-border-color: var(--bs-primary-base);
-    --bs-btn-color: var(--bs-primary-contrast);
-    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-primary-base), #000 12%);
-    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-primary-base), #000 16%);
-}
-
-.btn-secondary {
-    --bs-btn-bg: var(--bs-secondary-base);
-    --bs-btn-border-color: var(--bs-secondary-base);
-    --bs-btn-color: var(--bs-secondary-contrast);
-    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-secondary-base), #000 12%);
-    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-secondary-base), #000 16%);
-}
-
-.btn-success {
-    --bs-btn-bg: var(--bs-success-base);
-    --bs-btn-border-color: var(--bs-success-base);
-    --bs-btn-color: var(--bs-success-contrast);
-    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-success-base), #000 12%);
-    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-success-base), #000 16%);
-}
-
-.btn-danger {
-    --bs-btn-bg: var(--bs-danger-base);
-    --bs-btn-border-color: var(--bs-danger-base);
-    --bs-btn-color: var(--bs-danger-contrast);
-    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-danger-base), #000 12%);
-    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-danger-base), #000 16%);
-}
-
-.btn-warning {
-    --bs-btn-bg: var(--bs-warning-base);
-    --bs-btn-border-color: var(--bs-warning-base);
-    --bs-btn-color: var(--bs-warning-contrast);
-    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-warning-base), #000 12%);
-    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-warning-base), #000 16%);
-}
-
-.btn-info {
-    --bs-btn-bg: var(--bs-info-base);
-    --bs-btn-border-color: var(--bs-info-base);
-    --bs-btn-color: var(--bs-info-contrast);
-    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-info-base), #000 12%);
-    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-info-base), #000 16%);
-}
-
-.btn-accent {
-    --bs-btn-bg: var(--bs-accent-base);
-    --bs-btn-border-color: var(--bs-accent-base);
-    --bs-btn-color: var(--bs-accent-contrast);
-    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-accent-base), #000 12%);
-    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-accent-base), #000 16%);
-}
-
-.btn-inverse {
-    --bs-btn-bg: var(--bs-inverse-base);
-    --bs-btn-border-color: var(--bs-inverse-base);
-    --bs-btn-color: var(--bs-inverse-contrast);
-    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-inverse-base), #000 12%);
-    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-inverse-base), #000 16%);
 }
 
 /* Specificity overrides for links styled as buttons to prevent default/visited link color leakage and underlines */
@@ -701,35 +608,6 @@ a.btn-inverse:visited,
 a.btn-inverse:hover {
     color: var(--bs-btn-color);
     text-decoration: none !important;
-}
-
-/* .bg-primary etc. are not overridden here: Bootstrap's own .bg-primary already
-   reads --bs-primary-bg, which we already pin to --bs-primary-base above (verified:
-   removing this block changes nothing). .text-primary etc. still need one, though —
-   v6 renamed that utility to .fg-primary and dropped .text-* entirely, so DITA
-   content still emitting .text-primary would otherwise get no color at all. */
-.text-primary {
-    color: var(--bs-primary-base) !important;
-}
-
-.text-secondary {
-    color: var(--bs-secondary-base) !important;
-}
-
-.text-success {
-    color: var(--bs-success-base) !important;
-}
-
-.text-danger {
-    color: var(--bs-danger-base) !important;
-}
-
-.text-warning {
-    color: var(--bs-warning-base) !important;
-}
-
-.text-info {
-    color: var(--bs-info-base) !important;
 }
 
 /* 14. Accordion Caret Alignment Fix & Header Font Reset */

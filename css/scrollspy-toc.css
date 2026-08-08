@@ -2,7 +2,7 @@
   grid-area: scrollspy;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1023.98px) {
   .bs-main {
     grid-template-areas: 'content';
   }
@@ -12,10 +12,13 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .bs-main {
     grid-template-areas: 'content scrollspy';
-    grid-template-columns: 4fr 1fr;
+    /* A bare 1fr track computes to ~225px on typical viewports, and Bootstrap's
+       base .nav-link is white-space: nowrap, so long headings just overflow
+       past the track edge instead of wrapping. Floor it wider. */
+    grid-template-columns: minmax(0, 4fr) minmax(280px, 1fr);
   }
 
   .bs-scrollspy {
@@ -25,6 +28,7 @@
     z-index: 2;
     height: calc(100vh - 6rem);
     overflow-y: auto;
+    padding-inline: 0.5rem;
   }
 }
 
@@ -50,20 +54,24 @@
 .bs-scrollspy nav a {
   display: block;
   padding: 0.125rem 0 0.125rem 0.75rem;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
   text-decoration: none;
   border-left: 0.125rem solid transparent;
+  /* Bootstrap's base .nav-link is white-space: nowrap, which forces long
+     headings past the column edge instead of wrapping onto a second line. */
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .bs-scrollspy nav a:hover,
 .bs-scrollspy nav a.active {
   color: var(--bs-link-hover-color);
-  border-left-color: var(--bs-primary);
+  border-left-color: var(--bs-primary-base);
 }
 
 .bs-scrollspy nav[dir='rtl'] a.active,
 .bs-scrollspy nav[dir='rtl'] a:hover {
-  border-right-color: var(--bs-primary);
+  border-right-color: var(--bs-primary-base);
   border-right-style: solid;
   border-left-color: transparent;
 }
@@ -72,6 +80,16 @@
 .bs-scrollspy nav a.nav-link.active {
   border-right-color: transparent;
   border-left-color: transparent;
+}
+
+/* Bootstrap's .nav-pills .nav-link.active already paints a solid
+   --bs-nav-pills-link-active-bg background. Bootstrap v6 ships its own rules
+   inside @layer, and unlayered CSS always wins the cascade regardless of
+   specificity — so the plain color: var(--bs-link-hover-color) above (meant
+   for the borderless list/list-group modes) overrides Bootstrap's contrast
+   color here too, leaving dark blue text on a bright blue pill. Restore it. */
+.bs-scrollspy nav a.nav-link.active {
+  color: var(--bs-nav-pills-link-active-color);
 }
 
 .bs-scrollspy nav a.active {
