@@ -178,6 +178,11 @@
       desc="Bootstrap classes for footers"
     />
     <param
+      name="bootstrap.css.menubar.toc"
+      type="string"
+      desc="CSS class for the menu bar. Defaults to sticky-top"
+    />
+    <param
       name="bootstrap.css.tabs"
       type="string"
       desc="Bootstrap classes for tabbed dialog components"
@@ -372,11 +377,10 @@
       desc="Defines Bootstrap container class for main layout and menubar-TOC."
     >
       <val>container</val>
-      <val>container-sm</val>
-      <val>container-md</val>
-      <val>container-lg</val>
-      <val>container-xl</val>
-      <val default="true">container-xxl</val>
+      <val>sm:container</val>
+      <val>md:container</val>
+      <val>lg:container</val>
+      <val default="true">xl:container</val>
       <val>container-fluid</val>
     </param>
   </transtype>

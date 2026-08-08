@@ -259,4 +259,9 @@
     expression="${bootstrap.css.container.size}"
     if:set="bootstrap.css.container.size"
   />
+  <param
+    name="BOOTSTRAP_CSS_MENUBAR_TOC"
+    expression="${bootstrap.css.menubar.toc}"
+    if:set="bootstrap.css.menubar.toc"
+  />
 </dummy>

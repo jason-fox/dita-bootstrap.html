@@ -183,6 +183,16 @@
       <fig>
         <image scalefit="yes" href="./src/menubar-toc.png"/>
       </fig>
+      <p>The menu bar's wrapper element defaults to Bootstrap's <option>sticky-top</option> utility
+        class, keeping it pinned to the top of the viewport while scrolling. This can be overridden
+        using the <parmname>--bootstrap.css.menubar.toc</parmname> parameter, for example to use a
+        plain background tint instead of sticky positioning:</p>
+      <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
+        >path/to/your.ditamap</filepath> \
+     <parmname>--format</parmname>=<option>html5-bootstrap</option> \
+     <parmname>--nav-toc</parmname>=<option>list-group-partial</option> \
+     <parmname>--menubar-toc.include</parmname>=<option>yes</option> \
+     <parmname>--bootstrap.css.menubar.toc</parmname>=<option>bg-3</option></codeblock>
     </section>
     <section id="top-bar">
       <title>Top bar</title>

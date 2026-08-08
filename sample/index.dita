@@ -600,6 +600,7 @@
       <indexterm><parmname>--bootstrap.css.carousel.caption</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.carousel.indicators</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.footer</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.menubar.toc</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.table</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.tabs</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.tabs.vertical</parmname></indexterm>
@@ -763,6 +764,15 @@
           <pd>
             Common utility classes for the HTML
             <xmlelement>footer</xmlelement> element
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.menubar&#8203;.toc</parmname>
+          </pt>
+          <pd>
+            CSS class for the <xref href="./nav.dita" format="dita">menu bar</xref>. Defaults to
+            <option>sticky-top</option>
           </pd>
         </plentry>
         <plentry>

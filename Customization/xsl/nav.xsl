@@ -172,7 +172,8 @@
 
   <!-- Generate a menubar-toc - a menubar as part of the static header -->
   <xsl:template match="*" mode="gen-user-toptoc">
-    <div class="bg-3">
+    <div>
+      <xsl:attribute name="class" select="$BOOTSTRAP_CSS_MENUBAR_TOC"/>
       <div>
         <xsl:attribute name="class" select="$BOOTSTRAP_CSS_CONTAINER_SIZE"/>
         <nav xsl:use-attribute-sets="menubar-toc">

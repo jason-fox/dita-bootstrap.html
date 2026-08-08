@@ -170,7 +170,7 @@ The HTML output for the following DITA elements can be annotated with common Boo
 - `bootstrap.css.carousel.caption` – Common utility classes for Bootstrap carousel captions
 - `bootstrap.css.carousel.indicators` – Common utility classes for Bootstrap carousel indicators
 - `bootstrap.css.codeblock` – Common Bootstrap utility classes for DITA `<codeblock>` elements
-- `bootstrap.css.container.size` – Bootstrap container class for main layout and menubar-TOC. Options: `container`, `container-fluid`, `container-sm`, `container-md`, `container-lg`, `container-xl`, `container-xxl` (default)
+- `bootstrap.css.container.size` – Bootstrap container class for main layout and menubar-TOC. Options: `container`, `container-fluid`, `sm:container`, `md:container`, `lg:container`, `xl:container` (default)
 - `bootstrap.css.dd` – Common utility classes for DITA `<dd>` elements
 - `bootstrap.css.dl` – Common utility classes for DITA `<dl>` elements
 - `bootstrap.css.dt` – Common utility classes for DITA `<dt>` elements
@@ -178,6 +178,7 @@ The HTML output for the following DITA elements can be annotated with common Boo
 - `bootstrap.css.figure.caption` – Common utility classes for DITA figure titles
 - `bootstrap.css.figure.image` – Common utility classes for images within DITA`<fig>` elements
 - `bootstrap.css.footer` – Common utility classes for the HTML `<footer>` element
+- `bootstrap.css.menubar.toc` – CSS class for the menu bar. Defaults to `sticky-top`
 - `bootstrap.css.nav.parent` – Common utility classes for ancestors of active nav-pill elements
 - `bootstrap.css.pagination` – Common utility classes for Bootstrap pagination components
 - `bootstrap.css.section.title` – Common Bootstrap utility classes for DITA `<section>` titles
