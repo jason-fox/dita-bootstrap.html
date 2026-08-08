@@ -19,11 +19,12 @@
   }
 
   .bs-scrollspy {
+    --bs-scrollspy-top: calc(var(--bs-navbar-min-height, 3.5rem) + 1.75rem);
     position: sticky;
-    top: 5.25rem;
+    top: var(--bs-scrollspy-top);
     right: 0;
     z-index: 2;
-    height: calc(100vh - 6rem);
+    height: calc(100vh - var(--bs-scrollspy-top) - 0.75rem);
     overflow-y: auto;
     padding-inline: 0.5rem;
   }

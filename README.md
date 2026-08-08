@@ -178,7 +178,7 @@ The HTML output for the following DITA elements can be annotated with common Boo
 - `bootstrap.css.figure.caption` – Common utility classes for DITA figure titles
 - `bootstrap.css.figure.image` – Common utility classes for images within DITA`<fig>` elements
 - `bootstrap.css.footer` – Common utility classes for the HTML `<footer>` element
-- `bootstrap.css.menubar.toc` – CSS class for the menu bar. Defaults to `sticky-top`
+- `bootstrap.css.menubar.toc` – CSS class for the menu bar. Defaults to `sticky-top bg-body`
 - `bootstrap.css.nav.parent` – Common utility classes for ancestors of active nav-pill elements
 - `bootstrap.css.pagination` – Common utility classes for Bootstrap pagination components
 - `bootstrap.css.section.title` – Common Bootstrap utility classes for DITA `<section>` titles

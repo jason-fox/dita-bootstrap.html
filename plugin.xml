@@ -180,7 +180,7 @@
     <param
       name="bootstrap.css.menubar.toc"
       type="string"
-      desc="CSS class for the menu bar. Defaults to sticky-top"
+      desc="CSS class for the menu bar. Defaults to sticky-top bg-body"
     />
     <param
       name="bootstrap.css.tabs"

@@ -18,7 +18,7 @@
   <!-- Defines container class for main layout and menubar-TOC -->
   <xsl:param name="BOOTSTRAP_CSS_CONTAINER_SIZE" select="'xl:container'"/>
   <!-- Defines the CSS class for the menubar-TOC -->
-  <xsl:param name="BOOTSTRAP_CSS_MENUBAR_TOC" select="'sticky-top'"/>
+  <xsl:param name="BOOTSTRAP_CSS_MENUBAR_TOC" select="'sticky-top bg-body'"/>
 
   <xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/>
   <xsl:import href="plugin:org.dita.base:xsl/common/dita-utilities.xsl"/>

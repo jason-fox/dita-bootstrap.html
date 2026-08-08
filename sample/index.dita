@@ -772,7 +772,7 @@
           </pt>
           <pd>
             CSS class for the <xref href="./nav.dita" format="dita">menu bar</xref>. Defaults to
-            <option>sticky-top</option>
+            <option>sticky-top bg-body</option>
           </pd>
         </plentry>
         <plentry>

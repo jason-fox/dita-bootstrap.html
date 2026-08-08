@@ -73,10 +73,11 @@
   }
 
   .bs-sidebar {
+    --bs-sidebar-top: calc(var(--bs-navbar-min-height, 3.5rem) + 1.5rem);
     position: sticky;
-    top: 5rem;
+    top: var(--bs-sidebar-top);
     display: block !important;
-    height: calc(100vh - 6rem);
+    height: calc(100vh - var(--bs-sidebar-top) - 1rem);
     padding-left: 0.25rem;
     margin-left: -0.25rem;
   }
