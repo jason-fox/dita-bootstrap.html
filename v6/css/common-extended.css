@@ -161,11 +161,6 @@
 .bs-container {
   display: grid;
   grid-template-areas: 'sidebar main';
-  /* A bare 1fr/5fr split has no explicit minimum, so CSS Grid falls back to
-     each track's content-based automatic minimum size. Bootstrap's .nav-link
-     is white-space: nowrap, so a long topic title (nav-toc=nav-pill-*) forces
-     the sidebar track to balloon past its "fair" 1fr share instead of
-     wrapping, spilling text over the main content column. Floor it. */
   grid-template-columns: minmax(260px, 1fr) minmax(0, 5fr);
   gap: 1.5rem;
 }
@@ -174,12 +169,12 @@
   grid-area: sidebar;
 }
 
-/* Same nowrap issue as .bs-scrollspy: Bootstrap's base .nav-link is
-   white-space: nowrap, so long topic titles (nav-toc=nav-pill-*) can't wrap
-   onto a second line and just overflow the sidebar column. */
-.bs-sidebar .nav-link {
+.bs-sidebar .nav-pills .nav-link {
   white-space: normal;
   overflow-wrap: break-word;
+  font-size: 0.875rem;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .bs-main {
