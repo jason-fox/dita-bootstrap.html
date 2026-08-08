@@ -782,7 +782,8 @@
         select="concat('visually-hidden-focusable overflow-hidden p-2 ', $BOOTSTRAP_CSS_ACCESSIBILITY_NAV)"
       />
 
-      <div class="xl:container">
+      <div>
+        <xsl:attribute name="class" select="$BOOTSTRAP_CSS_CONTAINER_SIZE"/>
         <a>
           <xsl:attribute name="class" select="concat('d-inline-flex m-1 ', $BOOTSTRAP_CSS_ACCESSIBILITY_LINK)"/>
           <xsl:apply-templates mode="scrollspy-href" select="*[contains(@class, ' topic/title ')][1]"/>

@@ -704,7 +704,8 @@
             Bootstrap <xref
               href="./containers.dita"
               format="dita"
-            >container class</xref> for main layout and menubar-TOC
+            >container class</xref> for main layout and menubar-TOC.
+            Defaults to <option>2xl:container</option>
           </pd>
         </plentry>
         <plentry>
