@@ -25,8 +25,8 @@
     right: 0;
     z-index: 2;
     height: calc(100vh - var(--bs-scrollspy-top) - 0.75rem);
-    overflow-y: auto;
     padding-inline: 0.5rem;
+    overflow-y: auto;
   }
 }
 
@@ -54,9 +54,9 @@
   padding: 0.125rem 0 0.125rem 0.75rem;
   color: var(--bs-fg-body);
   text-decoration: none;
-  border-left: 0.125rem solid transparent;
-  white-space: normal;
   overflow-wrap: break-word;
+  white-space: normal;
+  border-left: 0.125rem solid transparent;
 }
 
 .bs-scrollspy nav a:hover,

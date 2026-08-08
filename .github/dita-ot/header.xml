@@ -28,7 +28,7 @@
         >v6</span>
     </a>
 
-    <ul class="nav navbar-nav flex-row d-none lg:d-flex">
+    <ul class="nav navbar-nav flex-row" data-bs-toggle="nav-overflow">
       <li class="nav-item">
         <a
             class="nav-link"

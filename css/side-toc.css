@@ -19,11 +19,11 @@
 }
 
 .bs-sidebar .nav-pills .nav-link {
-  white-space: normal;
-  overflow-wrap: break-word;
-  font-size: 0.875rem;
   justify-content: flex-start;
+  font-size: 0.875rem;
   text-align: left;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .bs-main {
@@ -103,6 +103,7 @@
     max-width: calc(100vw - 4rem);
   }
 
+  /* stylelint-disable-next-line selector-class-pattern */
   .bs-sidebar .lg\:drawer {
     border-right-color: var(--bs-border-color);
   }
