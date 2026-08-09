@@ -24,6 +24,10 @@
   color: var(--bs-link-hover-color);
 }
 
+.bd-links a:focus-visible {
+  outline: var(--bs-focus-ring);
+}
+
 .bd-links span {
   color: var(--bs-fg-body);
 }
@@ -105,10 +109,6 @@
 
 .bd-links .btn[aria-expanded='true'] svg {
   transform: rotate(90deg);
-}
-
-.bd-links .btn:focus-visible {
-  outline: -webkit-focus-ring-color auto 1px;
 }
 
 .bd-links .active {

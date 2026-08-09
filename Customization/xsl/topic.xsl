@@ -835,7 +835,7 @@
   <xsl:attribute-set name="toc">
     <xsl:attribute name="role">navigation</xsl:attribute>
     <xsl:attribute name="id">bs-sidebar-nav</xsl:attribute>
-    <xsl:attribute name="class">d-flex align-items-start flex-column h-100 overflow-y-auto</xsl:attribute>
+    <xsl:attribute name="class">d-flex align-items-start flex-column h-100</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="menubar-toc">

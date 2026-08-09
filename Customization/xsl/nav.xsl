@@ -735,13 +735,13 @@
           <xsl:choose>
             <xsl:when test="normalize-space(@href)">
               <div>
-                <xsl:attribute name="class" select="'d-flex flex-row ps-0'"/>
+                <xsl:attribute name="class" select="'d-flex'"/>
                 <xsl:if test="exists($children)">
                   <xsl:attribute name="id" select="concat('menu-collapse-trigger-',$id)"/>
                   <!-- ↓ Add Toggle without text ↓ -->
                   <button data-bs-toggle="collapse">
                     <xsl:attribute name="class">
-                      <xsl:text>btn btn-sm d-inline-flex align-items-center p-0 border-0</xsl:text>
+                      <xsl:text>btn btn-sm p-0 border-0</xsl:text>
                       <xsl:if test="$show-menu='show'">
                         <xsl:text> active</xsl:text>
                       </xsl:if>
@@ -770,7 +770,7 @@
                   <xsl:call-template name="nav-attributes">
                     <xsl:with-param name="pathFromMaplist" select="$pathFromMaplist"/>
                     <xsl:with-param name="class">
-                      <xsl:text>d-inline-flex align-items-center flex-shrink-1 </xsl:text>
+                      <xsl:text>d-inline-flex align-items-center </xsl:text>
                       <xsl:choose>
                         <xsl:when test="exists($children)"/>
                         <xsl:when test="count(ancestor::*/@href) eq 0"/>
@@ -788,10 +788,10 @@
             </xsl:when>
             <xsl:otherwise>
               <!-- ↓ Add Toggle with title text ↓ -->
-              <div class="d-flex flex-row ps-0">
+              <div class="d-flex">
                 <button data-bs-toggle="collapse">
                   <xsl:attribute name="class">
-                    <xsl:text>btn btn-sm d-inline-flex align-items-center p-0 border-0</xsl:text>
+                    <xsl:text>btn btn-sm p-0 border-0</xsl:text>
                     <xsl:if test="$show-menu='show'">
                       <xsl:text> active</xsl:text>
                     </xsl:if>
@@ -814,7 +814,7 @@
                 </button>
                 <span data-bs-toggle="collapse">
                   <xsl:attribute name="class">
-                    <xsl:text>d-inline-flex align-items-center flex-shrink-1 ps-2</xsl:text>
+                    <xsl:text>d-inline-flex align-items-center ps-2</xsl:text>
                     <xsl:if test="$show-menu='show'">
                       <xsl:text> active</xsl:text>
                     </xsl:if>

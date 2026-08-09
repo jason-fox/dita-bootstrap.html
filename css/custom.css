@@ -14,13 +14,13 @@
 :root,
 [data-bs-theme='light'] {
     /* MDB Modern Color Palette */
-    --bs-primary-base: #3B71CA;
-    --bs-secondary-base: #9FA6B2;
-    --bs-success-base: #14A44D;
-    --bs-info-base: #54B4D3;
-    --bs-warning-base: #E4A11B;
-    --bs-danger-base: #DC4C64;
-    --bs-inverse-base: #332D2D;
+    --bs-primary-base: #3b71ca;
+    --bs-secondary-base: #9fa6b2;
+    --bs-success-base: #14a44d;
+    --bs-info-base: #54b4d3;
+    --bs-warning-base: #e4a11b;
+    --bs-danger-base: #dc4c64;
+    --bs-inverse-base: #332d2d;
 
     /* Mapping Standard Bootstrap Color Names to MDB */
     --bs-blue-500: var(--bs-primary-base);

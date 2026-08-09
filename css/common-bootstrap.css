@@ -6,7 +6,7 @@
 .list-group-item.active,
 .nav-link.active,
 [data-bs-theme='dark'] {
-  --dita-violet: #cc99cd;
+  --dita-violet: color-mix(in oklch, var(--bs-purple-400), var(--bs-white) 30%);
 }
 
 .list-group-item {
@@ -40,7 +40,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --dita-violet: #cc99cd;
+    --dita-violet: color-mix(in oklch, var(--bs-purple-400), var(--bs-white) 30%);
   }
 
   [data-bs-theme='light'] {
@@ -118,11 +118,6 @@
 
 [type='search']::placeholder {
   color: color-mix(in oklch, var(--bs-fg-body) 35%, transparent);
-}
-
-.search-box:hover,
-.search-box:focus-visible {
-  outline: -webkit-focus-ring-color auto 1px;
 }
 
 .note {
