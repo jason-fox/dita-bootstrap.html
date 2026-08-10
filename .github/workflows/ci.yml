@@ -6,6 +6,7 @@ name: CI
       - develop
       - v5
       - v6
+      - css
   workflow_dispatch:
 
 jobs:
@@ -31,6 +32,7 @@ jobs:
       # 1. Resolve Plugin URLs dynamically with fallback
       - name: Resolve Plugin URLs 🔗
         id: plugins
+        if: github.ref_name != 'css'
         run: |
           owner="${{ github.repository_owner }}"
           ref="${{ github.ref_name }}"
@@ -66,6 +68,7 @@ jobs:
 
       # 2. Build Bootstrap using the resolved list
       - name: Build Bootstrap
+        if: github.ref_name != 'css'
         uses: dita-ot/dita-ot-action@4.4
         with:
           install: |
@@ -75,6 +78,15 @@ jobs:
             nodejs -v
           plugins: ${{ steps.plugins.outputs.list }}
           project: .github/dita-ot/html.xml
+
+      # 2b. The css branch skips the DITA-OT doc build entirely — it just carries
+      # static CSS files (e.g. a Bootswatch theme ported to v6 tokens) to publish
+      # at a stable URL for the theme switcher to reference.
+      - name: Copy CSS output
+        if: github.ref_name == 'css'
+        run: |
+          mkdir -p out/html
+          cp css/*.css out/html/
 
       # 3. Determine target folder dynamically based on current branch
       - name: Determine target folder 📁
@@ -99,3 +111,4 @@ jobs:
           clean-exclude: |
             v5
             v6
+            css
