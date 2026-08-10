@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url('https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/dist/css/bootstrap.min.css');
+/*
+ * United theme for Bootstrap v6
+ * Ported from Bootswatch United 5.3.2 (https://bootswatch.com/united/)
+ *
+ * Recolors v6's semantic token layer (--bs-{name}-base/-fg/-bg/-border/-contrast)
+ * with United's original palette. Component structure/behavior is left
+ * to v6's own defaults. Native mode is light; dark mode is a derived tint.
+ * Generated — not hand-tuned per component.
+ */
+
+:root,
+[data-bs-theme='light'] {
+    --bs-primary-base: #e95420;
+    --bs-secondary-base: #aea79f;
+    --bs-success-base: #38b44a;
+    --bs-info-base: #17a2b8;
+    --bs-warning-base: #efb73e;
+    --bs-danger-base: #df382c;
+
+    --bs-primary-bg: var(--bs-primary-base);
+    --bs-primary-fg: var(--bs-primary-base);
+    --bs-primary-border: var(--bs-primary-base);
+    --bs-primary-contrast: #fff;
+
+    --bs-secondary-bg: var(--bs-secondary-base);
+    --bs-secondary-fg: var(--bs-secondary-base);
+    --bs-secondary-border: var(--bs-secondary-base);
+    --bs-secondary-contrast: #fff;
+
+    --bs-success-bg: var(--bs-success-base);
+    --bs-success-fg: var(--bs-success-base);
+    --bs-success-border: var(--bs-success-base);
+    --bs-success-contrast: #fff;
+
+    --bs-info-bg: var(--bs-info-base);
+    --bs-info-fg: var(--bs-info-base);
+    --bs-info-border: var(--bs-info-base);
+    --bs-info-contrast: #fff;
+
+    --bs-warning-bg: var(--bs-warning-base);
+    --bs-warning-fg: var(--bs-warning-base);
+    --bs-warning-border: var(--bs-warning-base);
+    --bs-warning-contrast: #fff;
+
+    --bs-danger-bg: var(--bs-danger-base);
+    --bs-danger-fg: var(--bs-danger-base);
+    --bs-danger-border: var(--bs-danger-base);
+    --bs-danger-contrast: #fff;
+    --bs-bg-body: #fff;
+    --bs-fg-body: #333333;
+    --bs-body-color: #333333;
+}
+
+[data-bs-theme='dark'] {
+    --bs-primary-base: #f1906e;
+    --bs-secondary-base: #cac6c1;
+    --bs-success-base: #7ece89;
+    --bs-info-base: #68c3d1;
+    --bs-warning-base: #f5d082;
+    --bs-danger-base: #ea7e76;
+
+    --bs-primary-bg: var(--bs-primary-base);
+    --bs-primary-fg: var(--bs-primary-base);
+    --bs-primary-border: var(--bs-primary-base);
+    --bs-primary-contrast: #fff;
+
+    --bs-secondary-bg: var(--bs-secondary-base);
+    --bs-secondary-fg: var(--bs-secondary-base);
+    --bs-secondary-border: var(--bs-secondary-base);
+    --bs-secondary-contrast: #000;
+
+    --bs-success-bg: var(--bs-success-base);
+    --bs-success-fg: var(--bs-success-base);
+    --bs-success-border: var(--bs-success-base);
+    --bs-success-contrast: #fff;
+
+    --bs-info-bg: var(--bs-info-base);
+    --bs-info-fg: var(--bs-info-base);
+    --bs-info-border: var(--bs-info-base);
+    --bs-info-contrast: #fff;
+
+    --bs-warning-bg: var(--bs-warning-base);
+    --bs-warning-fg: var(--bs-warning-base);
+    --bs-warning-border: var(--bs-warning-base);
+    --bs-warning-contrast: #000;
+
+    --bs-danger-bg: var(--bs-danger-base);
+    --bs-danger-fg: var(--bs-danger-base);
+    --bs-danger-border: var(--bs-danger-base);
+    --bs-danger-contrast: #fff;
+    --bs-bg-body: #121212;
+    --bs-fg-body: #eee;
+    --bs-body-color: #eee;
+
+    background-color: var(--bs-bg-body);
+    color: var(--bs-fg-body);
+}
+
+body {
+    background-color: var(--bs-bg-body, #fff);
+    color: var(--bs-fg-body, #333333);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--bs-primary-base);
+}
+
+[data-bs-theme='dark'] h1,
+[data-bs-theme='dark'] h2,
+[data-bs-theme='dark'] h3,
+[data-bs-theme='dark'] h4,
+[data-bs-theme='dark'] h5,
+[data-bs-theme='dark'] h6 {
+    color: #f1906e;
+}
+
+.navbar {
+    background-color: var(--bs-primary-base) !important;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #fff;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #fff;
+    background-color: var(--bs-primary-base);
+}

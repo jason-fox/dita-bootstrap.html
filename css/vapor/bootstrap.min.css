@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url('https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/dist/css/bootstrap.min.css');
+/*
+ * Vapor theme for Bootstrap v6
+ * Ported from Bootswatch Vapor 5.3.2 (https://bootswatch.com/vapor/)
+ *
+ * Recolors v6's semantic token layer (--bs-{name}-base/-fg/-bg/-border/-contrast)
+ * with Vapor's original palette. Component structure/behavior is left
+ * to v6's own defaults. Native mode is dark; light mode is a derived tint.
+ * Generated — not hand-tuned per component.
+ */
+
+:root,
+[data-bs-theme='light'] {
+    --bs-primary-base: #59359a;
+    --bs-secondary-base: #bb2e93;
+    --bs-success-base: #30c267;
+    --bs-info-base: #1682c5;
+    --bs-warning-base: #cc9a06;
+    --bs-danger-base: #b63d44;
+
+    --bs-primary-bg: var(--bs-primary-base);
+    --bs-primary-fg: var(--bs-primary-base);
+    --bs-primary-border: var(--bs-primary-base);
+    --bs-primary-contrast: #fff;
+
+    --bs-secondary-bg: var(--bs-secondary-base);
+    --bs-secondary-fg: var(--bs-secondary-base);
+    --bs-secondary-border: var(--bs-secondary-base);
+    --bs-secondary-contrast: #fff;
+
+    --bs-success-bg: var(--bs-success-base);
+    --bs-success-fg: var(--bs-success-base);
+    --bs-success-border: var(--bs-success-base);
+    --bs-success-contrast: #fff;
+
+    --bs-info-bg: var(--bs-info-base);
+    --bs-info-fg: var(--bs-info-base);
+    --bs-info-border: var(--bs-info-base);
+    --bs-info-contrast: #fff;
+
+    --bs-warning-bg: var(--bs-warning-base);
+    --bs-warning-fg: var(--bs-warning-base);
+    --bs-warning-border: var(--bs-warning-base);
+    --bs-warning-contrast: #fff;
+
+    --bs-danger-bg: var(--bs-danger-base);
+    --bs-danger-fg: var(--bs-danger-base);
+    --bs-danger-border: var(--bs-danger-base);
+    --bs-danger-contrast: #fff;
+    --bs-bg-body: #fff;
+    --bs-fg-body: #212529;
+    --bs-body-color: #212529;
+}
+
+[data-bs-theme='dark'] {
+    --bs-primary-base: #6f42c1;
+    --bs-secondary-base: #ea39b8;
+    --bs-success-base: #3cf281;
+    --bs-info-base: #1ba2f6;
+    --bs-warning-base: #ffc107;
+    --bs-danger-base: #e44c55;
+
+    --bs-primary-bg: var(--bs-primary-base);
+    --bs-primary-fg: var(--bs-primary-base);
+    --bs-primary-border: var(--bs-primary-base);
+    --bs-primary-contrast: #fff;
+
+    --bs-secondary-bg: var(--bs-secondary-base);
+    --bs-secondary-fg: var(--bs-secondary-base);
+    --bs-secondary-border: var(--bs-secondary-base);
+    --bs-secondary-contrast: #fff;
+
+    --bs-success-bg: var(--bs-success-base);
+    --bs-success-fg: var(--bs-success-base);
+    --bs-success-border: var(--bs-success-base);
+    --bs-success-contrast: #fff;
+
+    --bs-info-bg: var(--bs-info-base);
+    --bs-info-fg: var(--bs-info-base);
+    --bs-info-border: var(--bs-info-base);
+    --bs-info-contrast: #fff;
+
+    --bs-warning-bg: var(--bs-warning-base);
+    --bs-warning-fg: var(--bs-warning-base);
+    --bs-warning-border: var(--bs-warning-base);
+    --bs-warning-contrast: #fff;
+
+    --bs-danger-bg: var(--bs-danger-base);
+    --bs-danger-fg: var(--bs-danger-base);
+    --bs-danger-border: var(--bs-danger-base);
+    --bs-danger-contrast: #fff;
+    --bs-bg-body: #1a0933;
+    --bs-fg-body: #32fbe2;
+    --bs-body-color: #32fbe2;
+
+    background-color: var(--bs-bg-body);
+    color: var(--bs-fg-body);
+}
+
+body {
+    background-color: var(--bs-bg-body, #fff);
+    color: var(--bs-fg-body, #212529);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--bs-primary-base);
+}
+
+[data-bs-theme='dark'] h1,
+[data-bs-theme='dark'] h2,
+[data-bs-theme='dark'] h3,
+[data-bs-theme='dark'] h4,
+[data-bs-theme='dark'] h5,
+[data-bs-theme='dark'] h6 {
+    color: #6f42c1;
+}
+
+.navbar {
+    background-color: var(--bs-primary-base) !important;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #fff;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #fff;
+    background-color: var(--bs-primary-base);
+}
