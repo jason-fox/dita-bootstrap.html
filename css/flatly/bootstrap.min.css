@@ -5,16 +5,18 @@
  * Flatly theme for Bootstrap v6
  * Ported from Bootswatch Flatly 5.3.8 (https://bootswatch.com/flatly/)
  *
- * Recolors v6's semantic token layer (--bs-{name}-base/-fg/-bg/-border/-contrast)
- * with Flatly's original palette, plus its font stack, hue-500
- * palette (for consumers like Prism.js that key off raw hues), and
- * border-radius signature where the theme defines one.
- * Native mode is light; dark mode is a derived tint.
+ * Recolors v6's semantic token layer (--bs-{name}-base/-fg/-bg/-border/-contrast,
+ * plus the -bg-subtle/-bg-muted/-fg-emphasis/-focus-ring tier used by
+ * .alert-* and .theme-* soft variants) with Flatly's original palette,
+ * plus its font stack, hue-500 palette (for consumers like Prism.js that key
+ * off raw hues), and border-radius signature where the theme defines one.
+ * Applies unconditionally on :root — Bootswatch themes don't participate in
+ * the separate data-bs-theme light/dark toggle (verified against Bootswatch's
+ * own compiled CSS: no mode-scoping anywhere).
  * Generated — not hand-tuned per component.
  */
 
-:root,
-[data-bs-theme='light'] {
+:root {
     --bs-primary-base: #2c3e50;
     --bs-secondary-base: #95a5a6;
     --bs-success-base: #18bc9c;
@@ -26,35 +28,68 @@
     --bs-primary-fg: var(--bs-primary-base);
     --bs-primary-border: var(--bs-primary-base);
     --bs-primary-contrast: #fff;
+    --bs-primary-bg-subtle: color-mix(in srgb, var(--bs-primary-base) 15%, white);
+    --bs-primary-bg-muted: color-mix(in srgb, var(--bs-primary-base) 30%, white);
+    --bs-primary-fg-emphasis: color-mix(in srgb, var(--bs-primary-base) 65%, black);
+    --bs-primary-focus-ring: color-mix(in oklch, var(--bs-primary-base) 50%, var(--bs-bg-body));
 
     --bs-secondary-bg: var(--bs-secondary-base);
     --bs-secondary-fg: var(--bs-secondary-base);
     --bs-secondary-border: var(--bs-secondary-base);
     --bs-secondary-contrast: #fff;
+    --bs-secondary-bg-subtle: color-mix(in srgb, var(--bs-secondary-base) 15%, white);
+    --bs-secondary-bg-muted: color-mix(in srgb, var(--bs-secondary-base) 30%, white);
+    --bs-secondary-fg-emphasis: color-mix(in srgb, var(--bs-secondary-base) 65%, black);
+    --bs-secondary-focus-ring: color-mix(in oklch, var(--bs-secondary-base) 50%, var(--bs-bg-body));
 
     --bs-success-bg: var(--bs-success-base);
     --bs-success-fg: var(--bs-success-base);
     --bs-success-border: var(--bs-success-base);
     --bs-success-contrast: #fff;
+    --bs-success-bg-subtle: color-mix(in srgb, var(--bs-success-base) 15%, white);
+    --bs-success-bg-muted: color-mix(in srgb, var(--bs-success-base) 30%, white);
+    --bs-success-fg-emphasis: color-mix(in srgb, var(--bs-success-base) 65%, black);
+    --bs-success-focus-ring: color-mix(in oklch, var(--bs-success-base) 50%, var(--bs-bg-body));
 
     --bs-info-bg: var(--bs-info-base);
     --bs-info-fg: var(--bs-info-base);
     --bs-info-border: var(--bs-info-base);
     --bs-info-contrast: #fff;
+    --bs-info-bg-subtle: color-mix(in srgb, var(--bs-info-base) 15%, white);
+    --bs-info-bg-muted: color-mix(in srgb, var(--bs-info-base) 30%, white);
+    --bs-info-fg-emphasis: color-mix(in srgb, var(--bs-info-base) 65%, black);
+    --bs-info-focus-ring: color-mix(in oklch, var(--bs-info-base) 50%, var(--bs-bg-body));
 
     --bs-warning-bg: var(--bs-warning-base);
     --bs-warning-fg: var(--bs-warning-base);
     --bs-warning-border: var(--bs-warning-base);
     --bs-warning-contrast: #fff;
+    --bs-warning-bg-subtle: color-mix(in srgb, var(--bs-warning-base) 15%, white);
+    --bs-warning-bg-muted: color-mix(in srgb, var(--bs-warning-base) 30%, white);
+    --bs-warning-fg-emphasis: color-mix(in srgb, var(--bs-warning-base) 65%, black);
+    --bs-warning-focus-ring: color-mix(in oklch, var(--bs-warning-base) 50%, var(--bs-bg-body));
 
     --bs-danger-bg: var(--bs-danger-base);
     --bs-danger-fg: var(--bs-danger-base);
     --bs-danger-border: var(--bs-danger-base);
     --bs-danger-contrast: #fff;
+    --bs-danger-bg-subtle: color-mix(in srgb, var(--bs-danger-base) 15%, white);
+    --bs-danger-bg-muted: color-mix(in srgb, var(--bs-danger-base) 30%, white);
+    --bs-danger-fg-emphasis: color-mix(in srgb, var(--bs-danger-base) 65%, black);
+    --bs-danger-focus-ring: color-mix(in oklch, var(--bs-danger-base) 50%, var(--bs-bg-body));
     --bs-bg-body: #fff;
     --bs-fg-body: #212529;
-    --bs-body-color: #212529;
-    --bs-headings-color: #2c3e50;
+    --bs-heading-color: #2c3e50;
+
+    /* Navbar: v6's .navbar already reads these tokens natively
+       (background-color:var(--bs-navbar-bg,var(--bs-bg-body)) etc.) —
+       setting them here avoids fighting the cascade with !important. */
+    --bs-navbar-bg: var(--bs-primary-base);
+    --bs-navbar-color: color-mix(in srgb, #fff 80%, transparent);
+    --bs-navbar-hover-color: #fff;
+    --bs-navbar-active-color: #fff;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
     --bs-blue-500: #2c3e50;
     --bs-indigo-500: #6610f2;
     --bs-purple-500: #6f42c1;
@@ -69,79 +104,9 @@
     --bs-body-font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-[data-bs-theme='dark'] {
-    --bs-primary-base: #76828d;
-    --bs-secondary-base: #bac5c5;
-    --bs-success-base: #69d3bf;
-    --bs-info-base: #7bbce8;
-    --bs-warning-base: #f7bf65;
-    --bs-danger-base: #ef8b80;
-
-    --bs-primary-bg: var(--bs-primary-base);
-    --bs-primary-fg: var(--bs-primary-base);
-    --bs-primary-border: var(--bs-primary-base);
-    --bs-primary-contrast: #fff;
-
-    --bs-secondary-bg: var(--bs-secondary-base);
-    --bs-secondary-fg: var(--bs-secondary-base);
-    --bs-secondary-border: var(--bs-secondary-base);
-    --bs-secondary-contrast: #000;
-
-    --bs-success-bg: var(--bs-success-base);
-    --bs-success-fg: var(--bs-success-base);
-    --bs-success-border: var(--bs-success-base);
-    --bs-success-contrast: #000;
-
-    --bs-info-bg: var(--bs-info-base);
-    --bs-info-fg: var(--bs-info-base);
-    --bs-info-border: var(--bs-info-base);
-    --bs-info-contrast: #fff;
-
-    --bs-warning-bg: var(--bs-warning-base);
-    --bs-warning-fg: var(--bs-warning-base);
-    --bs-warning-border: var(--bs-warning-base);
-    --bs-warning-contrast: #000;
-
-    --bs-danger-bg: var(--bs-danger-base);
-    --bs-danger-fg: var(--bs-danger-base);
-    --bs-danger-border: var(--bs-danger-base);
-    --bs-danger-contrast: #fff;
-    --bs-bg-body: #121212;
-    --bs-fg-body: #eee;
-    --bs-body-color: #eee;
-    --bs-headings-color: #76828d;
-
-    background-color: var(--bs-bg-body);
-    color: var(--bs-fg-body);
-}
-
-body {
-    background-color: var(--bs-bg-body, #fff);
-    color: var(--bs-fg-body, #212529);
-    font-family: var(--bs-body-font-family);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--bs-headings-color);
-    
-}
-
-.navbar {
-    background-color: var(--bs-primary-base) !important;
-}
-
-.navbar .nav-link,
-.navbar-brand {
-    color: color-mix(in srgb, var(--bs-primary-contrast) 80%, transparent);
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link:focus,
-.navbar-brand:hover,
-.navbar-brand:focus {
-    color: var(--bs-primary-contrast);
-}
-
+/* v6 has no native .dropdown-item styling (superseded by .menu/.menu-item),
+   but the theme-switcher's own markup still uses .dropdown-item — style it
+   directly since there's no token to hook into. */
 .dropdown-item:hover,
 .dropdown-item:focus {
     color: var(--bs-primary-contrast);
