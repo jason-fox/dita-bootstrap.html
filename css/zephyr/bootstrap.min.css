@@ -1,12 +1,15 @@
 @charset "UTF-8";
 @import url('https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 /*
  * Zephyr theme for Bootstrap v6
- * Ported from Bootswatch Zephyr 5.3.2 (https://bootswatch.com/zephyr/)
+ * Ported from Bootswatch Zephyr 5.3.8 (https://bootswatch.com/zephyr/)
  *
  * Recolors v6's semantic token layer (--bs-{name}-base/-fg/-bg/-border/-contrast)
- * with Zephyr's original palette. Component structure/behavior is left
- * to v6's own defaults. Native mode is light; dark mode is a derived tint.
+ * with Zephyr's original palette, plus its font stack, hue-500
+ * palette (for consumers like Prism.js that key off raw hues), and
+ * border-radius signature where the theme defines one.
+ * Native mode is light; dark mode is a derived tint.
  * Generated — not hand-tuned per component.
  */
 
@@ -51,6 +54,19 @@
     --bs-bg-body: #fff;
     --bs-fg-body: #495057;
     --bs-body-color: #495057;
+    --bs-headings-color: #3459e6;
+    --bs-blue-500: #3459e6;
+    --bs-indigo-500: #6610f2;
+    --bs-purple-500: #6f42c1;
+    --bs-pink-500: #d63384;
+    --bs-red-500: #da292e;
+    --bs-orange-500: #f8765f;
+    --bs-yellow-500: #f4bd61;
+    --bs-green-500: #2fb380;
+    --bs-teal-500: #20c997;
+    --bs-cyan-500: #287bb5;
+    --bs-gray-500: #adb5bd;
+    --bs-body-font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 [data-bs-theme='dark'] {
@@ -93,6 +109,7 @@
     --bs-bg-body: #121212;
     --bs-fg-body: #eee;
     --bs-body-color: #eee;
+    --bs-headings-color: #7b93ef;
 
     background-color: var(--bs-bg-body);
     color: var(--bs-fg-body);
@@ -101,19 +118,12 @@
 body {
     background-color: var(--bs-bg-body, #fff);
     color: var(--bs-fg-body, #495057);
+    font-family: var(--bs-body-font-family);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--bs-primary-base);
-}
-
-[data-bs-theme='dark'] h1,
-[data-bs-theme='dark'] h2,
-[data-bs-theme='dark'] h3,
-[data-bs-theme='dark'] h4,
-[data-bs-theme='dark'] h5,
-[data-bs-theme='dark'] h6 {
-    color: #7b93ef;
+    color: var(--bs-headings-color);
+    
 }
 
 .navbar {
@@ -122,18 +132,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .nav-link,
 .navbar-brand {
-    color: rgba(255, 255, 255, 0.8);
+    color: color-mix(in srgb, var(--bs-primary-contrast) 80%, transparent);
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus,
 .navbar-brand:hover,
 .navbar-brand:focus {
-    color: #fff;
+    color: var(--bs-primary-contrast);
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    color: #fff;
+    color: var(--bs-primary-contrast);
     background-color: var(--bs-primary-base);
 }
