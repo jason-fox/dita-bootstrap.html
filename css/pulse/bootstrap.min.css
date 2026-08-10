@@ -2,11 +2,13 @@
 @import url('https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/dist/css/bootstrap.min.css');
 /*
  * Pulse theme for Bootstrap v6
- * Ported from Bootswatch Pulse 5.3.2 (https://bootswatch.com/pulse/)
+ * Ported from Bootswatch Pulse 5.3.8 (https://bootswatch.com/pulse/)
  *
  * Recolors v6's semantic token layer (--bs-{name}-base/-fg/-bg/-border/-contrast)
- * with Pulse's original palette. Component structure/behavior is left
- * to v6's own defaults. Native mode is light; dark mode is a derived tint.
+ * with Pulse's original palette, plus its font stack, hue-500
+ * palette (for consumers like Prism.js that key off raw hues), and
+ * border-radius signature where the theme defines one.
+ * Native mode is light; dark mode is a derived tint.
  * Generated — not hand-tuned per component.
  */
 
@@ -51,6 +53,21 @@
     --bs-bg-body: #fff;
     --bs-fg-body: #444444;
     --bs-body-color: #444444;
+    --bs-headings-color: #593196;
+    --bs-blue-500: #007bff;
+    --bs-indigo-500: #6610f2;
+    --bs-purple-500: #593196;
+    --bs-pink-500: #e83e8c;
+    --bs-red-500: #fc3939;
+    --bs-orange-500: #fd7e14;
+    --bs-yellow-500: #efa31d;
+    --bs-green-500: #13b955;
+    --bs-teal-500: #20c997;
+    --bs-cyan-500: #009cdc;
+    --bs-gray-500: #adb5bd;
+    --bs-border-radius: 0;
+    --bs-border-radius-sm: 0;
+    --bs-border-radius-lg: 0;
 }
 
 [data-bs-theme='dark'] {
@@ -93,6 +110,7 @@
     --bs-bg-body: #121212;
     --bs-fg-body: #eee;
     --bs-body-color: #eee;
+    --bs-headings-color: #9379bb;
 
     background-color: var(--bs-bg-body);
     color: var(--bs-fg-body);
@@ -101,19 +119,12 @@
 body {
     background-color: var(--bs-bg-body, #fff);
     color: var(--bs-fg-body, #444444);
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--bs-primary-base);
-}
-
-[data-bs-theme='dark'] h1,
-[data-bs-theme='dark'] h2,
-[data-bs-theme='dark'] h3,
-[data-bs-theme='dark'] h4,
-[data-bs-theme='dark'] h5,
-[data-bs-theme='dark'] h6 {
-    color: #9379bb;
+    color: var(--bs-headings-color);
+    
 }
 
 .navbar {
@@ -122,18 +133,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .nav-link,
 .navbar-brand {
-    color: rgba(255, 255, 255, 0.8);
+    color: color-mix(in srgb, var(--bs-primary-contrast) 80%, transparent);
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus,
 .navbar-brand:hover,
 .navbar-brand:focus {
-    color: #fff;
+    color: var(--bs-primary-contrast);
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    color: #fff;
+    color: var(--bs-primary-contrast);
     background-color: var(--bs-primary-base);
 }
