@@ -32,7 +32,7 @@
         of the eight required contextual classes (e.g., set <xmlatt>outputclass</xmlatt> to
           <codeph>alert theme-success</codeph>).</p>
     </section>
-    <example>
+    <bodydiv outputclass="p-3 border">
       <section outputclass="alert theme-primary">A simple primary alert — check it out!</section>
       <section outputclass="alert theme-secondary">A simple secondary alert — check it out!</section>
       <section outputclass="alert theme-success">A simple success alert — check it out!</section>
@@ -41,7 +41,7 @@
       <section outputclass="alert theme-info">A simple info alert — check it out!</section>
       <section outputclass="alert theme-accent">A simple accent alert — check it out!</section>
       <section outputclass="alert theme-inverse">A simple inverse alert — check it out!</section>
-    </example>
+    </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -103,7 +103,7 @@
       <title>Additional content</title>
       <p>Alerts can also contain additional HTML elements like headings, paragraphs, icons and links.</p>
     </section>
-    <example>
+    <bodydiv outputclass="p-3 border">
       <section id="well-done" outputclass="alert theme-success vstack">
         <title><ph outputclass="bi bi-emoji-smile pe-2"/>Well done!</title>
         <p>Aww yeah, you successfully read this important alert message. This example text with a
@@ -111,7 +111,7 @@
           with this kind of content.</p>
         <p>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
       </section>
-    </example>
+    </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>

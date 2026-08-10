@@ -55,13 +55,13 @@
       <p>Shadows can be applied to complex elements as follow:</p>
     </section>
 
-    <example>
+    <bodydiv outputclass="p-3 border">
       <section id="shadowed-card" outputclass="card bg-subtle-accent m-3 shadow-lg">
         <title>Shadowed Card</title>
         <p>This card has a large shadow.</p>
       </section>
       <section outputclass="alert theme-accent m-3 shadow-sm">Alert with small shadow</section>
-    </example>
+    </bodydiv>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>

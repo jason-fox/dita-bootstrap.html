@@ -29,13 +29,13 @@
           outputclass="btn-group"</xmlelement>
       </p>
     </section>
-    <example>
+    <bodydiv outputclass="p-3 border">
       <bodydiv outputclass="btn-group">
         <xref href="#" outputclass="btn theme-primary">Left</xref>
         <xref href="#" outputclass="btn theme-primary">Middle</xref>
         <xref href="#" outputclass="btn theme-primary">Right</xref>
       </bodydiv>
-    </example>
+    </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -57,13 +57,13 @@
     <section id="mixed-styles">
       <title>Mixed styles</title>
     </section>
-    <example deliveryTarget="html">
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <bodydiv outputclass="btn-group">
         <xref href="#" outputclass="btn theme-danger">Left</xref>
         <xref href="#" outputclass="btn theme-warning">Middle</xref>
         <xref href="#" outputclass="btn theme-success">Right</xref>
       </bodydiv>
-    </example>
+    </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -85,13 +85,13 @@
     <section id="outlined-styles">
       <title>Outlined styles</title>
     </section>
-    <example>
+    <bodydiv outputclass="p-3 border">
       <bodydiv outputclass="btn-group">
         <xref href="#" outputclass="btn-outline theme-primary">Left</xref>
         <xref href="#" outputclass="btn-outline theme-primary">Middle</xref>
         <xref href="#" outputclass="btn-outline theme-primary">Right</xref>
       </bodydiv>
-    </example>
+    </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -114,7 +114,7 @@
       <title>Button toolbar</title>
       <p>Combine sets of button groups into button toolbars for more complex components.</p>
     </section>
-    <example>
+    <bodydiv outputclass="p-3 border">
       <bodydiv outputclass="btn-toolbar">
         <bodydiv outputclass="me-2 btn-group">
           <xref href="#" outputclass="btn theme-primary">1</xref>
@@ -131,7 +131,7 @@
           <xref href="#" outputclass="btn theme-info">8</xref>
         </bodydiv>
       </bodydiv>
-    </example>
+    </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -176,13 +176,13 @@
       <title>Vertical variation</title>
       <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
     </section>
-    <example>
+    <bodydiv outputclass="p-3 border">
       <bodydiv outputclass="btn-group-vertical">
         <xref href="#" outputclass="btn theme-primary">Top</xref>
         <xref href="#" outputclass="btn theme-primary">Middle</xref>
         <xref href="#" outputclass="btn theme-primary">Bottom</xref>
       </bodydiv>
-    </example>
+    </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>

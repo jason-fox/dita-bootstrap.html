@@ -65,7 +65,7 @@
       >Decoration attributes can be applied to many base DITA elements to add background color and contrasting text.</p>
     </section>
 
-    <example>
+    <bodydiv outputclass="p-3 border">
       <section id="section-decoration" outputclass="mt-2 bg-primary fg-contrast-primary">
         <title>Section Decoration</title>
         <p>This section has a primary color background.</p>
@@ -115,7 +115,7 @@
       <note outputclass="mt-2 theme-primary">
         This is a note with a primary color theme.
       </note>
-    </example>
+    </bodydiv>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
@@ -224,7 +224,7 @@
       <p>Many specialized components also support the <xmlatt>color</xmlatt> attribute for consistent theming.</p>
     </section>
 
-    <example>
+    <bodydiv outputclass="p-3 border">
 
       <image scope="external" href="https://picsum.photos/100/100?a" outputclass="img-thumbnail bg-warning"/>
       <section id="card-title" outputclass="card theme-success mt-2 w-50">
@@ -256,7 +256,7 @@
           <image scope="external" href="https://picsum.photos/1200/600?c"/>
         </li>
       </ol>
-    </example>
+    </bodydiv>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
