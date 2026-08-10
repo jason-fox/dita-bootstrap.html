@@ -7,14 +7,6 @@
 
   const getStoredCss = () => localStorage.getItem('css-theme');
   const setStoredCss = css => localStorage.setItem('css-theme', css);
-  const DEFAULT_CSS = (() => {
-    for (const link of document.querySelectorAll('link')) {
-      if (/.*\.min\.css/.test(link.href)) {
-        return link.getAttribute('href');
-      }
-    }
-    return null;
-  })();
 
   const setCss = css => {
       if (css) {
@@ -79,21 +71,14 @@
     }
   };
 
-  const syncCss = () => {
-    let stored = getStoredCss();
+  window.addEventListener('DOMContentLoaded', () => {
+    const stored = getStoredCss();
     const isAvailable = stored && Array.from(document.querySelectorAll('[data-bs-css-href]'))
       .some(toggle => toggle.getAttribute('data-bs-css-href') === stored);
-    if (stored && !isAvailable) {
-      localStorage.removeItem('css-theme');
-      stored = null;
+    if (isAvailable) {
+      setCss(stored);
+      showActiveCss(stored);
     }
-    const css = stored || DEFAULT_CSS;
-    setCss(css);
-    showActiveCss(css);
-  };
-
-  window.addEventListener('DOMContentLoaded', () => {
-    syncCss();
     document.querySelectorAll('[data-bs-css-href]').forEach(toggle => {
       toggle.addEventListener('click', () => {
         const css = toggle.getAttribute('data-bs-css-href');
@@ -102,11 +87,5 @@
         showActiveCss(css, true);
       });
     });
-  });
-
-  window.addEventListener('pageshow', event => {
-    if (event.persisted) {
-      syncCss();
-    }
   });
 })();
