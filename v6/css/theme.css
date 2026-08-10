@@ -1,20 +1,11 @@
 /*
-  This sample applies the default Bootstrap 5 theme and any additional CSS overrides
+  This sample applies the default Bootstrap 6 theme and any additional CSS overrides
    ↓ For a custom look-and-feel, a generated Bootstrap theme could be added below ↓
 */
 
 /* ↑ End generated Bootstrap theme ↑ */
 
 /* ↓  Additional custom overrides  ↓ */
-
-/* Add Bootstrap’s own documentation example highlight */
-
-.bd-example {
-  position: relative;
-  padding: 1rem;
-  margin: 1rem -0.75rem 0;
-  border: solid #dee2e6 1px;
-}
 
 .custom-popover {
   --bs-popover-max-width: 200px;
