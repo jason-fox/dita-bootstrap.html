@@ -78,14 +78,12 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/brite/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/brite/"
-                    format="html"
-                    scope="external"
-                  ><option>brite</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/brite/"
+                  format="html"
+                  scope="external"
+                ><option>brite</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
@@ -95,27 +93,23 @@
                   scope="external"
                   href="https://bootswatch.com/cerulean/thumbnail.png"
                 />
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/cerulean/"
-                    format="html"
-                    scope="external"
-                  ><option>cerulean</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/cerulean/"
+                  format="html"
+                  scope="external"
+                ><option>cerulean</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/cosmo/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/cosmo/"
-                    format="html"
-                    scope="external"
-                  ><option>cosmo</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/cosmo/"
+                  format="html"
+                  scope="external"
+                ><option>cosmo</option></xref>
               </div>
             </div>
           </div>
@@ -125,40 +119,34 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/cyborg/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/cyborg/"
-                    format="html"
-                    scope="external"
-                  ><option>cyborg</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/cyborg/"
+                  format="html"
+                  scope="external"
+                ><option>cyborg</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/darkly/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/darkly/"
-                    format="html"
-                    scope="external"
-                  ><option>darkly</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/darkly/"
+                  format="html"
+                  scope="external"
+                ><option>darkly</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/flatly/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/flatly/"
-                    format="html"
-                    scope="external"
-                  ><option>flatly</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/flatly/"
+                  format="html"
+                  scope="external"
+                ><option>flatly</option></xref>
               </div>
             </div>
           </div>
@@ -168,40 +156,34 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/journal/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/journal/"
-                    format="html"
-                    scope="external"
-                  ><option>journal</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/journal/"
+                  format="html"
+                  scope="external"
+                ><option>journal</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/litera/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/litera/"
-                    format="html"
-                    scope="external"
-                  ><option>litera</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/litera/"
+                  format="html"
+                  scope="external"
+                ><option>litera</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/lumen/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/lumen/"
-                    format="html"
-                    scope="external"
-                  ><option>lumen</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/lumen/"
+                  format="html"
+                  scope="external"
+                ><option>lumen</option></xref>
               </div>
             </div>
           </div>
@@ -211,40 +193,34 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/lux/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/lux/"
-                    format="html"
-                    scope="external"
-                  ><option>lux</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/lux/"
+                  format="html"
+                  scope="external"
+                ><option>lux</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/materia/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/materia/"
-                    format="html"
-                    scope="external"
-                  ><option>materia</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/materia/"
+                  format="html"
+                  scope="external"
+                ><option>materia</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/minty/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/minty/"
-                    format="html"
-                    scope="external"
-                  ><option>minty</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/minty/"
+                  format="html"
+                  scope="external"
+                ><option>minty</option></xref>
               </div>
             </div>
           </div>
@@ -254,40 +230,34 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/morph/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/morph/"
-                    format="html"
-                    scope="external"
-                  ><option>morph</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/morph/"
+                  format="html"
+                  scope="external"
+                ><option>morph</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/pulse/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/pulse/"
-                    format="html"
-                    scope="external"
-                  ><option>pulse</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/pulse/"
+                  format="html"
+                  scope="external"
+                ><option>pulse</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/quartz/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/quartz/"
-                    format="html"
-                    scope="external"
-                  ><option>quartz</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/quartz/"
+                  format="html"
+                  scope="external"
+                ><option>quartz</option></xref>
               </div>
             </div>
           </div>
@@ -301,40 +271,34 @@
                   scope="external"
                   href="https://bootswatch.com/sandstone/thumbnail.png"
                 />
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/sandstone/"
-                    format="html"
-                    scope="external"
-                  ><option>sandstone</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/sandstone/"
+                  format="html"
+                  scope="external"
+                ><option>sandstone</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/simplex/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/simplex/"
-                    format="html"
-                    scope="external"
-                  ><option>simplex</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/simplex/"
+                  format="html"
+                  scope="external"
+                ><option>simplex</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/sketchy/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/sketchy/"
-                    format="html"
-                    scope="external"
-                  ><option>sketchy</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/sketchy/"
+                  format="html"
+                  scope="external"
+                ><option>sketchy</option></xref>
               </div>
             </div>
           </div>
@@ -344,27 +308,23 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/slate/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/slate/"
-                    format="html"
-                    scope="external"
-                  ><option>slate</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/slate/"
+                  format="html"
+                  scope="external"
+                ><option>slate</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/solar/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/solar/"
-                    format="html"
-                    scope="external"
-                  ><option>solar</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/solar/"
+                  format="html"
+                  scope="external"
+                ><option>solar</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
@@ -374,14 +334,12 @@
                   scope="external"
                   href="https://bootswatch.com/spacelab/thumbnail.png"
                 />
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/spacelab/"
-                    format="html"
-                    scope="external"
-                  ><option>spacelab</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/spacelab/"
+                  format="html"
+                  scope="external"
+                ><option>spacelab</option></xref>
               </div>
             </div>
           </div>
@@ -395,40 +353,34 @@
                   scope="external"
                   href="https://bootswatch.com/superhero/thumbnail.png"
                 />
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/superhero/"
-                    format="html"
-                    scope="external"
-                  ><option>superhero</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/superhero/"
+                  format="html"
+                  scope="external"
+                ><option>superhero</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/united/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/united/"
-                    format="html"
-                    scope="external"
-                  ><option>united</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/united/"
+                  format="html"
+                  scope="external"
+                ><option>united</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/vapor/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/vapor/"
-                    format="html"
-                    scope="external"
-                  ><option>vapor</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/vapor/"
+                  format="html"
+                  scope="external"
+                ><option>vapor</option></xref>
               </div>
             </div>
           </div>
@@ -438,14 +390,12 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/yeti/thumbnail.png"/>
-                <p outputclass="d-block w-100 text-center">
-                  <xref
-                    outputclass="link stretched-link text-decoration-none"
-                    href="https://bootswatch.com/yeti/"
-                    format="html"
-                    scope="external"
-                  ><option>yeti</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/yeti/"
+                  format="html"
+                  scope="external"
+                ><option>yeti</option></xref>
               </div>
             </div>
           </div>

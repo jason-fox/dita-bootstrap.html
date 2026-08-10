@@ -15,7 +15,9 @@
   <!-- https://getbootstrap.com/docs/5.3/components/card/ -->
 
   <xsl:template
-    match="*[contains(@class, ' bootstrap-d/card ')] | *[contains(@class,' topic/section ') and contains(@outputclass, 'card')]"
+    match="*[contains(@class, ' bootstrap-d/card ')]
+           | *[contains(@class,' topic/section ') and tokenize(@outputclass, '\s+') = 'card']
+           | *[contains(@class,' topic/div ') and tokenize(@outputclass, '\s+') = 'card']"
   >
     <xsl:variable name="images" select="*[contains(@class, ' topic/image ')]"/>
     <xsl:variable
@@ -90,7 +92,9 @@
   <xsl:template match="*[contains(@class, ' topic/image ')]" mode="get-output-class" priority="10">
     <xsl:variable
       name="card"
-      select="parent::*[contains(@class, ' bootstrap-d/card ') or (contains(@class,' topic/section ') and contains(@outputclass, 'card'))]"
+      select="parent::*[contains(@class, ' bootstrap-d/card ')
+                        or (contains(@class,' topic/section ') and tokenize(@outputclass, '\s+') = 'card')
+                        or (contains(@class,' topic/div ') and tokenize(@outputclass, '\s+') = 'card')]"
     />
     <xsl:if test="$card">
       <xsl:variable name="totalImages" select="count($card/*[contains(@class, ' topic/image ')])"/>
