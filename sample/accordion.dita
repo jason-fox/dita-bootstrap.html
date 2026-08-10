@@ -40,7 +40,7 @@
       <title>Example</title>
       <p>Click the accordions below to expand/collapse the accordion content.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <bodydiv outputclass="accordion">
         <section id="accordion1" outputclass="show">
           <title>Accordion Item #1</title>
@@ -67,7 +67,7 @@
             Bootstrap’s default variables.</p>
         </section>
       </bodydiv>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -146,7 +146,7 @@
         background-color, some borders, and some rounded corners to render accordions edge-to-edge with their parent
         container.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <bodydiv outputclass="accordion-flush">
         <section id="accordion4">
           <title>Accordion Item #1</title>
@@ -167,7 +167,7 @@
             to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</p>
         </section>
       </bodydiv>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -187,7 +187,7 @@
       <title>Always open</title>
       <p>Set <xmlatt>open="yes"</xmlatt> to make accordion items stay open when another item is opened.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <bodydiv outputclass="accordion-open">
         <section id="accordion7" outputclass="show">
           <title>Accordion Item #1</title>
@@ -214,7 +214,7 @@
             Bootstrap’s default variables.</p>
         </section>
       </bodydiv>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>

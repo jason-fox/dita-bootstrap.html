@@ -32,7 +32,7 @@
       <title>Borders</title>
       <p>Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <div outputclass="p-3">
         <ph outputclass="border p-3 border-accent">&#xA0;border&#xA0;</ph>&#xA0;
         <ph outputclass="border-top p-3 border-accent">&#xA0;border-top</ph>&#xA0;
@@ -40,7 +40,7 @@
         <ph outputclass="border-bottom p-3 border-accent">&#xA0;border-bottom</ph>&#xA0;
         <ph outputclass="border-start p-3 border-accent">&#xA0;border-start</ph>
       </div>
-    </bodydiv>
+    </example>
     <codeblock>&lt;ph outputclass="border"&gt;...&lt;/ph&gt;
 &lt;ph outputclass="border-top"&gt;...&lt;/ph&gt;
 &lt;ph outputclass="border-end"&gt;...&lt;/ph&gt;
@@ -53,7 +53,7 @@
         >rounded</xmlatt> attributes provide a semantic way to add borders and rounded corners.</p>
     </section>
 
-    <bodydiv outputclass="p-3 border">
+    <example>
       <section id="bordered-section" outputclass="p-2 border">
         <title>Bordered Section</title>
         <p>This section has a border.</p>
@@ -71,7 +71,7 @@
           <image scope="external" href="https://picsum.photos/600/400?2"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
@@ -116,7 +116,7 @@
         The <xmlatt>bordercolor</xmlatt> attribute can be used to set the color of the border.</p>
     </section>
 
-    <bodydiv outputclass="p-3 border">
+    <example>
       <div outputclass="mb-3">
         <ph outputclass="me-2 p-2 border border-1">Width 1</ph>
         <ph outputclass="me-2 p-2 border border-2">Width 2</ph>
@@ -124,7 +124,7 @@
         <ph outputclass="me-2 p-2 border border-4">Width 4</ph>
         <ph outputclass="me-2 p-2 border border-5">Width 5</ph>
       </div>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -144,14 +144,14 @@
       </section>
     </bodydiv>
 
-    <bodydiv outputclass="mt-3 p-3 border">
+    <example outputclass="mt-3">
       <div outputclass="mb-3">
         <ph outputclass="me-2 p-2 border-primary">Primary</ph>
         <ph outputclass="me-2 p-2 border-primary-subtle">Primary subtle</ph>
         <ph outputclass="me-2 p-2 border-success">Success</ph>
         <ph outputclass="me-2 p-2 border-danger">Danger</ph>
       </div>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -169,7 +169,7 @@
       </section>
     </bodydiv>
 
-    <bodydiv outputclass="mt-3 p-3 border">
+    <example outputclass="mt-3">
       <div outputclass="mb-3">
         <ph outputclass="me-2 p-2 border rounded-0">Rounded 0</ph>
         <ph outputclass="me-2 p-2 border rounded-1">Rounded 1</ph>
@@ -178,7 +178,7 @@
         <ph outputclass="me-2 p-2 border rounded-4">Rounded 4</ph>
         <ph outputclass="me-2 p-2 border rounded-5">Rounded 5</ph>
       </div>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -200,12 +200,12 @@
       </section>
     </bodydiv>
 
-    <bodydiv outputclass="mt-3 p-3 border">
+    <example outputclass="mt-3">
       <div outputclass="mb-3 pt-3">
         <ph outputclass="me-5 p-4 border border-info rounded-circle">Circle</ph>
         <ph outputclass="me-2 px-4 py-2 border border-warning rounded-pill">Pill</ph>
       </div>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -224,7 +224,7 @@
       <p>For DITA elements which support the <xmlatt>frame</xmlatt> attribute, such as <xmlelement>lines</xmlelement>
         and <xmlelement>codeblock</xmlelement>, additional frame borders are automatically added as shown:</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <p/>
       <codeblock outputclass="language-cpp" frame="sides">// Simple C++ program to display "Hello World"
 
@@ -282,7 +282,7 @@ and summer’s lease hath all too short a date:
         </tgroup>
       </table>
       <p/>
-    </bodydiv>
+    </example>
     <codeblock>&lt;codeblock frame="sides"&gt;...&lt;/codeblock&gt;
 &lt;lines frame="topbot" outputclass="..."&gt;...&lt;/lines&gt;
 &lt;table frame="all"&gt;...&lt;/table&gt;</codeblock>

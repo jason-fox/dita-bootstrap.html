@@ -47,14 +47,14 @@
         >sizing options.</xref>
       </p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <section id="card-title" outputclass="card">
         <title>Card Title</title>
         <image scope="external" href="https://picsum.photos/400/200?a"/>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
         <xref href="#" outputclass="btn-primary">Go Somewhere</xref>
       </section>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -81,7 +81,7 @@
           <codeph>card-link</codeph> to an <xmlelement>xref</xmlelement> tag.</p>
       <p>Subtitles are used by adding a <xmlelement>div</xmlelement> element.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <section id="card-title-1" outputclass="card">
         <title>Card Title</title>
         <div outputclass="h6">Card Subtitle</div>
@@ -89,7 +89,7 @@
         <xref outputclass="card-link" href="#">Card Link</xref>
         <xref outputclass="card-link" href="#">Another Link</xref>
       </section>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -118,7 +118,7 @@
         >card</xmlelement> places an image to the top of the card
       </p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <bodydiv outputclass="row">
         <bodydiv outputclass="col">
           <section outputclass="card">
@@ -127,7 +127,7 @@
           </section>
         </bodydiv>
       </bodydiv>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -150,7 +150,7 @@
         >card-header</xmlelement> and <xmlelement>card-footer</xmlelement> elements.
       </p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <section id="special-title-treatment" outputclass="card">
         <title>Special title treatment</title>
         <div outputclass="card-header">Featured</div>
@@ -158,7 +158,7 @@
         <xref href="#" outputclass="btn-primary">Go somewhere</xref>
         <div outputclass="card-footer">2 days ago</div>
       </section>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -185,14 +185,14 @@
       <p>A card can be colorized by adding a <xmlatt>color</xmlatt> attribute. This
         applies a contextual background color.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <section id="card-title-2" outputclass="card theme-success">
         <title>Card Title</title>
         <div outputclass="card-header">Success Card</div>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
         <xref href="#" outputclass="btn-primary">Go Somewhere</xref>
       </section>
-    </bodydiv>
+    </example>
     <codeblock>&lt;card color="success"&gt;
   &lt;title&gt;Card Title&lt;/title&gt;
   &lt;div outputclass="card-header"&gt;Success Card&lt;/div&gt;

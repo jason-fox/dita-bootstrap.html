@@ -120,6 +120,11 @@
     if:set="bootstrap.css.accessibility.link"
   />
   <param
+    name="BOOTSTRAP_CSS_EXAMPLE"
+    expression="${bootstrap.css.example}"
+    if:set="bootstrap.css.example"
+  />
+  <param
     name="BOOTSTRAP_CSS_FIGURE"
     expression="${bootstrap.css.figure}"
     if:set="bootstrap.css.figure"

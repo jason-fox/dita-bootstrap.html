@@ -27,7 +27,7 @@
         >auto</codeph>.</p>
     </section>
 
-    <bodydiv outputclass="p-3 border">
+    <example>
       <div outputclass="m-0 p-2 bg-primary fg-contrast-primary">Margin 0</div>
       <div outputclass="m-1 p-2 bg-secondary fg-contrast-secondary">Margin 1</div>
       <div outputclass="m-2 p-2 bg-success fg-contrast-success">Margin 2</div>
@@ -35,7 +35,7 @@
       <div outputclass="m-4 p-2 bg-warning fg-contrast-warning">Margin 4</div>
       <div outputclass="m-5 p-2 bg-info fg-contrast-info">Margin 5</div>
       <div outputclass="m-auto p-2 w-50 bg-accent fg-contrast-accent">Margin Auto</div>
-    </bodydiv>
+    </example>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
@@ -66,7 +66,7 @@
         >padding</xmlatt> attribute controls the internal spacing of an element, supporting values from 0 to 5.</p>
     </section>
 
-    <bodydiv outputclass="p-3 border">
+    <example>
       <div outputclass="p-0 bg-primary fg-contrast-primary">Padding 0</div>
       <div outputclass="m-1 p-1 bg-secondary"><div
           outputclass="bg-subtle-secondary fg-contrast-subtle-secondary w-100"
@@ -83,7 +83,7 @@
       <div outputclass="m-1 p-5 bg-info"><div
           outputclass="bg-subtle-info fg-contrast-subtle-info w-100"
         >Padding 5</div></div>
-    </bodydiv>
+    </example>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
@@ -121,7 +121,7 @@
       <p>Multiple values can be specified as a space-separated list.</p>
     </section>
 
-    <bodydiv outputclass="p-3 border">
+    <example>
       <div outputclass="mt-5 mb-0 bg-primary fg-contrast-primary">Margin Top 5, Bottom 0</div>
       <div outputclass="mx-3 bg-secondary fg-contrast-secondary">Margin Horizontal 3</div>
       <div outputclass="py-5 bg-success"><div
@@ -130,7 +130,7 @@
       <div outputclass="ps-3 pe-1 bg-danger"><div
           outputclass="bg-subtle-danger fg-contrast-subtle-danger w-100"
         >Padding Start 3, End 1</div></div>
-    </bodydiv>
+    </example>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>

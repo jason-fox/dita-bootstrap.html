@@ -174,6 +174,7 @@ The HTML output for the following DITA elements can be annotated with common Boo
 - `bootstrap.css.dd` – Common utility classes for DITA `<dd>` elements
 - `bootstrap.css.dl` – Common utility classes for DITA `<dl>` elements
 - `bootstrap.css.dt` – Common utility classes for DITA `<dt>` elements
+- `bootstrap.css.example` – Common utility classes for DITA `<example>` elements
 - `bootstrap.css.figure` – Common utility classes for DITA `<fig>` elements
 - `bootstrap.css.figure.caption` – Common utility classes for DITA figure titles
 - `bootstrap.css.figure.image` – Common utility classes for images within DITA`<fig>` elements

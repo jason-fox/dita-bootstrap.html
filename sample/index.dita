@@ -615,6 +615,7 @@
       <indexterm><parmname>--bootstrap.css.dt</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.dd</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.nav.parent</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.example</parmname></indexterm>
       <p>The HTML output for the following DITA elements can be annotated with common Bootstrap utility classes for
         <xref href="https://getbootstrap.com/docs/6.0/utilities/borders" format="html" scope="external">borders</xref>,
         <xref
@@ -730,6 +731,15 @@
           </pt>
           <pd>Common Bootstrap utility classes for DITA
             <xmlelement>dt</xmlelement> definition term elements
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.example</parmname>
+          </pt>
+          <pd>
+            Common Bootstrap utility classes for DITA
+            <xmlelement>example</xmlelement> elements
           </pd>
         </plentry>
         <plentry>

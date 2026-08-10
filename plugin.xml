@@ -213,6 +213,11 @@
       desc="Bootstrap classes for accessibility links"
     />
     <param
+      name="bootstrap.css.example"
+      type="string"
+      desc="Bootstrap classes for examples"
+    />
+    <param
       name="bootstrap.css.figure"
       type="string"
       desc="Bootstrap classes for figures"

@@ -26,12 +26,12 @@
         automatically added to prevent the shadow from being clipped by the parent container.</p>
     </section>
 
-    <bodydiv outputclass="p-3 border">
+    <example>
       <div outputclass="m-3 p-3 shadow-none border">No shadow</div>
       <div outputclass="m-3 p-3 shadow-sm border">Small shadow</div>
       <div outputclass="m-3 p-3 shadow border">Regular shadow</div>
       <div outputclass="m-3 p-3 shadow-lg border">Larger shadow</div>
-    </bodydiv>
+    </example>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
@@ -55,13 +55,13 @@
       <p>Shadows can be applied to complex elements as follow:</p>
     </section>
 
-    <bodydiv outputclass="p-3 border">
+    <example>
       <section id="shadowed-card" outputclass="card bg-subtle-accent m-3 shadow-lg">
         <title>Shadowed Card</title>
         <p>This card has a large shadow.</p>
       </section>
       <section outputclass="alert theme-accent m-3 shadow-sm">Alert with small shadow</section>
-    </bodydiv>
+    </example>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>

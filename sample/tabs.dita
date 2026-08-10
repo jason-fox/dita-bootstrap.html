@@ -31,7 +31,7 @@
           style="tabs"</xmlelement> element containing a series of <xmlelement>section</xmlelement> elements
       </p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <bodydiv outputclass="nav-tabs mt-3">
         <section id="home">
           <title>Home</title>
@@ -58,7 +58,7 @@
             Stinging like a bee I earned my stripes.</p>
         </section>
       </bodydiv>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -97,7 +97,7 @@
       </bodydiv>
     <p>The tabs plugin also works with pills using <xmlatt>style="pills"</xmlatt>
     </p>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <bodydiv outputclass="nav-pills mt-3">
         <section id="home-1">
           <title>Home</title>
@@ -124,7 +124,7 @@
             Stinging like a bee I earned my stripes.</p>
         </section>
       </bodydiv>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -163,7 +163,7 @@
       </bodydiv>
     <p>And with vertical pills using <xmlatt>style="vertical-pills"</xmlatt>
     </p>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <bodydiv outputclass="nav-pills-vertical mt-3">
         <section id="home-2">
           <title>Home</title>
@@ -190,7 +190,7 @@
             Stinging like a bee I earned my stripes.</p>
         </section>
       </bodydiv>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>

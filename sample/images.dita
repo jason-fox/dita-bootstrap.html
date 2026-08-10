@@ -31,9 +31,9 @@
           <codeph>max-width: 100%;</codeph> and <codeph>height: auto;</codeph> to the image so that it scales with the
         parent element.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <image scalefit="yes" scope="external" href="https://picsum.photos/1200/600?a"/>
-    </bodydiv>
+    </example>
         <codeblock>&lt;image scalefit="yes" href="..." /&gt;</codeblock>
     <section id="image-thumbnails">
       <title>Image thumbnails</title>
@@ -42,9 +42,9 @@
           utilities</xref>, you can use the specialized <xmlelement>thumbnail</xmlelement> element to give an image
         a rounded 1px border appearance.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <image scope="external" href="https://picsum.photos/100/100?a" outputclass="img-thumbnail"/>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -61,7 +61,7 @@
         and <xmlatt>outputclass="d-dark"</xmlatt> attributes on <xmlelement>image</xmlelement> elements
         to display different images when in <xref href="./dark-mode.dita">dark mode</xref>.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <fig>
         <image outputclass="d-auto img-thumbnail" scope="external" href="https://picsum.photos/id/730/300/200"/>
         <image
@@ -77,7 +77,7 @@
           deliveryTarget="html"
         />
       </fig>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -119,7 +119,7 @@
       different media. The <xmlatt>media</xmlatt> attribute defines the media query and/or
       <xmlatt>type</xmlatt> the image MIME type. The final <xmlelement>image</xmlelement> is the default.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <p>Change the width of the browser to view different images:</p>
       <div outputclass="d-picture">
         <image scope="external" href="https://picsum.photos/id/1/800/400" otherprops="media(min-width: 700px)"/>
@@ -128,7 +128,7 @@
         <image scope="external" href="https://picsum.photos/id/5/200/200.webp" otherprops="type(image/webp)"/>
         <image scope="external" href="https://picsum.photos/id/3/200/200"/>
       </div>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>

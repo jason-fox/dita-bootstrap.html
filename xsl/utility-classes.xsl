@@ -24,6 +24,7 @@
   <xsl:param name="BOOTSTRAP_CSS_ACCORDION" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_ACCESSIBILITY_NAV" select="'bg-subtle-secondary'"/>
   <xsl:param name="BOOTSTRAP_CSS_ACCESSIBILITY_LINK" select="'btn btn-outline theme-primary btn-sm'"/>
+  <xsl:param name="BOOTSTRAP_CSS_EXAMPLE" select="' p-3 border '"/>
   <xsl:param name="BOOTSTRAP_CSS_FIGURE" select="' w-100 max-w-100 p-3 '"/>
   <xsl:param name="BOOTSTRAP_CSS_FIGURE_CAPTION" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_FIGURE_IMAGE" select="'img-fluid border rounded'"/>
@@ -505,6 +506,7 @@
             else if (contains(@outputclass, 'btn-group')) then ''
             else if (contains(@outputclass, 'btn-toolbar')) then ''
             else if (contains(@outputclass, 'accordion-')) then 'accordion'
+            else if (contains(@class, ' topic/example ')) then $BOOTSTRAP_CSS_EXAMPLE
             else if (contains(@class, ' topic/fig ') and *[contains(@class, ' topic/lq ')]) then ' blockquote '
             else if (contains(@class, ' topic/fig ')) then ' figure ' || $BOOTSTRAP_CSS_FIGURE
             else if (contains(@class, ' topic/lq ') and parent::*[contains(@class, ' topic/fig ')]) then ''

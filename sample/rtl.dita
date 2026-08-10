@@ -43,7 +43,7 @@
       <p>Additionally, within any <xmlelement>topic</xmlelement>, setting the <xmlatt>dir</xmlatt> attribute on any DITA
         element thereafter will cause the layout to be recalculated for the enclosed block only.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <bodydiv dir="rtl" outputclass="row">
         <bodydiv outputclass="col">
           <section xml:lang="ar" outputclass="card">
@@ -54,7 +54,7 @@
           </section>
         </bodydiv>
       </bodydiv>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>

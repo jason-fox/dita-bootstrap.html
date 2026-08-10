@@ -76,7 +76,7 @@
      <parmname>--format</parmname>=<option>html5-bootstrap</option> \
      <parmname>--nav-toc</parmname>=<option>&lt;sidebar-style&gt;</option></codeblock>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel" otherprops="cols(1)">
         <li id="full">
           <fig>
@@ -121,7 +121,7 @@
           </fig>
         </li>
       </ol>
-    </bodydiv>
+    </example>
 
     <section>
       <p>

@@ -36,12 +36,12 @@
       <p>Use a <xmlatt>style</xmlatt> attribute and alter the CSS font-size and color to change the icon
         appearance.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <p>
         <ph outputclass="bi bi-alarm"/>
         <ph outputclass="bi bi-alarm" otherprops="style(font-size: 2rem; color: cornflowerblue;)"/>
       </p>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -55,7 +55,7 @@
         </section>
       </bodydiv>
   <p>Icons placed within an <xmlelement>xref</xmlelement> element are colorized appropriately:</p>
-  <bodydiv outputclass="p-3 border">
+  <example>
     <p>
       <xref href="#" outputclass="link theme-primary">
         <ph outputclass="bi bi-link"/> Primary link
@@ -96,7 +96,7 @@
         <ph outputclass="bi bi-link"/> Inverse link
       </xref>
     </p>
-  </bodydiv>
+  </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -155,14 +155,14 @@
         </section>
       </bodydiv>
     <p>Icons can also be placed within buttons as shown:</p>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <xref outputclass="btn-icon theme-primary" href="#"><ph outputclass="bi bi-arrow-down-square-fill"/></xref>
       <xref outputclass="btn-icon theme-secondary" href="#"><ph outputclass="bi bi-chat-left-quote-fill"/></xref>
       <xref outputclass="btn-icon theme-warning" href="#"><ph outputclass="bi bi-speedometer"/></xref>
       <xref outputclass="btn-icon theme-info" href="#"><ph outputclass="bi bi-camera-fill"/></xref>
       <xref outputclass="btn-icon theme-accent" href="#"><ph outputclass="bi bi-link"/></xref>
       <xref outputclass="btn-icon theme-danger" href="#"><ph outputclass="bi bi-share-fill"/></xref>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>

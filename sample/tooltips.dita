@@ -48,7 +48,7 @@
       <p>Hover over the links below to see tooltips:</p>
     </section>
 
-    <bodydiv outputclass="p-3 border">
+    <example>
       <p>Placeholder text to demonstrate some
         <xref href="#" outputclass="tooltip-top"> inline links <desc
           >Default tooltip</desc></xref> with tooltips. This is
@@ -59,7 +59,7 @@
         <xref href="#" outputclass="tooltip-top"> these tooltips on links<desc>Another one here too</desc></xref> can
         work in practice, once you use them on
         <xref href="#" outputclass="tooltip-top"> your own<desc>The last tip!</desc></xref> site or project.</p>
-    </bodydiv>
+    </example>
 
     <p>To enable tooltips, add <xmlatt>output-class="tooltip-*"</xmlatt> to the enclosing
       <xmlelement>xref</xmlelement>. For the <xmlelement>tooltip</xmlelement> element use the <xmlatt
@@ -67,7 +67,7 @@
       >output-class</xmlatt> or taken from the attribute.</p>
     <p>Hover over the buttons below to see the four tooltips directions: <codeph>top</codeph>, <codeph>right</codeph>,
         <codeph>bottom</codeph>, and <codeph>left</codeph>. Directions are mirrored when using Bootstrap in RTL.</p>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <xref href="#" outputclass="btn-secondary tooltip-top">
         <desc>Tooltip on top</desc> Tooltip on top </xref>
       <xref href="#" outputclass="btn-secondary tooltip-right">
@@ -76,7 +76,7 @@
         <desc>Tooltip on bottom</desc> Tooltip on bottom </xref>
       <xref href="#" outputclass="btn-secondary tooltip-left">
         <desc>Tooltip on left</desc> Tooltip on left </xref>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
     <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -119,12 +119,12 @@
   </bodydiv>
   <p>Custom HTML can be added to tooltips using additional DITA elements within the <xmlelement>desc</xmlelement>
   </p>
-  <bodydiv outputclass="p-3 border">
+  <example>
     <xref href="#" outputclass="btn-secondary tooltip-top">
       <desc><b>Tooltip</b>
         <u>with</u>
         <b>DITA</b> elements</desc> Tooltip with embedded DITA </xref>
-  </bodydiv>
+  </example>
   <bodydiv outputclass="nav-pills mt-3">
     <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -149,13 +149,13 @@ Tooltip with embedded DITA
     <codeblock outputclass="language-css">.custom-tooltip {
   --bs-tooltip-bg: var(--bs-primary);
 }</codeblock>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <xref href="#" outputclass="btn-secondary tooltip-top">
         <data name="class">custom-tooltip</data>
         <desc>This top tooltip is themed via CSS variables.</desc>
         Custom tooltip
       </xref>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>

@@ -29,7 +29,7 @@
       <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras
         thrown in for more control.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <xref href="#" outputclass="btn btn-solid btn-styled theme-primary">Primary</xref>
       <xref href="#" outputclass="btn theme-secondary">Secondary</xref>
       <xref href="#" outputclass="btn theme-success">Success</xref>
@@ -38,7 +38,7 @@
       <xref href="#" outputclass="btn theme-info">Info</xref>
       <xref href="#" outputclass="btn theme-accent">Accent</xref>
       <xref href="#" outputclass="btn theme-inverse">Inverse</xref>
-    </bodydiv>
+    </example>
 
     <bodydiv outputclass="nav-pills mt-3">
         <section>
@@ -72,7 +72,7 @@
         >btn theme-outline-*</codeph> to remove all background images
         and colors on any button.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <xref href="#" outputclass="btn btn-outline theme-primary">Primary</xref>
       <xref href="#" outputclass="btn btn-outline theme-secondary">Secondary</xref>
       <xref href="#" outputclass="btn btn-outline theme-success">Success</xref>
@@ -81,7 +81,7 @@
       <xref href="#" outputclass="btn btn-outline theme-info">Info</xref>
       <xref href="#" outputclass="btn btn-outline theme-accent">Accent</xref>
       <xref href="#" outputclass="btn btn-outline theme-inverse">Inverse</xref>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -111,10 +111,10 @@
       <p>Fancy larger or smaller buttons? Use <xmlatt>size="large"</xmlatt> or
           <xmlatt>size="small"</xmlatt> for additional sizes.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <xref href="#" outputclass="btn theme-primary btn-lg">Large button</xref>
       <xref href="#" outputclass="btn theme-secondary btn-lg">Large button</xref>
-    </bodydiv>
+    </example>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
@@ -129,10 +129,10 @@
         </section>
       </bodydiv>
 
-    <bodydiv outputclass="p-3 border">
+    <example>
       <xref href="#" outputclass="btn theme-primary btn-sm">Small button</xref>
       <xref href="#" outputclass="btn theme-secondary btn-sm">Small button</xref>
-    </bodydiv>
+    </example>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>

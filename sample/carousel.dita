@@ -39,7 +39,7 @@
         they’re not explicitly required. Add and customize as you see fit.</p>
       <p>Here is an example with slides</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?a"/>
@@ -51,7 +51,7 @@
           <image scope="external" href="https://picsum.photos/1200/600?c"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -87,7 +87,7 @@
       <p> Set <xmlatt>indicators="yes"</xmlatt> to add indicators to the carousel, alongside the
         previous/next controls. The indicators let users jump directly to a particular slide.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel" otherprops="indicators(true)">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?d"/>
@@ -99,7 +99,7 @@
           <image scope="external" href="https://picsum.photos/1200/600?f"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -134,7 +134,7 @@
       <title>With captions</title>
       <p>Add captions by using <xmlelement>fig</xmlelement> elements</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel">
         <li>
           <fig>
@@ -155,7 +155,7 @@
           </fig>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -210,7 +210,7 @@
         >grid-row</xmlelement> element to add them within a carousel.
         Additional structure and spacing can be added by using the <xmlelement>grid-col</xmlelement> element.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel">
         <li>
           <div outputclass="row">
@@ -257,7 +257,7 @@ And, kept unused, the user so destroys it.</lines>
           </div>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -323,7 +323,7 @@ And, kept unused, the user so destroys it.</lines>
       <title>Multiple slides side-by-side</title>
       <p>Add multiple <xmlelement>image</xmlelement> elements within each <xmlelement>carousel-item</xmlelement></p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel">
         <li>
           <image scope="external" href="https://picsum.photos/400/200?a"/>
@@ -341,7 +341,7 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/400/200?i"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -391,7 +391,7 @@ And, kept unused, the user so destroys it.</lines>
         >carousel-item</xmlelement> and include a
           <xmlelement>grid-row</xmlelement> element for title texts.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel">
         <li>
           <image scope="external" href="https://picsum.photos/400/200?j"/>
@@ -442,7 +442,7 @@ And, kept unused, the user so destroys it.</lines>
           </div>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <codeblock>&lt;carousel&gt;
   &lt;carousel-item&gt;
     &lt;image href="..." /&gt;
@@ -469,7 +469,7 @@ And, kept unused, the user so destroys it.</lines>
           <xmlelement>div outputclass="bg-body"</xmlelement> or some custom CSS to the carousel items for proper
         crossfading.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <example deliveryTarget="html">
       <ol outputclass="carousel-fade">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?a"/>
@@ -481,7 +481,7 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/1200/600?c"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -520,7 +520,7 @@ And, kept unused, the user so destroys it.</lines>
       <p>When <xmlatt>autoplay="no"</xmlatt> is set, the carousel won’t automatically start to cycle on
         page load. Instead, it will only start after the first user interaction.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <example deliveryTarget="html">
       <ol outputclass="carousel" otherprops="autoplay(false)">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?d"/>
@@ -532,7 +532,7 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/1200/600?f"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -570,7 +570,7 @@ And, kept unused, the user so destroys it.</lines>
         >carousel</xmlelement> to change the amount of time to delay
         between automatically cycling to the next item.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <example deliveryTarget="html">
       <ol outputclass="carousel">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?a"/>
@@ -579,7 +579,7 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/1200/600?b"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <codeblock>&lt;carousel interval="2000"&gt;
   ...
 &lt;/carousel&gt;</codeblock>
@@ -590,7 +590,7 @@ And, kept unused, the user so destroys it.</lines>
         >carousel-item</xmlelement> to change the amount of time to delay
         between automatically cycling to the next item.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <example deliveryTarget="html">
       <ol outputclass="carousel">
         <li otherprops="interval(2000)">
           <image scope="external" href="https://picsum.photos/1200/600?g"/>
@@ -602,7 +602,7 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/1200/600?i"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -638,7 +638,7 @@ And, kept unused, the user so destroys it.</lines>
       <p>Carousels support swiping left/right on touchscreen devices to move between slides. Add
           <xmlatt>touch="no"</xmlatt> to disable this option.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <example deliveryTarget="html">
       <ol outputclass="carousel" otherprops="touch(false)">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?j"/>
@@ -650,7 +650,7 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/1200/600?l"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
