@@ -159,191 +159,191 @@
         <div class="menu">
           <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/dist/css/bootstrap.min.css"
             >
               Default
             </button>
             <hr class="dropdown-divider"/>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/brite/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/brite/bootstrap.min.css"
             >
               Brite
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/cerulean/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/cerulean/bootstrap.min.css"
             >
               Cerulean
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/cosmo/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/cosmo/bootstrap.min.css"
             >
               Cosmo
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/cyborg/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/cyborg/bootstrap.min.css"
             >
               Cyborg
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/darkly/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/darkly/bootstrap.min.css"
             >
               Darkly
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/flatly/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/flatly/bootstrap.min.css"
             >
               Flatly
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/journal/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/journal/bootstrap.min.css"
             >
               Journal
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/litera/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/litera/bootstrap.min.css"
             >
               Litera
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/lumen/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/lumen/bootstrap.min.css"
             >
               Lumen
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/lux/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/lux/bootstrap.min.css"
             >
               Lux
             </button>
              <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/materia/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/materia/bootstrap.min.css"
             >
               Materia
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/minty/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/minty/bootstrap.min.css"
             >
               Minty
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/morph/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/morph/bootstrap.min.css"
             >
               Morph
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/pulse/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/pulse/bootstrap.min.css"
             >
               Pulse
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/quartz/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/quartz/bootstrap.min.css"
             >
               Quartz
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/sandstone/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/sandstone/bootstrap.min.css"
             >
               Sandstone
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/simplex/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/simplex/bootstrap.min.css"
             >
               Simplex
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/sketchy/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/sketchy/bootstrap.min.css"
             >
               Sketchy
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/slate/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/slate/bootstrap.min.css"
             >
               Slate
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/solar/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/solar/bootstrap.min.css"
             >
               Solar
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/spacelab/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/spacelab/bootstrap.min.css"
             >
               SpaceLab
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/superhero/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/superhero/bootstrap.min.css"
             >
               Superhero
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/united/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/united/bootstrap.min.css"
             >
               United
             </button>
              <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/vapor/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/vapor/bootstrap.min.css"
             >
               Vapor
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/yeti/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/yeti/bootstrap.min.css"
             >
               Yeti
             </button>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-css-href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/zephyr/bootstrap.min.css"
+              class="menu-item"
+              data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/zephyr/bootstrap.min.css"
             >
               Zephyr
             </button>
