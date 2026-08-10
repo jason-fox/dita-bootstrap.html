@@ -71,9 +71,16 @@
     }
   };
 
-  window.addEventListener('DOMContentLoaded', () => {    
-    setCss( getStoredCss());
-    showActiveCss(getStoredCss());
+  window.addEventListener('DOMContentLoaded', () => {
+    let stored = getStoredCss();
+    const isAvailable = stored && Array.from(document.querySelectorAll('[data-bs-css-href]'))
+      .some(toggle => toggle.getAttribute('data-bs-css-href') === stored);
+    if (stored && !isAvailable) {
+      localStorage.removeItem('css-theme');
+      stored = null;
+    }
+    setCss(stored);
+    showActiveCss(stored);
     document.querySelectorAll('[data-bs-css-href]').forEach(toggle => {
       toggle.addEventListener('click', () => {
         const css = toggle.getAttribute('data-bs-css-href');
