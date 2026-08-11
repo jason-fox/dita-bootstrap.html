@@ -67,7 +67,7 @@
         </section>
          <section>
         <title>Specialization</title>
-          <codeblock> &lt;popover outputclass="btn-lg btn-solid theme-danger"&gt;
+          <codeblock> &lt;popover outputclass="btn-lg btn-solid" color="danger"&gt;
   &lt;data name="title"&gt;Popover title&lt;/data&gt;
   &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
   Click to toggle popover
@@ -115,19 +115,19 @@
         </section>
          <section>
         <title>Specialization</title>
-          <codeblock>&lt;popover outputclass="btn-solid theme-secondary" position="top"&gt;
+          <codeblock>&lt;popover outputclass="btn-solid" color="secondary" position="top"&gt;
   &lt;desc&gt;Top popover&lt;/desc&gt;
   Popover on top
 &lt;/popover&gt;
-&lt;popover outputclass="btn-solid theme-secondary" position="right"&gt;
+&lt;popover outputclass="btn-solid" color="secondary" position="right"&gt;
   &lt;desc&gt;Right Popover&lt;/desc&gt;
   Popover on right
 &lt;/popover&gt;
-&lt;popover outputclass="btn-solid theme-secondary" position="bottom"&gt;
+&lt;popover outputclass="btn-solid" color="secondary" position="bottom"&gt;
   &lt;desc&gt;Bottom popover&lt;/desc&gt;
   Popover on bottom
 &lt;/popover&gt;
-&lt;popover outputclass="btn-solid theme-secondary" position="left"&gt;
+&lt;popover outputclass="btn-solid" color="secondary" position="left"&gt;
   &lt;desc&gt;Left popover&lt;/desc&gt;
   Popover on left
 &lt;/popover&gt;</codeblock>
@@ -166,7 +166,7 @@
         </section>
          <section>
         <title>Specialization</title>
-          <codeblock>&lt;popover outputclass="btn-lg btn-solid theme-danger"&gt;
+          <codeblock>&lt;popover outputclass="btn-lg btn-solid" color="danger"&gt;
   &lt;data name="title"&gt;Popover title&lt;/data&gt;
   &lt;data name="class"&gt;custom-popover&lt;/data&gt;
   &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
