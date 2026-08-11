@@ -92,52 +92,116 @@
     </section>
     <bodydiv outputclass="p-3 border">
       <bodydiv outputclass="row">
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-primary">Primary</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-primary">Primary</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-primary">Primary</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-primary">Primary</xref></bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-primary">Primary</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-outline theme-primary">Primary</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-subtle theme-primary">Primary</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-text theme-primary">Primary</xref>
+        </bodydiv>
       </bodydiv>
       <bodydiv outputclass="row">
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-secondary">Secondary</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-secondary">Secondary</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-secondary">Secondary</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-secondary">Secondary</xref></bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-secondary">Secondary</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-outline theme-secondary">Secondary</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-subtle theme-secondary">Secondary</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-text theme-secondary">Secondary</xref>
+        </bodydiv>
       </bodydiv>
       <bodydiv outputclass="row">
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-success">Success</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-success">Success</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-success">Success</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-success">Success</xref></bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-success">Success</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-outline theme-success">Success</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-subtle theme-success">Success</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-text theme-success">Success</xref>
+        </bodydiv>
       </bodydiv>
       <bodydiv outputclass="row">
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-danger">Danger</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-danger">Danger</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-danger">Danger</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-danger">Danger</xref></bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-danger">Danger</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-outline theme-danger">Danger</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-subtle theme-danger">Danger</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-text theme-danger">Danger</xref>
+        </bodydiv>
       </bodydiv>
       <bodydiv outputclass="row">
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-warning">Warning</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-warning">Warning</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-warning">Warning</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-warning">Warning</xref></bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-warning">Warning</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-outline theme-warning">Warning</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-subtle theme-warning">Warning</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-text theme-warning">Warning</xref>
+        </bodydiv>
       </bodydiv>
       <bodydiv outputclass="row">
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-info">Info</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-info">Info</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-info">Info</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-info">Info</xref></bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-info">Info</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-outline theme-info">Info</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-subtle theme-info">Info</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-text theme-info">Info</xref>
+        </bodydiv>
       </bodydiv>
       <bodydiv outputclass="row">
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-accent">Accent</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-accent">Accent</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-accent">Accent</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-accent">Accent</xref></bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-accent">Accent</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-outline theme-accent">Accent</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-subtle theme-accent">Accent</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-text theme-accent">Accent</xref>
+        </bodydiv>
       </bodydiv>
       <bodydiv outputclass="row">
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-inverse">Inverse</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-inverse">Inverse</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-inverse">Inverse</xref></bodydiv>
-        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-inverse">Inverse</xref></bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-inverse">Inverse</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-outline theme-inverse">Inverse</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-subtle theme-inverse">Inverse</xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-text theme-inverse">Inverse</xref>
+        </bodydiv>
       </bodydiv>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">

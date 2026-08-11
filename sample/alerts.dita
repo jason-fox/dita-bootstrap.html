@@ -186,7 +186,7 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert color="primary" outputclass="d-flex align-items-center"&gt;
+        <codeblock>&lt;alert color="primary"&gt;
   &lt;icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/&gt;An example alert with an icon
 &lt;/alert&gt;</codeblock>
       </section>
