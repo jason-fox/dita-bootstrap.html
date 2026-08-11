@@ -26,7 +26,7 @@
 }
 
 .navbar {
-  --bs-navbar-brand-hover-color: var(--bs-primary-contrast);
+  --bs-navbar-brand-hover-color: color-mix(in srgb, currentcolor 85%, var(--bs-white));
   --bs-navbar-bg: var(--bs-primary-bg);
   --bs-navbar-color: var(--bs-primary-contrast);
   --bs-navbar-brand-color: var(--bs-primary-contrast);
@@ -35,7 +35,7 @@
 }
 
 .nav-link {
-  --bs-nav-link-hover-color: var(--bs-primary-contrast);
+  --bs-nav-link-hover-color: color-mix(in srgb, currentcolor 85%, var(--bs-white));
 }
 
 .navbar-toggler {
