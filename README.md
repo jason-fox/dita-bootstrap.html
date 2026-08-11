@@ -249,22 +249,22 @@ The generated HTML created by this software includes the following additional so
 Within the sample documentation, where necessary, the texts describing the usage of each component have been copied directly from the official [Bootstrap 5.3 documentation][2], however DITA markup is used throughout the examples describing how to implement these components correctly using `outputclass`. The text is therefore a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors, and used under CC BY 3.0.
 
 [1]: http://www.dita-ot.org
-[2]: https://getbootstrap.com/docs/5.3
+[2]: https://getbootstrap.com/docs/6.0
 [3]: https://bootswatch.com
 [4]: https://sass-lang.com
 [5]: https://github.com/dita-bootstrap/dita-bootstrap.sass
-[6]: https://getbootstrap.com/docs/5.3/examples/navbars/
-[7]: https://getbootstrap.com/docs/5.3/examples/headers/
+[6]: https://getbootstrap.com/docs/6.0/examples/navbars/
+[7]: https://getbootstrap.com/docs/6.0/examples/headers/
 [8]: ./includes/hdr.navbar.example.xml
 [9]: ./includes/ftr.content.example.xml
-[10]: https://getbootstrap.com/docs/5.3/examples/footers/
+[10]: https://getbootstrap.com/docs/6.0/examples/footers/
 [11]: https://www.dita-ot.org/dev/parameters/parameters-html5.html#html5__nav-toc
-[12]: https://getbootstrap.com/docs/5.3/components/list-group/
-[13]: https://getbootstrap.com/docs/5.3/components/collapse/
-[14]: https://getbootstrap.com/docs/5.3/customize/color-modes/#dark-mode
+[12]: https://getbootstrap.com/docs/6.0/components/list-group/
+[13]: https://getbootstrap.com/docs/6.0/components/collapse/
+[14]: https://getbootstrap.com/docs/6.0/customize/color-modes/#dark-mode
 [15]: https://dita-bootstrap.github.io
 [16]: ./xsl/html5-bootstrap-template.xsl
-[17]: https://getbootstrap.com/docs/5.3/components/scrollspy/
+[17]: https://getbootstrap.com/docs/6.0/components/scrollspy/
 [18]: https://indieweb.social/@infotexture
 [19]: https://github.com/dita-bootstrap/dita-bootstrap.html/issues/new
 [20]: https://help.github.com/articles/using-pull-requests/

@@ -50,7 +50,7 @@
             <title>عنوان البطاقة</title>
             <image scope="external" href="https://picsum.photos/400/200?a"/>
             <p>بعض الأمثلة السريعة للنص الذي سيتم بناؤه على عنوان البطاقة وتشكيل الجزء الأكبر من محتوى البطاقة.</p>
-            <xref href="#" outputclass="btn-primary">اذهب لمكان ما</xref>
+            <xref href="#" outputclass="btn-solid theme-primary">اذهب لمكان ما</xref>
           </section>
         </bodydiv>
       </bodydiv>
@@ -64,7 +64,7 @@
       &lt;title outputclass="h5"&gt;عنوان البطاقة&lt;/title&gt;
       &lt;image outputclass="card-img-top" href="..." /&gt;
       &lt;p&gt;بعض الأمثلة السريعة للنص الذي سيتم بناؤه على عنوان البطاقة وتشكيل الجزء الأكبر من محتوى البطاقة.&lt;/p&gt;
-      &lt;xref href="#" outputclass="btn-primary"&gt;اذهب لمكان ما&lt;/xref&gt;
+      &lt;xref href="#" outputclass="btn theme-primary"&gt;اذهب لمكان ما&lt;/xref&gt;
     &lt;/section&gt;
   &lt;/bodydiv&gt;
 &lt;/bodydiv&gt;</codeblock>
@@ -77,7 +77,7 @@
       &lt;title&gt;عنوان البطاقة&lt;/title&gt;
       &lt;image href="..." /&gt;
       &lt;p&gt;بعض الأمثلة السريعة للنص الذي سيتم بناؤه على عنوان البطاقة وتشكيل الجزء الأكبر من محتوى البطاقة.&lt;/p&gt;
-      &lt;button href="#"&gt;اذهب لمكان ما&lt;/button&gt;
+      &lt;button href="#"  color="primary"&gt;اذهب لمكان ما&lt;/button&gt;
     &lt;/card&gt;
   &lt;/grid-col&gt;
 &lt;/grid-row&gt;</codeblock>

@@ -12,7 +12,7 @@
   exclude-result-prefixes="xs xhtml dita-ot"
 >
   <!-- Customization to add Bootstrap Carousel Component -->
-  <!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
+  <!-- https://getbootstrap.com/docs/6.0/components/carousel/ -->
 
   <xsl:param name="BOOTSTRAP_CSS_CAROUSEL_INDICATORS" select="''"/>
 

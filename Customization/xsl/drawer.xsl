@@ -12,7 +12,7 @@
   exclude-result-prefixes="xs xhtml dita-ot"
 >
   <!-- Customization to add Bootstrap Offcanvas Component -->
-  <!-- https://getbootstrap.com/docs/5.3/components/drawer/ -->
+  <!-- https://getbootstrap.com/docs/6.0/components/drawer/ -->
 
   <xsl:template
     match="*[contains(@class, ' bootstrap-d/drawer ')] | *[contains(@class,' topic/section ') and contains(@outputclass, 'drawer-')]"

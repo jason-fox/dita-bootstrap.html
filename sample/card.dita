@@ -52,7 +52,7 @@
         <title>Card Title</title>
         <image scope="external" href="https://picsum.photos/400/200?a"/>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        <xref href="#" outputclass="btn-primary">Go Somewhere</xref>
+        <xref href="#" outputclass="btn-solid theme-primary">Go Somewhere</xref>
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
@@ -62,7 +62,7 @@
   &lt;title outputclass="h5"&gt;Card Title&lt;/title&gt;
   &lt;image outputclass="card-img-top" href="..." /&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
-  &lt;xref outputclass="btn-primary" href="#"&gt;Go Somewhere&lt;/xref&gt;
+  &lt;xref outputclass="btn-solid theme-primary" href="#"&gt;Go Somewhere&lt;/xref&gt;
 &lt;/section&gt;</codeblock>
         </section>
          <section>
@@ -155,7 +155,7 @@
         <title>Special title treatment</title>
         <div outputclass="card-header">Featured</div>
         <p>With supporting text below as a natural lead-in to additional content.</p>
-        <xref href="#" outputclass="btn-primary">Go somewhere</xref>
+        <xref href="#" outputclass="btn-solid theme-primary">Go somewhere</xref>
         <div outputclass="card-footer">2 days ago</div>
       </section>
     </bodydiv>
@@ -166,7 +166,7 @@
   &lt;div outputclass="card-header"&gt;Featured&lt;/div&gt;
   &lt;title outputclass="h5"&gt;Special title treatment&lt;/title&gt;
   &lt;p&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
-  &lt;xref href="#" outputclass="btn-primary"&gt;Go somewhere&lt;/xref&gt;
+  &lt;xref href="#" outputclass="btn-solid theme-primary"&gt;Go somewhere&lt;/xref&gt;
 &lt;/section&gt;</codeblock>
         </section>
          <section>
@@ -190,7 +190,7 @@
         <title>Card Title</title>
         <div outputclass="card-header">Success Card</div>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        <xref href="#" outputclass="btn-primary">Go Somewhere</xref>
+        <xref href="#" outputclass="btn-solid theme-primary">Go Somewhere</xref>
       </section>
     </bodydiv>
     <codeblock>&lt;card color="success"&gt;

@@ -284,7 +284,7 @@
   <xsl:template match="/ | @* | node()" mode="gen-user-bootstrap-attrs" priority="-10"/>
 
   <!-- Override to add Bootstrap Alert classes and roles to Note elements -->
-  <!-- https://getbootstrap.com/docs/5.3/components/alerts/ -->
+  <!-- https://getbootstrap.com/docs/6.0/components/alerts/ -->
   <xsl:template match="*" mode="process.note.common-processing">
     <xsl:param name="type" select="@type"/>
     <xsl:param name="title">
@@ -354,7 +354,7 @@
   </xsl:template>
 
   <!-- Customization to add Bootstrap Figure Content -->
-  <!-- https://getbootstrap.com/docs/5.3/content/figures/ -->
+  <!-- https://getbootstrap.com/docs/6.0/content/figures/ -->
   <xsl:template
     match="*[contains(@class, ' topic/fig ') and not(contains(@class,' pr-d/syntaxdiagram ')) and not(contains(@class,' ut-d/imagemap '))]"
     name="topic.fig"
@@ -469,7 +469,7 @@
   </xsl:template>
 
   <!-- Customization to add Bootstrap Borders to Codeblock elements-->
-  <!-- https://getbootstrap.com/docs/5.3/utilities/borders/ -->
+  <!-- https://getbootstrap.com/docs/6.0/utilities/borders/ -->
   <xsl:template match="*[contains(@class, ' topic/pre ') and @frame]">
     <xsl:variable name="default-fig-class">
       <xsl:apply-templates select="." mode="dita2html:get-default-fig-class"/>
@@ -496,7 +496,7 @@
   </xsl:template>
 
   <!-- Customization to add Bootstrap Borders to Lines elements-->
-  <!-- https://getbootstrap.com/docs/5.3/utilities/borders/ -->
+  <!-- https://getbootstrap.com/docs/6.0/utilities/borders/ -->
   <xsl:template match="*[contains(@class, ' topic/lines ') and @frame]">
     <xsl:variable name="default-fig-class">
       <xsl:apply-templates select="." mode="dita2html:get-default-fig-class"/>

@@ -49,7 +49,11 @@
         an drawer</p>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
-            <xref props="drawer-toggle" href="#drawer1" outputclass="btn-primary">Click here to display drawer</xref>
+            <xref
+        props="drawer-toggle"
+        href="#drawer1"
+        outputclass="btn-solid theme-primary"
+      >Click here to display drawer</xref>
       <section id="drawer1" outputclass="drawer drawer-start">
         <title>Drawer</title>
         <p>Content for the drawer goes here. You can place just about any section elements here.</p>
@@ -58,7 +62,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="btn-primary" props="drawer-toggle" href="#drawer1"&gt;
+          <codeblock>&lt;xref outputclass="btn-solid theme-primary" props="drawer-toggle" href="#drawer1"&gt;
   Click here
 &lt;/xref&gt;
 &lt;section outputclass="drawer-start" id="drawer1"&gt;
@@ -101,7 +105,7 @@
       </ul>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
-            <xref props="drawer-toggle" href="#drawer2" outputclass="btn-primary">Toggle right drawer</xref>
+            <xref props="drawer-toggle" href="#drawer2" outputclass="btn-solid theme-primary">Toggle right drawer</xref>
       <section id="drawer2" outputclass="drawer drawer-end">
         <title>Drawer</title>
         <p>Content for the drawer goes here. You can place just about any section elements here.</p>
@@ -122,7 +126,11 @@
         </section>
       </bodydiv>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
-            <xref props="drawer-toggle" href="#drawer3" outputclass="btn-primary">Toggle bottom drawer</xref>
+            <xref
+        props="drawer-toggle"
+        href="#drawer3"
+        outputclass="btn-solid theme-primary"
+      >Toggle bottom drawer</xref>
       <section id="drawer3" outputclass="drawer drawer-bottom">
         <title>Drawer</title>
         <p>Content for the drawer goes here. You can place just about any section elements here.</p>
@@ -151,7 +159,11 @@
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <note outputclass="d-none lg:d-block">Resize your browser to show the responsive drawer toggle.</note>
-            <xref outputclass="lg:d-none btn-primary" props="drawer-toggle" href="#drawer4">Toggle drawer</xref>
+            <xref
+        outputclass="lg:d-none btn-solid theme-primary"
+        props="drawer-toggle"
+        href="#drawer4"
+      >Toggle drawer</xref>
       <section outputclass="drawer-lg drawer drawer-start" id="drawer4">
         <title>Drawer</title>
         <p>This is content within an <xmlatt>outputclass="drawer-lg"</xmlatt>.</p>
@@ -172,7 +184,7 @@
           <codeblock>&lt;note outputclass="d-none lg:d-block"&gt;
   Resize your browser to show the responsive drawer toggle.
 &lt;/note&gt;
-&lt;xref outputclass="btn-primary lg:d-none" props="drawer-toggle" href="#drawer4"&gt;
+&lt;xref outputclass="btn-solid theme-primary lg:d-none" props="drawer-toggle" href="#drawer4"&gt;
   Toggle drawer
 &lt;/xref&gt;
 &lt;section outputclass="drawer-lg" id="drawer4"&gt;
