@@ -5,7 +5,7 @@
   directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <topic id="index">
@@ -545,6 +545,8 @@
       <indexterm><parmname>--bootstrap.css.codeblock</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.topic.title</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.section.title</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.badge</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.button</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.card</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.carousel</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.carousel.caption</parmname></indexterm>
@@ -600,6 +602,24 @@
           <pd>
             Common utility classes for Bootstrap
             <xref href="./accordion.dita" format="dita">accordion components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.badge</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./badge.dita" format="dita">badge components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.button</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./buttons.dita" format="dita">button components</xref>
           </pd>
         </plentry>
         <plentry>

@@ -5,7 +5,7 @@
   directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <topic id="alerts">
@@ -26,11 +26,33 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section id="example">
-      <title>Example</title>
-      <p>Alerts are available for any length of text, as well as an optional close button. For proper styling, use one
-        of the eight required contextual classes (e.g., set <xmlatt>outputclass</xmlatt> to
-          <codeph>alert theme-success</codeph>).</p>
+    <section id="default-alert">
+      <title>Default alert</title>
+      <p>Alerts are available for any length of text, as well as an optional close button. Alerts are designed to be
+        used with theme colors, but have neutral fallback colors for when no theme color is applied.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <section outputclass="alert">A simple alert — check it out!</section>
+    </bodydiv>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;section outputclass="alert"&gt;
+  A simple alert — check it out!
+&lt;/section&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;alert&gt;
+  A simple alert — check it out!
+&lt;/alert&gt;</codeblock>
+      </section>
+    </bodydiv>
+
+    <section id="variants">
+      <title>Variants</title>
+      <p>Use any of the eight variant theme classes for color mode adaptive, contextual styling (e.g., set
+          <xmlatt>outputclass</xmlatt> to <codeph>alert theme-success</codeph>).</p>
     </section>
     <bodydiv outputclass="p-3 border">
       <section outputclass="alert theme-primary fg-emphasis-primary">A simple primary alert — check it out!</section>
@@ -141,6 +163,31 @@
   &lt;p&gt;
     Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
   &lt;/p&gt;
+&lt;/alert&gt;</codeblock>
+      </section>
+    </bodydiv>
+
+    <section id="with-icons">
+      <title>With icons</title>
+      <p>Similarly, you can use flexbox utilities and Bootstrap Icons to create alerts with icons. Depending on your
+        icons and content, you may want to add more utilities or custom styles.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <section outputclass="alert theme-primary d-flex align-items-center">
+        <ph outputclass="bi bi-exclamation-triangle-fill flex-shrink-0 pe-2"/>An example alert with an icon
+      </section>
+    </bodydiv>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;section outputclass="alert theme-primary d-flex align-items-center"&gt;
+  &lt;ph outputclass="bi bi-exclamation-triangle-fill flex-shrink-0 pe-2"/&gt;An example alert with an icon
+&lt;/section&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;alert color="primary" outputclass="d-flex align-items-center"&gt;
+  &lt;icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/&gt;An example alert with an icon
 &lt;/alert&gt;</codeblock>
       </section>
     </bodydiv>

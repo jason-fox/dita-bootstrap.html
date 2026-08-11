@@ -143,6 +143,16 @@
       desc="Common Bootstrap classes for DITA &lt;title&gt; elements within &lt;section&gt; elements"
     />
     <param
+      name="bootstrap.css.badge"
+      type="string"
+      desc="Bootstrap classes for badge components"
+    />
+    <param
+      name="bootstrap.css.button"
+      type="string"
+      desc="Bootstrap classes for button components"
+    />
+    <param
       name="bootstrap.css.card"
       type="string"
       desc="Bootstrap classes for card components"

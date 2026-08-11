@@ -165,6 +165,8 @@ The HTML output for the following DITA elements can be annotated with common Boo
 - `bootstrap.css.accessibility.link` – Common Bootstrap utility classes for accessibility links
 - `bootstrap.css.accessibility.nav` – Common Bootstrap utility classes for accessibility navigation
 - `bootstrap.css.accordion` – Common utility classes for Bootstrap accordion components
+- `bootstrap.css.badge` – Common utility classes for Bootstrap badge components
+- `bootstrap.css.button` – Common utility classes for Bootstrap button components
 - `bootstrap.css.card` – Common utility classes for Bootstrap card components
 - `bootstrap.css.carousel` – Common utility classes for Bootstrap carousel components
 - `bootstrap.css.carousel.caption` – Common utility classes for Bootstrap carousel captions

@@ -4,7 +4,7 @@
   directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
@@ -54,8 +54,8 @@
 &lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
-    <section id="mixed-styles">
-      <title>Mixed styles</title>
+    <section id="theme-variants">
+      <title>Theme variants</title>
     </section>
     <example>
       <div outputclass="btn-group">
@@ -82,8 +82,8 @@
 &lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
-    <section id="outlined-styles">
-      <title>Outlined styles</title>
+    <section id="style-variants">
+      <title>Style variants</title>
     </section>
     <example>
       <div outputclass="btn-group">
@@ -104,9 +104,9 @@
         <section>
         <title>Specialization</title>
           <codeblock>&lt;button-group&gt;
-  &lt;button color="primary" outline="yes" href="#"&gt;Left&lt;/button&gt;
-  &lt;button color="primary" outline="yes" href="#"&gt;Middle&lt;/button&gt;
-  &lt;button color="primary" outline="yes" href="#"&gt;Right&lt;/button&gt;
+  &lt;button color="primary" style="outline" href="#"&gt;Left&lt;/button&gt;
+  &lt;button color="primary" style="outline" href="#"&gt;Middle&lt;/button&gt;
+  &lt;button color="primary" style="outline" href="#"&gt;Right&lt;/button&gt;
 &lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>

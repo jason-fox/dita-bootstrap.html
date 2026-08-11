@@ -16,6 +16,8 @@
   <xsl:param name="BOOTSTRAP_CSS_SECTION_TITLE" select="'h4'"/>
   <xsl:param name="BOOTSTRAP_CSS_CARD_TITLE" select="'h5'"/>
   <xsl:param name="BOOTSTRAP_CSS_CARD" select="''"/>
+  <xsl:param name="BOOTSTRAP_CSS_BADGE" select="''"/>
+  <xsl:param name="BOOTSTRAP_CSS_BUTTON" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_CARD_WIDTH" select="'w-50'"/>
   <xsl:param name="BOOTSTRAP_CSS_CAROUSEL" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_CAPTION" select="'theme-secondary border rounded p-1'"/>
@@ -263,11 +265,9 @@
 
   <!-- Change the default Bootstrap CSS classes of alerts -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/alert ')]" mode="bootstrap-class" priority="10">
-    <xsl:text>theme-</xsl:text>
-    <xsl:value-of select="@color"/>
-    <xsl:text> fg-emphasis-</xsl:text>
-    <xsl:value-of select="@color"/>
-    <xsl:text> </xsl:text>
+    <xsl:if test="@color">
+      <xsl:value-of select="concat('theme-', @color, ' fg-emphasis-', @color, ' ')"/>
+    </xsl:if>
     <xsl:if test="*[contains(@class, ' topic/p ')]">
       <xsl:text>vstack </xsl:text>
     </xsl:if>
@@ -319,30 +319,44 @@
   >
     <xsl:value-of
       select="
-        if (@outline = 'yes') then 'btn btn-outline'
+        if (@style = 'none') then 'btn'
+        else if (@style = 'outline') then 'btn btn-outline'
+        else if (@style = 'subtle') then 'btn-subtle'
+        else if (@style = 'text') then 'btn-text'
         else if (contains(@outputclass, 'btn-outline')) then 'btn'
         else 'btn-solid'"
     />
-    <xsl:if test="@color">
+    <xsl:if test="@color and not(@style = 'none')">
       <xsl:text> theme-</xsl:text>
-      <xsl:value-of select="(@color, 'primary')[1]"/>
+      <xsl:value-of select="@color"/>
     </xsl:if>
-    <xsl:if test="@styled">
+    <xsl:if test="@gradient = 'yes' and not(@style = 'none')">
       <xsl:text> btn-styled</xsl:text>
     </xsl:if>
     <xsl:text> </xsl:text>
     <xsl:choose>
+      <xsl:when test="@size = 'xs'">btn-xs </xsl:when>
       <xsl:when test="@size = 'small'">btn-sm </xsl:when>
       <xsl:when test="@size = 'large'">btn-lg </xsl:when>
     </xsl:choose>
+    <xsl:value-of select="concat(' ', $BOOTSTRAP_CSS_BUTTON)"/>
     <xsl:next-match/>
   </xsl:template>
 
   <!-- Change the default Bootstrap CSS classes of badges -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/badge ')]" mode="bootstrap-class" priority="10">
-    <xsl:text>theme-</xsl:text>
-    <xsl:value-of select="(@color, 'primary')[1]"/>
-    <xsl:text> </xsl:text>
+    <xsl:if test="@style = 'outline'">
+      <xsl:text>badge-outline </xsl:text>
+    </xsl:if>
+    <xsl:if test="@style = 'subtle'">
+      <xsl:text>badge-subtle </xsl:text>
+    </xsl:if>
+    <xsl:if test="@color and not(@style = 'none')">
+      <xsl:text>theme-</xsl:text>
+      <xsl:value-of select="@color"/>
+      <xsl:text> </xsl:text>
+    </xsl:if>
+    <xsl:value-of select="concat(' ', $BOOTSTRAP_CSS_BADGE)"/>
     <xsl:next-match/>
   </xsl:template>
 
@@ -500,6 +514,7 @@
           select="
             if (contains(@class, ' bootstrap-d/button ')) then ''
             else if (contains(@class, ' bootstrap-d/badge ')) then ''
+            else if (contains(@class, ' topic/ph ') and tokenize(@outputclass, '\s+') = 'badge') then $BOOTSTRAP_CSS_BADGE
             else if (contains(@class, ' bootstrap-d/carousel ')) then ''
             else if (contains(@class, ' bootstrap-d/button-group ')) then ''
             else if (contains(@class, ' bootstrap-d/list-group ')) then ''

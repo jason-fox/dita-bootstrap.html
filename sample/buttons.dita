@@ -4,7 +4,7 @@
   directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
@@ -24,6 +24,26 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
+    <section id="base-class">
+      <title>Base class</title>
+      <p>Buttons have a standard <codeph>btn</codeph> class that sets up basic styles such as padding and content
+        alignment, along with fallback visual styles for basic accessibility. Change this class to another button
+        class to apply different visual styles for a specific button variant and theme.</p>
+    </section>
+    <example>
+      <ph outputclass="btn">Base class</ph>
+    </example>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;ph outputclass="btn"&gt;Base class&lt;/ph&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;button style="none"&gt;Base class&lt;/button&gt;</codeblock>
+      </section>
+    </bodydiv>
+
     <section id="example">
       <title>Example</title>
       <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras
@@ -54,7 +74,7 @@
         </section>
           <section>
           <title>Specialization</title>
-          <codeblock>&lt;button href="#"&gt;Primary&lt;/button&gt;
+          <codeblock>&lt;button href="#" color="primary"&gt;Primary&lt;/button&gt;
 &lt;button href="#" color="secondary"&gt;Secondary&lt;/button&gt;
 &lt;button href="#" color="success"&gt;Success&lt;/button&gt;
 &lt;button href="#" color="danger"&gt;Danger&lt;/button&gt;
@@ -64,6 +84,175 @@
 &lt;button href="#" color="inverse"&gt;Inverse&lt;/button&gt;</codeblock>
         </section>
       </bodydiv>
+
+    <section id="variants">
+      <title>Variants</title>
+      <p>Compare the solid (default), outline, subtle, and text button styles at once, combined with theme
+        colors.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <bodydiv outputclass="row">
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-primary">Primary</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-primary">Primary</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-primary">Primary</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-primary">Primary</xref></bodydiv>
+      </bodydiv>
+      <bodydiv outputclass="row">
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-secondary">Secondary</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-secondary">Secondary</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-secondary">Secondary</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-secondary">Secondary</xref></bodydiv>
+      </bodydiv>
+      <bodydiv outputclass="row">
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-success">Success</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-success">Success</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-success">Success</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-success">Success</xref></bodydiv>
+      </bodydiv>
+      <bodydiv outputclass="row">
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-danger">Danger</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-danger">Danger</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-danger">Danger</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-danger">Danger</xref></bodydiv>
+      </bodydiv>
+      <bodydiv outputclass="row">
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-warning">Warning</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-warning">Warning</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-warning">Warning</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-warning">Warning</xref></bodydiv>
+      </bodydiv>
+      <bodydiv outputclass="row">
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-info">Info</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-info">Info</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-info">Info</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-info">Info</xref></bodydiv>
+      </bodydiv>
+      <bodydiv outputclass="row">
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-accent">Accent</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-accent">Accent</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-accent">Accent</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-accent">Accent</xref></bodydiv>
+      </bodydiv>
+      <bodydiv outputclass="row">
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-solid theme-inverse">Inverse</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-outline theme-inverse">Inverse</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-subtle theme-inverse">Inverse</xref></bodydiv>
+        <bodydiv outputclass="col"><xref href="#" outputclass="btn-text theme-inverse">Inverse</xref></bodydiv>
+      </bodydiv>
+    </bodydiv>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;xref href="#" outputclass="btn-solid theme-primary"&gt;Primary&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-outline theme-primary"&gt;Primary&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-subtle theme-primary"&gt;Primary&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-text theme-primary"&gt;Primary&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid theme-secondary"&gt;Secondary&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-outline theme-secondary"&gt;Secondary&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-subtle theme-secondary"&gt;Secondary&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-text theme-secondary"&gt;Secondary&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid theme-success"&gt;Success&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-outline theme-success"&gt;Success&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-subtle theme-success"&gt;Success&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-text theme-success"&gt;Success&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid theme-danger"&gt;Danger&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-outline theme-danger"&gt;Danger&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-subtle theme-danger"&gt;Danger&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-text theme-danger"&gt;Danger&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid theme-warning"&gt;Warning&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-outline theme-warning"&gt;Warning&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-subtle theme-warning"&gt;Warning&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-text theme-warning"&gt;Warning&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid theme-info"&gt;Info&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-outline theme-info"&gt;Info&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-subtle theme-info"&gt;Info&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-text theme-info"&gt;Info&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid theme-accent"&gt;Accent&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-outline theme-accent"&gt;Accent&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-subtle theme-accent"&gt;Accent&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-text theme-accent"&gt;Accent&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid theme-inverse"&gt;Inverse&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-outline theme-inverse"&gt;Inverse&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-subtle theme-inverse"&gt;Inverse&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-text theme-inverse"&gt;Inverse&lt;/xref&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;button href="#" color="primary"&gt;Primary&lt;/button&gt;
+&lt;button href="#" color="primary" style="outline"&gt;Primary&lt;/button&gt;
+&lt;button href="#" color="primary" style="subtle"&gt;Primary&lt;/button&gt;
+&lt;button href="#" color="primary" style="text"&gt;Primary&lt;/button&gt;
+&lt;button href="#" color="secondary"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" color="secondary" style="outline"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" color="secondary" style="subtle"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" color="secondary" style="text"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" color="success"&gt;Success&lt;/button&gt;
+&lt;button href="#" color="success" style="outline"&gt;Success&lt;/button&gt;
+&lt;button href="#" color="success" style="subtle"&gt;Success&lt;/button&gt;
+&lt;button href="#" color="success" style="text"&gt;Success&lt;/button&gt;
+&lt;button href="#" color="danger"&gt;Danger&lt;/button&gt;
+&lt;button href="#" color="danger" style="outline"&gt;Danger&lt;/button&gt;
+&lt;button href="#" color="danger" style="subtle"&gt;Danger&lt;/button&gt;
+&lt;button href="#" color="danger" style="text"&gt;Danger&lt;/button&gt;
+&lt;button href="#" color="warning"&gt;Warning&lt;/button&gt;
+&lt;button href="#" color="warning" style="outline"&gt;Warning&lt;/button&gt;
+&lt;button href="#" color="warning" style="subtle"&gt;Warning&lt;/button&gt;
+&lt;button href="#" color="warning" style="text"&gt;Warning&lt;/button&gt;
+&lt;button href="#" color="info"&gt;Info&lt;/button&gt;
+&lt;button href="#" color="info" style="outline"&gt;Info&lt;/button&gt;
+&lt;button href="#" color="info" style="subtle"&gt;Info&lt;/button&gt;
+&lt;button href="#" color="info" style="text"&gt;Info&lt;/button&gt;
+&lt;button href="#" color="accent"&gt;Accent&lt;/button&gt;
+&lt;button href="#" color="accent" style="outline"&gt;Accent&lt;/button&gt;
+&lt;button href="#" color="accent" style="subtle"&gt;Accent&lt;/button&gt;
+&lt;button href="#" color="accent" style="text"&gt;Accent&lt;/button&gt;
+&lt;button href="#" color="inverse"&gt;Inverse&lt;/button&gt;
+&lt;button href="#" color="inverse" style="outline"&gt;Inverse&lt;/button&gt;
+&lt;button href="#" color="inverse" style="subtle"&gt;Inverse&lt;/button&gt;
+&lt;button href="#" color="inverse" style="text"&gt;Inverse&lt;/button&gt;</codeblock>
+      </section>
+    </bodydiv>
+
+    <section id="styled-buttons">
+      <title>Styled buttons</title>
+      <p>Add visual depth to solid buttons with gradients and shadows using the <codeph>btn-styled</codeph> modifier
+        class. This provides a more three-dimensional appearance that can be customized further with CSS
+        variables.</p>
+    </section>
+    <example>
+      <xref href="#" outputclass="btn-solid btn-styled theme-primary">Primary</xref>
+      <xref href="#" outputclass="btn-solid btn-styled theme-secondary">Secondary</xref>
+      <xref href="#" outputclass="btn-solid btn-styled theme-success">Success</xref>
+      <xref href="#" outputclass="btn-solid btn-styled theme-danger">Danger</xref>
+      <xref href="#" outputclass="btn-solid btn-styled theme-warning">Warning</xref>
+      <xref href="#" outputclass="btn-solid btn-styled theme-info">Info</xref>
+      <xref href="#" outputclass="btn-solid btn-styled theme-accent">Accent</xref>
+      <xref href="#" outputclass="btn-solid btn-styled theme-inverse">Inverse</xref>
+    </example>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;xref href="#" outputclass="btn-solid btn-styled theme-primary"&gt;Primary&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid btn-styled theme-secondary"&gt;Secondary&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid btn-styled theme-success"&gt;Success&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid btn-styled theme-danger"&gt;Danger&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid btn-styled theme-warning"&gt;Warning&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid btn-styled theme-info"&gt;Info&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid btn-styled theme-accent"&gt;Accent&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-solid btn-styled theme-inverse"&gt;Inverse&lt;/xref&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;button href="#" color="primary" gradient="yes"&gt;Primary&lt;/button&gt;
+&lt;button href="#" color="secondary" gradient="yes"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" color="success" gradient="yes"&gt;Success&lt;/button&gt;
+&lt;button href="#" color="danger" gradient="yes"&gt;Danger&lt;/button&gt;
+&lt;button href="#" color="warning" gradient="yes"&gt;Warning&lt;/button&gt;
+&lt;button href="#" color="info" gradient="yes"&gt;Info&lt;/button&gt;
+&lt;button href="#" color="accent" gradient="yes"&gt;Accent&lt;/button&gt;
+&lt;button href="#" color="inverse" gradient="yes"&gt;Inverse&lt;/button&gt;</codeblock>
+      </section>
+    </bodydiv>
 
     <section id="outline-buttons">
       <title>Outline buttons</title>
@@ -96,20 +285,20 @@
         </section>
          <section>
         <title>Specialization</title>
-          <codeblock>&lt;button href="#" outline="yes"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="secondary" outline="yes"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="success" outline="yes"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="danger" outline="yes"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="warning" outline="yes"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="info" outline="yes"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="accent" outline="yes"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="inverse" outline="yes"&gt;Inverse&lt;/button&gt;</codeblock>
+          <codeblock>&lt;button href="#" style="outline"&gt;Primary&lt;/button&gt;
+&lt;button href="#" color="secondary" style="outline"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" color="success" style="outline"&gt;Success&lt;/button&gt;
+&lt;button href="#" color="danger" style="outline"&gt;Danger&lt;/button&gt;
+&lt;button href="#" color="warning" style="outline"&gt;Warning&lt;/button&gt;
+&lt;button href="#" color="info" style="outline"&gt;Info&lt;/button&gt;
+&lt;button href="#" color="accent" style="outline"&gt;Accent&lt;/button&gt;
+&lt;button href="#" color="inverse" style="outline"&gt;Inverse&lt;/button&gt;</codeblock>
         </section>
       </bodydiv>
     <section id="sizing">
       <title>Sizing</title>
-      <p>Fancy larger or smaller buttons? Use <xmlatt>size="large"</xmlatt> or
-          <xmlatt>size="small"</xmlatt> for additional sizes.</p>
+      <p>Fancy larger or smaller buttons? Use <xmlatt>size="large"</xmlatt>, <xmlatt>size="small"</xmlatt>, or
+          <xmlatt>size="xs"</xmlatt> for additional sizes.</p>
     </section>
     <example>
       <xref href="#" outputclass="btn theme-primary btn-lg">Large button</xref>
@@ -144,6 +333,24 @@
         <title>Specialization</title>
           <codeblock>&lt;button href="#" size="small"&gt;Small button&lt;/button&gt;
 &lt;button href="#" color="secondary" size="small"&gt;Small button&lt;/button&gt;</codeblock>
+        </section>
+      </bodydiv>
+
+    <example>
+      <xref href="#" outputclass="btn theme-primary btn-xs">Extra small button</xref>
+      <xref href="#" outputclass="btn theme-secondary btn-xs">Extra small button</xref>
+    </example>
+
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref href="#" outputclass="btn theme-primary btn-xs"&gt;Extra small button&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn theme-secondary btn-xs"&gt;Extra small button&lt;/xref&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button href="#" size="xs"&gt;Extra small button&lt;/button&gt;
+&lt;button href="#" color="secondary" size="xs"&gt;Extra small button&lt;/button&gt;</codeblock>
         </section>
       </bodydiv>
   </body>

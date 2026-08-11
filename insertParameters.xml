@@ -55,6 +55,16 @@
     if:set="bootstrap.css.section.title"
   />
   <param
+    name="BOOTSTRAP_CSS_BADGE"
+    expression="${bootstrap.css.badge}"
+    if:set="bootstrap.css.badge"
+  />
+  <param
+    name="BOOTSTRAP_CSS_BUTTON"
+    expression="${bootstrap.css.button}"
+    if:set="bootstrap.css.button"
+  />
+  <param
     name="BOOTSTRAP_CSS_CARD"
     expression="${bootstrap.css.card}"
     if:set="bootstrap.css.card"
