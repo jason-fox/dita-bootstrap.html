@@ -265,6 +265,8 @@
   <xsl:template match="*[contains(@class, ' bootstrap-d/alert ')]" mode="bootstrap-class" priority="10">
     <xsl:text>theme-</xsl:text>
     <xsl:value-of select="@color"/>
+    <xsl:text> fg-emphasis-</xsl:text>
+    <xsl:value-of select="@color"/>
     <xsl:text> </xsl:text>
     <xsl:if test="*[contains(@class, ' topic/p ')]">
       <xsl:text>vstack </xsl:text>
@@ -622,31 +624,28 @@
   <!-- Add additional Bootstrap CSS classes and roles to <note> elements -->
   <xsl:template name="bootstrap-note">
     <xsl:text>alert </xsl:text>
-    <xsl:choose>
-       <xsl:when test="@color">
-          <xsl:text>theme-</xsl:text>
-          <xsl:value-of select="@color"/>
-       </xsl:when>
-       <xsl:otherwise>
-          <xsl:value-of
-          select="
-              if (@type='tip') then 'theme-success'
-              else if (@type='fastpath') then 'theme-success'
-              else if (@type='remember') then 'theme-success'
-              else if (@type='restriction') then 'theme-warning'
-              else if (@type='important') then 'theme-warning'
-              else if (@type='attention') then 'theme-warning'
-              else if (@type='caution') then 'theme-warning'
-              else if (@type='warning') then 'theme-warning'
-              else if (@type='trouble') then 'theme-warning'
-              else if (@type='danger') then 'theme-danger'
-              else if (@type='notice') then 'theme-info'
-              else if (@type='note' or (contains(@class, ' topic/note ') and not(contains(@class, ' bootstrap-d/alert ')) and not(contains(@class, ' topic/section ')) and empty(@type))) then 'theme-primary'
-              else if (@type='other') then ''
-              else 'theme-info'"
-        />
-       </xsl:otherwise>
-    </xsl:choose>
+    <xsl:variable
+      name="noteColor"
+      select="
+          if (@color) then @color
+          else if (@type='tip') then 'success'
+          else if (@type='fastpath') then 'success'
+          else if (@type='remember') then 'success'
+          else if (@type='restriction') then 'warning'
+          else if (@type='important') then 'warning'
+          else if (@type='attention') then 'warning'
+          else if (@type='caution') then 'warning'
+          else if (@type='warning') then 'warning'
+          else if (@type='trouble') then 'warning'
+          else if (@type='danger') then 'danger'
+          else if (@type='notice') then 'info'
+          else if (@type='note' or (contains(@class, ' topic/note ') and not(contains(@class, ' bootstrap-d/alert ')) and not(contains(@class, ' topic/section ')) and empty(@type))) then 'primary'
+          else if (@type='other') then ''
+          else 'info'"
+    />
+    <xsl:if test="string-length($noteColor) > 0">
+      <xsl:value-of select="concat('theme-', $noteColor, ' fg-emphasis-', $noteColor)"/>
+    </xsl:if>
   </xsl:template>
 
   <!-- Add style to a bootstrap element based on otherprops -->
