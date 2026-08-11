@@ -34,11 +34,11 @@
     --bs-primary-focus-ring: color-mix(in oklch, var(--bs-primary-base) 50%, var(--bs-bg-body));
 
     --bs-secondary-bg: var(--bs-secondary-base);
-    --bs-secondary-fg: var(--bs-secondary-base);
-    --bs-secondary-border: var(--bs-secondary-base);
+    --bs-secondary-fg: color-mix(in srgb, var(--bs-fg-body) 75%, transparent);
+    --bs-secondary-border: color-mix(in srgb, var(--bs-fg-body) 75%, transparent);
     --bs-secondary-contrast: #000;
-    --bs-secondary-bg-subtle: color-mix(in srgb, var(--bs-secondary-base) 15%, white);
-    --bs-secondary-bg-muted: color-mix(in srgb, var(--bs-secondary-base) 30%, white);
+    --bs-secondary-bg-subtle: color-mix(in srgb, var(--bs-secondary-base) 15%, var(--bs-bg-body));
+    --bs-secondary-bg-muted: color-mix(in srgb, var(--bs-secondary-base) 30%, var(--bs-bg-body));
     --bs-secondary-fg-emphasis: color-mix(in srgb, var(--bs-secondary-base) 65%, black);
     --bs-secondary-focus-ring: color-mix(in oklch, var(--bs-secondary-base) 50%, var(--bs-bg-body));
 
