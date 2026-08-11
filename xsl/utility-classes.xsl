@@ -516,8 +516,8 @@
             else if (contains(@class, ' topic/dl ')) then $BOOTSTRAP_CSS_DL
             else if (contains(@class, ' topic/image ') and ancestor::*[contains(@class, ' topic/fig ')]) then ' ' || $BOOTSTRAP_CSS_FIGURE_IMAGE
             else if (contains(@outputclass, 'carousel-')) then 'carousel'
-            else if (contains(@class, ' topic/title ') and ancestor::*[contains(@outputclass, 'alert-')]) then 'alert-heading'
-            else if (contains(@class, ' topic/xref ') and ancestor::*[contains(@outputclass, 'alert-')]) then 'alert-link'
+            else if (contains(@class, ' topic/title ') and ancestor::*[tokenize(@outputclass, '\s+') = 'alert']) then 'alert-heading'
+            else if (contains(@class, ' topic/xref ') and ancestor::*[tokenize(@outputclass, '\s+') = 'alert']) then 'alert-link'
             else if (contains(@class, ' topic/li ') and (ancestor::*[contains(@class, ' bootstrap-d/list-group ')] or ancestor::ul[contains(@outputclass, 'list-group')] or ancestor::ol[contains(@outputclass, 'list-group')])) then 'list-group-item'
             else if (contains(@class, ' topic/li ') and (ancestor::ul[contains(@outputclass, 'list-inline')] or ancestor::ol[contains(@outputclass, 'list-inline')])) then 'list-inline-item'
             else if (contains(@outputclass, 'pagination-')) then 'pagination'
