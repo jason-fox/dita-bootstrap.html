@@ -625,9 +625,15 @@
   <xsl:template name="bootstrap-note">
     <xsl:text>alert </xsl:text>
     <xsl:variable
+      name="themeClasses"
+      select="for $t in ('primary', 'secondary', 'success', 'danger', 'warning', 'info', 'accent', 'inverse') return concat('theme-', $t)"
+    />
+    <xsl:variable name="hasCustomTheme" select="some $c in tokenize(@outputclass, '\s+') satisfies $c = $themeClasses"/>
+    <xsl:variable
       name="noteColor"
       select="
-          if (@color) then @color
+          if ($hasCustomTheme) then ''
+          else if (@color) then @color
           else if (@type='tip') then 'success'
           else if (@type='fastpath') then 'success'
           else if (@type='remember') then 'success'
