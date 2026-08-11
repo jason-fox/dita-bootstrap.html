@@ -170,6 +170,16 @@
     if:set="bootstrap.css.pagination"
   />
   <param
+    name="BOOTSTRAP_CSS_POPOVER"
+    expression="${bootstrap.css.popover}"
+    if:set="bootstrap.css.popover"
+  />
+  <param
+    name="BOOTSTRAP_CSS_TOOLTIP"
+    expression="${bootstrap.css.tooltip}"
+    if:set="bootstrap.css.tooltip"
+  />
+  <param
     name="BOOTSTRAP_CSS_ACTIVE_NAV_PARENT"
     expression="${bootstrap.css.nav.parent}"
     if:set="bootstrap.css.nav.parent"

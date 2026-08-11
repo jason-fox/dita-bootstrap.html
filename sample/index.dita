@@ -539,36 +539,11 @@
           scope="external"
         >dita-bootstrap.github.io</xref>. </note>
     </section>
-    <section id="common-bootstrap-utility-classes">
-      <title>Common Bootstrap utility classes</title>
-      <indexterm><parmname>--bootstrap.css.shortdesc</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.codeblock</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.topic.title</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.section.title</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.badge</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.button</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.card</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.carousel</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.carousel.caption</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.carousel.indicators</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.footer</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.menubar.toc</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.table</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.tabs</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.tabs.vertical</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.thead</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.accordion</parmname></indexterm>
+    <section id="accessibility-utility-classes">
+      <title>Accessibility utility classes</title>
       <indexterm><parmname>--bootstrap.css.accessibility.nav</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.accessibility.link</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.figure</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.figure.caption</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.figure.image</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.dl</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.dt</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.dd</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.nav.parent</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.example</parmname></indexterm>
-      <p>The HTML output for the following DITA elements can be annotated with common Bootstrap utility classes for
+      <p>The HTML output for accessibility-related elements can be annotated with common Bootstrap utility classes for
         <xref href="https://getbootstrap.com/docs/6.0/utilities/borders" format="html" scope="external">borders</xref>,
         <xref
           href="https://getbootstrap.com/docs/6.0/utilities/background"
@@ -595,6 +570,39 @@
             Common Bootstrap utility classes for accessibility navigation
           </pd>
         </plentry>
+      </parml>
+    </section>
+    <section id="bootstrap-component-utility-classes">
+      <title>Bootstrap component utility classes</title>
+      <indexterm><parmname>--bootstrap.css.badge</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.button</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.card</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.carousel</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.carousel.caption</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.carousel.indicators</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.container.size</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.footer</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.menubar.toc</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.nav.parent</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.pagination</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.popover</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.tabs</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.tabs.vertical</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.thead</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.tooltip</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.accordion</parmname></indexterm>
+      <p
+      >The HTML output for the following Bootstrap components can be annotated with common Bootstrap utility classes for
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/borders" format="html" scope="external">borders</xref>,
+        <xref
+          href="https://getbootstrap.com/docs/6.0/utilities/background"
+          format="html"
+          scope="external"
+        >background</xref>,
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/text" format="html" scope="external">text</xref>,
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/spacing" format="html" scope="external">spacing</xref>,
+        etc. using additional command line parameters:</p>
+      <parml otherprops="cols(4)">
         <plentry>
           <pt>
             <parmname>--bootstrap.css&#8203;.accordion</parmname>
@@ -660,15 +668,6 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--bootstrap.css&#8203;.codeblock</parmname>
-          </pt>
-          <pd>
-            Common Bootstrap utility classes for DITA
-            <xmlelement>codeblock</xmlelement> elements
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
             <parmname>--bootstrap.css&#8203;.container&#8203;.size</parmname>
           </pt>
           <pd>
@@ -677,6 +676,113 @@
               format="dita"
             >container class</xref> for main layout and menubar-TOC.
             Defaults to <option>2xl:container</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.footer</parmname>
+          </pt>
+          <pd>
+            Common utility classes for the HTML
+            <xmlelement>footer</xmlelement> element
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.menubar&#8203;.toc</parmname>
+          </pt>
+          <pd>
+            CSS class for the <xref href="./nav.dita" format="dita">menu bar</xref>. Defaults to
+            <option>sticky-top bg-body</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.nav&#8203;.parent</parmname>
+          </pt>
+          <pd>
+            Common Bootstrap utility classes for ancestors of active nav-pill elements
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.pagination</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./pagination.dita" format="dita">pagination components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.popover</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./popovers.dita" format="dita">popover components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.tabs</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./tabs.dita" format="dita">tabbed dialog components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.tabs&#8203;.vertical</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./tabs.dita" format="dita">vertical tabbed dialog components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.tooltip</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./tooltips.dita" format="dita">tooltip components</xref>
+          </pd>
+        </plentry>
+      </parml>
+    </section>
+    <section id="dita-element-utility-classes">
+      <title>DITA element utility classes</title>
+      <indexterm><parmname>--bootstrap.css.shortdesc</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.codeblock</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.topic.title</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.section.title</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.table</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.figure</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.figure.caption</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.figure.image</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.dl</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.dt</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.dd</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.example</parmname></indexterm>
+      <p>The HTML output for the following DITA elements can be annotated with common Bootstrap utility classes for
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/borders" format="html" scope="external">borders</xref>,
+        <xref
+          href="https://getbootstrap.com/docs/6.0/utilities/background"
+          format="html"
+          scope="external"
+        >background</xref>,
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/text" format="html" scope="external">text</xref>,
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/spacing" format="html" scope="external">spacing</xref>,
+        etc. using additional command line parameters:</p>
+      <parml otherprops="cols(4)">
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.codeblock</parmname>
+          </pt>
+          <pd>
+            Common Bootstrap utility classes for DITA
+            <xmlelement>codeblock</xmlelement> elements
           </pd>
         </plentry>
         <plentry>
@@ -740,41 +846,6 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--bootstrap.css&#8203;.footer</parmname>
-          </pt>
-          <pd>
-            Common utility classes for the HTML
-            <xmlelement>footer</xmlelement> element
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--bootstrap.css&#8203;.menubar&#8203;.toc</parmname>
-          </pt>
-          <pd>
-            CSS class for the <xref href="./nav.dita" format="dita">menu bar</xref>. Defaults to
-            <option>sticky-top bg-body</option>
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--bootstrap.css&#8203;.nav&#8203;.parent</parmname>
-          </pt>
-          <pd>
-            Common Bootstrap utility classes for ancestors of active nav-pill elements
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--bootstrap.css&#8203;.pagination</parmname>
-          </pt>
-          <pd>
-            Common utility classes for Bootstrap
-            <xref href="./pagination.dita" format="dita">pagination components</xref>
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
             <parmname>--bootstrap.css&#8203;.section&#8203;.title</parmname>
           </pt>
           <pd>
@@ -798,24 +869,6 @@
           <pd>
             Common Bootstrap utility classes for DITA
             <xmlelement>table</xmlelement> elements
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--bootstrap.css&#8203;.tabs</parmname>
-          </pt>
-          <pd>
-            Common utility classes for Bootstrap
-            <xref href="./tabs.dita" format="dita">tabbed dialog components</xref>
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--bootstrap.css&#8203;.tabs&#8203;.vertical</parmname>
-          </pt>
-          <pd>
-            Common utility classes for Bootstrap
-            <xref href="./tabs.dita" format="dita">vertical tabbed dialog components</xref>
           </pd>
         </plentry>
         <plentry>

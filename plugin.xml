@@ -263,6 +263,16 @@
       desc="Bootstrap classes for pagination components"
     />
     <param
+      name="bootstrap.css.popover"
+      type="string"
+      desc="Bootstrap classes for popover components"
+    />
+    <param
+      name="bootstrap.css.tooltip"
+      type="string"
+      desc="Bootstrap classes for tooltip components"
+    />
+    <param
       name="bootstrap.css.nav.parent"
       type="string"
       desc="Bootstrap classes for ancestors of active navbar elements"

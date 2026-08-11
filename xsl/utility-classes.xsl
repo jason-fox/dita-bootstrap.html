@@ -34,6 +34,8 @@
   <xsl:param name="BOOTSTRAP_CSS_DT" select="'text-truncate '"/>
   <xsl:param name="BOOTSTRAP_CSS_DD" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_PAGINATION" select="''"/>
+  <xsl:param name="BOOTSTRAP_CSS_POPOVER" select="''"/>
+  <xsl:param name="BOOTSTRAP_CSS_TOOLTIP" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_TABLE" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_TABLE_HEAD" select="''"/>
 
@@ -393,7 +395,11 @@
   </xsl:template>
 
   <!-- Change the default Bootstrap CSS classes of popovers -->
-  <xsl:template match="*[contains(@class, ' bootstrap-d/popover ')]" mode="bootstrap-class" priority="11">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/popover ')] | *[contains(@class, ' topic/xref ') and contains(@outputclass, 'popover-')]"
+    mode="bootstrap-class"
+    priority="11"
+  >
     <xsl:if test="@color">
       <xsl:text>theme-</xsl:text>
       <xsl:value-of select="@color"/>
@@ -404,11 +410,16 @@
       <xsl:value-of select="@position"/>
       <xsl:text> </xsl:text>
     </xsl:if>
+    <xsl:value-of select="concat(' ', $BOOTSTRAP_CSS_POPOVER, ' ')"/>
     <xsl:next-match/>
   </xsl:template>
 
   <!-- Change the default Bootstrap CSS classes of tooltips -->
-  <xsl:template match="*[contains(@class, ' bootstrap-d/tooltip ')]" mode="bootstrap-class" priority="11">
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/tooltip ')] | *[contains(@class, ' topic/xref ') and contains(@outputclass, 'tooltip-')]"
+    mode="bootstrap-class"
+    priority="11"
+  >
     <xsl:if test="@color">
       <xsl:text>theme-</xsl:text>
       <xsl:value-of select="@color"/>
@@ -419,6 +430,7 @@
       <xsl:value-of select="@position"/>
       <xsl:text> </xsl:text>
     </xsl:if>
+    <xsl:value-of select="concat(' ', $BOOTSTRAP_CSS_TOOLTIP, ' ')"/>
     <xsl:next-match/>
   </xsl:template>
 
