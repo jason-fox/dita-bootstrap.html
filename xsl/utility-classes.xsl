@@ -246,6 +246,9 @@
       <xsl:value-of select="ancestor::*[contains(@class,' bootstrap-d/pagination ')][1]/@outputclass"/>
       <xsl:text> </xsl:text>
     </xsl:if>
+    <xsl:if test="ancestor::*[contains(@class,' bootstrap-d/pagination ')][1]/@color">
+      <xsl:value-of select="concat('theme-', ancestor::*[contains(@class,' bootstrap-d/pagination ')][1]/@color, ' ')"/>
+    </xsl:if>
     <xsl:value-of select="$BOOTSTRAP_CSS_PAGINATION"/>
     <xsl:next-match/>
   </xsl:template>

@@ -85,6 +85,192 @@
 &lt;/pagination&gt;</codeblock>
         </section>
       </bodydiv>
+    <section id="variants">
+      <title>Variants</title>
+      <p>Add a <codeph>theme-{color}</codeph> outputclass to a pagination list to apply a semantic theme color
+        across the component, including hover, focus, and the active page item.</p>
+    </section>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+      <section id="page-navigation-example-primary" outputclass="pagination theme-primary">
+        <title>Page navigation example</title>
+        <ol>
+          <li><xref href="#">Previous</xref></li>
+          <li><xref href="#">1</xref></li>
+          <li><xref href="#">2</xref></li>
+          <li><xref href="#">3</xref></li>
+          <li><xref href="#">Next</xref></li>
+        </ol>
+      </section>
+      <section id="page-navigation-example-secondary" outputclass="pagination theme-secondary">
+        <title>Page navigation example</title>
+        <ol>
+          <li><xref href="#">Previous</xref></li>
+          <li><xref href="#">1</xref></li>
+          <li><xref href="#">2</xref></li>
+          <li><xref href="#">3</xref></li>
+          <li><xref href="#">Next</xref></li>
+        </ol>
+      </section>
+      <section id="page-navigation-example-success" outputclass="pagination theme-success">
+        <title>Page navigation example</title>
+        <ol>
+          <li><xref href="#">Previous</xref></li>
+          <li><xref href="#">1</xref></li>
+          <li><xref href="#">2</xref></li>
+          <li><xref href="#">3</xref></li>
+          <li><xref href="#">Next</xref></li>
+        </ol>
+      </section>
+      <section id="page-navigation-example-danger" outputclass="pagination theme-danger">
+        <title>Page navigation example</title>
+        <ol>
+          <li><xref href="#">Previous</xref></li>
+          <li><xref href="#">1</xref></li>
+          <li><xref href="#">2</xref></li>
+          <li><xref href="#">3</xref></li>
+          <li><xref href="#">Next</xref></li>
+        </ol>
+      </section>
+      <section id="page-navigation-example-warning" outputclass="pagination theme-warning">
+        <title>Page navigation example</title>
+        <ol>
+          <li><xref href="#">Previous</xref></li>
+          <li><xref href="#">1</xref></li>
+          <li><xref href="#">2</xref></li>
+          <li><xref href="#">3</xref></li>
+          <li><xref href="#">Next</xref></li>
+        </ol>
+      </section>
+      <section id="page-navigation-example-info" outputclass="pagination theme-info">
+        <title>Page navigation example</title>
+        <ol>
+          <li><xref href="#">Previous</xref></li>
+          <li><xref href="#">1</xref></li>
+          <li><xref href="#">2</xref></li>
+          <li><xref href="#">3</xref></li>
+          <li><xref href="#">Next</xref></li>
+        </ol>
+      </section>
+      <section id="page-navigation-example-accent" outputclass="pagination theme-accent">
+        <title>Page navigation example</title>
+        <ol>
+          <li><xref href="#">Previous</xref></li>
+          <li><xref href="#">1</xref></li>
+          <li><xref href="#">2</xref></li>
+          <li><xref href="#">3</xref></li>
+          <li><xref href="#">Next</xref></li>
+        </ol>
+      </section>
+      <section id="page-navigation-example-inverse" outputclass="pagination theme-inverse">
+        <title>Page navigation example</title>
+        <ol>
+          <li><xref href="#">Previous</xref></li>
+          <li><xref href="#">1</xref></li>
+          <li><xref href="#">2</xref></li>
+          <li><xref href="#">3</xref></li>
+          <li><xref href="#">Next</xref></li>
+        </ol>
+      </section>
+    </bodydiv>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;section&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol outputclass="pagination theme-primary"&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol outputclass="pagination theme-secondary"&gt;
+    ...
+  &lt;/ol&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol outputclass="pagination theme-success"&gt;
+    ...
+  &lt;/ol&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol outputclass="pagination theme-danger"&gt;
+    ...
+  &lt;/ol&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol outputclass="pagination theme-warning"&gt;
+    ...
+  &lt;/ol&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol outputclass="pagination theme-info"&gt;
+    ...
+  &lt;/ol&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol outputclass="pagination theme-accent"&gt;
+    ...
+  &lt;/ol&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol outputclass="pagination theme-inverse"&gt;
+    ...
+  &lt;/ol&gt;
+&lt;/section&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;pagination color="primary"&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/pagination&gt;
+&lt;pagination color="secondary"&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;...&lt;/ol&gt;
+&lt;/pagination&gt;
+&lt;pagination color="success"&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;...&lt;/ol&gt;
+&lt;/pagination&gt;
+&lt;pagination color="danger"&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;...&lt;/ol&gt;
+&lt;/pagination&gt;
+&lt;pagination color="warning"&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;...&lt;/ol&gt;
+&lt;/pagination&gt;
+&lt;pagination color="info"&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;...&lt;/ol&gt;
+&lt;/pagination&gt;
+&lt;pagination color="accent"&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;...&lt;/ol&gt;
+&lt;/pagination&gt;
+&lt;pagination color="inverse"&gt;
+  &lt;title&gt;Page navigation example&lt;/title&gt;
+  &lt;ol&gt;...&lt;/ol&gt;
+&lt;/pagination&gt;</codeblock>
+      </section>
+    </bodydiv>
+
     <section id="sizing">
       <title>Sizing</title>
       <p>Fancy larger or smaller pagination? Use <xmlatt>size="large"</xmlatt> or

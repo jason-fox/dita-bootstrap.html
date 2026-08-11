@@ -187,7 +187,9 @@
       <section>
         <title>Specialization</title>
         <codeblock>&lt;alert color="primary"&gt;
-  &lt;icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/&gt;An example alert with an icon
+  &lt;div&gt;
+    &lt;icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/&gt;An example alert with an icon
+  &lt;/div&gt;
 &lt;/alert&gt;</codeblock>
       </section>
     </bodydiv>
