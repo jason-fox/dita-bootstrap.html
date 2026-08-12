@@ -3,7 +3,7 @@
 (() => {
   let LUNR_DATA = null;
   let PREVIEW_LOOKUP = null;
-  const SEARCH_CARD_THEME = "primary-contrast";
+  const SEARCH_CARD_THEME = "secondary-border";
 
   function themeClasses(value) {
     if (!value || value === "none") {
