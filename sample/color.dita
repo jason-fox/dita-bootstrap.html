@@ -281,26 +281,26 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;thumbnail href="..." theme="warning-contrast"/&gt;
+        <codeblock>&lt;thumbnail href="..." theme="warning"/&gt;
 
-&lt;card theme="success-contrast" width="50"&gt;
+&lt;card theme="success" width="50"&gt;
   &lt;title&gt;Card Title&lt;/title&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
 &lt;/card&gt;
 
-&lt;accordion theme="info-contrast"&gt;
+&lt;accordion theme="info"&gt;
   &lt;accordion-item open="yes"&gt;
     &lt;title&gt;Accordion Item #1&lt;/title&gt;
     &lt;p&gt;This is the first item's accordion body.&lt;/p&gt;
   &lt;/accordion-item&gt;
 &lt;/accordion&gt;
 
-&lt;list-group width="50" theme="danger-contrast"&gt;
+&lt;list-group width="50" theme="danger"&gt;
   &lt;li&gt;An item&lt;/li&gt;
   &lt;li&gt;A second item&lt;/li&gt;
 &lt;/list-group&gt;
 
-&lt;carousel theme="inverse-contrast" width="50" indicators="yes"&gt;
+&lt;carousel theme="inverse" width="50" indicators="yes"&gt;
   &lt;carousel-item&gt;
     &lt;image href="..."/&gt;
   &lt;/carousel-item&gt;
