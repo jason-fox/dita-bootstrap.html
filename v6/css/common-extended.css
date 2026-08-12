@@ -144,6 +144,16 @@
   border-left: 0;
 }
 
+.navbar .menu {
+  --bs-theme-fg: initial;
+  --bs-theme-base: initial;
+  --bs-theme-bg: initial;
+  --bs-theme-bg-subtle: initial;
+  --bs-theme-bg-muted: initial;
+  --bs-theme-border: initial;
+  --bs-theme-contrast: initial;
+}
+
 /*!
  *  This file is part of the DITA Bootstrap plug-in for DITA Open Toolkit.
  *  See the accompanying LICENSE file for applicable licenses.
@@ -466,84 +476,84 @@ article [tabindex='0'] {
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: var(--prism-maintext, #ccc);
-	background: none;
-	font-family: var(--bs-font-monospace, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace);
-	font-size: 1em;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
+  color: var(--prism-maintext, #ccc);
+  background: none;
+  font-family: var(--bs-font-monospace, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace);
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
 }
 
 /* :not(pre) > code[class*="language-"],*/
 pre[class*="language-"] {
-	background: var(--prism-background, #2d2d2d);
+  background: var(--prism-background, #2d2d2d);
 }
 
 /* Inline code */
 :not(pre)>code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
 }
 
 pre[class*="language-"].show-line-numbers {
-	position: relative;
-	padding-left: 3.8em;
-	counter-reset: linenumber;
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
 }
 
 
 pre[class*="language-"].show-line-numbers>code {
-	position: relative;
-	white-space: inherit;
+  position: relative;
+  white-space: inherit;
 }
 
 .show-line-numbers .line-numbers-rows {
-	position: absolute;
-	pointer-events: none;
-	font-size: 100%;
-	left: -3em;
-	width: 2em;
-	/* works for line-numbers below 1000 lines */
-	letter-spacing: -1px;
-	border-right: 1px solid;
-	border-right-color: var(--prism-text, #999);
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  position: absolute;
+  pointer-events: none;
+  font-size: 100%;
+  left: -3em;
+  width: 2em;
+  /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid;
+  border-right-color: var(--prism-text, #999);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
 }
 
 span.line-numbers-rows {
-	display: inline;
-	counter-increment: linenumber;
+  display: inline;
+  counter-increment: linenumber;
 }
 
 span.line-numbers-rows:before {
-	content: counter(linenumber);
-	color: var(--prism-text, #999);
-	display: inline;
-	padding-right: 0.8em;
-	text-align: right;
+  content: counter(linenumber);
+  color: var(--prism-text, #999);
+  display: inline;
+  padding-right: 0.8em;
+  text-align: right;
 }
 
 .token.comment,
@@ -551,24 +561,24 @@ span.line-numbers-rows:before {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: var(--prism-text, #999);
+  color: var(--prism-text, #999);
 }
 
 .token.punctuation {
-	color: var(--prism-punctuation, #ccc);
+  color: var(--prism-punctuation, #ccc);
 }
 
 
 .token.attr-name,
 .token.namespace,
 .token.deleted {
-	color: var(--prism-names, #e2777a);
+  color: var(--prism-names, #e2777a);
 }
 
 .token.boolean,
 .token.number,
 .token.function {
-	color: var(--prism-functions, #f08d49);
+  color: var(--prism-functions, #f08d49);
 }
 
 .token.tag,
@@ -576,7 +586,7 @@ span.line-numbers-rows:before {
 .token.class-name,
 .token.constant,
 .token.symbol {
-	color: var(--prism-symbol, #f8c555);
+  color: var(--prism-symbol, #f8c555);
 }
 
 .token.function-name,
@@ -585,7 +595,7 @@ span.line-numbers-rows:before {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-	color: var(--prism-keywords, #cc99cd);
+  color: var(--prism-keywords, #cc99cd);
 }
 
 .token.string,
@@ -593,28 +603,192 @@ span.line-numbers-rows:before {
 .token.attr-value,
 .token.regex,
 .token.variable {
-	color: var(--prism-strings, #7ec699);
+  color: var(--prism-strings, #7ec699);
 }
 
 .token.operator,
 .token.entity,
 .token.url {
-	color: var(--prism-url, #67cdcc);
+  color: var(--prism-url, #67cdcc);
 }
 
 .token.important,
 .token.bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .token.italic {
-	font-style: italic;
+  font-style: italic;
 }
 
 .token.entity {
-	cursor: help;
+  cursor: help;
 }
 
 .token.inserted {
-	color: var(--inserted, green);
+  color: var(--inserted, green);
+}
+
+
+code[class*="swagger-"],
+pre[class*="swagger-"]{
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+    padding-left: 1em;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 3px;
+}
+
+pre[class*="swagger-"]{
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+
+span.swagger-verb {
+  color: white;
+    border-radius: 3px;
+    padding: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: var( --bs-font-sans-serif, sans-serif);
+    font-size: medium;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+pre.swagger-post {
+    border-color: #49cc90;
+    background: rgba(73,204,144,.1)
+}
+
+pre.swagger-post span.swagger-verb {
+  background: #49cc90;
+}
+
+
+pre.swagger-put {
+    border-color: #fca130;
+    background: rgba(252,161,48,.1)
+}
+
+pre.swagger-put span.swagger-verb {
+  background: #fca130;
+}
+
+
+pre.swagger-delete {
+    border-color: #f93e3e;
+    background: rgba(249,62,62,.1)
+}
+
+pre.swagger-delete span.swagger-verb {
+  background: #f93e3e;
+}
+
+pre.swagger-get {
+    border-color: #61affe;
+    background: rgba(97,175,254,.1)
+}
+
+pre.swagger-get span.swagger-verb {
+  background: #61affe;
+}
+
+pre.swagger-patch {
+    border-color: #50e3c2;
+    background: rgba(80,227,194,.1)
+}
+
+pre.swagger-patch span.swagger-verb {
+  background: #50e3c2;
+}
+
+pre.swagger-head {
+    border-color: #9012fe;
+    background: rgba(144,18,254,.1)
+}
+
+pre.swagger-head span.swagger-verb {
+  background: #9012fe;
+}
+
+pre.swagger-options {
+    border-color: #0d5aa7;
+    background: rgba(13,90,167,.1)
+}
+
+pre.swagger-options span.swagger-verb {
+  background: #0d5aa7;
+}
+
+pre.swagger-deprecated {
+    border-color: #ebebeb;
+    background: hsla(0,0%,92.2%,.1)
+}
+.tabs {
+  position: relative;
+  height: 400px;
+  max-height: 400px;
+  display: block;
+  margin: 1em auto 0;
+  width: 95%;
+}
+
+.tabs.small {
+  height: 200px;
+  max-height: 200px;
+}
+
+.tabs.medium {
+  height: 600px;
+  max-height: 600px;
+}
+
+.tabs.large {
+  height: 1000px;
+  max-height: 1000px;
+}
+
+
+
+
+.tab {
+  float: left;
+}
+.tab label {
+  cursor: pointer;
+  background: #c69;
+  font-size: 1.2em;
+  border-radius: 5px 5px 0 0;
+  padding: 0.5em 1em;
+}
+.tab [type=radio] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.tab [type=radio]:focus + label {
+  outline: 2px dotted #000;
+}
+.tab [type=radio]:checked ~ label {
+  background: #c99;
+}
+.tab [type=radio]:checked ~ label ~ .section {
+  z-index: 1;
+}
+
+.tab .section {
+  background: white;
+  border: 1px solid #c69;
+  border-radius: 0 5px 5px;
+  padding: 0.5em 2em 0.5em 2em;
+  position: absolute;
+  width: 90%;
+  top: 2em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: scroll;
 }
