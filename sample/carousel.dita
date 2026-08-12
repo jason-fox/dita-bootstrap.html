@@ -216,7 +216,7 @@
           <div outputclass="row">
             <div outputclass="col-1"/>
             <div outputclass="col-10">
-              <lines outputclass="text-bg-secondary">Is it for fear to wet a widow’s eye
+              <lines outputclass="p-1 theme-secondary theme-muted theme-border">Is it for fear to wet a widow’s eye
 That thou consum’st thyself in single life?
 Ah, if thou issueless shalt hap to die,
 The world will wail thee like a makeless wife;</lines>
@@ -227,7 +227,9 @@ The world will wail thee like a makeless wife;</lines>
           <div outputclass="row">
             <div outputclass="col-1"/>
             <div outputclass="col-10">
-              <lines outputclass="text-bg-secondary">The world will be thy widow and still weep
+              <lines
+                outputclass="p-1 theme-secondary theme-muted theme-border"
+              >The world will be thy widow and still weep
 That thou no form of thee hast left behind,
 When every private widow well may keep,
 By children’s eyes, her husband’s shape in mind.</lines>
@@ -238,7 +240,9 @@ By children’s eyes, her husband’s shape in mind.</lines>
           <div outputclass="row">
             <div outputclass="col-1"/>
             <div outputclass="col-10">
-              <lines outputclass="text-bg-secondary">Look what an unthrift in the world doth spend
+              <lines
+                outputclass="p-1 theme-secondary theme-muted theme-border"
+              >Look what an unthrift in the world doth spend
 Shifts but his place, for still the world enjoys it;
 But beauty’s waste hath in the world an end,
 And, kept unused, the user so destroys it.</lines>
@@ -249,7 +253,9 @@ And, kept unused, the user so destroys it.</lines>
           <div outputclass="row">
             <div outputclass="col-1"/>
             <div outputclass="col-10">
-              <lines outputclass="text-bg-secondary"> No love toward others in that bosom sits
+              <lines
+                outputclass="p-1 theme-secondary theme-muted theme-border"
+              > No love toward others in that bosom sits
  That on himself such murd’rous shame commits.
 
             <b>Sonnet 9 - William Shakespeare</b></lines>

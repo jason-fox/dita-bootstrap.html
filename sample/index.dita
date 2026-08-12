@@ -539,20 +539,18 @@
           scope="external"
         >dita-bootstrap.github.io</xref>. </note>
     </section>
-    <section id="accessibility-utility-classes">
-      <title>Accessibility utility classes</title>
-      <indexterm><parmname>--bootstrap.css.accessibility.nav</parmname></indexterm>
+    <section id="bootstrap-themes">
+      <title>Bootstrap Themes</title>
       <indexterm><parmname>--bootstrap.css.accessibility.link</parmname></indexterm>
-      <p>The HTML output for accessibility-related elements can be annotated with common Bootstrap utility classes for
-        <xref href="https://getbootstrap.com/docs/6.0/utilities/borders" format="html" scope="external">borders</xref>,
-        <xref
-          href="https://getbootstrap.com/docs/6.0/utilities/background"
-          format="html"
-          scope="external"
-        >background</xref>,
-        <xref href="https://getbootstrap.com/docs/6.0/utilities/text" format="html" scope="external">text</xref>,
-        <xref href="https://getbootstrap.com/docs/6.0/utilities/spacing" format="html" scope="external">spacing</xref>,
-        etc. using additional command line parameters:</p>
+      <indexterm><parmname>--bootstrap.theme.accessibility</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.body</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.content</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.footer</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.header</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.scrollspy</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.sidebar</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.topbar</parmname></indexterm>
+      <p>Layout regions can be styled with a Bootstrap theme color using additional command line parameters.</p>
       <parml otherprops="cols(4)">
         <plentry>
           <pt>
@@ -564,10 +562,67 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--bootstrap.css&#8203;.accessibility&#8203;.nav</parmname>
+            <parmname>--bootstrap.theme&#8203;.accessibility</parmname>
           </pt>
           <pd>
             Common Bootstrap utility classes for accessibility navigation
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.body</parmname>
+          </pt>
+          <pd>
+            Theme utility class for the page <xmlelement>body</xmlelement>.
+            Defaults to <option>none</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.content</parmname>
+          </pt>
+          <pd>
+            Theme utility class for the main content area. Defaults to <option>none</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.footer</parmname>
+          </pt>
+          <pd>
+            Theme utility class for the page footer. Defaults to <option>none</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.header</parmname>
+          </pt>
+          <pd>
+            Theme utility class for the page header. Defaults to <option>primary-contrast</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.scrollspy</parmname>
+          </pt>
+          <pd>
+            Theme utility class for the scrollspy menu. Defaults to <option>none</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.sidebar</parmname>
+          </pt>
+          <pd>
+            Theme utility class for the sidebar navigation. Defaults to <option>none</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.topbar</parmname>
+          </pt>
+          <pd>
+            Theme utility class for the collapsible top header. Defaults to <option>none</option>
           </pd>
         </plentry>
       </parml>
@@ -581,7 +636,6 @@
       <indexterm><parmname>--bootstrap.css.carousel.caption</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.carousel.indicators</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.container.size</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.footer</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.menubar.toc</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.nav.parent</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.pagination</parmname></indexterm>
@@ -676,15 +730,6 @@
               format="dita"
             >container class</xref> for main layout and menubar-TOC.
             Defaults to <option>2xl:container</option>
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--bootstrap.css&#8203;.footer</parmname>
-          </pt>
-          <pd>
-            Common utility classes for the HTML
-            <xmlelement>footer</xmlelement> element
           </pd>
         </plentry>
         <plentry>

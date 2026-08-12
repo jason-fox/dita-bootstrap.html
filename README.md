@@ -11,7 +11,7 @@ A plug-in for [DITA Open Toolkit][1] that extends the default HTML5 output with 
   - [Custom CSS](#custom-css)
   - [Headers and footers](#headers-and-footers)
   - [Navigation menu](#navigation-menu)
-  - [Accessibility utility classes](#accessibility-utility-classes)
+  - [Bootstrap Themes](#bootstrap-themes)
   - [Bootstrap component utility classes](#bootstrap-component-utility-classes)
   - [DITA element utility classes](#dita-element-utility-classes)
   - [Bootstrap icons for DITA notes](#bootstrap-icons-for-dita-notes)
@@ -160,12 +160,19 @@ dita --input=path/to/your.ditamap \
      --menubar-toc.include=yes
 ```
 
-### Accessibility utility classes
+### Bootstrap Themes
 
-The HTML output for accessibility-related elements can be annotated with common Bootstrap utility classes for borders, background, text, spacing, etc. using additional command line parameters:
+Several layout regions can be styled with a Bootstrap theme color using additional command line parameters. Each parameter accepts a color (`accent`, `danger`, `info`, `inverse`, `primary`, `secondary`, `success`, `warning`) combined with a suffix (`-border`, `-contrast`, `-muted`, `-subtle`, `-subtle-border`), or `none` to disable theming:
 
 - `bootstrap.css.accessibility.link` – Common Bootstrap utility classes for accessibility links
-- `bootstrap.css.accessibility.nav` – Common Bootstrap utility classes for accessibility navigation
+- `bootstrap.theme.accessibility` – Common Bootstrap utility classes for accessibility navigation
+- `bootstrap.theme.body` – Theme utility class for the page `<body>`. Same options, excluding the `-border` and `-subtle-border` suffixes. Default: `none`
+- `bootstrap.theme.content` – Theme utility class for the main content area. Default: `none`
+- `bootstrap.theme.footer` – Theme utility class for the page footer. Default: `none`
+- `bootstrap.theme.header` – Theme utility class for the page header. Default: `primary-contrast`
+- `bootstrap.theme.scrollspy` – Theme utility class for the scrollspy menu. Default: `none`
+- `bootstrap.theme.sidebar` – Theme utility class for the sidebar navigation. Default: `none`
+- `bootstrap.theme.topbar` – Theme utility class for the collapsible top header. Default: `none`
 
 ### Bootstrap component utility classes
 
@@ -179,7 +186,6 @@ The HTML output for the following Bootstrap components can be annotated with com
 - `bootstrap.css.carousel.caption` – Common utility classes for Bootstrap carousel captions
 - `bootstrap.css.carousel.indicators` – Common utility classes for Bootstrap carousel indicators
 - `bootstrap.css.container.size` – Bootstrap container class for main layout and menubar-TOC. Options: `container`, `container-fluid`, `sm:container`, `md:container`, `lg:container`, `xl:container` (default)
-- `bootstrap.css.footer` – Common utility classes for the HTML `<footer>` element
 - `bootstrap.css.menubar.toc` – CSS class for the menu bar. Defaults to `sticky-top bg-body`
 - `bootstrap.css.nav.parent` – Common utility classes for ancestors of active nav-pill elements
 - `bootstrap.css.pagination` – Common utility classes for Bootstrap pagination components

@@ -95,9 +95,39 @@
     if:set="bootstrap.css.carousel.caption"
   />
   <param
-    name="BOOTSTRAP_CSS_FOOTER"
-    expression="${bootstrap.css.footer}"
-    if:set="bootstrap.css.footer"
+    name="BOOTSTRAP_THEME_FOOTER"
+    expression="${bootstrap.theme.footer}"
+    if:set="bootstrap.theme.footer"
+  />
+  <param
+    name="BOOTSTRAP_THEME_HEADER"
+    expression="${bootstrap.theme.header}"
+    if:set="bootstrap.theme.header"
+  />
+  <param
+    name="BOOTSTRAP_THEME_SIDEBAR"
+    expression="${bootstrap.theme.sidebar}"
+    if:set="bootstrap.theme.sidebar"
+  />
+  <param
+    name="BOOTSTRAP_THEME_TOPBAR"
+    expression="${bootstrap.theme.topbar}"
+    if:set="bootstrap.theme.topbar"
+  />
+  <param
+    name="BOOTSTRAP_THEME_CONTENT"
+    expression="${bootstrap.theme.content}"
+    if:set="bootstrap.theme.content"
+  />
+  <param
+    name="BOOTSTRAP_THEME_BODY"
+    expression="${bootstrap.theme.body}"
+    if:set="bootstrap.theme.body"
+  />
+  <param
+    name="BOOTSTRAP_THEME_SCROLLSPY"
+    expression="${bootstrap.theme.scrollspy}"
+    if:set="bootstrap.theme.scrollspy"
   />
   <param
     name="BOOTSTRAP_CSS_TABS"
@@ -120,9 +150,9 @@
     if:set="menubar-toc.include"
   />
   <param
-    name="BOOTSTRAP_CSS_ACCESSIBILITY_NAV"
-    expression="${bootstrap.css.accessibility.nav}"
-    if:set="bootstrap.css.accessibility.nav"
+    name="BOOTSTRAP_THEME_ACCESSIBILITY"
+    expression="${bootstrap.theme.accessibility}"
+    if:set="bootstrap.theme.accessibility"
   />
   <param
     name="BOOTSTRAP_CSS_ACCESSIBILITY_LINK"

@@ -13,8 +13,29 @@
 >
   <xsl:param name="defaultLanguage" select="'en'" as="xs:string"/>
   <xsl:param name="BIDIRECTIONAL_DOCUMENT" select="'no'" as="xs:string"/>
-  <xsl:param name="BOOTSTRAP_CSS_FOOTER" select="'border-top bg-subtle-primary'"/>
+  <xsl:param name="BOOTSTRAP_THEME_FOOTER" select="'none'"/>
+  <xsl:param name="BOOTSTRAP_THEME_HEADER" select="'primary-contrast'"/>
+  <xsl:param name="BOOTSTRAP_THEME_SIDEBAR" select="'none'"/>
+  <xsl:param name="BOOTSTRAP_THEME_TOPBAR" select="'none'"/>
+  <xsl:param name="BOOTSTRAP_THEME_CONTENT" select="'none'"/>
+  <xsl:param name="BOOTSTRAP_THEME_BODY" select="'none'"/>
+  <xsl:param name="BOOTSTRAP_THEME_SCROLLSPY" select="'none'"/>
   <xsl:param name="BOOTSTRAP_TOPBAR_HDR"/>
+
+  <!-- Splits a hyphenated theme value (e.g. 'warning-subtle-border') into
+       theme- prefixed classes ('theme-warning theme-subtle theme-border').
+       'none' returns ''. -->
+  <xsl:template name="theme-classes">
+    <xsl:param name="value" as="xs:string"/>
+    <xsl:choose>
+      <xsl:when test="$value = 'none'">
+        <xsl:sequence select="''"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:sequence select="string-join(for $part in tokenize($value, '-') return concat('theme-', $part), ' ')"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
 
   <!--Check the file Url Definition of the TOP HDR FTR-->
   <xsl:variable name="TOPHDFFILE">
@@ -96,7 +117,13 @@
 
     <!-- ↓ Add collapsible top header ↓ -->
     <xsl:if test="string-length($TOPHDFFILE) > 0">
-      <div class="d-none lg:d-block">
+      <div>
+        <xsl:variable name="topbar-theme-classes">
+          <xsl:call-template name="theme-classes">
+            <xsl:with-param name="value" select="$BOOTSTRAP_THEME_TOPBAR"/>
+          </xsl:call-template>
+        </xsl:variable>
+        <xsl:attribute name="class" select="concat('d-none lg:d-block ', $topbar-theme-classes)"/>
         <xsl:copy-of select="document($TOPHDFFILE, /)"/>
       </div>
     </xsl:if>
@@ -105,9 +132,14 @@
     <xsl:if test="exists($header-content)">
       <header xsl:use-attribute-sets="banner">
         <!-- ↓ Add Bootstrap class attributes template ↓ -->
+        <xsl:variable name="header-theme-classes">
+          <xsl:call-template name="theme-classes">
+            <xsl:with-param name="value" select="$BOOTSTRAP_THEME_HEADER"/>
+          </xsl:call-template>
+        </xsl:variable>
         <xsl:attribute
           name="class"
-          select="'navbar lg:navbar-expand bd-navbar border-bottom border-inverse border-20 sticky-top'"
+          select="concat('navbar lg:navbar-expand bd-navbar border-bottom border-inverse border-20 sticky-top ', $header-theme-classes)"
         />
         <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
         <xsl:sequence select="$header-content"/>
@@ -171,16 +203,21 @@
         <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/>
       </article>
       <xsl:if test="$BOOTSTRAP_SCROLLSPY_TOC != 'none'">
+        <xsl:variable name="scrollspy-theme-classes">
+          <xsl:call-template name="theme-classes">
+            <xsl:with-param name="value" select="$BOOTSTRAP_THEME_SCROLLSPY"/>
+          </xsl:call-template>
+        </xsl:variable>
         <xsl:choose>
           <xsl:when test="count(*[contains(@class, ' topic/topic ')])&gt;0">
-            <div class="bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 fg-2">
+            <div class="{concat('bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 fg-2 ', $scrollspy-theme-classes)}">
               <xsl:call-template name="scrollspy-content"/>
             </div>
           </xsl:when>
           <xsl:when
             test="count(*/*[@id and (contains(@class, ' topic/section ') or contains(@class, ' topic/example '))])&gt;0"
           >
-            <div class="bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 fg-2">
+            <div class="{concat('bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 fg-2 ', $scrollspy-theme-classes)}">
               <xsl:call-template name="scrollspy-content"/>
             </div>
           </xsl:when>
@@ -565,8 +602,13 @@
     <xsl:if test="exists($footer-content)">
       <footer xsl:use-attribute-sets="footer">
         <!-- ↓ Add Bootstrap CSS ↓ -->
+        <xsl:variable name="footer-theme-classes">
+          <xsl:call-template name="theme-classes">
+            <xsl:with-param name="value" select="$BOOTSTRAP_THEME_FOOTER"/>
+          </xsl:call-template>
+        </xsl:variable>
         <xsl:attribute name="class">
-          <xsl:value-of select="concat('mt-auto ', $BOOTSTRAP_CSS_FOOTER)"/>
+          <xsl:value-of select="concat('mt-auto ', $footer-theme-classes)"/>
           <xsl:if test="not($TOC_SPACER_PADDING = '0')">
             <xsl:value-of select="concat(' py-', $TOC_SPACER_PADDING)"/>
           </xsl:if>
@@ -774,12 +816,29 @@
     </body>
   </xsl:template>
 
+  <!-- Override to add Bootstrap theme classes to <body> -->
+  <xsl:template match="*" mode="addAttributesToBody">
+    <xsl:variable name="body-theme-classes">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="$BOOTSTRAP_THEME_BODY"/>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:if test="$body-theme-classes != ''">
+      <xsl:attribute name="class" select="$body-theme-classes"/>
+    </xsl:if>
+  </xsl:template>
+
   <!-- Hidden accessibility buttons for screen readers and keyboard navigation-->
   <xsl:template name="gen-skip-to-main">
+    <xsl:variable name="skip-to-main-theme-classes">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="$BOOTSTRAP_THEME_ACCESSIBILITY"/>
+      </xsl:call-template>
+    </xsl:variable>
     <div>
       <xsl:attribute
         name="class"
-        select="concat('visually-hidden-focusable overflow-hidden p-2 ', $BOOTSTRAP_CSS_ACCESSIBILITY_NAV)"
+        select="concat('visually-hidden-focusable overflow-hidden p-2 ', $skip-to-main-theme-classes)"
       />
 
       <div>
@@ -828,14 +887,29 @@
     Overrides to add CSS classes to use a CSS Grid for the navigation layout
   -->
   <xsl:attribute-set name="main">
-    <xsl:attribute name="class">bs-main me-3</xsl:attribute>
+    <xsl:attribute name="class">
+      <xsl:variable name="content-theme-classes">
+        <xsl:call-template name="theme-classes">
+          <xsl:with-param name="value" select="$BOOTSTRAP_THEME_CONTENT"/>
+        </xsl:call-template>
+      </xsl:variable>
+      <xsl:value-of select="'bs-main me-3'"/>
+      <xsl:if test="$content-theme-classes != ''">
+        <xsl:value-of select="concat(' p2 ', $content-theme-classes)"/>
+      </xsl:if>
+    </xsl:attribute>
     <xsl:attribute name="role">main</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="toc">
     <xsl:attribute name="role">navigation</xsl:attribute>
     <xsl:attribute name="id">bs-sidebar-nav</xsl:attribute>
-    <xsl:attribute name="class">d-flex align-items-start flex-column h-100</xsl:attribute>
+    <xsl:attribute name="class">
+      <xsl:text>d-flex align-items-start flex-column h-100 </xsl:text>
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="$BOOTSTRAP_THEME_SIDEBAR"/>
+      </xsl:call-template>
+    </xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="menubar-toc">

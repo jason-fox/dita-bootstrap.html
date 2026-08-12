@@ -25,30 +25,6 @@
   --bs-code-color: var(--bs-secondary-contrast);
 }
 
-.navbar {
-  --bs-navbar-brand-hover-color: color-mix(in srgb, currentcolor 85%, var(--bs-white));
-  --bs-navbar-bg: var(--bs-primary-bg);
-  --bs-navbar-color: var(--bs-primary-contrast);
-  --bs-navbar-brand-color: var(--bs-primary-contrast);
-  --bs-navbar-brand-font-size: 1.25rem;
-  --bs-navbar-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.nav-link {
-  --bs-nav-link-hover-color: color-mix(in srgb, currentcolor 85%, var(--bs-white));
-}
-
-.navbar-toggler {
-  color: var(--bs-navbar-color);
-  background-color: transparent;
-  border-color: rgba(255, 255, 255, 0.15);
-  transition: background-color 0.15s ease-in-out;
-}
-
-.navbar-toggler:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 /* Make all CSS themes scrollable */
 .css-themes-list {
   height: calc(100vh - 6rem);

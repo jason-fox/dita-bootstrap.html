@@ -86,10 +86,9 @@
       <p>The plug-in supports the following parameter:</p>
       <parml>
         <plentry>
-          <pt><parmname>--bootstrap.css.search.card</parmname></pt>
+          <pt><parmname>--bootstrap.theme.search.card</parmname></pt>
           <pd>
-            <p>Specifies the Bootstrap CSS classes to append to the search results card component (e.g. <codeph
-              >theme-primary</codeph> to color the card).</p>
+            <p>Bootstrap theme utility class for the search results card component.</p>
           </pd>
         </plentry>
       </parml>
