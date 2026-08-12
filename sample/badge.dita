@@ -46,9 +46,9 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;badge color="primary"&gt;New&lt;/badge&gt;
-&lt;badge color="primary" subtle="yes"&gt;New&lt;/badge&gt;
-&lt;badge color="primary" outline="yes"&gt;New&lt;/badge&gt;</codeblock>
+        <codeblock>&lt;badge theme="primary"&gt;New&lt;/badge&gt;
+&lt;badge theme="primary-subtle"&gt;New&lt;/badge&gt;
+&lt;badge theme="primary-outline"&gt;New&lt;/badge&gt;</codeblock>
       </section>
     </bodydiv>
 
@@ -147,32 +147,32 @@
         </section>
          <section>
         <title>Specialization</title>
-          <codeblock>&lt;badge color="primary"&gt;Primary&lt;/badge&gt;
-&lt;badge color="secondary"&gt;Secondary&lt;/badge&gt;
-&lt;badge color="success"&gt;Success&lt;/badge&gt;
-&lt;badge color="danger"&gt;Danger&lt;/badge&gt;
-&lt;badge color="warning"&gt;Warning&lt;/badge&gt;
-&lt;badge color="info"&gt;Info&lt;/badge&gt;
-&lt;badge color="accent"&gt;Accent&lt;/badge&gt;
-&lt;badge color="inverse"&gt;Inverse&lt;/badge&gt;
+          <codeblock>&lt;badge theme="primary"&gt;Primary&lt;/badge&gt;
+&lt;badge theme="secondary"&gt;Secondary&lt;/badge&gt;
+&lt;badge theme="success"&gt;Success&lt;/badge&gt;
+&lt;badge theme="danger"&gt;Danger&lt;/badge&gt;
+&lt;badge theme="warning"&gt;Warning&lt;/badge&gt;
+&lt;badge theme="info"&gt;Info&lt;/badge&gt;
+&lt;badge theme="accent"&gt;Accent&lt;/badge&gt;
+&lt;badge theme="inverse"&gt;Inverse&lt;/badge&gt;
 
-&lt;badge color="primary" subtle="yes"&gt;Primary&lt;/badge&gt;
-&lt;badge color="secondary" subtle="yes"&gt;Secondary&lt;/badge&gt;
-&lt;badge color="success" subtle="yes"&gt;Success&lt;/badge&gt;
-&lt;badge color="danger" subtle="yes"&gt;Danger&lt;/badge&gt;
-&lt;badge color="warning" subtle="yes"&gt;Warning&lt;/badge&gt;
-&lt;badge color="info" subtle="yes"&gt;Info&lt;/badge&gt;
-&lt;badge color="accent" subtle="yes"&gt;Accent&lt;/badge&gt;
-&lt;badge color="inverse" subtle="yes"&gt;Inverse&lt;/badge&gt;
+&lt;badge theme="primary-subtle"&gt;Primary&lt;/badge&gt;
+&lt;badge theme="secondary-subtle"&gt;Secondary&lt;/badge&gt;
+&lt;badge theme="success-subtle"&gt;Success&lt;/badge&gt;
+&lt;badge theme="danger-subtle"&gt;Danger&lt;/badge&gt;
+&lt;badge theme="warning-subtle"&gt;Warning&lt;/badge&gt;
+&lt;badge theme="info-subtle"&gt;Info&lt;/badge&gt;
+&lt;badge theme="accent-subtle"&gt;Accent&lt;/badge&gt;
+&lt;badge theme="inverse-subtle"&gt;Inverse&lt;/badge&gt;
 
-&lt;badge color="primary" outline="yes"&gt;Primary&lt;/badge&gt;
-&lt;badge color="secondary" outline="yes"&gt;Secondary&lt;/badge&gt;
-&lt;badge color="success" outline="yes"&gt;Success&lt;/badge&gt;
-&lt;badge color="danger" outline="yes"&gt;Danger&lt;/badge&gt;
-&lt;badge color="warning" outline="yes"&gt;Warning&lt;/badge&gt;
-&lt;badge color="info" outline="yes"&gt;Info&lt;/badge&gt;
-&lt;badge color="accent" outline="yes"&gt;Accent&lt;/badge&gt;
-&lt;badge color="inverse" outline="yes"&gt;Inverse&lt;/badge&gt;</codeblock>
+&lt;badge theme="primary-outline"&gt;Primary&lt;/badge&gt;
+&lt;badge theme="secondary-outline"&gt;Secondary&lt;/badge&gt;
+&lt;badge theme="success-outline"&gt;Success&lt;/badge&gt;
+&lt;badge theme="danger-outline"&gt;Danger&lt;/badge&gt;
+&lt;badge theme="warning-outline"&gt;Warning&lt;/badge&gt;
+&lt;badge theme="info-outline"&gt;Info&lt;/badge&gt;
+&lt;badge theme="accent-outline"&gt;Accent&lt;/badge&gt;
+&lt;badge theme="inverse-outline"&gt;Inverse&lt;/badge&gt;</codeblock>
         </section>
       </bodydiv>
   </body>

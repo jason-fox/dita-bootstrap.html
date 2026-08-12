@@ -128,28 +128,28 @@
         </section>
          <section>
         <title>Specialization</title>
-          <codeblock>&lt;xref color="primary" href="#"&gt;
+          <codeblock>&lt;xref theme="primary-contrast" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Primary link
 &lt;/xref&gt;
-&lt;xref color="secondary" href="#"&gt;
+&lt;xref theme="secondary-contrast" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Secondary link
 &lt;/xref&gt;
-&lt;xref color="success" href="#"&gt;
+&lt;xref theme="success-contrast" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Success link
 &lt;/xref&gt;
-&lt;xref color="danger" href="#"&gt;
+&lt;xref theme="danger-contrast" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Danger link
 &lt;/xref&gt;
-&lt;xref color="warning" href="#"&gt;
+&lt;xref theme="warning-contrast" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Warning link
 &lt;/xref&gt;
-&lt;xref color="info" href="#"&gt;
+&lt;xref theme="info-contrast" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Info link
 &lt;/xref&gt;
-&lt;xref color="accent" href="#"&gt;
+&lt;xref theme="accent-contrast" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Accent link
 &lt;/xref&gt;
-&lt;xref color="inverse" href="#"&gt;
+&lt;xref theme="inverse-contrast" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Inverse link
 &lt;/xref&gt;</codeblock>
         </section>
@@ -187,22 +187,22 @@
         </section>
          <section>
         <title>Specialization</title>
-          <codeblock>&lt;button color="primary" outputclass="btn-icon" href="#"&gt;
+          <codeblock>&lt;button theme="primary" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-arrow-down-square-fill"/&gt;
 &lt;/button&gt;
-&lt;button color="secondary" outputclass="btn-icon" href="#"&gt;
+&lt;button theme="secondary" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-chat-left-quote-fill"/&gt;
 &lt;/button&gt;
-&lt;button color="warning" outputclass="btn-icon" href="#"&gt;
+&lt;button theme="warning" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-speedometer"/&gt;
 &lt;/button&gt;
-&lt;button color="info" outputclass="btn-icon" href="#"&gt;
+&lt;button theme="info" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-camera-fill"/&gt;
 &lt;/button&gt;
-&lt;button color="accent" outputclass="btn-icon" href="#"&gt;
+&lt;button theme="accent" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt;
 &lt;/button&gt;
-&lt;button color="danger" outputclass="btn-icon" href="#"&gt;
+&lt;button theme="danger" outputclass="btn-icon" href="#"&gt;
   &lt;icon outputclass="bi-share-fill"/&gt;
 &lt;/button&gt;</codeblock>
         </section>

@@ -123,19 +123,19 @@
     </section>
     <section>
       <title>Specialization</title>
-        <codeblock>&lt;tooltip outputclass="btn-solid" color="secondary" position="top"&gt;
+        <codeblock>&lt;tooltip outputclass="btn-solid" theme="secondary-contrast" position="top"&gt;
   &lt;desc&gt;Tooltip on top&lt;/desc&gt;
   Tooltip on top
 &lt;/tooltip&gt;
-&lt;tooltip outputclass="btn-solid" color="secondary" position="right"&gt;
+&lt;tooltip outputclass="btn-solid" theme="secondary-contrast" position="right"&gt;
   &lt;desc&gt;Tooltip on right&lt;/desc&gt;
   Tooltip on right
 &lt;/tooltip&gt;
-&lt;tooltip outputclass="btn-solid" color="secondary" position="bottom"&gt;
+&lt;tooltip outputclass="btn-solid" theme="secondary-contrast" position="bottom"&gt;
   &lt;desc&gt;Tooltip on bottom&lt;/desc&gt;
   Tooltip on bottom
 &lt;/tooltip&gt;
-&lt;tooltip outputclass="btn-solid" color="secondary" position="left"&gt;
+&lt;tooltip outputclass="btn-solid" theme="secondary-contrast" position="left"&gt;
   &lt;desc&gt;Tooltip on left&lt;/desc&gt;
   Tooltip on left
 &lt;/tooltip&gt;</codeblock>
@@ -159,7 +159,7 @@ Tooltip with embedded DITA
       </section>
        <section>
       <title>Specialization</title>
-        <codeblock>&lt;tooltip outputclass="btn-solid" color="secondary"&gt;
+        <codeblock>&lt;tooltip outputclass="btn-solid" theme="secondary-contrast"&gt;
 &lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
 Tooltip with embedded DITA
 &lt;/tooltip&gt;</codeblock>
@@ -191,7 +191,7 @@ Tooltip with embedded DITA
         </section>
          <section>
         <title>Specialization</title>
-          <codeblock>&lt;tooltip outputclass="btn-solid" color="secondary"&gt;
+          <codeblock>&lt;tooltip outputclass="btn-solid" theme="secondary-contrast"&gt;
   &lt;data name="class"&gt;custom-tooltip&lt;/data&gt;
   &lt;desc&gt;This top tooltip is themed via CSS variables.&lt;/desc&gt;
   Custom tooltip

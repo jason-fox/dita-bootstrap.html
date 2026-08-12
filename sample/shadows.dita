@@ -77,12 +77,12 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;card shadow="lg" margin="3" color="accent"&gt;
+        <codeblock>&lt;card shadow="lg" margin="3" theme="accent-contrast"&gt;
   &lt;title&gt;Shadowed Card&lt;/title&gt;
   &lt;p&gt;This card has a large shadow.&lt;/p&gt;
 &lt;/card&gt;
 
-&lt;alert shadow="sm" color="accent"&gt;Alert with small shadow&lt;/alert&gt;</codeblock>
+&lt;alert shadow="sm" theme="accent-contrast"&gt;Alert with small shadow&lt;/alert&gt;</codeblock>
       </section>
     </bodydiv>
   </body>

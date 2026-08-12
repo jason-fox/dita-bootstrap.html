@@ -40,7 +40,7 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;button style="none"&gt;Base class&lt;/button&gt;</codeblock>
+        <codeblock>&lt;button&gt;Base class&lt;/button&gt;</codeblock>
       </section>
     </bodydiv>
 
@@ -74,14 +74,14 @@
         </section>
           <section>
           <title>Specialization</title>
-          <codeblock>&lt;button href="#" color="primary"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="secondary"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="success"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="danger"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="warning"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="info"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="accent"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="inverse"&gt;Inverse&lt;/button&gt;</codeblock>
+          <codeblock>&lt;button href="#" theme="primary"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="secondary"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="success"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="danger"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="warning"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="info"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="accent"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="inverse"&gt;Inverse&lt;/button&gt;</codeblock>
         </section>
       </bodydiv>
 
@@ -242,38 +242,38 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;button href="#" color="primary"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="primary" style="outline"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="primary" style="subtle"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="primary" style="text"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="secondary"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="secondary" style="outline"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="secondary" style="subtle"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="secondary" style="text"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="success"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="success" style="outline"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="success" style="subtle"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="success" style="text"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="danger"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="danger" style="outline"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="danger" style="subtle"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="danger" style="text"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="warning"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="warning" style="outline"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="warning" style="subtle"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="warning" style="text"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="info"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="info" style="outline"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="info" style="subtle"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="info" style="text"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="accent"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="accent" style="outline"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="accent" style="subtle"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="accent" style="text"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="inverse"&gt;Inverse&lt;/button&gt;
-&lt;button href="#" color="inverse" style="outline"&gt;Inverse&lt;/button&gt;
-&lt;button href="#" color="inverse" style="subtle"&gt;Inverse&lt;/button&gt;
-&lt;button href="#" color="inverse" style="text"&gt;Inverse&lt;/button&gt;</codeblock>
+        <codeblock>&lt;button href="#" theme="primary"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="primary-outline"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="primary-subtle"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="primary-text"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="secondary"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="secondary-outline"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="secondary-subtle"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="secondary-text"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="success"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="success-outline"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="success-subtle"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="success-text"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="danger"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="danger-outline"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="danger-subtle"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="danger-text"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="warning"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="warning-outline"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="warning-subtle"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="warning-text"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="info"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="info-outline"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="info-subtle"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="info-text"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="accent"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="accent-outline"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="accent-subtle"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="accent-text"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="inverse"&gt;Inverse&lt;/button&gt;
+&lt;button href="#" theme="inverse-outline"&gt;Inverse&lt;/button&gt;
+&lt;button href="#" theme="inverse-subtle"&gt;Inverse&lt;/button&gt;
+&lt;button href="#" theme="inverse-text"&gt;Inverse&lt;/button&gt;</codeblock>
       </section>
     </bodydiv>
 
@@ -307,14 +307,14 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;button href="#" color="primary" gradient="yes"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="secondary" gradient="yes"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="success" gradient="yes"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="danger" gradient="yes"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="warning" gradient="yes"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="info" gradient="yes"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="accent" gradient="yes"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="inverse" gradient="yes"&gt;Inverse&lt;/button&gt;</codeblock>
+        <codeblock>&lt;button href="#" theme="primary-styled"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="secondary-styled"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="success-styled"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="danger-styled"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="warning-styled"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="info-styled"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="accent-styled"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="inverse-styled"&gt;Inverse&lt;/button&gt;</codeblock>
       </section>
     </bodydiv>
 
@@ -349,14 +349,14 @@
         </section>
          <section>
         <title>Specialization</title>
-          <codeblock>&lt;button href="#" style="outline"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="secondary" style="outline"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="success" style="outline"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="danger" style="outline"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="warning" style="outline"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="info" style="outline"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="accent" style="outline"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="inverse" style="outline"&gt;Inverse&lt;/button&gt;</codeblock>
+          <codeblock>&lt;button href="#" theme="primary-outline"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="secondary-outline"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="success-outline"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="danger-outline"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="warning-outline"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="info-outline"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="accent-outline"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="inverse-outline"&gt;Inverse&lt;/button&gt;</codeblock>
         </section>
       </bodydiv>
     <section id="sizing">
@@ -378,7 +378,7 @@
          <section>
         <title>Specialization</title>
           <codeblock>&lt;button href="#" size="large"&gt;Large button&lt;/button&gt;
-&lt;button href="#" color="secondary" size="large"&gt;Large button&lt;/button&gt;</codeblock>
+&lt;button href="#" theme="secondary" size="large"&gt;Large button&lt;/button&gt;</codeblock>
         </section>
       </bodydiv>
 
@@ -396,7 +396,7 @@
          <section>
         <title>Specialization</title>
           <codeblock>&lt;button href="#" size="small"&gt;Small button&lt;/button&gt;
-&lt;button href="#" color="secondary" size="small"&gt;Small button&lt;/button&gt;</codeblock>
+&lt;button href="#" theme="secondary" size="small"&gt;Small button&lt;/button&gt;</codeblock>
         </section>
       </bodydiv>
 
@@ -414,7 +414,7 @@
          <section>
         <title>Specialization</title>
           <codeblock>&lt;button href="#" size="xs"&gt;Extra small button&lt;/button&gt;
-&lt;button href="#" color="secondary" size="xs"&gt;Extra small button&lt;/button&gt;</codeblock>
+&lt;button href="#" theme="secondary" size="xs"&gt;Extra small button&lt;/button&gt;</codeblock>
         </section>
       </bodydiv>
   </body>

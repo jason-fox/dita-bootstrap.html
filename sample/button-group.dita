@@ -48,9 +48,9 @@
       <section>
         <title>Specialization</title>
         <codeblock>&lt;button-group&gt;
-  &lt;button color="primary" href="#"&gt;Left&lt;/button&gt;
-  &lt;button color="primary" href="#"&gt;Middle&lt;/button&gt;
-  &lt;button color="primary" href="#"&gt;Right&lt;/button&gt;
+  &lt;button theme="primary" href="#"&gt;Left&lt;/button&gt;
+  &lt;button theme="primary" href="#"&gt;Middle&lt;/button&gt;
+  &lt;button theme="primary" href="#"&gt;Right&lt;/button&gt;
 &lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
@@ -76,9 +76,9 @@
         <section>
         <title>Specialization</title>
         <codeblock>&lt;button-group&gt;
-  &lt;button color="danger" href="#"&gt;Left&lt;/button&gt;
-  &lt;button color="warning" href="#"&gt;Middle&lt;/button&gt;
-  &lt;button color="success" href="#"&gt;Right&lt;/button&gt;
+  &lt;button theme="danger" href="#"&gt;Left&lt;/button&gt;
+  &lt;button theme="warning" href="#"&gt;Middle&lt;/button&gt;
+  &lt;button theme="success" href="#"&gt;Right&lt;/button&gt;
 &lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
@@ -104,9 +104,9 @@
         <section>
         <title>Specialization</title>
           <codeblock>&lt;button-group&gt;
-  &lt;button color="primary" style="outline" href="#"&gt;Left&lt;/button&gt;
-  &lt;button color="primary" style="outline" href="#"&gt;Middle&lt;/button&gt;
-  &lt;button color="primary" style="outline" href="#"&gt;Right&lt;/button&gt;
+  &lt;button theme="primary-outline" href="#"&gt;Left&lt;/button&gt;
+  &lt;button theme="primary-outline" href="#"&gt;Middle&lt;/button&gt;
+  &lt;button theme="primary-outline" href="#"&gt;Right&lt;/button&gt;
 &lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
@@ -156,18 +156,18 @@
         <title>Specialization</title>
           <codeblock>&lt;button-toolbar&gt;
   &lt;button-group outputclass="me-2"&gt;
-    &lt;button color="primary" href="#"&gt;1&lt;/button&gt;
-    &lt;button color="primary" href="#"&gt;2&lt;/button&gt;
-    &lt;button color="primary" href="#"&gt;3&lt;/button&gt;
-    &lt;button color="primary" href="#"&gt;4&lt;/button&gt;
+    &lt;button theme="primary" href="#"&gt;1&lt;/button&gt;
+    &lt;button theme="primary" href="#"&gt;2&lt;/button&gt;
+    &lt;button theme="primary" href="#"&gt;3&lt;/button&gt;
+    &lt;button theme="primary" href="#"&gt;4&lt;/button&gt;
   &lt;/button-group&gt;
   &lt;button-group outputclass="me-2"&gt;
-    &lt;button color="secondary" href="#"&gt;5&lt;/button&gt;
-    &lt;button color="secondary" href="#"&gt;6&lt;/button&gt;
-    &lt;button color="secondary" href="#"&gt;7&lt;/button&gt;
+    &lt;button theme="secondary" href="#"&gt;5&lt;/button&gt;
+    &lt;button theme="secondary" href="#"&gt;6&lt;/button&gt;
+    &lt;button theme="secondary" href="#"&gt;7&lt;/button&gt;
   &lt;/button-group&gt;
   &lt;button-group outputclass="me-2"&gt;
-    &lt;button color="info" href="#"&gt;8&lt;/button&gt;
+    &lt;button theme="info" href="#"&gt;8&lt;/button&gt;
   &lt;/button-group&gt;
 &lt;/button-toolbar&gt;</codeblock>
         </section>
@@ -195,9 +195,9 @@
       <section>
       <title>Specialization</title>
       <codeblock>&lt;button-group vertical="yes"&gt;
-  &lt;button color="primary" href="#"&gt;Top&lt;/button&gt;
-  &lt;button color="primary" href="#"&gt;Middle&lt;/button&gt;
-  &lt;button color="primary" href="#"&gt;Bottom&lt;/button&gt;
+  &lt;button theme="primary" href="#"&gt;Top&lt;/button&gt;
+  &lt;button theme="primary" href="#"&gt;Middle&lt;/button&gt;
+  &lt;button theme="primary" href="#"&gt;Bottom&lt;/button&gt;
 &lt;/button-group&gt;</codeblock>
       </section>
     </bodydiv>

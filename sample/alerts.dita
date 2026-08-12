@@ -96,28 +96,28 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert color="primary"&gt;
+        <codeblock>&lt;alert theme="primary-subtle-border"&gt;
   A simple primary alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="secondary"&gt;
+&lt;alert theme="secondary-subtle-border"&gt;
   A simple secondary alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="success"&gt;
+&lt;alert theme="success-subtle-border"&gt;
   A simple success alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="danger"&gt;
+&lt;alert theme="danger-subtle-border"&gt;
   A simple danger alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="warning"&gt;
+&lt;alert theme="warning-subtle-border"&gt;
   A simple warning alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="info"&gt;
+&lt;alert theme="info-subtle-border"&gt;
   A simple info alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="accent"&gt;
+&lt;alert theme="accent-subtle-border"&gt;
   A simple accent alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="inverse"&gt;
+&lt;alert theme="inverse-subtle-border"&gt;
   A simple inverse alert — check it out!
 &lt;/alert&gt;</codeblock>
       </section>
@@ -153,7 +153,7 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert color="success" outputclass="vstack"&gt;
+        <codeblock>&lt;alert theme="success-contrast" outputclass="vstack"&gt;
   &lt;title&gt;&lt;icon outputclass="bi-emoji-smile" padding="e2"/&gt;Well done!&lt;/title&gt;
   &lt;p&gt;
     Aww yeah, you successfully read this important alert message. This example text with a
@@ -186,7 +186,7 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert color="primary"&gt;
+        <codeblock>&lt;alert theme="primary-subtle-border"&gt;
   &lt;div&gt;
     &lt;icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/&gt;An example alert with an icon
   &lt;/div&gt;
@@ -246,7 +246,7 @@
 &lt;note type="other" othertype="Another note"&gt;
   This is something other than a normal note.
 &lt;/note&gt;</codeblock>
-    <p>The default colors can be overridden by using a <xmlatt>color</xmlatt> attribute or an <xmlatt
+    <p>The default colors can be overridden by using a <xmlatt>theme</xmlatt> attribute or an <xmlatt
       >outputclass</xmlatt>.</p>
     <example>
       <note outputclass="theme-primary">This is a primary note.</note>
@@ -270,17 +270,17 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;note color="primary"&gt;
-  This is a primary note.
+        <codeblock>&lt;note theme="primary-contrast"&gt;
+  This is a high contrast primary note.
 &lt;/note&gt;
-&lt;note color="secondary"&gt;
-  This is a secondary note.
+&lt;note theme="secondary-contrast"&gt;
+  This is a high contrast secondary note.
 &lt;/note&gt;
-&lt;note color="accent"&gt;
-  This is accent note.
+&lt;note theme="accent-contrast"&gt;
+  This is a high contrast accent note.
 &lt;/note&gt;
-&lt;note color="inverse"&gt;
-  This is inverse note.
+&lt;note theme="inverse-contrast"&gt;
+  This is a high contrast inverse note.
 &lt;/note&gt;</codeblock>
       </section>
     </bodydiv>

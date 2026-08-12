@@ -77,7 +77,7 @@
       &lt;title&gt;عنوان البطاقة&lt;/title&gt;
       &lt;image href="..." /&gt;
       &lt;p&gt;بعض الأمثلة السريعة للنص الذي سيتم بناؤه على عنوان البطاقة وتشكيل الجزء الأكبر من محتوى البطاقة.&lt;/p&gt;
-      &lt;button href="#"  color="primary"&gt;اذهب لمكان ما&lt;/button&gt;
+      &lt;button href="#"  theme="primary"&gt;اذهب لمكان ما&lt;/button&gt;
     &lt;/card&gt;
   &lt;/grid-col&gt;
 &lt;/grid-row&gt;</codeblock>

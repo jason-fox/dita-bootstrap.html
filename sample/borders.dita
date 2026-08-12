@@ -90,15 +90,15 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;section border="yes" padding="2"&gt;
+        <codeblock>&lt;section border="1" padding="2"&gt;
   ...
 &lt;/section&gt;
 
-&lt;div border="yes" rounded="yes" padding="2" margin="2"&gt;
+&lt;div border="1" rounded="yes" padding="2" margin="2"&gt;
   ...
 &lt;/div&gt;
 
-&lt;carousel border="yes" rounded="yes" margin="2" width="50"&gt;
+&lt;carousel border="1" rounded="yes" margin="2" width="50"&gt;
   &lt;carousel-item&gt;
     &lt;image href="..."/&gt;
   &lt;/carousel-item&gt;
@@ -113,7 +113,8 @@
       <p>The <xmlatt>border</xmlatt> attribute also accepts numeric values 1-5 for width. The <xmlatt
         >rounded</xmlatt> attribute 
         supports values 0-5, <codeph>circle</codeph> and <codeph>pill</codeph>.
-        The <xmlatt>bordercolor</xmlatt> attribute can be used to set the color of the border.</p>
+        The <codeph>-border</codeph> theme suffix (e.g. <codeph>theme="primary-border"</codeph>) can be used to set
+        the color of the border.</p>
     </section>
 
     <example>
@@ -162,10 +163,10 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;ph bordercolor="primary"&gt;Primary&lt;/ph&gt;
-&lt;ph bordercolor="primary-subtle"&gt;Primary subtle&lt;/ph&gt;
-&lt;ph bordercolor="success"&gt;Success&lt;/ph&gt;
-&lt;ph bordercolor="danger"&gt;Danger&lt;/ph&gt;</codeblock>
+        <codeblock>&lt;ph theme="primary-border"&gt;Primary&lt;/ph&gt;
+&lt;ph theme="primary-subtle-border"&gt;Primary subtle&lt;/ph&gt;
+&lt;ph theme="success-border"&gt;Success&lt;/ph&gt;
+&lt;ph theme="danger-border"&gt;Danger&lt;/ph&gt;</codeblock>
       </section>
     </bodydiv>
 
@@ -191,12 +192,12 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;ph border="yes" rounded="0"&gt;Rounded 0&lt;/ph&gt;
-&lt;ph border="yes" rounded="1"&gt;Rounded 1&lt;/ph&gt;
-&lt;ph border="yes" rounded="2"&gt;Rounded 2&lt;/ph&gt;
-&lt;ph border="yes" rounded="3"&gt;Rounded 3&lt;/ph&gt;
-&lt;ph border="yes" rounded="4"&gt;Rounded 4&lt;/ph&gt;
-&lt;ph border="yes" rounded="5"&gt;Rounded 5&lt;/ph&gt;</codeblock>
+        <codeblock>&lt;ph border="1" rounded="0"&gt;Rounded 0&lt;/ph&gt;
+&lt;ph border="1" rounded="1"&gt;Rounded 1&lt;/ph&gt;
+&lt;ph border="1" rounded="2"&gt;Rounded 2&lt;/ph&gt;
+&lt;ph border="1" rounded="3"&gt;Rounded 3&lt;/ph&gt;
+&lt;ph border="1" rounded="4"&gt;Rounded 4&lt;/ph&gt;
+&lt;ph border="1" rounded="5"&gt;Rounded 5&lt;/ph&gt;</codeblock>
       </section>
     </bodydiv>
 
@@ -214,8 +215,8 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;ph border="yes" rounded="circle" bordercolor="info"&gt;Circle&lt;/ph&gt;
-&lt;ph border="yes" rounded="pill" bordercolor="warning"&gt;Pill&lt;/ph&gt;</codeblock>
+        <codeblock>&lt;ph border="1" rounded="circle" theme="info-border"&gt;Circle&lt;/ph&gt;
+&lt;ph border="1" rounded="pill" theme="warning-border"&gt;Pill&lt;/ph&gt;</codeblock>
       </section>
     </bodydiv>
 

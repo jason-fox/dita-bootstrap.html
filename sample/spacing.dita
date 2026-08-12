@@ -28,35 +28,35 @@
     </section>
 
     <example>
-      <div outputclass="m-0 p-2 bg-primary fg-contrast-primary">Margin 0</div>
-      <div outputclass="m-1 p-2 bg-secondary fg-contrast-secondary">Margin 1</div>
-      <div outputclass="m-2 p-2 bg-success fg-contrast-success">Margin 2</div>
-      <div outputclass="m-3 p-2 bg-danger fg-contrast-danger">Margin 3</div>
-      <div outputclass="m-4 p-2 bg-warning fg-contrast-warning">Margin 4</div>
-      <div outputclass="m-5 p-2 bg-info fg-contrast-info">Margin 5</div>
-      <div outputclass="m-auto p-2 w-50 bg-accent fg-contrast-accent">Margin Auto</div>
+      <div outputclass="theme-primary theme-contrast m-0 p-2">Margin 0</div>
+      <div outputclass="theme-secondary theme-contrast m-1 p-2">Margin 1</div>
+      <div outputclass="theme-success theme-contrast m-2 p-2">Margin 2</div>
+      <div outputclass="theme-danger theme-contrast m-3 p-2">Margin 3</div>
+      <div outputclass="theme-warning theme-contrast m-4 p-2">Margin 4</div>
+      <div outputclass="theme-info theme-contrast m-5 p-2">Margin 5</div>
+      <div outputclass="theme-accent theme-contrast m-auto p-2 w-50">Margin Auto</div>
     </example>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="bg-primary fg-contrast-primary m-0 p-2"&gt;Margin 0&lt;/div&gt;
-&lt;div outputclass="bg-secondary fg-contrast-secondary m-1 p-2"&gt;Margin 1&lt;/div&gt;
-&lt;div outputclass="bg-success fg-contrast-success m-2 p-2"&gt;Margin 2&lt;/div&gt;
-&lt;div outputclass="bg-danger fg-contrast-danger m-3 p-2"&gt;Margin 3&lt;/div&gt;
-&lt;div outputclass="bg-warning fg-contrast-warning m-4 p-2"&gt;Margin 4&lt;/div&gt;
-&lt;div outputclass="bg-info fg-contrast-info m-5 p-2"&gt;Margin 5&lt;/div&gt;
-&lt;div outputclass="bg-accent fg-contrast-accent m-auto p-2 w-50"&gt;Margin Auto&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div outputclass="theme-primary theme-contrast m-0 p-2"&gt;Margin 0&lt;/div&gt;
+&lt;div outputclass="theme-secondary theme-contrast m-1 p-2"&gt;Margin 1&lt;/div&gt;
+&lt;div outputclass="theme-success theme-contrast m-2 p-2"&gt;Margin 2&lt;/div&gt;
+&lt;div outputclass="theme-danger theme-contrast m-3 p-2"&gt;Margin 3&lt;/div&gt;
+&lt;div outputclass="theme-warning theme-contrast m-4 p-2"&gt;Margin 4&lt;/div&gt;
+&lt;div outputclass="theme-info theme-contrast m-5 p-2"&gt;Margin 5&lt;/div&gt;
+&lt;div outputclass="theme-accent theme-contrast m-auto p-2 w-50"&gt;Margin Auto&lt;/div&gt;</codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div color="primary" margin="0" padding="2"&gt;Margin 0&lt;/div&gt;
-&lt;div color="secondary" margin="1" padding="2"&gt;Margin 1&lt;/div&gt;
-&lt;div color="success" margin="2" padding="2"&gt;Margin 2&lt;/div&gt;
-&lt;div color="danger" margin="3" padding="2"&gt;Margin 3&lt;/div&gt;
-&lt;div color="warning" margin="4" padding="2"&gt;Margin 4&lt;/div&gt;
-&lt;div color="info" margin="5" padding="2"&gt;Margin 5&lt;/div&gt;
-&lt;div color="light" margin="auto" padding="2" width="50"&gt;Margin Auto&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div theme="primary-contrast" margin="0" padding="2"&gt;Margin 0&lt;/div&gt;
+&lt;div theme="secondary-contrast" margin="1" padding="2"&gt;Margin 1&lt;/div&gt;
+&lt;div theme="success-contrast" margin="2" padding="2"&gt;Margin 2&lt;/div&gt;
+&lt;div theme="danger-contrast" margin="3" padding="2"&gt;Margin 3&lt;/div&gt;
+&lt;div theme="warning-contrast" margin="4" padding="2"&gt;Margin 4&lt;/div&gt;
+&lt;div theme="info-contrast" margin="5" padding="2"&gt;Margin 5&lt;/div&gt;
+&lt;div theme="accent-contrast" margin="auto" padding="2" width="50"&gt;Margin Auto&lt;/div&gt;</codeblock>
       </section>
     </bodydiv>
 
@@ -67,42 +67,42 @@
     </section>
 
     <example>
-      <div outputclass="p-0 bg-primary fg-contrast-primary">Padding 0</div>
-      <div outputclass="m-1 p-1 bg-secondary"><div
-          outputclass="bg-subtle-secondary fg-contrast-subtle-secondary w-100"
+      <div outputclass="theme-primary theme-contrast p-0">Padding 0</div>
+      <div outputclass="theme-secondary theme-contrast p-1 m-1"><div
+          outputclass="theme-secondary theme-subtle w-100"
         >Padding 1</div></div>
-      <div outputclass="m-1 p-2 bg-success"><div
-          outputclass="bg-subtle-success fg-contrast-subtle-success w-100"
+      <div outputclass="theme-success theme-contrast p-2 m-1"><div
+          outputclass="theme-success theme-subtle w-100"
         >Padding 2</div></div>
-      <div outputclass="m-1 p-3 bg-danger"><div
-          outputclass="bg-subtle-danger fg-contrast-subtle-danger w-100"
+      <div outputclass="theme-danger theme-contrast p-3 m-1"><div
+          outputclass="theme-danger theme-subtle w-100"
         >Padding 3</div></div>
-      <div outputclass="m-1 p-4 bg-warning"><div
-          outputclass="bg-subtle-warning fg-contrast-subtle-warning w-100"
+      <div outputclass="theme-warning theme-contrast p-4 m-1"><div
+          outputclass="theme-warning theme-subtle w-100"
         >Padding 4</div></div>
-      <div outputclass="m-1 p-5 bg-info"><div
-          outputclass="bg-subtle-info fg-contrast-subtle-info w-100"
+      <div outputclass="theme-info theme-contrast p-5 m-1"><div
+          outputclass="theme-info theme-subtle w-100"
         >Padding 5</div></div>
     </example>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="bg-primary p-0"&gt;Padding 0&lt;/div&gt;
-&lt;div outputclass="bg-secondary p-1 m-1"&gt;Padding 1&lt;/div&gt;
-&lt;div outputclass="bg-success p-2 m-1"&gt;Padding 2&lt;/div&gt;
-&lt;div outputclass="bg-danger p-3 m-1"&gt;Padding 3&lt;/div&gt;
-&lt;div outputclass="bg-warning p-4 m-1"&gt;Padding 4&lt;/div&gt;
-&lt;div outputclass="bg-info p-5 m-1"&gt;Padding 5&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div outputclass="theme-primary theme-contrast p-0"&gt;Padding 0&lt;/div&gt;
+&lt;div outputclass="theme-secondary theme-contrast p-1 m-1"&gt;Padding 1&lt;/div&gt;
+&lt;div outputclass="theme-success theme-contrast p-2 m-1"&gt;Padding 2&lt;/div&gt;
+&lt;div outputclass="theme-danger theme-contrast p-3 m-1"&gt;Padding 3&lt;/div&gt;
+&lt;div outputclass="theme-warning theme-contrast p-4 m-1"&gt;Padding 4&lt;/div&gt;
+&lt;div outputclass="theme-info theme-contrast p-5 m-1"&gt;Padding 5&lt;/div&gt;</codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div color="primary" padding="0"&gt;Padding 0&lt;/div&gt;
-&lt;div color="secondary" padding="1" margin="1"&gt;Padding 1&lt;/div&gt;
-&lt;div color="success" padding="2" margin="1"&gt;Padding 2&lt;/div&gt;
-&lt;div color="danger" padding="3" margin="1"&gt;Padding 3&lt;/div&gt;
-&lt;div color="warning" padding="4" margin="1"&gt;Padding 4&lt;/div&gt;
-&lt;div color="info" padding="5" margin="1"&gt;Padding 5&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div theme="primary-contrast" padding="0"&gt;Padding 0&lt;/div&gt;
+&lt;div theme="secondary-contrast" padding="1" margin="1"&gt;Padding 1&lt;/div&gt;
+&lt;div theme="success-contrast" padding="2" margin="1"&gt;Padding 2&lt;/div&gt;
+&lt;div theme="danger-contrast" padding="3" margin="1"&gt;Padding 3&lt;/div&gt;
+&lt;div theme="warning-contrast" padding="4" margin="1"&gt;Padding 4&lt;/div&gt;
+&lt;div theme="info-contrast" padding="5" margin="1"&gt;Padding 5&lt;/div&gt;</codeblock>
       </section>
     </bodydiv>
 
@@ -142,10 +142,10 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div color="primary" margin="t5 b0"&gt;Margin Top 5, Bottom 0&lt;/div&gt;
-&lt;div color="secondary" margin="x3"&gt;Margin Horizontal 3&lt;/div&gt;
-&lt;div color="success" padding="y5"&gt;Padding Vertical 5&lt;/div&gt;
-&lt;div color="danger" padding="s3 e1"&gt;Padding Start 3, End 1&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div theme="primary-contrast" margin="t5 b0"&gt;Margin Top 5, Bottom 0&lt;/div&gt;
+&lt;div theme="secondary-contrast" margin="x3"&gt;Margin Horizontal 3&lt;/div&gt;
+&lt;div theme="success-contrast" padding="y5"&gt;Padding Vertical 5&lt;/div&gt;
+&lt;div theme="danger-contrast" padding="s3 e1"&gt;Padding Start 3, End 1&lt;/div&gt;</codeblock>
       </section>
     </bodydiv>
   </body>

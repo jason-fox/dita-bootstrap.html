@@ -182,7 +182,7 @@
       </bodydiv>
     <section id="card-colors">
       <title>Card Colors</title>
-      <p>A card can be colorized by adding a <xmlatt>color</xmlatt> attribute. This
+      <p>A card can be colorized by adding a <xmlatt>theme</xmlatt> attribute. This
         applies a contextual background color.</p>
     </section>
     <bodydiv outputclass="p-3 border">
@@ -193,7 +193,7 @@
         <xref href="#" outputclass="btn-solid theme-primary">Go Somewhere</xref>
       </section>
     </bodydiv>
-    <codeblock>&lt;card color="success"&gt;
+    <codeblock>&lt;card theme="success"&gt;
   &lt;title&gt;Card Title&lt;/title&gt;
   &lt;div outputclass="card-header"&gt;Success Card&lt;/div&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
