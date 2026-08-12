@@ -54,7 +54,10 @@
         <div outputclass="p-2 theme-secondary theme-contrast">.theme-secondary .theme-contrast</div>
       </div>
     </example>
-    <codeblock>&lt;div outputclass="p-2 theme-primary theme-contrast"&gt;.theme-primary .theme-contrast&lt;/div&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="p-2 theme-primary theme-contrast"&gt;.theme-primary .theme-contrast&lt;/div&gt;
 &lt;div outputclass="p-2 theme-accent theme-contrast"&gt;.theme-accent .theme-contrast&lt;/div&gt;
 &lt;div outputclass="p-2 theme-success theme-contrast"&gt;.theme-success .theme-contrast&lt;/div&gt;
 &lt;div outputclass="p-2 theme-danger theme-contrast"&gt;.theme-danger .theme-contrast&lt;/div&gt;
@@ -62,6 +65,19 @@
 &lt;div outputclass="p-2 theme-info theme-contrast"&gt;.theme-info .theme-contrast&lt;/div&gt;
 &lt;div outputclass="p-2 theme-inverse theme-contrast"&gt;.theme-inverse .theme-contrast&lt;/div&gt;
 &lt;div outputclass="p-2 theme-secondary theme-contrast"&gt;.theme-secondary .theme-contrast&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;div theme="primary-contrast" padding="2"&gt;.theme-primary .theme-contrast&lt;/div&gt;
+&lt;div theme="accent-contrast" padding="2"&gt;.theme-accent .theme-contrast&lt;/div&gt;
+&lt;div theme="success-contrast" padding="2"&gt;.theme-success .theme-contrast&lt;/div&gt;
+&lt;div theme="danger-contrast" padding="2"&gt;.theme-danger .theme-contrast&lt;/div&gt;
+&lt;div theme="warning-contrast" padding="2"&gt;.theme-warning .theme-contrast&lt;/div&gt;
+&lt;div theme="info-contrast" padding="2"&gt;.theme-info .theme-contrast&lt;/div&gt;
+&lt;div theme="inverse-contrast" padding="2"&gt;.theme-inverse .theme-contrast&lt;/div&gt;
+&lt;div theme="secondary-contrast" padding="2"&gt;.theme-secondary .theme-contrast&lt;/div&gt;</codeblock>
+      </section>
+    </bodydiv>
 
     <p>Nested links inherit the contrast foreground so they stay legible on the solid background:</p>
     <example>
@@ -84,8 +100,18 @@
           <xref outputclass="underline-50 hover:underline-100" href="#">nested link</xref> inside.</div>
       </div>
     </example>
-    <codeblock>&lt;div outputclass="p-3 theme-primary theme-contrast"&gt;Theme Primary with a
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="p-3 theme-primary theme-contrast"&gt;Theme Primary with a
   &lt;xref outputclass="underline-50 hover:underline-100" href="#"&gt;nested link&lt;/xref&gt; inside.&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;div theme="primary-contrast" padding="3"&gt;Theme Primary with a
+  &lt;xref outputclass="underline-50 hover:underline-100" href="#"&gt;nested link&lt;/xref&gt; inside.&lt;/div&gt;</codeblock>
+      </section>
+    </bodydiv>
 
     <section id="subtle">
       <title>Subtle</title>
@@ -105,7 +131,10 @@
         <div outputclass="p-2 theme-secondary theme-subtle">.theme-secondary .theme-subtle</div>
       </div>
     </example>
-    <codeblock>&lt;div outputclass="p-2 theme-primary theme-subtle"&gt;.theme-primary .theme-subtle&lt;/div&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="p-2 theme-primary theme-subtle"&gt;.theme-primary .theme-subtle&lt;/div&gt;
 &lt;div outputclass="p-2 theme-accent theme-subtle"&gt;.theme-accent .theme-subtle&lt;/div&gt;
 &lt;div outputclass="p-2 theme-success theme-subtle"&gt;.theme-success .theme-subtle&lt;/div&gt;
 &lt;div outputclass="p-2 theme-danger theme-subtle"&gt;.theme-danger .theme-subtle&lt;/div&gt;
@@ -113,6 +142,19 @@
 &lt;div outputclass="p-2 theme-info theme-subtle"&gt;.theme-info .theme-subtle&lt;/div&gt;
 &lt;div outputclass="p-2 theme-inverse theme-subtle"&gt;.theme-inverse .theme-subtle&lt;/div&gt;
 &lt;div outputclass="p-2 theme-secondary theme-subtle"&gt;.theme-secondary .theme-subtle&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;div theme="primary-subtle" padding="2"&gt;.theme-primary .theme-subtle&lt;/div&gt;
+&lt;div theme="accent-subtle" padding="2"&gt;.theme-accent .theme-subtle&lt;/div&gt;
+&lt;div theme="success-subtle" padding="2"&gt;.theme-success .theme-subtle&lt;/div&gt;
+&lt;div theme="danger-subtle" padding="2"&gt;.theme-danger .theme-subtle&lt;/div&gt;
+&lt;div theme="warning-subtle" padding="2"&gt;.theme-warning .theme-subtle&lt;/div&gt;
+&lt;div theme="info-subtle" padding="2"&gt;.theme-info .theme-subtle&lt;/div&gt;
+&lt;div theme="inverse-subtle" padding="2"&gt;.theme-inverse .theme-subtle&lt;/div&gt;
+&lt;div theme="secondary-subtle" padding="2"&gt;.theme-secondary .theme-subtle&lt;/div&gt;</codeblock>
+      </section>
+    </bodydiv>
 
     <p>And with borders:</p>
     <example>
@@ -129,8 +171,11 @@
         >.theme-secondary .theme-subtle .theme-border</div>
       </div>
     </example>
-    <codeblock
-    >&lt;div outputclass="p-2 theme-primary theme-subtle theme-border"&gt;.theme-primary .theme-subtle .theme-border&lt;/div&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock
+        >&lt;div outputclass="p-2 theme-primary theme-subtle theme-border"&gt;.theme-primary .theme-subtle .theme-border&lt;/div&gt;
 &lt;div outputclass="p-2 theme-accent theme-subtle theme-border"&gt;.theme-accent .theme-subtle .theme-border&lt;/div&gt;
 &lt;div outputclass="p-2 theme-success theme-subtle theme-border"&gt;.theme-success .theme-subtle .theme-border&lt;/div&gt;
 &lt;div outputclass="p-2 theme-danger theme-subtle theme-border"&gt;.theme-danger .theme-subtle .theme-border&lt;/div&gt;
@@ -138,6 +183,20 @@
 &lt;div outputclass="p-2 theme-info theme-subtle theme-border"&gt;.theme-info .theme-subtle .theme-border&lt;/div&gt;
 &lt;div outputclass="p-2 theme-inverse theme-subtle theme-border"&gt;.theme-inverse .theme-subtle .theme-border&lt;/div&gt;
 &lt;div outputclass="p-2 theme-secondary theme-subtle theme-border"&gt;.theme-secondary .theme-subtle .theme-border&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock
+        >&lt;div theme="primary-subtle-border" padding="2"&gt;.theme-primary .theme-subtle .theme-border&lt;/div&gt;
+&lt;div theme="accent-subtle-border" padding="2"&gt;.theme-accent .theme-subtle .theme-border&lt;/div&gt;
+&lt;div theme="success-subtle-border" padding="2"&gt;.theme-success .theme-subtle .theme-border&lt;/div&gt;
+&lt;div theme="danger-subtle-border" padding="2"&gt;.theme-danger .theme-subtle .theme-border&lt;/div&gt;
+&lt;div theme="warning-subtle-border" padding="2"&gt;.theme-warning .theme-subtle .theme-border&lt;/div&gt;
+&lt;div theme="info-subtle-border" padding="2"&gt;.theme-info .theme-subtle .theme-border&lt;/div&gt;
+&lt;div theme="inverse-subtle-border" padding="2"&gt;.theme-inverse .theme-subtle .theme-border&lt;/div&gt;
+&lt;div theme="secondary-subtle-border" padding="2"&gt;.theme-secondary .theme-subtle .theme-border&lt;/div&gt;</codeblock>
+      </section>
+    </bodydiv>
 
     <p>Nested links inherit the subtle foreground so they stay legible on the subtle background:</p>
     <example>
@@ -160,8 +219,18 @@
           <xref outputclass="underline-50 hover:underline-100" href="#">nested link</xref> inside.</div>
       </div>
     </example>
-    <codeblock>&lt;div outputclass="p-3 theme-primary theme-subtle"&gt;Theme Primary with a
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="p-3 theme-primary theme-subtle"&gt;Theme Primary with a
   &lt;xref outputclass="underline-50 hover:underline-100" href="#"&gt;nested link&lt;/xref&gt; inside.&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;div theme="primary-subtle" padding="3"&gt;Theme Primary with a
+  &lt;xref outputclass="underline-50 hover:underline-100" href="#"&gt;nested link&lt;/xref&gt; inside.&lt;/div&gt;</codeblock>
+      </section>
+    </bodydiv>
 
     <section id="muted">
       <title>Muted</title>
@@ -181,7 +250,10 @@
         <div outputclass="p-2 theme-secondary theme-muted">.theme-secondary .theme-muted</div>
       </div>
     </example>
-    <codeblock>&lt;div outputclass="p-2 theme-primary theme-muted"&gt;.theme-primary .theme-muted&lt;/div&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="p-2 theme-primary theme-muted"&gt;.theme-primary .theme-muted&lt;/div&gt;
 &lt;div outputclass="p-2 theme-accent theme-muted"&gt;.theme-accent .theme-muted&lt;/div&gt;
 &lt;div outputclass="p-2 theme-success theme-muted"&gt;.theme-success .theme-muted&lt;/div&gt;
 &lt;div outputclass="p-2 theme-danger theme-muted"&gt;.theme-danger .theme-muted&lt;/div&gt;
@@ -189,31 +261,19 @@
 &lt;div outputclass="p-2 theme-info theme-muted"&gt;.theme-info .theme-muted&lt;/div&gt;
 &lt;div outputclass="p-2 theme-inverse theme-muted"&gt;.theme-inverse .theme-muted&lt;/div&gt;
 &lt;div outputclass="p-2 theme-secondary theme-muted"&gt;.theme-secondary .theme-muted&lt;/div&gt;</codeblock>
-
-    <p>And with borders:</p>
-    <example>
-      <div outputclass="d-flex flex-wrap gap-2">
-        <div outputclass="p-2 theme-primary theme-muted theme-border">.theme-primary .theme-muted .theme-border</div>
-        <div outputclass="p-2 theme-accent theme-muted theme-border">.theme-accent .theme-muted .theme-border</div>
-        <div outputclass="p-2 theme-success theme-muted theme-border">.theme-success .theme-muted .theme-border</div>
-        <div outputclass="p-2 theme-danger theme-muted theme-border">.theme-danger .theme-muted .theme-border</div>
-        <div outputclass="p-2 theme-warning theme-muted theme-border">.theme-warning .theme-muted .theme-border</div>
-        <div outputclass="p-2 theme-info theme-muted theme-border">.theme-info .theme-muted .theme-border</div>
-        <div outputclass="p-2 theme-inverse theme-muted theme-border">.theme-inverse .theme-muted .theme-border</div>
-        <div
-          outputclass="p-2 theme-secondary theme-muted theme-border"
-        >.theme-secondary .theme-muted .theme-border</div>
-      </div>
-    </example>
-    <codeblock
-    >&lt;div outputclass="p-2 theme-primary theme-muted theme-border"&gt;.theme-primary .theme-muted .theme-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-accent theme-muted theme-border"&gt;.theme-accent .theme-muted .theme-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-success theme-muted theme-border"&gt;.theme-success .theme-muted .theme-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-danger theme-muted theme-border"&gt;.theme-danger .theme-muted .theme-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-warning theme-muted theme-border"&gt;.theme-warning .theme-muted .theme-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-info theme-muted theme-border"&gt;.theme-info .theme-muted .theme-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-inverse theme-muted theme-border"&gt;.theme-inverse .theme-muted .theme-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-secondary theme-muted theme-border"&gt;.theme-secondary .theme-muted .theme-border&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;div theme="primary-muted" padding="2"&gt;.theme-primary .theme-muted&lt;/div&gt;
+&lt;div theme="accent-muted" padding="2"&gt;.theme-accent .theme-muted&lt;/div&gt;
+&lt;div theme="success-muted" padding="2"&gt;.theme-success .theme-muted&lt;/div&gt;
+&lt;div theme="danger-muted" padding="2"&gt;.theme-danger .theme-muted&lt;/div&gt;
+&lt;div theme="warning-muted" padding="2"&gt;.theme-warning .theme-muted&lt;/div&gt;
+&lt;div theme="info-muted" padding="2"&gt;.theme-info .theme-muted&lt;/div&gt;
+&lt;div theme="inverse-muted" padding="2"&gt;.theme-inverse .theme-muted&lt;/div&gt;
+&lt;div theme="secondary-muted" padding="2"&gt;.theme-secondary .theme-muted&lt;/div&gt;</codeblock>
+      </section>
+    </bodydiv>
 
     <p>Nested links inherit the muted foreground so they stay legible on the muted background:</p>
     <example>
@@ -236,8 +296,18 @@
           <xref outputclass="underline-50 hover:underline-100" href="#">nested link</xref> inside.</div>
       </div>
     </example>
-    <codeblock>&lt;div outputclass="p-3 theme-primary theme-muted"&gt;Theme Primary with a
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="p-3 theme-primary theme-muted"&gt;Theme Primary with a
   &lt;xref outputclass="underline-50 hover:underline-100" href="#"&gt;nested link&lt;/xref&gt; inside.&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;div theme="primary-muted" padding="3"&gt;Theme Primary with a
+  &lt;xref outputclass="underline-50 hover:underline-100" href="#"&gt;nested link&lt;/xref&gt; inside.&lt;/div&gt;</codeblock>
+      </section>
+    </bodydiv>
 
     <section id="comparison">
       <title>Comparison</title>
@@ -310,7 +380,10 @@
           <xref outputclass="underline-50 hover:underline-100" href="#">link</xref></div>
       </div>
     </example>
-    <codeblock>&lt;div outputclass="d-flex gap-2 mb-2"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="d-flex gap-2 mb-2"&gt;
   &lt;div outputclass="theme-primary theme-contrast p-3 flex-fill text-center rounded"&gt;Primary with a
     &lt;xref outputclass="underline-50 hover:underline-100" href="#"&gt;link&lt;/xref&gt;&lt;/div&gt;
   &lt;div outputclass="theme-primary theme-subtle p-3 flex-fill text-center rounded"&gt;Primary with a
@@ -318,6 +391,19 @@
   &lt;div outputclass="theme-primary theme-muted p-3 flex-fill text-center rounded"&gt;Primary with a
     &lt;xref outputclass="underline-50 hover:underline-100" href="#"&gt;link&lt;/xref&gt;&lt;/div&gt;
 &lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;div outputclass="d-flex gap-2" margin="b2"&gt;
+  &lt;div theme="primary-contrast" padding="3" rounded="yes" outputclass="flex-fill text-center"&gt;Primary with a
+    &lt;xref outputclass="underline-50 hover:underline-100" href="#"&gt;link&lt;/xref&gt;&lt;/div&gt;
+  &lt;div theme="primary-subtle" padding="3" rounded="yes" outputclass="flex-fill text-center"&gt;Primary with a
+    &lt;xref outputclass="underline-50 hover:underline-100" href="#"&gt;link&lt;/xref&gt;&lt;/div&gt;
+  &lt;div theme="primary-muted" padding="3" rounded="yes" outputclass="flex-fill text-center"&gt;Primary with a
+    &lt;xref outputclass="underline-50 hover:underline-100" href="#"&gt;link&lt;/xref&gt;&lt;/div&gt;
+&lt;/div&gt;</codeblock>
+      </section>
+    </bodydiv>
 
     <section id="with-components">
       <title>With components</title>
@@ -340,13 +426,33 @@
         </div>
       </div>
     </example>
-    <codeblock>&lt;div outputclass="theme-primary"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="theme-primary"&gt;
   &lt;div outputclass="d-flex gap-2 mb-3"&gt;
     &lt;ph outputclass="badge theme-contrast"&gt;Contrast badge&lt;/ph&gt;
     &lt;ph outputclass="badge theme-subtle"&gt;Subtle badge&lt;/ph&gt;
     &lt;ph outputclass="badge theme-muted"&gt;Muted badge&lt;/ph&gt;
   &lt;/div&gt;
 &lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <p outputclass="text-muted">A bare <codeph>theme-{color}</codeph> container (setting only the CSS
+          custom properties for descendants to consume, with no contrast/subtle/muted/border
+          suffix of its own) has no <xmlatt>theme</xmlatt> attribute equivalent &#8212; <xmlelement
+          >div</xmlelement>'s <xmlatt>theme</xmlatt> enumeration requires a suffix. This case
+          still requires <xmlatt>outputclass</xmlatt>.</p>
+        <codeblock>&lt;div outputclass="theme-primary"&gt;
+  &lt;div outputclass="d-flex gap-2 mb-3"&gt;
+    &lt;ph outputclass="badge theme-contrast"&gt;Contrast badge&lt;/ph&gt;
+    &lt;ph outputclass="badge theme-subtle"&gt;Subtle badge&lt;/ph&gt;
+    &lt;ph outputclass="badge theme-muted"&gt;Muted badge&lt;/ph&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</codeblock>
+      </section>
+    </bodydiv>
 
     <p>You can also mix theme colors within the same container by applying different
       <codeph>theme-{color}</codeph> classes to child elements:</p>
@@ -357,11 +463,83 @@
         <div outputclass="theme-danger theme-contrast p-3 rounded">Danger</div>
       </div>
     </example>
-    <codeblock>&lt;div outputclass="d-flex gap-2"&gt;
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="d-flex gap-2"&gt;
   &lt;div outputclass="theme-success theme-contrast p-3 rounded"&gt;Success&lt;/div&gt;
   &lt;div outputclass="theme-warning theme-contrast p-3 rounded"&gt;Warning&lt;/div&gt;
   &lt;div outputclass="theme-danger theme-contrast p-3 rounded"&gt;Danger&lt;/div&gt;
 &lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;div outputclass="d-flex gap-2"&gt;
+  &lt;div theme="success-contrast" padding="3" rounded="yes"&gt;Success&lt;/div&gt;
+  &lt;div theme="warning-contrast" padding="3" rounded="yes"&gt;Warning&lt;/div&gt;
+  &lt;div theme="danger-contrast" padding="3" rounded="yes"&gt;Danger&lt;/div&gt;
+&lt;/div&gt;</codeblock>
+      </section>
+    </bodydiv>
+
+    <section id="how-theme-values-are-built-up">
+      <title>How theme values are built up</title>
+      <p>Every theme value used throughout this documentation, whether on an individual
+        element's <xmlatt>outputclass</xmlatt> (or the specialization plugin's <xmlatt
+        >theme</xmlatt> attribute), or on one of the <parmname>--bootstrap.theme.*</parmname>
+        command line parameters below, is a hyphenated compound of one of the 8 Bootstrap
+        theme colors:</p>
+      <ul>
+        <li><codeph>accent</codeph></li>
+        <li><codeph>danger</codeph></li>
+        <li><codeph>info</codeph></li>
+        <li><codeph>inverse</codeph></li>
+        <li><codeph>primary</codeph></li>
+        <li><codeph>secondary</codeph></li>
+        <li><codeph>success</codeph></li>
+        <li><codeph>warning</codeph></li>
+      </ul>
+      <p>With a suffix indicating the theme style</p>
+      <ul>
+        <li><codeph>-contrast</codeph> pairs the solid background with the contrast text color</li>
+        <li><codeph>-subtle</codeph> pairs the low-contrast background with matching text</li>
+        <li><codeph>-muted</codeph> pairs the low-contrast background with muted text</li>
+        <li><codeph>-border</codeph> sets a predefined border color on its own</li>
+        <li><codeph>-subtle-border</codeph> combines <codeph>-subtle</codeph> and <codeph>-border</codeph></li>
+      </ul>
+      <p>The following command line parameters optional consume a theme value to style layout regions:</p>
+      <parml>
+        <plentry>
+          <pt><parmname>--bootstrap.theme.header</parmname></pt>
+          <pd>Page header theme. Defaults to <option>primary-contrast</option></pd>
+        </plentry>
+        <plentry>
+          <pt><parmname>--bootstrap.theme.footer</parmname></pt>
+          <pd>Page footer theme. Defaults to <option>none</option></pd>
+        </plentry>
+        <plentry>
+          <pt><parmname>--bootstrap.theme.sidebar</parmname></pt>
+          <pd><xref href="nav.dita#navigation/sidebar"/> theme. Defaults to <option>none</option></pd>
+        </plentry>
+        <plentry>
+          <pt><parmname>--bootstrap.theme.topbar</parmname></pt>
+          <pd><xref href="nav.dita#navigation/top-bar"/> theme. Defaults to <option>none</option></pd>
+        </plentry>
+        <plentry>
+          <pt><parmname>--bootstrap.theme.content</parmname></pt>
+          <pd>Main content area theme. Defaults to <option>none</option></pd>
+        </plentry>
+        <plentry>
+          <pt><parmname>--bootstrap.theme.scrollspy</parmname></pt>
+          <pd><xref href="scrollspy.dita"/> menu theme. Defaults to <option>none</option></pd>
+        </plentry>
+        <plentry>
+          <pt><parmname>--bootstrap.theme.body</parmname></pt>
+          <pd>Page <xmlelement>body</xmlelement>. Defaults to
+            <option>none</option></pd>
+        </plentry>
+      </parml>
+    </section>
 
   </body>
 </topic>

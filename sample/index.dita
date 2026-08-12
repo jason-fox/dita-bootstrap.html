@@ -550,7 +550,8 @@
       <indexterm><parmname>--bootstrap.theme.scrollspy</parmname></indexterm>
       <indexterm><parmname>--bootstrap.theme.sidebar</parmname></indexterm>
       <indexterm><parmname>--bootstrap.theme.topbar</parmname></indexterm>
-      <p>Layout regions can be styled with a Bootstrap theme color using additional command line parameters.</p>
+      <p>Layout regions can be styled with a Bootstrap theme color using additional command line parameters. See
+        <xref href="theme.dita"/> for details on how theme values are built up.</p>
       <parml otherprops="cols(4)">
         <plentry>
           <pt>
