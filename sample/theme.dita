@@ -407,8 +407,8 @@
 
     <section id="with-components">
       <title>With components</title>
-      <p>Theme utilities work great with components that support theming. Apply the
-        theme color to a container and use theme style classes on individual elements.</p>
+      <p>Theme utilities work great with components that support theming. Use theme
+        style classes on individual elements.</p>
     </section>
     <example>
       <div outputclass="theme-primary">
@@ -439,17 +439,10 @@
       </section>
       <section>
         <title>Specialization</title>
-        <p outputclass="text-muted">A bare <codeph>theme-{color}</codeph> container (setting only the CSS
-          custom properties for descendants to consume, with no contrast/subtle/muted/border
-          suffix of its own) has no <xmlatt>theme</xmlatt> attribute equivalent &#8212; <xmlelement
-          >div</xmlelement>'s <xmlatt>theme</xmlatt> enumeration requires a suffix. This case
-          still requires <xmlatt>outputclass</xmlatt>.</p>
-        <codeblock>&lt;div outputclass="theme-primary"&gt;
-  &lt;div outputclass="d-flex gap-2 mb-3"&gt;
-    &lt;ph outputclass="badge theme-contrast"&gt;Contrast badge&lt;/ph&gt;
-    &lt;ph outputclass="badge theme-subtle"&gt;Subtle badge&lt;/ph&gt;
-    &lt;ph outputclass="badge theme-muted"&gt;Muted badge&lt;/ph&gt;
-  &lt;/div&gt;
+        <codeblock>&lt;div outputclass="d-flex gap-2 mb-3"&gt;
+  &lt;badge theme="primary"&gt;Solid badge&lt;/badge&gt;
+  &lt;badge theme="primary-outline"&gt;Outline badge&lt;/badge&gt;
+  &lt;badge theme="primary-subtle"&gt;Subtle badge&lt;/badge&gt;
 &lt;/div&gt;</codeblock>
       </section>
     </bodydiv>
