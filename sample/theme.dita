@@ -504,7 +504,7 @@
         These values are a shorthand notation corresponding to the <xmlatt
         >outputclass="theme-{color} theme-{contrast|subtle|muted} theme-{border}</xmlatt> attribute values.
       </p>
-      <p>The following command line parameters optional consume a theme value to style layout regions:</p>
+      <p>The following command line parameters optionally consume a theme value to style layout regions:</p>
       <parml>
         <plentry>
           <pt><parmname>--bootstrap.theme.header</parmname></pt>
