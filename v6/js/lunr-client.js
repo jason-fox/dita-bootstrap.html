@@ -3,6 +3,17 @@
 (() => {
   let LUNR_DATA = null;
   let PREVIEW_LOOKUP = null;
+  const SEARCH_CARD_THEME = "primary-contrast";
+
+  function themeClasses(value) {
+    if (!value || value === "none") {
+      return "";
+    }
+    return value
+      .split("-")
+      .map((part) => `theme-${part}`)
+      .join(" ");
+  }
   const scripts = document.getElementsByTagName("script");
   const scriptPath = scripts[scripts.length - 1].src;
   const JSON_PATH = scriptPath.substr(0, scriptPath.lastIndexOf("/") + 1);
@@ -39,7 +50,7 @@
       const title = item["t"];
       const preview = item["d"];
       const link = item["l"];
-      const result = `<div class="card mb-3 search-close theme-primary">
+      const result = `<div class="card mb-3 search-close ${themeClasses(SEARCH_CARD_THEME)}">
         <a class="stretched-link fg-body text-decoration-none" href="${BASE_URL + link}">
             <h2 class="h3 title card-header">${title}</h5>
         </a>
