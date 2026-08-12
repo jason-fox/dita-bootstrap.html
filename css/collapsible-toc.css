@@ -8,7 +8,7 @@
  */
 
 .bd-links {
-  padding-left: none;
+  padding-left: 0;
   overflow: auto;
   font-weight: 600;
 }
