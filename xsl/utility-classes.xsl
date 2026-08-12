@@ -55,9 +55,11 @@
   <!-- Add a Bootstrap CSS border to codeblocks -->
   <xsl:template match="*[contains(@class, ' topic/pre ')]" mode="get-output-class">
     <xsl:choose>
-       <xsl:when test="@color">
-          <xsl:text>alert theme-</xsl:text>
-          <xsl:value-of select="@color"/>
+       <xsl:when test="@theme">
+          <xsl:text>alert </xsl:text>
+          <xsl:call-template name="theme-classes">
+            <xsl:with-param name="value" select="@theme"/>
+          </xsl:call-template>
           <xsl:text> </xsl:text>
        </xsl:when>
        <xsl:otherwise>
@@ -128,9 +130,11 @@
        <xsl:text> </xsl:text>
        <xsl:value-of select="$BOOTSTRAP_CSS_CARD_WIDTH"/>
     </xsl:if>
-    <xsl:if test="@color">
-       <xsl:text> theme-</xsl:text>
-       <xsl:value-of select="@color"/>
+    <xsl:if test="@theme">
+       <xsl:text> </xsl:text>
+       <xsl:call-template name="theme-classes">
+         <xsl:with-param name="value" select="@theme"/>
+       </xsl:call-template>
        <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:next-match/>
@@ -248,8 +252,11 @@
       <xsl:value-of select="ancestor::*[contains(@class,' bootstrap-d/pagination ')][1]/@outputclass"/>
       <xsl:text> </xsl:text>
     </xsl:if>
-    <xsl:if test="ancestor::*[contains(@class,' bootstrap-d/pagination ')][1]/@color">
-      <xsl:value-of select="concat('theme-', ancestor::*[contains(@class,' bootstrap-d/pagination ')][1]/@color, ' ')"/>
+    <xsl:if test="ancestor::*[contains(@class,' bootstrap-d/pagination ')][1]/@theme">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="ancestor::*[contains(@class,' bootstrap-d/pagination ')][1]/@theme"/>
+      </xsl:call-template>
+      <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:value-of select="$BOOTSTRAP_CSS_PAGINATION"/>
     <xsl:next-match/>
@@ -270,8 +277,11 @@
 
   <!-- Change the default Bootstrap CSS classes of alerts -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/alert ')]" mode="bootstrap-class" priority="10">
-    <xsl:if test="@color">
-      <xsl:value-of select="concat('theme-', @color, ' fg-emphasis-', @color, ' ')"/>
+    <xsl:if test="@theme">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="@theme"/>
+      </xsl:call-template>
+      <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:if test="*[contains(@class, ' topic/p ')]">
       <xsl:text>vstack </xsl:text>
@@ -322,22 +332,32 @@
     mode="bootstrap-class"
     priority="10"
   >
-    <xsl:value-of
-      select="
-        if (@style = 'none') then 'btn'
-        else if (@style = 'outline') then 'btn btn-outline'
-        else if (@style = 'subtle') then 'btn-subtle'
-        else if (@style = 'text') then 'btn-text'
-        else if (contains(@outputclass, 'btn-outline')) then 'btn'
-        else 'btn-solid'"
-    />
-    <xsl:if test="@color and not(@style = 'none')">
-      <xsl:text> theme-</xsl:text>
-      <xsl:value-of select="@color"/>
-    </xsl:if>
-    <xsl:if test="@gradient = 'yes' and not(@style = 'none')">
-      <xsl:text> btn-styled</xsl:text>
-    </xsl:if>
+    <xsl:choose>
+      <xsl:when test="@theme">
+        <!-- 'solid' is the default variant, so bare '{color}' and
+             '{color}-styled' imply '{color}-solid' / '{color}-solid-styled'. -->
+        <xsl:variable name="theme-parts" select="tokenize(@theme, '-')" as="xs:string*"/>
+        <xsl:variable
+          name="theme"
+          select="
+            if (count($theme-parts) = 1) then concat(@theme, '-solid')
+            else if (count($theme-parts) = 2 and $theme-parts[2] = 'styled')
+              then concat($theme-parts[1], '-solid-styled')
+            else @theme"
+        />
+        <xsl:call-template name="theme-classes">
+          <xsl:with-param name="value" select="$theme"/>
+          <xsl:with-param name="suffix-prefix" select="'btn'"/>
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:when test="contains(@class, ' bootstrap-d/button ')"/>
+      <xsl:when test="contains(@outputclass, 'btn-outline')">
+        <xsl:text>btn</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>btn-solid</xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
     <xsl:text> </xsl:text>
     <xsl:choose>
       <xsl:when test="@size = 'xs'">btn-xs </xsl:when>
@@ -350,15 +370,11 @@
 
   <!-- Change the default Bootstrap CSS classes of badges -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/badge ')]" mode="bootstrap-class" priority="10">
-    <xsl:if test="@style = 'outline'">
-      <xsl:text>badge-outline </xsl:text>
-    </xsl:if>
-    <xsl:if test="@style = 'subtle'">
-      <xsl:text>badge-subtle </xsl:text>
-    </xsl:if>
-    <xsl:if test="@color and not(@style = 'none')">
-      <xsl:text>theme-</xsl:text>
-      <xsl:value-of select="@color"/>
+    <xsl:if test="@theme">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="@theme"/>
+        <xsl:with-param name="suffix-prefix" select="'badge'"/>
+      </xsl:call-template>
       <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:value-of select="concat(' ', $BOOTSTRAP_CSS_BADGE)"/>
@@ -367,9 +383,10 @@
 
   <!-- Change the default Bootstrap CSS classes of accordions -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/accordion ')]" mode="bootstrap-class" priority="10">
-    <xsl:if test="@color">
-      <xsl:text>theme-</xsl:text>
-      <xsl:value-of select="@color"/>
+    <xsl:if test="@theme">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="@theme"/>
+      </xsl:call-template>
       <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:next-match/>
@@ -377,9 +394,11 @@
 
   <!-- Change the default Bootstrap CSS classes of cards -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/card ')]" mode="bootstrap-class" priority="10">
-    <xsl:if test="@color">
-      <xsl:text>card theme-</xsl:text>
-      <xsl:value-of select="@color"/>
+    <xsl:if test="@theme">
+      <xsl:text>card </xsl:text>
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="@theme"/>
+      </xsl:call-template>
       <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:next-match/>
@@ -400,9 +419,10 @@
     mode="bootstrap-class"
     priority="11"
   >
-    <xsl:if test="@color">
-      <xsl:text>theme-</xsl:text>
-      <xsl:value-of select="@color"/>
+    <xsl:if test="@theme">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="@theme"/>
+      </xsl:call-template>
       <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:if test="@position">
@@ -420,9 +440,10 @@
     mode="bootstrap-class"
     priority="11"
   >
-    <xsl:if test="@color">
-      <xsl:text>theme-</xsl:text>
-      <xsl:value-of select="@color"/>
+    <xsl:if test="@theme">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="@theme"/>
+      </xsl:call-template>
       <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:if test="@position">
@@ -467,13 +488,14 @@
     mode="get-output-class"
   >
     <xsl:variable
-      name="parent-color"
-      select="ancestor::*[contains(@class, ' bootstrap-d/list-group ') or contains(@outputclass, 'list-group')][1]/@color"
+      name="parent-theme"
+      select="ancestor::*[contains(@class, ' bootstrap-d/list-group ') or contains(@outputclass, 'list-group')][1]/@theme"
     />
     <xsl:text>list-group-item </xsl:text>
-    <xsl:if test="$parent-color">
-       <xsl:text>text-</xsl:text>
-       <xsl:value-of select="$parent-color"/>
+    <xsl:if test="$parent-theme">
+       <xsl:call-template name="theme-classes">
+         <xsl:with-param name="value" select="$parent-theme"/>
+       </xsl:call-template>
        <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:next-match/>
@@ -670,10 +692,10 @@
     />
     <xsl:variable name="hasCustomTheme" select="some $c in tokenize(@outputclass, '\s+') satisfies $c = $themeClasses"/>
     <xsl:variable
-      name="noteColor"
+      name="noteTheme"
       select="
           if ($hasCustomTheme) then ''
-          else if (@color) then @color
+          else if (@theme) then @theme
           else if (@type='tip') then 'success'
           else if (@type='fastpath') then 'success'
           else if (@type='remember') then 'success'
@@ -689,8 +711,10 @@
           else if (@type='other') then ''
           else 'info'"
     />
-    <xsl:if test="string-length($noteColor) > 0">
-      <xsl:value-of select="concat('theme-', $noteColor, ' fg-emphasis-', $noteColor)"/>
+    <xsl:if test="string-length($noteTheme) > 0">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="$noteTheme"/>
+      </xsl:call-template>
     </xsl:if>
   </xsl:template>
 
@@ -771,27 +795,25 @@
 
   <!-- Add a Bootstrap Link CSS color to xrefs and links -->
   <xsl:template
-    match="*[contains(@class, ' topic/xref ') or contains(@class, ' topic/link ')][@color][not(contains(@class, ' bootstrap-d/button '))][not(contains(@outputclass, 'btn-'))]"
+    match="*[contains(@class, ' topic/xref ') or contains(@class, ' topic/link ')][@theme][not(contains(@class, ' bootstrap-d/button '))][not(contains(@outputclass, 'btn-'))]"
     mode="get-output-class"
   >
-    <xsl:text>link theme-</xsl:text>
-    <xsl:value-of select="@color"/>
+    <xsl:text>link </xsl:text>
+    <xsl:call-template name="theme-classes">
+      <xsl:with-param name="value" select="@theme"/>
+    </xsl:call-template>
     <xsl:text> </xsl:text>
     <xsl:next-match/>
   </xsl:template>
 
   <!-- Process decorations (color, border, rounded, width) on any element -->
-  <xsl:template
-    match="*[@color or @border or @bordercolor or @rounded or @width]"
-    mode="get-output-class"
-    priority="-2"
-  >
+  <xsl:template match="*[@theme or @border or @rounded or @width]" mode="get-output-class" priority="-2">
     <xsl:if
-      test="@color and not(contains(@class, ' topic/note ') or 
-                                 contains(@class, ' topic/pre ') or 
-                                 contains(@class, ' topic/xref ') or 
-                                 contains(@class, ' topic/link ') or 
-                                 contains(@class, ' bootstrap-d/card ') or 
+      test="@theme and not(contains(@class, ' topic/note ') or
+                                 contains(@class, ' topic/pre ') or
+                                 contains(@class, ' topic/xref ') or
+                                 contains(@class, ' topic/link ') or
+                                 contains(@class, ' bootstrap-d/card ') or
                                  contains(@class, ' bootstrap-d/alert ') or
                                  contains(@class, ' bootstrap-d/badge ') or
                                  contains(@class, ' bootstrap-d/list-group ') or
@@ -805,31 +827,20 @@
                                  contains(@class, ' topic/row ') or
                                  contains(@class, ' topic/entry '))"
     >
-       <xsl:text>bg-</xsl:text>
-       <xsl:value-of select="@color"/>
-       <xsl:text> fg-contrast-</xsl:text>
-       <xsl:value-of select="@color"/>
+       <xsl:call-template name="theme-classes">
+         <xsl:with-param name="value" select="@theme"/>
+       </xsl:call-template>
        <xsl:text> </xsl:text>
     </xsl:if>
-    <xsl:if test="@border or @bordercolor">
+    <xsl:if test="@border">
        <xsl:choose>
           <xsl:when test="@border='no'">
              <xsl:text>border-0 </xsl:text>
           </xsl:when>
           <xsl:otherwise>
-             <xsl:if test="empty(@border) or @border='yes' or matches(@border, '^\d+$') or @bordercolor">
-                <xsl:text>border </xsl:text>
-             </xsl:if>
-             <xsl:if test="@border and @border != 'yes'">
-                <xsl:text>border-</xsl:text>
-                <xsl:value-of select="@border"/>
-                <xsl:text> </xsl:text>
-             </xsl:if>
-             <xsl:if test="@bordercolor">
-                <xsl:text>border-</xsl:text>
-                <xsl:value-of select="@bordercolor"/>
-                <xsl:text> </xsl:text>
-             </xsl:if>
+             <xsl:text>border border-</xsl:text>
+             <xsl:value-of select="@border"/>
+             <xsl:text> </xsl:text>
           </xsl:otherwise>
        </xsl:choose>
     </xsl:if>

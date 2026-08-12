@@ -23,16 +23,30 @@
   <xsl:param name="BOOTSTRAP_TOPBAR_HDR"/>
 
   <!-- Splits a hyphenated theme value (e.g. 'warning-subtle-border') into
-       theme- prefixed classes ('theme-warning theme-subtle theme-border').
+       prefixed classes. $prefix (default 'theme') applies to the first
+       token (the color, e.g. 'theme-warning'); $suffix-prefix (default
+       'theme') applies to every token after it (e.g. 'theme-subtle
+       theme-border'). Pass a component-specific $suffix-prefix (e.g.
+       'badge', 'btn', 'table') when that component has its own scoped
+       modifier classes instead of the generic 'theme-{suffix}' ones.
        'none' returns ''. -->
   <xsl:template name="theme-classes">
     <xsl:param name="value" as="xs:string"/>
+    <xsl:param name="prefix" select="'theme'" as="xs:string"/>
+    <xsl:param name="suffix-prefix" select="'theme'" as="xs:string"/>
     <xsl:choose>
       <xsl:when test="$value = 'none'">
         <xsl:sequence select="''"/>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:sequence select="string-join(for $part in tokenize($value, '-') return concat('theme-', $part), ' ')"/>
+        <xsl:variable name="parts" select="tokenize($value, '-')" as="xs:string*"/>
+        <xsl:sequence
+          select="
+            string-join(
+              (concat($prefix, '-', $parts[1]),
+               for $part in $parts[position() > 1] return concat($suffix-prefix, '-', $part)),
+              ' ')"
+        />
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
