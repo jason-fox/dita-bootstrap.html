@@ -550,7 +550,8 @@
       <indexterm><parmname>--bootstrap.theme.scrollspy</parmname></indexterm>
       <indexterm><parmname>--bootstrap.theme.sidebar</parmname></indexterm>
       <indexterm><parmname>--bootstrap.theme.topbar</parmname></indexterm>
-      <p>Layout regions can be styled with a Bootstrap theme color using additional command line parameters. See
+      <p
+      >Layout regions can be styled with Bootstrap theme color classes to set color and background-color pairings the chosen element using additional command line parameters. See
         <xref href="theme.dita"/> for details on how theme values are built up.</p>
       <parml otherprops="cols(4)">
         <plentry>
@@ -558,7 +559,7 @@
             <parmname>--bootstrap.css&#8203;.accessibility&#8203;.link</parmname>
           </pt>
           <pd>
-            Common Bootstrap utility classes for accessibility links
+            Common Bootstrap CSS classes for accessibility links
           </pd>
         </plentry>
         <plentry>
@@ -566,7 +567,7 @@
             <parmname>--bootstrap.theme&#8203;.accessibility</parmname>
           </pt>
           <pd>
-            Common Bootstrap utility classes for accessibility navigation
+            Bootstrap theme color classes for accessibility navigation
           </pd>
         </plentry>
         <plentry>
@@ -574,7 +575,7 @@
             <parmname>--bootstrap.theme&#8203;.body</parmname>
           </pt>
           <pd>
-            Theme utility class for the page <xmlelement>body</xmlelement>.
+            Bootstrap theme color classes for the page <xmlelement>body</xmlelement>.
             Defaults to <option>none</option>
           </pd>
         </plentry>
@@ -583,7 +584,7 @@
             <parmname>--bootstrap.theme&#8203;.content</parmname>
           </pt>
           <pd>
-            Theme utility class for the main content area. Defaults to <option>none</option>
+            Bootstrap theme color classes for the main content area. Defaults to <option>none</option>
           </pd>
         </plentry>
         <plentry>
@@ -591,7 +592,7 @@
             <parmname>--bootstrap.theme&#8203;.footer</parmname>
           </pt>
           <pd>
-            Theme utility class for the page footer. Defaults to <option>none</option>
+            Bootstrap theme color classes for the page footer. Defaults to <option>none</option>
           </pd>
         </plentry>
         <plentry>
@@ -599,7 +600,7 @@
             <parmname>--bootstrap.theme&#8203;.header</parmname>
           </pt>
           <pd>
-            Theme utility class for the page header. Defaults to <option>primary-contrast</option>
+            Bootstrap theme color classes for the page header. Defaults to <option>primary-contrast</option>
           </pd>
         </plentry>
         <plentry>
@@ -607,7 +608,7 @@
             <parmname>--bootstrap.theme&#8203;.scrollspy</parmname>
           </pt>
           <pd>
-            Theme utility class for the scrollspy menu. Defaults to <option>none</option>
+            Bootstrap theme color classes for the scrollspy menu. Defaults to <option>none</option>
           </pd>
         </plentry>
         <plentry>
@@ -615,7 +616,7 @@
             <parmname>--bootstrap.theme&#8203;.sidebar</parmname>
           </pt>
           <pd>
-            Theme utility class for the sidebar navigation. Defaults to <option>none</option>
+            Bootstrap theme color classes for the sidebar navigation. Defaults to <option>none</option>
           </pd>
         </plentry>
         <plentry>
@@ -623,7 +624,7 @@
             <parmname>--bootstrap.theme&#8203;.topbar</parmname>
           </pt>
           <pd>
-            Theme utility class for the collapsible top header. Defaults to <option>none</option>
+            Bootstrap theme color classes for the collapsible top header. Defaults to <option>none</option>
           </pd>
         </plentry>
       </parml>

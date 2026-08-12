@@ -484,8 +484,8 @@
 
     <section id="how-theme-values-are-built-up">
       <title>How theme values are built up</title>
-      <p>Every theme value used throughout this documentation, whether on an individual
-        element's <xmlatt>outputclass</xmlatt> (or the specialization plugin's <xmlatt
+      <p
+      >Every Bootstrap theme color class used in this documentation, whether on a standard DITA element or the specialization  <xmlatt
         >theme</xmlatt> attribute), or on one of the <parmname>--bootstrap.theme.*</parmname>
         command line parameters below, is a hyphenated compound of one of the 8 Bootstrap
         theme colors:</p>
@@ -499,7 +499,7 @@
         <li><codeph>success</codeph></li>
         <li><codeph>warning</codeph></li>
       </ul>
-      <p>With a suffix indicating the theme style</p>
+      <p>With a suffix indicating the theme's style</p>
       <ul>
         <li><codeph>-contrast</codeph> pairs the solid background with the contrast text color</li>
         <li><codeph>-subtle</codeph> pairs the low-contrast background with matching text</li>
@@ -507,6 +507,10 @@
         <li><codeph>-border</codeph> sets a predefined border color on its own</li>
         <li><codeph>-subtle-border</codeph> combines <codeph>-subtle</codeph> and <codeph>-border</codeph></li>
       </ul>
+      <p>
+        These values are a shorthand notation corresponding to the <xmlatt
+        >outputclass="theme-{color} theme-{contrast|subtle|muted} theme-{border}</xmlatt> attribute values.
+      </p>
       <p>The following command line parameters optional consume a theme value to style layout regions:</p>
       <parml>
         <plentry>
