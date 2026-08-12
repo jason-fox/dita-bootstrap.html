@@ -27,33 +27,34 @@
           class="ms-1 badge bg-subtle-primary fg-primary"
         >v6</span>
     </a>
-
-    <ul class="nav navbar-nav flex-row" data-bs-toggle="nav-overflow">
-      <li class="nav-item">
-        <a
-            class="nav-link"
-            href="https://www.dita-ot.org/plugins#!org.dita-bootstrap.html"
-          >Plugin</a>
-      </li>
-      <li class="nav-item">
-        <a
-            class="nav-link"
-            href="https://github.com/dita-bootstrap/dita-bootstrap.html/releases"
-          >Releases</a>
-      </li>
-      <li class="nav-item">
-        <a
-            class="nav-link"
-            href="https://github.com/dita-bootstrap/dita-bootstrap.html"
-          >Source</a>
-      </li>
-      <li class="nav-item">
-        <a
-            class="nav-link"
-            href="https://getbootstrap.com/docs/6.0"
-          >Bootstrap Docs</a>
-      </li>
-    </ul>
+    <div class="nav-overflow" data-bs-toggle="nav-overflow">
+      <ul class="nav navbar-nav flex-row">
+        <li class="nav-item">
+          <a
+              class="nav-link"
+              href="https://www.dita-ot.org/plugins#!org.dita-bootstrap.html"
+            >Plugin</a>
+        </li>
+        <li class="nav-item">
+          <a
+              class="nav-link"
+              href="https://github.com/dita-bootstrap/dita-bootstrap.html/releases"
+            >Releases</a>
+        </li>
+        <li class="nav-item">
+          <a
+              class="nav-link"
+              href="https://github.com/dita-bootstrap/dita-bootstrap.html"
+            >Source</a>
+        </li>
+        <li class="nav-item">
+          <a
+              class="nav-link"
+              href="https://getbootstrap.com/docs/6.0"
+            >Bootstrap Docs</a>
+        </li>
+      </ul>
+    </div>
     <ul class="nav navbar-nav flex-row d-none lg:d-flex ms-auto">
       <!--
         This is a lunr.js search box
