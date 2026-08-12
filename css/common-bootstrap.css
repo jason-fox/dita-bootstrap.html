@@ -130,3 +130,13 @@
   border-right-color: var(--bs-alert-border-color, transparent);
   border-left: 0;
 }
+
+.navbar .menu {
+  --bs-theme-fg: initial;
+  --bs-theme-base: initial;
+  --bs-theme-bg: initial;
+  --bs-theme-bg-subtle: initial;
+  --bs-theme-bg-muted: initial;
+  --bs-theme-border: initial;
+  --bs-theme-contrast: initial;
+}
