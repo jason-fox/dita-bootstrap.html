@@ -15,6 +15,29 @@
   <xsl:param name="FILEDIR" as="xs:string?"/>
   <xsl:param name="FILENAME" as="xs:string?"/>
   <xsl:param name="BOOTSTRAP_CSS_ACTIVE_NAV_PARENT" select="'active'"/>
+  <xsl:param name="ACTIVE_NAV" as="xs:string">
+    <xsl:choose>
+      <xsl:when test="$nav-toc = ('list-group-partial', 'list-group-full')">
+        <xsl:choose>
+          <xsl:when test="$BOOTSTRAP_THEME_SIDEBAR != 'none'">
+            <xsl:text>theme-contrast</xsl:text>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:text>active</xsl:text>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:when test="$nav-toc = 'collapsible'">
+        <xsl:text>active</xsl:text>
+      </xsl:when>
+      <xsl:when test="$nav-toc = ('nav-pill-partial', 'nav-pill-full')">
+        <xsl:text>active</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>active</xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:param>
   <xsl:param name="TOC_SPACER_PADDING" select="'0'"/>
   <xsl:param name="BOOTSTRAP_SIDEBAR_HDR"/>
   <xsl:param name="BOOTSTRAP_SIDEBAR_FTR"/>
@@ -66,7 +89,7 @@
   <xsl:template name="get-active-class">
     <xsl:choose>
       <xsl:when test=". is $current-topicref">
-        <xsl:value-of select="' active'"/>
+        <xsl:value-of select="concat(' ', $ACTIVE_NAV)"/>
       </xsl:when>
       <xsl:when test="$nav-toc = ('collapsible')"/>
       <xsl:otherwise>
@@ -253,6 +276,11 @@
 
   <xsl:template name="sidebar-content">
     <nav xsl:use-attribute-sets="toc">
+      <xsl:if test="$BOOTSTRAP_THEME_SIDEBAR != 'none' and $nav-toc = 'collapsible'">
+        <xsl:attribute
+          name="style"
+        >background-color: color-mix(in srgb, var(--bs-theme-bg-muted, var(--bs-gray-100)) 10%, transparent);</xsl:attribute>
+      </xsl:if>
       <div>
         <xsl:attribute name="class">
           <xsl:text>overflow-y-auto</xsl:text>
@@ -264,7 +292,18 @@
         <xsl:choose>
           <xsl:when test="$nav-toc = ('list-group-partial', 'list-group-full')">
             <!-- ↓ Remove <ul> and add <div> element from Bootstrap list-group ↓ -->
-            <div class="list-group me-3">
+            <div>
+              <xsl:attribute name="class">
+                <xsl:text>list-group me-3</xsl:text>
+                <xsl:variable name="sidebar-theme-classes">
+                  <xsl:call-template name="theme-classes">
+                    <xsl:with-param name="value" select="$BOOTSTRAP_THEME_SIDEBAR"/>
+                  </xsl:call-template>
+                </xsl:variable>
+                <xsl:if test="$sidebar-theme-classes != ''">
+                  <xsl:value-of select="concat(' ', $sidebar-theme-classes)"/>
+                </xsl:if>
+              </xsl:attribute>
               <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
               <xsl:choose>
                 <xsl:when test="$nav-toc = 'list-group-partial'">
@@ -291,7 +330,23 @@
           </xsl:when>
           <xsl:when test="$nav-toc = ('nav-pill-partial', 'nav-pill-full')">
             <!-- ↓ Remove <ul> and add nested <nav> element with Bootstrap classes ↓ -->
-            <nav class="nav nav-pills flex-column">
+            <nav>
+              <xsl:attribute name="class">
+                <xsl:text>nav nav-pills flex-column</xsl:text>
+                <xsl:variable name="sidebar-theme-classes">
+                  <xsl:call-template name="theme-classes">
+                    <xsl:with-param name="value" select="$BOOTSTRAP_THEME_SIDEBAR"/>
+                  </xsl:call-template>
+                </xsl:variable>
+                <xsl:if test="$sidebar-theme-classes != ''">
+                  <xsl:value-of select="concat(' ', $sidebar-theme-classes)"/>
+                </xsl:if>
+              </xsl:attribute>
+              <xsl:if test="$BOOTSTRAP_THEME_SIDEBAR != 'none'">
+                <xsl:attribute
+                  name="style"
+                >background-color: color-mix(in srgb, var(--bs-theme-bg-muted, var(--bs-gray-100)) 10%, transparent);</xsl:attribute>
+              </xsl:if>
               <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
               <xsl:choose>
                 <xsl:when test="$nav-toc = 'nav-pill-partial'">
@@ -468,7 +523,7 @@
                     <xsl:with-param name="class">
                       <xsl:text>list-group-item list-group-item-action</xsl:text>
                       <xsl:if test=". is $current-topicref">
-                        <xsl:text> active</xsl:text>
+                        <xsl:value-of select="concat(' ', $ACTIVE_NAV)"/>
                       </xsl:if>
                     </xsl:with-param>
                   </xsl:call-template>
@@ -522,7 +577,7 @@
 
     <xsl:choose>
       <xsl:when
-        test="$BOOTSTRAP_MENUBAR_TOC = 'yes' and count(ancestor::*/@href) eq 0 and not($active-class = ' active')"
+        test="$BOOTSTRAP_MENUBAR_TOC = 'yes' and count(ancestor::*/@href) eq 0 and not($active-class = concat(' ', $ACTIVE_NAV))"
       >
         <!-- no-op - if a menubar-toc is present, the list-group is reduced to current decendents only -->
       </xsl:when>
@@ -539,7 +594,7 @@
                     <xsl:text> bg-3</xsl:text>
                   </xsl:if>
                   <xsl:if test=". is $current-topicref">
-                    <xsl:text> active</xsl:text>
+                    <xsl:value-of select="concat(' ', $ACTIVE_NAV)"/>
                   </xsl:if>
                 </xsl:with-param>
               </xsl:call-template>
@@ -549,7 +604,7 @@
           </xsl:when>
           <xsl:otherwise>
             <!-- ↓ Add Bootstrap list-group-item class and light background color ↓ -->
-            <span class="list-group-item bg-subtle-secondary">
+            <span class="list-group-item theme-muted">
               <xsl:call-template name="nav-icon"/>
               <xsl:value-of select="$title"/>
             </span>
@@ -616,6 +671,11 @@
             </xsl:choose>
             <xsl:if test="exists($children)">
               <nav class="nav nav-pills flex-column ps-3">
+                <xsl:if test="$BOOTSTRAP_THEME_SIDEBAR != 'none'">
+                  <xsl:attribute
+                    name="style"
+                  >background-color: color-mix(in srgb, var(--bs-theme-bg-muted, var(--bs-gray-100)) 10%, transparent);</xsl:attribute>
+                </xsl:if>
                 <xsl:copy-of select="$children"/>
               </nav>
             </xsl:if>
@@ -657,7 +717,7 @@
 
     <xsl:choose>
       <xsl:when
-        test="$BOOTSTRAP_MENUBAR_TOC = 'yes' and count(ancestor::*/@href) eq 0 and not($active-class = ' active')"
+        test="$BOOTSTRAP_MENUBAR_TOC = 'yes' and count(ancestor::*/@href) eq 0 and not($active-class = concat(' ', $ACTIVE_NAV))"
       >
         <!-- no-op - if a menubar-toc is present, the nav-bar is reduced to current decendents only -->
       </xsl:when>
@@ -687,6 +747,11 @@
         </xsl:choose>
         <xsl:if test="exists($children)">
           <nav class="nav nav-pills flex-column ps-3 max-w-100 w-100">
+            <xsl:if test="$BOOTSTRAP_THEME_SIDEBAR != 'none'">
+              <xsl:attribute
+                name="style"
+              >background-color: color-mix(in srgb, var(--bs-theme-bg-muted, var(--bs-gray-100)) 10%, transparent);</xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates select="$children" mode="#current">
               <xsl:with-param name="pathFromMaplist" select="$pathFromMaplist"/>
             </xsl:apply-templates>
@@ -743,7 +808,7 @@
                     <xsl:attribute name="class">
                       <xsl:text>btn btn-sm p-0 border-0</xsl:text>
                       <xsl:if test="$show-menu='show'">
-                        <xsl:text> active</xsl:text>
+                        <xsl:value-of select="concat(' ', $ACTIVE_NAV)"/>
                       </xsl:if>
                     </xsl:attribute>
                     <xsl:attribute name="data-bs-target" select="concat('#menu-collapse-',$id)"/>
@@ -793,7 +858,7 @@
                   <xsl:attribute name="class">
                     <xsl:text>btn btn-sm p-0 border-0</xsl:text>
                     <xsl:if test="$show-menu='show'">
-                      <xsl:text> active</xsl:text>
+                      <xsl:value-of select="concat(' ', $ACTIVE_NAV)"/>
                     </xsl:if>
                   </xsl:attribute>
                   <xsl:attribute name="data-bs-target" select="concat('#menu-collapse-',$id)"/>
@@ -816,7 +881,7 @@
                   <xsl:attribute name="class">
                     <xsl:text>d-inline-flex align-items-center ps-2</xsl:text>
                     <xsl:if test="$show-menu='show'">
-                      <xsl:text> active</xsl:text>
+                      <xsl:value-of select="concat(' ', $ACTIVE_NAV)"/>
                     </xsl:if>
                   </xsl:attribute>
                   <xsl:attribute name="data-bs-target" select="concat('#menu-collapse-',$id)"/>

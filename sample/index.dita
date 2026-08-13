@@ -540,7 +540,7 @@
         >dita-bootstrap.github.io</xref>. </note>
     </section>
     <section id="bootstrap-themes">
-      <title>Bootstrap Themes</title>
+      <title>Layout Color Themes</title>
       <indexterm><parmname>--bootstrap.css.accessibility.link</parmname></indexterm>
       <indexterm><parmname>--bootstrap.theme.accessibility</parmname></indexterm>
       <indexterm><parmname>--bootstrap.theme.body</parmname></indexterm>

@@ -17,14 +17,49 @@
   <xsl:template name="scrollspy-content">
     <xsl:choose>
       <xsl:when test="$BOOTSTRAP_SCROLLSPY_TOC = ('list-group')">
-        <div class="list-group me-3" id="bs-scrollspy">
+        <div id="bs-scrollspy">
+          <xsl:variable name="scrollspy-theme-classes">
+            <xsl:if test="$BOOTSTRAP_THEME_SCROLLSPY != 'none'">
+              <xsl:call-template name="theme-classes">
+                <xsl:with-param name="value" select="$BOOTSTRAP_THEME_SCROLLSPY"/>
+              </xsl:call-template>
+              <xsl:if test="'border' = tokenize($BOOTSTRAP_THEME_SCROLLSPY, '-')">
+                <xsl:text> p-2</xsl:text>
+              </xsl:if>
+            </xsl:if>
+          </xsl:variable>
+          <xsl:attribute name="class" select="normalize-space(concat('list-group me-3 ', $scrollspy-theme-classes))"/>
+          <xsl:if test="$BOOTSTRAP_THEME_SCROLLSPY != 'none'">
+            <xsl:attribute
+              name="style"
+            >background-color: color-mix(in srgb, var(--bs-theme-bg-muted, var(--bs-gray-100)) 10%, transparent);</xsl:attribute>
+          </xsl:if>
           <xsl:apply-templates mode="scrollspy"/>
         </div>
       </xsl:when>
       <xsl:when test="$BOOTSTRAP_SCROLLSPY_TOC = ('nav-pill')">
-        <nav class="nav nav-pills flex-column" id="bs-scrollspy">
+        <nav id="bs-scrollspy">
           <xsl:if test="$BIDIRECTIONAL_DOCUMENT = 'yes'">
             <xsl:attribute name="dir" select="'rtl'"/>
+          </xsl:if>
+          <xsl:variable name="scrollspy-theme-classes">
+            <xsl:if test="$BOOTSTRAP_THEME_SCROLLSPY != 'none'">
+              <xsl:call-template name="theme-classes">
+                <xsl:with-param name="value" select="$BOOTSTRAP_THEME_SCROLLSPY"/>
+              </xsl:call-template>
+              <xsl:if test="'border' = tokenize($BOOTSTRAP_THEME_SCROLLSPY, '-')">
+                <xsl:text> p-2</xsl:text>
+              </xsl:if>
+            </xsl:if>
+          </xsl:variable>
+          <xsl:attribute
+            name="class"
+            select="normalize-space(concat('nav nav-pills flex-column ', $scrollspy-theme-classes))"
+          />
+          <xsl:if test="$BOOTSTRAP_THEME_SCROLLSPY != 'none'">
+            <xsl:attribute
+              name="style"
+            >background-color: color-mix(in srgb, var(--bs-theme-bg-muted, var(--bs-gray-100)) 10%, transparent);</xsl:attribute>
           </xsl:if>
           <xsl:apply-templates mode="scrollspy"/>
         </nav>
@@ -33,6 +68,20 @@
         <nav>
           <xsl:if test="$BIDIRECTIONAL_DOCUMENT = 'yes'">
             <xsl:attribute name="dir" select="'rtl'"/>
+          </xsl:if>
+          <xsl:if test="$BOOTSTRAP_THEME_SCROLLSPY != 'none'">
+            <xsl:variable name="scrollspy-theme-classes">
+              <xsl:call-template name="theme-classes">
+                <xsl:with-param name="value" select="$BOOTSTRAP_THEME_SCROLLSPY"/>
+              </xsl:call-template>
+              <xsl:if test="'border' = tokenize($BOOTSTRAP_THEME_SCROLLSPY, '-')">
+                <xsl:text> p-2</xsl:text>
+              </xsl:if>
+            </xsl:variable>
+            <xsl:attribute name="class" select="normalize-space($scrollspy-theme-classes)"/>
+            <xsl:attribute
+              name="style"
+            >background-color: color-mix(in srgb, var(--bs-theme-bg-muted, var(--bs-gray-100)) 10%, transparent);</xsl:attribute>
           </xsl:if>
           <ul>
             <xsl:apply-templates mode="scrollspy"/>
@@ -71,6 +120,11 @@
       </xsl:when>
       <xsl:when test="$BOOTSTRAP_SCROLLSPY_TOC = ('nav-pill')">
         <nav class="nav nav-pills flex-column ps-3">
+          <xsl:if test="$BOOTSTRAP_THEME_SCROLLSPY != 'none'">
+            <xsl:attribute
+              name="style"
+            >background-color: color-mix(in srgb, var(--bs-theme-bg-muted, var(--bs-gray-100)) 10%, transparent);</xsl:attribute>
+          </xsl:if>
           <xsl:apply-templates mode="scrollspy"/>
         </nav>
       </xsl:when>
@@ -115,6 +169,11 @@
         </xsl:when>
         <xsl:when test="$BOOTSTRAP_SCROLLSPY_TOC = ('nav-pill')">
           <nav class="nav nav-pills flex-column ps-3">
+            <xsl:if test="$BOOTSTRAP_THEME_SCROLLSPY != 'none'">
+              <xsl:attribute
+                name="style"
+              >background-color: color-mix(in srgb, var(--bs-theme-bg-muted, var(--bs-gray-100)) 10%, transparent);</xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates mode="scrollspy"/>
           </nav>
         </xsl:when>

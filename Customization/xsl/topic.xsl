@@ -217,21 +217,16 @@
         <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/>
       </article>
       <xsl:if test="$BOOTSTRAP_SCROLLSPY_TOC != 'none'">
-        <xsl:variable name="scrollspy-theme-classes">
-          <xsl:call-template name="theme-classes">
-            <xsl:with-param name="value" select="$BOOTSTRAP_THEME_SCROLLSPY"/>
-          </xsl:call-template>
-        </xsl:variable>
         <xsl:choose>
           <xsl:when test="count(*[contains(@class, ' topic/topic ')])&gt;0">
-            <div class="{concat('bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 fg-2 ', $scrollspy-theme-classes)}">
+            <div class="bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 fg-2">
               <xsl:call-template name="scrollspy-content"/>
             </div>
           </xsl:when>
           <xsl:when
             test="count(*/*[@id and (contains(@class, ' topic/section ') or contains(@class, ' topic/example '))])&gt;0"
           >
-            <div class="{concat('bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 fg-2 ', $scrollspy-theme-classes)}">
+            <div class="bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 fg-2">
               <xsl:call-template name="scrollspy-content"/>
             </div>
           </xsl:when>
@@ -241,6 +236,11 @@
   </xsl:template>
 
   <xsl:template match="*" mode="addAttributesToBody" priority="5.0">
+    <xsl:variable name="body-theme-classes">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="$BOOTSTRAP_THEME_BODY"/>
+      </xsl:call-template>
+    </xsl:variable>
     <xsl:attribute name="class">
       <xsl:text>d-flex flex-column min-vh-100</xsl:text>
       <xsl:if test="*[contains(@class, ' topic/body ')]/@outputclass">
@@ -255,7 +255,15 @@
           />
         </xsl:if>
       </xsl:if>
+      <xsl:if test="$body-theme-classes != ''">
+        <xsl:value-of select="concat(' ', $body-theme-classes)"/>
+      </xsl:if>
     </xsl:attribute>
+    <xsl:if test="$BOOTSTRAP_THEME_BODY != 'none' and count(tokenize($BOOTSTRAP_THEME_BODY, '-')) = 1">
+      <xsl:attribute
+        name="style"
+      >background-color: color-mix(in srgb, var(--bs-theme-bg-muted, var(--bs-gray-100)) 10%, transparent);</xsl:attribute>
+    </xsl:if>
   </xsl:template>
 
   <!-- Override to add Bootstrap classes and roles -->
@@ -830,18 +838,6 @@
     </body>
   </xsl:template>
 
-  <!-- Override to add Bootstrap theme classes to <body> -->
-  <xsl:template match="*" mode="addAttributesToBody">
-    <xsl:variable name="body-theme-classes">
-      <xsl:call-template name="theme-classes">
-        <xsl:with-param name="value" select="$BOOTSTRAP_THEME_BODY"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:if test="$body-theme-classes != ''">
-      <xsl:attribute name="class" select="$body-theme-classes"/>
-    </xsl:if>
-  </xsl:template>
-
   <!-- Hidden accessibility buttons for screen readers and keyboard navigation-->
   <xsl:template name="gen-skip-to-main">
     <xsl:variable name="skip-to-main-theme-classes">
@@ -909,7 +905,10 @@
       </xsl:variable>
       <xsl:value-of select="'bs-main me-3'"/>
       <xsl:if test="$content-theme-classes != ''">
-        <xsl:value-of select="concat(' p2 ', $content-theme-classes)"/>
+        <xsl:value-of select="concat(' ', $content-theme-classes)"/>
+      </xsl:if>
+      <xsl:if test="'border' = tokenize($BOOTSTRAP_THEME_CONTENT, '-')">
+        <xsl:text> p-2</xsl:text>
       </xsl:if>
     </xsl:attribute>
     <xsl:attribute name="role">main</xsl:attribute>
@@ -919,10 +918,14 @@
     <xsl:attribute name="role">navigation</xsl:attribute>
     <xsl:attribute name="id">bs-sidebar-nav</xsl:attribute>
     <xsl:attribute name="class">
+      <xsl:variable name="sidebar-theme-parts" select="tokenize($BOOTSTRAP_THEME_SIDEBAR, '-')" as="xs:string*"/>
       <xsl:text>d-flex align-items-start flex-column h-100 </xsl:text>
-      <xsl:call-template name="theme-classes">
-        <xsl:with-param name="value" select="$BOOTSTRAP_THEME_SIDEBAR"/>
-      </xsl:call-template>
+      <xsl:if test="$BOOTSTRAP_THEME_SIDEBAR != 'none' and $nav-toc = 'collapsible'">
+        <xsl:value-of select="concat('theme-', $sidebar-theme-parts[1])"/>
+        <xsl:if test="'border' = $sidebar-theme-parts">
+          <xsl:text> theme-border p-2</xsl:text>
+        </xsl:if>
+      </xsl:if>
     </xsl:attribute>
   </xsl:attribute-set>
 
