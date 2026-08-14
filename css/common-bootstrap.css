@@ -112,8 +112,18 @@
   margin: 1rem auto;
 }
 
-.bs-sidebar-nav {
-  overflow: auto;
+#bs-sidebar-nav .navbar-brand {
+  color: var(--bs-fg-body);
+}
+
+#bs-sidebar-nav a {
+  color: var(--bs-fg-body);
+}
+
+#bs-sidebar-nav .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--bs-theme-fg-contrast, var(--bs-nav-pills-link-active-color));
+  background-color: var(--bs-theme-base, var(--bs-nav-pills-link-active-bg));
 }
 
 [type='search']::placeholder {

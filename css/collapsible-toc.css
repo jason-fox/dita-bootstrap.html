@@ -21,7 +21,7 @@
 }
 
 .bd-links a:hover {
-  color: var(--bs-link-hover-color);
+  color: var(--bs-theme-fg-emphasis, var(--bs-link-hover-color)) !important;
 }
 
 .bd-links a:focus-visible {
@@ -32,12 +32,8 @@
   color: var(--bs-fg-body);
 }
 
-.bd-links span:hover {
-  color: var(--bs-link-hover-color);
-}
-
-.bd-links span.bd-divider:hover {
-  color: var(--bs-fg-body);
+.bd-links span:not(.bd-divider):hover {
+  color: var(--bs-theme-fg-emphasis, var(--bs-link-hover-color)) !important;
 }
 
 @media (min-width: 768px) {
@@ -73,7 +69,7 @@
 }
 
 .bd-links svg:hover {
-  color: var(--bs-link-hover-color);
+  color: var(--bs-theme-fg-emphasis, var(--bs-link-hover-color)) !important;
 }
 
 .bd-links .ps-2 {
