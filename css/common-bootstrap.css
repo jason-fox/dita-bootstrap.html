@@ -126,6 +126,12 @@
   background-color: var(--bs-theme-base, var(--bs-nav-pills-link-active-bg));
 }
 
+#bs-sidebar-nav .list-group-item.active {
+  color: var(--bs-list-group-active-color);
+  background-color: var(--bs-theme-fg-emphasis, var(--bs-list-group-active-bg));
+  border-color: var(--bs-theme-base, var(--bs-list-group-active-border-color));
+}
+
 [type='search']::placeholder {
   color: color-mix(in oklch, var(--bs-fg-body) 35%, transparent);
 }
