@@ -244,7 +244,7 @@
 
   <xsl:template name="default-sidebar-footer">
     <xsl:if test="$BOOTSTRAP_SIDEBAR_FTR">
-      <div class="bs-fixed-footer">
+      <div class="bs-fixed-footer w-100">
         <xsl:copy-of select="document($BOOTSTRAP_SIDEBAR_FTR, /)"/>
       </div>
     </xsl:if>
