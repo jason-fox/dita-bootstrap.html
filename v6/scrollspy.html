@@ -246,10 +246,10 @@
       <p class="p">To use this option, embed the subtopics and add the parameters
           <span class="keyword parmname">--nav-toc</span>=<span class="keyword option">nav-pill-partial</span> and
           <span class="keyword parmname">--scrollspy-toc</span>=<span class="keyword option">nav-pill</span> to the <span class="keyword cmdname">dita</span> command.</p>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--format</span><span class="ph token operator">=</span><span class="keyword option">html5-bootstrap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--nav-toc</span><span class="ph token operator">=</span><span class="keyword option">nav-pill-partial</span> <span class="ph token punctuation">\</span>
-     <span class="keyword parmname">--scrollspy-toc</span><span class="ph token operator">=</span><span class="keyword option">nav-pill</span></code></pre>
+     <span class="keyword parmname">--scrollspy-toc</span><span class="ph token operator">=</span><span class="keyword option">nav-pill</span></code></pre></div></div>
     </section>
     <section class="section" id="scrollspy__list-group-example"><h2 class="title h4">Example with list-group</h2>
       
@@ -263,10 +263,10 @@
       <p class="p">To use this option, embed the subtopics and add the parameters
           <span class="keyword parmname">--nav-toc</span>=<span class="keyword option">list-group-partial</span> and
           <span class="keyword parmname">--scrollspy-toc</span>=<span class="keyword option">list-group</span> to the <span class="keyword cmdname">dita</span> command.</p>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--format</span><span class="ph token operator">=</span><span class="keyword option">html5-bootstrap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--nav-toc</span><span class="ph token operator">=</span><span class="keyword option">list-group-partial</span> <span class="ph token punctuation">\</span>
-     <span class="keyword parmname">--scrollspy-toc</span><span class="ph token operator">=</span><span class="keyword option">list-group</span></code></pre>
+     <span class="keyword parmname">--scrollspy-toc</span><span class="ph token operator">=</span><span class="keyword option">list-group</span></code></pre></div></div>
     </section>
     <section class="section" id="scrollspy__list-example"><h2 class="title h4">Example with list</h2>
       
@@ -278,10 +278,10 @@
       <p class="p">To use this option, embed the subtopics and add the parameters
           <span class="keyword parmname">--nav-toc</span>=<span class="keyword option">collapsible</span> and
           <span class="keyword parmname">--scrollspy-toc</span>=<span class="keyword option">list</span> to the <span class="keyword cmdname">dita</span> command.</p>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--format</span><span class="ph token operator">=</span><span class="keyword option">html5-bootstrap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--nav-toc</span><span class="ph token operator">=</span><span class="keyword option">collapsible</span> <span class="ph token punctuation">\</span>
-     <span class="keyword parmname">--scrollspy-toc</span><span class="ph token operator">=</span><span class="keyword option">list</span></code></pre>
+     <span class="keyword parmname">--scrollspy-toc</span><span class="ph token operator">=</span><span class="keyword option">list</span></code></pre></div></div>
     </section>
 
     <section class="section" id="scrollspy__including-topics-sections"><h2 class="title h4">Including <code class="keyword markupname xmlelement">&lt;topic&gt;</code> and <code class="keyword markupname xmlelement">&lt;section&gt;</code> elements in the navigation</h2>
@@ -290,7 +290,7 @@
           To ensure that a heading is listed in the scrollspy navigation, make sure that every <code class="keyword markupname xmlelement">&lt;topic&gt;</code>
           and every <code class="keyword markupname xmlelement">&lt;section&gt;</code> element has an <code class="keyword markupname xmlatt">@id</code> and <code class="keyword markupname xmlelement">&lt;title&gt;</code>.
         </p>
-        <pre class="pre codeblock theme-secondary border rounded p-1 language-markup"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>topic</span><span class="ph token punctuation">&gt;</span></span>
+        <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-markup"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>topic</span><span class="ph token punctuation">&gt;</span></span>
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>title</span><span class="ph token punctuation">&gt;</span></span>Topic<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>title</span><span class="ph token punctuation">&gt;</span></span>
   ...
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>section</span> <span class="ph token attr-name">id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>section-1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
@@ -313,18 +313,18 @@
     <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>title</span><span class="ph token punctuation">&gt;</span></span>Embedded Topic 2<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>title</span><span class="ph token punctuation">&gt;</span></span>
     ...
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>topic</span><span class="ph token punctuation">&gt;</span></span>
-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>topic</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>topic</span><span class="ph token punctuation">&gt;</span></span></code></pre></div></div>
     </section>
     <section class="section" id="scrollspy__excluding-sections"><h2 class="title h4">Excluding <code class="keyword markupname xmlelement">&lt;section&gt;</code> elements from the navigation</h2>
       
       <p class="p">
         Omit the <code class="keyword markupname xmlatt">@id</code> to ignore a <code class="keyword markupname xmlelement">&lt;section&gt;</code>, or wrap the <code class="keyword markupname xmlelement">&lt;section&gt;</code> in a <code class="keyword markupname xmlelement">&lt;bodydiv&gt;</code> element. Any <a class="xref" href="drawer.html" title="Build hidden sidebars into your project for navigation, shopping carts, and more with a few classes and Bootstrap’s JavaScript plugin.">drawer components</a> are ignored automatically.
       </p>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-markup"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>bodydiv</span><span class="ph token punctuation">&gt;</span></span>
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-markup"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>bodydiv</span><span class="ph token punctuation">&gt;</span></span>
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>section</span> <span class="ph token attr-name">id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>section-1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
     <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>title</span><span class="ph token punctuation">&gt;</span></span>Section 1<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>title</span><span class="ph token punctuation">&gt;</span></span>
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>section</span><span class="ph token punctuation">&gt;</span></span>
-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>bodydiv</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>bodydiv</span><span class="ph token punctuation">&gt;</span></span></code></pre></div></div>
     </section>
   </div>
 </article></main></div><script language="javascript" src="./js/popovers.js"></script><script language="javascript" src="./js/dark-mode-toggler.js"></script><footer role="contentinfo" class="mt-auto theme-primary theme-subtle theme-border"><!-- Footer --><div class="container text-center">

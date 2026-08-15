@@ -245,25 +245,25 @@
     <div id="index__bodydiv__1" class="bodydiv accordion theme-primary">
       <details class="accordion-item" name="index__bodydiv__1" open="yes"><summary class="accordion-header"><h2 class="title h4">DITA-OT 3.5 and newer:</h2><svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg></summary><div class="accordion-body">
         
-          <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> fox.jason.extend.css
-<span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> org.dita-bootstrap.html</code></pre>
+          <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> fox.jason.extend.css
+<span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> org.dita-bootstrap.html</code></pre></div></div>
       </div></details>
       <details class="accordion-item" name="index__bodydiv__1"><summary class="accordion-header"><h2 class="title h4">DITA-OT 3.3 and newer:</h2><svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg></summary><div class="accordion-body">
         
-          <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--install</span> fox.jason.extend.css
-<span class="keyword cmdname">dita</span> <span class="keyword parmname">--install</span> org.dita-bootstrap.html</code></pre>
+          <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--install</span> fox.jason.extend.css
+<span class="keyword cmdname">dita</span> <span class="keyword parmname">--install</span> org.dita-bootstrap.html</code></pre></div></div>
       </div></details>
       <details class="accordion-item" name="index__bodydiv__1"><summary class="accordion-header"><h2 class="title h4">DITA-OT 3.2 and older:</h2><svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg></summary><div class="accordion-body">
         
-        <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--install</span> https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
-<span class="keyword cmdname">dita</span> <span class="keyword parmname">--install</span> https://github.com/dita-bootstrap/dita-bootstrap.html/archive/master.zip</code></pre>
+        <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--install</span> https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
+<span class="keyword cmdname">dita</span> <span class="keyword parmname">--install</span> https://github.com/dita-bootstrap/dita-bootstrap.html/archive/master.zip</code></pre></div></div>
       </div></details>
     </div>
     <section class="section" id="index__using"><h2 class="title h4">Using</h2>
       
       <p class="p">Specify the <span class="keyword option">html5-bootstrap</span> format when building output with the <span class="keyword cmdname">dita</span>
         command:</p>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span>path/to/your.ditamap <span class="keyword parmname">--format</span><span class="ph token operator">=</span>html5-bootstrap</code></pre>
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span>path/to/your.ditamap <span class="keyword parmname">--format</span><span class="ph token operator">=</span>html5-bootstrap</code></pre></div></div>
     </section>
     <section class="section" id="index__bootswatch-themes"><h2 class="title h4">Bootswatch themes</h2>
       
@@ -272,10 +272,10 @@
         <a class="xref" href="https://bootswatch.com/" target="_blank" rel="external noopener">Bootswatch</a>.
         To override the default appearance with a Bootswatch theme, pass a theme name to the <span class="keyword cmdname">dita</span> command via the <span class="keyword parmname">--bootstrap.theme</span> parameter:
       </p>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--format</span><span class="ph token operator">=</span><span class="keyword option">html5-bootstrap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--args.hdr</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your-header.xml</span> <span class="ph token punctuation">\</span>
-     <span class="keyword parmname">--bootstrap.theme</span><span class="ph token operator">=</span><span class="keyword option"><span class="ph token operator">&lt;</span>theme-name<span class="ph token operator">&gt;</span></span></code></pre>
+     <span class="keyword parmname">--bootstrap.theme</span><span class="ph token operator">=</span><span class="keyword option"><span class="ph token operator">&lt;</span>theme-name<span class="ph token operator">&gt;</span></span></code></pre></div></div>
 
       <div class="ol slide carousel pt-2" id="carousel_index__bootswatch-themes__ol__1"><div class="carousel-inner pb-1">
         <div class="li carousel-item active"><div class="container mx-0"><div class="div row">
@@ -387,14 +387,14 @@
           <span class="keyword parmname">--args.css</span> parameter. For a complete override of the theme where the default Bootstrap
         CSS is no longer required, you can disable it by setting
           <span class="keyword parmname">--bootstrap.theme</span>=<span class="keyword option">none</span>:</p>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--format</span><span class="ph token operator">=</span><span class="keyword option">html5-bootstrap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--bootstrap.theme</span><span class="ph token operator">=</span><span class="keyword option">none</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--args.hdr</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your-header.xml</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--args.css</span><span class="ph token operator">=</span><span class="ph token operator">&lt;</span>name-of-css<span class="ph token operator">&gt;</span>.css <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--args.copycss</span><span class="ph token operator">=</span><span class="keyword option"><span class="ph token function">yes</span></span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--args.csspath</span><span class="ph token operator">=</span><span class="keyword option">css</span> <span class="ph token punctuation">\</span>
-     <span class="keyword parmname">--args.cssroot</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your/theme</span></code></pre>
+     <span class="keyword parmname">--args.cssroot</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your/theme</span></code></pre></div></div>
       <div role="alert" class="note alert theme-success"><div><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> For more extensive customizations with
         <a class="xref alert-link" href="https://sass-lang.com" target="_blank" rel="external noopener">Sass</a>, you may want to install the
         <a class="xref alert-link" href="https://github.com/dita-bootstrap/dita-bootstrap.sass" target="_blank" rel="external noopener">dita-bootstrap.sass</a> plug-in.</div></div>
@@ -411,17 +411,17 @@
       <p class="p">You can edit a copy of this file to adjust the content of the global navigation. To override the global
         navigation with your own header, pass a custom header file to the <span class="keyword cmdname">dita</span> command via the
           <span class="keyword parmname">--args.hdr</span> parameter:</p>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--format</span><span class="ph token operator">=</span><span class="keyword option">html5-bootstrap</span> <span class="ph token punctuation">\</span>
-     <span class="keyword parmname">--args.hdr</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your-header.xml</span></code></pre>
+     <span class="keyword parmname">--args.hdr</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your-header.xml</span></code></pre></div></div>
       <p class="p">The plug-in includes a sample
         <a class="xref" href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.navbar.example.xml" target="_blank" rel="external noopener">header alternative with a light navbar</a>.</p>
       <p class="p">No footer is added by default, but the plug-in also includes a sample
         <a class="xref" href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/ftr.content.example.xml" target="_blank" rel="external noopener">footer file</a> and Bootstrap also offers additional <a class="xref" href="https://getbootstrap.com/docs/6.0/examples/footers/" target="_blank" rel="external noopener">examples</a>. To add a footer to the generated output, pass a custom
         footer file to the <span class="keyword cmdname">dita</span> command via the <span class="keyword parmname">--args.ftr</span> parameter:</p>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--format</span><span class="ph token operator">=</span><span class="keyword option">html5-bootstrap</span> <span class="ph token punctuation">\</span>
-     <span class="keyword parmname">--args.ftr</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your-footer.xml</span></code></pre>
+     <span class="keyword parmname">--args.ftr</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your-footer.xml</span></code></pre></div></div>
 
       <p class="p">
         The plug-in extends the standard HTML5 table of contents (ToC)
@@ -457,9 +457,9 @@
           <dd class="dd pd lg:col-9">Styled full ToC with collapsible elements</dd>
         
       </dl>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--format</span><span class="ph token operator">=</span><span class="keyword option">html5-bootstrap</span> <span class="ph token punctuation">\</span>
-     <span class="keyword parmname">--nav-toc</span><span class="ph token operator">=</span><span class="keyword option"><span class="ph token operator">&lt;</span>sidebar-style<span class="ph token operator">&gt;</span></span></code></pre>
+     <span class="keyword parmname">--nav-toc</span><span class="ph token operator">=</span><span class="keyword option"><span class="ph token operator">&lt;</span>sidebar-style<span class="ph token operator">&gt;</span></span></code></pre></div></div>
 
        <div role="alert" class="note alert theme-primary"><div><span class="note__title"><i class="pe-2 bi bi-pencil"></i>Note:</span> For an example of <span class="keyword option">collapsible</span> styling, see the output at
         <a class="xref alert-link" href="https://dita-bootstrap.github.io/" target="_blank" rel="external noopener">dita-bootstrap.github.io</a>. </div></div>

@@ -241,9 +241,9 @@
       
       <p class="p">Use the <span class="keyword cmdname">dita</span> command to add the required plug-ins to your DITA Open Toolkit
         installation:</p>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> fox.jason.extend.css
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> fox.jason.extend.css
 <span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> org.dita-bootstrap.html
-<span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> org.dita-bootstrap.sass</code></pre>
+<span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> org.dita-bootstrap.sass</code></pre></div></div>
       <div role="alert" class="note alert theme-primary"><div><span class="note__title"><i class="pe-2 bi bi-pencil"></i>Note:</span> The <cite class="cite">DITA Bootstrap Sass</cite> plug-in uses the
         <a class="xref alert-link" href="https://nodejs.org/" target="_blank" rel="external noopener">Node.js</a> JavaScript runtime to generate
         the <span class="ph filepath">theme.css</span> file. Node.js must therefore be present for the index to be generated
@@ -255,7 +255,7 @@
       <p class="p">To generate a CSS theme from your custom Sass source files, follow the instructions in the
         <a class="xref" href="https://github.com/dita-bootstrap/dita-bootstrap.sass/blob/develop/sass/override.scss" target="_blank" rel="external noopener"><span class="ph filepath">dita-bootstrap.sass/sass/override.scss</span></a> file and use the
           <span class="keyword option">sass-bootstrap</span> transformation:</p>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><var class="keyword varname">path/to/your.ditamap</var> <span class="keyword parmname">--format</span><span class="ph token operator">=</span><span class="keyword option">sass-bootstrap</span></code></pre>
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><var class="keyword varname">path/to/your.ditamap</var> <span class="keyword parmname">--format</span><span class="ph token operator">=</span><span class="keyword option">sass-bootstrap</span></code></pre></div></div>
       <p class="p">A <span class="ph filepath">theme.css</span> file will be generated in the <span class="ph filepath">sass</span> folder. To preview the
         results of your customizations, open the
         <a class="xref" href="https://github.com/dita-bootstrap/dita-bootstrap.sass/blob/develop/sass/index.html" target="_blank" rel="external noopener"><span class="ph filepath">dita-bootstrap.sass/sass/index.html</span></a> file in a web browser.</p>
@@ -265,9 +265,9 @@
       <p class="p">To use a pregenerated Sass theme as CSS in the HTML Bootstrap output, run the <span class="keyword option">html5-bootstrap</span>
         transformation and pass the <span class="keyword parmname">bootstrap.sass</span> parameter to the <span class="keyword cmdname">dita</span>
         command:</p>
-      <pre class="pre codeblock theme-secondary border rounded p-1 language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
+      <div class="theme-secondary theme-subtle card"><div class="card-body"><pre class="pre codeblock language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--input</span><span class="ph token operator">=</span><span class="ph filepath">path/to/your.ditamap</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--format</span><span class="ph token operator">=</span><span class="keyword option">html5-bootstrap</span> <span class="ph token punctuation">\</span>
-     <span class="keyword parmname">--bootstrap.sass</span><span class="ph token operator">=</span><span class="keyword option"><span class="ph token function">yes</span></span></code></pre>
+     <span class="keyword parmname">--bootstrap.sass</span><span class="ph token operator">=</span><span class="keyword option"><span class="ph token function">yes</span></span></code></pre></div></div>
       <p class="p">The generated <span class="ph filepath">dita-bootstrap.sass/sass/theme.css</span> file will be copied to the
           <span class="ph filepath">css</span> folder in the output directory and linked in the <code class="keyword markupname xmlelement">&lt;head&gt;</code>
         element of the generated HTML files.</p>
