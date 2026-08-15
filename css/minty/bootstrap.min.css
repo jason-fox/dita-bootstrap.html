@@ -20,7 +20,7 @@
     --bs-primary-contrast: #fff;
     --bs-primary-bg-subtle: color-mix(in srgb, var(--bs-primary-base) 15%, white);
     --bs-primary-bg-muted: color-mix(in srgb, var(--bs-primary-base) 30%, white);
-    --bs-primary-fg-emphasis: color-mix(in srgb, var(--bs-primary-base) 65%, black);
+    --bs-primary-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-primary-base) 65%, black), color-mix(in srgb, var(--bs-primary-base) 65%, white));
     --bs-primary-focus-ring: color-mix(in oklch, var(--bs-primary-base) 50%, var(--bs-bg-body));
 
     --bs-secondary-bg: var(--bs-secondary-base);
@@ -29,7 +29,7 @@
     --bs-secondary-contrast: #fff;
     --bs-secondary-bg-subtle: color-mix(in srgb, var(--bs-secondary-base) 15%, var(--bs-bg-body));
     --bs-secondary-bg-muted: color-mix(in srgb, var(--bs-secondary-base) 30%, var(--bs-bg-body));
-    --bs-secondary-fg-emphasis: color-mix(in srgb, var(--bs-secondary-base) 65%, black);
+    --bs-secondary-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-secondary-base) 65%, black), color-mix(in srgb, var(--bs-secondary-base) 65%, white));
     --bs-secondary-focus-ring: color-mix(in oklch, var(--bs-secondary-base) 50%, var(--bs-bg-body));
 
     --bs-success-bg: var(--bs-success-base);
@@ -38,7 +38,7 @@
     --bs-success-contrast: #fff;
     --bs-success-bg-subtle: color-mix(in srgb, var(--bs-success-base) 15%, white);
     --bs-success-bg-muted: color-mix(in srgb, var(--bs-success-base) 30%, white);
-    --bs-success-fg-emphasis: color-mix(in srgb, var(--bs-success-base) 65%, black);
+    --bs-success-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-success-base) 65%, black), color-mix(in srgb, var(--bs-success-base) 65%, white));
     --bs-success-focus-ring: color-mix(in oklch, var(--bs-success-base) 50%, var(--bs-bg-body));
 
     --bs-info-bg: var(--bs-info-base);
@@ -47,7 +47,7 @@
     --bs-info-contrast: #fff;
     --bs-info-bg-subtle: color-mix(in srgb, var(--bs-info-base) 15%, white);
     --bs-info-bg-muted: color-mix(in srgb, var(--bs-info-base) 30%, white);
-    --bs-info-fg-emphasis: color-mix(in srgb, var(--bs-info-base) 65%, black);
+    --bs-info-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-info-base) 65%, black), color-mix(in srgb, var(--bs-info-base) 65%, white));
     --bs-info-focus-ring: color-mix(in oklch, var(--bs-info-base) 50%, var(--bs-bg-body));
 
     --bs-warning-bg: var(--bs-warning-base);
@@ -56,7 +56,7 @@
     --bs-warning-contrast: #fff;
     --bs-warning-bg-subtle: color-mix(in srgb, var(--bs-warning-base) 15%, white);
     --bs-warning-bg-muted: color-mix(in srgb, var(--bs-warning-base) 30%, white);
-    --bs-warning-fg-emphasis: color-mix(in srgb, var(--bs-warning-base) 65%, black);
+    --bs-warning-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-warning-base) 65%, black), color-mix(in srgb, var(--bs-warning-base) 65%, white));
     --bs-warning-focus-ring: color-mix(in oklch, var(--bs-warning-base) 50%, var(--bs-bg-body));
 
     --bs-danger-bg: var(--bs-danger-base);
@@ -65,7 +65,7 @@
     --bs-danger-contrast: #fff;
     --bs-danger-bg-subtle: color-mix(in srgb, var(--bs-danger-base) 15%, white);
     --bs-danger-bg-muted: color-mix(in srgb, var(--bs-danger-base) 30%, white);
-    --bs-danger-fg-emphasis: color-mix(in srgb, var(--bs-danger-base) 65%, black);
+    --bs-danger-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-danger-base) 65%, black), color-mix(in srgb, var(--bs-danger-base) 65%, white));
     --bs-danger-focus-ring: color-mix(in oklch, var(--bs-danger-base) 50%, var(--bs-bg-body));
     --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
     --bs-fg-body: light-dark(#888888, var(--bs-gray-050));
