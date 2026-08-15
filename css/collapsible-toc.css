@@ -65,6 +65,7 @@
   font-weight: 600;
   color: var(--bs-fg-body);
   background-color: transparent;
+  border: 0;
   box-shadow: none;
 }
 
