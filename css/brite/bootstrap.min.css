@@ -119,3 +119,15 @@
     --bs-border-radius-sm: .25rem;
     --bs-border-radius-lg: .5rem;
 }
+
+/* Brite's neubrutalist "sticker" shadow, ported from v5 (.alert/.modal-content/
+   .btn-outline-primary:hover all used a hard 3px offset, no blur, plus a lift
+   on hover). One rule per shape covers every theme-* color. */
+.alert, .card, .modal-content {
+    box-shadow: 3px 3px 0 0 var(--bs-border-color);
+}
+
+.btn-outline[class*="theme-"]:hover {
+    box-shadow: 3px 3px 0 0 var(--bs-border-color);
+    transform: translate(-3px, -3px);
+}

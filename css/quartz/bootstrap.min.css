@@ -116,3 +116,8 @@
     --bs-border-radius-sm: .6rem;
     --bs-border-radius-lg: .7rem;
 }
+
+body {
+    background-image: linear-gradient(90deg, #33b7e2, #5e62b0, #dc307c);
+    background-attachment: fixed;
+}
