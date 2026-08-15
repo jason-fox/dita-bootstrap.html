@@ -115,3 +115,8 @@
     --bs-gray-400: color-mix(in srgb, white 20%, var(--bs-gray-500));
     --bs-heading-font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
 }
+
+.navbar-brand {
+    font-weight: 700;
+    text-transform: uppercase;
+}
