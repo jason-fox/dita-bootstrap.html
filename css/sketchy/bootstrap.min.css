@@ -119,3 +119,19 @@
     --bs-border-radius-sm: 15px;
     --bs-border-radius-lg: 35px;
 }
+
+.alert,
+.card,
+.card-body,
+.list-group,
+.list-group-item,
+.nav-pills .nav-link {
+   border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.btn, .btn-solid {
+    text-decoration: none;
+    border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+
