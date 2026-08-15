@@ -124,3 +124,7 @@
     --bs-radius-8: 0;
     --bs-radius-9: 0;
 }
+
+.btn, .btn-solid {
+   text-transform: uppercase;
+}
