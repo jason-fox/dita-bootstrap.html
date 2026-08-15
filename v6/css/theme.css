@@ -22,7 +22,7 @@
 
 /* override parts of the Bootstrap color scheme */
 :root {
-  --bs-code-color: var(--bs-secondary-contrast);
+  --bs-code-color: light-dark(var(--bs-gray-900), var(--bs-white));
 }
 
 /* Make all CSS themes scrollable */
