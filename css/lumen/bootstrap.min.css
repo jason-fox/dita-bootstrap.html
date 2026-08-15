@@ -115,3 +115,30 @@
     --bs-gray-400: color-mix(in srgb, white 20%, var(--bs-gray-500));
     --bs-body-font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+
+.btn, .btn-solid {
+    border-style: solid;
+    border-width: 1px 1px 4px 1px;
+    text-transform: uppercase;
+}
+
+
+.btn-subtle[class*="theme-"] {
+    border-color: color-mix(in srgb, black 16%,  var(--bs-theme-border))
+}
+
+.btn-solid[class*="theme-"]{
+    border-color: var(--bs-theme-border)
+}
+
+.btn-text[class*="theme-"]{
+    border-color: transparent
+}
+
+.btn-subtle[class*="theme-"]:hover,
+.btn-solid[class*="theme-"]:hover,
+.btn-outline[class*="theme-"]:hover {
+    margin-top: 3px;
+    border-bottom-width: 1px;
+}
