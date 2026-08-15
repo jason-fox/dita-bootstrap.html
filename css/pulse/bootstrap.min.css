@@ -3,16 +3,6 @@
 /*
  * Pulse theme for Bootstrap v6
  * Ported from Bootswatch Pulse 5.3.8 (https://bootswatch.com/pulse/)
- *
- * Recolors v6's semantic token layer (--bs-{name}-base/-fg/-bg/-border/-contrast,
- * plus the -bg-subtle/-bg-muted/-fg-emphasis/-focus-ring tier used by
- * .alert-* and .theme-* soft variants) with Pulse's original palette,
- * plus its font stack, hue-500 palette (for consumers like Prism.js that key
- * off raw hues), and border-radius signature where the theme defines one.
- * Applies unconditionally on :root — Bootswatch themes don't participate in
- * the separate data-bs-theme light/dark toggle (verified against Bootswatch's
- * own compiled CSS: no mode-scoping anywhere).
- * Generated — not hand-tuned per component.
  */
 
 :root {
@@ -76,8 +66,8 @@
     --bs-danger-bg-muted: color-mix(in srgb, var(--bs-danger-base) 30%, white);
     --bs-danger-fg-emphasis: color-mix(in srgb, var(--bs-danger-base) 65%, black);
     --bs-danger-focus-ring: color-mix(in oklch, var(--bs-danger-base) 50%, var(--bs-bg-body));
-    --bs-bg-body: #fff;
-    --bs-fg-body: #444444;
+    --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
+    --bs-fg-body: light-dark(#444444, var(--bs-gray-050));
     --bs-heading-color: #593196;
 
     /* Navbar: v6's .navbar already reads these tokens natively
@@ -100,16 +90,13 @@
     --bs-teal-500: #20c997;
     --bs-cyan-500: #009cdc;
     --bs-gray-500: #adb5bd;
-    --bs-border-radius: 0;
-    --bs-border-radius-sm: 0;
-    --bs-border-radius-lg: 0;
-}
-
-/* v6 has no native .dropdown-item styling (superseded by .menu/.menu-item),
-   but the theme-switcher's own markup still uses .dropdown-item — style it
-   directly since there's no token to hook into. */
-.dropdown-item:hover,
-.dropdown-item:focus {
-    color: var(--bs-primary-contrast);
-    background-color: var(--bs-primary-base);
+    --bs-radius-1: 0;
+    --bs-radius-2: 0;
+    --bs-radius-3: 0;
+    --bs-radius-4: 0;
+    --bs-radius-5: 0;
+    --bs-radius-6: 0;
+    --bs-radius-7: 0;
+    --bs-radius-8: 0;
+    --bs-radius-9: 0;
 }

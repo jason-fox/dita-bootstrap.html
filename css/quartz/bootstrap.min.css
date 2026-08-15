@@ -3,16 +3,6 @@
 /*
  * Quartz theme for Bootstrap v6
  * Ported from Bootswatch Quartz 5.3.8 (https://bootswatch.com/quartz/)
- *
- * Recolors v6's semantic token layer (--bs-{name}-base/-fg/-bg/-border/-contrast,
- * plus the -bg-subtle/-bg-muted/-fg-emphasis/-focus-ring tier used by
- * .alert-* and .theme-* soft variants) with Quartz's original palette,
- * plus its font stack, hue-500 palette (for consumers like Prism.js that key
- * off raw hues), and border-radius signature where the theme defines one.
- * Applies unconditionally on :root — Bootswatch themes don't participate in
- * the separate data-bs-theme light/dark toggle (verified against Bootswatch's
- * own compiled CSS: no mode-scoping anywhere).
- * Generated — not hand-tuned per component.
  */
 
 :root {
@@ -103,13 +93,4 @@
     --bs-border-radius: .5rem;
     --bs-border-radius-sm: .6rem;
     --bs-border-radius-lg: .7rem;
-}
-
-/* v6 has no native .dropdown-item styling (superseded by .menu/.menu-item),
-   but the theme-switcher's own markup still uses .dropdown-item — style it
-   directly since there's no token to hook into. */
-.dropdown-item:hover,
-.dropdown-item:focus {
-    color: var(--bs-primary-contrast);
-    background-color: var(--bs-primary-base);
 }
