@@ -170,9 +170,14 @@
   --bs-theme-contrast: initial;
 }
 
+code {
+  --prism-maintext: light-dark(var(--bs-code-color), var(--bs-white));
+}
+
 .card .card-body pre {
   padding: 0;
   margin: 0;
+  --prism-maintext: light-dark(var(--bs-gray-900), var(--bs-white));
 }
 
 /*!
