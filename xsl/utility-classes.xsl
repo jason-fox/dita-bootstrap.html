@@ -11,7 +11,7 @@
   exclude-result-prefixes="xs dita-ot"
 >
   <xsl:param name="BOOTSTRAP_CSS_SHORTDESC" select="'fw-light fs-lg'"/>
-  <xsl:param name="BOOTSTRAP_CSS_CODEBLOCK" select="'theme-secondary border rounded p-1'"/>
+  <xsl:param name="BOOTSTRAP_CSS_CODEBLOCK" select="'theme-secondary theme-subtle'"/>
   <xsl:param name="BOOTSTRAP_CSS_TOPIC_TITLE" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_SECTION_TITLE" select="'h4'"/>
   <xsl:param name="BOOTSTRAP_CSS_CARD_TITLE" select="'h5'"/>
@@ -52,21 +52,38 @@
   <xsl:param name="BOOTSTRAP_ICON_NOTICE" select="'bi bi-info-circle-fill'"/>
   <xsl:param name="BOOTSTRAP_ICON_NOTE" select="'bi bi-pencil'"/>
 
-  <!-- Add a Bootstrap CSS border to codeblocks -->
-  <xsl:template match="*[contains(@class, ' topic/pre ')]" mode="get-output-class">
-    <xsl:choose>
-       <xsl:when test="@theme">
-          <xsl:text>alert </xsl:text>
-          <xsl:call-template name="theme-classes">
-            <xsl:with-param name="value" select="@theme"/>
-          </xsl:call-template>
-          <xsl:text> </xsl:text>
-       </xsl:when>
-       <xsl:otherwise>
-          <xsl:value-of select="$BOOTSTRAP_CSS_CODEBLOCK"/>
-       </xsl:otherwise>
-    </xsl:choose>
-    <xsl:next-match/>
+  <!-- Place codeblocks within a card -->
+  <xsl:template match="*[contains(@class, ' pr-d/codeblock ')]" name="topic.pr-d.codeblock">
+    <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]" mode="out-of-line"/>
+    <xsl:call-template name="spec-title-nospace"/>
+
+    <div class="card">
+      <xsl:attribute name="class">
+        <xsl:choose>
+           <xsl:when test="@theme">
+              <xsl:call-template name="theme-classes">
+                <xsl:with-param name="value" select="@theme"/>
+              </xsl:call-template>
+           </xsl:when>
+           <xsl:otherwise>
+              <xsl:value-of select="$BOOTSTRAP_CSS_CODEBLOCK"/>
+           </xsl:otherwise>
+        </xsl:choose>
+        <xsl:text> card</xsl:text>
+      </xsl:attribute>
+      <div class="card-body">
+        <pre>
+          <xsl:call-template name="commonattributes"/>
+          <xsl:call-template name="setscale"/>
+          <xsl:call-template name="setidaname"/>
+            <code>
+              <xsl:apply-templates/>
+            </code>
+        </pre>
+      </div>
+    </div>
+
+    <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/>
   </xsl:template>
 
 

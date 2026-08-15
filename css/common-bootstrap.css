@@ -156,3 +156,8 @@
   --bs-theme-border: initial;
   --bs-theme-contrast: initial;
 }
+
+.card .card-body pre {
+  padding: 0;
+  margin: 0;
+}
