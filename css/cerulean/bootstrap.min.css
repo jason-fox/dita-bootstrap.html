@@ -134,10 +134,48 @@
 .btn-solid[class*="theme-"]:active,
 .btn-solid[class*="theme-"].active {
     background-image: linear-gradient(
-        color-mix(in srgb, black 12%, var(--bs-theme-bg)),
-        color-mix(in srgb, black 12%, var(--bs-theme-bg)) 60%,
-        color-mix(in srgb, black 18%, var(--bs-theme-bg))
+        color-mix(in srgb, black 12%, var(--bs-theme-subtle)),
+        color-mix(in srgb, black 12%, var(--bs-theme-subtle)) 60%,
+        color-mix(in srgb, black 18%, var(--bs-theme-subtle))
     );
+}
+
+.btn-subtle[class*="theme-"] {
+    background-image: linear-gradient(
+        color-mix(in srgb, white 20%, var(--bs-theme-subtle)),
+        var(--bs-theme-subtle) 60%,
+        color-mix(in srgb, black 8%, var(--bs-theme-subtle))
+    );
+}
+
+.btn-subtle[class*="theme-"]:hover {
+    background-image: linear-gradient(
+        var(--bs-theme-subtle),
+        color-mix(in srgb, black 4%, var(--bs-theme-subtle)) 60%,
+        color-mix(in srgb, black 12%, var(--bs-theme-subtle))
+    );
+}
+
+.btn-subtle[class*="theme-"]:active,
+.btn-subtle[class*="theme-"].active {
+    background-image: linear-gradient(
+        color-mix(in srgb, black 12%, var(--bs-theme-subtle)),
+        color-mix(in srgb, black 12%, var(--bs-theme-subtle)) 60%,
+        color-mix(in srgb, black 18%, var(--bs-theme-subtle))
+    );
+}
+
+.btn-text[class*="theme-"] {
+    background-image: none
+}
+
+.btn-text[class*="theme-"]:hover {
+    background-image: none
+}
+
+.btn-text[class*="theme-"]:active,
+.btn-text[class*="theme-"].active {
+    background-image: none
 }
 
 .navbar {
