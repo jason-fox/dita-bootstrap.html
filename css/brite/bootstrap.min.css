@@ -120,11 +120,28 @@
     --bs-border-radius-lg: .5rem;
 }
 
-.alert, .card, .modal-content {
-    box-shadow: 3px 3px 0 0 var(--bs-border-color);
+.card {
+    border: 2px solid;
 }
 
-.btn-outline[class*="theme-"]:hover {
-    box-shadow: 3px 3px 0 0 var(--bs-border-color);
-    transform: translate(-3px, -3px);
+.badge {
+    --bs-badge-font-weight: 700;
+    border: 2px solid var(--bs-black);
 }
+
+.btn-solid, .btn, .alert, .modal-content {
+    border: 2px solid;
+    box-shadow: 3px 3px 1px 1px var(--bs-black);
+}
+
+.btn:hover, .btn-solid:hover {
+    box-shadow: 3px 3px 0 0 var(--bs-border-color);
+    transform: translate(1px, 1px);
+}
+
+.nav-pills .nav-link {
+    --bs-nav-link-font-weight: 700;
+    border: 2px solid var(--bs-black);
+    border-radius: var(--bs-nav-pills-link-border-radius);
+ }
+
