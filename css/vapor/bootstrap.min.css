@@ -117,3 +117,24 @@
     --bs-border-radius: .15rem;
     --bs-border-radius-sm: .05rem;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0 0 1px rgba(50, 251, 226, .6),
+                 0 0 3px rgba(50, 251, 226, .5),
+                 0 0 .5rem rgba(50, 251, 226, .3),
+                 0 0 2rem rgba(50, 251, 226, .2);
+}
+
+.btn-solid[class*="theme-"] {
+    box-shadow: 0 0 2px color-mix(in srgb, var(--bs-theme-bg) 90%, transparent),
+                0 0 4px color-mix(in srgb, var(--bs-theme-bg) 40%, transparent),
+                0 0 1rem color-mix(in srgb, var(--bs-theme-bg) 30%, transparent),
+                0 0 4rem color-mix(in srgb, var(--bs-theme-bg) 10%, transparent);
+    text-shadow: 0 0 1px rgba(255, 255, 255, .3), 0 0 2px rgba(255, 255, 255, .3), 0 0 5px rgba(255, 255, 255, .2);
+}
+
+.alert[class*="theme-"], .note[class*="theme-"] {
+    box-shadow: 0 0 2rem color-mix(in srgb, var(--bs-theme-bg) 40%, transparent),
+                0 0 8rem color-mix(in srgb, var(--bs-theme-bg) 30%, transparent);
+    text-shadow: 0 0 1px rgba(255, 255, 255, .3), 0 0 2px rgba(255, 255, 255, .3), 0 0 5px rgba(255, 255, 255, .2);
+}
