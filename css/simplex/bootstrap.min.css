@@ -115,3 +115,11 @@
     --bs-gray-400: color-mix(in srgb, white 20%, var(--bs-gray-500));
     --bs-body-font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+.btn-solid[class*="theme-"] {
+    background-image: linear-gradient(
+        color-mix(in srgb, white 20%, var(--bs-theme-bg)),
+        var(--bs-theme-bg) 6%,
+        color-mix(in srgb, black 4%, var(--bs-theme-bg))
+    );
+}
