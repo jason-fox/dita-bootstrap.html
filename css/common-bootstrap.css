@@ -158,8 +158,11 @@
 }
 
 .card .card-body pre {
+  display: block;
+  width: 100%;
   padding: 0;
   margin: 0;
+  overflow: scroll;
 }
 
 html:root {
