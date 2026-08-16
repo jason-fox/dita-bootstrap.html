@@ -238,6 +238,32 @@
     <property name="dark.mode.include" value="yes"/>
     <property name="dita-bootstrap.css.add" value="yes"/>
 
+    <condition
+      property="prism.css.theme"
+      value="${dita.plugin.fox.jason.prismjs.dir}/css/solarized-theme.css"
+    >
+      <equals arg1="${bootstrap.theme}" arg2="solar"/>
+    </condition>
+    <condition
+      property="dita-bootstrap.prism.css.file"
+      value="prism-static.css"
+    >
+      <or>
+        <equals arg1="${bootstrap.theme}" arg2="cyborg"/>
+        <equals arg1="${bootstrap.theme}" arg2="darkly"/>
+        <equals arg1="${bootstrap.theme}" arg2="slate"/>
+        <equals arg1="${bootstrap.theme}" arg2="superhero"/>
+      </or>
+    </condition>
+    <condition property="dita-bootstrap.prism.css.file" value="prism-vapor.css">
+      <equals arg1="${bootstrap.theme}" arg2="vapor"/>
+    </condition>
+    <property name="dita-bootstrap.prism.css.file" value="prism.css"/>
+    <property
+      name="prism.css.theme"
+      value="${dita.plugin.org.dita-bootstrap.html.dir}/css/${dita-bootstrap.prism.css.file}"
+    />
+
     <!--
       Load alternate Bootstrap CSS for RTL languages such as Arabic,
       Farsi, Urdu etc. Load standard Bootstrap CSS for LTR languages like English
