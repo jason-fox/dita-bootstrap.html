@@ -157,16 +157,6 @@
     <xsl:next-match/>
   </xsl:template>
 
-  <!-- Change the default Bootstrap CSS classes of carousel -->
-  <xsl:template
-    match="*[ (contains(@class,' topic/ul ') or contains(@class, ' topic/ol ')) and contains(@outputclass, 'carousel')]"
-    mode="get-output-class"
-  >
-    <xsl:text>slide </xsl:text>
-    <xsl:value-of select="$BOOTSTRAP_CSS_CAROUSEL"/>
-    <xsl:next-match/>
-  </xsl:template>
-
   <!-- Amend the text and background of Figure Captions -->
   <xsl:template
     match="*[contains(@class, ' topic/fig ')]/*[contains(@class, ' topic/title ')]"
@@ -417,15 +407,6 @@
         <xsl:with-param name="value" select="@theme"/>
       </xsl:call-template>
       <xsl:text> </xsl:text>
-    </xsl:if>
-    <xsl:next-match/>
-  </xsl:template>
-
-  <!-- Change the default Bootstrap CSS classes of carousels -->
-  <xsl:template match="*[contains(@class, ' bootstrap-d/carousel ')]" mode="bootstrap-class" priority="10">
-    <xsl:text>carousel slide </xsl:text>
-    <xsl:if test="@fade = 'yes'">
-       <xsl:text>carousel-fade </xsl:text>
     </xsl:if>
     <xsl:next-match/>
   </xsl:template>

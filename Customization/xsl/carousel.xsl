@@ -18,8 +18,15 @@
 
   <xsl:template name="carousel-previous-next">
     <xsl:param name="id"/>
-    <div>
-      <button class="btn-icon btn-sm" type="button" data-bs-slide="prev">
+    <xsl:variable
+      name="btn-style"
+      select="
+        if (tokenize(@theme, '-') = 'contrast' or tokenize(@outputclass, '\s+') = 'theme-contrast') then 'btn-outline'
+        else 'btn-solid'"
+    />
+    <div class="ps-2 pb-2">
+      <button type="button" data-bs-slide="prev">
+        <xsl:attribute name="class" select="concat($btn-style, ' btn-icon btn-sm')"/>
         <xsl:attribute name="data-bs-target" select="concat('#' , $id)"/>
         <span class="carousel-icon-prev" aria-hidden="true"/>
         <span class="visually-hidden">
@@ -28,7 +35,8 @@
           </xsl:call-template>
         </span>
       </button>
-      <button class="btn-icon btn-sm" type="button" data-bs-slide="next">
+      <button type="button" data-bs-slide="next">
+        <xsl:attribute name="class" select="concat($btn-style, ' btn-icon btn-sm')"/>
         <xsl:attribute name="data-bs-target" select="concat('#' , $id)"/>
         <span class="carousel-icon-next" aria-hidden="true"/>
         <span class="visually-hidden">
@@ -43,7 +51,7 @@
   <xsl:template name="carousel-indicators">
     <xsl:param name="id"/>
 
-    <div class="carousel-indicators">
+    <div class="carousel-indicators pe-2 pb-2">
       <xsl:for-each select="*[contains(@class, ' topic/li ')]">
         <button type="button">
           <xsl:attribute name="class">
@@ -68,36 +76,66 @@
     <xsl:variable name="id">
       <xsl:value-of select="concat('carousel_' ,dita-ot:generate-html-id(.))"/>
     </xsl:variable>
-    <div class="carousel">
-      <!--xsl:choose>
-        <xsl:when test="@autoplay = 'no' or contains(@otherprops, 'autoplay(false)')">
-          <xsl:attribute name="data-bs-ride" select="'true'"/>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:attribute name="data-bs-ride" select="'carousel'"/>
-        </xsl:otherwise>
-      </xsl:choose-->
-      <xsl:if test="@touch = 'no' or contains(@otherprops, 'touch(false)')">
-        <xsl:attribute name="data-bs-touch" select="'false'"/>
-      </xsl:if>
-      <xsl:if test="@interval">
-        <xsl:attribute name="data-bs-interval" select="@interval"/>
-      </xsl:if>
-      <xsl:attribute name="id" select="$id"/>
-      <xsl:call-template name="commonattributes"/>
+    <div>
+      <xsl:call-template name="commonattributes">
+        <xsl:with-param name="default-output-class">
+          <xsl:text>card</xsl:text>
+          <xsl:if test="@theme">
+            <xsl:text> </xsl:text>
+            <xsl:call-template name="theme-classes">
+              <xsl:with-param name="value" select="@theme"/>
+            </xsl:call-template>
+          </xsl:if>
+        </xsl:with-param>
+      </xsl:call-template>
+      <div>
+        <xsl:attribute name="class">
+          <xsl:text>card-body p-0</xsl:text>
+          <xsl:if test="not(*[contains(@class, ' topic/li ')]/*[contains(@class, ' topic/fig ')])">
+            <xsl:text> pt-3</xsl:text>
+          </xsl:if>
+        </xsl:attribute>
+        <div>
+          <xsl:attribute name="class">
+            <xsl:text>carousel slide w-100</xsl:text>
+            <xsl:if test="@fade = 'yes'">
+              <xsl:text> carousel-fade</xsl:text>
+            </xsl:if>
+            <xsl:if test="$BOOTSTRAP_CSS_CAROUSEL != ''">
+              <xsl:text> </xsl:text>
+              <xsl:value-of select="$BOOTSTRAP_CSS_CAROUSEL"/>
+            </xsl:if>
+          </xsl:attribute>
+          <!--xsl:choose>
+            <xsl:when test="@autoplay = 'no' or contains(@otherprops, 'autoplay(false)')">
+              <xsl:attribute name="data-bs-ride" select="'true'"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:attribute name="data-bs-ride" select="'carousel'"/>
+            </xsl:otherwise>
+          </xsl:choose-->
+          <xsl:if test="@touch = 'no' or contains(@otherprops, 'touch(false)')">
+            <xsl:attribute name="data-bs-touch" select="'false'"/>
+          </xsl:if>
+          <xsl:if test="@interval">
+            <xsl:attribute name="data-bs-interval" select="@interval"/>
+          </xsl:if>
+          <xsl:attribute name="id" select="$id"/>
 
-      <div class="carousel-inner pb-1">
-        <xsl:apply-templates mode="carousel"/>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <xsl:call-template name="carousel-previous-next">
-          <xsl:with-param name="id" select="$id"/>
-        </xsl:call-template>
-        <xsl:if test="@indicators = 'yes' or contains(@otherprops, 'indicators(true)')">
-          <xsl:call-template name="carousel-indicators">
-            <xsl:with-param name="id" select="$id"/>
-          </xsl:call-template>
-        </xsl:if>
+          <div class="carousel-inner">
+            <xsl:apply-templates mode="carousel"/>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <xsl:call-template name="carousel-previous-next">
+              <xsl:with-param name="id" select="$id"/>
+            </xsl:call-template>
+            <xsl:if test="@indicators = 'yes' or contains(@otherprops, 'indicators(true)')">
+              <xsl:call-template name="carousel-indicators">
+                <xsl:with-param name="id" select="$id"/>
+              </xsl:call-template>
+            </xsl:if>
+          </div>
+        </div>
       </div>
     </div>
   </xsl:template>
