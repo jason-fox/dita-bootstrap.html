@@ -582,11 +582,11 @@
   <xsl:template match="*" mode="dita2html:get-default-fig-class">
     <xsl:value-of
       select="
-        if (@frame = 'all') then 'border'
-        else if (@frame = 'sides') then 'border-start border-end'
-        else if (@frame = 'top') then 'border-top'
-        else if (@frame = 'bottom') then 'border-bottom'
-        else if (@frame = 'topbot') then 'border-top border-bottom'
+        if (@frame = 'all') then 'p-3 border'
+        else if (@frame = 'sides') then 'px-3 border-start border-end'
+        else if (@frame = 'top') then 'pt-3 border-top'
+        else if (@frame = 'bottom') then 'pb-3 border-bottom'
+        else if (@frame = 'topbot') then 'py-3 border-top border-bottom'
         else ''"
     />
   </xsl:template>

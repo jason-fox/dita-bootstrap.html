@@ -6,9 +6,10 @@
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot"
+  xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   version="2.0"
-  exclude-result-prefixes="xs dita-ot"
+  exclude-result-prefixes="xs dita-ot dita2html"
 >
   <xsl:param name="BOOTSTRAP_CSS_SHORTDESC" select="'fw-light fs-lg'"/>
   <xsl:param name="BOOTSTRAP_CSS_CODEBLOCK" select="'theme-secondary theme-subtle'"/>
@@ -53,35 +54,54 @@
   <xsl:param name="BOOTSTRAP_ICON_NOTE" select="'bi bi-pencil'"/>
 
   <!-- Place codeblocks within a card -->
-  <xsl:template match="*[contains(@class, ' pr-d/codeblock ')]" name="topic.pr-d.codeblock">
+  <xsl:template match="*[contains(@class, ' pr-d/codeblock ')]" name="topic.pr-d.codeblock" priority="10">
     <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]" mode="out-of-line"/>
     <xsl:call-template name="spec-title-nospace"/>
 
-    <div class="card">
-      <xsl:attribute name="class">
-        <xsl:choose>
-           <xsl:when test="@theme">
-              <xsl:call-template name="theme-classes">
-                <xsl:with-param name="value" select="@theme"/>
-              </xsl:call-template>
-           </xsl:when>
-           <xsl:otherwise>
-              <xsl:value-of select="$BOOTSTRAP_CSS_CODEBLOCK"/>
-           </xsl:otherwise>
-        </xsl:choose>
-        <xsl:text> card</xsl:text>
-      </xsl:attribute>
-      <div class="card-body">
-        <pre>
-          <xsl:call-template name="commonattributes"/>
-          <xsl:call-template name="setscale"/>
-          <xsl:call-template name="setidaname"/>
-            <code>
-              <xsl:apply-templates/>
-            </code>
-        </pre>
+    <xsl:variable name="card">
+      <div class="card">
+        <xsl:attribute name="class">
+          <xsl:choose>
+             <xsl:when test="@theme">
+                <xsl:call-template name="theme-classes">
+                  <xsl:with-param name="value" select="@theme"/>
+                </xsl:call-template>
+             </xsl:when>
+             <xsl:otherwise>
+                <xsl:value-of select="$BOOTSTRAP_CSS_CODEBLOCK"/>
+             </xsl:otherwise>
+          </xsl:choose>
+          <xsl:text> card</xsl:text>
+        </xsl:attribute>
+        <div class="card-body">
+          <pre>
+            <xsl:call-template name="commonattributes"/>
+            <xsl:call-template name="setscale"/>
+            <xsl:call-template name="setidaname"/>
+              <code>
+                <xsl:apply-templates/>
+              </code>
+          </pre>
+        </div>
       </div>
-    </div>
+    </xsl:variable>
+
+    <xsl:choose>
+      <xsl:when test="@frame">
+        <xsl:variable name="frame-class">
+          <xsl:apply-templates select="." mode="dita2html:get-default-fig-class"/>
+        </xsl:variable>
+        <div>
+          <xsl:if test="$frame-class != ''">
+            <xsl:attribute name="class" select="$frame-class"/>
+          </xsl:if>
+          <xsl:sequence select="$card"/>
+        </div>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:sequence select="$card"/>
+      </xsl:otherwise>
+    </xsl:choose>
 
     <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/>
   </xsl:template>
