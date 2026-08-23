@@ -14,6 +14,7 @@ html:root {
   --dita-prussian-blue: #6a91cf;
   --dita-violet: #cc99cd;
   --dita-maroon: #ff7676;
+  --bs-code-color: rgb(from var(--bs-danger-base) r g calc(b + 63));
 }
 
 [data-bs-theme='dark'] {
@@ -32,6 +33,5 @@ html:root {
 
 code[class*="language-"],
 pre[class*="language-"] {
-	--bs-code-color: #ccc;
 	color: #ccc !important;
 }
