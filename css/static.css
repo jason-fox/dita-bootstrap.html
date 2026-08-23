@@ -32,5 +32,6 @@ html:root {
 
 code[class*="language-"],
 pre[class*="language-"] {
+	--bs-code-color: #ccc;
 	color: #ccc !important;
 }
