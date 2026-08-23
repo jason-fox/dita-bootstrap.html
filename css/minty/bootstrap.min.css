@@ -118,3 +118,21 @@
     --bs-border-radius-sm: .3rem;
     --bs-border-radius-lg: .6rem;
 }
+
+.btn, .btn-solid {
+    font-family: Montserrat, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.table {
+    --bs-table-border-color: rgba(0, 0, 0, 0.05);
+}
+
+.card {
+    --bs-card-cap-bg: color-mix(in srgb, var(--bs-fg-body) 3%, transparent);
+}
+
+.navbar {
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+}

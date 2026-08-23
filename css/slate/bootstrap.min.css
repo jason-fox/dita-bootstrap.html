@@ -124,9 +124,27 @@
 }
 
 .navbar {
+    --bs-navbar-padding-y: 0;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+}
+
+.btn, .btn-solid {
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 0.75rem;
+}
+
+.table {
+    --bs-table-border-color: rgba(0, 0, 0, 0.6);
 }
 
 h1, h2, h3, h4, h5, h6 {
     text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+}
+
+.pagination {
+    --bs-pagination-padding-x: 1rem;
+    --bs-pagination-padding-y: 0.75rem;
 }

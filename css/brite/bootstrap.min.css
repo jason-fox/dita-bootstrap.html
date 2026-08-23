@@ -150,3 +150,27 @@
     border-radius: var(--bs-nav-pills-link-border-radius);
  }
 
+.btn, .btn-solid {
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-font-size: 0.875rem;
+}
+
+.table {
+    --bs-table-border-color: #000;
+}
+
+.card {
+    --bs-card-cap-bg: color-mix(in srgb, var(--bs-fg-body) 3%, transparent);
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0.75rem;
+    --bs-navbar-brand-font-size: 1.09375rem;
+    --bs-navbar-brand-padding-y: 0.3359375rem;
+    --bs-navbar-nav-link-padding-x: 1rem;
+}
+
+.pagination {
+    --bs-pagination-font-size: 0.875rem;
+}

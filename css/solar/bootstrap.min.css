@@ -115,3 +115,13 @@
     --bs-gray-400: color-mix(in srgb, white 20%, var(--bs-gray-500));
     --bs-body-font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+.table {
+    --bs-table-border-color: #073642;
+}
+
+.navbar {
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+}

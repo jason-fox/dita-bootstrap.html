@@ -121,3 +121,24 @@ body {
     background-image: linear-gradient(90deg, #33b7e2, #5e62b0, #dc307c);
     background-attachment: fixed;
 }
+
+.btn, .btn-solid {
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: 0.75rem;
+}
+
+.card {
+    --bs-card-cap-bg: transparent;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+}
+
+.list-group {
+    --bs-list-group-item-padding-x: 2rem;
+    --bs-list-group-item-padding-y: 1rem;
+}

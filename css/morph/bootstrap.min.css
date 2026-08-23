@@ -126,3 +126,25 @@
 .btn-solid[class*="theme-"].active {
     box-shadow: inset 2px 3px 6px rgba(0, 0, 0, .2);
 }
+
+.btn, .btn-solid {
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-font-weight: 600;
+    --bs-btn-border-radius: 50rem;
+    border: none;
+}
+
+.card {
+    --bs-card-cap-bg: transparent;
+}
+
+.navbar {
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+}
+
+.pagination {
+    --bs-pagination-padding-y: 1rem;
+}

@@ -118,9 +118,20 @@
 
 
 .btn, .btn-solid {
+    --bs-btn-font-weight: 700;
     border-style: solid;
     border-width: 1px 1px 4px 1px;
     text-transform: uppercase;
+}
+
+.card {
+    --bs-card-cap-bg: color-mix(in srgb, var(--bs-fg-body) 3%, transparent);
+}
+
+.navbar {
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
 }
 
 
