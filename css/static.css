@@ -29,3 +29,8 @@ html:root {
     --prism-keywords: var(--bs-blue-500);
   }
 }
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #ccc !important;
+}
