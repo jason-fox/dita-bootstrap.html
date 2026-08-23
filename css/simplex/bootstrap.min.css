@@ -123,3 +123,13 @@
         color-mix(in srgb, black 4%, var(--bs-theme-bg))
     );
 }
+
+.card {
+    --bs-card-cap-bg: color-mix(in srgb, var(--bs-fg-body) 3%, transparent);
+}
+
+.navbar {
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.7125rem;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+}

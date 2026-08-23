@@ -179,9 +179,16 @@
 }
 
 .navbar {
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
     background-image: linear-gradient(
         color-mix(in srgb, white 20%, var(--bs-navbar-bg)),
         var(--bs-navbar-bg) 60%,
         color-mix(in srgb, black 8%, var(--bs-navbar-bg))
     );
+}
+
+.card {
+    --bs-card-cap-bg: color-mix(in srgb, var(--bs-fg-body) 3%, transparent);
 }

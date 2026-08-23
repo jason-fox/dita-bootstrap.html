@@ -119,3 +119,30 @@
 .card, .list-group, .modal-content, .table, .breadcrumb, .img-thumbnail {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
 }
+
+.btn, .btn-solid {
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-font-weight: 500;
+}
+
+.card {
+    --bs-card-cap-bg: color-mix(in srgb, var(--bs-fg-body) 3%, transparent);
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0.85rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+}
+
+.pagination {
+    --bs-pagination-padding-x: 1rem;
+    --bs-pagination-padding-y: 0.5rem;
+}
+
+.list-group {
+    --bs-list-group-item-padding-x: 1.5rem;
+    --bs-list-group-item-padding-y: 1rem;
+}

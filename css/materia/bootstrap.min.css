@@ -117,6 +117,7 @@
 }
 
 .card {
+    --bs-card-cap-bg: color-mix(in srgb, var(--bs-fg-body) 3%, transparent);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
 }
 
@@ -130,5 +131,15 @@
 }
 
 .btn, .btn-solid {
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 0.8rem;
     text-transform: uppercase;
+    border: none;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
 }

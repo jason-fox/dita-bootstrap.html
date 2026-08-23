@@ -126,5 +126,26 @@
 }
 
 .btn, .btn-solid {
-   text-transform: uppercase;
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: .75rem;
+    --bs-btn-font-size: .875rem;
+    --bs-btn-font-weight: 600;
+    --bs-btn-line-height: 1.5rem;
+    text-transform: uppercase;
+}
+
+.table {
+    --bs-table-border-color: rgba(0, 0, 0, .05);
+}
+
+.card {
+    --bs-card-cap-bg: color-mix(in srgb, var(--bs-fg-body) 3%, transparent);
+}
+
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 1.5rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: .3125rem;
+    --bs-navbar-nav-link-padding-x: .5rem;
 }

@@ -122,3 +122,18 @@
     --bs-radius-8: 0;
     --bs-radius-9: 0;
 }
+
+.table {
+    --bs-table-border-color: rgba(0, 0, 0, 0.05);
+}
+
+.card {
+    --bs-card-cap-bg: color-mix(in srgb, var(--bs-fg-body) 3%, transparent);
+}
+
+.navbar {
+    --bs-navbar-padding-y: 1.2rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+}

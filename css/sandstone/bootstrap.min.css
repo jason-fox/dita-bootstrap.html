@@ -126,3 +126,9 @@
 .btn, .btn-solid {
     text-transform: uppercase;
 }
+
+.navbar {
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+}
