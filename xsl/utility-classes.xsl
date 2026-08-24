@@ -708,11 +708,12 @@
       name="themeClasses"
       select="for $t in ('primary', 'secondary', 'success', 'danger', 'warning', 'info', 'accent', 'inverse') return concat('theme-', $t)"
     />
-    <xsl:variable name="hasCustomTheme" select="some $c in tokenize(@outputclass, '\s+') satisfies $c = $themeClasses"/>
+    <xsl:variable name="customThemeClass" select="(tokenize(@outputclass, '\s+')[. = $themeClasses])[1]"/>
+    <xsl:variable name="hasCustomTheme" select="exists($customThemeClass)"/>
     <xsl:variable
       name="noteTheme"
       select="
-          if ($hasCustomTheme) then ''
+          if ($hasCustomTheme) then substring-after($customThemeClass, 'theme-')
           else if (@theme) then @theme
           else if (@type='tip') then 'success'
           else if (@type='fastpath') then 'success'
@@ -730,9 +731,13 @@
           else 'info'"
     />
     <xsl:if test="string-length($noteTheme) > 0">
-      <xsl:call-template name="theme-classes">
-        <xsl:with-param name="value" select="$noteTheme"/>
-      </xsl:call-template>
+      <xsl:if test="not($hasCustomTheme)">
+        <xsl:call-template name="theme-classes">
+          <xsl:with-param name="value" select="$noteTheme"/>
+        </xsl:call-template>
+        <xsl:text> </xsl:text>
+      </xsl:if>
+      <xsl:value-of select="concat('fg-emphasis-', tokenize($noteTheme, '-')[1])"/>
     </xsl:if>
   </xsl:template>
 
