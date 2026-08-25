@@ -118,6 +118,9 @@
     --bs-border-radius: .375rem;
     --bs-border-radius-sm: .25rem;
     --bs-border-radius-lg: .5rem;
+
+    --bs-heading-color: inherit;
+    --bs-link-color: #000;
 }
 
 
@@ -173,4 +176,56 @@
 
 .pagination {
     --bs-pagination-font-size: 0.875rem;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+h1, .h1 {
+  font-size: calc(1.34375rem + 1.125vw);
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.1875rem;
+  }
+}
+
+h2, .h2 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 1.75rem;
+  }
+}
+
+h3, .h3 {
+  font-size: calc(1.278125rem + 0.3375vw);
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.53125rem;
+  }
+}
+
+h4, .h4 {
+  font-size: calc(1.25625rem + 0.075vw);
+}
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.3125rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.09375rem;
+}
+
+h6, .h6 {
+  font-size: 0.875rem;
 }
