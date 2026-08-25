@@ -128,28 +128,28 @@
         </section>
          <section>
         <title>Specialization</title>
-          <codeblock>&lt;xref theme="primary-contrast" href="#"&gt;
+          <codeblock>&lt;xref theme="primary" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Primary link
 &lt;/xref&gt;
-&lt;xref theme="secondary-contrast" href="#"&gt;
+&lt;xref theme="secondary" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Secondary link
 &lt;/xref&gt;
-&lt;xref theme="success-contrast" href="#"&gt;
+&lt;xref theme="success" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Success link
 &lt;/xref&gt;
-&lt;xref theme="danger-contrast" href="#"&gt;
+&lt;xref theme="danger" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Danger link
 &lt;/xref&gt;
-&lt;xref theme="warning-contrast" href="#"&gt;
+&lt;xref theme="warning" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Warning link
 &lt;/xref&gt;
-&lt;xref theme="info-contrast" href="#"&gt;
+&lt;xref theme="info" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Info link
 &lt;/xref&gt;
-&lt;xref theme="accent-contrast" href="#"&gt;
+&lt;xref theme="accent" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Accent link
 &lt;/xref&gt;
-&lt;xref theme="inverse-contrast" href="#"&gt;
+&lt;xref theme="inverse" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Inverse link
 &lt;/xref&gt;</codeblock>
         </section>
