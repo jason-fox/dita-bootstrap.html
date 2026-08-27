@@ -71,9 +71,7 @@
     --bs-fg-body: light-dark(#212529, var(--bs-gray-050));
     --bs-heading-color: #2c3e50;
 
-    /* Navbar: v6's .navbar already reads these tokens natively
-       (background-color:var(--bs-navbar-bg,var(--bs-bg-body)) etc.) —
-       setting them here avoids fighting the cascade with !important. */
+
     --bs-navbar-bg: var(--bs-primary-base);
     --bs-navbar-color: color-mix(in srgb, #fff 80%, transparent);
     --bs-navbar-hover-color: #fff;
