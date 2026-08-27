@@ -134,6 +134,10 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
 }
 
+.badge {
+    --bs-badge-bg: var(--bs-gray-900);
+}
+
 .btn, .btn-solid {
     --bs-btn-padding-x: 1rem;
     --bs-btn-padding-y: 0.75rem;
