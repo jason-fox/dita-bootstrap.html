@@ -140,7 +140,7 @@ body {
 }
 
 .badge {
-    --bs-badge-bg: var(--bs-gray-900);
+    --bs-badge-bg: #575bab;
 }
 
 
