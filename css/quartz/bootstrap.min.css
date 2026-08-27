@@ -70,9 +70,7 @@
     --bs-fg-body: #ffffff;
     --bs-heading-color: #e83283;
 
-    /* Navbar: v6's .navbar already reads these tokens natively
-       (background-color:var(--bs-navbar-bg,var(--bs-bg-body)) etc.) —
-       setting them here avoids fighting the cascade with !important. */
+
     --bs-navbar-bg: var(--bs-primary-base);
     --bs-navbar-color: color-mix(in srgb, #fff 80%, transparent);
     --bs-navbar-hover-color: #fff;
@@ -140,6 +138,11 @@ body {
     --bs-navbar-brand-padding-y: 0.3125rem;
     --bs-navbar-nav-link-padding-x: 0.5rem;
 }
+
+.badge {
+    --bs-badge-bg: var(--bs-gray-900);
+}
+
 
 .list-group {
     --bs-list-group-item-padding-x: 2rem;
