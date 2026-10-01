@@ -4,23 +4,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script>
-        (function() {
-          const css = localStorage.getItem('css-theme');
-          if (css) {
-            const links = document.querySelectorAll('link');
-            for (let i = 0; i < links.length; i++) {
-              const link = links[i];
-              if (/.*\.min\.css/.test(link.href)) {
-                if (link.href !== css) {
-                  link.removeAttribute('integrity');
-                  link.href = css;
-                }
-                break;
-              }
-            }
-          }
-        })();
-        </script><script language="javascript" src="./js/css-theme-switcher.js"></script><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+(function() {
+  var validThemes = ["https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/brite/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/cerulean/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/cosmo/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/cyborg/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/darkly/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/flatly/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/journal/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/litera/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/lumen/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/lux/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/materia/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/minty/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/morph/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/pulse/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/quartz/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/sandstone/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/simplex/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/sketchy/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/slate/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/solar/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/spacelab/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/superhero/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/united/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/vapor/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/yeti/bootstrap.min.css","https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/zephyr/bootstrap.min.css"];
+  var css = localStorage.getItem('css-theme');
+  if (css) {
+    if (validThemes.indexOf(css) !== -1) {
+      var link = Array.prototype.find.call(document.querySelectorAll('link'), function(l) {
+        return /\.min\.css$/.test(l.href);
+      });
+      if (link) {
+        if (link.href !== css) {
+          link.removeAttribute('integrity');
+          link.href = css;
+        }
+      }
+    }
+  }
+})();
+</script><script language="javascript" src="./js/css-theme-switcher.js"></script><link rel="stylesheet" type="text/css" href="css/commonltr.css">
 <link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/theme.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" integrity="sha384-CK2SzKma4jA5H/MXDUU7i1TqZlCFaD4T01vtyDFvPlD97JQyS+IsSh1nI2EFbpyk" crossorigin="anonymous"></head><body id="containers" class="d-flex flex-column min-vh-100 language-markup"><div class="visually-hidden-focusable overflow-hidden p-2 bg-body-tertiary"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a></div></div><header role="banner" class="sticky-top"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <!-- Modify -xxl to change container size -->
@@ -293,147 +294,147 @@
         <span class="keyword option">container-fluid</span> across each breakpoint.
       </p>
     </section>
-    <div><table class="table table-"><colgroup><col style="width:25%"><col style="width:12.5%"><col style="width:12.5%"><col style="width:12.5%"><col style="width:12.5%"><col style="width:12.5%"><col style="width:12.5%"></colgroup><thead class="thead table-">
-          <tr class="table-">
-            <th class="entry table- align-top" id="containers__entry__1"></th>
-            <th class="entry table- align-top" id="containers__entry__2">Extra small
+    <div><table class="table"><colgroup><col style="width:25%"><col style="width:12.5%"><col style="width:12.5%"><col style="width:12.5%"><col style="width:12.5%"><col style="width:12.5%"><col style="width:12.5%"></colgroup><thead class="thead">
+          <tr>
+            <th class="entry align-top" id="containers__entry__1"></th>
+            <th class="entry align-top" id="containers__entry__2">Extra small
               <div class="div fw-normal">&lt;576px</div>
             </th>
-            <th class="entry table- align-top" id="containers__entry__3">Small
+            <th class="entry align-top" id="containers__entry__3">Small
               <div class="div fw-normal">≥576px</div>
             </th>
-            <th class="entry table- align-top" id="containers__entry__4">Medium
+            <th class="entry align-top" id="containers__entry__4">Medium
               <div class="div fw-normal">≥768px</div>
             </th>
-            <th class="entry table- align-top" id="containers__entry__5">Large
+            <th class="entry align-top" id="containers__entry__5">Large
               <div class="div fw-normal">≥992px</div>
             </th>
-            <th class="entry table- align-top" id="containers__entry__6">X-Large
+            <th class="entry align-top" id="containers__entry__6">X-Large
               <div class="div fw-normal">≥1200px</div>
             </th>
-            <th class="entry table- align-top" id="containers__entry__7">XX-Large
+            <th class="entry align-top" id="containers__entry__7">XX-Large
               <div class="div fw-normal">≥1400px</div>
             </th>
           </tr>
-        </thead><tbody class="tbody table-">
-          <tr class="table-">
-            <td class="entry table-" headers="containers__entry__1">
+        </thead><tbody class="tbody">
+          <tr>
+            <td class="entry" headers="containers__entry__1">
               <span class="keyword option">container</span>
             </td>
-            <td class="entry table-" headers="containers__entry__2">
+            <td class="entry" headers="containers__entry__2">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__3">540px</td>
-            <td class="entry table-" headers="containers__entry__4">720px</td>
-            <td class="entry table-" headers="containers__entry__5">960px</td>
-            <td class="entry table-" headers="containers__entry__6">1140px</td>
-            <td class="entry table-" headers="containers__entry__7">1320px</td>
+            <td class="entry" headers="containers__entry__3">540px</td>
+            <td class="entry" headers="containers__entry__4">720px</td>
+            <td class="entry" headers="containers__entry__5">960px</td>
+            <td class="entry" headers="containers__entry__6">1140px</td>
+            <td class="entry" headers="containers__entry__7">1320px</td>
           </tr>
-          <tr class="table-">
-            <td class="entry table-" headers="containers__entry__1">
+          <tr>
+            <td class="entry" headers="containers__entry__1">
               <span class="keyword option">container-sm</span>
             </td>
-            <td class="entry table-" headers="containers__entry__2">
+            <td class="entry" headers="containers__entry__2">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__3">540px</td>
-            <td class="entry table-" headers="containers__entry__4">720px</td>
-            <td class="entry table-" headers="containers__entry__5">960px</td>
-            <td class="entry table-" headers="containers__entry__6">1140px</td>
-            <td class="entry table-" headers="containers__entry__7">1320px</td>
+            <td class="entry" headers="containers__entry__3">540px</td>
+            <td class="entry" headers="containers__entry__4">720px</td>
+            <td class="entry" headers="containers__entry__5">960px</td>
+            <td class="entry" headers="containers__entry__6">1140px</td>
+            <td class="entry" headers="containers__entry__7">1320px</td>
           </tr>
-          <tr class="table-">
-            <td class="entry table-" headers="containers__entry__1">
+          <tr>
+            <td class="entry" headers="containers__entry__1">
               <span class="keyword option">container-md</span>
             </td>
-            <td class="entry table-" headers="containers__entry__2">
+            <td class="entry" headers="containers__entry__2">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__3">
+            <td class="entry" headers="containers__entry__3">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__4">720px</td>
-            <td class="entry table-" headers="containers__entry__5">960px</td>
-            <td class="entry table-" headers="containers__entry__6">1140px</td>
-            <td class="entry table-" headers="containers__entry__7">1320px</td>
+            <td class="entry" headers="containers__entry__4">720px</td>
+            <td class="entry" headers="containers__entry__5">960px</td>
+            <td class="entry" headers="containers__entry__6">1140px</td>
+            <td class="entry" headers="containers__entry__7">1320px</td>
           </tr>
-          <tr class="table-">
-            <td class="entry table-" headers="containers__entry__1">
+          <tr>
+            <td class="entry" headers="containers__entry__1">
               <span class="keyword option">container-lg</span>
             </td>
-            <td class="entry table-" headers="containers__entry__2">
+            <td class="entry" headers="containers__entry__2">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__3">
+            <td class="entry" headers="containers__entry__3">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__4">
+            <td class="entry" headers="containers__entry__4">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__5">960px</td>
-            <td class="entry table-" headers="containers__entry__6">1140px</td>
-            <td class="entry table-" headers="containers__entry__7">1320px</td>
+            <td class="entry" headers="containers__entry__5">960px</td>
+            <td class="entry" headers="containers__entry__6">1140px</td>
+            <td class="entry" headers="containers__entry__7">1320px</td>
           </tr>
-          <tr class="table-">
-            <td class="entry table-" headers="containers__entry__1">
+          <tr>
+            <td class="entry" headers="containers__entry__1">
               <span class="keyword option">container-xl</span>
             </td>
-            <td class="entry table-" headers="containers__entry__2">
+            <td class="entry" headers="containers__entry__2">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__3">
+            <td class="entry" headers="containers__entry__3">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__4">
+            <td class="entry" headers="containers__entry__4">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__5">
+            <td class="entry" headers="containers__entry__5">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__6">1140px</td>
-            <td class="entry table-" headers="containers__entry__7">1320px</td>
+            <td class="entry" headers="containers__entry__6">1140px</td>
+            <td class="entry" headers="containers__entry__7">1320px</td>
           </tr>
-          <tr class="table-">
-            <td class="entry table-" headers="containers__entry__1">
+          <tr>
+            <td class="entry" headers="containers__entry__1">
               <span class="keyword option">container-xxl</span>
             </td>
-            <td class="entry table-" headers="containers__entry__2">
+            <td class="entry" headers="containers__entry__2">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__3">
+            <td class="entry" headers="containers__entry__3">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__4">
+            <td class="entry" headers="containers__entry__4">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__5">
+            <td class="entry" headers="containers__entry__5">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__6">
+            <td class="entry" headers="containers__entry__6">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__7">1320px</td>
+            <td class="entry" headers="containers__entry__7">1320px</td>
           </tr>
-          <tr class="table-">
-            <td class="entry table-" headers="containers__entry__1">
+          <tr>
+            <td class="entry" headers="containers__entry__1">
               <span class="keyword option">container-fluid</span>
             </td>
-            <td class="entry table-" headers="containers__entry__2">
+            <td class="entry" headers="containers__entry__2">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__3">
+            <td class="entry" headers="containers__entry__3">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__4">
+            <td class="entry" headers="containers__entry__4">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__5">
+            <td class="entry" headers="containers__entry__5">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__6">
+            <td class="entry" headers="containers__entry__6">
               <span class="ph text-body-secondary">100%</span>
             </td>
-            <td class="entry table-" headers="containers__entry__7">
+            <td class="entry" headers="containers__entry__7">
               <span class="ph text-body-secondary">100%</span>
             </td>
           </tr>
