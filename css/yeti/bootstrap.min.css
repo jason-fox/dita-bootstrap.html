@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url('https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/*
+ * Yeti theme for Bootstrap v6
+ * Ported from Bootswatch Yeti 5.3.8 (https://bootswatch.com/yeti/)
+ */
+
+:root {
+    --bs-primary-base: #008cba;
+    --bs-secondary-base: #eeeeee;
+    --bs-success-base: #43ac6a;
+    --bs-info-base: #5bc0de;
+    --bs-warning-base: #e99002;
+    --bs-danger-base: #f04124;
+
+    --bs-primary-bg: var(--bs-primary-base);
+    --bs-primary-fg: var(--bs-primary-base);
+    --bs-primary-border: var(--bs-primary-base);
+    --bs-primary-contrast: #fff;
+    --bs-primary-bg-subtle: color-mix(in srgb, var(--bs-primary-base) 15%, white);
+    --bs-primary-bg-muted: color-mix(in srgb, var(--bs-primary-base) 30%, white);
+    --bs-primary-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-primary-base) 65%, black), color-mix(in srgb, var(--bs-primary-base) 65%, white));
+    --bs-primary-focus-ring: color-mix(in oklch, var(--bs-primary-base) 50%, var(--bs-bg-body));
+
+    --bs-secondary-bg: var(--bs-secondary-base);
+    --bs-secondary-fg: color-mix(in srgb, var(--bs-fg-body) 75%, transparent);
+    --bs-secondary-border: color-mix(in srgb, var(--bs-fg-body) 75%, transparent);
+    --bs-secondary-contrast: #000;
+    --bs-secondary-bg-subtle: color-mix(in srgb, var(--bs-secondary-base) 15%, var(--bs-bg-body));
+    --bs-secondary-bg-muted: color-mix(in srgb, var(--bs-secondary-base) 30%, var(--bs-bg-body));
+    --bs-secondary-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-secondary-base) 65%, black), color-mix(in srgb, var(--bs-secondary-base) 65%, white));
+    --bs-secondary-focus-ring: color-mix(in oklch, var(--bs-secondary-base) 50%, var(--bs-bg-body));
+
+    --bs-success-bg: var(--bs-success-base);
+    --bs-success-fg: var(--bs-success-base);
+    --bs-success-border: var(--bs-success-base);
+    --bs-success-contrast: #fff;
+    --bs-success-bg-subtle: color-mix(in srgb, var(--bs-success-base) 15%, white);
+    --bs-success-bg-muted: color-mix(in srgb, var(--bs-success-base) 30%, white);
+    --bs-success-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-success-base) 65%, black), color-mix(in srgb, var(--bs-success-base) 65%, white));
+    --bs-success-focus-ring: color-mix(in oklch, var(--bs-success-base) 50%, var(--bs-bg-body));
+
+    --bs-info-bg: var(--bs-info-base);
+    --bs-info-fg: var(--bs-info-base);
+    --bs-info-border: var(--bs-info-base);
+    --bs-info-contrast: #fff;
+    --bs-info-bg-subtle: color-mix(in srgb, var(--bs-info-base) 15%, white);
+    --bs-info-bg-muted: color-mix(in srgb, var(--bs-info-base) 30%, white);
+    --bs-info-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-info-base) 65%, black), color-mix(in srgb, var(--bs-info-base) 65%, white));
+    --bs-info-focus-ring: color-mix(in oklch, var(--bs-info-base) 50%, var(--bs-bg-body));
+
+    --bs-warning-bg: var(--bs-warning-base);
+    --bs-warning-fg: var(--bs-warning-base);
+    --bs-warning-border: var(--bs-warning-base);
+    --bs-warning-contrast: #fff;
+    --bs-warning-bg-subtle: color-mix(in srgb, var(--bs-warning-base) 15%, white);
+    --bs-warning-bg-muted: color-mix(in srgb, var(--bs-warning-base) 30%, white);
+    --bs-warning-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-warning-base) 65%, black), color-mix(in srgb, var(--bs-warning-base) 65%, white));
+    --bs-warning-focus-ring: color-mix(in oklch, var(--bs-warning-base) 50%, var(--bs-bg-body));
+
+    --bs-danger-bg: var(--bs-danger-base);
+    --bs-danger-fg: var(--bs-danger-base);
+    --bs-danger-border: var(--bs-danger-base);
+    --bs-danger-contrast: #fff;
+    --bs-danger-bg-subtle: color-mix(in srgb, var(--bs-danger-base) 15%, white);
+    --bs-danger-bg-muted: color-mix(in srgb, var(--bs-danger-base) 30%, white);
+    --bs-danger-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-danger-base) 65%, black), color-mix(in srgb, var(--bs-danger-base) 65%, white));
+    --bs-danger-focus-ring: color-mix(in oklch, var(--bs-danger-base) 50%, var(--bs-bg-body));
+    --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
+    --bs-fg-body: light-dark(#212529, var(--bs-gray-050));
+    --bs-heading-color: #008cba;
+
+
+    --bs-navbar-bg: var(--bs-primary-base);
+    --bs-navbar-color: color-mix(in srgb, #fff 80%, transparent);
+    --bs-navbar-hover-color: #fff;
+    --bs-navbar-active-color: #fff;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+    --bs-blue-500: #008cba;
+    --bs-blue-600: color-mix(in srgb, black 16%, var(--bs-blue-500));
+    --bs-blue-400: color-mix(in srgb, white 20%, var(--bs-blue-500));
+    --bs-indigo-500: #6610f2;
+    --bs-indigo-600: color-mix(in srgb, black 16%, var(--bs-indigo-500));
+    --bs-indigo-400: color-mix(in srgb, white 20%, var(--bs-indigo-500));
+    --bs-purple-500: #6f42c1;
+    --bs-purple-600: color-mix(in srgb, black 16%, var(--bs-purple-500));
+    --bs-purple-400: color-mix(in srgb, white 20%, var(--bs-purple-500));
+    --bs-pink-500: #e83e8c;
+    --bs-pink-600: color-mix(in srgb, black 16%, var(--bs-pink-500));
+    --bs-pink-400: color-mix(in srgb, white 20%, var(--bs-pink-500));
+    --bs-red-500: #f04124;
+    --bs-red-600: color-mix(in srgb, black 16%, var(--bs-red-500));
+    --bs-red-400: color-mix(in srgb, white 20%, var(--bs-red-500));
+    --bs-orange-500: #fd7e14;
+    --bs-orange-600: color-mix(in srgb, black 16%, var(--bs-orange-500));
+    --bs-orange-400: color-mix(in srgb, white 20%, var(--bs-orange-500));
+    --bs-yellow-500: #e99002;
+    --bs-yellow-600: color-mix(in srgb, black 16%, var(--bs-yellow-500));
+    --bs-yellow-400: color-mix(in srgb, white 20%, var(--bs-yellow-500));
+    --bs-green-500: #43ac6a;
+    --bs-green-600: color-mix(in srgb, black 16%, var(--bs-green-500));
+    --bs-green-400: color-mix(in srgb, white 20%, var(--bs-green-500));
+    --bs-teal-500: #20c997;
+    --bs-teal-600: color-mix(in srgb, black 16%, var(--bs-teal-500));
+    --bs-teal-400: color-mix(in srgb, white 20%, var(--bs-teal-500));
+    --bs-cyan-500: #5bc0de;
+    --bs-cyan-600: color-mix(in srgb, black 16%, var(--bs-cyan-500));
+    --bs-cyan-400: color-mix(in srgb, white 20%, var(--bs-cyan-500));
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: color-mix(in srgb, black 16%, var(--bs-gray-500));
+    --bs-gray-400: color-mix(in srgb, white 20%, var(--bs-gray-500));
+    --bs-body-font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --bs-radius-1: 0;
+    --bs-radius-2: 0;
+    --bs-radius-3: 0;
+    --bs-radius-4: 0;
+    --bs-radius-5: 0;
+    --bs-radius-6: 0;
+    --bs-radius-7: 0;
+    --bs-radius-8: 0;
+    --bs-radius-9: 0;
+
+    --bs-heading-color: inherit;
+    --bs-link-color: #008cba;
+}
+
+.breadcrumb {
+    font-weight: 300;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.btn, .btn-solid {
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-font-weight: 300;
+}
+
+.card {
+    --bs-card-cap-bg: color-mix(in srgb, var(--bs-fg-body) 3%, transparent);
+}
+
+.navbar {
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2, .h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 2rem;
+  }
+}
+
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
