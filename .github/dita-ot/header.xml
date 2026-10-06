@@ -1,6 +1,5 @@
 <nav
-  class="navbar navbar-expand-lg navbar navbar-expand-lg navbar-light bg-secondary-subtle">
->
+  class="navbar navbar-expand-lg navbar-light bg-secondary-subtle">
   <!-- Modify -xxl to change container size -->
   <div class="container-xxl">
     <!-- This shows the menu on mobile -->
