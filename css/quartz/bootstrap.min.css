@@ -335,8 +335,6 @@ body {
 }
 
 .btn-outline, .badge-outline {
-    --bs-btn-color: #fff;
-    --bs-badge-color: #fff;
     background-image: linear-gradient(125deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, .04) 70%);
     backdrop-filter: blur(5px);
 }
