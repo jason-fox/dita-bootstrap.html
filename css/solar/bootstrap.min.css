@@ -88,8 +88,8 @@
     --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
     --bs-inverse-contrast: #212529;
 
-    --bs-bg-body: #002b36;
-    --bs-fg-body: #839496;
+    --bs-bg-body: light-dark(#fdf6e3, #002b36);
+    --bs-fg-body: light-dark(#657b83, #839496);
     --bs-heading-color: #b58900;
 
 
