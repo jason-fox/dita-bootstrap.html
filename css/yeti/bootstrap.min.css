@@ -210,3 +210,66 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
 }
+
+.navbar {
+    font-weight: 700;
+}
+
+.btn-solid[class*="theme-"] {
+    border-color: color-mix(in srgb, black 10%, var(--bs-theme-bg));
+}
+
+.btn-solid.theme-info, .btn-solid.theme-warning {
+    --bs-btn-color: #fff;
+}
+
+.text-secondary {
+    color: #495057 !important;
+}
+
+.blockquote-footer {
+    color: #6c757d;
+}
+
+.table, label, .list-group, .alert, .breadcrumb {
+    font-size: .875rem;
+}
+
+.dropdown-item {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+    font-weight: 300;
+}
+
+.nav-pills .nav-link.active {
+    border: 1px solid color-mix(in srgb, black 10%, var(--bs-primary-base));
+}
+
+.pagination {
+    font-weight: 300;
+}
+
+.pagination .page-link {
+    margin-right: .1em;
+    margin-left: .1em;
+    border-color: transparent;
+    border-radius: 3px;
+}
+
+.pagination .page-link:hover, .pagination .page-link:focus {
+    text-decoration: none;
+}
+
+.list-group, .alert {
+    font-weight: 300;
+}
+
+.alert .alert-link {
+    text-decoration: underline;
+}
+
+.popover-header {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}

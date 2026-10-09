@@ -208,3 +208,81 @@ h5, .h5 {
 h6, .h6 {
   font-size: 0.75rem;
 }
+
+:root {
+    --bs-border-width: 0;
+}
+
+body {
+    letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.card, .list-group-item {
+    --bs-heading-color: inherit;
+}
+
+.navbar {
+    font-size: .875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    margin-right: 2rem;
+}
+
+.navbar .nav-item {
+    margin-right: 2rem;
+}
+
+.btn-sm {
+    --bs-btn-font-size: 10px;
+}
+
+.btn-solid.theme-primary {
+    --bs-btn-hover-bg: #000;
+    --bs-btn-hover-border-color: #000;
+    --bs-btn-active-bg: #000;
+    --bs-btn-active-border-color: #000;
+}
+
+.btn-outline[class*="theme-"] {
+    border-width: 2px;
+}
+
+.text-secondary {
+    color: var(--bs-fg-body) !important;
+}
+
+th {
+    font-size: .875rem;
+    text-transform: uppercase;
+}
+
+.table {
+    --bs-table-cell-padding-y: 1.5rem;
+    --bs-table-cell-padding-x: 1.5rem;
+}
+
+.dropdown-menu {
+    font-size: .875rem;
+    text-transform: none;
+}
+
+.badge {
+    padding-top: .28rem;
+}
+
+.modal-dialog {
+    box-shadow: var(--bs-box-shadow);
+}
+
+.popover {
+    --bs-popover-border-color: transparent;
+    box-shadow: var(--bs-box-shadow);
+}
