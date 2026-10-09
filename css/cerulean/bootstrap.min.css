@@ -114,6 +114,18 @@
     --bs-link-color: #2fa4e7;
 }
 
+:root {
+    --bs-inverse-base: #343a40;
+    --bs-inverse-bg: light-dark(#343a40, #f8f9fa);
+    --bs-inverse-fg: light-dark(#343a40, #f8f9fa);
+    --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, light-dark(black, white));
+    --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, var(--bs-bg-body));
+    --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, var(--bs-bg-body));
+    --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
+    --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
+    --bs-inverse-contrast: light-dark(#fff, #212529);
+}
+
 
 .btn-solid[class*="theme-"] {
     background-image: linear-gradient(
@@ -134,34 +146,34 @@
 .btn-solid[class*="theme-"]:active,
 .btn-solid[class*="theme-"].active {
     background-image: linear-gradient(
-        color-mix(in srgb, black 12%, var(--bs-theme-subtle)),
-        color-mix(in srgb, black 12%, var(--bs-theme-subtle)) 60%,
-        color-mix(in srgb, black 18%, var(--bs-theme-subtle))
+        color-mix(in srgb, black 12%, var(--bs-theme-bg)),
+        color-mix(in srgb, black 12%, var(--bs-theme-bg)) 60%,
+        color-mix(in srgb, black 18%, var(--bs-theme-bg))
     );
 }
 
 .btn-subtle[class*="theme-"] {
     background-image: linear-gradient(
-        color-mix(in srgb, white 20%, var(--bs-theme-subtle)),
-        var(--bs-theme-subtle) 60%,
-        color-mix(in srgb, black 8%, var(--bs-theme-subtle))
+        color-mix(in srgb, white 20%, var(--bs-theme-bg-subtle)),
+        var(--bs-theme-bg-subtle) 60%,
+        color-mix(in srgb, black 8%, var(--bs-theme-bg-subtle))
     );
 }
 
 .btn-subtle[class*="theme-"]:hover {
     background-image: linear-gradient(
-        var(--bs-theme-subtle),
-        color-mix(in srgb, black 4%, var(--bs-theme-subtle)) 60%,
-        color-mix(in srgb, black 12%, var(--bs-theme-subtle))
+        var(--bs-theme-bg-subtle),
+        color-mix(in srgb, black 4%, var(--bs-theme-bg-subtle)) 60%,
+        color-mix(in srgb, black 12%, var(--bs-theme-bg-subtle))
     );
 }
 
 .btn-subtle[class*="theme-"]:active,
 .btn-subtle[class*="theme-"].active {
     background-image: linear-gradient(
-        color-mix(in srgb, black 12%, var(--bs-theme-subtle)),
-        color-mix(in srgb, black 12%, var(--bs-theme-subtle)) 60%,
-        color-mix(in srgb, black 18%, var(--bs-theme-subtle))
+        color-mix(in srgb, black 12%, var(--bs-theme-bg-subtle)),
+        color-mix(in srgb, black 12%, var(--bs-theme-bg-subtle)) 60%,
+        color-mix(in srgb, black 18%, var(--bs-theme-bg-subtle))
     );
 }
 
@@ -243,4 +255,20 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
+}
+
+.navbar-brand, .nav-link, .btn {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .05);
+}
+
+.btn-solid.theme-secondary, .btn-outline.theme-secondary {
+    --bs-btn-color: #495057;
+}
+
+.text-secondary {
+    color: #adb5bd !important;
+}
+
+.dropdown-header {
+    color: #868e96;
 }

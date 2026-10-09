@@ -117,6 +117,18 @@
     --bs-link-color: #93c54b;
 }
 
+:root {
+    --bs-inverse-base: #3e3f3a;
+    --bs-inverse-bg: light-dark(#3e3f3a, #f8f5f0);
+    --bs-inverse-fg: light-dark(#3e3f3a, #f8f5f0);
+    --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, light-dark(black, white));
+    --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, var(--bs-bg-body));
+    --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, var(--bs-bg-body));
+    --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
+    --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
+    --bs-inverse-contrast: light-dark(#fff, #212529);
+}
+
 .breadcrumb, .btn, .nav-link, .pagination, .tooltip {
     font-size: 13px;
     font-weight: 500;
@@ -184,4 +196,77 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
+}
+
+.alert[class*="theme-"] {
+    --bs-theme-bg-subtle: var(--bs-theme-bg);
+    --bs-theme-fg: #fff;
+    --bs-theme-border: transparent;
+}
+
+.alert a, .alert .alert-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.pagination a:hover {
+    text-decoration: none;
+}
+
+.dropdown-item {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.navbar .form-control {
+    border: none;
+}
+
+.btn:hover {
+    border-color: transparent;
+}
+
+.btn-solid.theme-success, .btn-solid.theme-warning {
+    --bs-btn-color: #fff;
+}
+
+.form-control, .form-control:focus {
+    box-shadow: none;
+}
+
+.nav-tabs .nav-link {
+    background-color: #f8f5f0;
+    border-color: #dfd7ca;
+}
+
+.nav-tabs .nav-link, .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    color: #8e8c84;
+}
+
+.nav-tabs .nav-link.disabled {
+    color: #dfd7ca;
+    background-color: #f8f5f0;
+    border-color: #dfd7ca;
+}
+
+.nav-pills .nav-link {
+    color: #8e8c84;
+    border: 1px solid transparent;
+}
+
+.nav-pills .nav-link.active, .nav-pills .nav-link:hover, .nav-pills .nav-link:focus {
+    background-color: #f8f5f0;
+    border-color: #dfd7ca;
+}
+
+.nav-pills .nav-link.disabled {
+    color: #dfd7ca;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.breadcrumb {
+    border: 1px solid #dfd7ca;
 }

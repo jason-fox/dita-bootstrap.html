@@ -115,6 +115,18 @@
     --bs-link-color: #4582ec;
 }
 
+:root {
+    --bs-inverse-base: #343a40;
+    --bs-inverse-bg: light-dark(#343a40, #f8f9fa);
+    --bs-inverse-fg: light-dark(#343a40, #f8f9fa);
+    --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, light-dark(black, white));
+    --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, var(--bs-bg-body));
+    --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, var(--bs-bg-body));
+    --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
+    --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
+    --bs-inverse-contrast: light-dark(#fff, #212529);
+}
+
 .btn, .btn-solid {
     --bs-btn-padding-x: 1.1rem;
     --bs-btn-padding-y: 0.5rem;

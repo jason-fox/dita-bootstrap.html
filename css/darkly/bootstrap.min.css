@@ -117,6 +117,18 @@
     --bs-link-color: #00bc8c;
 }
 
+:root {
+    --bs-inverse-base: #adb5bd;
+    --bs-inverse-bg: #adb5bd;
+    --bs-inverse-fg: #adb5bd;
+    --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, white);
+    --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, var(--bs-bg-body));
+    --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, var(--bs-bg-body));
+    --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
+    --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
+    --bs-inverse-contrast: #212529;
+}
+
 .table {
     --bs-table-border-color: #444;
 }

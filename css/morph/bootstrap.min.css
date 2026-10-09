@@ -117,6 +117,18 @@
     --bs-link-color: #485785;
 }
 
+:root {
+    --bs-inverse-base: #212529;
+    --bs-inverse-bg: light-dark(#212529, #f0f5fa);
+    --bs-inverse-fg: light-dark(#212529, #f0f5fa);
+    --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, light-dark(black, white));
+    --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, var(--bs-bg-body));
+    --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, var(--bs-bg-body));
+    --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
+    --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
+    --bs-inverse-contrast: light-dark(#fff, #212529);
+}
+
 .card, .alert {
     box-shadow: 8px 8px 40px rgba(0, 0, 0, .15),
                 inset 1px 1px 3px rgba(255, 255, 255, .5),

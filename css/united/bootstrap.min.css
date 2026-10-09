@@ -117,6 +117,18 @@
     --bs-link-color: #e95420;
 }
 
+:root {
+    --bs-inverse-base: #772953;
+    --bs-inverse-bg: light-dark(#772953, #e9ecef);
+    --bs-inverse-fg: light-dark(#772953, #e9ecef);
+    --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, light-dark(black, white));
+    --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, var(--bs-bg-body));
+    --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, var(--bs-bg-body));
+    --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
+    --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
+    --bs-inverse-contrast: light-dark(#fff, #212529);
+}
+
 .card {
     --bs-card-cap-bg: color-mix(in srgb, var(--bs-fg-body) 3%, transparent);
 }
