@@ -147,6 +147,8 @@
   --bs-theme-bg-muted: initial;
   --bs-theme-border: initial;
   --bs-theme-contrast: initial;
+  --bs-theme-fg-emphasis: initial;
+  --bs-theme-focus-ring: initial;
 }
 
 .card .card-body pre {
