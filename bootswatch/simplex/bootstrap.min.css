@@ -117,6 +117,18 @@
     --bs-link-color: #d9230f;
 }
 
+:root {
+    --bs-inverse-base: #373a3c;
+    --bs-inverse-bg: light-dark(#373a3c, #fff);
+    --bs-inverse-fg: light-dark(#373a3c, #fff);
+    --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, light-dark(black, white));
+    --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, var(--bs-bg-body));
+    --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, var(--bs-bg-body));
+    --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
+    --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
+    --bs-inverse-contrast: light-dark(#fff, #212529);
+}
+
 .btn-solid[class*="theme-"] {
     background-image: linear-gradient(
         color-mix(in srgb, white 20%, var(--bs-theme-bg)),
@@ -185,4 +197,39 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
+}
+
+.pagination a:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    border: 1px solid color-mix(in srgb, black 13%, var(--bs-navbar-bg));
+}
+
+.navbar.fixed-top {
+    border-width: 0 0 1px;
+}
+
+.btn-solid[class*="theme-"] {
+    border: 1px solid color-mix(in srgb, black 13%, var(--bs-theme-bg));
+}
+
+.btn-outline.theme-secondary {
+    --bs-btn-color: #bbb;
+    --bs-btn-border-color: #bbb;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bbb;
+}
+
+.text-secondary {
+    color: #777 !important;
+}
+
+legend, label {
+    color: var(--bs-heading-color);
+}
+
+.breadcrumb {
+    border: 1px solid #dedede;
 }

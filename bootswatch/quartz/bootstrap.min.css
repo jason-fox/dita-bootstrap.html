@@ -124,6 +124,18 @@
     --bs-link-color: #fff;
 }
 
+:root {
+    --bs-inverse-base: #e9e9e8;
+    --bs-inverse-bg: #e9e9e8;
+    --bs-inverse-fg: #e9e9e8;
+    --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, white);
+    --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, var(--bs-bg-body));
+    --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, var(--bs-bg-body));
+    --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
+    --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
+    --bs-inverse-contrast: #212529;
+}
+
 body {
     background-image: linear-gradient(90deg, #33b7e2, #5e62b0, #dc307c);
     background-attachment: fixed;
