@@ -1,7 +1,5 @@
 html:root,
 html:root[data-bs-theme] {
-  --bs-bg-body: light-dark(#fdf6e3, #002b36);
-  --bs-fg-body: light-dark(#657b83, #839496);
   --prism-maintext: light-dark(#657b83, #839496);
   --prism-background: light-dark(#eee8d5, #073642);
   --prism-text: #93a1a1;
