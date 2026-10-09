@@ -1,0 +1,21 @@
+html:root,
+html:root[data-bs-theme] {
+  color-scheme: dark;
+  --prism-maintext: var(--bs-fg-body);
+  --prism-background: transparent;
+  --prism-text: color-mix(in srgb, var(--bs-gray-500) 40%, white);
+  --prism-punctuation: color-mix(in srgb, var(--bs-gray-500) 40%, white);
+  --prism-namespace: var(--prism-text);
+  --prism-keywords: color-mix(in srgb, var(--bs-accent-base) 70%, black);
+  --prism-strings: color-mix(in srgb, var(--bs-success-base) 45%, black);
+  --prism-symbol: color-mix(in srgb, var(--bs-primary-base) 55%, black);
+  --prism-type: color-mix(in srgb, var(--bs-danger-base) 45%, black);
+  --prism-regex: color-mix(in srgb, var(--bs-warning-base) 45%, black);
+  --prism-deleted: color-mix(in srgb, var(--bs-danger-base) 45%, black);
+  --prism-url: color-mix(in srgb, var(--bs-info-base) 45%, black);
+  --dita-prussian-blue: var(--bs-primary-fg-emphasis);
+  --dita-maroon: var(--bs-danger-fg-emphasis);
+  /* light-mode branch of --bs-accent-fg; the dark branch is too pale on glass */
+  --dita-violet: var(--bs-indigo-600);
+  --bs-code-color: color-mix(in srgb, var(--bs-danger-base) 45%, black);
+}
