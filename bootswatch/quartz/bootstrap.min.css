@@ -333,3 +333,10 @@ body {
 .btn:not(.btn-solid):not(.btn-outline):not(.btn-subtle):not(.btn-text):not(.btn-link):not(.btn-icon) {
     --bs-btn-bg: rgba(0, 0, 0, .25);
 }
+
+.btn-outline {
+    --bs-btn-color: #fff;
+    background-image: var(--quartz-glass-bg);
+    box-shadow: var(--quartz-glass-shadow);
+    backdrop-filter: blur(5px);
+}
