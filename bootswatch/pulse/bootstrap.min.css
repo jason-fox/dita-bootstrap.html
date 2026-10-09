@@ -212,11 +212,11 @@ h6, .h6 {
 }
 
 .btn-solid.theme-secondary {
-    --bs-btn-bg: #fff;
-    --bs-btn-color: #17141f;
+    --bs-btn-bg: light-dark(#fff, var(--bs-bg-2));
+    --bs-btn-color: light-dark(#17141f, var(--bs-fg-body));
     --bs-btn-border-color: #ccc;
-    --bs-btn-hover-bg: #ededed;
-    --bs-btn-hover-color: #17141f;
+    --bs-btn-hover-bg: light-dark(#ededed, var(--bs-bg-3));
+    --bs-btn-hover-color: light-dark(#17141f, var(--bs-fg-body));
     --bs-btn-hover-border-color: #adb5bd;
 }
 
