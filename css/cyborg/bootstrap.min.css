@@ -13,6 +13,8 @@
     --bs-info-base: #9933cc;
     --bs-warning-base: #ff8800;
     --bs-danger-base: #cc0000;
+    --bs-inverse-base: #adafae;
+    --bs-accent-base: var(--bs-indigo-500);
 
     --bs-primary-bg: var(--bs-primary-base);
     --bs-primary-fg: var(--bs-primary-base);
@@ -67,6 +69,25 @@
     --bs-danger-bg-muted: color-mix(in srgb, var(--bs-danger-base) 30%, white);
     --bs-danger-fg-emphasis: color-mix(in srgb, var(--bs-danger-base) 65%, black);
     --bs-danger-focus-ring: color-mix(in oklch, var(--bs-danger-base) 50%, var(--bs-bg-body));
+
+    --bs-accent-bg: var(--bs-indigo-500);
+    --bs-accent-fg: color-mix(in oklch, var(--bs-indigo-400), var(--bs-indigo-300));
+    --bs-accent-fg-emphasis: var(--bs-indigo-300);
+    --bs-accent-bg-subtle: var(--bs-indigo-900);
+    --bs-accent-bg-muted: var(--bs-indigo-800);
+    --bs-accent-border: var(--bs-indigo-600);
+    --bs-accent-focus-ring: color-mix(in oklch, var(--bs-indigo-500) 75%, var(--bs-bg-body));
+    --bs-accent-contrast: #fff;
+
+    --bs-inverse-bg: #adafae;
+    --bs-inverse-fg: #adafae;
+    --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, white);
+    --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, var(--bs-bg-body));
+    --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, var(--bs-bg-body));
+    --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
+    --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
+    --bs-inverse-contrast: #212529;
+
     --bs-bg-body: #060606;
     --bs-fg-body: #adafae;
     --bs-heading-color: #ffffff;
@@ -114,18 +135,6 @@
     --bs-body-font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
     --bs-link-color: #2a9fd6;
-}
-
-:root {
-    --bs-inverse-base: #adafae;
-    --bs-inverse-bg: #adafae;
-    --bs-inverse-fg: #adafae;
-    --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, white);
-    --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, var(--bs-bg-body));
-    --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, var(--bs-bg-body));
-    --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
-    --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
-    --bs-inverse-contrast: #212529;
 }
 
 .btn, .btn-solid {
