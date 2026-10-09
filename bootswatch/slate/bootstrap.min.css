@@ -217,3 +217,96 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
 }
+
+.alert[class*="theme-"] {
+    --bs-theme-bg-subtle: var(--bs-theme-bg);
+    --bs-theme-fg: #fff;
+    --bs-theme-border: transparent;
+}
+
+.alert a, .alert .alert-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.tooltip {
+    --bs-tooltip-bg: var(--bs-bg-3);
+    --bs-tooltip-color: var(--bs-fg-body);
+}
+
+.navbar {
+    border: 1px solid rgba(0, 0, 0, .6);
+}
+
+.navbar.fixed-top {
+    border-width: 0 0 1px;
+}
+
+.navbar.fixed-bottom {
+    border-width: 1px 0 0;
+}
+
+.navbar .nav-link {
+    padding: 1rem;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+    border-left: 1px solid rgba(255, 255, 255, .1);
+}
+
+.navbar-brand {
+    margin-right: 0;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+.btn, .btn-solid {
+    border-color: rgba(0, 0, 0, .6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+.btn-link, .btn-link:hover {
+    border-color: transparent;
+}
+
+legend {
+    color: #fff;
+}
+
+.nav-tabs .nav-link, .nav-pills .nav-link, .pagination .page-link {
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+    background-image: linear-gradient(color-mix(in srgb, white 5%, #3a3f44), #3a3f44 20%, color-mix(in srgb, black 20%, #3a3f44));
+    border: 1px solid rgba(0, 0, 0, .6);
+}
+
+.nav-tabs .nav-link {
+    background-image: linear-gradient(color-mix(in srgb, black 16%, #3a3f44), color-mix(in srgb, black 10%, #3a3f44) 40%, color-mix(in srgb, black 6%, #3a3f44));
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link.active,
+.nav-pills .nav-link, .pagination .page-link {
+    background-image: linear-gradient(color-mix(in srgb, white 5%, #3a3f44), #3a3f44 20%, color-mix(in srgb, black 20%, #3a3f44));
+}
+
+.nav-pills .nav-link:hover, .nav-pills .nav-link.active,
+.pagination .page-link:hover, .pagination .page-item.active .page-link {
+    background-image: linear-gradient(color-mix(in srgb, black 16%, #3a3f44), color-mix(in srgb, black 10%, #3a3f44) 40%, color-mix(in srgb, black 6%, #3a3f44));
+    text-decoration: none;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    background-image: linear-gradient(color-mix(in srgb, white 5%, #3a3f44), #3a3f44 20%, color-mix(in srgb, black 20%, #3a3f44));
+    border: 1px solid rgba(0, 0, 0, .6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+.breadcrumb a, .breadcrumb a:hover {
+    color: #fff;
+}
+
+.list-group-item {
+    color: #fff;
+}
+
+.list-group-item-action:hover {
+    background-color: #23272b;
+}

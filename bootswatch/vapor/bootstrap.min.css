@@ -217,3 +217,85 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
 }
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(#17082e 0%, #1a0933 7%, #1a0933 80%, #0c1f4c 100%);
+    text-shadow: 0 0 1px rgba(50, 251, 226, .3), 0 0 2px rgba(50, 251, 226, .3), 0 0 5px rgba(50, 251, 226, .2);
+}
+
+a, table, .table, .modal, .popover, .toast, .card {
+    text-shadow: 0 0 1px rgba(255, 255, 255, .3), 0 0 2px rgba(255, 255, 255, .3), 0 0 5px rgba(255, 255, 255, .2);
+}
+
+hr {
+    border-top: 1px solid var(--bs-primary-base);
+    box-shadow: 0 0 2px color-mix(in srgb, var(--bs-primary-base) 90%, transparent),
+                0 0 4px color-mix(in srgb, var(--bs-primary-base) 40%, transparent),
+                0 0 1rem color-mix(in srgb, var(--bs-primary-base) 30%, transparent),
+                0 0 4rem color-mix(in srgb, var(--bs-primary-base) 10%, transparent);
+    opacity: 1;
+}
+
+.btn-outline[class*="theme-"] {
+    color: #fff;
+    border-width: 2px;
+    box-shadow: 0 0 2px color-mix(in srgb, var(--bs-theme-bg) 90%, transparent),
+                0 0 4px color-mix(in srgb, var(--bs-theme-bg) 40%, transparent),
+                0 0 1rem color-mix(in srgb, var(--bs-theme-bg) 30%, transparent),
+                0 0 4rem color-mix(in srgb, var(--bs-theme-bg) 10%, transparent);
+}
+
+.navbar {
+    text-shadow: 0 0 1px rgba(255, 255, 255, .3), 0 0 2px rgba(255, 255, 255, .3), 0 0 5px rgba(255, 255, 255, .2);
+}
+
+.navbar-brand {
+    text-shadow: 0 0 1px rgba(255, 255, 255, .6), 0 0 3px rgba(255, 255, 255, .5), 0 0 .5rem rgba(255, 255, 255, .3), 0 0 2rem rgba(255, 255, 255, .2);
+}
+
+.nav-tabs .nav-link.active {
+    text-shadow: 0 0 1px color-mix(in srgb, var(--bs-primary-base) 30%, transparent), 0 0 2px color-mix(in srgb, var(--bs-primary-base) 30%, transparent), 0 0 5px color-mix(in srgb, var(--bs-primary-base) 20%, transparent);
+}
+
+.nav-pills .nav-link.active, .page-item.active .page-link {
+    box-shadow: 0 0 2px color-mix(in srgb, var(--bs-primary-base) 90%, transparent),
+                0 0 4px color-mix(in srgb, var(--bs-primary-base) 40%, transparent),
+                0 0 1rem color-mix(in srgb, var(--bs-primary-base) 30%, transparent),
+                0 0 4rem color-mix(in srgb, var(--bs-primary-base) 10%, transparent);
+}
+
+.page-link {
+    border-radius: var(--bs-border-radius);
+}
+
+legend {
+    text-shadow: 0 0 1px rgba(50, 251, 226, .6), 0 0 3px rgba(50, 251, 226, .5), 0 0 .5rem rgba(50, 251, 226, .3), 0 0 2rem rgba(50, 251, 226, .2);
+}
+
+.progress {
+    overflow: visible;
+}
+
+.progress-bar {
+    box-shadow: 0 0 2px color-mix(in srgb, var(--bs-primary-base) 90%, transparent),
+                0 0 4px color-mix(in srgb, var(--bs-primary-base) 40%, transparent),
+                0 0 1rem color-mix(in srgb, var(--bs-primary-base) 30%, transparent),
+                0 0 4rem color-mix(in srgb, var(--bs-primary-base) 10%, transparent);
+}
+
+.tooltip-inner, .popover, .toast, .modal-content {
+    box-shadow: 0 0 2rem color-mix(in srgb, var(--bs-primary-base) 40%, transparent),
+                0 0 8rem color-mix(in srgb, var(--bs-primary-base) 30%, transparent);
+}
+
+.card {
+    background-color: transparent;
+}
+
+.card[class*="theme-"] {
+    box-shadow: 0 0 2px color-mix(in srgb, var(--bs-theme-bg) 90%, transparent),
+                0 0 4px color-mix(in srgb, var(--bs-theme-bg) 40%, transparent),
+                0 0 1rem color-mix(in srgb, var(--bs-theme-bg) 30%, transparent),
+                0 0 4rem color-mix(in srgb, var(--bs-theme-bg) 10%, transparent);
+}
