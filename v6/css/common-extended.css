@@ -7,7 +7,7 @@
 :root {
   --dita-prussian-blue: var(--bs-primary-fg-emphasis);
   --dita-maroon: var(--bs-danger-fg-emphasis);
-  --dita-violet: var(--bs-purple-400);
+  --dita-violet: var(--bs-accent-fg);
   --bs-code-color: rgb(from var(--bs-danger-base) r g calc(b + 63));
 }
 
@@ -15,12 +15,6 @@
  *  This file is part of the DITA Bootstrap plug-in for DITA Open Toolkit.
  *  See the accompanying LICENSE file for applicable licenses.
  */
-
-.list-group-item.active,
-.nav-link.active,
-[data-bs-theme='dark'] {
-  --dita-violet: color-mix(in oklch, var(--bs-purple-400), var(--bs-white) 30%);
-}
 
 .list-group-item {
   border-radius: 0;
@@ -49,16 +43,6 @@
 
 [data-bs-theme='dark'] .d-auto {
   display: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --dita-violet: color-mix(in oklch, var(--bs-purple-400), var(--bs-white) 30%);
-  }
-
-  [data-bs-theme='light'] {
-    --dita-violet: var(--bs-purple-400);
-  }
 }
 
 .syntaxdiagram {
@@ -109,11 +93,11 @@
 }
 
 .boolean {
-  color: var(--bs-green-400);
+  color: var(--bs-success-fg);
 }
 
 .state {
-  color: var(--bs-red-400);
+  color: var(--bs-danger-fg);
 }
 
 .bs-container {
