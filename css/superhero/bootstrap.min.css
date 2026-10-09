@@ -264,3 +264,11 @@ h6, .h6 {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+.alert.theme-inverse {
+    --bs-theme-fg: var(--bs-theme-contrast);
+}
+
+.alert.theme-inverse a, .alert.theme-inverse .alert-link {
+    color: var(--bs-theme-contrast);
+}

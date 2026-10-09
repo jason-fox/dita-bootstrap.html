@@ -113,7 +113,7 @@
     --bs-gray-400: color-mix(in srgb, white 20%, var(--bs-gray-500));
     --bs-body-font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-    --bs-heading-color: var(--bs-primary-fg);
+    --bs-heading-color: light-dark(var(--bs-primary-fg), color-mix(in srgb, var(--bs-primary-fg) 60%, white));
     --bs-link-color: #3459e6;
 }
 
@@ -272,4 +272,8 @@ thead th {
 
 .modal-footer {
     background-color: var(--bs-bg-2);
+}
+
+[data-bs-theme="dark"] .btn-outline.theme-secondary {
+    --bs-btn-color: var(--bs-fg-body);
 }

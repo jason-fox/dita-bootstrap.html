@@ -314,8 +314,9 @@ a {
 }
 
 .btn-outline.theme-inverse {
-    --bs-btn-color: #fff;
-    --bs-btn-hover-color: #fff;
+    --bs-btn-color: var(--bs-theme-contrast);
+    --bs-btn-hover-color: var(--bs-theme-contrast);
+    color: var(--bs-theme-contrast);
 }
 
 .btn-link, .btn-link:hover {
@@ -371,11 +372,11 @@ a {
 }
 
 .alert.theme-inverse {
-    --bs-theme-fg: #fff;
+    --bs-theme-fg: var(--bs-theme-contrast);
 }
 
 .alert.theme-inverse a, .alert.theme-inverse .alert-link {
-    color: #fff;
+    color: var(--bs-theme-contrast);
 }
 
 .nav:not(.nav-tabs):not(.nav-pills) .nav-link.active {
@@ -416,4 +417,24 @@ a {
 [data-bs-theme="dark"] .nav .nav-link, [data-bs-theme="dark"] .page-link,
 [data-bs-theme="dark"] .breadcrumb a, [data-bs-theme="dark"] .breadcrumb-item.active {
     color: #fff;
+}
+
+.badge {
+    --bs-badge-font-weight: 700;
+    --bs-badge-border-width: 2px;
+    --bs-badge-border-color: #000;
+}
+
+.badge.badge-subtle {
+    --bs-badge-border-color: #000;
+}
+
+.badge.badge-outline {
+    --bs-badge-border-color: var(--bs-theme-border);
+}
+
+.btn, .btn-solid {
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-font-size: 0.875rem;
 }

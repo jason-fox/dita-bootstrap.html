@@ -69,7 +69,7 @@
     --bs-danger-focus-ring: color-mix(in oklch, var(--bs-danger-base) 50%, var(--bs-bg-body));
     --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
     --bs-fg-body: light-dark(#888888, var(--bs-gray-050));
-    --bs-heading-color: #5a5a5a;
+    --bs-heading-color: light-dark(#5a5a5a, var(--bs-fg-body));
 
 
     --bs-navbar-bg: var(--bs-primary-base);
@@ -210,7 +210,7 @@ h6, .h6 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.btn-solid[class*="theme-"], .btn-solid[class*="theme-"]:hover {
+.btn-solid[class*="theme-"]:not(.theme-inverse), .btn-solid[class*="theme-"]:not(.theme-inverse):hover {
     --bs-btn-color: #fff;
 }
 
@@ -227,7 +227,7 @@ h6, .h6 {
     color: #fff;
 }
 
-.badge {
+.badge[class*="theme-"]:not(.badge-subtle):not(.badge-outline) {
     color: #fff;
 }
 

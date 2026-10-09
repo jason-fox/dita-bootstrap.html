@@ -310,3 +310,15 @@ legend {
 .list-group-item-action:hover {
     background-color: #23272b;
 }
+
+.btn-outline.theme-primary, .btn-text.theme-primary {
+    --bs-btn-color: #fff;
+}
+
+.alert.theme-inverse {
+    --bs-theme-fg: var(--bs-theme-contrast);
+}
+
+.alert.theme-inverse a, .alert.theme-inverse .alert-link {
+    color: var(--bs-theme-contrast);
+}

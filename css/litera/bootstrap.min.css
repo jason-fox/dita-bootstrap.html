@@ -245,3 +245,11 @@ blockquote {
 .navbar, footer, table, .table, .nav, .breadcrumb, .pagination, .dropdown-menu, .list-group {
     font-size: .875rem;
 }
+
+.alert.theme-inverse {
+    --bs-theme-fg: var(--bs-theme-contrast);
+}
+
+.alert.theme-inverse a, .alert.theme-inverse .alert-link {
+    color: var(--bs-theme-contrast);
+}

@@ -399,11 +399,11 @@ p {
 }
 
 .alert.theme-secondary {
-    --bs-theme-fg: var(--bs-fg-body);
+    --bs-theme-fg: var(--bs-theme-contrast);
 }
 
 .alert.theme-secondary a:not(.btn), .alert.theme-secondary .alert-link {
-    color: var(--bs-fg-body);
+    color: var(--bs-theme-contrast);
 }
 
 .card {
@@ -431,4 +431,12 @@ p {
 .carousel-caption h1, .carousel-caption h2, .carousel-caption h3,
 .carousel-caption h4, .carousel-caption h5, .carousel-caption h6 {
     color: inherit;
+}
+
+.alert.theme-inverse {
+    --bs-theme-fg: var(--bs-theme-contrast);
+}
+
+.alert.theme-inverse a, .alert.theme-inverse .alert-link {
+    color: var(--bs-theme-contrast);
 }
