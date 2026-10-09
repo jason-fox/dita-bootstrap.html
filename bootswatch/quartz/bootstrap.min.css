@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/dist/css/bootstrap.min.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css');
 /*
  * Quartz theme for Bootstrap v6
  * Ported from Bootswatch Quartz 5.3.8 (https://bootswatch.com/quartz/)
@@ -334,9 +334,11 @@ body {
     --bs-btn-bg: rgba(0, 0, 0, .25);
 }
 
-.btn-outline {
-    --bs-btn-color: #fff;
-    background-image: var(--quartz-glass-bg);
-    box-shadow: var(--quartz-glass-shadow);
+.btn-outline, .badge-outline {
+    background-image: linear-gradient(125deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, .04) 70%);
     backdrop-filter: blur(5px);
+}
+
+.btn-outline {
+    box-shadow: inset 1px 1px rgba(255, 255, 255, .2), inset -1px -1px rgba(255, 255, 255, .05);
 }
