@@ -1,7 +1,9 @@
 html:root,
 html:root[data-bs-theme] {
-  --prism-maintext: #839496;
-  --prism-background: #073642;
+  --bs-bg-body: light-dark(#fdf6e3, #002b36);
+  --bs-fg-body: light-dark(#657b83, #839496);
+  --prism-maintext: light-dark(#657b83, #839496);
+  --prism-background: light-dark(#eee8d5, #073642);
   --prism-text: #93a1a1;
   --prism-punctuation: #586e75;
   --prism-namespace: var(--prism-text);
@@ -12,9 +14,9 @@ html:root[data-bs-theme] {
   --prism-regex: #cb4b16;
   --prism-deleted: #dc322f;
   --prism-url: #6c71c4;
-  --dita-prussian-blue: #6a91cf;
-  --dita-violet: #cc99cd;
-  --dita-maroon: #ff7676;
+  --dita-prussian-blue: light-dark(var(--bs-primary-fg-emphasis), #6a91cf);
+  --dita-violet: light-dark(var(--bs-accent-fg), #cc99cd);
+  --dita-maroon: light-dark(var(--bs-danger-fg-emphasis), #ff7676);
 }
 
 .card:has(pre[class*="language-"]) {
