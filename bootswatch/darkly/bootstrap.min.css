@@ -229,3 +229,11 @@ h6, .h6 {
 .breadcrumb a {
     color: #fff;
 }
+
+.alert.theme-inverse {
+    --bs-theme-fg: var(--bs-theme-contrast);
+}
+
+.alert.theme-inverse a, .alert.theme-inverse .alert-link {
+    color: var(--bs-theme-contrast);
+}

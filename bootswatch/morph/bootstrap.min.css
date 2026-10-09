@@ -113,7 +113,7 @@
     --bs-gray-400: color-mix(in srgb, white 20%, var(--bs-gray-500));
     --bs-body-font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-    --bs-heading-color: #485785;
+    --bs-heading-color: light-dark(#485785, var(--bs-fg-body));
     --bs-link-color: #485785;
 }
 
@@ -268,9 +268,9 @@ h6, .h6 {
 }
 
 .btn-outline.theme-secondary {
-    --bs-btn-color: var(--morph-text);
-    --bs-btn-hover-color: var(--morph-text);
-    color: var(--morph-text);
+    --bs-btn-color: #7b8ab8;
+    --bs-btn-hover-color: #7b8ab8;
+    color: #7b8ab8;
 }
 
 .btn-group, .btn-group-vertical {
@@ -385,4 +385,14 @@ h6, .h6 {
 .alert[class*="theme-"] {
     --bs-theme-bg-subtle: color-mix(in srgb, var(--bs-theme-bg) 75%, transparent);
     --bs-theme-fg: var(--bs-theme-fg-emphasis);
+}
+
+.btn-outline.theme-inverse {
+    --bs-btn-color: var(--bs-theme-contrast);
+    --bs-btn-hover-color: var(--bs-theme-contrast);
+    color: var(--bs-theme-contrast);
+}
+
+.alert.theme-secondary, .alert.theme-inverse {
+    --bs-theme-fg: var(--bs-theme-contrast);
 }

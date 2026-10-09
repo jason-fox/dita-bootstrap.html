@@ -210,3 +210,11 @@ h6, .h6 {
     --bs-tooltip-bg: var(--bs-bg-3);
     --bs-tooltip-color: var(--bs-fg-body);
 }
+
+.alert.theme-inverse {
+    --bs-theme-fg: var(--bs-theme-contrast);
+}
+
+.alert.theme-inverse a, .alert.theme-inverse .alert-link {
+    color: var(--bs-theme-contrast);
+}

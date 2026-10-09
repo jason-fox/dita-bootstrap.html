@@ -313,3 +313,19 @@ h6, .h6 {
 .btn-close:hover, .btn-close:focus {
     opacity: 1;
 }
+
+.alert.theme-inverse {
+    --bs-theme-fg: var(--bs-theme-contrast);
+}
+
+.alert.theme-inverse a, .alert.theme-inverse .alert-link {
+    color: var(--bs-theme-contrast);
+}
+
+.alert.theme-secondary {
+    --bs-theme-fg: var(--bs-theme-contrast);
+}
+
+.alert.theme-secondary a, .alert.theme-secondary .alert-link {
+    color: var(--bs-theme-contrast);
+}

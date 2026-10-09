@@ -270,3 +270,11 @@ h6, .h6 {
 .breadcrumb {
     border: 1px solid #dfd7ca;
 }
+
+.alert.theme-inverse {
+    --bs-theme-fg: var(--bs-theme-contrast);
+}
+
+.alert.theme-inverse a, .alert.theme-inverse .alert-link {
+    color: var(--bs-theme-contrast);
+}

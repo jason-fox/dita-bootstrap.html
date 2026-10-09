@@ -69,7 +69,7 @@
     --bs-danger-focus-ring: color-mix(in oklch, var(--bs-danger-base) 50%, var(--bs-bg-body));
     --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
     --bs-fg-body: light-dark(#55595c, var(--bs-gray-050));
-    --bs-heading-color: #1a1a1a;
+    --bs-heading-color: light-dark(#1a1a1a, var(--bs-fg-body));
 
 
     --bs-navbar-bg: var(--bs-primary-base);
@@ -285,4 +285,9 @@ th {
 .popover {
     --bs-popover-border-color: transparent;
     box-shadow: var(--bs-box-shadow);
+}
+
+[data-bs-theme="dark"] .btn-outline.theme-primary, [data-bs-theme="dark"] .btn-text.theme-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #000;
 }
