@@ -237,7 +237,7 @@ h6, .h6 {
 }
 
 .nav-tabs .nav-link {
-    background-color: #f8f5f0;
+    background-color: light-dark(#f8f5f0, var(--bs-bg-2));
     border-color: #dfd7ca;
 }
 
@@ -247,7 +247,7 @@ h6, .h6 {
 
 .nav-tabs .nav-link.disabled {
     color: #dfd7ca;
-    background-color: #f8f5f0;
+    background-color: light-dark(#f8f5f0, var(--bs-bg-2));
     border-color: #dfd7ca;
 }
 
@@ -257,7 +257,7 @@ h6, .h6 {
 }
 
 .nav-pills .nav-link.active, .nav-pills .nav-link:hover, .nav-pills .nav-link:focus {
-    background-color: #f8f5f0;
+    background-color: light-dark(#f8f5f0, var(--bs-bg-2));
     border-color: #dfd7ca;
 }
 

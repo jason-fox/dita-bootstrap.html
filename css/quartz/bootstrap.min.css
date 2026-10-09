@@ -168,11 +168,6 @@ body {
     --bs-navbar-nav-link-padding-x: 0.5rem;
 }
 
-.badge {
-    --bs-badge-bg: #575bab;
-}
-
-
 .list-group {
     --bs-list-group-item-padding-x: 2rem;
     --bs-list-group-item-padding-y: 1rem;

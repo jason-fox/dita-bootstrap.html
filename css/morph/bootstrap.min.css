@@ -323,7 +323,7 @@ h6, .h6 {
 }
 
 .input-group {
-    background-color: #f0f5fa;
+    background-color: light-dark(#f0f5fa, var(--bs-bg-2));
     border-radius: var(--bs-border-radius);
     box-shadow: inset 2px 2px 8px rgba(55, 94, 148, .3), inset -3px -2px 5px rgba(255, 255, 255, .8);
 }
@@ -343,7 +343,7 @@ h6, .h6 {
 }
 
 .form-check-input {
-    background-color: #bed1e6;
+    background-color: light-dark(#bed1e6, var(--bs-bg-4));
     border: none;
     box-shadow: inset 1px 1px 7px rgba(0, 0, 0, .2);
 }
