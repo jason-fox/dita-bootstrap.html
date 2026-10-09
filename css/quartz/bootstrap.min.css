@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/dist/css/bootstrap.min.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css');
 /*
  * Quartz theme for Bootstrap v6
  * Ported from Bootswatch Quartz 5.3.8 (https://bootswatch.com/quartz/)
