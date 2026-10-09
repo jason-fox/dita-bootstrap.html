@@ -133,15 +133,6 @@
     --bs-inverse-contrast: light-dark(#fff, #212529);
 }
 
-.alert,
-.card,
-.card-body,
-.list-group,
-.list-group-item,
-.nav-pills .nav-link {
-   border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
-}
-
 .btn, .btn-solid {
     text-decoration: none;
     border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
@@ -212,4 +203,193 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
+}
+
+:root, :root[data-bs-theme] {
+    --bs-border-width: 2px;
+    --bs-border-color: #333;
+}
+
+[data-bs-theme="dark"] {
+    --bs-border-color: #fff;
+}
+
+.navbar {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 25px 25px 55px 5px / 5px 55px 25px 25px;
+}
+
+.navbar.fixed-top {
+    border-width: 0 0 2px;
+    border-radius: 0 25px 225px 0 / 25px 0 25px 255px;
+}
+
+.navbar.fixed-bottom {
+    border-width: 2px 0 0;
+    border-radius: 255px 25px 0 25px / 25px 225px 25px 0;
+}
+
+.navbar-brand {
+    font-family: "Cabin Sketch", cursive;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.btn-lg {
+    border-radius: 55px 225px 15px 25px / 25px 25px 35px 355px;
+}
+
+.btn-sm {
+    border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: Neucha, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+b, strong {
+    font-family: "Cabin Sketch", cursive;
+}
+
+blockquote {
+    border-radius: 15px 27px 25px 25px / 25px 25px 305px 635px;
+}
+
+.form-control, .input-group-text, .form-select, input {
+    border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+textarea, textarea.form-control, select, select.form-control {
+    border-radius: 55px 225px 15px 25px / 25px 25px 35px 355px !important;
+}
+
+.form-check-input {
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    overflow: hidden;
+    border-radius: 555px 25px 25px 25px / 25px 25px 25px 555px;
+}
+
+.dropdown-divider {
+    border-top-width: 2px;
+}
+
+.list-group {
+    overflow: hidden;
+    border: 2px solid #333;
+    border-radius: 45px 15px 35px 5px / 15px 5px 15px 65px;
+}
+
+.list-group-item {
+    border-top: 2px solid #333;
+    border-right: none;
+    border-left: none;
+    border-radius: 255px 5px 225px 5px / 25px 225px 25px 255px;
+}
+
+.list-group-item:first-child {
+    border-top: none;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.nav-pills .nav-link {
+    border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.nav-link, .page-link, .list-group-item, .dropdown-item {
+    text-decoration: none;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 45px 15px 225px 5px / 25px 225px 25px 255px;
+}
+
+.breadcrumb {
+    border: 2px solid #333;
+    border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.pagination .page-link {
+    border-radius: 425px 255px 25px 25px / 25px 25px 5px 25px;
+}
+
+.badge {
+    border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.alert {
+    border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.progress {
+    border: 2px solid #333;
+    border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.card {
+    border-radius: 5px 5px 5px 5px / 25px 25px 25px 5px;
+}
+
+.card-header {
+    border-color: inherit;
+    border-bottom-width: 2px;
+}
+
+.card-header:first-child {
+    border-radius: 3px 3px 0 0 / 23px 23px 0 0;
+}
+
+.card-footer {
+    border-top-width: 2px;
+}
+
+.toast {
+    border-radius: 10px 10px 15px 5px / 5px 15px 5px 15px;
+}
+
+.toast-header {
+    font-family: "Cabin Sketch", cursive;
+}
+
+.modal-content {
+    border-radius: 15px 5px 5px 25px / 5px 25px 25px 5px;
+}
+
+.popover {
+    padding: 0;
+    border-radius: 45px 85px 15px 25px / 15px 10px 35px 555px;
+}
+
+.popover-header {
+    border-bottom: 2px solid #333;
+}
+
+.tooltip-inner {
+    border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+pre {
+    border: 2px solid #333;
+    border-radius: 15px 5px 5px 25px / 5px 25px 25px 5px;
+}
+
+.btn-close {
+    background-image: none;
+}
+
+.btn-close::before {
+    position: absolute;
+    top: .8rem;
+    right: 1rem;
+    content: "X";
+}
+
+.img-thumbnail {
+    border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
 }
