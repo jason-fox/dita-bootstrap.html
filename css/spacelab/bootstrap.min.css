@@ -192,3 +192,28 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
 }
+
+.btn-solid[class*="theme-"] {
+    background-image: linear-gradient(
+        color-mix(in srgb, white 24%, var(--bs-btn-bg)),
+        var(--bs-btn-bg) 50%,
+        color-mix(in srgb, black 8%, var(--bs-btn-bg))
+    );
+    border: 1px solid color-mix(in srgb, black 20%, var(--bs-btn-bg));
+}
+
+.btn-solid[class*="theme-"]:not(.disabled):hover {
+    background-image: linear-gradient(
+        color-mix(in srgb, white 24%, color-mix(in srgb, black 8%, var(--bs-btn-bg))),
+        color-mix(in srgb, black 8%, var(--bs-btn-bg)) 50%,
+        color-mix(in srgb, black 14%, var(--bs-btn-bg))
+    );
+}
+
+.navbar .nav-link, .navbar-brand {
+    transition: color ease-in-out .2s;
+}
+
+.card, .list-group-item {
+    --bs-heading-color: inherit;
+}

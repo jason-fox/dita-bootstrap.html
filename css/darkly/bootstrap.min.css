@@ -183,3 +183,37 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
 }
+
+.alert[class*="theme-"] {
+    --bs-theme-bg-subtle: var(--bs-theme-bg);
+    --bs-theme-fg: #fff;
+    --bs-theme-border: transparent;
+}
+
+.alert a, .alert .alert-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.pagination a:hover {
+    text-decoration: none;
+}
+
+.tooltip {
+    --bs-tooltip-bg: var(--bs-bg-3);
+    --bs-tooltip-color: var(--bs-fg-body);
+}
+
+.blockquote-footer {
+    color: #888;
+}
+
+.form-floating > label,
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: #888;
+}
+
+.breadcrumb a {
+    color: #fff;
+}

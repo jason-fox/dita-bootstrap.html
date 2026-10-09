@@ -199,29 +199,23 @@ body {
     left: 0;
     width: .5rem;
     height: 100%;
-    background-color: var(--bs-secondary-base);
+    background-color: var(--bs-theme-base, var(--bs-secondary-base));
 }
 
-.alert-primary::after { background-color: var(--bs-primary-base); }
-.alert-success::after { background-color: var(--bs-success-base); }
-.alert-info::after { background-color: var(--bs-info-base); }
-.alert-warning::after { background-color: var(--bs-warning-base); }
-.alert-danger::after { background-color: var(--bs-danger-base); }
-.alert-light::after { background-color: var(--bs-light); }
-.alert-dark::after { background-color: var(--bs-dark); }
+.alert[class*="theme-"] {
+    --bs-theme-bg-subtle: transparent;
+    --bs-theme-fg: #fff;
+    --bs-theme-border: transparent;
+}
 
 .card-header {
     font-weight: 700;
     background: transparent;
 }
 
-.btn-secondary {
-    color: #fff;
+.btn-solid.theme-secondary {
+    --bs-btn-color: #fff;
     border: none;
-}
-
-.badge.bg-secondary {
-    --bs-bg-opacity: .4;
 }
 
 .text-muted {
@@ -294,6 +288,7 @@ body {
 
 .nav-pills {
     --bs-nav-pills-border-radius: 50rem;
+    --bs-nav-pills-link-border-radius: 50rem;
 }
 
 .nav-pills .nav-link {
@@ -305,16 +300,8 @@ body {
     --bs-pagination-border-width: 0;
     --bs-pagination-hover-bg: rgba(255, 255, 255, .4);
     --bs-pagination-hover-color: #fff;
-    --bs-pagination-focus-bg: rgba(255, 255, 255, .4);
-    --bs-pagination-focus-color: #fff;
-    --bs-pagination-focus-box-shadow: none;
     --bs-pagination-disabled-bg: rgba(255, 255, 255, .3);
     --bs-pagination-disabled-color: var(--bs-text-muted);
-}
-
-.dropdown-menu {
-    --bs-dropdown-link-hover-bg: rgba(255, 255, 255, .4);
-    --bs-dropdown-link-hover-color: #fff;
 }
 
 .list-group {

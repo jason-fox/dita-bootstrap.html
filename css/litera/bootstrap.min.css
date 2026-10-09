@@ -196,3 +196,40 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1.1rem;
 }
+
+.alert[class*="theme-"] {
+    --bs-theme-bg-subtle: var(--bs-theme-bg);
+    --bs-theme-fg: #fff;
+    --bs-theme-border: transparent;
+}
+
+.alert a, .alert .alert-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.alert {
+    font-size: .875rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+.alert a, .alert .alert-link {
+    font-weight: 400;
+}
+
+p {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.lead {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    color: #868e96;
+}
+
+.navbar, footer, table, .table, .nav, .breadcrumb, .pagination, .dropdown-menu, .list-group {
+    font-size: .875rem;
+}

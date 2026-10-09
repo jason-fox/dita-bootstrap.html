@@ -179,3 +179,18 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
 }
+
+.alert[class*="theme-"] {
+    --bs-theme-bg-subtle: var(--bs-theme-bg);
+    --bs-theme-fg: #fff;
+    --bs-theme-border: transparent;
+}
+
+.alert a, .alert .alert-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.pagination a:hover {
+    text-decoration: none;
+}
