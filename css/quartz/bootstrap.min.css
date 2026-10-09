@@ -330,6 +330,6 @@ body {
     --bs-accordion-active-color: #fff;
 }
 
-pre.codeblock {
-    background-color: rgba(0, 0, 0, .5);
+.btn:not(.btn-solid):not(.btn-outline):not(.btn-subtle):not(.btn-text):not(.btn-link):not(.btn-icon) {
+    --bs-btn-bg: rgba(0, 0, 0, .25);
 }
