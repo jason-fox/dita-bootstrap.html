@@ -317,3 +317,7 @@ body {
     --bs-accordion-active-bg: var(--bs-primary-base);
     --bs-accordion-active-color: #fff;
 }
+
+pre.codeblock {
+    background-color: rgba(0, 0, 0, .5);
+}

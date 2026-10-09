@@ -1,34 +1,22 @@
-html:root {
+html:root,
+html:root[data-bs-theme] {
+  color-scheme: dark;
   --prism-maintext: var(--bs-fg-body);
   --prism-background: transparent;
-  --prism-text: var(--bs-gray-500);
-  --prism-punctuation: var(--bs-gray-500);
+  --prism-text: color-mix(in srgb, var(--bs-gray-500) 60%, white);
+  --prism-punctuation: color-mix(in srgb, var(--bs-gray-500) 60%, white);
   --prism-namespace: var(--prism-text);
-  --prism-keywords: var(--bs-blue-500);
-  --prism-strings: var(--bs-green-500);
-  --prism-symbol: var(--bs-pink-500);
-  --prism-type: var(--bs-red-500);
-  --prism-regex: var(--bs-orange-500);
-  --prism-deleted: var(--bs-red-500);
-  --prism-url: var(--bs-yellow-500);
+  --prism-keywords: color-mix(in srgb, var(--bs-blue-500) 50%, white);
+  --prism-strings: color-mix(in srgb, var(--bs-green-500) 50%, white);
+  --prism-symbol: color-mix(in srgb, var(--bs-pink-500) 50%, white);
+  --prism-type: color-mix(in srgb, var(--bs-red-500) 50%, white);
+  --prism-regex: color-mix(in srgb, var(--bs-orange-500) 50%, white);
+  --prism-deleted: color-mix(in srgb, var(--bs-red-500) 50%, white);
+  --prism-url: color-mix(in srgb, var(--bs-yellow-500) 50%, white);
   --dita-prussian-blue: #6a91cf;
   --dita-violet: #cc99cd;
   --dita-maroon: #ff7676;
   --bs-code-color: rgb(from var(--bs-danger-base) r g calc(b + 63));
-}
-
-[data-bs-theme='dark'] {
-  --prism-keywords: var(--dita-prussian-blue);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --prism-keywords: var(--dita-prussian-blue);
-  }
-
-  [data-bs-theme='light'] {
-    --prism-keywords: var(--bs-blue-500);
-  }
 }
 
 code[class*="language-"],
