@@ -79,8 +79,8 @@
     --bs-accent-focus-ring: color-mix(in oklch, var(--bs-accent-base) 50%, var(--bs-bg-body));
     --bs-accent-contrast: #fff;
 
-    --bs-inverse-bg: light-dark(#212529, #f0f5fa);
-    --bs-inverse-fg: light-dark(#212529, #f0f5fa);
+    --bs-inverse-bg: light-dark(#212529, color-mix(in srgb, var(--bs-secondary-base) 65%, black));
+    --bs-inverse-fg: light-dark(#212529, color-mix(in srgb, var(--bs-secondary-base) 65%, black));
     --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, light-dark(black, white));
     --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, light-dark(white, var(--bs-bg-body)));
     --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, light-dark(white, var(--bs-bg-body)));
