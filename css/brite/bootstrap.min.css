@@ -76,7 +76,7 @@
     --bs-accent-bg-muted: color-mix(in srgb, var(--bs-accent-base) 30%, light-dark(white, var(--bs-bg-body)));
     --bs-accent-border: var(--bs-accent-base);
     --bs-accent-focus-ring: color-mix(in oklch, var(--bs-accent-base) 50%, var(--bs-bg-body));
-    --bs-accent-contrast: #fff;
+    --bs-accent-contrast: #000;
 
     --bs-inverse-bg: light-dark(#000, #e9ecef);
     --bs-inverse-fg: light-dark(#000, #e9ecef);
