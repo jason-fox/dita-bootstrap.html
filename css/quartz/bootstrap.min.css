@@ -12,7 +12,7 @@
     --bs-info-base: #39cbfb;
     --bs-warning-base: #ffc107;
     --bs-danger-base: #fd7e14;
-    --bs-inverse-base: #e9e9e8;
+    --bs-inverse-base: rgba(255, 255, 255, .6);
     --bs-accent-base: #da8df1;
 
     --bs-primary-bg: var(--bs-primary-base);
@@ -78,7 +78,7 @@
     --bs-accent-focus-ring: color-mix(in oklch, var(--bs-accent-base) 50%, var(--bs-bg-body));
     --bs-accent-contrast: #fff;
 
-    --bs-inverse-bg: #e9e9e8;
+    --bs-inverse-bg: var(--bs-inverse-base);
     --bs-inverse-fg: #000;
     --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, white);
     --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, light-dark(white, var(--bs-bg-body)));
