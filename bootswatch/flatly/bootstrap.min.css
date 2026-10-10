@@ -13,7 +13,7 @@
     --bs-info-base: #3498db;
     --bs-warning-base: #f39c12;
     --bs-danger-base: #e74c3c;
-    --bs-inverse-base: #7b8a8b;
+    --bs-inverse-base: #5f6b6c;
     --bs-accent-base: #8a4546;
 
     --bs-primary-bg: var(--bs-primary-base);
@@ -79,14 +79,14 @@
     --bs-accent-focus-ring: color-mix(in oklch, var(--bs-accent-base) 50%, var(--bs-bg-body));
     --bs-accent-contrast: #fff;
 
-    --bs-inverse-bg: light-dark(#7b8a8b, #ecf0f1);
-    --bs-inverse-fg: light-dark(#7b8a8b, #ecf0f1);
+    --bs-inverse-bg: light-dark(#5f6b6c, #ecf0f1);
+    --bs-inverse-fg: light-dark(#5f6b6c, #ecf0f1);
     --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, light-dark(black, white));
     --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, light-dark(white, var(--bs-bg-body)));
     --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, light-dark(white, var(--bs-bg-body)));
     --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
     --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
-    --bs-inverse-contrast: light-dark(#212529, #212529);
+    --bs-inverse-contrast: light-dark(#fff, #212529);
 
     --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
     --bs-fg-body: light-dark(#212529, var(--bs-gray-050));
