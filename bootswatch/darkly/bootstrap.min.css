@@ -14,7 +14,7 @@
     --bs-warning-base: #f39c12;
     --bs-danger-base: #e74c3c;
     --bs-inverse-base: #adb5bd;
-    --bs-accent-base: var(--bs-indigo-500);
+    --bs-accent-base: #8f535e;
 
     --bs-primary-bg: var(--bs-primary-base);
     --bs-primary-fg: var(--bs-primary-base);
@@ -70,13 +70,13 @@
     --bs-danger-fg-emphasis: color-mix(in srgb, var(--bs-danger-base) 65%, black);
     --bs-danger-focus-ring: color-mix(in oklch, var(--bs-danger-base) 50%, var(--bs-bg-body));
 
-    --bs-accent-bg: var(--bs-indigo-500);
-    --bs-accent-fg: color-mix(in oklch, var(--bs-indigo-400), var(--bs-indigo-300));
-    --bs-accent-fg-emphasis: var(--bs-indigo-300);
-    --bs-accent-bg-subtle: var(--bs-indigo-900);
-    --bs-accent-bg-muted: var(--bs-indigo-800);
-    --bs-accent-border: var(--bs-indigo-600);
-    --bs-accent-focus-ring: color-mix(in oklch, var(--bs-indigo-500) 75%, var(--bs-bg-body));
+    --bs-accent-bg: var(--bs-accent-base);
+    --bs-accent-fg: light-dark(var(--bs-accent-base), color-mix(in srgb, var(--bs-accent-base) 75%, white));
+    --bs-accent-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-accent-base) 65%, black), color-mix(in srgb, var(--bs-accent-base) 50%, white));
+    --bs-accent-bg-subtle: color-mix(in srgb, var(--bs-accent-base) 15%, var(--bs-bg-body));
+    --bs-accent-bg-muted: color-mix(in srgb, var(--bs-accent-base) 30%, var(--bs-bg-body));
+    --bs-accent-border: var(--bs-accent-base);
+    --bs-accent-focus-ring: color-mix(in oklch, var(--bs-accent-base) 50%, var(--bs-bg-body));
     --bs-accent-contrast: #fff;
 
     --bs-inverse-bg: #adb5bd;

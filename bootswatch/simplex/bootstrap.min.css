@@ -13,6 +13,8 @@
     --bs-info-base: #029acf;
     --bs-warning-base: #d9831f;
     --bs-danger-base: #9b479f;
+    --bs-inverse-base: #373a3c;
+    --bs-accent-base: #ba3557;
 
     --bs-primary-bg: var(--bs-primary-base);
     --bs-primary-fg: var(--bs-primary-base);
@@ -67,6 +69,25 @@
     --bs-danger-bg-muted: color-mix(in srgb, var(--bs-danger-base) 30%, white);
     --bs-danger-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-danger-base) 65%, black), color-mix(in srgb, var(--bs-danger-base) 65%, white));
     --bs-danger-focus-ring: color-mix(in oklch, var(--bs-danger-base) 50%, var(--bs-bg-body));
+
+    --bs-accent-bg: var(--bs-accent-base);
+    --bs-accent-fg: light-dark(var(--bs-accent-base), color-mix(in srgb, var(--bs-accent-base) 75%, white));
+    --bs-accent-fg-emphasis: light-dark(color-mix(in srgb, var(--bs-accent-base) 65%, black), color-mix(in srgb, var(--bs-accent-base) 50%, white));
+    --bs-accent-bg-subtle: color-mix(in srgb, var(--bs-accent-base) 15%, var(--bs-bg-body));
+    --bs-accent-bg-muted: color-mix(in srgb, var(--bs-accent-base) 30%, var(--bs-bg-body));
+    --bs-accent-border: var(--bs-accent-base);
+    --bs-accent-focus-ring: color-mix(in oklch, var(--bs-accent-base) 50%, var(--bs-bg-body));
+    --bs-accent-contrast: #fff;
+
+    --bs-inverse-bg: light-dark(#373a3c, #fff);
+    --bs-inverse-fg: light-dark(#373a3c, #fff);
+    --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, light-dark(black, white));
+    --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, var(--bs-bg-body));
+    --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, var(--bs-bg-body));
+    --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
+    --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
+    --bs-inverse-contrast: light-dark(#fff, #212529);
+
     --bs-bg-body: light-dark(#fcfcfc, var(--bs-gray-975));
     --bs-fg-body: light-dark(#212529, var(--bs-gray-050));
     --bs-heading-color: #d9230f;
@@ -115,18 +136,7 @@
 
     --bs-heading-color: inherit;
     --bs-link-color: #d9230f;
-}
 
-:root {
-    --bs-inverse-base: #373a3c;
-    --bs-inverse-bg: light-dark(#373a3c, #fff);
-    --bs-inverse-fg: light-dark(#373a3c, #fff);
-    --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, light-dark(black, white));
-    --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, var(--bs-bg-body));
-    --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, var(--bs-bg-body));
-    --bs-inverse-border: color-mix(in srgb, var(--bs-inverse-bg) 40%, var(--bs-bg-body));
-    --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
-    --bs-inverse-contrast: light-dark(#fff, #212529);
 }
 
 .btn-solid[class*="theme-"] {
