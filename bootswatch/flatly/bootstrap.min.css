@@ -7,14 +7,14 @@
  */
 
 :root {
-    --bs-primary-base: #2c3e50;
-    --bs-secondary-base: #95a5a6;
-    --bs-success-base: #18bc9c;
+    --bs-primary-base: light-dark(#2c3e50, #375a7f);
+    --bs-secondary-base: light-dark(#95a5a6, #444444);
+    --bs-success-base: light-dark(#18bc9c, #00bc8c);
     --bs-info-base: #3498db;
     --bs-warning-base: #f39c12;
     --bs-danger-base: #e74c3c;
-    --bs-inverse-base: #5f6b6c;
-    --bs-accent-base: #71458a;
+    --bs-inverse-base: light-dark(#5f6b6c, #adb5bd);
+    --bs-accent-base: light-dark(#71458a, #993685);
 
     --bs-primary-bg: var(--bs-primary-base);
     --bs-primary-fg: var(--bs-primary-base);
@@ -79,8 +79,8 @@
     --bs-accent-focus-ring: color-mix(in oklch, var(--bs-accent-base) 50%, var(--bs-bg-body));
     --bs-accent-contrast: #fff;
 
-    --bs-inverse-bg: light-dark(#5f6b6c, #ecf0f1);
-    --bs-inverse-fg: light-dark(#5f6b6c, #ecf0f1);
+    --bs-inverse-bg: light-dark(#5f6b6c, #adb5bd);
+    --bs-inverse-fg: light-dark(#5f6b6c, #adb5bd);
     --bs-inverse-fg-emphasis: color-mix(in srgb, var(--bs-inverse-bg) 65%, light-dark(black, white));
     --bs-inverse-bg-subtle: color-mix(in srgb, var(--bs-inverse-bg) 12%, light-dark(white, var(--bs-bg-body)));
     --bs-inverse-bg-muted: color-mix(in srgb, var(--bs-inverse-bg) 25%, light-dark(white, var(--bs-bg-body)));
@@ -88,9 +88,9 @@
     --bs-inverse-focus-ring: color-mix(in oklch, var(--bs-inverse-bg) 50%, var(--bs-bg-body));
     --bs-inverse-contrast: light-dark(#fff, #212529);
 
-    --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
-    --bs-fg-body: light-dark(#212529, var(--bs-gray-050));
-    --bs-heading-color: #2c3e50;
+    --bs-bg-body: light-dark(#fff, #222222);
+    --bs-fg-body: light-dark(#212529, #ffffff);
+    --bs-heading-color: light-dark(#2c3e50, #375a7f);
 
 
     --bs-navbar-bg: var(--bs-primary-base);
@@ -99,7 +99,7 @@
     --bs-navbar-active-color: #fff;
     --bs-navbar-brand-color: #fff;
     --bs-navbar-brand-hover-color: #fff;
-    --bs-blue-500: #2c3e50;
+    --bs-blue-500: light-dark(#2c3e50, #375a7f);
     --bs-blue-600: color-mix(in srgb, black 16%, var(--bs-blue-500));
     --bs-blue-400: color-mix(in srgb, white 20%, var(--bs-blue-500));
     --bs-indigo-500: #6610f2;
@@ -120,7 +120,7 @@
     --bs-yellow-500: #f39c12;
     --bs-yellow-600: color-mix(in srgb, black 16%, var(--bs-yellow-500));
     --bs-yellow-400: color-mix(in srgb, white 20%, var(--bs-yellow-500));
-    --bs-green-500: #18bc9c;
+    --bs-green-500: light-dark(#18bc9c, #00bc8c);
     --bs-green-600: color-mix(in srgb, black 16%, var(--bs-green-500));
     --bs-green-400: color-mix(in srgb, white 20%, var(--bs-green-500));
     --bs-teal-500: #20c997;
@@ -129,13 +129,13 @@
     --bs-cyan-500: #3498db;
     --bs-cyan-600: color-mix(in srgb, black 16%, var(--bs-cyan-500));
     --bs-cyan-400: color-mix(in srgb, white 20%, var(--bs-cyan-500));
-    --bs-gray-500: #b4bcc2;
+    --bs-gray-500: light-dark(#b4bcc2, #adb5bd);
     --bs-gray-600: color-mix(in srgb, black 16%, var(--bs-gray-500));
     --bs-gray-400: color-mix(in srgb, white 20%, var(--bs-gray-500));
     --bs-body-font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
     --bs-heading-color: inherit;
-    --bs-link-color: #18bc9c;
+    --bs-link-color: light-dark(#18bc9c, #00bc8c);
 
 }
 
