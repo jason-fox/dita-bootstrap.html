@@ -48,7 +48,7 @@
         <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
           >--install</parmname> https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
 <cmdname>dita</cmdname> <parmname
-          >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.html/archive/master.zip</codeblock>
+          >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.html/archive/develop.zip</codeblock>
       </section>
     </bodydiv>
     <section>
@@ -452,7 +452,7 @@
         </li>
       </ol>
       <note type="note">You can switch between the available themes via the CSS dropdown in the menu bar at
-        <xref href="https://dita-bootstrap.github.io/" format="html" scope="external">dita-bootstrap.github.io</xref>.
+        <xref href="https://dita-bootstrap.org/" format="html" scope="external">dita-bootstrap.org</xref>.
       </note>
     </section>
     <section>
@@ -583,11 +583,7 @@
      <parmname>--nav-toc</parmname>=<option>&lt;sidebar-style&gt;</option></codeblock>
 
        <note type="note">For an example of <option>collapsible</option> styling, see the output at
-        <xref
-          href="https://dita-bootstrap.github.io/"
-          format="html"
-          scope="external"
-        >dita-bootstrap.github.io</xref>. </note>
+        <xref href="https://dita-bootstrap.org/" format="html" scope="external">dita-bootstrap.github.io</xref>. </note>
     </section>
     <section>
       <title>Common Bootstrap utility classes</title>
