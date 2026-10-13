@@ -313,6 +313,7 @@
                   type="button"
                   class="menu-item"
                   data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/quartz/bootstrap.min.css"
+                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/quartz.css"
                 >
               Quartz
             </button>
@@ -365,7 +366,7 @@
                   type="button"
                   class="menu-item"
                   data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/solar/bootstrap.min.css"
-                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/static.css"
+                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/solar.css"
                 >
               Solar
             </button>
@@ -418,7 +419,6 @@
                   type="button"
                   class="menu-item"
                   data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/yeti/bootstrap.min.css"
-                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/static.css"
                 >
               Yeti
             </button>
