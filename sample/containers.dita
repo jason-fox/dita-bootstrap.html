@@ -67,13 +67,13 @@
               <div outputclass="fw-normal">≥768px</div>
             </entry>
             <entry colname="COLSPEC4" valign="top">Large
-              <div outputclass="fw-normal">≥992px</div>
+              <div outputclass="fw-normal">≥1024px</div>
             </entry>
             <entry colname="COLSPEC5" valign="top">X-Large
-              <div outputclass="fw-normal">≥1200px</div>
+              <div outputclass="fw-normal">≥1280px</div>
             </entry>
             <entry colname="COLSPEC6" valign="top">XX-Large
-              <div outputclass="fw-normal">≥1400px</div>
+              <div outputclass="fw-normal">≥1536px</div>
             </entry>
           </row>
         </thead>
@@ -89,7 +89,7 @@
             <entry>720px</entry>
             <entry>960px</entry>
             <entry>1140px</entry>
-            <entry>1320px</entry>
+            <entry>1440px</entry>
           </row>
           <row>
             <entry>
@@ -102,7 +102,7 @@
             <entry>720px</entry>
             <entry>960px</entry>
             <entry>1140px</entry>
-            <entry>1320px</entry>
+            <entry>1440px</entry>
           </row>
           <row>
             <entry>
@@ -117,7 +117,7 @@
             <entry>720px</entry>
             <entry>960px</entry>
             <entry>1140px</entry>
-            <entry>1320px</entry>
+            <entry>1440px</entry>
           </row>
           <row>
             <entry>
@@ -134,7 +134,7 @@
             </entry>
             <entry>960px</entry>
             <entry>1140px</entry>
-            <entry>1320px</entry>
+            <entry>1440px</entry>
           </row>
           <row>
             <entry>
@@ -153,11 +153,11 @@
               <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>1140px</entry>
-            <entry>1320px</entry>
+            <entry>1440px</entry>
           </row>
           <row>
             <entry>
-              <option>xxl:&#8203;container</option>
+              <option>2xl:&#8203;container</option>
             </entry>
             <entry>
               <ph outputclass="fg-2">100%</ph>
@@ -174,7 +174,7 @@
             <entry>
               <ph outputclass="fg-2">100%</ph>
             </entry>
-            <entry>1320px</entry>
+            <entry>1440px</entry>
           </row>
           <row>
             <entry>
@@ -202,9 +202,9 @@
         </tbody>
       </tgroup>
     </table>
-    <note type="note">The DITA Bootstrap plug-in uses the responsive <option>xxl:container</option> by default to fill
-      the viewport width with page content up to the extra extra large breakpoint. At 1400px or wider, content width is
-      constrained to 1320px to ensure lines remain readable.</note>
+    <note type="note">The DITA Bootstrap plug-in uses the responsive <option>2xl:container</option> by default to fill
+      the viewport width with page content up to the 2X-large breakpoint. At 1536px or wider, content width is
+      constrained to 1440px to ensure lines remain readable.</note>
     <p>To use different size, pass the desired value to the <cmdname>dita</cmdname> command via the
         <parmname>--bootstrap.css.container.size</parmname> parameter: </p>
     <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
