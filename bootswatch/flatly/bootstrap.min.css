@@ -90,6 +90,7 @@
 
     --bs-bg-body: light-dark(#fff, #222222);
     --bs-fg-body: light-dark(#212529, #ffffff);
+    --bs-border-color: light-dark(#dee2e6, var(--bs-gray-700));
     --bs-heading-color: light-dark(#2c3e50, #375a7f);
 
 
@@ -223,4 +224,25 @@ h6, .h6 {
 
 .alert.theme-inverse a, .alert.theme-inverse .alert-link {
     color: var(--bs-theme-contrast);
+}
+
+.accordion {
+    --bs-accordion-border-radius: .375rem;
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.pagination {
+    --bs-pagination-color: #fff;
+    --bs-pagination-bg: #18bc9c;
+    --bs-pagination-border-color: transparent;
+    --bs-pagination-hover-color: #fff;
+    --bs-pagination-hover-bg: #0f7864;
+    --bs-pagination-hover-border-color: transparent;
+    --bs-pagination-active-bg: #0f7864;
+    --bs-pagination-active-border-color: transparent;
+    --bs-pagination-disabled-color: #ecf0f1;
+    --bs-pagination-disabled-bg: #3be6c4;
+    --bs-pagination-disabled-border-color: transparent;
 }

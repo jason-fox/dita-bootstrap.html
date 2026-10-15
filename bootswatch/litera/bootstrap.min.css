@@ -89,6 +89,8 @@
 
     --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
     --bs-fg-body: light-dark(#343a40, var(--bs-gray-050));
+    --bs-border-color: light-dark(#ddd, var(--bs-gray-700));
+    --bs-body-font-size: 1.1rem;
     --bs-heading-color: #4582ec;
 
 
@@ -146,6 +148,7 @@
 
 .table {
     --bs-table-border-color: rgba(0, 0, 0, 0.1);
+    font-size: .9625rem;
 }
 
 .card {
@@ -266,4 +269,21 @@ blockquote {
 
 .alert.theme-inverse a, .alert.theme-inverse .alert-link {
     color: var(--bs-theme-contrast);
+}
+
+.accordion {
+    --bs-accordion-border-radius: .375rem;
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+    --bs-accordion-font-size: 1.1rem;
+}
+
+.accordion-body {
+    font-size: var(--bs-body-font-size);
+}
+
+.pagination {
+    --bs-pagination-active-bg: #4582ec;
+    --bs-pagination-active-border-color: #4582ec;
 }

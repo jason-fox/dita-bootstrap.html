@@ -331,3 +331,34 @@ legend {
 .alert.theme-inverse a, .alert.theme-inverse .alert-link {
     color: var(--bs-theme-contrast);
 }
+
+.accordion {
+    --bs-accordion-border-radius: .375rem;
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: #fff;
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.card, .list-group, .pagination {
+    --bs-card-bg: #32383e;
+    --bs-list-group-bg: #32383e;
+    --bs-pagination-bg: #32383e;
+}
+
+.pagination {
+    --bs-pagination-color: #fff;
+    --bs-pagination-bg: transparent;
+    --bs-pagination-border-color: rgba(0, 0, 0, 0.6);
+    --bs-pagination-hover-color: #fff;
+    --bs-pagination-hover-bg: transparent;
+    --bs-pagination-hover-border-color: rgba(0, 0, 0, 0.6);
+    --bs-pagination-active-bg: transparent;
+    --bs-pagination-active-border-color: rgba(0, 0, 0, 0.6);
+    --bs-pagination-disabled-bg: transparent;
+    --bs-pagination-disabled-border-color: rgba(0, 0, 0, 0.6);
+}
+
+.form-control, .form-select {
+    --bs-control-fg: #272b30;
+    --bs-control-bg: #fff;
+}
