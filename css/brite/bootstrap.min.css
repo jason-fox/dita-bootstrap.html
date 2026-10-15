@@ -89,6 +89,7 @@
 
     --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
     --bs-fg-body: light-dark(#212529, var(--bs-gray-050));
+    --bs-body-font-size: .875rem;
     --bs-heading-color: #a2e436;
 
 
@@ -146,6 +147,10 @@
 
 .table {
     --bs-table-border-color: #000;
+    --bs-table-border-width: 1px;
+    --bs-table-cell-padding-y: .75rem;
+    --bs-table-cell-padding-x: .75rem;
+    --bs-table-color: light-dark(#000, #fff);
     border: 2px solid #000;
 }
 
@@ -218,7 +223,7 @@ h6, .h6 {
 
 .navbar {
     font-size: 1.09375rem;
-    font-weight: 700;
+    font-weight: 500;
     border: 2px solid #000;
 }
 
@@ -231,14 +236,14 @@ h6, .h6 {
 }
 
 a {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 
 .nav-tabs {
     gap: 4px;
     padding: .4rem .4rem calc(.4rem + 2px);
-    font-weight: 700;
+    font-weight: 500;
     border: 2px solid #000;
     border-radius: var(--bs-border-radius-lg);
 }
@@ -261,7 +266,7 @@ a {
 
 
 .breadcrumb {
-    font-weight: 700;
+    font-weight: 500;
     border: 2px solid #000;
 }
 
@@ -395,7 +400,7 @@ a {
 
 .nav-pills {
     gap: 4px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .nav-pills .nav-link {
@@ -447,4 +452,29 @@ a {
     --bs-btn-padding-x: 1rem;
     --bs-btn-padding-y: 0.5rem;
     --bs-btn-font-size: 0.875rem;
+}
+
+.accordion {
+    --bs-accordion-border-radius: var(--bs-border-radius);
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-font-size: .875rem;
+    --bs-accordion-active-color: #000;
+    --bs-accordion-active-bg: var(--bs-primary-base);
+}
+
+.accordion-header .accordion-icon {
+    color: #c7ef86;
+}
+
+.accordion-body {
+    font-size: var(--bs-body-font-size);
+}
+
+.pagination {
+    --bs-pagination-color: #000;
+    --bs-pagination-hover-color: #000;
+    --bs-pagination-hover-bg: transparent;
+    --bs-pagination-active-color: #000;
+    --bs-pagination-active-bg: #a2e436;
+    --bs-pagination-active-border-color: #000;
 }

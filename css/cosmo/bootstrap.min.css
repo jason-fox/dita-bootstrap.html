@@ -90,6 +90,7 @@
 
     --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
     --bs-fg-body: light-dark(#373a3c, var(--bs-gray-050));
+    --bs-border-color: light-dark(#dee2e6, var(--bs-gray-700));
     --bs-heading-color: #2780e3;
 
 
@@ -221,4 +222,15 @@ body {
 .progress-bar {
     font-size: 8px;
     line-height: 8px;
+}
+
+.accordion {
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.pagination {
+    --bs-pagination-active-bg: #2780e3;
+    --bs-pagination-active-border-color: #2780e3;
 }

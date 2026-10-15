@@ -90,6 +90,7 @@
 
     --bs-bg-body: #060606;
     --bs-fg-body: #adafae;
+    --bs-border-color: #282828;
     --bs-heading-color: #ffffff;
 
 
@@ -291,4 +292,35 @@ legend {
 
 .alert.theme-inverse a, .alert.theme-inverse .alert-link {
     color: var(--bs-theme-contrast);
+}
+
+.accordion {
+    --bs-accordion-border-radius: .375rem;
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.card, .list-group, .pagination {
+    --bs-card-bg: #282828;
+    --bs-list-group-bg: #282828;
+    --bs-pagination-bg: #282828;
+}
+
+.pagination {
+    --bs-pagination-color: #fff;
+    --bs-pagination-bg: #282828;
+    --bs-pagination-border-color: transparent;
+    --bs-pagination-hover-color: #fff;
+    --bs-pagination-hover-bg: #2a9fd6;
+    --bs-pagination-hover-border-color: transparent;
+    --bs-pagination-active-bg: #2a9fd6;
+    --bs-pagination-active-border-color: #2a9fd6;
+    --bs-pagination-disabled-bg: #282828;
+    --bs-pagination-disabled-border-color: transparent;
+}
+
+.form-control, .form-select {
+    --bs-control-fg: #212529;
+    --bs-control-bg: #fff;
 }

@@ -329,6 +329,7 @@ body {
 }
 
 .accordion {
+    --bs-accordion-border-radius: var(--bs-border-radius);
     --bs-accordion-btn-bg: var(--bs-secondary-base);
     --bs-accordion-active-bg: var(--bs-primary-base);
     --bs-accordion-active-color: #fff;
@@ -349,4 +350,14 @@ body {
 
 .btn-outline.theme-accent {
     --bs-btn-color: var(--bs-theme-border);
+}
+
+.pagination {
+    --bs-pagination-bg: rgba(255, 255, 255, 0.3);
+    --bs-pagination-hover-color: #fff;
+    --bs-pagination-hover-bg: rgba(255, 255, 255, 0.4);
+    --bs-pagination-active-bg: #e83283;
+    --bs-pagination-active-border-color: #e83283;
+    --bs-pagination-disabled-color: rgba(255, 255, 255, 0.7);
+    --bs-pagination-disabled-bg: rgba(255, 255, 255, 0.3);
 }

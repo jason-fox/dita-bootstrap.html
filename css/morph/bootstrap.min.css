@@ -90,6 +90,7 @@
 
     --bs-bg-body: light-dark(#d9e3f1, var(--bs-gray-975));
     --bs-fg-body: light-dark(#7b8ab8, var(--bs-gray-050));
+    --bs-border-color: light-dark(rgba(55, 94, 148, .1), var(--bs-gray-700));
     --bs-heading-color: #378dfc;
 
 
@@ -405,4 +406,38 @@ h6, .h6 {
 
 .alert.theme-secondary, .alert.theme-inverse {
     --bs-theme-fg: var(--bs-theme-contrast);
+}
+
+.accordion {
+    --bs-accordion-border-radius: .375rem;
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.pagination {
+    --bs-pagination-color: #7b8ab8;
+    --bs-pagination-bg: transparent;
+    --bs-pagination-active-color: #485785;
+    --bs-pagination-active-bg: transparent;
+    --bs-pagination-active-border-color: #378dfc;
+    --bs-pagination-disabled-color: #adb6d3;
+    --bs-pagination-disabled-bg: transparent;
+}
+
+.form-control {
+    --bs-control-bg: light-dark(#f0f5fa, var(--bs-bg-2));
+    --bs-control-border-width: 0;
+    --bs-control-box-shadow: inset 2px 2px 8px rgba(55, 94, 148, .3), inset -3px -2px 5px rgba(255, 255, 255, .8);
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .show > .nav-link, .nav-pills .nav-link.active {
+    color: #fff;
+    background-color: var(--bs-primary-base);
+}
+
+.card, .list-group, .pagination {
+    --bs-card-border-width: 0;
+    --bs-list-group-border-width: 0;
+    --bs-pagination-border-width: 0;
 }

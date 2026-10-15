@@ -89,6 +89,7 @@
 
     --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
     --bs-fg-body: light-dark(#444444, var(--bs-gray-050));
+    --bs-border-color: light-dark(#ededed, var(--bs-gray-700));
     --bs-heading-color: #593196;
 
 
@@ -256,4 +257,15 @@ h6, .h6 {
 
 .progress {
     --bs-progress-height: 8px;
+}
+
+.accordion {
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.pagination {
+    --bs-pagination-active-bg: #593196;
+    --bs-pagination-active-border-color: #593196;
 }

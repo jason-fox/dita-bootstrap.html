@@ -308,3 +308,59 @@ legend {
                 0 0 1rem color-mix(in srgb, var(--bs-theme-bg) 30%, transparent),
                 0 0 4rem color-mix(in srgb, var(--bs-theme-bg) 10%, transparent);
 }
+
+.accordion {
+    --bs-accordion-border-radius: var(--bs-border-radius);
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.table {
+    text-shadow: 0 0 1px rgba(255, 255, 255, .3), 0 0 2px rgba(255, 255, 255, .3), 0 0 5px rgba(255, 255, 255, .2);
+}
+
+.pagination {
+    --bs-pagination-bg: transparent;
+    --bs-pagination-hover-bg: transparent;
+    --bs-pagination-active-bg: #ea39b8;
+    --bs-pagination-active-border-color: #ea39b8;
+    --bs-pagination-disabled-color: rgba(50, 251, 226, 0.3);
+    --bs-pagination-disabled-bg: transparent;
+}
+
+.alert[class*="theme-"] {
+    --bs-theme-bg-subtle: var(--bs-theme-bg);
+    --bs-theme-fg: #fff;
+    --bs-theme-border: transparent;
+}
+
+.card {
+    --bs-card-color: #fff;
+    --bs-card-border-width: 2px;
+}
+
+.list-group {
+    --bs-list-group-bg: #250d49;
+    --bs-list-group-color: #fff;
+    --bs-list-group-border-width: 0;
+}
+
+.pagination {
+    --bs-pagination-bg: transparent;
+    --bs-pagination-border-width: 0;
+}
+
+.form-control, .form-select {
+    --bs-control-fg: #fff;
+    --bs-control-bg: #30115e;
+    --bs-control-border-width: 0;
+}
+
+.btn {
+    --bs-btn-border-width: 0;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--bs-secondary-base);
+}

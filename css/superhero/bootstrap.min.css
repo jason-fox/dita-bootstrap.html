@@ -149,6 +149,7 @@
 
 .table {
     --bs-table-border-color: rgba(0, 0, 0, 0.15);
+    font-size: .875rem;
 }
 
 .navbar {
@@ -280,4 +281,37 @@ h6, .h6 {
 
 .alert.theme-inverse a, .alert.theme-inverse .alert-link {
     color: var(--bs-theme-contrast);
+}
+
+.accordion {
+    --bs-accordion-bg: #4e5d6c;
+    --bs-accordion-btn-bg: rgba(255, 255, 255, .075);
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: #ebebeb;
+    --bs-accordion-active-bg: var(--bs-primary-base);
+}
+
+.card, .list-group, .pagination {
+    --bs-card-bg: #4e5d6c;
+    --bs-list-group-bg: #4e5d6c;
+    --bs-pagination-bg: #4e5d6c;
+}
+
+.pagination {
+    --bs-pagination-color: #fff;
+    --bs-pagination-bg: #4e5d6c;
+    --bs-pagination-border-color: transparent;
+    --bs-pagination-hover-color: #fff;
+    --bs-pagination-hover-bg: rgba(255, 255, 255, 0.4);
+    --bs-pagination-hover-border-color: transparent;
+    --bs-pagination-active-bg: #df6919;
+    --bs-pagination-active-border-color: #df6919;
+    --bs-pagination-disabled-color: rgba(255, 255, 255, 0.4);
+    --bs-pagination-disabled-bg: #4e5d6c;
+    --bs-pagination-disabled-border-color: transparent;
+}
+
+.form-control, .form-select {
+    --bs-control-fg: #212529;
+    --bs-control-bg: #fff;
 }

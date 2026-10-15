@@ -90,6 +90,7 @@
 
     --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
     --bs-fg-body: light-dark(#212529, var(--bs-gray-050));
+    --bs-body-font-weight: 700;
     --bs-heading-color: #333333;
 
 
@@ -150,6 +151,7 @@
 
 .table {
     --bs-table-border-color: #333;
+    --bs-table-border-width: 2px;
 }
 
 .card {
@@ -402,4 +404,22 @@ pre {
 
 .img-thumbnail {
     border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.accordion {
+    --bs-accordion-border-radius: var(--bs-border-radius);
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.pagination {
+    --bs-pagination-border-color: #333;
+    --bs-pagination-hover-color: #fff;
+    --bs-pagination-hover-bg: #333;
+    --bs-pagination-hover-border-color: #333;
+    --bs-pagination-active-bg: #333;
+    --bs-pagination-active-border-color: #333;
+    --bs-pagination-disabled-color: #ccc;
+    --bs-pagination-disabled-border-color: #333;
 }

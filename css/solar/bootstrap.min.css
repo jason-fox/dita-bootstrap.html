@@ -228,3 +228,23 @@ h6, .h6 {
 .alert.theme-inverse a, .alert.theme-inverse .alert-link {
     color: var(--bs-theme-contrast);
 }
+
+.accordion {
+    --bs-accordion-border-radius: .375rem;
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.pagination {
+    --bs-pagination-bg: transparent;
+    --bs-pagination-border-color: #073642;
+    --bs-pagination-hover-bg: #073642;
+    --bs-pagination-hover-border-color: #073642;
+    --bs-pagination-active-color: rgba(255, 255, 255, 0.75);
+    --bs-pagination-active-bg: #073642;
+    --bs-pagination-active-border-color: #073642;
+    --bs-pagination-disabled-color: #073642;
+    --bs-pagination-disabled-bg: transparent;
+    --bs-pagination-disabled-border-color: #073642;
+}

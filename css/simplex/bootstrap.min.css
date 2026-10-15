@@ -90,6 +90,7 @@
 
     --bs-bg-body: light-dark(#fcfcfc, var(--bs-gray-975));
     --bs-fg-body: light-dark(#212529, var(--bs-gray-050));
+    --bs-border-color: light-dark(#ccc, var(--bs-gray-700));
     --bs-heading-color: #d9230f;
 
 
@@ -242,4 +243,22 @@ legend, label {
 
 .breadcrumb {
     border: 1px solid #dedede;
+}
+
+.accordion {
+    --bs-accordion-border-radius: .375rem;
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.pagination {
+    --bs-pagination-border-color: #eeeeee;
+    --bs-pagination-hover-color: #fff;
+    --bs-pagination-hover-bg: #d9230f;
+    --bs-pagination-hover-border-color: #d9230f;
+    --bs-pagination-active-bg: #d9230f;
+    --bs-pagination-active-border-color: #d9230f;
+    --bs-pagination-disabled-color: #bbb;
+    --bs-pagination-disabled-border-color: #eeeeee;
 }

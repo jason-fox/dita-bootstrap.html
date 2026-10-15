@@ -90,6 +90,7 @@
 
     --bs-bg-body: light-dark(#fff, var(--bs-gray-975));
     --bs-fg-body: light-dark(#777777, var(--bs-gray-050));
+    --bs-border-color: light-dark(#dee2e6, var(--bs-gray-700));
     --bs-heading-color: light-dark(#2d2d2d, var(--bs-fg-body));
 
 
@@ -238,4 +239,16 @@ h6, .h6 {
 
 .card, .list-group-item {
     --bs-heading-color: inherit;
+}
+
+.accordion {
+    --bs-accordion-border-radius: .375rem;
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.pagination {
+    --bs-pagination-active-bg: #446e9b;
+    --bs-pagination-active-border-color: #446e9b;
 }

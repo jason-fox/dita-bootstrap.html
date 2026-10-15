@@ -90,6 +90,7 @@
 
     --bs-bg-body: #222222;
     --bs-fg-body: #ffffff;
+    --bs-border-color: #444;
     --bs-heading-color: #375a7f;
 
 
@@ -245,4 +246,36 @@ h6, .h6 {
 
 .alert.theme-inverse a, .alert.theme-inverse .alert-link {
     color: var(--bs-theme-contrast);
+}
+
+.accordion {
+    --bs-accordion-border-radius: .375rem;
+    --bs-accordion-btn-color: var(--bs-fg-body);
+    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.card, .list-group, .pagination {
+    --bs-card-bg: #303030;
+    --bs-list-group-bg: #303030;
+    --bs-pagination-bg: #303030;
+}
+
+.pagination {
+    --bs-pagination-color: #fff;
+    --bs-pagination-bg: #00bc8c;
+    --bs-pagination-border-color: transparent;
+    --bs-pagination-hover-color: #fff;
+    --bs-pagination-hover-bg: #00efb2;
+    --bs-pagination-hover-border-color: transparent;
+    --bs-pagination-active-bg: #00efb2;
+    --bs-pagination-active-border-color: transparent;
+    --bs-pagination-disabled-color: #fff;
+    --bs-pagination-disabled-bg: #007053;
+    --bs-pagination-disabled-border-color: transparent;
+}
+
+.form-control, .form-select {
+    --bs-control-fg: #303030;
+    --bs-control-bg: #fff;
 }
