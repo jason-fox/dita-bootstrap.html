@@ -139,6 +139,12 @@
         else ''"
     />
     <xsl:value-of select="$border"/>
+    <xsl:if test="@theme">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="@theme"/>
+      </xsl:call-template>
+      <xsl:text> </xsl:text>
+    </xsl:if>
     <xsl:next-match/>
   </xsl:template>
 
@@ -165,6 +171,12 @@
     <xsl:if test="normalize-space($theme) != ''">
       <xsl:value-of select="concat('table-', $theme, ' ')"/>
     </xsl:if>
+    <xsl:if test="@theme">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="@theme"/>
+      </xsl:call-template>
+      <xsl:text> </xsl:text>
+    </xsl:if>
     <xsl:next-match/>
   </xsl:template>
 
@@ -183,6 +195,12 @@
     />
     <xsl:if test="normalize-space($theme) != ''">
       <xsl:value-of select="concat('table-', $theme, ' ')"/>
+    </xsl:if>
+    <xsl:if test="@theme">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="@theme"/>
+      </xsl:call-template>
+      <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:next-match/>
   </xsl:template>
@@ -205,6 +223,12 @@
     />
     <xsl:if test="normalize-space($theme) != ''">
       <xsl:value-of select="concat('table-', $theme, ' ')"/>
+    </xsl:if>
+    <xsl:if test="@theme">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="@theme"/>
+      </xsl:call-template>
+      <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:next-match/>
   </xsl:template>
