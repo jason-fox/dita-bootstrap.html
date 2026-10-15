@@ -67,14 +67,24 @@
         popover is appended to the <xmlatt>output-class</xmlatt> or taken from the attribute.</p>
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
-      <xref href="#" outputclass="btn-solid theme-secondary popover-top">
-        <desc>Top popover</desc> Popover on top </xref>
-      <xref href="#" outputclass="btn-solid theme-secondary popover-right">
-        <desc>Right Popover</desc> Popover on right </xref>
-      <xref href="#" outputclass="btn-solid theme-secondary popover-bottom">
-        <desc>Bottom popover</desc> Popover on bottom </xref>
-      <xref href="#" outputclass="btn-solid theme-secondary popover-left">
-        <desc>Left popover</desc> Popover on left </xref>
+      <bodydiv outputclass="row">
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-secondary popover-top">
+            <desc>Top popover</desc> Popover on top </xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-secondary popover-right">
+            <desc>Right Popover</desc> Popover on right </xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-secondary popover-bottom">
+            <desc>Bottom popover</desc> Popover on bottom </xref>
+        </bodydiv>
+        <bodydiv outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-secondary popover-left">
+            <desc>Left popover</desc> Popover on left </xref>
+        </bodydiv>
+      </bodydiv>
     </bodydiv>
     <codeblock><coderef href="code/popovers/four-directions.xml"/></codeblock>
     <section id="custom-popovers">

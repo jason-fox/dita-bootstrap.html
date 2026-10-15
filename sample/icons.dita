@@ -89,12 +89,28 @@
     <codeblock><coderef href="code/icons/dark-link.xml"/></codeblock>
     <p>Icons can also be placed within buttons as shown:</p>
     <example>
-      <xref outputclass="btn-icon theme-primary" href="#"><ph outputclass="bi bi-arrow-down-square-fill"/></xref>
-      <xref outputclass="btn-icon theme-secondary" href="#"><ph outputclass="bi bi-chat-left-quote-fill"/></xref>
-      <xref outputclass="btn-icon theme-warning" href="#"><ph outputclass="bi bi-speedometer"/></xref>
-      <xref outputclass="btn-icon theme-info" href="#"><ph outputclass="bi bi-camera-fill"/></xref>
-      <xref outputclass="btn-icon theme-accent" href="#"><ph outputclass="bi bi-link"/></xref>
-      <xref outputclass="btn-icon theme-danger" href="#"><ph outputclass="bi bi-share-fill"/></xref>
+      <div outputclass="row">
+        <div outputclass="col-3 p-1">
+          <xref outputclass="btn-icon theme-primary" href="#"><ph outputclass="bi bi-arrow-down-square-fill"/></xref>
+        </div>
+        <div outputclass="col-3 p-1">
+          <xref outputclass="btn-icon theme-secondary" href="#"><ph outputclass="bi bi-chat-left-quote-fill"/></xref>
+        </div>
+        <div outputclass="col-3 p-1">
+          <xref outputclass="btn-icon theme-warning" href="#"><ph outputclass="bi bi-speedometer"/></xref>
+        </div>
+        <div outputclass="col-3 p-1">
+          <xref outputclass="btn-icon theme-info" href="#"><ph outputclass="bi bi-camera-fill"/></xref>
+        </div>
+      </div>
+      <div outputclass="row">
+        <div outputclass="col-3 p-1">
+          <xref outputclass="btn-icon theme-accent" href="#"><ph outputclass="bi bi-link"/></xref>
+        </div>
+        <div outputclass="col-9 p-1">
+          <xref outputclass="btn-icon theme-danger" href="#"><ph outputclass="bi bi-share-fill"/></xref>
+        </div>
+      </div>
     </example>
     <codeblock><coderef href="code/icons/icons-in-buttons.xml"/></codeblock>
     <p>Icons can also be used within <xmlelement>chapter</xmlelement> headings,

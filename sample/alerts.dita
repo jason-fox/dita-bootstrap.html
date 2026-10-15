@@ -72,12 +72,17 @@
 
     <section id="with-icons">
       <title>With icons</title>
-      <p>Similarly, you can use flexbox utilities and Bootstrap Icons to create alerts with icons. Depending on your
+      <p>Similarly, you can use grid rows and columns and Bootstrap Icons to create alerts with icons. Depending on your
         icons and content, you may want to add more utilities or custom styles.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="alert theme-primary d-flex align-items-center">
-        <ph outputclass="bi bi-exclamation-triangle-fill flex-shrink-0 pe-2"/>An example alert with an icon
+      <section outputclass="alert theme-primary">
+        <div outputclass="row g-2 align-items-center">
+          <div outputclass="col-auto">
+            <ph outputclass="bi bi-exclamation-triangle-fill"/>
+          </div>
+          <div outputclass="col">An example alert with an icon</div>
+        </div>
       </section>
     </bodydiv>
     <codeblock><coderef href="code/alerts/with-icons-outputclass.xml"/></codeblock>

@@ -69,14 +69,24 @@
     <p>Hover over the buttons below to see the four tooltips directions: <codeph>top</codeph>, <codeph>right</codeph>,
         <codeph>bottom</codeph>, and <codeph>left</codeph>. Directions are mirrored when using Bootstrap in RTL.</p>
     <example>
-      <xref href="#" outputclass="btn-solid theme-secondary tooltip-top">
-        <desc>Tooltip on top</desc> Tooltip on top </xref>
-      <xref href="#" outputclass="btn-solid theme-secondary tooltip-right">
-        <desc>Tooltip on right</desc> Tooltip on right </xref>
-      <xref href="#" outputclass="btn-solid theme-secondary tooltip-bottom">
-        <desc>Tooltip on bottom</desc> Tooltip on bottom </xref>
-      <xref href="#" outputclass="btn-solid theme-secondary tooltip-left">
-        <desc>Tooltip on left</desc> Tooltip on left </xref>
+      <div outputclass="row">
+        <div outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-secondary tooltip-top">
+            <desc>Tooltip on top</desc> Tooltip on top </xref>
+        </div>
+        <div outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-secondary tooltip-right">
+            <desc>Tooltip on right</desc> Tooltip on right </xref>
+        </div>
+        <div outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-secondary tooltip-bottom">
+            <desc>Tooltip on bottom</desc> Tooltip on bottom </xref>
+        </div>
+        <div outputclass="col p-1">
+          <xref href="#" outputclass="btn-solid theme-secondary tooltip-left">
+            <desc>Tooltip on left</desc> Tooltip on left </xref>
+        </div>
+      </div>
     </example>
     <codeblock><coderef href="code/tooltips/examples.xml"/></codeblock>
   <p>Custom HTML can be added to tooltips using additional DITA elements within the <xmlelement>desc</xmlelement>

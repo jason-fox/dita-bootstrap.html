@@ -231,6 +231,11 @@
   <!-- Change the default Bootstrap CSS classes of grid rows -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/grid-row ')]" mode="bootstrap-class" priority="10">
     <xsl:text>row </xsl:text>
+    <xsl:if test="@gap">
+      <xsl:text>g-</xsl:text>
+      <xsl:value-of select="@gap"/>
+      <xsl:text> </xsl:text>
+    </xsl:if>
     <xsl:next-match/>
   </xsl:template>
 

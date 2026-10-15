@@ -43,38 +43,70 @@
         elements with solid backgrounds.</p>
     </section>
     <example>
-      <div outputclass="d-flex flex-wrap gap-2">
-        <div outputclass="p-2 theme-primary theme-contrast">primary-contrast</div>
-        <div outputclass="p-2 theme-accent theme-contrast">accent-contrast</div>
-        <div outputclass="p-2 theme-success theme-contrast">success-contrast</div>
-        <div outputclass="p-2 theme-danger theme-contrast">danger-contrast</div>
-        <div outputclass="p-2 theme-warning theme-contrast">warning-contrast</div>
-        <div outputclass="p-2 theme-info theme-contrast">info-contrast</div>
-        <div outputclass="p-2 theme-inverse theme-contrast">inverse-contrast</div>
-        <div outputclass="p-2 theme-secondary theme-contrast">secondary-contrast</div>
+      <div outputclass="row g-2 row-cols-2 row-cols-md-4">
+        <div outputclass="col">
+          <div outputclass="p-2 theme-primary theme-contrast">primary-contrast</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-accent theme-contrast">accent-contrast</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-success theme-contrast">success-contrast</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-danger theme-contrast">danger-contrast</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-warning theme-contrast">warning-contrast</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-info theme-contrast">info-contrast</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-inverse theme-contrast">inverse-contrast</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-secondary theme-contrast">secondary-contrast</div>
+        </div>
       </div>
     </example>
     <codeblock><coderef href="code/theme/contrast-outputclass.xml"/></codeblock>
 
     <p>Nested links inherit the contrast foreground so they stay legible on the solid background:</p>
     <example>
-      <div outputclass="d-flex flex-column gap-2">
-        <div outputclass="p-3 theme-primary theme-contrast">Theme Primary with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-accent theme-contrast">Theme Accent with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-success theme-contrast">Theme Success with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-danger theme-contrast">Theme Danger with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-warning theme-contrast">Theme Warning with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-info theme-contrast">Theme Info with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-inverse theme-contrast">Theme Inverse with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-secondary theme-contrast">Theme Secondary with a
-          <xref href="#">nested link</xref> inside.</div>
+      <div outputclass="row g-2">
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-primary theme-contrast">Theme Primary with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-accent theme-contrast">Theme Accent with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-success theme-contrast">Theme Success with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-danger theme-contrast">Theme Danger with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-warning theme-contrast">Theme Warning with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-info theme-contrast">Theme Info with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-inverse theme-contrast">Theme Inverse with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-secondary theme-contrast">Theme Secondary with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
       </div>
     </example>
     <codeblock><coderef href="code/theme/contrast-nested-link-outputclass.xml"/></codeblock>
@@ -86,69 +118,117 @@
         adjust to the current color mode.</p>
     </section>
     <example>
-      <div outputclass="d-flex flex-wrap gap-2">
-        <div outputclass="p-2 theme-primary theme-subtle">
-          primary-subtle</div>
-        <div outputclass="p-2 theme-accent theme-subtle">
-          accent-subtle</div>
-        <div outputclass="p-2 theme-success theme-subtle">
-          success-subtle</div>
-        <div outputclass="p-2 theme-danger theme-subtle">
-          danger-subtle</div>
-        <div outputclass="p-2 theme-warning theme-subtle">
-          warning-subtle</div>
-        <div outputclass="p-2 theme-info theme-subtle">
-          info-subtle</div>
-        <div outputclass="p-2 theme-inverse theme-subtle">
-          inverse-subtle</div>
-        <div outputclass="p-2 theme-secondary theme-subtle">
-          secondary-subtle</div>
+      <div outputclass="row g-2 row-cols-2 row-cols-md-4">
+        <div outputclass="col">
+          <div outputclass="p-2 theme-primary theme-subtle">
+            primary-subtle</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-accent theme-subtle">
+            accent-subtle</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-success theme-subtle">
+            success-subtle</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-danger theme-subtle">
+            danger-subtle</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-warning theme-subtle">
+            warning-subtle</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-info theme-subtle">
+            info-subtle</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-inverse theme-subtle">
+            inverse-subtle</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-secondary theme-subtle">
+            secondary-subtle</div>
+        </div>
       </div>
     </example>
     <codeblock><coderef href="code/theme/subtle-outputclass.xml"/></codeblock>
 
     <p>And with borders:</p>
     <example>
-      <div outputclass="d-flex flex-wrap gap-2">
-        <div outputclass="p-2 theme-primary theme-subtle theme-border">
-          primary-subtle-border</div>
-        <div outputclass="p-2 theme-accent theme-subtle theme-border">
-          accent-subtle-border</div>
-        <div outputclass="p-2 theme-success theme-subtle theme-border">
-          success-subtle-border</div>
-        <div outputclass="p-2 theme-danger theme-subtle theme-border">
-          danger-subtle-border</div>
-        <div outputclass="p-2 theme-warning theme-subtle theme-border">
-          warning-subtle-border</div>
-        <div outputclass="p-2 theme-info theme-subtle theme-border">
-          info-subtle-border</div>
-        <div outputclass="p-2 theme-inverse theme-subtle theme-border">
-          inverse-subtle-border</div>
-        <div outputclass="p-2 theme-secondary theme-subtle theme-border">
-        secondary-subtle-border</div>
+      <div outputclass="row g-2 row-cols-2 row-cols-md-4">
+        <div outputclass="col">
+          <div outputclass="p-2 theme-primary theme-subtle theme-border">
+            primary-subtle-border</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-accent theme-subtle theme-border">
+            accent-subtle-border</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-success theme-subtle theme-border">
+            success-subtle-border</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-danger theme-subtle theme-border">
+            danger-subtle-border</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-warning theme-subtle theme-border">
+            warning-subtle-border</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-info theme-subtle theme-border">
+            info-subtle-border</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-inverse theme-subtle theme-border">
+            inverse-subtle-border</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-secondary theme-subtle theme-border">
+          secondary-subtle-border</div>
+        </div>
       </div>
     </example>
     <codeblock><coderef href="code/theme/subtle-border-outputclass.xml"/></codeblock>
 
     <p>Nested links inherit the subtle foreground so they stay legible on the subtle background:</p>
     <example>
-      <div outputclass="d-flex flex-column gap-2">
-        <div outputclass="p-3 theme-primary theme-subtle">Theme Primary with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-accent theme-subtle">Theme Accent with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-success theme-subtle">Theme Success with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-danger theme-subtle">Theme Danger with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-warning theme-subtle">Theme Warning with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-info theme-subtle">Theme Info with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-inverse theme-subtle">Theme Inverse with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-secondary theme-subtle">Theme Secondary with a
-          <xref href="#">nested link</xref> inside.</div>
+      <div outputclass="row g-2">
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-primary theme-subtle">Theme Primary with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-accent theme-subtle">Theme Accent with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-success theme-subtle">Theme Success with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-danger theme-subtle">Theme Danger with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-warning theme-subtle">Theme Warning with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-info theme-subtle">Theme Info with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-inverse theme-subtle">Theme Inverse with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-secondary theme-subtle">Theme Secondary with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
       </div>
     </example>
     <codeblock><coderef href="code/theme/subtle-nested-link-outputclass.xml"/></codeblock>
@@ -160,46 +240,78 @@
         automatically adjust to the current color mode.</p>
     </section>
     <example>
-      <div outputclass="d-flex flex-wrap gap-2">
-        <div outputclass="p-2 theme-primary theme-muted">
-          primary-muted</div>
-        <div outputclass="p-2 theme-accent theme-muted">
-          accent-muted</div>
-        <div outputclass="p-2 theme-success theme-muted">
-          success-muted</div>
-        <div outputclass="p-2 theme-danger theme-muted">
-          danger-muted</div>
-        <div outputclass="p-2 theme-warning theme-muted">
-          warning-muted</div>
-        <div outputclass="p-2 theme-info theme-muted">
-          info-muted</div>
-        <div outputclass="p-2 theme-inverse theme-muted">
-          inverse-muted</div>
-        <div outputclass="p-2 theme-secondary theme-muted">
-          secondary-muted</div>
+      <div outputclass="row g-2 row-cols-2 row-cols-md-4">
+        <div outputclass="col">
+          <div outputclass="p-2 theme-primary theme-muted">
+            primary-muted</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-accent theme-muted">
+            accent-muted</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-success theme-muted">
+            success-muted</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-danger theme-muted">
+            danger-muted</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-warning theme-muted">
+            warning-muted</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-info theme-muted">
+            info-muted</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-inverse theme-muted">
+            inverse-muted</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="p-2 theme-secondary theme-muted">
+            secondary-muted</div>
+        </div>
       </div>
     </example>
     <codeblock><coderef href="code/theme/muted-outputclass.xml"/></codeblock>
 
     <p>Nested links inherit the muted foreground so they stay legible on the muted background:</p>
     <example>
-      <div outputclass="d-flex flex-column gap-2">
-        <div outputclass="p-3 theme-primary theme-muted">Theme Primary with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-accent theme-muted">Theme Accent with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-success theme-muted">Theme Success with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-danger theme-muted">Theme Danger with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-warning theme-muted">Theme Warning with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-info theme-muted">Theme Info with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-inverse theme-muted">Theme Inverse with a
-          <xref href="#">nested link</xref> inside.</div>
-        <div outputclass="p-3 theme-secondary theme-muted">Theme Secondary with a
-          <xref href="#">nested link</xref> inside.</div>
+      <div outputclass="row g-2">
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-primary theme-muted">Theme Primary with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-accent theme-muted">Theme Accent with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-success theme-muted">Theme Success with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-danger theme-muted">Theme Danger with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-warning theme-muted">Theme Warning with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-info theme-muted">Theme Info with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-inverse theme-muted">Theme Inverse with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
+        <div outputclass="col-12">
+          <div outputclass="p-3 theme-secondary theme-muted">Theme Secondary with a
+            <xref href="#">nested link</xref> inside.</div>
+        </div>
       </div>
     </example>
     <codeblock><coderef href="code/theme/muted-nested-link-outputclass.xml"/></codeblock>
@@ -210,69 +322,117 @@
         including nested links:</p>
     </section>
     <example>
-      <div outputclass="d-flex gap-2 mb-2">
-        <div outputclass="theme-primary theme-contrast p-3 flex-fill text-center rounded">Primary with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-primary theme-subtle p-3 flex-fill text-center rounded">Primary with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-primary theme-muted p-3 flex-fill text-center rounded">Primary with a
-          <xref href="#">link</xref></div>
+      <div outputclass="row g-2 mb-2">
+        <div outputclass="col">
+          <div outputclass="theme-primary theme-contrast p-3 text-center rounded">Primary with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-primary theme-subtle p-3 text-center rounded">Primary with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-primary theme-muted p-3 text-center rounded">Primary with a
+            <xref href="#">link</xref></div>
+        </div>
       </div>
-      <div outputclass="d-flex gap-2 mb-2">
-        <div outputclass="theme-accent theme-contrast p-3 flex-fill text-center rounded">Accent with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-accent theme-subtle p-3 flex-fill text-center rounded">Accent with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-accent theme-muted p-3 flex-fill text-center rounded">Accent with a
-          <xref href="#">link</xref></div>
+      <div outputclass="row g-2 mb-2">
+        <div outputclass="col">
+          <div outputclass="theme-accent theme-contrast p-3 text-center rounded">Accent with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-accent theme-subtle p-3 text-center rounded">Accent with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-accent theme-muted p-3 text-center rounded">Accent with a
+            <xref href="#">link</xref></div>
+        </div>
       </div>
-      <div outputclass="d-flex gap-2 mb-2">
-        <div outputclass="theme-success theme-contrast p-3 flex-fill text-center rounded">Success with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-success theme-subtle p-3 flex-fill text-center rounded">Success with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-success theme-muted p-3 flex-fill text-center rounded">Success with a
-          <xref href="#">link</xref></div>
+      <div outputclass="row g-2 mb-2">
+        <div outputclass="col">
+          <div outputclass="theme-success theme-contrast p-3 text-center rounded">Success with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-success theme-subtle p-3 text-center rounded">Success with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-success theme-muted p-3 text-center rounded">Success with a
+            <xref href="#">link</xref></div>
+        </div>
       </div>
-      <div outputclass="d-flex gap-2 mb-2">
-        <div outputclass="theme-danger theme-contrast p-3 flex-fill text-center rounded">Danger with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-danger theme-subtle p-3 flex-fill text-center rounded">Danger with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-danger theme-muted p-3 flex-fill text-center rounded">Danger with a
-          <xref href="#">link</xref></div>
+      <div outputclass="row g-2 mb-2">
+        <div outputclass="col">
+          <div outputclass="theme-danger theme-contrast p-3 text-center rounded">Danger with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-danger theme-subtle p-3 text-center rounded">Danger with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-danger theme-muted p-3 text-center rounded">Danger with a
+            <xref href="#">link</xref></div>
+        </div>
       </div>
-      <div outputclass="d-flex gap-2 mb-2">
-        <div outputclass="theme-warning theme-contrast p-3 flex-fill text-center rounded">Warning with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-warning theme-subtle p-3 flex-fill text-center rounded">Warning with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-warning theme-muted p-3 flex-fill text-center rounded">Warning with a
-          <xref href="#">link</xref></div>
+      <div outputclass="row g-2 mb-2">
+        <div outputclass="col">
+          <div outputclass="theme-warning theme-contrast p-3 text-center rounded">Warning with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-warning theme-subtle p-3 text-center rounded">Warning with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-warning theme-muted p-3 text-center rounded">Warning with a
+            <xref href="#">link</xref></div>
+        </div>
       </div>
-      <div outputclass="d-flex gap-2 mb-2">
-        <div outputclass="theme-info theme-contrast p-3 flex-fill text-center rounded">Info with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-info theme-subtle p-3 flex-fill text-center rounded">Info with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-info theme-muted p-3 flex-fill text-center rounded">Info with a
-          <xref href="#">link</xref></div>
+      <div outputclass="row g-2 mb-2">
+        <div outputclass="col">
+          <div outputclass="theme-info theme-contrast p-3 text-center rounded">Info with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-info theme-subtle p-3 text-center rounded">Info with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-info theme-muted p-3 text-center rounded">Info with a
+            <xref href="#">link</xref></div>
+        </div>
       </div>
-      <div outputclass="d-flex gap-2 mb-2">
-        <div outputclass="theme-inverse theme-contrast p-3 flex-fill text-center rounded">Inverse with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-inverse theme-subtle p-3 flex-fill text-center rounded">Inverse with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-inverse theme-muted p-3 flex-fill text-center rounded">Inverse with a
-          <xref href="#">link</xref></div>
+      <div outputclass="row g-2 mb-2">
+        <div outputclass="col">
+          <div outputclass="theme-inverse theme-contrast p-3 text-center rounded">Inverse with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-inverse theme-subtle p-3 text-center rounded">Inverse with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-inverse theme-muted p-3 text-center rounded">Inverse with a
+            <xref href="#">link</xref></div>
+        </div>
       </div>
-      <div outputclass="d-flex gap-2 mb-2">
-        <div outputclass="theme-secondary theme-contrast p-3 flex-fill text-center rounded">Secondary with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-secondary theme-subtle p-3 flex-fill text-center rounded">Secondary with a
-          <xref href="#">link</xref></div>
-        <div outputclass="theme-secondary theme-muted p-3 flex-fill text-center rounded">Secondary with a
-          <xref href="#">link</xref></div>
+      <div outputclass="row g-2 mb-2">
+        <div outputclass="col">
+          <div outputclass="theme-secondary theme-contrast p-3 text-center rounded">Secondary with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-secondary theme-subtle p-3 text-center rounded">Secondary with a
+            <xref href="#">link</xref></div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-secondary theme-muted p-3 text-center rounded">Secondary with a
+            <xref href="#">link</xref></div>
+        </div>
       </div>
     </example>
     <codeblock><coderef href="code/theme/comparison-outputclass.xml"/></codeblock>
@@ -284,17 +444,29 @@
     </section>
     <example>
       <div outputclass="theme-primary">
-        <div outputclass="d-flex gap-2 mb-3">
-          <ph outputclass="badge theme-contrast">Contrast badge</ph>
-          <ph outputclass="badge theme-subtle">Subtle badge</ph>
-          <ph outputclass="badge theme-muted">Muted badge</ph>
+        <div outputclass="row g-2 mb-3">
+          <div outputclass="col">
+            <ph outputclass="badge theme-contrast">Contrast badge</ph>
+          </div>
+          <div outputclass="col">
+            <ph outputclass="badge theme-subtle">Subtle badge</ph>
+          </div>
+          <div outputclass="col">
+            <ph outputclass="badge theme-muted">Muted badge</ph>
+          </div>
         </div>
       </div>
       <div outputclass="theme-danger">
-        <div outputclass="d-flex gap-2 mb-3">
-          <ph outputclass="badge theme-contrast">Contrast badge</ph>
-          <ph outputclass="badge theme-subtle">Subtle badge</ph>
-          <ph outputclass="badge theme-muted">Muted badge</ph>
+        <div outputclass="row g-2 mb-3">
+          <div outputclass="col">
+            <ph outputclass="badge theme-contrast">Contrast badge</ph>
+          </div>
+          <div outputclass="col">
+            <ph outputclass="badge theme-subtle">Subtle badge</ph>
+          </div>
+          <div outputclass="col">
+            <ph outputclass="badge theme-muted">Muted badge</ph>
+          </div>
         </div>
       </div>
     </example>
@@ -303,10 +475,16 @@
     <p>You can also mix theme colors within the same container by applying different
       <codeph>theme-{color}</codeph> classes to child elements:</p>
     <example>
-      <div outputclass="d-flex gap-2">
-        <div outputclass="theme-success theme-contrast p-3 rounded">Success</div>
-        <div outputclass="theme-warning theme-contrast p-3 rounded">Warning</div>
-        <div outputclass="theme-danger theme-contrast p-3 rounded">Danger</div>
+      <div outputclass="row g-2">
+        <div outputclass="col">
+          <div outputclass="theme-success theme-contrast p-3 rounded">Success</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-warning theme-contrast p-3 rounded">Warning</div>
+        </div>
+        <div outputclass="col">
+          <div outputclass="theme-danger theme-contrast p-3 rounded">Danger</div>
+        </div>
       </div>
     </example>
     <codeblock><coderef href="code/theme/status-colors-outputclass.xml"/></codeblock>
