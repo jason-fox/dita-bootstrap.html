@@ -1,0 +1,14 @@
+<bodydiv outputclass="row row-cols-1 sm:row-cols-2 md:row-cols-4">
+  <bodydiv outputclass="col">
+    <p>Column</p>
+  </bodydiv>
+  <bodydiv outputclass="col">
+    <p>Column</p>
+  </bodydiv>
+  <bodydiv outputclass="col">
+    <p>Column</p>
+  </bodydiv>
+  <bodydiv outputclass="col">
+    <p>Column</p>
+  </bodydiv>
+</bodydiv>

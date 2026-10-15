@@ -346,5 +346,29 @@ And, kept unused, the user so destroys it.</lines>
       </ol>
     </example>
     <codeblock><coderef href="code/carousel/disable-touch.xml"/></codeblock>
+    <!--
+    <section id="end-behavior">
+      <title>End behavior</title>
+      <p>Control what happens after the last slide: loop, wrap, or stop.</p>
+    </section>
+    -->
+    <!--
+    <section id="dark-carousel">
+      <title>Dark carousel</title>
+      <p>Switch the controls and indicators to a dark variant for light slides.</p>
+    </section>
+    -->
+    <!--
+    <section id="peeking">
+      <title>Peeking</title>
+      <p>Show part of the neighboring slides alongside the active slide.</p>
+    </section>
+    -->
+    <!--
+    <section id="variable-width">
+      <title>Variable width</title>
+      <p>Allow slides of differing widths in a multi-item carousel.</p>
+    </section>
+    -->
   </body>
 </topic>

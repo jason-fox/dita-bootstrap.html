@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="wide-table">
+  <title>Wide table</title>
+  <body>
+    <table>
+      <tgroup cols="12">
+        <thead id="head">
+          <row>
+            <entry>#</entry>
+            <entry>Heading</entry>
+            <entry>Heading</entry>
+            <entry>Heading</entry>
+            <entry>Heading</entry>
+            <entry>Heading</entry>
+            <entry>Heading</entry>
+            <entry>Heading</entry>
+            <entry>Heading</entry>
+            <entry>Heading</entry>
+            <entry>Heading</entry>
+            <entry>Heading</entry>
+          </row>
+        </thead>
+        <tbody id="data">
+          <row>
+            <entry outputclass="thead">1</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+          </row>
+          <row>
+            <entry outputclass="thead">2</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+          </row>
+          <row>
+            <entry outputclass="thead">3</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+            <entry>Cell</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>

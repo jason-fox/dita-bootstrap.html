@@ -152,32 +152,15 @@ and summer’s lease hath all too short a date:
 ...</lines>
       <p/>
       <table frame="all">
-        <tgroup cols="2">
+        <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead outputclass="table-dark">
-            <row>
-              <entry colname="COLSPEC0" valign="top">Animal</entry>
-              <entry colname="COLSPEC1" valign="top">Gestation</entry>
-            </row>
+          <colspec colname="COLSPEC2"/>
+          <thead outputclass="table-dark" conref="animals.dita#animals/head">
+            <row><entry/></row>
           </thead>
-          <tbody>
-            <row>
-              <entry>Elephant (African and Asian)</entry>
-              <entry>19-22 months</entry>
-            </row>
-            <row>
-              <entry>Giraffe</entry>
-              <entry>15 months</entry>
-            </row>
-            <row>
-              <entry>Rhinoceros</entry>
-              <entry>14-16 months</entry>
-            </row>
-            <row>
-              <entry>Hippopotamus</entry>
-              <entry>7 1/2 months</entry>
-            </row>
+          <tbody conref="animals.dita#animals/data">
+            <row><entry/></row>
           </tbody>
         </tgroup>
       </table>

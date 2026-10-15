@@ -119,5 +119,62 @@
       </section>
     </bodydiv>
     <codeblock><coderef href="code/card/card-title.xml"/></codeblock>
+    <section id="translucent-cards">
+      <title>Translucent cards</title>
+      <p>Set <xmlatt>outputclass="card-translucent"</xmlatt> on a card for a translucent background.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <section id="card-translucent-1" outputclass="card card-translucent">
+        <title>Translucent card</title>
+        <p>Some quick example text for the card.</p>
+      </section>
+    </bodydiv>
+    <codeblock><coderef href="code/card/translucent-cards.xml"/></codeblock>
+    <section id="card-groups">
+      <title>Card groups</title>
+      <p>Wrap cards in an element with <xmlatt>outputclass="card-group"</xmlatt>, itself inside an element with <xmlatt>outputclass="contains-inline"</xmlatt>. Without it the cards stay stacked.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <bodydiv outputclass="contains-inline">
+        <bodydiv outputclass="card-group">
+          <section id="card-group-1" outputclass="card">
+            <title>Card title</title>
+            <p>Some quick example text for the card.</p>
+          </section>
+          <section id="card-group-2" outputclass="card">
+            <title>Card title</title>
+            <p>Some quick example text for the card.</p>
+          </section>
+        </bodydiv>
+      </bodydiv>
+    </bodydiv>
+    <codeblock><coderef href="code/card/card-groups.xml"/></codeblock>
+    <section id="grid-cards">
+      <title>Grid cards</title>
+      <p>Combine <xmlatt>outputclass="row row-cols-*"</xmlatt> with an <xmlatt>outputclass="col"</xmlatt> wrapper around each card.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <bodydiv outputclass="row row-cols-1 md:row-cols-2 g-4">
+        <bodydiv outputclass="col">
+          <section id="grid-card-1" outputclass="card">
+            <title>Card title</title>
+            <p>Some quick example text for the card.</p>
+          </section>
+        </bodydiv>
+        <bodydiv outputclass="col">
+          <section id="grid-card-2" outputclass="card">
+            <title>Card title</title>
+            <p>Some quick example text for the card.</p>
+          </section>
+        </bodydiv>
+      </bodydiv>
+    </bodydiv>
+    <codeblock><coderef href="code/card/grid-cards.xml"/></codeblock>
+    <!--
+    <section id="image-overlays">
+      <title>Image overlays</title>
+      <p>Turn an image into the card background and overlay text on top of it.</p>
+    </section>
+    -->
   </body>
 </topic>

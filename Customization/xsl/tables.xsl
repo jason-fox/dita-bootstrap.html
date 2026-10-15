@@ -60,19 +60,22 @@
     <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]" mode="out-of-line"/>
 
     <div>
-      <!-- ↓ Add Bootstrap CSS frame processing ↓ -->
-      <xsl:apply-templates select="." mode="frame-processing"/>
+      <!-- ↓ Add Bootstrap CSS frame and responsive processing ↓ -->
+      <xsl:call-template name="table-responsive"/>
       <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
-      <table>
-        <!-- ↓ Add Bootstrap CSS class processing ↓ -->
-        <xsl:call-template name="commonattributes"/>
-        <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
-        <xsl:call-template name="setid"/>
-        <xsl:apply-templates select="." mode="css-class"/>
-        <xsl:apply-templates select="." mode="table:title"/>
-        <!-- title and desc are processed elsewhere -->
-        <xsl:apply-templates select="*[contains(@class, ' topic/tgroup ')]"/>
-      </table>
+      <xsl:variable name="table">
+        <table>
+          <!-- ↓ Add Bootstrap CSS class processing ↓ -->
+          <xsl:call-template name="commonattributes"/>
+          <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
+          <xsl:call-template name="setid"/>
+          <xsl:apply-templates select="." mode="css-class"/>
+          <xsl:apply-templates select="." mode="table:title"/>
+          <!-- title and desc are processed elsewhere -->
+          <xsl:apply-templates select="*[contains(@class, ' topic/tgroup ')]"/>
+        </table>
+      </xsl:variable>
+      <xsl:apply-templates select="$table/table" mode="strip-responsive"/>
     </div>
 
     <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/>
@@ -110,6 +113,34 @@
     </xsl:if>
   </xsl:template>
 
+  <xsl:template name="table-responsive">
+    <xsl:variable name="tokens" select="tokenize(@outputclass, '\s+')"/>
+    <xsl:variable
+      name="scroll"
+      select="($tokens[matches(., '^([a-z0-9]+:)?table-responsive$')][1],
+               if (@responsive = 'yes') then concat(if (@breakpoint) then concat(@breakpoint, ':') else '', 'table-responsive') else (),
+               if (@stacked = 'yes' or exists($tokens[matches(., '^([a-z0-9]+:)?table-stacked$')])) then 'table-responsive' else ())[1]"
+    />
+    <xsl:variable name="frame" as="attribute()*">
+      <xsl:apply-templates select="." mode="frame-processing"/>
+    </xsl:variable>
+    <xsl:variable name="responsive-class" select="string-join(($frame[name() = 'class'], $scroll, if (@card = 'yes' or $tokens = 'table-card') then 'table-card' else ()), ' ')"/>
+    <xsl:if test="$responsive-class != ''">
+      <xsl:attribute name="class" select="$responsive-class"/>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template match="table" mode="strip-responsive">
+    <xsl:copy>
+      <xsl:copy-of select="@* except @class"/>
+      <xsl:attribute
+        name="class"
+        select="string-join(tokenize(@class, '\s+')[not(matches(., '^(([a-z0-9]+:)?table-responsive|table-card)$'))], ' ')"
+      />
+      <xsl:copy-of select="node()"/>
+    </xsl:copy>
+  </xsl:template>
+
   <!-- Add a Bootstrap CSS border to tables -->
   <xsl:template match="*[contains(@class, ' topic/table ')]" mode="get-output-class">
     <xsl:value-of select="$BOOTSTRAP_CSS_TABLE"/>
@@ -130,6 +161,12 @@
     </xsl:if>
     <xsl:if test="@compact = 'yes'">
       <xsl:text> table-sm</xsl:text>
+    </xsl:if>
+    <xsl:if test="@caption = 'top'">
+      <xsl:text> caption-top</xsl:text>
+    </xsl:if>
+    <xsl:if test="@stacked = 'yes'">
+      <xsl:value-of select="concat(' ', if (@breakpoint) then concat(@breakpoint, ':') else '', 'table-stacked ')"/>
     </xsl:if>
     <xsl:variable
       name="border"
@@ -232,4 +269,57 @@
     </xsl:if>
     <xsl:next-match/>
   </xsl:template>
+  <xsl:template
+    match="*[contains(@class, ' topic/tbody ')][*[contains(@class, ' topic/row ') and tokenize(@outputclass, '\s+') = 'tfoot']]"
+    priority="10"
+  >
+    <xsl:variable name="footer" select="*[contains(@class, ' topic/row ') and tokenize(@outputclass, '\s+') = 'tfoot']"/>
+    <tbody>
+      <xsl:apply-templates select="../*[contains(@class, ' ditaot-d/ditaval-startprop ')]/@style" mode="add-ditaval-style"/>
+      <xsl:apply-templates select="." mode="table:common"/>
+      <xsl:apply-templates select="* except $footer"/>
+    </tbody>
+    <tfoot>
+      <xsl:apply-templates select="$footer"/>
+    </tfoot>
+  </xsl:template>
+
+  <xsl:template
+    match="*[table:is-tbody-entry(.)][tokenize(@outputclass, '\s+') = 'thead']"
+    priority="10"
+  >
+    <th scope="row">
+      <xsl:apply-templates select="." mode="table:entry"/>
+    </th>
+  </xsl:template>
+
+  <xsl:template
+    match="*[table:is-tbody-entry(.)]
+            [ancestor::*[contains(@class, ' topic/table ')][1][@stacked = 'yes' or (some $c in tokenize(@outputclass, '\s+') satisfies matches($c, '^([a-z0-9]+:)?table-stacked$'))]]"
+    mode="table:entry"
+    priority="10"
+  >
+    <xsl:variable name="x" select="xs:integer(@dita-ot:x)"/>
+    <xsl:variable
+      name="head"
+      select="ancestor::*[contains(@class, ' topic/tgroup ')][1]/*[contains(@class, ' topic/thead ')]/*[contains(@class, ' topic/row ')][last()]/*[contains(@class, ' topic/entry ')][xs:integer(@dita-ot:x) = $x]"
+    />
+    <xsl:attribute name="data-cell" select="normalize-space($head)"/>
+    <xsl:next-match/>
+  </xsl:template>
+
+  <xsl:template match="*[contains(@class, ' topic/tfoot ')]" name="topic.tfoot">
+    <tfoot>
+      <xsl:apply-templates select="." mode="table:section"/>
+    </tfoot>
+  </xsl:template>
+
+  <xsl:template match="*[contains(@class, ' topic/entry ')][contains(../../@class, ' topic/tfoot ')]">
+    <td>
+      <xsl:apply-templates select="." mode="table:common"/>
+      <xsl:apply-templates select="@morerows, @dita-ot:morecols"/>
+      <xsl:apply-templates/>
+    </td>
+  </xsl:template>
+
 </xsl:stylesheet>

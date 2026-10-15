@@ -1,0 +1,11 @@
+<bodydiv outputclass="row md:justify-content-center">
+  <bodydiv outputclass="col lg:col-2">
+    <p>1 of 3</p>
+  </bodydiv>
+  <bodydiv outputclass="md:col-auto">
+    <p>Variable width content</p>
+  </bodydiv>
+  <bodydiv outputclass="col lg:col-2">
+    <p>3 of 3</p>
+  </bodydiv>
+</bodydiv>

@@ -128,5 +128,53 @@
       <li><xmlatt>outputclass="drawer-xxl"</xmlatt></li>
     </ul>
     <codeblock><coderef href="code/drawer/responsive.xml"/></codeblock>
+    <section id="sheet">
+      <title>Sheet</title>
+      <p>Add <xmlatt>outputclass="drawer-sheet"</xmlatt> alongside a placement class.</p>
+    </section>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+      <xref props="drawer-toggle" href="#drawer-sheet-1" outputclass="btn-solid theme-primary">Toggle sheet drawer</xref>
+      <section id="drawer-sheet-1" outputclass="drawer drawer-bottom drawer-sheet">
+        <title>Drawer</title>
+        <p>Content for the drawer goes here.</p>
+      </section>
+    </bodydiv>
+    <codeblock><coderef href="code/drawer/sheet.xml"/></codeblock>
+    <section id="translucent-drawer">
+      <title>Translucent</title>
+      <p>Add <xmlatt>outputclass="drawer-translucent"</xmlatt> for a translucent background.</p>
+    </section>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+      <xref props="drawer-toggle" href="#drawer-translucent-1" outputclass="btn-solid theme-primary">Toggle translucent drawer</xref>
+      <section id="drawer-translucent-1" outputclass="drawer drawer-start drawer-translucent">
+        <title>Drawer</title>
+        <p>Content for the drawer goes here.</p>
+      </section>
+    </bodydiv>
+    <codeblock><coderef href="code/drawer/translucent-drawer.xml"/></codeblock>
+    <!--
+    <section id="dark-drawer">
+      <title>Dark</title>
+      <p>Apply a dark color scheme to the drawer.</p>
+    </section>
+    -->
+    <section id="instant-drawer">
+      <title>Instant</title>
+      <p>Add <xmlatt>outputclass="drawer-instant"</xmlatt> to disable the open and close animation.</p>
+    </section>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+      <xref props="drawer-toggle" href="#drawer-instant-1" outputclass="btn-solid theme-primary">Toggle instant drawer</xref>
+      <section id="drawer-instant-1" outputclass="drawer drawer-start drawer-instant">
+        <title>Drawer</title>
+        <p>Content for the drawer goes here.</p>
+      </section>
+    </bodydiv>
+    <codeblock><coderef href="code/drawer/instant-drawer.xml"/></codeblock>
+    <!--
+    <section id="drawer-footer">
+      <title>Footer</title>
+      <p>Add a footer region to the drawer for actions.</p>
+    </section>
+    -->
   </body>
 </topic>

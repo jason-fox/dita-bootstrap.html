@@ -36,32 +36,15 @@
     </section>
     <example>
       <table>
-        <tgroup cols="2">
+        <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead>
-            <row>
-              <entry colname="COLSPEC0" valign="top">Animal</entry>
-              <entry colname="COLSPEC1" valign="top">Gestation</entry>
-            </row>
+          <colspec colname="COLSPEC2"/>
+          <thead conref="animals.dita#animals/head">
+            <row><entry/></row>
           </thead>
-          <tbody>
-            <row>
-              <entry>Elephant (African and Asian)</entry>
-              <entry>19-22 months</entry>
-            </row>
-            <row>
-              <entry>Giraffe</entry>
-              <entry>15 months</entry>
-            </row>
-            <row>
-              <entry>Rhinoceros</entry>
-              <entry>14-16 months</entry>
-            </row>
-            <row>
-              <entry>Hippopotamus</entry>
-              <entry>7 1/2 months</entry>
-            </row>
+          <tbody conref="animals.dita#animals/data">
+            <row><entry/></row>
           </tbody>
         </tgroup>
       </table>
@@ -74,28 +57,29 @@
     </section>
     <example>
       <table outputclass="p-1 w-100 theme-primary">
-        <tgroup cols="2">
-          <thead>
-            <row>
-              <entry>Animal</entry>
-              <entry>Gestation</entry>
-            </row>
+        <tgroup cols="3">
+          <thead conref="animals.dita#animals/head">
+            <row><entry/></row>
           </thead>
           <tbody>
             <row outputclass="theme-info">
               <entry>Elephant (African and Asian)</entry>
+              <entry>Loxodonta africana, Elephas maximus</entry>
               <entry>19-22 months</entry>
             </row>
             <row outputclass="theme-success">
               <entry>Giraffe</entry>
+              <entry>Giraffa camelopardalis</entry>
               <entry>15 months</entry>
             </row>
             <row>
               <entry>Rhinoceros</entry>
+              <entry>Rhinocerotidae</entry>
               <entry outputclass="theme-danger">14-16 months</entry>
             </row>
             <row>
               <entry>Hippopotamus</entry>
+              <entry>Hippopotamus amphibius</entry>
               <entry>7 1/2 months</entry>
             </row>
           </tbody>
@@ -111,32 +95,15 @@
     </section>
     <example>
       <table outputclass="table-striped">
-        <tgroup cols="2">
+        <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead>
-            <row>
-              <entry colname="COLSPEC0" valign="top">Animal</entry>
-              <entry colname="COLSPEC1" valign="top">Gestation</entry>
-            </row>
+          <colspec colname="COLSPEC2"/>
+          <thead conref="animals.dita#animals/head">
+            <row><entry/></row>
           </thead>
-          <tbody>
-            <row>
-              <entry>Elephant (African and Asian)</entry>
-              <entry>19-22 months</entry>
-            </row>
-            <row>
-              <entry>Giraffe</entry>
-              <entry>15 months</entry>
-            </row>
-            <row>
-              <entry>Rhinoceros</entry>
-              <entry>14-16 months</entry>
-            </row>
-            <row>
-              <entry>Hippopotamus</entry>
-              <entry>7 1/2 months</entry>
-            </row>
+          <tbody conref="animals.dita#animals/data">
+            <row><entry/></row>
           </tbody>
         </tgroup>
       </table>
@@ -149,32 +116,15 @@
     </section>
     <example>
       <table outputclass="table-striped-columns">
-        <tgroup cols="2">
+        <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead>
-            <row>
-              <entry colname="COLSPEC0" valign="top">Animal</entry>
-              <entry colname="COLSPEC1" valign="top">Gestation</entry>
-            </row>
+          <colspec colname="COLSPEC2"/>
+          <thead conref="animals.dita#animals/head">
+            <row><entry/></row>
           </thead>
-          <tbody>
-            <row>
-              <entry>Elephant (African and Asian)</entry>
-              <entry>19-22 months</entry>
-            </row>
-            <row>
-              <entry>Giraffe</entry>
-              <entry>15 months</entry>
-            </row>
-            <row>
-              <entry>Rhinoceros</entry>
-              <entry>14-16 months</entry>
-            </row>
-            <row>
-              <entry>Hippopotamus</entry>
-              <entry>7 1/2 months</entry>
-            </row>
+          <tbody conref="animals.dita#animals/data">
+            <row><entry/></row>
           </tbody>
         </tgroup>
       </table>
@@ -187,32 +137,15 @@
     </section>
     <example>
       <table rowsep="1" colsep="1">
-        <tgroup cols="2">
+        <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead>
-            <row>
-              <entry colname="COLSPEC0" valign="top">Animal</entry>
-              <entry colname="COLSPEC1" valign="top">Gestation</entry>
-            </row>
+          <colspec colname="COLSPEC2"/>
+          <thead conref="animals.dita#animals/head">
+            <row><entry/></row>
           </thead>
-          <tbody>
-            <row>
-              <entry>Elephant (African and Asian)</entry>
-              <entry>19-22 months</entry>
-            </row>
-            <row>
-              <entry>Giraffe</entry>
-              <entry>15 months</entry>
-            </row>
-            <row>
-              <entry>Rhinoceros</entry>
-              <entry>14-16 months</entry>
-            </row>
-            <row>
-              <entry>Hippopotamus</entry>
-              <entry>7 1/2 months</entry>
-            </row>
+          <tbody conref="animals.dita#animals/data">
+            <row><entry/></row>
           </tbody>
         </tgroup>
       </table>
@@ -224,32 +157,15 @@
     </section>
     <example>
       <table rowsep="0" colsep="0">
-        <tgroup cols="2">
+        <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead>
-            <row>
-              <entry colname="COLSPEC0" valign="top">Animal</entry>
-              <entry colname="COLSPEC1" valign="top">Gestation</entry>
-            </row>
+          <colspec colname="COLSPEC2"/>
+          <thead conref="animals.dita#animals/head">
+            <row><entry/></row>
           </thead>
-          <tbody>
-            <row>
-              <entry>Elephant (African and Asian)</entry>
-              <entry>19-22 months</entry>
-            </row>
-            <row>
-              <entry>Giraffe</entry>
-              <entry>15 months</entry>
-            </row>
-            <row>
-              <entry>Rhinoceros</entry>
-              <entry>14-16 months</entry>
-            </row>
-            <row>
-              <entry>Hippopotamus</entry>
-              <entry>7 1/2 months</entry>
-            </row>
+          <tbody conref="animals.dita#animals/data">
+            <row><entry/></row>
           </tbody>
         </tgroup>
       </table>
@@ -257,37 +173,20 @@
     <codeblock><coderef href="code/tables/tables-without-borders.xml"/></codeblock>
     <section id="small-tables">
       <title>Small tables</title>
-      <p>Add <xmlatt>compact="yes"</xmlatt> to make any table more compact by cutting all cell <codeph
+      <p>Add <xmlatt>outputclass="table-sm"</xmlatt> to make any table more compact by cutting all cell <codeph
         >padding</codeph> in half.</p>
     </section>
     <example>
       <table outputclass="table-sm">
-        <tgroup cols="2">
+        <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead>
-            <row>
-              <entry colname="COLSPEC0" valign="top">Animal</entry>
-              <entry colname="COLSPEC1" valign="top">Gestation</entry>
-            </row>
+          <colspec colname="COLSPEC2"/>
+          <thead conref="animals.dita#animals/head">
+            <row><entry/></row>
           </thead>
-          <tbody>
-            <row>
-              <entry>Elephant (African and Asian)</entry>
-              <entry>19-22 months</entry>
-            </row>
-            <row>
-              <entry>Giraffe</entry>
-              <entry>15 months</entry>
-            </row>
-            <row>
-              <entry>Rhinoceros</entry>
-              <entry>14-16 months</entry>
-            </row>
-            <row>
-              <entry>Hippopotamus</entry>
-              <entry>7 1/2 months</entry>
-            </row>
+          <tbody conref="animals.dita#animals/data">
+            <row><entry/></row>
           </tbody>
         </tgroup>
       </table>
@@ -300,32 +199,15 @@
     </section>
     <example>
       <table>
-        <tgroup cols="2">
+        <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead>
-            <row>
-              <entry colname="COLSPEC0" valign="top">Animal</entry>
-              <entry colname="COLSPEC1" valign="top">Gestation</entry>
-            </row>
+          <colspec colname="COLSPEC2"/>
+          <thead conref="animals.dita#animals/head">
+            <row><entry/></row>
           </thead>
-          <tbody outputclass="table-group-divider">
-            <row>
-              <entry>Elephant (African and Asian)</entry>
-              <entry>19-22 months</entry>
-            </row>
-            <row>
-              <entry>Giraffe</entry>
-              <entry>15 months</entry>
-            </row>
-            <row>
-              <entry>Rhinoceros</entry>
-              <entry>14-16 months</entry>
-            </row>
-            <row>
-              <entry>Hippopotamus</entry>
-              <entry>7 1/2 months</entry>
-            </row>
+          <tbody outputclass="table-group-divider" conref="animals.dita#animals/data">
+            <row><entry/></row>
           </tbody>
         </tgroup>
       </table>
@@ -392,32 +274,15 @@
     </section>
     <example>
       <table>
-        <tgroup cols="2">
+        <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead outputclass="theme-secondary">
-            <row>
-              <entry colname="COLSPEC0" valign="top">Animal</entry>
-              <entry colname="COLSPEC1" valign="top">Gestation</entry>
-            </row>
+          <colspec colname="COLSPEC2"/>
+          <thead outputclass="theme-secondary" conref="animals.dita#animals/head">
+            <row><entry/></row>
           </thead>
-          <tbody>
-            <row>
-              <entry>Elephant (African and Asian)</entry>
-              <entry>19-22 months</entry>
-            </row>
-            <row>
-              <entry>Giraffe</entry>
-              <entry>15 months</entry>
-            </row>
-            <row>
-              <entry>Rhinoceros</entry>
-              <entry>14-16 months</entry>
-            </row>
-            <row>
-              <entry>Hippopotamus</entry>
-              <entry>7 1/2 months</entry>
-            </row>
+          <tbody conref="animals.dita#animals/data">
+            <row><entry/></row>
           </tbody>
         </tgroup>
       </table>
@@ -425,36 +290,153 @@
     <codeblock><coderef href="code/tables/table-head.xml"/></codeblock>
     <example>
       <table>
-        <tgroup cols="2">
+        <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead outputclass="theme-inverse">
-            <row>
-              <entry colname="COLSPEC0" valign="top">Animal</entry>
-              <entry colname="COLSPEC1" valign="top">Gestation</entry>
-            </row>
+          <colspec colname="COLSPEC2"/>
+          <thead outputclass="theme-inverse" conref="animals.dita#animals/head">
+            <row><entry/></row>
           </thead>
-          <tbody>
-            <row>
-              <entry>Elephant (African and Asian)</entry>
-              <entry>19-22 months</entry>
-            </row>
-            <row>
-              <entry>Giraffe</entry>
-              <entry>15 months</entry>
-            </row>
-            <row>
-              <entry>Rhinoceros</entry>
-              <entry>14-16 months</entry>
-            </row>
-            <row>
-              <entry>Hippopotamus</entry>
-              <entry>7 1/2 months</entry>
-            </row>
+          <tbody conref="animals.dita#animals/data">
+            <row><entry/></row>
           </tbody>
         </tgroup>
       </table>
     </example>
     <codeblock><coderef href="code/tables/table-head-colors.xml"/></codeblock>
+    <section id="card-like-tables">
+      <title>Card-like tables</title>
+      <p>Add <xmlatt>outputclass="table-card"</xmlatt> to a table to round the corners like a card.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <table outputclass="table-striped table-card">
+        <tgroup cols="3">
+          <colspec colname="c1"/>
+          <colspec colname="c2"/>
+          <colspec colname="c3"/>
+          <thead conref="animals.dita#animals/head">
+            <row><entry/></row>
+          </thead>
+          <tbody conref="animals.dita#animals/data">
+            <row><entry/></row>
+          </tbody>
+        </tgroup>
+      </table>
+    </bodydiv>
+    <codeblock><coderef href="code/tables/card-like-tables.xml"/></codeblock>
+    <section id="table-footer">
+      <title>Footer</title>
+      <p>Add <xmlatt>outputclass="tfoot"</xmlatt> to a <xmlelement>row</xmlelement> of the <xmlelement>tbody</xmlelement> to move it into a table footer row group, and <xmlatt>outputclass="thead"</xmlatt> to an <xmlelement>entry</xmlelement> to render it as a row header.</p>
+    </section>
+    <example>
+      <table>
+        <title>Monthly Sales Report</title>
+        <tgroup cols="3">
+          <colspec colname="col1" colnum="1"/>
+          <colspec colname="col2" colnum="2"/>
+          <colspec colname="col3" colnum="3"/>
+          <thead>
+            <row>
+              <entry>Product</entry>
+              <entry>Units Sold</entry>
+              <entry>Revenue</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry outputclass="thead">Product A</entry>
+              <entry>100</entry>
+              <entry>$1,000</entry>
+            </row>
+            <row>
+              <entry outputclass="thead">Product B</entry>
+              <entry>150</entry>
+              <entry>$1,500</entry>
+            </row>
+            <row>
+              <entry outputclass="thead">Product C</entry>
+              <entry>250</entry>
+              <entry>$2,500</entry>
+            </row>
+            <row outputclass="tfoot">
+              <entry>Total</entry>
+              <entry>500</entry>
+              <entry>$5,000</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </example>
+    <codeblock><coderef href="code/tables/table-footer.xml"/></codeblock>
+    <section id="caption">
+      <title>Caption</title>
+      <p>A table <xmlelement>title</xmlelement> renders as the caption, below the table by default. Add <xmlatt>outputclass="caption-top"</xmlatt> to move it above.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <table outputclass="caption-top">
+        <title>List of animals</title>
+        <tgroup cols="3">
+          <colspec colname="c1"/>
+          <colspec colname="c2"/>
+          <colspec colname="c3"/>
+          <thead conref="animals.dita#animals/head">
+            <row><entry/></row>
+          </thead>
+          <tbody conref="animals.dita#animals/data">
+            <row><entry/></row>
+          </tbody>
+        </tgroup>
+      </table>
+    </bodydiv>
+    <codeblock><coderef href="code/tables/caption.xml"/></codeblock>
+    <section id="stacked-tables">
+      <title>Stacked tables</title>
+      <p>Add <xmlatt>outputclass="md:table-stacked"</xmlatt> to a table to collapse rows into stacked label and value pairs below a container breakpoint. Use <xmlatt>outputclass="table-stacked"</xmlatt> to always stack. Each cell is labelled with its column heading, and the required responsive wrapper is generated automatically.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <table outputclass="md:table-stacked">
+        <tgroup cols="3">
+          <colspec colname="c1"/>
+          <colspec colname="c2"/>
+          <colspec colname="c3"/>
+          <thead conref="animals.dita#animals/head">
+            <row><entry/></row>
+          </thead>
+          <tbody conref="animals.dita#animals/data">
+            <row><entry/></row>
+          </tbody>
+        </tgroup>
+      </table>
+    </bodydiv>
+    <codeblock><coderef href="code/tables/stacked-tables.xml"/></codeblock>
+    <section id="responsive-tables">
+      <title>Responsive tables</title>
+      <p>Add <xmlatt>outputclass="table-responsive"</xmlatt> to a table to scroll horizontally, or use <codeph>sm:</codeph> to <codeph>2xl:</codeph> prefixed variants such as <xmlatt>outputclass="xl:table-responsive"</xmlatt> to scroll only below a breakpoint. The scrolling wrapper is generated automatically.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <table outputclass="xl:table-responsive">
+        <tgroup cols="12">
+          <colspec colname="c1"/>
+          <colspec colname="c2"/>
+          <colspec colname="c3"/>
+          <colspec colname="c4"/>
+          <colspec colname="c5"/>
+          <colspec colname="c6"/>
+          <colspec colname="c7"/>
+          <colspec colname="c8"/>
+          <colspec colname="c9"/>
+          <colspec colname="c10"/>
+          <colspec colname="c11"/>
+          <colspec colname="c12"/>
+          <thead conref="wide-table.dita#wide-table/head">
+            <row><entry/></row>
+          </thead>
+          <tbody conref="wide-table.dita#wide-table/data">
+            <row><entry/></row>
+          </tbody>
+        </tgroup>
+      </table>
+    </bodydiv>
+    <codeblock><coderef href="code/tables/responsive-tables.xml"/></codeblock>
   </body>
 </topic>

@@ -61,28 +61,29 @@
       </lq>
 
       <table outputclass="mt-2 p-1 w-100 theme-primary">
-        <tgroup cols="2">
-          <thead>
-            <row>
-              <entry>Animal</entry>
-              <entry>Gestation</entry>
-            </row>
+        <tgroup cols="3">
+          <thead conref="animals.dita#animals/head">
+            <row><entry/></row>
           </thead>
           <tbody>
             <row outputclass="theme-info">
               <entry>Elephant (African and Asian)</entry>
+              <entry>Loxodonta africana, Elephas maximus</entry>
               <entry>19-22 months</entry>
             </row>
             <row outputclass="theme-success">
               <entry>Giraffe</entry>
+              <entry>Giraffa camelopardalis</entry>
               <entry>15 months</entry>
             </row>
             <row>
               <entry>Rhinoceros</entry>
+              <entry>Rhinocerotidae</entry>
               <entry outputclass="theme-danger">14-16 months</entry>
             </row>
             <row>
               <entry>Hippopotamus</entry>
+              <entry>Hippopotamus amphibius</entry>
               <entry>7 1/2 months</entry>
             </row>
           </tbody>

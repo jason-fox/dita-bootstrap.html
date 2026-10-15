@@ -224,6 +224,12 @@
     <xsl:if test="@flush = 'yes'">
        <xsl:text> accordion-flush</xsl:text>
     </xsl:if>
+    <xsl:if test="@size = 'small'">
+       <xsl:text> accordion-sm</xsl:text>
+    </xsl:if>
+    <xsl:if test="@gap = 'yes'">
+       <xsl:text> accordion-gap</xsl:text>
+    </xsl:if>
     <xsl:next-match/>
   </xsl:template>
 
@@ -236,16 +242,21 @@
       <xsl:value-of select="@gap"/>
       <xsl:text> </xsl:text>
     </xsl:if>
+    <xsl:if test="@cols">
+      <xsl:text>row-cols-</xsl:text>
+      <xsl:value-of select="@cols"/>
+      <xsl:text> </xsl:text>
+    </xsl:if>
     <xsl:next-match/>
   </xsl:template>
 
   <!-- Change the default Bootstrap CSS classes of grid columns -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/grid-col ')]" mode="bootstrap-class" priority="10">
-    <xsl:text>col</xsl:text>
     <xsl:if test="@breakpoint">
-      <xsl:text>-</xsl:text>
       <xsl:value-of select="@breakpoint"/>
+      <xsl:text>:</xsl:text>
     </xsl:if>
+    <xsl:text>col</xsl:text>
     <xsl:if test="@colspan">
       <xsl:text>-</xsl:text>
       <xsl:value-of select="@colspan"/>
@@ -469,6 +480,9 @@
       </xsl:call-template>
       <xsl:text> </xsl:text>
     </xsl:if>
+    <xsl:if test="@translucent = 'yes'">
+      <xsl:text>card-translucent </xsl:text>
+    </xsl:if>
     <xsl:next-match/>
   </xsl:template>
 
@@ -527,6 +541,15 @@
         <xsl:text>drawer-start </xsl:text>
       </xsl:otherwise>
     </xsl:choose>
+    <xsl:if test="@sheet = 'yes'">
+      <xsl:text>drawer-sheet </xsl:text>
+    </xsl:if>
+    <xsl:if test="@translucent = 'yes'">
+      <xsl:text>drawer-translucent </xsl:text>
+    </xsl:if>
+    <xsl:if test="@instant = 'yes'">
+      <xsl:text>drawer-instant </xsl:text>
+    </xsl:if>
     <xsl:next-match/>
   </xsl:template>
 

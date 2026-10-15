@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="animals">
+  <title>Animal gestation</title>
+  <body>
+    <table>
+      <tgroup cols="3">
+        <colspec colname="COLSPEC0"/>
+        <colspec colname="COLSPEC1"/>
+        <colspec colname="COLSPEC2"/>
+        <thead id="head">
+          <row>
+            <entry>Animal</entry>
+            <entry>Species</entry>
+            <entry>Gestation</entry>
+          </row>
+        </thead>
+        <tbody id="data">
+          <row>
+            <entry>Elephant (African and Asian)</entry>
+            <entry>Loxodonta africana, Elephas maximus</entry>
+            <entry>19-22 months</entry>
+          </row>
+          <row>
+            <entry>Giraffe</entry>
+            <entry>Giraffa camelopardalis</entry>
+            <entry>15 months</entry>
+          </row>
+          <row>
+            <entry>Rhinoceros</entry>
+            <entry>Rhinocerotidae</entry>
+            <entry>14-16 months</entry>
+          </row>
+          <row>
+            <entry>Hippopotamus</entry>
+            <entry>Hippopotamus amphibius</entry>
+            <entry>7 1/2 months</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>

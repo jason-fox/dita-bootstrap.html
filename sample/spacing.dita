@@ -101,5 +101,14 @@
     </example>
 
     <codeblock><coderef href="code/spacing/directional-spacing.xml"/></codeblock>
+    <section id="negative-margin">
+      <title>Negative margin</title>
+      <p>Negative margins are limited to the inline start and end sides: <xmlatt>outputclass="ms--1"</xmlatt>, <xmlatt>outputclass="ms--2"</xmlatt>, <xmlatt>outputclass="me--1"</xmlatt> and <xmlatt>outputclass="me--2"</xmlatt>.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <div outputclass="ms--1 p-2 border">ms--1</div>
+      <div outputclass="me--2 p-2 border">me--2</div>
+    </bodydiv>
+    <codeblock><coderef href="code/spacing/negative-margin.xml"/></codeblock>
   </body>
 </topic>

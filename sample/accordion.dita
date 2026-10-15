@@ -132,5 +132,45 @@
       </bodydiv>
     </bodydiv>
     <codeblock><coderef href="code/accordion/always-open.xml"/></codeblock>
+    <section id="small">
+      <title>Small</title>
+      <p>Set <xmlatt>outputclass="accordion-sm"</xmlatt> to tighten the padding, border radius and font size.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <bodydiv outputclass="accordion-sm">
+        <section id="acc-sm1">
+          <title>Accordion Item #1</title>
+          <p>This is the first item's accordion body.</p>
+        </section>
+        <section id="acc-sm2">
+          <title>Accordion Item #2</title>
+          <p>This is the second item's accordion body.</p>
+        </section>
+      </bodydiv>
+    </bodydiv>
+    <codeblock><coderef href="code/accordion/small.xml"/></codeblock>
+    <section id="gap">
+      <title>Gap</title>
+      <p>Set <xmlatt>outputclass="accordion-gap"</xmlatt> to separate each item into its own rounded card.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <bodydiv outputclass="accordion-gap">
+        <section id="acc-gap1">
+          <title>Accordion Item #1</title>
+          <p>This is the first item's accordion body.</p>
+        </section>
+        <section id="acc-gap2">
+          <title>Accordion Item #2</title>
+          <p>This is the second item's accordion body.</p>
+        </section>
+      </bodydiv>
+    </bodydiv>
+    <codeblock><coderef href="code/accordion/gap.xml"/></codeblock>
+    <!--
+    <section id="expand-collapse-all">
+      <title>Expand &amp; Collapse all</title>
+      <p>Add controls that open or close every accordion item at once.</p>
+    </section>
+    -->
   </body>
 </topic>

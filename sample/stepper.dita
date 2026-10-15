@@ -12,7 +12,7 @@
   <title>Stepper</title>
   <abstract>
     <shortdesc>Documentation and examples for creating timelines, wizards, or step-by-step progress indicators.</shortdesc>
-    <p>Steppers are built with CSS Grid on ordered lists and display vertically by default. Add <codeph>outputclass="stepper"</codeph> to an <xmlelement>ol</xmlelement>.
+    <p>Steppers are built with CSS Grid on ordered lists and display vertically by default. Add <xmlatt>outputclass="stepper"</xmlatt> to an <xmlelement>ol</xmlelement>.
       Mark completed or current steps by adding <codeph>active</codeph> to the <xmlatt>outputclass</xmlatt> of the
       <xmlelement>li</xmlelement>.</p>
   </abstract>

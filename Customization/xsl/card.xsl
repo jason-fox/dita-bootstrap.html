@@ -105,4 +105,14 @@
     <xsl:next-match/>
   </xsl:template>
 
+  <xsl:template match="*[contains(@class, ' bootstrap-d/card-group ')]">
+    <div class="contains-inline">
+      <div>
+        <xsl:call-template name="commonattributes"/>
+        <xsl:call-template name="setid"/>
+        <xsl:apply-templates/>
+      </div>
+    </div>
+  </xsl:template>
+
 </xsl:stylesheet>
