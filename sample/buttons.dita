@@ -40,36 +40,36 @@
       <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras
         thrown in for more control.</p>
     </section>
-    <example>
-      <div outputclass="row">
-        <div outputclass="col-3 p-1">
+    <bodydiv outputclass="p-3 border mb-3">
+      <div outputclass="row p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn btn-solid btn-styled theme-primary">Primary</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-secondary">Secondary</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-success">Success</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-danger">Danger</xref>
         </div>
       </div>
-      <div outputclass="row">
-        <div outputclass="col-3 p-1">
+      <div outputclass="row p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-warning">Warning</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-info">Info</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-accent">Accent</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-inverse">Inverse</xref>
         </div>
       </div>
-    </example>
+    </bodydiv>
 
     <codeblock><coderef href="code/buttons/example.xml"/></codeblock>
 
@@ -78,116 +78,116 @@
       <p>Compare the solid (default), outline, subtle, and text button styles at once, combined with theme
         colors.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
-      <bodydiv outputclass="row">
-        <bodydiv outputclass="col p-1">
+    <bodydiv outputclass="p-3 border mb-3">
+      <bodydiv outputclass="row p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-solid theme-primary">Primary</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-outline theme-primary">Primary</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-subtle theme-primary">Primary</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-text theme-primary">Primary</xref>
         </bodydiv>
       </bodydiv>
-      <bodydiv outputclass="row">
-        <bodydiv outputclass="col p-1">
+      <bodydiv outputclass="row p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-solid theme-secondary">Secondary</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-outline theme-secondary">Secondary</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-subtle theme-secondary">Secondary</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-text theme-secondary">Secondary</xref>
         </bodydiv>
       </bodydiv>
-      <bodydiv outputclass="row">
-        <bodydiv outputclass="col p-1">
+      <bodydiv outputclass="row p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-solid theme-success">Success</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-outline theme-success">Success</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-subtle theme-success">Success</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-text theme-success">Success</xref>
         </bodydiv>
       </bodydiv>
-      <bodydiv outputclass="row">
-        <bodydiv outputclass="col p-1">
+      <bodydiv outputclass="row p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-solid theme-danger">Danger</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-outline theme-danger">Danger</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-subtle theme-danger">Danger</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-text theme-danger">Danger</xref>
         </bodydiv>
       </bodydiv>
-      <bodydiv outputclass="row">
-        <bodydiv outputclass="col p-1">
+      <bodydiv outputclass="row p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-solid theme-warning">Warning</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-outline theme-warning">Warning</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-subtle theme-warning">Warning</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-text theme-warning">Warning</xref>
         </bodydiv>
       </bodydiv>
-      <bodydiv outputclass="row">
-        <bodydiv outputclass="col p-1">
+      <bodydiv outputclass="row p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-solid theme-info">Info</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-outline theme-info">Info</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-subtle theme-info">Info</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-text theme-info">Info</xref>
         </bodydiv>
       </bodydiv>
-      <bodydiv outputclass="row">
-        <bodydiv outputclass="col p-1">
+      <bodydiv outputclass="row p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-solid theme-accent">Accent</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-outline theme-accent">Accent</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-subtle theme-accent">Accent</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-text theme-accent">Accent</xref>
         </bodydiv>
       </bodydiv>
-      <bodydiv outputclass="row">
-        <bodydiv outputclass="col p-1">
+      <bodydiv outputclass="row p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-solid theme-inverse">Inverse</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-outline theme-inverse">Inverse</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-subtle theme-inverse">Inverse</xref>
         </bodydiv>
-        <bodydiv outputclass="col p-1">
+        <bodydiv outputclass="col">
           <xref href="#" outputclass="btn-text theme-inverse">Inverse</xref>
         </bodydiv>
       </bodydiv>
@@ -200,36 +200,36 @@
         class. This provides a more three-dimensional appearance that can be customized further with CSS
         variables.</p>
     </section>
-    <example>
-      <div outputclass="row">
-        <div outputclass="col-3 p-1">
+    <bodydiv outputclass="p-3 border mb-3">
+      <div outputclass="row p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn-solid btn-styled theme-primary">Primary</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn-solid btn-styled theme-secondary">Secondary</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn-solid btn-styled theme-success">Success</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn-solid btn-styled theme-danger">Danger</xref>
         </div>
       </div>
-      <div outputclass="row">
-        <div outputclass="col-3 p-1">
+      <div outputclass="row p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn-solid btn-styled theme-warning">Warning</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn-solid btn-styled theme-info">Info</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn-solid btn-styled theme-accent">Accent</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col">
           <xref href="#" outputclass="btn-solid btn-styled theme-inverse">Inverse</xref>
         </div>
       </div>
-    </example>
+    </bodydiv>
     <codeblock><coderef href="code/buttons/styled-buttons.xml"/></codeblock>
 
     <section id="outline-buttons">
@@ -239,78 +239,78 @@
         >btn theme-outline-*</codeph> to remove all background images
         and colors on any button.</p>
     </section>
-    <example>
-      <div outputclass="row">
-        <div outputclass="col-3 p-1">
+    <bodydiv outputclass="p-3 border mb-3">
+      <div outputclass="row p-1">
+        <div outputclass="col-3">
           <xref href="#" outputclass="btn btn-outline theme-primary">Primary</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col-3">
           <xref href="#" outputclass="btn btn-outline theme-secondary">Secondary</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col-3">
           <xref href="#" outputclass="btn btn-outline theme-success">Success</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col-3">
           <xref href="#" outputclass="btn btn-outline theme-danger">Danger</xref>
         </div>
       </div>
-      <div outputclass="row">
-        <div outputclass="col-3 p-1">
+      <div outputclass="row p-1">
+        <div outputclass="col-3">
           <xref href="#" outputclass="btn btn-outline theme-warning">Warning</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col-3">
           <xref href="#" outputclass="btn btn-outline theme-info">Info</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col-3">
           <xref href="#" outputclass="btn btn-outline theme-accent">Accent</xref>
         </div>
-        <div outputclass="col-3 p-1">
+        <div outputclass="col-3">
           <xref href="#" outputclass="btn btn-outline theme-inverse">Inverse</xref>
         </div>
       </div>
-    </example>
+    </bodydiv>
     <codeblock><coderef href="code/buttons/outline-buttons.xml"/></codeblock>
     <section id="sizing">
       <title>Sizing</title>
       <p>Fancy larger or smaller buttons? Use <xmlatt>size="large"</xmlatt>, <xmlatt>size="small"</xmlatt>, or
           <xmlatt>size="xs"</xmlatt> for additional sizes.</p>
     </section>
-    <example>
-      <div outputclass="row">
-        <div outputclass="col-3 p-1">
+    <bodydiv outputclass="p-3 border mb-3">
+      <div outputclass="row p-1">
+        <div outputclass="col-3">
           <xref href="#" outputclass="btn theme-primary btn-lg">Large button</xref>
         </div>
-        <div outputclass="col-9 p-1">
+        <div outputclass="col-9">
           <xref href="#" outputclass="btn theme-secondary btn-lg">Large button</xref>
         </div>
       </div>
-    </example>
+    </bodydiv>
 
     <codeblock><coderef href="code/buttons/sizing.xml"/></codeblock>
 
-    <example>
-      <div outputclass="row">
-        <div outputclass="col-3 p-1">
+    <bodydiv outputclass="p-3 border mb-3">
+      <div outputclass="row p-1">
+        <div outputclass="col-3">
           <xref href="#" outputclass="btn theme-primary btn-sm">Small button</xref>
         </div>
-        <div outputclass="col-9 p-1">
+        <div outputclass="col-9">
           <xref href="#" outputclass="btn theme-secondary btn-sm">Small button</xref>
         </div>
       </div>
-    </example>
+    </bodydiv>
 
     <codeblock><coderef href="code/buttons/small-buttons.xml"/></codeblock>
 
-    <example>
-      <div outputclass="row">
-        <div outputclass="col-3 p-1">
+    <bodydiv outputclass="p-3 border mb-3">
+      <div outputclass="row p-1">
+        <div outputclass="col-3">
           <xref href="#" outputclass="btn theme-primary btn-xs">Extra small button</xref>
         </div>
-        <div outputclass="col-9 p-1">
+        <div outputclass="col-9">
           <xref href="#" outputclass="btn theme-secondary btn-xs">Extra small button</xref>
         </div>
       </div>
-    </example>
+    </bodydiv>
 
     <codeblock><coderef href="code/buttons/extra-small-buttons.xml"/></codeblock>
   </body>
