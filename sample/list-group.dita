@@ -31,7 +31,7 @@
       <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the
         options that follow, or with your own CSS as needed.</p>
     </section>
-    <example>
+    <fig frame="all">
       <ul outputclass="list-group">
         <li>An item</li>
         <li>A second item</li>
@@ -39,38 +39,38 @@
         <li>A fourth item</li>
         <li>And a fifth one</li>
       </ul>
-    </example>
+    </fig>
     <codeblock><coderef href="code/list-group/basic-example.xml"/></codeblock>
     <section id="compacted-list-group">
       <title>Compacted list group</title>
       <p>Add <xmlatt>compact="yes"</xmlatt> to reduce the padding of list items</p>
     </section>
-    <example>
+    <fig frame="all">
       <ul outputclass="list-group list-group-compact">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
       </ul>
-    </example>
+    </fig>
     <codeblock><coderef href="code/list-group/compacted-list-group.xml"/></codeblock>
     <section id="expanded-list-group">
       <title>Expanded list group</title>
       <p>Add <xmlatt>compact="no"</xmlatt> to increase the padding of list items</p>
     </section>
-    <example>
+    <fig frame="all">
       <ul outputclass="list-group">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
       </ul>
-    </example>
+    </fig>
     <codeblock><coderef href="code/list-group/expanded-list-group.xml"/></codeblock>
     <section id="flush">
       <title>Flush</title>
       <p>Add a <xmlatt>flush="yes"</xmlatt> to remove some borders and
         rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
     </section>
-    <example>
+    <fig frame="all">
       <ul outputclass="list-group list-group-flush">
         <li>An item</li>
         <li>A second item</li>
@@ -78,7 +78,7 @@
         <li>A fourth item</li>
         <li>And a fifth one</li>
       </ul>
-    </example>
+    </fig>
     <codeblock><coderef href="code/list-group/flush.xml"/></codeblock>
   </body>
 </topic>

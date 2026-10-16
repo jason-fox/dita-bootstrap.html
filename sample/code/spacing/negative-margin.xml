@@ -1,2 +1,6 @@
-<div outputclass="ms--1 p-2 border">ms--1</div>
-<div outputclass="me--2 p-2 border">me--2</div>
+<div outputclass="p-1 bg-primary fg-contrast-primary">
+  <div outputclass="p-2 ms--2 bg-subtle-primary fg-contrast-subtle-primary">Negative margin Start 2</div>
+</div>
+<div outputclass="p-1 bg-danger fg-contrast-danger">
+  <div outputclass="p-2 me--2 bg-subtle-danger fg-contrast-subtle-danger">Negative margin End 2</div>
+</div>

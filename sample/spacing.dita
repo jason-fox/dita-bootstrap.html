@@ -27,7 +27,7 @@
         >auto</codeph>.</p>
     </section>
 
-    <example>
+    <fig frame="all">
       <div outputclass="theme-primary theme-contrast m-0 p-2">Margin 0</div>
       <div outputclass="theme-secondary theme-contrast m-1 p-2">Margin 1</div>
       <div outputclass="theme-success theme-contrast m-2 p-2">Margin 2</div>
@@ -37,7 +37,7 @@
       <div outputclass="theme-primary theme-contrast m-6 p-2">Margin 6</div>
       <div outputclass="theme-secondary theme-contrast m-12 p-2">Margin 12</div>
       <div outputclass="theme-accent theme-contrast m-auto p-2 w-50">Margin Auto</div>
-    </example>
+    </fig>
 
     <codeblock><coderef href="code/spacing/margin.xml"/></codeblock>
 
@@ -47,7 +47,7 @@
         >padding</xmlatt> attribute controls the internal spacing of an element, supporting values from 0 to 12.</p>
     </section>
 
-    <example>
+    <fig frame="all">
       <div outputclass="theme-primary theme-contrast p-0">Padding 0</div>
       <div outputclass="theme-secondary theme-contrast p-1 m-1"><div
           outputclass="theme-secondary theme-subtle w-100"
@@ -70,7 +70,7 @@
       <div outputclass="theme-secondary theme-contrast p-12 m-1"><div
           outputclass="theme-secondary theme-subtle w-100"
         >Padding 12</div></div>
-    </example>
+    </fig>
 
     <codeblock><coderef href="code/spacing/padding.xml"/></codeblock>
 
@@ -89,7 +89,7 @@
       <p>Multiple values can be specified as a space-separated list.</p>
     </section>
 
-    <example>
+    <fig frame="all">
       <div outputclass="mt-5 mb-0 bg-primary fg-contrast-primary">Margin Top 5, Bottom 0</div>
       <div outputclass="mx-3 bg-secondary fg-contrast-secondary">Margin Horizontal 3</div>
       <div outputclass="py-5 bg-success"><div
@@ -98,17 +98,17 @@
       <div outputclass="ps-3 pe-1 bg-danger"><div
           outputclass="bg-subtle-danger fg-contrast-subtle-danger w-100"
         >Padding Start 3, End 1</div></div>
-    </example>
+    </fig>
 
     <codeblock><coderef href="code/spacing/directional-spacing.xml"/></codeblock>
     <section id="negative-margin">
       <title>Negative margin</title>
       <p>Negative margins are limited to the inline start and end sides: <xmlatt>outputclass="ms--1"</xmlatt>, <xmlatt>outputclass="ms--2"</xmlatt>, <xmlatt>outputclass="me--1"</xmlatt> and <xmlatt>outputclass="me--2"</xmlatt>.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
-      <div outputclass="ms--1 p-2 border">ms--1</div>
-      <div outputclass="me--2 p-2 border">me--2</div>
-    </bodydiv>
+    <fig frame="all">
+      <div outputclass="p-1 bg-primary fg-contrast-primary"><div outputclass="p-2 ms--2 bg-subtle-primary fg-contrast-subtle-primary">Negative margin Start 2</div></div>
+      <div outputclass="p-1 bg-danger fg-contrast-danger"><div outputclass="p-2 me--2 bg-subtle-danger fg-contrast-subtle-danger">Negative margin End 2</div></div>
+    </fig>
     <codeblock><coderef href="code/spacing/negative-margin.xml"/></codeblock>
   </body>
 </topic>

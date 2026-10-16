@@ -51,11 +51,11 @@
       <p>Keep reading to see how popovers work with some examples.</p>
     </section>
 
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <fig deliveryTarget="html" frame="all">
       <xref href="#" outputclass="btn-lg btn-solid theme-danger popover-top">
         <data name="title">Popover title</data>
         <desc>And here’s some amazing content. It’s very engaging. Right?</desc> Click to toggle popover </xref>
-    </bodydiv>
+    </fig>
     <codeblock><coderef href="code/popovers/examples.xml"/></codeblock>
 
     <section id="four-directions">
@@ -95,12 +95,12 @@
         appearance and use it to override some of the local CSS variables.</p>
       <codeblock outputclass="language-css"><coderef href="code/popovers/custom-popovers.css"/></codeblock>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <fig deliveryTarget="html" frame="all">
         <xref href="#" outputclass="btn-lg btn-solid theme-danger popover-top">
           <data name="title">Popover title</data>
           <data name="class">custom-popover</data>
           <desc>And here’s some amazing content. It’s very engaging. Right?</desc>Custom popover</xref>
-    </bodydiv>
+    </fig>
     <codeblock><coderef href="code/popovers/custom-popovers.xml"/></codeblock>
   </body>
 </topic>

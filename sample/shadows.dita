@@ -26,12 +26,12 @@
         automatically added to prevent the shadow from being clipped by the parent container.</p>
     </section>
 
-    <example>
+    <fig frame="all">
       <div outputclass="m-3 p-3 shadow-none border">No shadow</div>
       <div outputclass="m-3 p-3 shadow-sm border">Small shadow</div>
       <div outputclass="m-3 p-3 shadow border">Regular shadow</div>
       <div outputclass="m-3 p-3 shadow-lg border">Larger shadow</div>
-    </example>
+    </fig>
 
     <codeblock><coderef href="code/shadows/shadow-utilities.xml"/></codeblock>
 

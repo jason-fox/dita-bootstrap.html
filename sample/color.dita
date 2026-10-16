@@ -23,7 +23,7 @@
         >theme</xmlatt> attribute provides a semantic way to apply standard Bootstrap color themes.</p>
     </section>
 
-    <example>
+    <fig frame="all">
       <div outputclass="bg-primary fg-contrast-primary">bg-primary</div>
       <div outputclass="bg-secondary fg-contrast-secondary">bg-secondary</div>
       <div outputclass="bg-success fg-contrast-success">bg-success</div>
@@ -32,7 +32,7 @@
       <div outputclass="bg-info fg-contrast-info">bg-info</div>
       <div outputclass="bg-accent fg-contrast-accent">bg-accent</div>
       <div outputclass="bg-inverse fg-contrast-inverse">bg-inverse</div>
-    </example>
+    </fig>
 
     <codeblock><coderef href="code/color/colors.xml"/></codeblock>
 
@@ -143,14 +143,14 @@
       <p>For text-only colorization, the <xmlatt>outputclass</xmlatt> attribute remains the primary method.</p>
     </section>
 
-    <example>
+    <fig frame="all">
       <p outputclass="fg-primary">fg-primary</p>
       <p outputclass="fg-secondary">fg-secondary</p>
       <p outputclass="fg-success">fg-success</p>
       <p outputclass="fg-danger">fg-danger</p>
       <p outputclass="fg-warning">fg-warning</p>
       <p outputclass="fg-info">fg-info</p>
-    </example>
+    </fig>
 
     <codeblock><coderef href="code/color/text-color.xml"/></codeblock>
   </body>

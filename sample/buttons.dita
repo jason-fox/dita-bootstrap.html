@@ -30,9 +30,11 @@
         alignment, along with fallback visual styles for basic accessibility. Change this class to another button
         class to apply different visual styles for a specific button variant and theme.</p>
     </section>
-    <example>
-      <ph outputclass="btn">Base class</ph>
-    </example>
+    <fig frame="all">
+      <p>
+        <ph outputclass="btn">Base class</ph>
+      </p>
+    </fig>
     <codeblock><coderef href="code/buttons/base-class-outputclass.xml"/></codeblock>
 
     <section id="example">
@@ -40,7 +42,7 @@
       <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras
         thrown in for more control.</p>
     </section>
-    <bodydiv outputclass="p-3 border mb-3">
+    <fig frame="all">
       <div outputclass="row p-1">
         <div outputclass="col">
           <xref href="#" outputclass="btn btn-solid btn-styled theme-primary">Primary</xref>
@@ -69,7 +71,7 @@
           <xref href="#" outputclass="btn theme-inverse">Inverse</xref>
         </div>
       </div>
-    </bodydiv>
+    </fig>
 
     <codeblock><coderef href="code/buttons/example.xml"/></codeblock>
 
@@ -200,7 +202,7 @@
         class. This provides a more three-dimensional appearance that can be customized further with CSS
         variables.</p>
     </section>
-    <bodydiv outputclass="p-3 border mb-3">
+    <fig frame="all" outputclass="mb-3">
       <div outputclass="row p-1">
         <div outputclass="col">
           <xref href="#" outputclass="btn-solid btn-styled theme-primary">Primary</xref>
@@ -229,7 +231,7 @@
           <xref href="#" outputclass="btn-solid btn-styled theme-inverse">Inverse</xref>
         </div>
       </div>
-    </bodydiv>
+    </fig>
     <codeblock><coderef href="code/buttons/styled-buttons.xml"/></codeblock>
 
     <section id="outline-buttons">
@@ -239,7 +241,7 @@
         >btn theme-outline-*</codeph> to remove all background images
         and colors on any button.</p>
     </section>
-    <bodydiv outputclass="p-3 border mb-3">
+    <fig frame="all" outputclass="mb-3">
       <div outputclass="row p-1">
         <div outputclass="col-3">
           <xref href="#" outputclass="btn btn-outline theme-primary">Primary</xref>
@@ -268,14 +270,14 @@
           <xref href="#" outputclass="btn btn-outline theme-inverse">Inverse</xref>
         </div>
       </div>
-    </bodydiv>
+    </fig>
     <codeblock><coderef href="code/buttons/outline-buttons.xml"/></codeblock>
     <section id="sizing">
       <title>Sizing</title>
       <p>Fancy larger or smaller buttons? Use <xmlatt>size="large"</xmlatt>, <xmlatt>size="small"</xmlatt>, or
           <xmlatt>size="xs"</xmlatt> for additional sizes.</p>
     </section>
-    <bodydiv outputclass="p-3 border mb-3">
+    <fig frame="all" outputclass="mb-3">
       <div outputclass="row p-1">
         <div outputclass="col-3">
           <xref href="#" outputclass="btn theme-primary btn-lg">Large button</xref>
@@ -284,11 +286,11 @@
           <xref href="#" outputclass="btn theme-secondary btn-lg">Large button</xref>
         </div>
       </div>
-    </bodydiv>
+    </fig>
 
     <codeblock><coderef href="code/buttons/sizing.xml"/></codeblock>
 
-    <bodydiv outputclass="p-3 border mb-3">
+    <fig frame="all" outputclass="mb-3">
       <div outputclass="row p-1">
         <div outputclass="col-3">
           <xref href="#" outputclass="btn theme-primary btn-sm">Small button</xref>
@@ -297,11 +299,11 @@
           <xref href="#" outputclass="btn theme-secondary btn-sm">Small button</xref>
         </div>
       </div>
-    </bodydiv>
+    </fig>
 
     <codeblock><coderef href="code/buttons/small-buttons.xml"/></codeblock>
 
-    <bodydiv outputclass="p-3 border mb-3">
+    <fig frame="all" outputclass="mb-3">
       <div outputclass="row p-1">
         <div outputclass="col-3">
           <xref href="#" outputclass="btn theme-primary btn-xs">Extra small button</xref>
@@ -310,7 +312,7 @@
           <xref href="#" outputclass="btn theme-secondary btn-xs">Extra small button</xref>
         </div>
       </div>
-    </bodydiv>
+    </fig>
 
     <codeblock><coderef href="code/buttons/extra-small-buttons.xml"/></codeblock>
   </body>

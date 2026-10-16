@@ -29,37 +29,37 @@
           <xmlatt>outputclass="h1"</xmlatt> through <xmlatt>outputclass="h6"</xmlatt> are also available, for when you
         want to match the font styling of a heading but cannot use the associated HTML element.</p>
     </section>
-    <example>
+    <fig frame="all">
       <p outputclass="h1">h1. Bootstrap heading</p>
       <p outputclass="h2">h2. Bootstrap heading</p>
       <p outputclass="h3">h3. Bootstrap heading</p>
       <p outputclass="h4">h4. Bootstrap heading</p>
       <p outputclass="h5">h5. Bootstrap heading</p>
       <p outputclass="h6">h6. Bootstrap heading</p>
-    </example>
+    </fig>
     <codeblock><coderef href="code/typography/headings.xml"/></codeblock>
     <section id="customizing-headings">
       <title>Customizing headings</title>
       <p>Annotate a <xmlelement>ph</xmlelement> with an <xmlatt>outputclass</xmlatt> to recreate the small secondary
         heading text from Bootstrap 3.</p>
     </section>
-    <example deliveryTarget="html">
+    <fig frame="all" deliveryTarget="html">
       <p outputclass="h3">Fancy display heading <ph outputclass="fs-md fg-secondary">with faded secondary text</ph></p>
-    </example>
+    </fig>
     <codeblock><coderef href="code/typography/customizing-headings.xml"/></codeblock>
     <section id="display-headings">
       <title>Display headings</title>
       <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a
         heading to stand out, consider using a display heading — a larger, slightly more opinionated heading style.</p>
     </section>
-    <example>
+    <fig frame="all">
       <p outputclass="fw-light fs-6xl">Display 1</p>
       <p outputclass="fw-light fs-5xl">Display 2</p>
       <p outputclass="fw-light fs-4xl">Display 3</p>
       <p outputclass="fw-light fs-3xl">Display 4</p>
       <p outputclass="fw-light fs-2xl">Display 5</p>
       <p outputclass="fw-light fs-xl">Display 6</p>
-    </example>
+    </fig>
     <codeblock><coderef href="code/typography/display-headings.xml"/></codeblock>
     <section id="lead">
       <title>Lead</title>
@@ -67,15 +67,15 @@
         >outputclass="fw-light fs-lg"</xmlatt> — this is automatically added to
           <xmlelement>shortdesc</xmlelement> elements.</p>
     </section>
-    <example deliveryTarget="html">
+    <fig frame="all" deliveryTarget="html">
       <p outputclass="fw-light fs-lg">This is a lead paragraph. It stands out from regular paragraphs.</p>
-    </example>
+    </fig>
     <codeblock><coderef href="code/typography/lead.xml"/></codeblock>
     <section id="inline-text-elements">
       <title>Inline text elements</title>
       <p>Styling for common inline HTML5 elements.</p>
     </section>
-    <example deliveryTarget="html">
+    <fig frame="all" deliveryTarget="html">
       <p>You can use <xmlatt>outputclass="mark"</xmlatt> to <ph outputclass="mark">highlight</ph> text.</p>
       <p><line-through>This line of text is meant to be treated as deleted text.</line-through></p>
       <p><u>This line of text will render as underlined.</u></p>
@@ -83,7 +83,7 @@
         print.</p>
       <p><b>This line rendered as bold text.</b></p>
       <p><i>This line rendered as italicized text.</i></p>
-    </example>
+    </fig>
     <codeblock><coderef href="code/typography/inline-text-elements.xml"/></codeblock>
     <section id="text-utilities">
       <title>Text utilities</title>
@@ -98,25 +98,25 @@
         additional context on hover and to users of assistive technologies. </p>
       <p>Add <xmlatt>outputclass="initialism"</xmlatt> to an abbreviation for a slightly smaller font-size.</p>
     </section>
-    <example deliveryTarget="html">
+    <fig frame="all" deliveryTarget="html">
       <p>
         <ph outputclass="abbreviation" otherprops="title(attribute)">attr</ph>
       </p>
       <p>
         <ph outputclass="initialism" otherprops="title(HyperText Markup Language)">HTML</ph>
       </p>
-    </example>
+    </fig>
     <codeblock><coderef href="code/typography/abbreviations.xml"/></codeblock>
     <section id="blockquotes">
       <title>Blockquotes</title>
       <p>For quoting blocks of content from another source within your document, use the DITA
           <xmlelement>lq</xmlelement> element, it is styled automatically.</p>
     </section>
-    <example>
+    <fig frame="all">
       <lq>
         <p>A well-known quote, contained in a blockquote element.</p>
       </lq>
-    </example>
+    </fig>
     <codeblock><coderef href="code/typography/blockquotes.xml"/></codeblock>
     <section id="naming-a-source">
       <title>Naming a source</title>
@@ -168,7 +168,7 @@
         immediate children list items, meaning you will need to add the <xmlatt>outputclass="list-unstyled"</xmlatt> for
         any nested lists as well.</p>
     </section>
-    <example>
+    <fig frame="all">
       <ul outputclass="list-unstyled">
         <li>This is a list.</li>
         <li>It appears completely unstyled.</li>
@@ -183,7 +183,7 @@
         </li>
         <li>This may still come in handy in some situations.</li>
       </ul>
-    </example>
+    </fig>
     <codeblock><coderef href="code/typography/unstyled.xml"/></codeblock>
     <section id="inline">
       <title outputclass="h3">Inline</title>
@@ -191,20 +191,20 @@
         <xmlatt>outputclass="list-inline"</xmlatt> attribute.
       </p>
     </section>
-    <example>
+    <fig frame="all">
       <ul outputclass="list-inline">
         <li>This is a list item.</li>
         <li>And another one.</li>
         <li>But they're displayed inline.</li>
       </ul>
-    </example>
+    </fig>
     <codeblock><coderef href="code/typography/inline.xml"/></codeblock>
     <section id="description-list-alignment">
       <title outputclass="h3">Description list alignment</title>
       <p>Terms and descriptions align horizontally using Bootstrap’s grid system of predefined classes. For longer
         terms, text is truncated with an ellipsis.</p>
     </section>
-    <example>
+    <fig frame="all">
       <dl>
         <dlentry>
           <dt>Description lists</dt>
@@ -237,7 +237,7 @@
           </dd>
         </dlentry>
       </dl>
-    </example>
+    </fig>
         <codeblock><coderef href="code/typography/description-list-alignment.xml"/></codeblock>
     <section id="description-list-column-width">
       <title outputclass="h3">Description list column width</title>
@@ -246,7 +246,7 @@
         >dd</xmlelement> spreads over 9 column widths. Alter default width of terms by adding <xmlatt
         >colspan</xmlatt></p>
     </section>
-    <example deliveryTarget="html">
+    <fig frame="all" deliveryTarget="html">
       <dl otherprops="cols(2)">
         <dlentry>
           <dt>Description lists</dt>
@@ -260,7 +260,7 @@
           </dd>
         </dlentry>
       </dl>
-    </example>
+    </fig>
     <codeblock><coderef href="code/typography/alignment.xml"/></codeblock>
   </body>
 </topic>

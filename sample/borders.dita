@@ -32,7 +32,7 @@
       <title>Borders</title>
       <p>Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time.</p>
     </section>
-    <example>
+    <fig frame="all">
       <div outputclass="p-3">
         <ph outputclass="border p-3 border-accent">&#xA0;border&#xA0;</ph>&#xA0;
         <ph outputclass="border-top p-3 border-accent">&#xA0;border-top</ph>&#xA0;
@@ -40,7 +40,7 @@
         <ph outputclass="border-bottom p-3 border-accent">&#xA0;border-bottom</ph>&#xA0;
         <ph outputclass="border-start p-3 border-accent">&#xA0;border-start</ph>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/borders/border-utilities.xml"/></codeblock>
 
     <section id="border-specialization">
@@ -79,7 +79,7 @@
         the color of the border.</p>
     </section>
 
-    <example>
+    <fig frame="all">
       <div outputclass="mb-3">
         <ph outputclass="me-2 p-2 border border-keyline">Keyline</ph>
         <ph outputclass="me-2 p-2 border border-1">Width 1</ph>
@@ -88,17 +88,17 @@
         <ph outputclass="me-2 p-2 border border-4">Width 4</ph>
         <ph outputclass="me-2 p-2 border border-5">Width 5</ph>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/borders/border-styling.xml"/></codeblock>
 
-    <example>
+    <fig frame="all">
       <div outputclass="mb-3">
         <ph outputclass="me-2 p-2 border-primary">Primary</ph>
         <ph outputclass="me-2 p-2 border-primary-subtle">Primary subtle</ph>
         <ph outputclass="me-2 p-2 border-success">Success</ph>
         <ph outputclass="me-2 p-2 border-danger">Danger</ph>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/borders/border-colors.xml"/></codeblock>
 
     <bodydiv outputclass="p-3 border mt-3">
@@ -123,12 +123,12 @@
     </bodydiv>
     <codeblock><coderef href="code/borders/border-rounding.xml"/></codeblock>
 
-    <example>
+    <fig frame="all">
       <div outputclass="mb-3 pt-3">
         <ph outputclass="me-5 p-4 border border-info rounded-circle">Circle</ph>
         <ph outputclass="me-2 px-4 py-2 border border-warning rounded-pill">Pill</ph>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/borders/border-circle.xml"/></codeblock>
 
     <section id="frames">

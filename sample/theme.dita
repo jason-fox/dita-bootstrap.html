@@ -42,7 +42,7 @@
         readability with <codeph>theme-contrast</codeph>. This is ideal for high-emphasis
         elements with solid backgrounds.</p>
     </section>
-    <example>
+    <fig frame="all">
       <div outputclass="row g-2 row-cols-2 row-cols-md-4">
         <div outputclass="col">
           <div outputclass="p-2 theme-primary theme-contrast">primary-contrast</div>
@@ -69,11 +69,11 @@
           <div outputclass="p-2 theme-secondary theme-contrast">secondary-contrast</div>
         </div>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/theme/contrast-outputclass.xml"/></codeblock>
 
     <p>Nested links inherit the contrast foreground so they stay legible on the solid background:</p>
-    <example>
+    <fig frame="all">
       <div outputclass="row g-2">
         <div outputclass="col-12">
           <div outputclass="p-3 theme-primary theme-contrast">Theme Primary with a
@@ -108,7 +108,7 @@
             <xref href="#">nested link</xref> inside.</div>
         </div>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/theme/contrast-nested-link-outputclass.xml"/></codeblock>
 
     <section id="subtle">
@@ -117,7 +117,7 @@
         lower-contrast, more subtle appearance. This combination will automatically
         adjust to the current color mode.</p>
     </section>
-    <example>
+    <fig frame="all">
       <div outputclass="row g-2 row-cols-2 row-cols-md-4">
         <div outputclass="col">
           <div outputclass="p-2 theme-primary theme-subtle">
@@ -152,11 +152,11 @@
             secondary-subtle</div>
         </div>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/theme/subtle-outputclass.xml"/></codeblock>
 
     <p>And with borders:</p>
-    <example>
+    <fig frame="all">
       <div outputclass="row g-2 row-cols-2 row-cols-md-4">
         <div outputclass="col">
           <div outputclass="p-2 theme-primary theme-subtle theme-border">
@@ -191,11 +191,11 @@
           secondary-subtle-border</div>
         </div>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/theme/subtle-border-outputclass.xml"/></codeblock>
 
     <p>Nested links inherit the subtle foreground so they stay legible on the subtle background:</p>
-    <example>
+    <fig frame="all">
       <div outputclass="row g-2">
         <div outputclass="col-12">
           <div outputclass="p-3 theme-primary theme-subtle">Theme Primary with a
@@ -230,7 +230,7 @@
             <xref href="#">nested link</xref> inside.</div>
         </div>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/theme/subtle-nested-link-outputclass.xml"/></codeblock>
 
     <section id="muted">
@@ -239,7 +239,7 @@
         lower-contrast, more muted appearance. Like subtle, this combination will
         automatically adjust to the current color mode.</p>
     </section>
-    <example>
+    <fig frame="all">
       <div outputclass="row g-2 row-cols-2 row-cols-md-4">
         <div outputclass="col">
           <div outputclass="p-2 theme-primary theme-muted">
@@ -274,11 +274,11 @@
             secondary-muted</div>
         </div>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/theme/muted-outputclass.xml"/></codeblock>
 
     <p>Nested links inherit the muted foreground so they stay legible on the muted background:</p>
-    <example>
+    <fig frame="all">
       <div outputclass="row g-2">
         <div outputclass="col-12">
           <div outputclass="p-3 theme-primary theme-muted">Theme Primary with a
@@ -313,7 +313,7 @@
             <xref href="#">nested link</xref> inside.</div>
         </div>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/theme/muted-nested-link-outputclass.xml"/></codeblock>
 
     <section id="comparison">
@@ -321,7 +321,7 @@
       <p>Here's a side-by-side comparison of all three styles for each theme color,
         including nested links:</p>
     </section>
-    <example>
+    <fig frame="all">
       <div outputclass="row g-2 mb-2">
         <div outputclass="col">
           <div outputclass="theme-primary theme-contrast p-3 text-center rounded">Primary with a
@@ -434,7 +434,7 @@
             <xref href="#">link</xref></div>
         </div>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/theme/comparison-outputclass.xml"/></codeblock>
 
     <section id="with-components">
@@ -442,7 +442,7 @@
       <p>Theme utilities work great with components that support theming. Use theme
         style classes on individual elements.</p>
     </section>
-    <example>
+    <fig frame="all">
       <div outputclass="theme-primary">
         <div outputclass="row g-2 mb-3">
           <div outputclass="col">
@@ -469,12 +469,12 @@
           </div>
         </div>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/theme/with-components-outputclass.xml"/></codeblock>
 
     <p>You can also mix theme colors within the same container by applying different
       <codeph>theme-{color}</codeph> classes to child elements:</p>
-    <example>
+    <fig frame="all">
       <div outputclass="row g-2">
         <div outputclass="col">
           <div outputclass="theme-success theme-contrast p-3 rounded">Success</div>
@@ -486,7 +486,7 @@
           <div outputclass="theme-danger theme-contrast p-3 rounded">Danger</div>
         </div>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/theme/status-colors-outputclass.xml"/></codeblock>
 
     <section id="how-theme-values-are-built-up">

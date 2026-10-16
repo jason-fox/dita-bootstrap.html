@@ -28,66 +28,66 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <fig deliveryTarget="html" frame="all">
       <ol outputclass="stepper">
         <li outputclass="active">Create account</li>
         <li outputclass="active">Confirm email</li>
         <li>Update profile</li>
         <li>Finish</li>
       </ol>
-    </bodydiv>
+    </fig>
     <codeblock><coderef href="code/stepper/example.xml"/></codeblock>
     <section id="horizontal">
       <title>Horizontal</title>
       <p>Add <codeph>stepper-horizontal</codeph> to the <xmlatt>outputclass</xmlatt> for a horizontal layout.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <fig deliveryTarget="html" frame="all">
       <ol outputclass="stepper stepper-horizontal">
         <li outputclass="active">Create account</li>
         <li outputclass="active">Confirm email</li>
         <li>Update profile</li>
         <li>Finish</li>
       </ol>
-    </bodydiv>
+    </fig>
     <codeblock><coderef href="code/stepper/horizontal.xml"/></codeblock>
     <section id="vertical">
       <title>Vertical</title>
       <p>Add <codeph>stepper-vertical</codeph> to the <xmlatt>outputclass</xmlatt> to force a vertical layout.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <fig deliveryTarget="html" frame="all">
       <ol outputclass="stepper stepper-vertical">
         <li outputclass="active">Create account</li>
         <li outputclass="active">Confirm email</li>
         <li>Update profile</li>
         <li>Finish</li>
       </ol>
-    </bodydiv>
+    </fig>
     <codeblock><coderef href="code/stepper/vertical.xml"/></codeblock>
     <section id="responsive">
       <title>Responsive</title>
       <p>Prefix the class with a breakpoint, for example <codeph>sm:stepper-horizontal</codeph>, to switch layout at that breakpoint.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <fig deliveryTarget="html" frame="all">
       <ol outputclass="stepper sm:stepper-horizontal">
         <li outputclass="active">Create account</li>
         <li outputclass="active">Confirm email</li>
         <li>Update profile</li>
         <li>Finish</li>
       </ol>
-    </bodydiv>
+    </fig>
     <codeblock><coderef href="code/stepper/responsive.xml"/></codeblock>
     <section id="variants">
       <title>Variants</title>
       <p>Add a <codeph>theme-{color}</codeph> outputclass to individual <xmlelement>li</xmlelement> items.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <fig deliveryTarget="html" frame="all">
       <ol outputclass="stepper">
         <li outputclass="theme-success active">Create account</li>
         <li outputclass="theme-danger active">Confirm email</li>
         <li outputclass="theme-primary active">Update profile</li>
         <li outputclass="theme-accent active">Finish</li>
       </ol>
-    </bodydiv>
+    </fig>
     <codeblock><coderef href="code/stepper/variants.xml"/></codeblock>
   </body>
 </topic>

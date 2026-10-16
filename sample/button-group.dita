@@ -29,41 +29,41 @@
           outputclass="btn-group"</xmlelement>
       </p>
     </section>
-    <example>
+    <fig frame="all">
       <div outputclass="btn-group">
         <xref href="#" outputclass="btn theme-primary">Left</xref>
         <xref href="#" outputclass="btn theme-primary">Middle</xref>
         <xref href="#" outputclass="btn theme-primary">Right</xref>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/button-group/basic-example.xml"/></codeblock>
     <section id="theme-variants">
       <title>Theme variants</title>
     </section>
-    <example>
+    <fig frame="all">
       <div outputclass="btn-group">
         <xref href="#" outputclass="btn theme-danger">Left</xref>
         <xref href="#" outputclass="btn theme-warning">Middle</xref>
         <xref href="#" outputclass="btn theme-success">Right</xref>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/button-group/mixed-styles.xml"/></codeblock>
     <section id="style-variants">
       <title>Style variants</title>
     </section>
-    <example>
+    <fig frame="all">
       <div outputclass="btn-group">
         <xref href="#" outputclass="btn-outline theme-primary">Left</xref>
         <xref href="#" outputclass="btn-outline theme-primary">Middle</xref>
         <xref href="#" outputclass="btn-outline theme-primary">Right</xref>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/button-group/outlined-styles.xml"/></codeblock>
     <section id="button-toolbar">
       <title>Button toolbar</title>
       <p>Combine sets of button groups into button toolbars for more complex components.</p>
     </section>
-    <example>
+    <fig frame="all">
       <div outputclass="btn-toolbar">
         <div outputclass="me-2 btn-group">
           <xref href="#" outputclass="btn theme-primary">1</xref>
@@ -80,19 +80,19 @@
           <xref href="#" outputclass="btn theme-info">8</xref>
         </div>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/button-group/button-toolbar.xml"/></codeblock>
     <section id="vertical-variation">
       <title>Vertical variation</title>
       <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
     </section>
-    <example>
+    <fig frame="all">
       <div outputclass="btn-group-vertical">
         <xref href="#" outputclass="btn theme-primary">Top</xref>
         <xref href="#" outputclass="btn theme-primary">Middle</xref>
         <xref href="#" outputclass="btn theme-primary">Bottom</xref>
       </div>
-    </example>
+    </fig>
     <codeblock><coderef href="code/button-group/vertical-variation.xml"/></codeblock>
   </body>
 </topic>

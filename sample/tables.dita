@@ -308,7 +308,7 @@
       <title>Card-like tables</title>
       <p>Add <xmlatt>outputclass="table-card"</xmlatt> to a table to round the corners like a card.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <table outputclass="table-striped table-card">
         <tgroup cols="3">
           <colspec colname="c1"/>
@@ -322,7 +322,7 @@
           </tbody>
         </tgroup>
       </table>
-    </bodydiv>
+    </example>
     <codeblock><coderef href="code/tables/card-like-tables.xml"/></codeblock>
     <section id="table-footer">
       <title>Footer</title>
@@ -372,7 +372,7 @@
       <title>Caption</title>
       <p>A table <xmlelement>title</xmlelement> renders as the caption, below the table by default. Add <xmlatt>outputclass="caption-top"</xmlatt> to move it above.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <table outputclass="caption-top">
         <title>List of animals</title>
         <tgroup cols="3">
@@ -387,13 +387,13 @@
           </tbody>
         </tgroup>
       </table>
-    </bodydiv>
+    </example>
     <codeblock><coderef href="code/tables/caption.xml"/></codeblock>
     <section id="stacked-tables">
       <title>Stacked tables</title>
       <p>Add <xmlatt>outputclass="md:table-stacked"</xmlatt> to a table to collapse rows into stacked label and value pairs below a container breakpoint. Use <xmlatt>outputclass="table-stacked"</xmlatt> to always stack. Each cell is labelled with its column heading, and the required responsive wrapper is generated automatically.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <table outputclass="md:table-stacked">
         <tgroup cols="3">
           <colspec colname="c1"/>
@@ -407,13 +407,13 @@
           </tbody>
         </tgroup>
       </table>
-    </bodydiv>
+    </example>
     <codeblock><coderef href="code/tables/stacked-tables.xml"/></codeblock>
     <section id="responsive-tables">
       <title>Responsive tables</title>
       <p>Add <xmlatt>outputclass="table-responsive"</xmlatt> to a table to scroll horizontally, or use <codeph>sm:</codeph> to <codeph>2xl:</codeph> prefixed variants such as <xmlatt>outputclass="xl:table-responsive"</xmlatt> to scroll only below a breakpoint. The scrolling wrapper is generated automatically.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <table outputclass="xl:table-responsive">
         <tgroup cols="12">
           <colspec colname="c1"/>
@@ -436,7 +436,7 @@
           </tbody>
         </tgroup>
       </table>
-    </bodydiv>
+    </example>
     <codeblock><coderef href="code/tables/responsive-tables.xml"/></codeblock>
   </body>
 </topic>

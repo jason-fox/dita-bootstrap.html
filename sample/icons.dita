@@ -36,15 +36,15 @@
       <p>Use a <xmlatt>style</xmlatt> attribute and alter the CSS font-size and color to change the icon
         appearance.</p>
     </section>
-    <example>
+    <fig frame="all">
       <p>
         <ph outputclass="bi bi-alarm"/>
         <ph outputclass="bi bi-alarm" otherprops="style(font-size: 2rem; color: cornflowerblue;)"/>
       </p>
-    </example>
+    </fig>
     <codeblock><coderef href="code/icons/example.xml"/></codeblock>
   <p>Icons placed within an <xmlelement>xref</xmlelement> element are colorized appropriately:</p>
-  <example>
+  <fig frame="all">
     <p>
       <xref href="#" outputclass="link theme-primary">
         <ph outputclass="bi bi-link"/> Primary link
@@ -85,10 +85,10 @@
         <ph outputclass="bi bi-link"/> Inverse link
       </xref>
     </p>
-  </example>
+  </fig>
     <codeblock><coderef href="code/icons/dark-link.xml"/></codeblock>
     <p>Icons can also be placed within buttons as shown:</p>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border mb-3">
+    <fig deliveryTarget="html" frame="all" outputclass="mb-3">
       <div outputclass="row p-1">
         <div outputclass="col-3">
           <xref outputclass="btn-icon theme-primary" href="#"><ph outputclass="bi bi-arrow-down-square-fill"/></xref>
@@ -111,7 +111,7 @@
           <xref outputclass="btn-icon theme-danger" href="#"><ph outputclass="bi bi-share-fill"/></xref>
         </div>
       </div>
-    </bodydiv>
+    </fig>
     <codeblock><coderef href="code/icons/icons-in-buttons.xml"/></codeblock>
     <p>Icons can also be used within <xmlelement>chapter</xmlelement> headings,
       and <xmlelement>topicref</xmlelement> elements by adding
