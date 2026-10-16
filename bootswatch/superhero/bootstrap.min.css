@@ -291,6 +291,12 @@ h6, .h6 {
     --bs-accordion-active-bg: var(--bs-primary-base);
 }
 
+.accordion[class*="theme-"] {
+    --bs-theme-bg-subtle: var(--bs-theme-bg);
+    --bs-theme-fg: #ebebeb;
+    --bs-theme-border: var(--bs-border-color);
+}
+
 .card, .list-group, .pagination {
     --bs-card-bg: #4e5d6c;
     --bs-list-group-bg: #4e5d6c;
