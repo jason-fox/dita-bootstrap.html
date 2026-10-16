@@ -336,6 +336,12 @@ body {
     --bs-accordion-active-color: #fff;
 }
 
+.accordion[class*="theme-"] {
+    --bs-theme-bg-subtle: var(--bs-theme-bg);
+    --bs-theme-fg: #fff;
+    --bs-theme-border: var(--bs-border-color);
+}
+
 .btn:not(.btn-solid):not(.btn-outline):not(.btn-subtle):not(.btn-text):not(.btn-link):not(.btn-icon) {
     --bs-btn-bg: rgba(0, 0, 0, .25);
 }
