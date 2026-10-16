@@ -312,8 +312,8 @@ legend {
 .accordion {
     --bs-accordion-border-radius: var(--bs-border-radius);
     --bs-accordion-btn-color: var(--bs-fg-body);
-    --bs-accordion-active-color: var(--bs-primary-fg-emphasis);
-    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+    --bs-accordion-active-color: color-mix(in srgb, var(--bs-primary-base) 40%, black);
+    --bs-accordion-active-bg: color-mix(in srgb, var(--bs-primary-base) 20%, white);
 }
 
 .table {
