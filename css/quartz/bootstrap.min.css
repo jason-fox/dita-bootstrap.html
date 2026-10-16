@@ -330,6 +330,7 @@ body {
 
 .accordion {
     --bs-accordion-border-radius: var(--bs-border-radius);
+    --bs-accordion-btn-color: var(--bs-fg-body);
     --bs-accordion-btn-bg: var(--bs-secondary-base);
     --bs-accordion-active-bg: var(--bs-primary-base);
     --bs-accordion-active-color: #fff;
