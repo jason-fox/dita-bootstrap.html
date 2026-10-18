@@ -279,10 +279,10 @@
     </section>
     <fig frame="all" outputclass="mb-3">
       <div outputclass="row p-1">
-        <div outputclass="col-3">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-primary btn-lg">Large button</xref>
         </div>
-        <div outputclass="col-9">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-secondary btn-lg">Large button</xref>
         </div>
       </div>
@@ -292,10 +292,10 @@
 
     <fig frame="all" outputclass="mb-3">
       <div outputclass="row p-1">
-        <div outputclass="col-3">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-primary btn-sm">Small button</xref>
         </div>
-        <div outputclass="col-9">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-secondary btn-sm">Small button</xref>
         </div>
       </div>
@@ -305,10 +305,10 @@
 
     <fig frame="all" outputclass="mb-3">
       <div outputclass="row p-1">
-        <div outputclass="col-3">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-primary btn-xs">Extra small button</xref>
         </div>
-        <div outputclass="col-9">
+        <div outputclass="col">
           <xref href="#" outputclass="btn theme-secondary btn-xs">Extra small button</xref>
         </div>
       </div>
