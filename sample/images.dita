@@ -42,9 +42,9 @@
           utilities</xref>, you can use the specialized <xmlelement>thumbnail</xmlelement> element to give an image
         a rounded 1px border appearance.</p>
     </section>
-    <fig frame="all">
+    <bodydiv outputclass="p-3 border">
       <image scope="external" href="https://picsum.photos/100/100?a" outputclass="img-thumbnail"/>
-    </fig>
+    </bodydiv>
     <codeblock><coderef href="code/images/image-thumbnails.xml"/></codeblock>
     <section id="separate-images-for-dark-and-light-mode">
       <title>Separate images for dark and light mode</title>
@@ -53,7 +53,7 @@
         to display different images when in <xref href="./dark-mode.dita">dark mode</xref>.</p>
     </section>
     <example>
-      <fig>
+      <div outputclass="p-3 border">
         <image outputclass="d-auto img-thumbnail" scope="external" href="https://picsum.photos/id/730/300/200"/>
         <image
           outputclass="d-light img-thumbnail"
@@ -67,7 +67,7 @@
           href="https://picsum.photos/id/724/300/200"
           deliveryTarget="html"
         />
-      </fig>
+      </div>
     </example>
     <codeblock><coderef href="code/images/separate-images-for-dark.xml"/></codeblock>
     <section id="support-lazy-loading">
