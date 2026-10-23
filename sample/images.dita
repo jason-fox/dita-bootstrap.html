@@ -53,21 +53,19 @@
         to display different images when in <xref href="./dark-mode.dita">dark mode</xref>.</p>
     </section>
     <example>
-      <div outputclass="p-3 border">
-        <image outputclass="d-auto img-thumbnail" scope="external" href="https://picsum.photos/id/730/300/200"/>
-        <image
-          outputclass="d-light img-thumbnail"
-          scope="external"
-          href="https://picsum.photos/id/730/300/200"
-          deliveryTarget="html"
-        />
-        <image
-          outputclass="d-dark img-thumbnail"
-          scope="external"
-          href="https://picsum.photos/id/724/300/200"
-          deliveryTarget="html"
-        />
-      </div>
+      <image outputclass="d-auto img-thumbnail" scope="external" href="https://picsum.photos/id/730/300/200"/>
+      <image
+        outputclass="d-light img-thumbnail"
+        scope="external"
+        href="https://picsum.photos/id/730/300/200"
+        deliveryTarget="html"
+      />
+      <image
+        outputclass="d-dark img-thumbnail"
+        scope="external"
+        href="https://picsum.photos/id/724/300/200"
+        deliveryTarget="html"
+      />
     </example>
     <codeblock><coderef href="code/images/separate-images-for-dark.xml"/></codeblock>
     <section id="support-lazy-loading">
