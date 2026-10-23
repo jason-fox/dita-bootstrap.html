@@ -222,6 +222,7 @@ body {
     --bs-theme-bg-subtle: transparent;
     --bs-theme-fg: #fff;
     --bs-theme-border: transparent;
+    color: var(--bs-theme-fg);
 }
 
 .card-header {

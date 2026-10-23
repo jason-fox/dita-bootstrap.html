@@ -207,6 +207,7 @@ h6, .h6 {
     --bs-theme-bg-subtle: var(--bs-theme-bg);
     --bs-theme-fg: #fff;
     --bs-theme-border: transparent;
+    color: var(--bs-theme-fg);
 }
 
 .alert a, .alert .alert-link {

@@ -396,6 +396,7 @@ h6, .h6 {
 .alert[class*="theme-"] {
     --bs-theme-bg-subtle: color-mix(in srgb, var(--bs-theme-bg) 75%, transparent);
     --bs-theme-fg: var(--bs-theme-fg-emphasis);
+    color: var(--bs-theme-fg);
 }
 
 .btn-outline.theme-inverse {

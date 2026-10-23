@@ -380,6 +380,7 @@ a {
     --bs-theme-bg-subtle: var(--bs-theme-bg);
     --bs-theme-fg: #000;
     --bs-theme-border: #000;
+    color: var(--bs-theme-fg);
 }
 
 .alert a, .alert .alert-link {
